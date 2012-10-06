@@ -83,7 +83,7 @@ public class PostSearchEngine
 		
 		
 		
-		_queryParser = new MultiFieldQueryParser(Version.LUCENE_30, new String[] { "title", "contentText" }, getDefaultAnalyzer());
+		_queryParser = new MultiFieldQueryParser(Version.LUCENE_30, new String[] { "contentText", "title", "id" }, getDefaultAnalyzer());
 	}
 	
 	private static PostSearchEngine _instance = null;
@@ -175,7 +175,7 @@ public class PostSearchEngine
 		
 		try
 		{
-			TopDocs hits = _indexSearcher.search(query, 100);
+			TopDocs hits = _indexSearcher.search(query, 50);
 			for (int i = 0; i < hits.scoreDocs.length; i++) {  
 				  
 		        ScoreDoc scoreDoc = hits.scoreDocs[i];  
@@ -190,7 +190,7 @@ public class PostSearchEngine
 		        SimpleHTMLFormatter simpleHTMLFormatter = new SimpleHTMLFormatter(  
 		                "<span class='keyword'>", "</span>");		        
 		        Highlighter highlighter = new Highlighter(simpleHTMLFormatter, new QueryScorer(query));  
-		        Fragmenter fragmenter = new SimpleFragmenter(45);  
+		        Fragmenter fragmenter = new SimpleFragmenter(40);  
 		        highlighter.setTextFragmenter(fragmenter);
 		        
 		        
