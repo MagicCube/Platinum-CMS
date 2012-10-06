@@ -44,7 +44,9 @@ public class MembershipService
 	
 	public String validateUser(String p_loginName, String p_loginPassword)
 	{
-		UserPO entity = getUserEntityDAO().selectFirst(new DAOQuery("lower(loginName)=?", p_loginName.toLowerCase()));
+		DAOQuery query = new DAOQuery("lower(loginName)=?", p_loginName.toLowerCase());
+		query.setCachable(true);
+		UserPO entity = getUserEntityDAO().selectFirst(query);
 		if (entity != null && entity.getLoginPass().equals(p_loginPassword))
 		{
 			return entity.getId();

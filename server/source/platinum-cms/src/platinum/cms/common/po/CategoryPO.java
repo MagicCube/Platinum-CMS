@@ -6,11 +6,15 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import platinum.cms.common.PostType;
 import platinum.framework.po.StandardPO;
 
 @Entity(name = "Category")
 @Table(name = "PTT_CATEGORY", schema = "PT_CMS")
+@Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 public class CategoryPO extends StandardPO
 {
 	private String _categoryName;

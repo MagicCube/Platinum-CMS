@@ -4,24 +4,33 @@
 
 <hibernate-configuration>
     <session-factory>
-        <property name="show_sql">true</property>
+        <property name="hibernate.show_sql">true</property>
         
         <!-- JDBC 连接池（使用 Oracle 内置连接池） -->
-        <property name="connection.pool_size">1</property>
+        <property name="hibernate.connection.pool_size">1</property>
         
         <!-- 数据库连接设置 -->
-        <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
-        <property name="connection.url">jdbc:oracle:thin:@localhost:1521:ptcms</property>
-        <property name="connection.username">PT_SYS</property>
-        <property name="connection.password">sys</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:ptcms</property>
+        <property name="hibernate.connection.username">PT_SYS</property>
+        <property name="hibernate.connection.password">sys</property>
         
         <!-- SQL 方言 -->
-        <property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
         
-        <!-- 关闭二级缓存  -->
-        <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
         
-        <property name="current_session_context_class">thread</property>
+        
+        <!-- 二级缓存  -->
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.use_query_cache">true</property>
+        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+        <property name="hibernate.cache.use_structured_entries">true</property>
+        
+        
+        <!-- 当前会话模式 -->
+        <property name="hibernate.current_session_context_class">thread</property>
+        
+        
         
         <!-- 实体类型映射 -->
         <mapping class="platinum.security.po.UserPO"/>

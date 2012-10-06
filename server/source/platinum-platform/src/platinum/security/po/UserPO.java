@@ -4,10 +4,14 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import platinum.framework.po.StandardPO;
 
 @Entity(name = "User")
 @Table(name = "PTT_USER", schema = "PT_SYS")
+@Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 public class UserPO extends StandardPO
 {
 	public static final String ADMIN_USER_ID = "USR-00000000-0000-0000-0000-000000000001";

@@ -111,4 +111,16 @@ public class DAOQuery
 	{
 		_pageSize = pageSize;
 	}
+	
+	
+	
+	private boolean _cachable = false;
+	public boolean isCachable()
+	{
+		return _cachable;
+	}
+	public void setCachable(boolean p_cachable)
+	{
+		_cachable = p_cachable;
+	}
 }

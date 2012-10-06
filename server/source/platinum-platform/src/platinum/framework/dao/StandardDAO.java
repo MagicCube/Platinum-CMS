@@ -130,6 +130,7 @@ public abstract class StandardDAO<T extends StandardPO>
 				query.setParameter(i, p_query.getParameter(i));
 			}
 		}
+		query.setCacheable(p_query.isCachable());
 		
 		List<T> entities = query.list();
 		return entities;

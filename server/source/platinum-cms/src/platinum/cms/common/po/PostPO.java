@@ -13,12 +13,16 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import platinum.cms.common.PostStatus;
 import platinum.cms.common.PostType;
 import platinum.framework.po.StandardPO;
 
 @Entity(name = "Post")
 @Table(name = "PTT_POST", schema = "PT_CMS")
+@Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 public class PostPO extends StandardPO
 {
 	private SubcategoryPO _subcategory = null;

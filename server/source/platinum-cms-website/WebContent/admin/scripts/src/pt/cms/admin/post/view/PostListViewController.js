@@ -25,7 +25,7 @@ pt.cms.admin.post.view.PostListViewController = function()
     };
     
     
-    me.reload = function()
+    me.loadItems = function()
     {
         me.restClient.GET("admin/post/")
             .success(function(p_result){
