@@ -1,0 +1,17 @@
+*
+{
+    font-family: 微软雅黑, Arial;    
+    box-sizing: border-box;
+}
+
+html, body
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a, b, button, code, div, i, input, label, li, menu, ol, p, pre, select, table, textarea, tr, td, th, ul 
+{
+    font-size: 12px;
+}

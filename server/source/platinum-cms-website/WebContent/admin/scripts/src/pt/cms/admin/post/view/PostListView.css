@@ -1,0 +1,61 @@
+.PostListView
+{
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.PostListView > li
+{
+    cursor: pointer;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.PostListView > li.selected #title, .PostListView > li.selected #updateTime, .PostListView > li.selected #summary, .PostListView > li.selected #author
+{
+    color: white;
+}
+
+.PostListView > li div
+{
+    position: absolute;
+    white-space: nowrap;
+}
+
+.PostListView > li #title
+{
+    left: 22px;
+    right: 70px;
+    top: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.PostListView > li #author
+{
+    top: 23px;
+    left: 22px;
+}
+
+.PostListView > li #summary
+{
+    left: 22px;
+    top: 40px;
+    right: 12px;
+    bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #aaa;
+    white-space: normal;
+}
+
+
+.PostListView > li #updateTime
+{
+    width: 100px;
+    top: 6px;
+    right: 12px;
+    color: #5790DD;
+    font-family: Arial;
+    text-align: right;
+}

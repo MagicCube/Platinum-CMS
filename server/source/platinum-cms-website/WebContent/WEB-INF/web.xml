@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:javaee="http://java.sun.com/xml/ns/javaee"
+    xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    id="teched" version="2.4">
+    
+    <display-name>Platinum CMS 网站</display-name>
+    
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+
+
+    
+
+
+
+    <servlet>
+        <display-name>REST 风格服务</display-name>
+        <servlet-name>RESTfulServiceServlet</servlet-name>
+        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>com.sun.jersey.config.property.packages</param-name>
+            <param-value>
+                platinum.security.web.rest,
+                platinum.cms.admin.web.rest
+            </param-value>
+        </init-param>
+        <init-param>
+            <param-name>com.sun.jersey.spi.container.ContainerResponseFilters</param-name>
+            <param-value>com.sun.jersey.api.container.filter.GZIPContentEncodingFilter</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RESTfulServiceServlet</servlet-name>
+        <url-pattern>/api/0/*</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+
+    
+    <filter>
+        <display-name>Platinum CMS 安全认证过滤器</display-name>
+        <filter-name>CMSSecurityFilter</filter-name>
+        <filter-class>platinum.security.web.filter.SecurityFilter</filter-class>
+        <init-param>
+            <param-name>loginPath</param-name>
+            <param-value>/admin/login.jsp</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>CMSSecurityFilter</filter-name>
+        <url-pattern>/admin/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>CMSSecurityFilter</filter-name>
+        <url-pattern>/api/0/admin/*</url-pattern>
+    </filter-mapping>
+    
+    
+    
+    
+
+
+    <listener>
+        <display-name>Platinum 平台启动监听器</display-name>
+        <listener-class>platinum.platform.web.listener.AppContextListener</listener-class>
+    </listener>
+    
+</web-app>
