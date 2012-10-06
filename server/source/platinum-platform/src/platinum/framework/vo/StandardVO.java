@@ -1,5 +1,6 @@
 package platinum.framework.vo;
 
+import java.util.Date;
 import java.util.Map;
 
 import org.codehaus.jettison.json.JSONException;
@@ -43,17 +44,25 @@ public abstract class StandardVO<PO extends StandardPO> extends PTObject
 	{
 		return getString("id");
 	}
-	
-	public String getUpdateTime()
+	public void setId(String p_id)
 	{
-		return getString("updateTime");
+		set("id", p_id);
+	}
+	
+	public Date getUpdateTime()
+	{
+		return (Date)get("updateTime");
+	}
+	public void setUpdateTime(Date p_updateTime)
+	{
+		set("updateTime", p_updateTime);
 	}
 
 	
 	public void loadFromPO(PO p_po)
 	{
-		set("id", p_po.getId());
-		set("updateTime", p_po.getUpdateTime());
+		setId(p_po.getId());
+		setUpdateTime(p_po.getUpdateTime());
 	}
 	
 	public abstract void mergeToPO(PO p_po);

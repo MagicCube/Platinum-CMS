@@ -1,7 +1,5 @@
 package platinum.security.web.rest;
 
-import java.io.PrintWriter;
-
 import javax.servlet.http.HttpSession;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.POST;

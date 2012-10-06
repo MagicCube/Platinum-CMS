@@ -5,6 +5,7 @@ import org.hibernate.Session;
 import platinum.cms.common.po.PostContentPO;
 import platinum.cms.common.po.PostPO;
 import platinum.cms.common.po.PostViewsPO;
+import platinum.cms.common.search.PostSearchEngine;
 import platinum.framework.dao.StandardDAO;
 
 public class PostDAO extends StandardDAO<PostPO>
@@ -30,7 +31,19 @@ public class PostDAO extends StandardDAO<PostPO>
 		savePostContent(p_post.getContent());
 		savePostViews(p_post.getViews());
 		super.save(p_post);
+		
+		PostSearchEngine.getInstance().buildIndex(p_post);
 	}
+	
+	@Override
+	public void update(PostPO p_post)
+	{
+		super.update(p_post);
+		
+		PostSearchEngine.getInstance().updateIndex(p_post);
+	}
+	
+	
 	
 	public void savePostContent(PostContentPO p_content)
 	{
@@ -42,6 +55,8 @@ public class PostDAO extends StandardDAO<PostPO>
 		getSession().update(p_content);
 	}
 
+	
+	
 	public void savePostViews(PostViewsPO p_views)
 	{
 		getSession().save(p_views);
