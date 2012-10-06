@@ -193,7 +193,6 @@ public class Dict implements Iterable<String> {
 		StringBuilder word = new StringBuilder();
 		optimize0(root, words, word);
 		optimize1(root);
-		// TODO, repeat optimize1 ?
 	}
 
 	private void optimize0(Cell cell, char[][] words, StringBuilder word) {

@@ -5,6 +5,7 @@ import java.util.List;
 import platinum.cms.common.dao.PostDAO;
 import platinum.cms.common.dao.PostDAOQuery;
 import platinum.cms.common.po.PostPO;
+import platinum.cms.common.vo.PostDetailVO;
 import platinum.cms.common.vo.PostSimpleVO;
 import platinum.common.PTList;
 
@@ -35,14 +36,35 @@ public class PostAdminService
 		return _postDao;
 	}
 	
+	
+	
+	
+	public PostDetailVO getPostById(String p_id)
+	{
+		PostPO po = getPostDAO().selectById(p_id);
+		if (po != null)
+		{
+			PostDetailVO vo = new PostDetailVO();
+			vo.loadFromPO(po);
+			return vo;
+		}
+		else
+		{
+			return null;
+		}
+	}
+	
 	public PTList<PostSimpleVO> loadPostsByCategory(PostDAOQuery p_query)
 	{
 		List<PostPO> poList = getPostDAO().select(p_query);
-		PTList<PostSimpleVO> voList = _convertToVOList(poList);
+		PTList<PostSimpleVO> voList = _convertToSimpleVOList(poList);
 		return voList;
 	}
 
-	private PTList<PostSimpleVO> _convertToVOList(List<PostPO> p_poList)
+	
+	
+	
+	private PTList<PostSimpleVO> _convertToSimpleVOList(List<PostPO> p_poList)
 	{
 		PTList<PostSimpleVO> voList = new PTList<PostSimpleVO>(p_poList.size());
 		for (PostPO po : p_poList)

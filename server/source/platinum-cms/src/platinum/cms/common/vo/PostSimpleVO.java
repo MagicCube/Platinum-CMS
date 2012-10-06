@@ -97,7 +97,7 @@ public class PostSimpleVO extends StandardVO<PostPO>
 	}
 
 	@Override
-	public void mergeWithPO(PostPO p_po)
+	public void mergeToPO(PostPO p_po)
 	{
 		p_po.setTitle(getTitle());
 		p_po.setAuthor(getAuthor());

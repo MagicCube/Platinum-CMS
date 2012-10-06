@@ -56,5 +56,5 @@ public abstract class StandardVO<PO extends StandardPO> extends PTObject
 		set("updateTime", p_po.getUpdateTime());
 	}
 	
-	public abstract void mergeWithPO(PO p_po);
+	public abstract void mergeToPO(PO p_po);
 }
