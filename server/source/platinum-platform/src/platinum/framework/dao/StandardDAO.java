@@ -132,9 +132,13 @@ public abstract class StandardDAO<T extends StandardPO>
 			}
 		}
 		query.setCacheable(p_query.isCachable());
-		if (p_query.getCacheRegion() != null)
+		if (p_query.isCachable())
 		{
-			query.setCacheRegion(p_query.getCacheRegion());
+			if (p_query.getCacheRegion() != null)
+			{
+				query.setCacheRegion(p_query.getCacheRegion());
+			}
+			query.setCacheMode(CacheMode.NORMAL);
 		}
 		
 		List<T> entities = query.list();
