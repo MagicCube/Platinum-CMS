@@ -31,7 +31,19 @@ public class PostResource extends AbstractResource
 		PTList<PostSimpleVO> posts = null;
 		if (p_keywords != null)
 		{
-			posts = PostSearchEngine.getInstance().search(p_keywords);
+			if (p_keywords.length() == 32)
+			{
+				PostSimpleVO post = PostAdminService.getInstance().getPostById(p_keywords);
+				if (post != null)
+				{
+					posts = new PTList<PostSimpleVO>();
+					posts.add(post);
+				}
+			}
+			if (posts == null)
+			{
+				posts = PostSearchEngine.getInstance().search(p_keywords);
+			}
 		}
 		else
 		{
@@ -50,7 +62,7 @@ public class PostResource extends AbstractResource
 			@PathParam("id") String p_id
 			) throws JSONException
 	{
-		PostDetailVO post = PostAdminService.getInstance().getPostById(p_id);
+		PostDetailVO post = PostAdminService.getInstance().getPostDetailById(p_id);
 		return responseWithJSONObject(post.toJSONObject());
 	}
 }

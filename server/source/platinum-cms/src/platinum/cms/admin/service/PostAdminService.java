@@ -38,8 +38,22 @@ public class PostAdminService
 	
 	
 	
+	public PostSimpleVO getPostById(String p_id)
+	{
+		PostPO po = getPostDAO().selectById(p_id);
+		if (po != null)
+		{
+			PostSimpleVO vo = new PostSimpleVO();
+			vo.loadFromPO(po);
+			return vo;
+		}
+		else
+		{
+			return null;
+		}
+	}
 	
-	public PostDetailVO getPostById(String p_id)
+	public PostDetailVO getPostDetailById(String p_id)
 	{
 		PostPO po = getPostDAO().selectById(p_id);
 		if (po != null)

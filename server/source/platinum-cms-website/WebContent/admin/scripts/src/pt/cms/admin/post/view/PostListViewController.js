@@ -102,7 +102,14 @@ pt.cms.admin.post.view.PostListViewController = function()
         if (e.keyCode == 13)
         {
             var keywords = _$keywords.val();
-            me.queryByKeywords(keywords);
+            if (keywords.trim() == "")
+            {
+                me.queryByCategory(null);
+            }
+            else
+            {
+                me.queryByKeywords(keywords);
+            }
         }
     }
     
