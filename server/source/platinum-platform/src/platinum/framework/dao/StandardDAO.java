@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.persistence.Entity;
 
+import org.hibernate.CacheMode;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -131,6 +132,10 @@ public abstract class StandardDAO<T extends StandardPO>
 			}
 		}
 		query.setCacheable(p_query.isCachable());
+		if (p_query.getCacheRegion() != null)
+		{
+			query.setCacheRegion(p_query.getCacheRegion());
+		}
 		
 		List<T> entities = query.list();
 		return entities;

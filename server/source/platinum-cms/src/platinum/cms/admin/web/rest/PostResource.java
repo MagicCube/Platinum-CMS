@@ -29,6 +29,7 @@ public class PostResource extends AbstractResource
 		PostDAOQuery query = new PostDAOQuery();
 		query.setPageSize(50);
 		query.setPageIndex(p_pageIndex);
+		
 		PTList<PostSimpleVO> posts = PostAdminService.getInstance().loadPostsByCategory(query);
 		return responseWithJSONArray(posts.toJSONArray());
 	}

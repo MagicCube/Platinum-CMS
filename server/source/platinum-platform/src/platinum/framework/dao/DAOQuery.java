@@ -123,4 +123,15 @@ public class DAOQuery
 	{
 		_cachable = p_cachable;
 	}
+	
+	private String _cacheRegion = null;
+	public String getCacheRegion()
+	{
+		return _cacheRegion;
+	}
+	public void setCacheRegion(String p_region)
+	{
+		setCachable(true);
+		_cacheRegion = p_region;
+	}
 }
