@@ -18,9 +18,9 @@
 	<classpathentry kind="lib" path="../../library/javassist-3.15.0-GA.jar"/>
 	<classpathentry kind="lib" path="../../library/oracle-ojdbc6.jar"/>
 	<classpathentry kind="lib" path="../../library/IKAnalyzer2012.jar"/>
-	<classpathentry kind="lib" path="D:/@Platinum/server/library/ehcache-core-2.4.3.jar"/>
-	<classpathentry kind="lib" path="D:/@Platinum/server/library/slf4j-api-1.6.1.jar"/>
-	<classpathentry kind="lib" path="D:/@Platinum/server/library/jboss-hibernate-ehcache-4.1.7.Final.jar"/>
-	<classpathentry kind="lib" path="D:/@Platinum/server/library/apache-lucene-memory-3.6.1.jar"/>
+	<classpathentry kind="lib" path="../../library/ehcache-core-2.4.3.jar"/>
+	<classpathentry kind="lib" path="../../library/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="../../library/jboss-hibernate-ehcache-4.1.7.Final.jar"/>
+	<classpathentry kind="lib" path="../../library/apache-lucene-memory-3.6.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
