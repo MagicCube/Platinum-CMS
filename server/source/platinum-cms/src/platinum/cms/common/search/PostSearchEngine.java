@@ -151,13 +151,13 @@ public class PostSearchEngine
 		}
 	}
 	
-	public PTList<PostSimpleVO> search(String p_query)
+	public PTList<PostSimpleVO> search(String p_keywords)
 	{
 		PTList<PostSimpleVO> result = new PTList<PostSimpleVO>();
 		Query query = null;
 		try
 		{
-			query = _queryParser.parse(p_query);
+			query = _queryParser.parse(p_keywords);
 		}
 		catch (ParseException e)
 		{
@@ -190,7 +190,7 @@ public class PostSearchEngine
 		        SimpleHTMLFormatter simpleHTMLFormatter = new SimpleHTMLFormatter(  
 		                "<span class='keyword'>", "</span>");		        
 		        Highlighter highlighter = new Highlighter(simpleHTMLFormatter, new QueryScorer(query));  
-		        Fragmenter fragmenter = new SimpleFragmenter(120);  
+		        Fragmenter fragmenter = new SimpleFragmenter(45);  
 		        highlighter.setTextFragmenter(fragmenter);
 		        
 		        

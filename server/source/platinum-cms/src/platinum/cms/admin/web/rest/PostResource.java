@@ -11,6 +11,7 @@ import org.codehaus.jettison.json.JSONException;
 
 import platinum.cms.admin.service.PostAdminService;
 import platinum.cms.common.dao.PostDAOQuery;
+import platinum.cms.common.search.PostSearchEngine;
 import platinum.cms.common.vo.PostDetailVO;
 import platinum.cms.common.vo.PostSimpleVO;
 import platinum.common.PTList;
@@ -23,14 +24,23 @@ public class PostResource extends AbstractResource
 	@Path("/")
 	public Response loadPosts(
 			@QueryParam("categoryId") String p_categoryId,
+			@QueryParam("keywords") String p_keywords,
 			@QueryParam("pageIndex") @DefaultValue("0") int p_pageIndex
 			) throws JSONException
 	{
-		PostDAOQuery query = new PostDAOQuery();
-		query.setPageSize(50);
-		query.setPageIndex(p_pageIndex);
-		
-		PTList<PostSimpleVO> posts = PostAdminService.getInstance().loadPostsByCategory(query);
+		PTList<PostSimpleVO> posts = null;
+		if (p_keywords != null)
+		{
+			posts = PostSearchEngine.getInstance().search(p_keywords);
+		}
+		else
+		{
+			PostDAOQuery query = new PostDAOQuery();
+			query.setPageSize(50);
+			query.setPageIndex(p_pageIndex);
+			
+			posts = PostAdminService.getInstance().loadPostsByCategory(query);
+		}
 		return responseWithJSONArray(posts.toJSONArray());
 	}
 	

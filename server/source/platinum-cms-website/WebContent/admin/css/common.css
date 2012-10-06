@@ -15,3 +15,8 @@ a, b, button, code, div, i, input, label, li, menu, ol, p, pre, select, table, t
 {
     font-size: 12px;
 }
+
+input
+{
+    outline: none;
+}

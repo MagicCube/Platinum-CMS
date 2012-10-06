@@ -12,6 +12,9 @@ pt.cms.admin.post.view.PostListViewController = function()
     me.toolbar = null;
     
     me.restClient = null;
+    
+    var _$keywords = null;
+    var _renderMode = "text";
        
     base.viewDidLoad = me.viewDidLoad;
     me.viewDidLoad = function()
@@ -21,19 +24,38 @@ pt.cms.admin.post.view.PostListViewController = function()
         me.view.rowHeight = 78;
         base.viewDidLoad();
         
-        me.toolbar = new pt.cms.admin.common.view.Toolbar();
+        me.toolbar = new pt.cms.admin.common.view.Toolbar({ id: "postListToolbar" });
+        _$keywords = $("<input type='text' id='keywords'>");
+        _$keywords.on("keydown", _keywords_onkeydown);
+        var $searchBar = $("<div id='searchBar'>");
+        $searchBar.append(_$keywords);
+        me.toolbar.$element.append($searchBar);
     };
     
     
     me.loadItems = function()
     {
-        me.restClient.GET("admin/post/")
+        me.queryByCategory(null);
+    };
+    
+    
+    me.queryByKeywords = function(p_keywords)
+    {
+        _renderMode = "html";
+        me.restClient.GET("admin/post/", { keywords: p_keywords })
             .success(function(p_result){
                 me.setItems(p_result);
             });
     };
     
-    
+    me.queryByCategory = function(p_categoryId)
+    {
+        _renderMode = "text";
+        me.restClient.GET("admin/post/")
+            .success(function(p_result){
+                me.setItems(p_result);
+            });
+    };
     
     
     
@@ -51,15 +73,38 @@ pt.cms.admin.post.view.PostListViewController = function()
     {
         base.renderRow($p_row, p_item);
         
-        $p_row.children("#title").attr("title", p_item.title);
+        
         
         var updateTime = new Date(p_item.updateTime);
         $p_row.children("#updateTime").text($format(updateTime, "smart"));
         $p_row.children("#updateTime").attr("title", $format(updateTime, "yyyy年M日d日 HH:mm:ss"));
-        
         $p_row.children("#author").text(p_item.author);
-        $p_row.children("#summary").text(p_item.summary);
+        
+        
+        
+        if (_renderMode == "html")
+        {
+            $p_row.children("#title").html(p_item.title);
+            $p_row.children("#summary").html(p_item.summary);
+        }
+        else
+        {
+            $p_row.children("#title").html(p_item.title);
+            $p_row.children("#summary").text(p_item.summary);
+        }
+        $p_row.children("#title").attr("title", $p_row.children("#title").text());
     };
+    
+    
+    
+    function _keywords_onkeydown(e)
+    {
+        if (e.keyCode == 13)
+        {
+            var keywords = _$keywords.val();
+            me.queryByKeywords(keywords);
+        }
+    }
     
     return me.endOfClass(arguments);
 };

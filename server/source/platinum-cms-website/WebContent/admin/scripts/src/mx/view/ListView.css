@@ -23,7 +23,7 @@
 
 
 
-.ListView > li div, .ListView > li span
+.ListView > li div
 {
     display: block;
     white-space: nowrap;
