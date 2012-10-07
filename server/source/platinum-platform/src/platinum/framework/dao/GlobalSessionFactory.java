@@ -25,7 +25,7 @@ public class GlobalSessionFactory
 	public static void init()
 	{
 		Configuration _hibernateConfig = new Configuration();
-		File daoDirectory = PTEnvironment.getPhysicalFile("dao");
+		File daoDirectory = PTEnvironment.getPhysicalFile("pt/dao");
 		File[] files = daoDirectory.listFiles(new FileFilter()
 		{
 			@Override

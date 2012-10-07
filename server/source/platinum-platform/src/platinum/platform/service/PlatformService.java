@@ -83,7 +83,7 @@ public class PlatformService
 	{
 		PTLog.info("正在加载配置信息...");
 		
-		File configFile = PTEnvironment.getPhysicalFile("conf/platinum.properties");
+		File configFile = PTEnvironment.getPhysicalFile("pt/conf/platinum.properties");
 		ConfigurationManager.loadFromProperties(configFile);
 	}
 	
