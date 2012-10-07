@@ -22,7 +22,7 @@ pt.cms.admin.post.view.RootViewController = function()
         me.postListViewController = new pt.cms.admin.post.view.PostListViewController({
             restClient: me.restClient,
             view: {
-                bounds: { left: 0, top: 0, bottom: 0, width: 310 },
+                bounds: { left: 0, top: 0, bottom: 0, width: "38%" },
                 onselectionchanged: _postListView_onselectionchanged
             }
         });
@@ -31,7 +31,7 @@ pt.cms.admin.post.view.RootViewController = function()
         me.postDetailViewController = new pt.cms.admin.post.view.PostDetailViewController({
             restClient: me.restClient,
             view: {
-                bounds: { left: 312, right: 0, top: 0, bottom: 0 }
+                bounds: { left: parseInt(me.postListViewController.view.bounds.width) + ".2%", right: 0, top: 0, bottom: 0 }
             }
         });
         me.view.addSubview(me.postDetailViewController.view);
