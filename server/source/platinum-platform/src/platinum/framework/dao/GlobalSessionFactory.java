@@ -1,6 +1,7 @@
 package platinum.framework.dao;
 
 import java.io.File;
+import java.io.FileFilter;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -23,8 +24,28 @@ public class GlobalSessionFactory
 	
 	public static void init()
 	{
-		File configFile = PTEnvironment.getPhysicalFile("conf/hibernate.xml");
-		Configuration _hibernateConfig = new Configuration().configure(configFile);
+		Configuration _hibernateConfig = new Configuration();
+		File daoDirectory = PTEnvironment.getPhysicalFile("dao");
+		File[] files = daoDirectory.listFiles(new FileFilter()
+		{
+			@Override
+			public boolean accept(File p_pathname)
+			{
+				if (p_pathname.getName().endsWith(".xml"))
+				{
+					return true;
+				}
+				else
+				{
+					return false;
+				}
+			}
+		});
+		
+		for (File file : files)
+		{
+			_hibernateConfig.configure(file);
+		}
 		
 	    ServiceRegistry serviceRegistry = new ServiceRegistryBuilder().applySettings(_hibernateConfig.getProperties()).buildServiceRegistry();
 		_instance = _hibernateConfig.buildSessionFactory(serviceRegistry);

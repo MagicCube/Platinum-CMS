@@ -30,16 +30,7 @@
         <!-- 当前会话模式 -->
         <property name="hibernate.current_session_context_class">thread</property>
         
-        
-        
-        <!-- 实体类型映射 -->
         <mapping class="platinum.security.po.UserPO"/>
-        <mapping class="platinum.security.po.UserGroupPO"/>
-        
-        <mapping class="platinum.cms.common.po.PostContentPO"/>
-        <mapping class="platinum.cms.common.po.PostViewsPO"/>
-        <mapping class="platinum.cms.common.po.PostPO"/>
-        <mapping class="platinum.cms.common.po.SubcategoryPO"/>
-        <mapping class="platinum.cms.common.po.CategoryPO"/>
+        <mapping class="platinum.security.po.UserGroupPO"/>        
     </session-factory>
 </hibernate-configuration>
