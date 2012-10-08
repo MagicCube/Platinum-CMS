@@ -43,7 +43,7 @@ pt.cms.admin.post.view.PostDetailViewController = function()
     me.renderView = function()
     {
         me.view.$element.children("h1").text(me.item.title);
-        me.view.$element.find("#info").text($format(new Date(me.item.updateTime), "yyyy年M月d日 HH:mm") + " " + me.item.source + " " + me.item.author);
+        me.view.$element.find("#info").text($format(new Date(me.item.updateTime), "yyyy年M月d日 HH:mm") + " " + me.item.source);
         me.view.$element.find("ul > #category").text(me.item.categoryId + " > ");
         me.view.$element.find("ul > #subcategory").text(me.item.subcategoryName);
         me.view.$element.children("#content").html(me.item.contentText);

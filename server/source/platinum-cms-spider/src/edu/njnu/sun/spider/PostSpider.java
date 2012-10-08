@@ -42,9 +42,7 @@ public class PostSpider implements IPostSpider
 		
 		post.setTitle(document.select("#article #title").first().text());
 		post.setSummary(_trim(document.select("#article #summary").first().text()));
-		post.setAuthor(document.select("#article #author a").text());
-		post.setSource("阳光网");
-		post.setSourceURL(p_link);
+		post.setSource(document.select("#article #author a").text());
 		
 		
 		

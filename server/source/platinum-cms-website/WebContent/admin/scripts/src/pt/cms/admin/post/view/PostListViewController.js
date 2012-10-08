@@ -13,6 +13,8 @@ pt.cms.admin.post.view.PostListViewController = function()
     
     me.restClient = null;
     
+    me.$searchBar = null;
+    
     var _$keywords = null;
     var _renderMode = "text";
        
@@ -27,9 +29,10 @@ pt.cms.admin.post.view.PostListViewController = function()
         me.toolbar = new pt.cms.admin.common.view.Toolbar({ id: "postListToolbar" });
         _$keywords = $("<input type='text' id='keywords'>");
         _$keywords.on("keydown", _keywords_onkeydown);
-        var $searchBar = $("<div id='searchBar'>");
-        $searchBar.append(_$keywords);
-        me.toolbar.$element.append($searchBar);
+        me.$searchBar = $("<div id='searchBar'>");
+        me.$searchBar.append(_$keywords);
+        
+        me.toolbar.$element.append(me.$searchBar);
     };
     
     
@@ -64,7 +67,7 @@ pt.cms.admin.post.view.PostListViewController = function()
     me.createBlankRow = function(p_index)
     {
         var $row = base.createBlankRow(p_index);
-        $row.append("<div id='updateTime'/> <div id='author'/> <div id='summary'/>");
+        $row.append("<div id='updateTime'/> <div id='source'/> <div id='summary'/>");
         return $row;
     };
     
@@ -78,7 +81,7 @@ pt.cms.admin.post.view.PostListViewController = function()
         var updateTime = new Date(p_item.updateTime);
         $p_row.children("#updateTime").text($format(updateTime, "smart"));
         $p_row.children("#updateTime").attr("title", $format(updateTime, "yyyy年M日d日 HH:mm:ss"));
-        $p_row.children("#author").text(p_item.author);
+        $p_row.children("#source").text(p_item.source);
         
         
         

@@ -1,6 +1,6 @@
 ﻿/*==============================================================*/
 /* DBMS name:      ORACLE Version 11g                           */
-/* Created on:     2012/10/5 16:26:48                           */
+/* Created on:     2012/10/8 19:34:41                           */
 /*==============================================================*/
 
 
@@ -88,9 +88,7 @@ create table PT_CMS.PTT_POST
    POST_STATUS          SMALLINT             default 0 not null,
    SUMMARY              NVARCHAR2(256),
    PUBLISHER            NVARCHAR2(32)        not null,
-   AUTHOR               NVARCHAR2(32),
    SOURCE               NVARCHAR2(32),
-   SOURCE_URL           NVARCHAR2(256),
    PHOTO_URL            NVARCHAR2(256),
    SHOWN_IN_FRONT_PAGE  SMALLINT             default 0,
    CREATE_TIME          TIMESTAMP            default sysdate not null,

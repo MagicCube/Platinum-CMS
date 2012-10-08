@@ -57,13 +57,13 @@ public class PostSimpleVO extends StandardVO<PostPO>
 		set("summary", value);
 	}
 	
-	public String getAuthor()
+	public String getSource()
 	{
-		return getString("author");
+		return getString("source");
 	}
-	public void setAuthor(String value)
+	public void setSource(String value)
 	{
-		set("author", value);
+		set("source", value);
 	}
 	
 	public String getPhotoURL()
@@ -90,7 +90,7 @@ public class PostSimpleVO extends StandardVO<PostPO>
 	{
 		super.loadFromPO(p_po);
 		setTitle(p_po.getTitle());
-		setAuthor(p_po.getAuthor());
+		setSource(p_po.getSource());
 		setSummary(p_po.getSummary());
 		setCategoryId(p_po.getCategoryId());
 		setPhotoURL(p_po.getPhotoURL());
@@ -100,7 +100,7 @@ public class PostSimpleVO extends StandardVO<PostPO>
 	public void mergeToPO(PostPO p_po)
 	{
 		p_po.setTitle(getTitle());
-		p_po.setAuthor(getAuthor());
+		p_po.setSource(getSource());
 		p_po.setSummary(getSummary());
 		p_po.setCategoryId(getCategoryId());
 		p_po.setPhotoURL(getPhotoURL());

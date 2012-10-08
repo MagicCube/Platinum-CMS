@@ -156,17 +156,6 @@ public class PostPO extends StandardPO
 	{
 		_publisher = value;
 	}
-
-	private String _author = null;
-	@Column(name = "AUTHOR")
-	public String getAuthor()
-	{
-		return _author;
-	}
-	public void setAuthor(String value)
-	{
-		_author = value;
-	}
 	
 	private String _source = null;
 	@Column(name = "SOURCE")
@@ -177,17 +166,6 @@ public class PostPO extends StandardPO
 	public void setSource(String value)
 	{
 		_source = value;
-	}
-
-	private String _sourceURL = null;
-	@Column(name = "SOURCE_URL")
-	public String getSourceURL()
-	{
-		return _sourceURL;
-	}
-	public void setSourceURL(String value)
-	{
-		_sourceURL = value;
 	}
 
 	private String _photoURL = null;

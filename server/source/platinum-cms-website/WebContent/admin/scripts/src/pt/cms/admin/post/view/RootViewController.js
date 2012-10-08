@@ -22,7 +22,7 @@ pt.cms.admin.post.view.RootViewController = function()
         me.postListViewController = new pt.cms.admin.post.view.PostListViewController({
             restClient: me.restClient,
             view: {
-                bounds: { left: 0, top: 0, bottom: 0, width: "38%" },
+                bounds: { left: 0, top: 38, bottom: 0, width: "38%" },
                 onselectionchanged: _postListView_onselectionchanged
             }
         });

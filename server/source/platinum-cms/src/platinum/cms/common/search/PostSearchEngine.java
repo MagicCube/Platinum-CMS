@@ -151,6 +151,8 @@ public class PostSearchEngine
 		}
 	}
 	
+	// TODO 添加 deleteIndex 方法。
+	
 	public PTList<PostSimpleVO> search(String p_keywords)
 	{
 		PTList<PostSimpleVO> result = new PTList<PostSimpleVO>();
@@ -184,7 +186,7 @@ public class PostSearchEngine
 		        post.setId(doc.get("id"));  
 		        post.setPhotoURL(doc.get("photoURL"));
 		        post.setUpdateTime(new Date(Long.parseLong(doc.get("updateTime"))));
-		        post.setAuthor(doc.get("author"));
+		        post.setSource(doc.get("source"));
 		        
 		        
 		        SimpleHTMLFormatter simpleHTMLFormatter = new SimpleHTMLFormatter(  
@@ -248,7 +250,7 @@ public class PostSearchEngine
 		document.add(new Field("updateTime", String.valueOf(p_po.getUpdateTime().getTime()), Store.YES, Index.NOT_ANALYZED));
 		if (StringUtil.notNullOrEmpty(p_po.getSource()))
 		{
-			document.add(new Field("author", p_po.getAuthor(), Store.YES, Index.NOT_ANALYZED));
+			document.add(new Field("source", p_po.getSource(), Store.YES, Index.NOT_ANALYZED));
 		}
 		if (StringUtil.notNullOrEmpty(p_po.getPhotoURL()))
 		{
