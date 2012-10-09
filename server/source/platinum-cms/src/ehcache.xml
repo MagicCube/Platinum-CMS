@@ -2,5 +2,24 @@
 <ehcache>
     <diskStore path="java.io.tmpdir" />
     <defaultCache maxElementsInMemory="10000" eternal="false"
-        timeToIdleSeconds="120" timeToLiveSeconds="120" overflowToDisk="true" />
-</ehcache> 
+        timeToIdleSeconds="60" timeToLiveSeconds="60" overflowToDisk="true" memoryStoreEvictionPolicy="LRU"/>
+        
+    <Cache name="eternalCache"
+        eternal="true"
+        overflowToDisk="false"/>
+    
+    <Cache name="oneHourCache"
+        overflowToDisk="false"
+        timeToIdleSeconds="3600"
+        timeToLiveSeconds="3600"/>
+    
+    <Cache name="dailyCache"
+        overflowToDisk="false"
+        timeToIdleSeconds="86400"
+        timeToLiveSeconds="86400"/>
+
+    <Cache name="SimplePageCachingFilter"
+        overflowToDisk="false"
+        timeToIdleSeconds="43200"
+        timeToLiveSeconds="43200"/>
+</ehcache>

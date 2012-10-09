@@ -7,5 +7,6 @@
 </head>
 <body>
 <h1>Welcome to Platinum Platform</h1>
+<%= new java.util.Date() %>
 </body>
 </html>

@@ -28,6 +28,7 @@ pt.cms.admin.post.view.PostListViewController = function()
         
         me.toolbar = new pt.cms.admin.common.view.Toolbar({ id: "postListToolbar" });
         _$keywords = $("<input type='text' id='keywords'>");
+        _$keywords.hint({ text: "输入搜索关键字或内容的 ID" });
         _$keywords.on("keydown", _keywords_onkeydown);
         me.$searchBar = $("<div id='searchBar'>");
         me.$searchBar.append(_$keywords);

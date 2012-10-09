@@ -100,6 +100,11 @@ sour.PostListView
     background-color: #efefef;    
 }
 
+#postListToolbar #keywords.blur
+{
+    color: gray;
+}
+
 #postListToolbar #keywords:focus
 {
     background-color: white;
