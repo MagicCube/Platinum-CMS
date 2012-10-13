@@ -17,21 +17,21 @@
 # Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
 ##
 
-upstream tomcat
+upstream PT_CMS
 { 
 	server 127.0.0.1:8080;
-} 
+}
 
 server {
 	listen   80;
 
 	server_name localhost;
-	
+		
 	location /admin {
-		proxy_pass http://tomcat/admin;
+		proxy_pass http://PT_CMS/admin;
 	}
 
 	location /api {
-		proxy_pass http://tomcat/api;
+		proxy_pass http://PT_CMS/api;
 	}
 }
