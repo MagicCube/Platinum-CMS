@@ -21,7 +21,7 @@ public class Program
 	
 	public static void main(String[] args)
 	{	
-		PlatformService.getInstance().start("D:/@Platinum/server/source/platinum-cms-website/WebContent/WEB-INF", null);
+		PlatformService.getInstance().start("/home/platinum/workspace/platinum/server/source/platinum-cms-website/WebContent/WEB-INF/pt", null);
 		
 		List<String> postLinkCollection = new ArrayList<String>();
 		_findPostLinks(postLinkCollection);

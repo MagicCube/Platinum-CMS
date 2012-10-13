@@ -113,7 +113,7 @@ public class PostSearchEngine
 		{
 			try
 			{
-				_indexDirectory = FSDirectory.open(new File("D:/@Platinum-Shared/indexes"));
+				_indexDirectory = FSDirectory.open(new File("/home/platinum/workspace/platinum-shared/indexes"));
 			}
 			catch (IOException e)
 			{

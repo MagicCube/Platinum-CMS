@@ -12,7 +12,7 @@ public class AppContextListener implements ServletContextListener
 	@Override
 	public void contextInitialized(ServletContextEvent p_event)
 	{
-		PlatformService.getInstance().start(p_event.getServletContext().getRealPath("/WEB-INF"), p_event.getServletContext().getContextPath());
+		PlatformService.getInstance().start(p_event.getServletContext().getRealPath("/WEB-INF/pt"), p_event.getServletContext().getContextPath());
 	}
 	
 	@Override
