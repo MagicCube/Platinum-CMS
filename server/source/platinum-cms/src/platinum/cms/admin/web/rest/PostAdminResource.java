@@ -18,7 +18,7 @@ import platinum.common.PTList;
 import platinum.framework.web.rest.AbstractResource;
 
 @Path("admin/post")
-public class PostResource extends AbstractResource
+public class PostAdminResource extends AbstractResource
 {
 	@GET
 	@Path("/")

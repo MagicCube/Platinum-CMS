@@ -36,14 +36,12 @@ public class PostAdminService
 		return _postDao;
 	}
 	
-	
-	
-	public PostSimpleVO getPostById(String p_id)
+	public PostDetailVO getPostDetailById(String p_id)
 	{
 		PostPO po = getPostDAO().selectById(p_id);
 		if (po != null)
 		{
-			PostSimpleVO vo = new PostSimpleVO();
+			PostDetailVO vo = new PostDetailVO();
 			vo.loadFromPO(po);
 			return vo;
 		}
@@ -53,12 +51,12 @@ public class PostAdminService
 		}
 	}
 	
-	public PostDetailVO getPostDetailById(String p_id)
+	public PostSimpleVO getPostById(String p_id)
 	{
 		PostPO po = getPostDAO().selectById(p_id);
 		if (po != null)
 		{
-			PostDetailVO vo = new PostDetailVO();
+			PostSimpleVO vo = new PostSimpleVO();
 			vo.loadFromPO(po);
 			return vo;
 		}
