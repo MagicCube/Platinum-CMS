@@ -37,6 +37,7 @@ import org.wltea.analyzer.lucene.IKAnalyzer;
 
 import platinum.cms.common.po.PostPO;
 import platinum.cms.common.vo.PostSimpleVO;
+import platinum.common.PTEnvironment;
 import platinum.common.PTList;
 import platinum.common.PTRuntimeException;
 import platinum.common.util.StringUtil;
@@ -113,7 +114,7 @@ public class PostSearchEngine
 		{
 			try
 			{
-				_indexDirectory = FSDirectory.open(new File("/home/platinum/workspace/platinum-shared/indexes"));
+				_indexDirectory = FSDirectory.open(PTEnvironment.getSharedFile("indexes"));
 			}
 			catch (IOException e)
 			{
