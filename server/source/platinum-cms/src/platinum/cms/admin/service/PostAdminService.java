@@ -3,11 +3,11 @@ package platinum.cms.admin.service;
 import java.util.List;
 
 import platinum.cms.common.dao.PostDAO;
-import platinum.cms.common.dao.PostDAOQuery;
 import platinum.cms.common.po.PostPO;
 import platinum.cms.common.vo.PostDetailVO;
 import platinum.cms.common.vo.PostSimpleVO;
 import platinum.common.PTList;
+import platinum.framework.dao.DAOQuery;
 
 public class PostAdminService
 {
@@ -66,9 +66,12 @@ public class PostAdminService
 		}
 	}
 	
-	public PTList<PostSimpleVO> loadPostsByCategory(PostDAOQuery p_query)
+	public PTList<PostSimpleVO> loadPostsByCategory(String p_categoryId)
 	{
-		List<PostPO> poList = getPostDAO().select(p_query);
+		DAOQuery query = new DAOQuery();
+		query.setOrderByClause("createTime desc");
+		query.setPageSize(50);
+		List<PostPO> poList = getPostDAO().select(query);
 		PTList<PostSimpleVO> voList = _convertToSimpleVOList(poList);
 		return voList;
 	}

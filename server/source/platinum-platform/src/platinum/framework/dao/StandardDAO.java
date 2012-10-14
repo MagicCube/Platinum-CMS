@@ -3,6 +3,8 @@ package platinum.framework.dao;
 import java.lang.reflect.ParameterizedType;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import javax.persistence.Entity;
 
@@ -126,9 +128,11 @@ public abstract class StandardDAO<T extends StandardPO>
 		}
 		if (p_query.getParameters() != null)
 		{
-			for (int i = 0; i < p_query.getParameters().length; i++)
+			Map<String, Object> params = p_query.getParameters();
+			Set<String> keys = params.keySet();
+			for (String key : keys)
 			{
-				query.setParameter(i, p_query.getParameter(i));
+				query.setParameter(key, p_query.getParameter(key));
 			}
 		}
 		query.setCacheable(p_query.isCachable());

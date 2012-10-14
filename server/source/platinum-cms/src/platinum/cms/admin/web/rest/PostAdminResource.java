@@ -10,7 +10,6 @@ import javax.ws.rs.core.Response;
 import org.codehaus.jettison.json.JSONException;
 
 import platinum.cms.admin.service.PostAdminService;
-import platinum.cms.common.dao.PostDAOQuery;
 import platinum.cms.common.search.PostSearchEngine;
 import platinum.cms.common.vo.PostDetailVO;
 import platinum.cms.common.vo.PostSimpleVO;
@@ -47,11 +46,7 @@ public class PostAdminResource extends AbstractResource
 		}
 		else
 		{
-			PostDAOQuery query = new PostDAOQuery();
-			query.setPageSize(50);
-			query.setPageIndex(p_pageIndex);
-			
-			posts = PostAdminService.getInstance().loadPostsByCategory(query);
+			posts = PostAdminService.getInstance().loadPostsByCategory(null);
 		}
 		return responseWithJSONArray(posts.toJSONArray());
 	}

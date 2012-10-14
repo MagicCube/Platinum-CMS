@@ -101,7 +101,9 @@ public class PostSpider implements IPostSpider
 	private SubcategoryDAO _subcategoryDAO = new SubcategoryDAO();
 	private SubcategoryPO _getSubcategoryByName(String p_subcategoryName, String p_categoryId)
 	{
-		SubcategoryPO subcategoryPO = _subcategoryDAO.selectFirst(new DAOQuery("subcategoryName=?", p_subcategoryName));
+		DAOQuery query = new DAOQuery("subcategoryName=:subcategoryName");
+		query.setParameter("subcategoryName", p_subcategoryName);
+		SubcategoryPO subcategoryPO = _subcategoryDAO.selectFirst(query);
 		if (subcategoryPO == null)
 		{
 			_subcategoryDAO.beginTransaction();

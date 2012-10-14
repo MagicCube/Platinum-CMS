@@ -1,13 +1,15 @@
 package platinum.framework.dao;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import platinum.common.util.StringUtil;
 
 public class DAOQuery
 {
-	public DAOQuery(String p_whereClause, Object... p_params)
+	public DAOQuery(String p_whereClause)
 	{
 		_whereClause = p_whereClause;
-		_parameters = p_params;
 	}
 	
 	public DAOQuery()
@@ -50,35 +52,31 @@ public class DAOQuery
 	
 	
 	
-	private Object[] _parameters = null;
-	public Object[] getParameters()
+	private Map<String, Object> _parameters = new HashMap<String, Object>();
+	public Map<String, Object> getParameters()
 	{
 		return _parameters;
 	}
-	public void setParameters(Object... p_parameters)
-	{
-		_parameters = p_parameters;
-	}
-	public Object getParameter(int p_index)
+	public Object getParameter(String p_key)
 	{
 		if (_parameters != null)
 		{
-			return _parameters[p_index];
+			return _parameters.get(p_key);
 		}
 		return null;
 	}
-	public void setParameter(int p_index, Object p_value)
+	public void setParameter(String p_key, Object p_value)
 	{
 		if (_parameters != null)
 		{
-			_parameters[p_index] = p_value;
+			_parameters.put(p_key, p_value);
 		}
 	}
 	
 	
 	
 	
-	public String _orderByClause = null;
+	private String _orderByClause = null;
 	public String getOrderByClause()
 	{
 		return _orderByClause;
