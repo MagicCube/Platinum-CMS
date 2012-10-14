@@ -5,6 +5,7 @@ import java.util.List;
 
 import platinum.cms.common.dao.PostDAO;
 import platinum.cms.common.po.PostPO;
+import platinum.common.util.PathUtil;
 import platinum.platform.service.PlatformService;
 
 public class Program
@@ -21,7 +22,8 @@ public class Program
 	
 	public static void main(String[] args)
 	{	
-		PlatformService.getInstance().start("/home/platinum/workspace/platinum/server/source/platinum-cms-website/WebContent/WEB-INF/pt", null);
+		String rootPath = PathUtil.combineFilePath(System.getenv("PT_CMS_WEBCONTENT"), "WEB-INF/pt");
+		PlatformService.getInstance().start(rootPath, null);
 		
 		List<String> postLinkCollection = new ArrayList<String>();
 		_findPostLinks(postLinkCollection);

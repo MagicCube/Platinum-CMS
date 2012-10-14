@@ -7,6 +7,7 @@ import platinum.common.PTEnvironment;
 import platinum.common.PTLog;
 import platinum.common.PTRuntimeException;
 import platinum.common.conf.ConfigurationManager;
+import platinum.common.util.FileSystemUtil;
 import platinum.framework.dao.GlobalSessionFactory;
 
 
@@ -43,9 +44,9 @@ public class PlatformService
 	
 	public void start(String p_rootPhysicalPath, String p_rootWebPath)
 	{
-		PTEnvironment.setRootPhysicalPath(p_rootPhysicalPath);
+		PTEnvironment.setRootPhysicalPath(p_rootPhysicalPath);		
 		PTEnvironment.setWebContextPath(p_rootWebPath);
-		
+		PTEnvironment.getSharedPath();
 		
 		setState(PlatformState.STARTING);
 		
