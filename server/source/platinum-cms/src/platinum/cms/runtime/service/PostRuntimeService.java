@@ -56,11 +56,8 @@ public class PostRuntimeService
 	
 	public PTList<PostSimpleVO> loadLatestPostByCategory(String p_categoryId, int p_count)
 	{
-		DAOQuery query = new DAOQuery("postStatus=:postStatus and categoryId=:categoryId");
-		query.setOrderByClause("createTime desc");
-		query.setParameter("postStatus", PostStatus.PUBLISHED);
+		DAOQuery query = _createQuery("categoryId=:categoryId", p_count);
 		query.setParameter("categoryId", p_categoryId);
-		query.setPageSize(p_count);
 		List<PostPO> poList = getPostDAO().select(query);
 		PTList<PostSimpleVO> result = _convertToSimpleVOList(poList);
 		return result;
@@ -74,11 +71,8 @@ public class PostRuntimeService
 	
 	public PTList<PostSimpleVO> loadLatestPostBySubcategory(String p_subcategoryId, int p_count)
 	{
-		DAOQuery query = new DAOQuery("postStatus=:postStatus and subcategoryId=:subcategoryId");
-		query.setOrderByClause("createTime desc");
-		query.setParameter("postStatus", PostStatus.PUBLISHED);
+		DAOQuery query = _createQuery("subcategoryId=:subcategoryId", p_count);
 		query.setParameter("subcategoryId", p_subcategoryId);
-		query.setPageSize(p_count);
 		List<PostPO> poList = getPostDAO().select(query);
 		PTList<PostSimpleVO> result = _convertToSimpleVOList(poList);
 		return result;
@@ -92,12 +86,27 @@ public class PostRuntimeService
 	
 	public PTList<PostSimpleVO> loadLatestPhotoNews(int p_count)
 	{
-		return null;
+		DAOQuery query = _createQuery("photoURL is not null", p_count);
+		query.setOrderByClause("createTime desc");
+		query.setParameter("postStatus", PostStatus.PUBLISHED);
+		query.setPageSize(p_count);
+		List<PostPO> poList = getPostDAO().select(query);
+		PTList<PostSimpleVO> result = _convertToSimpleVOList(poList);
+		return result;
 	}
 	
 	
 	
 	
+	
+	private DAOQuery _createQuery(String p_whereClause, int p_count)
+	{
+		DAOQuery query = new DAOQuery("postStatus=:postStatus and " + p_whereClause);
+		query.setOrderByClause("createTime desc");
+		query.setParameter("postStatus", PostStatus.PUBLISHED);
+		query.setPageSize(p_count);
+		return query;
+	}
 	
 	private PTList<PostSimpleVO> _convertToSimpleVOList(List<PostPO> p_poList)
 	{
