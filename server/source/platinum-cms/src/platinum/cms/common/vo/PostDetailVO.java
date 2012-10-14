@@ -104,15 +104,6 @@ public class PostDetailVO extends PostSimpleVO
 		set("source", value);
 	}
 	
-	public boolean isShownInFrontPage()
-	{
-		return getBoolean("shownInFrontPage");
-	}
-	public void setShownInFrontPage(boolean value)
-	{
-		set("shownInFrontPage", value);
-	}
-	
 	
 	
 	@Override
@@ -126,7 +117,6 @@ public class PostDetailVO extends PostSimpleVO
 		this.setPostStatus(p_po.getPostStatus());
 		this.setPublisher(p_po.getPublisher());
 		this.setSource(p_po.getSource());
-		this.setShownInFrontPage(p_po.isShownInFrontPage());
 	}
 	
 	@Override
@@ -139,6 +129,5 @@ public class PostDetailVO extends PostSimpleVO
 		p_po.setPostStatus(this.getPostStatus());
 		p_po.setPublisher(this.getPublisher());
 		p_po.setSource(this.getSource());
-		p_po.setShownInFrontPage(this.isShownInFrontPage());
 	}
 }

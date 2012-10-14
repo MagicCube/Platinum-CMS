@@ -178,15 +178,4 @@ public class PostPO extends StandardPO
 	{
 		_photoURL = value;
 	}
-
-	private boolean _shownInFrontPage = false;
-	@Column(name = "SHOWN_IN_FRONT_PAGE")
-	public boolean isShownInFrontPage()
-	{
-		return _shownInFrontPage;
-	}
-	public void setShownInFrontPage(boolean value)
-	{
-		_shownInFrontPage = value;
-	}
 }

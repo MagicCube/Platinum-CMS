@@ -1,6 +1,6 @@
 ﻿/*==============================================================*/
 /* DBMS name:      ORACLE Version 11g                           */
-/* Created on:     2012/10/11 19:30:43                          */
+/* Created on:     2012/10/14 20:54:06                          */
 /*==============================================================*/
 
 
@@ -90,7 +90,6 @@ create table PT_CMS.PTT_POST
    PUBLISHER            NVARCHAR2(32)        not null,
    SOURCE               NVARCHAR2(32),
    PHOTO_URL            NVARCHAR2(256),
-   SHOWN_IN_FRONT_PAGE  SMALLINT             default 0,
    CREATE_TIME          TIMESTAMP            default sysdate not null,
    UPDATE_TIME          TIMESTAMP            default sysdate not null,
    constraint PK_PTT_POST primary key (ID)
