@@ -7,7 +7,6 @@ import platinum.common.PTEnvironment;
 import platinum.common.PTLog;
 import platinum.common.PTRuntimeException;
 import platinum.common.conf.ConfigurationManager;
-import platinum.common.util.FileSystemUtil;
 import platinum.framework.dao.GlobalSessionFactory;
 
 

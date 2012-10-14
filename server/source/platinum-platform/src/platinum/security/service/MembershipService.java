@@ -1,5 +1,6 @@
 package platinum.security.service;
 
+import platinum.common.util.EncryptionUtil;
 import platinum.framework.dao.DAOQuery;
 import platinum.security.dao.UserDAO;
 import platinum.security.po.UserPO;
@@ -44,10 +45,10 @@ public class MembershipService
 	
 	public String validateUser(String p_loginName, String p_loginPassword)
 	{
-		DAOQuery query = new DAOQuery("lower(loginName)=?", p_loginName.toLowerCase());
+		DAOQuery query = new DAOQuery("loginName=?", p_loginName.toLowerCase());
 		query.setCachable(true);
 		UserPO entity = getUserEntityDAO().selectFirst(query);
-		if (entity != null && entity.getLoginPass().equals(p_loginPassword))
+		if (entity != null && entity.getLoginPass().equals(EncryptionUtil.encryptPassword(p_loginPassword)))
 		{
 			return entity.getId();
 		}
