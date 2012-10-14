@@ -15,5 +15,5 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/platinum-platform"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/platinum-cms"/>
-	<classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
