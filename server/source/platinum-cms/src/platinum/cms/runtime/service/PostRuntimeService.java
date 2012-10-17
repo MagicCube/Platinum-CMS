@@ -12,32 +12,35 @@ import platinum.framework.dao.DAOQuery;
 
 public class PostRuntimeService
 {
-	private static PostRuntimeService _instance = null;
-	public static PostRuntimeService getInstance()
+	public PostRuntimeService()
 	{
-		if (_instance == null)
-		{
-			_instance = new PostRuntimeService();
-		}
-		return _instance;
+		
 	}
 	
-	private PostDAO _postDao = null;
+	private PostDAO _postDAO = null;
 	private PostDAO getPostDAO()
 	{
-		if (_postDao == null)
+		if (_postDAO == null)
 		{
-			_postDao = new PostDAO();
+			_postDAO = new PostDAO();
 		}
-		return _postDao;
+		return _postDAO;
 	}
 	
-	
+	private static PostDAO _singlePostDAO = null;
+	private PostDAO getSinglePostDAO()
+	{
+		if (_singlePostDAO == null)
+		{
+			_singlePostDAO = new PostDAO();
+		}
+		return _singlePostDAO;
+	}
 	
 	
 	public PostDetailVO getPostDetailById(String p_id)
 	{
-		PostPO po = getPostDAO().selectById(p_id);
+		PostPO po = getSinglePostDAO().selectById(p_id);
 		if (po != null)
 		{
 			PostDetailVO vo = new PostDetailVO();
