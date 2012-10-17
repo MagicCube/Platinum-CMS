@@ -3,10 +3,7 @@ package platinum.cms.admin.service;
 import java.util.List;
 
 import platinum.cms.common.dao.PostDAO;
-import platinum.cms.common.po.PostPO;
-import platinum.cms.common.vo.PostDetailVO;
-import platinum.cms.common.vo.PostSimpleVO;
-import platinum.common.PTList;
+import platinum.cms.common.entity.PostEntity;
 import platinum.framework.dao.DAOQuery;
 
 public class PostAdminService
@@ -26,68 +23,28 @@ public class PostAdminService
 		return _instance;
 	}
 	
-	private PostDAO _postDao = null;
+	private PostDAO _postDAO = null;
 	private PostDAO getPostDAO()
 	{
-		if (_postDao == null)
+		if (_postDAO == null)
 		{
-			_postDao = new PostDAO();
+			_postDAO = new PostDAO();
 		}
-		return _postDao;
+		return _postDAO;
 	}
 	
-	public PostDetailVO getPostDetailById(String p_id)
+	public PostEntity getPostById(String p_id)
 	{
-		PostPO po = getPostDAO().selectById(p_id);
-		if (po != null)
-		{
-			PostDetailVO vo = new PostDetailVO();
-			vo.loadFromPO(po);
-			return vo;
-		}
-		else
-		{
-			return null;
-		}
+		PostEntity entity = getPostDAO().selectById(p_id);
+		return entity;
 	}
 	
-	public PostSimpleVO getPostById(String p_id)
-	{
-		PostPO po = getPostDAO().selectById(p_id);
-		if (po != null)
-		{
-			PostSimpleVO vo = new PostSimpleVO();
-			vo.loadFromPO(po);
-			return vo;
-		}
-		else
-		{
-			return null;
-		}
-	}
-	
-	public PTList<PostSimpleVO> loadPostsByCategory(String p_categoryId)
+	public List<PostEntity> loadPostsByCategory(String p_categoryId)
 	{
 		DAOQuery query = new DAOQuery();
 		query.setOrderByClause("createTime desc");
 		query.setPageSize(50);
-		List<PostPO> poList = getPostDAO().select(query);
-		PTList<PostSimpleVO> voList = _convertToSimpleVOList(poList);
-		return voList;
-	}
-
-	
-	
-	
-	private PTList<PostSimpleVO> _convertToSimpleVOList(List<PostPO> p_poList)
-	{
-		PTList<PostSimpleVO> voList = new PTList<PostSimpleVO>(p_poList.size());
-		for (PostPO po : p_poList)
-		{
-			PostSimpleVO vo = new PostSimpleVO();
-			vo.loadFromPO(po);
-			voList.add(vo);
-		}
-		return voList;
+		List<PostEntity> poList = getPostDAO().select(query);
+		return poList;
 	}
 }

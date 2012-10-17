@@ -1,4 +1,4 @@
-package platinum.cms.common.po;
+package platinum.cms.common.entity;
 
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
@@ -18,21 +18,21 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import platinum.cms.common.PostStatus;
 import platinum.cms.common.PostType;
-import platinum.framework.po.StandardPO;
+import platinum.framework.entity.StandardEntity;
 
 @Entity(name = "Post")
 @Table(name = "PTT_POST", schema = "PT_CMS")
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-public class PostPO extends StandardPO
+public class PostEntity extends StandardEntity
 {
-	private SubcategoryPO _subcategory = null;
+	private SubcategoryEntity _subcategory = null;
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "SUBCATEGORY_ID")
-	public SubcategoryPO getSubcategory()
+	public SubcategoryEntity getSubcategory()
 	{
 		return _subcategory;
 	}
-	public void setSubcategory(SubcategoryPO value)
+	public void setSubcategory(SubcategoryEntity value)
 	{
 		_subcategory = value;
 	}
@@ -48,18 +48,18 @@ public class PostPO extends StandardPO
 		_categoryID = value;
 	}
 
-	private PostContentPO _content = null;
+	private PostContentEntity _content = null;
 	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "POST_CONTENT_ID")
-	public PostContentPO getContent()
+	public PostContentEntity getContent()
 	{
 		if (_content == null)
 		{
-			_content = new PostContentPO();
+			_content = new PostContentEntity();
 		}
 		return _content;
 	}
-	public void setContent(PostContentPO value)
+	public void setContent(PostContentEntity value)
 	{
 		_content = value;
 	}	
@@ -74,18 +74,18 @@ public class PostPO extends StandardPO
 	}
 	
 
-	private PostViewsPO _views = null;
+	private PostViewsEntity _views = null;
 	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "POST_VIEWS_ID")
-	public PostViewsPO getViews()
+	public PostViewsEntity getViews()
 	{
 		if (_views == null)
 		{
-			_views = new PostViewsPO();
+			_views = new PostViewsEntity();
 		}
 		return _views;
 	}
-	public void setViews(PostViewsPO value)
+	public void setViews(PostViewsEntity value)
 	{
 		_views = value;
 	}

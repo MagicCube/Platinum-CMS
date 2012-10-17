@@ -4,10 +4,7 @@ import java.util.List;
 
 import platinum.cms.common.PostStatus;
 import platinum.cms.common.dao.PostDAO;
-import platinum.cms.common.po.PostPO;
-import platinum.cms.common.vo.PostDetailVO;
-import platinum.cms.common.vo.PostSimpleVO;
-import platinum.common.PTList;
+import platinum.cms.common.entity.PostEntity;
 import platinum.framework.dao.DAOQuery;
 
 public class PostRuntimeService
@@ -38,63 +35,51 @@ public class PostRuntimeService
 	}
 	
 	
-	public PostDetailVO getPostDetailById(String p_id)
+	public PostEntity getPostById(String p_id)
 	{
-		PostPO po = getSinglePostDAO().selectById(p_id);
-		if (po != null)
-		{
-			PostDetailVO vo = new PostDetailVO();
-			vo.loadFromPO(po);
-			return vo;
-		}
-		else
-		{
-			return null;
-		}
+		PostEntity post = getSinglePostDAO().selectById(p_id);
+		return post;
 	}
 	
 	
 	
 
 	
-	public PTList<PostSimpleVO> loadLatestPostByCategory(String p_categoryId, int p_count)
+	public List<PostEntity> loadLatestPostByCategory(String p_categoryId, int p_count)
 	{
 		DAOQuery query = _createQuery("categoryId=:categoryId", p_count);
 		query.setParameter("categoryId", p_categoryId);
-		List<PostPO> poList = getPostDAO().select(query);
-		PTList<PostSimpleVO> result = _convertToSimpleVOList(poList);
+		List<PostEntity> result = getPostDAO().select(query);
 		return result;
 	}
-	public PTList<PostSimpleVO> loadLatestPostByCategory(String p_categoryId)
+	public List<PostEntity>loadLatestPostByCategory(String p_categoryId)
 	{
 		return loadLatestPostByCategory(p_categoryId, 0);
 	}
 	
 	
 	
-	public PTList<PostSimpleVO> loadLatestPostBySubcategory(String p_subcategoryId, int p_count)
+	public List<PostEntity> loadLatestPostBySubcategory(String p_subcategoryId, int p_count)
 	{
 		DAOQuery query = _createQuery("subcategoryId=:subcategoryId", p_count);
 		query.setParameter("subcategoryId", p_subcategoryId);
-		List<PostPO> poList = getPostDAO().select(query);
-		PTList<PostSimpleVO> result = _convertToSimpleVOList(poList);
+		List<PostEntity> result = getPostDAO().select(query);
 		return result;
 	}
-	public PTList<PostSimpleVO> loadLatestPostBySubcategory(String p_subcategoryId)
+	public List<PostEntity> loadLatestPostBySubcategory(String p_subcategoryId)
 	{
 		return loadLatestPostBySubcategory(p_subcategoryId, 0);
 	}
 	
 	
 	
-	public PTList<PostSimpleVO> loadLatestPhotoNews(int p_count)
+	public List<PostEntity> loadLatestPhotoNews(int p_count)
 	{
 		DAOQuery query = _createQuery("photoURL is not null", p_count);
 		query.setOrderByClause("createTime desc");
 		query.setParameter("postStatus", PostStatus.PUBLISHED);
 		query.setPageSize(p_count);
-		List<PostPO> poList = getPostDAO().select(query);
-		PTList<PostSimpleVO> result = _convertToSimpleVOList(poList);
+		List<PostEntity> result = getPostDAO().select(query);
 		return result;
 	}
 	
@@ -109,17 +94,5 @@ public class PostRuntimeService
 		query.setParameter("postStatus", PostStatus.PUBLISHED);
 		query.setPageSize(p_count);
 		return query;
-	}
-	
-	private PTList<PostSimpleVO> _convertToSimpleVOList(List<PostPO> p_poList)
-	{
-		PTList<PostSimpleVO> voList = new PTList<PostSimpleVO>(p_poList.size());
-		for (PostPO po : p_poList)
-		{
-			PostSimpleVO vo = new PostSimpleVO();
-			vo.loadFromPO(po);
-			voList.add(vo);
-		}
-		return voList;
 	}
 }

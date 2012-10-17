@@ -2,13 +2,13 @@ package platinum.cms.common.dao;
 
 import org.hibernate.Session;
 
-import platinum.cms.common.po.PostContentPO;
-import platinum.cms.common.po.PostPO;
-import platinum.cms.common.po.PostViewsPO;
+import platinum.cms.common.entity.PostContentEntity;
+import platinum.cms.common.entity.PostEntity;
+import platinum.cms.common.entity.PostViewsEntity;
 import platinum.cms.common.search.PostSearchEngine;
-import platinum.framework.dao.StandardDAO;
+import platinum.framework.dao.StandardEntityDAO;
 
-public class PostDAO extends StandardDAO<PostPO>
+public class PostDAO extends StandardEntityDAO<PostEntity>
 {
 	public PostDAO()
 	{
@@ -26,7 +26,7 @@ public class PostDAO extends StandardDAO<PostPO>
 	
 	
 	@Override
-	public void save(PostPO p_post)
+	public void save(PostEntity p_post)
 	{
 		savePostContent(p_post.getContent());
 		savePostViews(p_post.getViews());
@@ -36,7 +36,7 @@ public class PostDAO extends StandardDAO<PostPO>
 	}
 	
 	@Override
-	public void update(PostPO p_post)
+	public void update(PostEntity p_post)
 	{
 		super.update(p_post);
 		
@@ -45,24 +45,24 @@ public class PostDAO extends StandardDAO<PostPO>
 	
 	
 	
-	public void savePostContent(PostContentPO p_content)
+	public void savePostContent(PostContentEntity p_content)
 	{
 		getSession().save(p_content);
 	}
 
-	public void updatePostContent(PostContentPO p_content)
+	public void updatePostContent(PostContentEntity p_content)
 	{
 		getSession().update(p_content);
 	}
 
 	
 	
-	public void savePostViews(PostViewsPO p_views)
+	public void savePostViews(PostViewsEntity p_views)
 	{
 		getSession().save(p_views);
 	}
 
-	public void updatePostViews(PostViewsPO p_views)
+	public void updatePostViews(PostViewsEntity p_views)
 	{
 		getSession().update(p_views);
 	}

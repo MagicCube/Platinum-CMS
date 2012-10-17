@@ -8,8 +8,8 @@ import javax.ws.rs.core.Response;
 
 import platinum.common.util.StringUtil;
 import platinum.framework.web.rest.AbstractResource;
-import platinum.security.service.MembershipService;
-import platinum.security.vo.MembershipUser;
+import platinum.security.Membership;
+import platinum.security.MembershipUser;
 
 @Path("security")
 public class SecurityResource extends AbstractResource
@@ -21,7 +21,7 @@ public class SecurityResource extends AbstractResource
 			@FormParam("loginPassword") String p_loginPassword
 		)
 	{
-		if (MembershipService.getInstance().validateUser(p_loginName, p_loginPassword) != null)
+		if (Membership.getInstance().validateUser(p_loginName, p_loginPassword) != null)
 		{
 			return responseOK();
 		}
@@ -41,10 +41,10 @@ public class SecurityResource extends AbstractResource
 	{
 		if (StringUtil.notNullOrEmpty(p_loginName) && StringUtil.notNullOrEmpty(p_loginPassword))
 		{
-			String userId = MembershipService.getInstance().validateUser(p_loginName, p_loginPassword);
+			String userId = Membership.getInstance().validateUser(p_loginName, p_loginPassword);
 			if (userId != null)
 			{
-				MembershipUser user = MembershipService.getInstance().getUserById(userId);
+				MembershipUser user = Membership.getInstance().getUserById(userId);
 				if (user != null)
 				{
 					HttpSession session = getRequest().getSession(true);

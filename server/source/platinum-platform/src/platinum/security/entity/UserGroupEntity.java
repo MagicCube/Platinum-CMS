@@ -1,4 +1,4 @@
-package platinum.security.po;
+package platinum.security.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,12 +7,12 @@ import javax.persistence.Table;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
-import platinum.framework.po.StandardPO;
+import platinum.framework.entity.StandardEntity;
 
 @Entity(name = "UserGroup")
 @Table(name = "PTT_USER_GROUP", schema = "PT_SYS")
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-public class UserGroupPO extends StandardPO
+public class UserGroupEntity extends StandardEntity
 {
 	private String _userGroupName = null;
 	@Column(name = "USER_GROUP_NAME")

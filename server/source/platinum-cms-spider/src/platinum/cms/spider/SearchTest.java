@@ -12,8 +12,8 @@ public class SearchTest
 	 */
 	public static void main(String[] args)
 	{
-		PTList<PostSimpleVO> result = PostSearchEngine.getInstance().search("着力解决");
-		System.out.println(result.toString());
+		//PTList<PostSimpleVO> result = PostSearchEngine.getInstance().search("着力解决");
+		//System.out.println(result.toString());
 	}
 
 }

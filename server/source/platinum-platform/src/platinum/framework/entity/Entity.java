@@ -1,4 +1,4 @@
-package platinum.framework.po;
+package platinum.framework.entity;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
@@ -8,7 +8,7 @@ import javax.persistence.MappedSuperclass;
 import org.hibernate.annotations.GenericGenerator;
 
 @MappedSuperclass
-public abstract class BasePO
+public abstract class Entity
 {
 	private String _id = null;
 	@Id

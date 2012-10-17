@@ -1,4 +1,4 @@
-package platinum.framework.po;
+package platinum.framework.entity;
 
 import java.util.Date;
 
@@ -8,7 +8,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @MappedSuperclass
-public abstract class StandardPO extends BasePO
+public abstract class StandardEntity extends Entity
 {
 	private Date _createTime = null;
 	@Temporal(TemporalType.TIMESTAMP)

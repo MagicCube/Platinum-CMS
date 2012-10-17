@@ -1,4 +1,4 @@
-package platinum.cms.common.po;
+package platinum.cms.common.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,12 +7,12 @@ import javax.persistence.Table;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
-import platinum.framework.po.StandardPO;
+import platinum.framework.entity.StandardEntity;
 
 @Entity(name = "Subcategory")
 @Table(name = "PTT_SUBCATEGORY", schema = "PT_CMS")
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-public class SubcategoryPO extends StandardPO
+public class SubcategoryEntity extends StandardEntity
 {
 	private String _subcategoryName;
 	@Column(name = "SUBCATEGORY_NAME")

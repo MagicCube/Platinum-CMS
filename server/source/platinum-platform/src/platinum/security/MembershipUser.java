@@ -1,14 +1,14 @@
-package platinum.security.vo;
+package platinum.security;
 
 import platinum.common.PTObject;
-import platinum.security.po.UserPO;
+import platinum.security.entity.UserEntity;
 
 public class MembershipUser extends PTObject
 {
 	private static final long serialVersionUID = 4195382891955310136L;
 	
 	
-	public static MembershipUser createFromPO(UserPO p_po)
+	public static MembershipUser createFromPO(UserEntity p_po)
 	{
 		MembershipUser user = new MembershipUser();
 		user.set("id", p_po.getId());

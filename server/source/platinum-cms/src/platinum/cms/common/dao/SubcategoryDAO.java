@@ -2,10 +2,10 @@ package platinum.cms.common.dao;
 
 import org.hibernate.Session;
 
-import platinum.cms.common.po.SubcategoryPO;
-import platinum.framework.dao.StandardDAO;
+import platinum.cms.common.entity.SubcategoryEntity;
+import platinum.framework.dao.StandardEntityDAO;
 
-public class SubcategoryDAO extends StandardDAO<SubcategoryPO>
+public class SubcategoryDAO extends StandardEntityDAO<SubcategoryEntity>
 {
 	public SubcategoryDAO()
 	{

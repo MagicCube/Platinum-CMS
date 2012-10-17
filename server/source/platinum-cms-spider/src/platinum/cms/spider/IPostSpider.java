@@ -1,8 +1,8 @@
 package platinum.cms.spider;
 
-import platinum.cms.common.po.PostPO;
+import platinum.cms.common.entity.PostEntity;
 
 public interface IPostSpider
 {
-	public PostPO crawlPost(String p_link);
+	public PostEntity crawlPost(String p_link);
 }

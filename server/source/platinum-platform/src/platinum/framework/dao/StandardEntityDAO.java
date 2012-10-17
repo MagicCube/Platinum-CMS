@@ -13,34 +13,34 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import platinum.framework.po.StandardPO;
+import platinum.framework.entity.StandardEntity;
 
-public abstract class StandardDAO<T extends StandardPO>
+public abstract class StandardEntityDAO<T extends StandardEntity>
 {
-	public StandardDAO()
+	public StandardEntityDAO()
 	{
 		
 	}
 	
-	public StandardDAO(Session p_session)
+	public StandardEntityDAO(Session p_session)
 	{
 		_session = p_session;
 	}
 	
-	private Class<T> _poClass = null;
+	private Class<T> _entityClass = null;
 	@SuppressWarnings("unchecked")
-	public Class<T> getPOClass()
+	public Class<T> getEntityClass()
 	{
-		if (_poClass == null)
+		if (_entityClass == null)
 		{
-			_poClass = (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
+			_entityClass = (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
 		}
-		return _poClass;
+		return _entityClass;
 	}
 	
 	public String getEntityName()
 	{
-		Class<T> cls = getPOClass();
+		Class<T> cls = getEntityClass();
 		Entity entityAnnotation = cls.getAnnotation(Entity.class);
 		return entityAnnotation.name();
 	}
@@ -103,11 +103,18 @@ public abstract class StandardDAO<T extends StandardPO>
 		}
 	}
 	
+	
+	
+	
+	
+	
+	
+	
 	@SuppressWarnings("unchecked")
 	public T selectById(String p_id)
 	{
 		Session session = getSession();
-		T po = (T)session.get(getPOClass(), p_id);
+		T po = (T)session.get(getEntityClass(), p_id);
 		return po;
 	}
 	
@@ -148,7 +155,20 @@ public abstract class StandardDAO<T extends StandardPO>
 		List<T> entities = query.list();
 		return entities;
 	}
+	
+	public T selectFirst(DAOQuery p_query)
+	{
+		p_query.setPageIndex(0);
+		p_query.setPageSize(1);
+		List<T> entities = select(p_query);
+		return entities.size() > 0 ? entities.get(0) : null;
+	}
+	
 
+
+	
+	
+	
 	public List<T> selectAll(String p_orderByClause)
 	{
 		DAOQuery query = new DAOQuery(getEntityName());
@@ -162,36 +182,35 @@ public abstract class StandardDAO<T extends StandardPO>
 		return selectAll(null);
 	}
 	
-	public T selectFirst(DAOQuery p_query)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public void save(T p_entity)
 	{
-		p_query.setPageIndex(0);
-		p_query.setPageSize(1);
-		List<T> entities = select(p_query);
-		return entities.size() > 0 ? entities.get(0) : null;
-	}
-	
-	
-	
-	
-	
-	
-	public void save(T p_po)
-	{
-		if (p_po.getCreateTime() == null)
+		if (p_entity.getCreateTime() == null)
 		{
-			p_po.setCreateTime(new Date());
+			p_entity.setCreateTime(new Date());
 		}
-		if (p_po.getUpdateTime() == null)
+		if (p_entity.getUpdateTime() == null)
 		{
-			p_po.setUpdateTime(new Date());
+			p_entity.setUpdateTime(new Date());
 		}
 		Session session = getSession();
-		session.save(p_po);
+		session.save(p_entity);
 	}
 	
-	public void saveAll(List<T> p_poList)
+	public void saveAll(List<T> p_entityList)
 	{
-		for (T entity : p_poList)
+		for (T entity : p_entityList)
 		{
 			save(entity);
 		}
@@ -202,16 +221,16 @@ public abstract class StandardDAO<T extends StandardPO>
 	
 	
 	
-	public void update(T p_po)
+	public void update(T p_entity)
 	{
-		p_po.setUpdateTime(new Date());
+		p_entity.setUpdateTime(new Date());
 		Session session = getSession();
-		session.update(p_po);
+		session.update(p_entity);
 	}
 	
-	public void updateAll(List<T> p_poList)
+	public void updateAll(List<T> p_entityList)
 	{
-		for (T entity : p_poList)
+		for (T entity : p_entityList)
 		{
 			update(entity);
 		}
@@ -220,10 +239,10 @@ public abstract class StandardDAO<T extends StandardPO>
 	
 	
 	
-	public void delete(T p_po)
+	public void delete(T p_entity)
 	{
 		Session session = getSession();
-		session.delete(p_po);
+		session.delete(p_entity);
 	}
 
 	public void deleteById(String p_id)

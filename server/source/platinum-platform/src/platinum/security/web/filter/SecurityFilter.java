@@ -14,8 +14,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import platinum.security.service.MembershipService;
-import platinum.security.vo.MembershipUser;
+import platinum.security.Membership;
+import platinum.security.MembershipUser;
 
 public class SecurityFilter implements Filter
 {
@@ -58,7 +58,7 @@ public class SecurityFilter implements Filter
 						Object user = session.getAttribute("pt.membership.currentUser");
 						if (user != null)
 						{
-							MembershipService.getInstance().setCurrentUser((MembershipUser)user);
+							Membership.getInstance().setCurrentUser((MembershipUser)user);
 							p_chain.doFilter(request, p_response);
 							return;
 						}

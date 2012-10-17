@@ -2,10 +2,10 @@ package platinum.security.dao;
 
 import org.hibernate.Session;
 
-import platinum.framework.dao.StandardDAO;
-import platinum.security.po.UserGroupPO;
+import platinum.framework.dao.StandardEntityDAO;
+import platinum.security.entity.UserGroupEntity;
 
-public class UserGroupDAO extends StandardDAO<UserGroupPO>
+public class UserGroupDAO extends StandardEntityDAO<UserGroupEntity>
 {
 	public UserGroupDAO()
 	{

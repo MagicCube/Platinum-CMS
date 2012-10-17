@@ -1,7 +1,7 @@
-<%@ tag import="platinum.security.service.MembershipService"%>
+<%@ tag import="platinum.security.Membership"%>
 <%@ tag language="java" pageEncoding="UTF-8"%>
 <%
-MembershipService membership = MembershipService.getInstance();
+Membership membership = Membership.getInstance();
 %>
 <menu id="userStatus">
     <li id="user">

@@ -13,8 +13,8 @@ import org.jsoup.select.Elements;
 import platinum.cms.common.PostStatus;
 import platinum.cms.common.PostType;
 import platinum.cms.common.dao.SubcategoryDAO;
-import platinum.cms.common.po.PostPO;
-import platinum.cms.common.po.SubcategoryPO;
+import platinum.cms.common.entity.PostEntity;
+import platinum.cms.common.entity.SubcategoryEntity;
 import platinum.cms.spider.IPostSpider;
 import platinum.framework.dao.DAOQuery;
 
@@ -22,9 +22,9 @@ public class PostSpider implements IPostSpider
 {
 	private static SimpleDateFormat _dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 	
-	public PostPO crawlPost(String p_link)
+	public PostEntity crawlPost(String p_link)
 	{
-		PostPO post = new PostPO();
+		PostEntity post = new PostEntity();
 		post.setPublisher("Admin");
 		post.setPostType(PostType.NEWS);
 		post.setPostStatus(PostStatus.PUBLISHED);
@@ -64,7 +64,7 @@ public class PostSpider implements IPostSpider
 		// 子栏目
 		Elements subcategoryElement = document.select("#article #locate a").eq(2);
 		String subcategoryName = subcategoryElement.text();
-		SubcategoryPO subcategory = _getSubcategoryByName(subcategoryName, post.getCategoryId());
+		SubcategoryEntity subcategory = _getSubcategoryByName(subcategoryName, post.getCategoryId());
 		post.setSubcategory(subcategory);
 		
 		
@@ -99,15 +99,15 @@ public class PostSpider implements IPostSpider
 	
 	
 	private SubcategoryDAO _subcategoryDAO = new SubcategoryDAO();
-	private SubcategoryPO _getSubcategoryByName(String p_subcategoryName, String p_categoryId)
+	private SubcategoryEntity _getSubcategoryByName(String p_subcategoryName, String p_categoryId)
 	{
 		DAOQuery query = new DAOQuery("subcategoryName=:subcategoryName");
 		query.setParameter("subcategoryName", p_subcategoryName);
-		SubcategoryPO subcategoryPO = _subcategoryDAO.selectFirst(query);
+		SubcategoryEntity subcategoryPO = _subcategoryDAO.selectFirst(query);
 		if (subcategoryPO == null)
 		{
 			_subcategoryDAO.beginTransaction();
-			subcategoryPO = new SubcategoryPO();
+			subcategoryPO = new SubcategoryEntity();
 			subcategoryPO.setCategoryId(p_categoryId);
 			subcategoryPO.setSubcategoryName(p_subcategoryName);
 			_subcategoryDAO.save(subcategoryPO);

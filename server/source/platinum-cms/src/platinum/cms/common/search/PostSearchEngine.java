@@ -1,9 +1,9 @@
 package platinum.cms.common.search;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.StringReader;
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.TokenStream;
@@ -35,10 +35,8 @@ import org.jsoup.Jsoup;
 import org.wltea.analyzer.lucene.IKAnalyzer;
 
 
-import platinum.cms.common.po.PostPO;
-import platinum.cms.common.vo.PostSimpleVO;
+import platinum.cms.common.entity.PostEntity;
 import platinum.common.PTEnvironment;
-import platinum.common.PTList;
 import platinum.common.PTRuntimeException;
 import platinum.common.util.StringUtil;
 
@@ -124,7 +122,7 @@ public class PostSearchEngine
 		return _indexDirectory;
 	}
 	
-	public void buildIndex(PostPO p_po)
+	public void buildIndex(PostEntity p_po)
 	{
 		Document document = _generateDocumentFromVO(p_po);
 		
@@ -139,7 +137,7 @@ public class PostSearchEngine
 		}
 	}
 	
-	public void updateIndex(PostPO p_vo)
+	public void updateIndex(PostEntity p_vo)
 	{
 		Document document = _generateDocumentFromVO(p_vo);
 		try
@@ -151,12 +149,14 @@ public class PostSearchEngine
 
 		}
 	}
+
 	
-	// TODO 添加 deleteIndex 方法。
 	
-	public PTList<PostSimpleVO> search(String p_keywords)
+	
+	
+	public List<Document> search(String p_keywords)
 	{
-		PTList<PostSimpleVO> result = new PTList<PostSimpleVO>();
+		List<Document> result = new ArrayList<Document>();
 		Query query = null;
 		try
 		{
@@ -183,11 +183,7 @@ public class PostSearchEngine
 				  
 		        ScoreDoc scoreDoc = hits.scoreDocs[i];  
 		        Document doc = _indexSearcher.doc(scoreDoc.doc);  
-		        PostSimpleVO post = new PostSimpleVO();  
-		        post.setId(doc.get("id"));  
-		        post.setPhotoURL(doc.get("photoURL"));
-		        post.setUpdateTime(new Date(Long.parseLong(doc.get("updateTime"))));
-		        post.setSource(doc.get("source"));
+ 
 		        
 		        
 		        SimpleHTMLFormatter simpleHTMLFormatter = new SimpleHTMLFormatter(  
@@ -204,11 +200,7 @@ public class PostSearchEngine
 				highlightText = highlighter.getBestFragment(tokenStream, content);
 				if (StringUtil.notNullOrEmpty(highlightText))
 				{
-					post.setSummary(highlightText);
-				}
-				else
-				{
-					post.setSummary(content);
+					doc.add(new Field("contentTextHighlight", highlightText, Store.NO, Index.NOT_ANALYZED));
 				}
 				
 				
@@ -218,14 +210,10 @@ public class PostSearchEngine
 		        highlightText = highlighter.getBestFragment(tokenStream, title);  
 		        if (StringUtil.notNullOrEmpty(highlightText))
 				{
-		        	post.setTitle(highlightText);  
+					doc.add(new Field("titleHighlight", highlightText, Store.NO, Index.NOT_ANALYZED));
 				}
-		        else
-		        {
-		        	post.setTitle(title);
-		        }
-		  
-		        result.add(post);
+		        
+		        result.add(doc);
 		    }  
 		}
 		catch (IOException e)
@@ -244,7 +232,7 @@ public class PostSearchEngine
 	
 
 
-	private Document _generateDocumentFromVO(PostPO p_po)
+	private Document _generateDocumentFromVO(PostEntity p_po)
 	{
 		Document document = new Document();
 		document.add(new Field("id", p_po.getId(), Store.YES, Index.NOT_ANALYZED));

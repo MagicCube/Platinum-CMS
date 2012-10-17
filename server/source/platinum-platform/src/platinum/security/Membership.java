@@ -1,34 +1,33 @@
-package platinum.security.service;
+package platinum.security;
 
 import platinum.common.util.EncryptionUtil;
 import platinum.framework.dao.DAOQuery;
 import platinum.security.dao.UserDAO;
-import platinum.security.po.UserPO;
-import platinum.security.vo.MembershipUser;
+import platinum.security.entity.UserEntity;
 
-public class MembershipService
+public class Membership
 {
-	private MembershipService() 
+	private Membership() 
 	{
-		_userEntityDAO = new UserDAO();
+		_userDAO = new UserDAO();
 	}
 	
-	private static MembershipService _instance = null;
-	public static MembershipService getInstance()
+	private static Membership _instance = null;
+	public static Membership getInstance()
 	{
 		if (_instance == null)
 		{
-			_instance = new MembershipService();
+			_instance = new Membership();
 		}
 		return _instance;
 	}
 	
 
 	
-	private UserDAO _userEntityDAO = null;
+	private UserDAO _userDAO = null;
 	private UserDAO getUserEntityDAO()
 	{
-		return _userEntityDAO;
+		return _userDAO;
 	}
 	
 	private ThreadLocal<MembershipUser> _currentUser = new ThreadLocal<MembershipUser>();
@@ -48,7 +47,7 @@ public class MembershipService
 		DAOQuery query = new DAOQuery("loginName=:loginName");
 		query.setParameter("loginName", p_loginName.toLowerCase());
 		query.setCachable(true);
-		UserPO entity = getUserEntityDAO().selectFirst(query);
+		UserEntity entity = getUserEntityDAO().selectFirst(query);
 		if (entity != null && entity.getLoginPass().equals(EncryptionUtil.encryptPassword(p_loginPassword)))
 		{
 			return entity.getId();
@@ -61,7 +60,7 @@ public class MembershipService
 	
 	public MembershipUser getUserById(String p_id)
 	{
-		UserPO entity = getUserEntityDAO().selectById(p_id);
+		UserEntity entity = getUserEntityDAO().selectById(p_id);
 		if (entity != null)
 		{
 			MembershipUser user = MembershipUser.createFromPO(entity);

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import platinum.cms.common.dao.PostDAO;
-import platinum.cms.common.po.PostPO;
+import platinum.cms.common.entity.PostEntity;
 import platinum.common.util.PathUtil;
 import platinum.platform.service.PlatformService;
 
@@ -41,7 +41,7 @@ public class Program
 			i++;
 			System.out.println("Crawling post " + postLink + "..." + ((i * 100 / postLinkCollection.size())) + "%");
 			
-			PostPO post = postSpider.crawlPost(postLink);
+			PostEntity post = postSpider.crawlPost(postLink);
 			postDAO.save(post);
 		}
 		

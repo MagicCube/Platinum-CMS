@@ -1,5 +1,8 @@
 package platinum.cms.admin.web.rest;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -7,13 +10,13 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 
+import org.apache.lucene.document.Document;
 import org.codehaus.jettison.json.JSONException;
 
 import platinum.cms.admin.service.PostAdminService;
+import platinum.cms.common.entity.PostEntity;
+import platinum.cms.common.entity.serialization.PostJSONSerializer;
 import platinum.cms.common.search.PostSearchEngine;
-import platinum.cms.common.vo.PostDetailVO;
-import platinum.cms.common.vo.PostSimpleVO;
-import platinum.common.PTList;
 import platinum.framework.web.rest.AbstractResource;
 
 @Path("admin/post")
@@ -27,28 +30,30 @@ public class PostAdminResource extends AbstractResource
 			@QueryParam("pageIndex") @DefaultValue("0") int p_pageIndex
 			) throws JSONException
 	{
-		PTList<PostSimpleVO> posts = null;
+		List<PostEntity> posts = null;
+		
 		if (p_keywords != null)
 		{
 			if (p_keywords.length() == 32)
 			{
-				PostSimpleVO post = PostAdminService.getInstance().getPostById(p_keywords);
+				PostEntity post = PostAdminService.getInstance().getPostById(p_keywords);
 				if (post != null)
 				{
-					posts = new PTList<PostSimpleVO>();
+					posts = new ArrayList<PostEntity>();
 					posts.add(post);
 				}
 			}
 			if (posts == null)
 			{
-				posts = PostSearchEngine.getInstance().search(p_keywords);
+				List<Document> docs = PostSearchEngine.getInstance().search(p_keywords);
+				return responseWithJSONArray(PostJSONSerializer.toSimpleArray2(docs));
 			}
 		}
 		else
 		{
 			posts = PostAdminService.getInstance().loadPostsByCategory(null);
 		}
-		return responseWithJSONArray(posts.toJSONArray());
+		return responseWithJSONArray(PostJSONSerializer.toSimpleArray(posts));
 	}
 	
 	@GET
@@ -57,7 +62,7 @@ public class PostAdminResource extends AbstractResource
 			@PathParam("id") String p_id
 			) throws JSONException
 	{
-		PostDetailVO post = PostAdminService.getInstance().getPostDetailById(p_id);
-		return responseWithJSONObject(post.toJSONObject());
+		PostEntity post = PostAdminService.getInstance().getPostById(p_id);
+		return responseWithJSONObject(PostJSONSerializer.toDetailObject(post));
 	}
 }

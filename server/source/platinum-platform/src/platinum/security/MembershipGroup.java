@@ -1,4 +1,4 @@
-package platinum.security.vo;
+package platinum.security;
 
 import platinum.common.PTObject;
 

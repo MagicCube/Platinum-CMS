@@ -21,13 +21,7 @@ public class PTList<T extends PTObject> extends ArrayList<T>
 	
 	public JSONArray toJSONArray() throws JSONException
 	{
-		JSONArray array = new JSONArray();
-		
-		for (T t : this)
-		{
-			array.put(t.toJSONObject());
-		}
-		
+		JSONArray array = new JSONArray(this);
 		return array;
 	}
 }
