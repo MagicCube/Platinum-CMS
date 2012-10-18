@@ -12,7 +12,7 @@ import javax.ws.rs.core.Response;
 
 import org.codehaus.jettison.json.JSONException;
 
-import platinum.cms.admin.service.PostAdminService;
+import platinum.cms.admin.service.PostAdminManager;
 import platinum.cms.common.entity.PostEntity;
 import platinum.cms.common.entity.serialization.PostJSONSerializer;
 import platinum.cms.common.search.PostSearchEngine;
@@ -36,7 +36,7 @@ public class PostAdminResource extends AbstractResource
 		{
 			if (p_keywords.length() == 32)
 			{
-				PostEntity post = PostAdminService.getInstance().getPostById(p_keywords);
+				PostEntity post = PostAdminManager.getInstance().getPostById(p_keywords);
 				if (post != null)
 				{
 					posts = new ArrayList<PostEntity>();
@@ -51,7 +51,7 @@ public class PostAdminResource extends AbstractResource
 		}
 		else
 		{
-			posts = PostAdminService.getInstance().loadPostsByCategory(null);
+			posts = PostAdminManager.getInstance().loadPostsByCategory(null);
 		}
 		return responseWithJSONArray(PostJSONSerializer.toSimpleArray(posts));
 	}
@@ -62,7 +62,7 @@ public class PostAdminResource extends AbstractResource
 			@PathParam("id") String p_id
 			) throws JSONException
 	{
-		PostEntity post = PostAdminService.getInstance().getPostById(p_id);
+		PostEntity post = PostAdminManager.getInstance().getPostById(p_id);
 		return responseWithJSONObject(PostJSONSerializer.toDetailObject(post));
 	}
 }

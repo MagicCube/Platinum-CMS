@@ -7,9 +7,9 @@ import platinum.cms.common.dao.PostDAO;
 import platinum.cms.common.entity.PostEntity;
 import platinum.framework.dao.DAOQuery;
 
-public class PostRuntimeService
+public class PostRuntimeManager
 {
-	public PostRuntimeService()
+	public PostRuntimeManager()
 	{
 		
 	}

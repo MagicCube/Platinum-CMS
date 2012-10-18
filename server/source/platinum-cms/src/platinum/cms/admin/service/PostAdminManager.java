@@ -6,19 +6,19 @@ import platinum.cms.common.dao.PostDAO;
 import platinum.cms.common.entity.PostEntity;
 import platinum.framework.dao.DAOQuery;
 
-public class PostAdminService
+public class PostAdminManager
 {
-	private PostAdminService()
+	private PostAdminManager()
 	{
 		
 	}
 	
-	private static PostAdminService _instance = null;
-	public static PostAdminService getInstance()
+	private static PostAdminManager _instance = null;
+	public static PostAdminManager getInstance()
 	{
 		if (_instance == null)
 		{
-			_instance = new PostAdminService();
+			_instance = new PostAdminManager();
 		}
 		return _instance;
 	}
