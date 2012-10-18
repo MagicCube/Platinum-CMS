@@ -37,20 +37,18 @@ if (post == null)
 
 
     <h1 id="title"><%= post.getTitle()%></h1>    
-    
-    
     <div id="info">
-        <dl>
+        <dl id="source">
             <dd>来源：</dd>
-            <dt id="source"><a href="#"><%= post.getSource()%></a></dt>
-            
+            <dt><a href="#"><%= post.getSource()%></a></dt>
+        </dl>
+        
+        <dl id="updateTime">
             <dd>更新时间：</dd>
-            <dt id="updateTime"><%= post.getUpdateTime()%></dt>
+            <dt><%= post.getUpdateTime()%></dt>
         </dl>
     </div>
-    
     <div id="summary"><%= post.getSummary()%></div>
-    
     <div id="content"><%= post.getContentText()%></div>
 </div>
 
