@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="<%= request.getContextPath()%>/common/css/common.css"/>
     <link rel="stylesheet" href="home/css/default.css"/>
+    <script src="<%= request.getContextPath()%>/common/scripts/lib/jquery.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="home" class="page">
