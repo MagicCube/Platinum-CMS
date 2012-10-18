@@ -190,6 +190,6 @@ public class PostEntity extends StandardEntity
 	@Transient
 	public String getAbsoluteLink()
 	{
-		return "http://zbxy.edu.cn" + getLink();
+		return URLResolver.getAbsolutePostlink(getId(), getCategoryId());
 	}
 }

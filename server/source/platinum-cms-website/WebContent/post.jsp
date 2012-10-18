@@ -33,7 +33,7 @@ if (post == null)
 
 <div id="postDetail">
     <ul id="navigationBar">
-        <li id="location">当前位置 &gt; </li>
+        <li id="location"><a href="<%=request.getContextPath()%>/">首页</a> &gt; </li>
         <li id="category"><a href="#"><%= post.getCategoryId()%></a> &gt; </li>
         <li id="subcategory"><a href="#"><%= post.getSubcategory().getSubcategoryName()%></a> &gt;</li>
         <li>正文</li>

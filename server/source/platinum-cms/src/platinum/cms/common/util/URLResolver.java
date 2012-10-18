@@ -9,4 +9,9 @@ public class URLResolver
 	{
 		return PathUtil.combineURLPath(PTEnvironment.getWebContextPath(), p_categoryId, p_id + ".html");
 	}
+	
+	public static String getAbsolutePostlink(String p_id, String p_categoryId)
+	{
+		return "http://www.zbxy.edu.cn/" + getPostlink(p_id, p_categoryId);
+	}
 }
