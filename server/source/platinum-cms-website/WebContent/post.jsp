@@ -17,6 +17,8 @@ if (post == null)
 <html>
 <head>
     <title><%= post.getTitle()%></title>
+    <link rel="stylesheet" href="<%= request.getContextPath()%>/common/css/common.css"/>
+    <link rel="stylesheet" href="<%= request.getContextPath()%>/common/css/post.css"/>
     <link rel="stylesheet" href="css/post.css"/>
 </head>
 
@@ -26,22 +28,26 @@ if (post == null)
 <cms:Header/>
 
 <div id="postDetail">
-    <h1 id="title"><%= post.getTitle()%></h1>
-    
     <ul id="navigationBar">
         <li id="location">当前位置 &gt; </li>
         <li id="category"><a href="#"><%= post.getCategoryId()%></a> &gt; </li>
         <li id="subcategory"><a href="#"><%= post.getSubcategory().getSubcategoryName()%></a> &gt;</li>
         <li>正文</li>
     </ul>
+
+
+    <h1 id="title"><%= post.getTitle()%></h1>    
     
-    <dl id="info">
-        <dd>来源：</dd>
-        <dt id="source"><a href="#"><%= post.getSource()%></a></dt>
-        
-        <dd>更新时间：</dd>
-        <dt id="updateTime"><%= post.getUpdateTime()%></dt>
-    </dl>
+    
+    <div id="info">
+        <dl>
+            <dd>来源：</dd>
+            <dt id="source"><a href="#"><%= post.getSource()%></a></dt>
+            
+            <dd>更新时间：</dd>
+            <dt id="updateTime"><%= post.getUpdateTime()%></dt>
+        </dl>
+    </div>
     
     <div id="summary"><%= post.getSummary()%></div>
     
