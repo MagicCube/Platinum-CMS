@@ -10,13 +10,13 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 
-import org.apache.lucene.document.Document;
 import org.codehaus.jettison.json.JSONException;
 
 import platinum.cms.admin.service.PostAdminService;
 import platinum.cms.common.entity.PostEntity;
 import platinum.cms.common.entity.serialization.PostJSONSerializer;
 import platinum.cms.common.search.PostSearchEngine;
+import platinum.cms.common.search.PostSearchResult;
 import platinum.framework.web.rest.AbstractResource;
 
 @Path("admin/post")
@@ -45,7 +45,7 @@ public class PostAdminResource extends AbstractResource
 			}
 			if (posts == null)
 			{
-				List<Document> docs = PostSearchEngine.getInstance().search(p_keywords);
+				List<PostSearchResult> docs = PostSearchEngine.getInstance().search(p_keywords);
 				return responseWithJSONArray(PostJSONSerializer.toSimpleArray2(docs));
 			}
 		}

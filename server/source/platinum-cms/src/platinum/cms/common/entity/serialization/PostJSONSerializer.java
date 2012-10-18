@@ -2,12 +2,12 @@ package platinum.cms.common.entity.serialization;
 
 import java.util.List;
 
-import org.apache.lucene.document.Document;
 import org.codehaus.jettison.json.JSONArray;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 
 import platinum.cms.common.entity.PostEntity;
+import platinum.cms.common.search.PostSearchResult;
 
 public class PostJSONSerializer
 {
@@ -37,7 +37,7 @@ public class PostJSONSerializer
 		return json;
 	}
 	
-	public static JSONObject toSimpleObject(Document p_post)
+	public static JSONObject toSimpleObject(PostSearchResult p_post)
 	{
 		if (p_post == null)
 		{
@@ -47,30 +47,12 @@ public class PostJSONSerializer
 		JSONObject json = new JSONObject();
 		try
 		{
-			json.put("id", p_post.get("id"));
-			json.put("updateTime", Long.parseLong(p_post.get("updateTime")));
-			json.put("source", p_post.get("source"));
-			json.put("categoryId", p_post.get("categoryId"));
-			json.put("photoURL", p_post.get("photoURL"));
-			
-			
-			if (p_post.getFieldable("titleHighlight") != null)
-			{
-				json.put("title", p_post.get("titleHighlight"));
-			}
-			else
-			{
-				json.put("title", p_post.get("title"));
-			}
-			
-			if (p_post.getFieldable("contextTextHighlight") != null)
-			{
-				json.put("summary", p_post.get("contentTextHighlight"));
-			}
-			else
-			{
-				json.put("summary", p_post.get("contentText"));
-			}
+			json.put("id", p_post.getId());
+			json.put("updateTime", p_post.getUpdateTime().getTime());
+			json.put("source", p_post.getSource());
+			json.put("photoURL", p_post.getPhotoURL());
+			json.put("title", p_post.getTitle());
+			json.put("summary", p_post.getSummary());
 		}
 		catch (JSONException e)
 		{
@@ -117,10 +99,10 @@ public class PostJSONSerializer
 		return array;
 	}
 	
-	public static JSONArray toSimpleArray2(List<Document> p_posts)
+	public static JSONArray toSimpleArray2(List<PostSearchResult> p_posts)
 	{
 		JSONArray array = new JSONArray();
-		for (Document post : p_posts)
+		for (PostSearchResult post : p_posts)
 		{
 			array.put(toSimpleObject(post));
 		}

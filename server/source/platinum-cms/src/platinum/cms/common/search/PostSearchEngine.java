@@ -154,9 +154,9 @@ public class PostSearchEngine
 	
 	
 	
-	public List<Document> search(String p_keywords)
+	public List<PostSearchResult> search(String p_keywords)
 	{
-		List<Document> result = new ArrayList<Document>();
+		List<PostSearchResult> results = new ArrayList<PostSearchResult>();
 		Query query = null;
 		try
 		{
@@ -164,7 +164,7 @@ public class PostSearchEngine
 		}
 		catch (ParseException e)
 		{
-			return result;
+			return results;
 		}
 		
 		try
@@ -182,8 +182,8 @@ public class PostSearchEngine
 			for (int i = 0; i < hits.scoreDocs.length; i++) {  
 				  
 		        ScoreDoc scoreDoc = hits.scoreDocs[i];  
-		        Document doc = _indexSearcher.doc(scoreDoc.doc);  
- 
+		        Document doc = _indexSearcher.doc(scoreDoc.doc);
+		        PostSearchResult result = new PostSearchResult(doc);
 		        
 		        
 		        SimpleHTMLFormatter simpleHTMLFormatter = new SimpleHTMLFormatter(  
@@ -200,7 +200,11 @@ public class PostSearchEngine
 				highlightText = highlighter.getBestFragment(tokenStream, content);
 				if (StringUtil.notNullOrEmpty(highlightText))
 				{
-					doc.add(new Field("contentTextHighlight", highlightText, Store.NO, Index.NOT_ANALYZED));
+					result.setSummary(highlightText);
+				}
+				else
+				{
+					result.setSummary(content.substring(0, 40));
 				}
 				
 				
@@ -210,10 +214,14 @@ public class PostSearchEngine
 		        highlightText = highlighter.getBestFragment(tokenStream, title);  
 		        if (StringUtil.notNullOrEmpty(highlightText))
 				{
-					doc.add(new Field("titleHighlight", highlightText, Store.NO, Index.NOT_ANALYZED));
+		        	result.setTitle(highlightText);
 				}
+		        else
+		        {
+		        	result.setTitle(title);
+		        }
 		        
-		        result.add(doc);
+		        results.add(result);
 		    }  
 		}
 		catch (IOException e)
@@ -225,7 +233,7 @@ public class PostSearchEngine
 			e.printStackTrace();
 		} 
 		
-		return result;
+		return results;
 	}
 	
 	
