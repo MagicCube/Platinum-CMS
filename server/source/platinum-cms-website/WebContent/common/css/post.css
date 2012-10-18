@@ -30,25 +30,25 @@
     text-align: center;
 }
 
+
 #postDetail #info
 {
-    height: 22px;
-    margin-bottom: 10px;
-}
-
-#postDetail #info dl
-{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    list-style: none;
+    height: 22px;
+    white-space: nowrap;
     text-align: center;
-    width: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-#postDetail #info dl dt, #postDetail #info dl dd
+#postDetail #info div
 {
-    float: left;
+    display: inline;
+}
+
+#postDetail #info #source
+{
+    margin-right: 10px;
 }
 
 #postDetail #summary
