@@ -69,6 +69,21 @@
     
     
     
+    <filter>
+        <display-name>Post 转发重写过滤器</display-name>
+        <filter-name>PostRewriteFilter</filter-name>
+        <filter-class>platinum.cms.runtime.web.filter.PostRewriteFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>PostRewriteFilter</filter-name>
+        <url-pattern>*.html</url-pattern>
+    </filter-mapping>
+
+
+    
+    
+    
+    
     
     <filter>
         <display-name>EHCache 页面缓存过滤器</display-name>

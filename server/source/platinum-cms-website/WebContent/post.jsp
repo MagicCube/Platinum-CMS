@@ -7,6 +7,11 @@
 String id = request.getParameter("id");
 PostRuntimeManager postManager = new PostRuntimeManager();
 PostEntity post = postManager.getPostById(id);
+if (post == null)
+{
+    response.setStatus(404);
+    return;
+}
 %>
 
 <html>
