@@ -1,3 +1,4 @@
+<%@tag import="platinum.common.util.DateUtil"%>
 <%@ tag import="java.util.ArrayList"%>
 <%@ tag import="java.util.List"%>
 <%@ tag import="platinum.common.util.StringUtil"%>
@@ -23,6 +24,6 @@ else if (StringUtil.notNullOrEmpty(subcategoryId))
 %>
 <ul id="${id}" class="PostList ${cssClass}">
 <% for (PostEntity post : posts) {%>
-<li><a href="<%= post.getLink()%>"><span><%= post.getTitle()%></span></a></li>
+<li><a href="<%= post.getLink()%>"><span><%= DateUtil.formatDate(post.getUpdateTime(), "yyyy年M月d日 HH:mm")%></span></a></li>
 <% } %>
 </ul>
