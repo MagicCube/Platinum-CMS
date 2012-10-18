@@ -37,10 +37,10 @@ public class PostRewriteFilter implements Filter
 		Matcher matcher = urlPattern.matcher(uri);
 		if (matcher.find())
 		{
-			//String categoryId = matcher.group(1);
+			String categoryId = matcher.group(1);
 			String postId = matcher.group(2);
 			
-			request.getRequestDispatcher("/post.jsp?id=" + postId).forward(request, response);
+			request.getRequestDispatcher("/post.jsp?id=" + postId + "&categoryId=" + categoryId).forward(request, response);
 			return;
 		}
 		

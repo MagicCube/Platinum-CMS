@@ -5,8 +5,9 @@
 
 <%
 String id = request.getParameter("id");
+String categoryId = request.getParameter("categoryId");
 PostRuntimeManager postManager = new PostRuntimeManager();
-PostEntity post = postManager.getPostById(id);
+PostEntity post = postManager.getPost(id, categoryId);
 if (post == null)
 {
     response.setStatus(404);

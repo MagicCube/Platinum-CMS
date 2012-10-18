@@ -35,9 +35,16 @@ public class PostRuntimeManager
 	}
 	
 	
-	public PostEntity getPostById(String p_id)
+	public PostEntity getPost(String p_id, String p_categoryId)
 	{
 		PostEntity post = getSinglePostDAO().selectById(p_id);
+		if (post == null) return null;
+		
+		String categoryId = post.getCategoryId();
+		if (!categoryId.equals(p_categoryId))
+		{
+			return null;
+		}
 		return post;
 	}
 	
