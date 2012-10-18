@@ -1,16 +1,23 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="cms" tagdir="/WEB-INF/tags/cms" %>
+<%@ taglib prefix="cms" tagdir="/WEB-INF/tags" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Home</title>
+    <link rel="stylesheet" href="home/css/default.css"/>
 </head>
 <body>
+<div id="home" class="page">
+
+<cms:Header/>
 
 <cms:PostList id="newsList" categoryId="news" count="5"/>
 <cms:PostList id="politicsList" categoryId="politics" count="5"/>
 <cms:PostList id="activitiesList" categoryId="activities" count="5"/>
 
+<cms:Footer/>
+
+</div>
 </body>
 </html>
