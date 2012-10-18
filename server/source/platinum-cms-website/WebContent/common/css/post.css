@@ -51,6 +51,13 @@
     margin-right: 10px;
 }
 
+#postDetail #social
+{
+    display: block;
+    width: 32px;
+    margin: auto;
+}
+
 #postDetail #summary
 {
     width: 100%;

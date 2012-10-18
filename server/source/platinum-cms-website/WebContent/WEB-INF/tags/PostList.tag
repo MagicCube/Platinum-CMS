@@ -24,6 +24,6 @@ else if (StringUtil.notNullOrEmpty(subcategoryId))
 %>
 <ul id="${id}" class="PostList ${cssClass}">
 <% for (PostEntity post : posts) {%>
-<li><a href="<%= post.getLink()%>"><span><%= DateUtil.formatDate(post.getUpdateTime(), "yyyy年M月d日 HH:mm")%></span></a></li>
+<li><a href="<%= post.getLink()%>"><span><%= post.getTitle()%></span></a></li>
 <% } %>
 </ul>

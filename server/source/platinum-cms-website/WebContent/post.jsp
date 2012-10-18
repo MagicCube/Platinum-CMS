@@ -1,3 +1,4 @@
+<%@page import="platinum.common.util.DateUtil"%>
 <%@page import="platinum.cms.common.entity.PostEntity"%>
 <%@page import="platinum.cms.runtime.service.PostRuntimeManager"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -15,12 +16,14 @@ if (post == null)
 }
 %>
 
-<html>
+<html xmlns:wb="http://open.weibo.com/wb">
 <head>
     <title><%= post.getTitle()%></title>
     <link rel="stylesheet" href="<%= request.getContextPath()%>/common/css/common.css"/>
     <link rel="stylesheet" href="<%= request.getContextPath()%>/common/css/post.css"/>
     <link rel="stylesheet" href="css/post.css"/>
+    <script src="<%= request.getContextPath()%>/common/scripts/lib/jquery.js" type="text/javascript"></script>
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
@@ -37,12 +40,23 @@ if (post == null)
     </ul>
 
     <h1 id="title"><%= post.getTitle()%></h1>    
+    
     <div id="info">
         <div id="source"><span>来源：</span><a href="#"><%= post.getSource()%></a></div>
-        <div id="updateTime"><span>更新时间：</span><a><%= post.getUpdateTime()%></a></div>
+        <div id="updateTime"><span>更新时间：</span><a><%= DateUtil.formatDate(post.getUpdateTime(), "yyyy年M月d日HH:mm")%></a></div>
     </div>
+
+    <div id="social">
+        <wb:share-button id="weibo" url="<%= post.getAbsoluteLink()%>" type="icon"></wb:share-button>
+    </div>
+
+
     <div id="summary"><%= post.getSummary()%></div>
     <div id="content"><%= post.getContentText()%></div>
+    
+    <script>
+        document.getElementById("weibo").title = $("#summary").text();
+    </script>
 </div>
 
 <cms:Footer/>
