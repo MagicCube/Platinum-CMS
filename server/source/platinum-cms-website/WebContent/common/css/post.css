@@ -1,0 +1,69 @@
+#postDetail
+{
+    width: 100%;    
+}
+
+#postDetail #navigationBar
+{
+    display: block;
+    height: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#postDetail #navigationBar li
+{
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#postDetail h1#title
+{
+    clear: both;
+    width: 100%;
+    margin-top: 10px;
+    font-family: 黑体;
+    font-size: 18px;
+    text-align: center;
+}
+
+#postDetail #info
+{
+    height: 22px;
+    margin-bottom: 10px;
+}
+
+#postDetail #info dl
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    text-align: center;
+    width: 500px;
+}
+
+#postDetail #info dl dt, #postDetail #info dl dd
+{
+    float: left;
+}
+
+#postDetail #summary
+{
+    width: 100%;
+    margin: auto;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px dotted gray;
+}
+
+#postDetail #summary, #postDetail #content
+{
+    clear: both;
+    line-height: 22px;
+}
