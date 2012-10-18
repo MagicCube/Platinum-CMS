@@ -14,9 +14,9 @@ import org.codehaus.jettison.json.JSONException;
 
 import platinum.cms.admin.service.PostAdminManager;
 import platinum.cms.common.entity.PostEntity;
-import platinum.cms.common.entity.serialization.PostJSONSerializer;
 import platinum.cms.common.search.PostSearchEngine;
 import platinum.cms.common.search.PostSearchResult;
+import platinum.cms.common.serialization.PostJSONSerializer;
 import platinum.framework.web.rest.AbstractResource;
 
 @Path("admin/post")

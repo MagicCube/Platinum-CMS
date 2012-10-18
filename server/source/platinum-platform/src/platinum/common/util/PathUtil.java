@@ -16,6 +16,10 @@ public final class PathUtil
 				{
 					path += paths[i].substring(1);
 				}
+				else if (!path.endsWith("/") && !paths[i].startsWith("/"))
+				{
+					path += "/" + paths[i];
+				}
 				else
 				{
 					path += paths[i];

@@ -18,6 +18,7 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import platinum.cms.common.PostStatus;
 import platinum.cms.common.PostType;
+import platinum.cms.common.util.URLResolver;
 import platinum.framework.entity.StandardEntity;
 
 @Entity(name = "Post")
@@ -177,5 +178,12 @@ public class PostEntity extends StandardEntity
 	public void setPhotoURL(String value)
 	{
 		_photoURL = value;
+	}
+	
+	
+	@Transient
+	public String getLink()
+	{
+		return URLResolver.getPostlink(getId(), getCategoryId());
 	}
 }

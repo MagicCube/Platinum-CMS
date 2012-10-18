@@ -1,4 +1,4 @@
-package platinum.cms.common.entity.serialization;
+package platinum.cms.common.serialization;
 
 import java.util.List;
 

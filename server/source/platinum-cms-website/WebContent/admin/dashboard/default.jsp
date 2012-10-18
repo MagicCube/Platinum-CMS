@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="pta" tagdir="/WEB-INF/tags/admin/" %>
+<%@ taglib prefix="admin" tagdir="/WEB-INF/tags/admin/" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
-<pta:Framework/>
+<admin:Framework/>
 
 <script>
 $import("pt.cms.admin.common.page.AdminPageController");
@@ -25,11 +25,11 @@ var pageController = new pt.cms.admin.common.page.AdminPageController({
 <body>
     
 <div id="admin">
-    <pta:Header/>
-    <pta:NavigationBar/>
+    <admin:Header/>
+    <admin:NavigationBar/>
     
     <div id="toolstrip"></div>
-    <pta:UserStatus/>
+    <admin:UserStatus/>
     
     <div id="content">
     
