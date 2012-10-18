@@ -21,7 +21,6 @@ html, body
     background: silver;
     border: 1px solid gray;
     height: 80px;
-    line-height: 50px;
     text-align: center;
 }
 
@@ -31,6 +30,5 @@ html, body
     background: silver;
     border: 1px solid gray;
     height: 50px;
-    line-height: 50px;
     text-align: center;
 }
