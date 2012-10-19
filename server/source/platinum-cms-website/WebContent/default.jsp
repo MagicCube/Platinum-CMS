@@ -5,9 +5,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Home</title>
-    <link rel="stylesheet" href="<%= request.getContextPath()%>/common/css/common.css"/>
-    <link rel="stylesheet" href="home/css/default.css"/>
-    <script src="<%= request.getContextPath()%>/common/scripts/lib/jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="<%= request.getContextPath()%>/static/common/css/common.css"/>
+    <link rel="stylesheet" href="<%= request.getContextPath()%>/static/home/css/default.css"/>
+    <script src="<%= request.getContextPath()%>/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="home" class="page">
@@ -15,7 +15,6 @@
 <cms:Header/>
 
 <cms:PostList id="newsList" categoryId="news" count="5"/>
-<cms:PostList id="politicsList" categoryId="politics" count="5"/>
 <cms:PostList id="activitiesList" categoryId="activities" count="5"/>
 
 <cms:Footer/>
