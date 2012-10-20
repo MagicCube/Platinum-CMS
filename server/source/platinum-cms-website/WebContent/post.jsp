@@ -19,10 +19,10 @@ if (post == null)
 <html xmlns:wb="http://open.weibo.com/wb">
 <head>
     <title><%= post.getTitle()%></title>
-    <link rel="stylesheet" href="<%= request.getContextPath()%>/static/common/css/common.css"/>
-    <link rel="stylesheet" href="<%= request.getContextPath()%>/static/common/css/post.css"/>
-    <link rel="stylesheet" href="<%= request.getContextPath() + "/static/" + categoryId%>/css/post.css"/>
-    <script src="<%= request.getContextPath()%>/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/static/common/css/common.css"/>
+    <link rel="stylesheet" href="/static/common/css/post.css"/>
+    <link rel="stylesheet" href="<%= "/static/" + categoryId%>/css/post.css"/>
+    <script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
     <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
 </head>
 

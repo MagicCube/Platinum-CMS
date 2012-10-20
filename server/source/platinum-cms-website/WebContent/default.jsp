@@ -5,9 +5,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Home</title>
-    <link rel="stylesheet" href="<%= request.getContextPath()%>/static/common/css/common.css"/>
-    <link rel="stylesheet" href="<%= request.getContextPath()%>/static/home/css/default.css"/>
-    <script src="<%= request.getContextPath()%>/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/static/common/css/common.css"/>
+    <link rel="stylesheet" href="/static/home/css/default.css"/>
+    <script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="home" class="page">
