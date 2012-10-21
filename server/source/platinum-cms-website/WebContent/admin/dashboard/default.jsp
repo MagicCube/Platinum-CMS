@@ -26,7 +26,6 @@ var pageController = new pt.cms.admin.common.page.AdminPageController({
     
 <div id="admin">
     <admin:Header/>
-    <admin:NavigationBar/>
     
     <div id="toolstrip"></div>
     <admin:UserStatus/>
