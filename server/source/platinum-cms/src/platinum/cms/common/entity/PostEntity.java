@@ -13,9 +13,6 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-import org.hibernate.annotations.Cache;
-import org.hibernate.annotations.CacheConcurrencyStrategy;
-
 import platinum.cms.common.PostStatus;
 import platinum.cms.common.PostType;
 import platinum.cms.common.util.URLResolver;
@@ -23,7 +20,6 @@ import platinum.framework.entity.StandardEntity;
 
 @Entity(name = "Post")
 @Table(name = "PTT_POST", schema = "PT_CMS")
-@Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 public class PostEntity extends StandardEntity
 {
 	private SubcategoryEntity _subcategory = null;

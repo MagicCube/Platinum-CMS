@@ -5,13 +5,9 @@ import javax.persistence.Entity;
 import javax.persistence.Lob;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.Cache;
-import org.hibernate.annotations.CacheConcurrencyStrategy;
-
 
 @Entity(name = "PostContent")
 @Table(name = "PTT_POST_CONTENT", schema = "PT_CMS")
-@Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 public class PostContentEntity extends platinum.framework.entity.Entity
 {
 	public PostContentEntity()
