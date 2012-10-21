@@ -24,20 +24,10 @@ public class PostRuntimeManager
 		return _postDAO;
 	}
 	
-	private static PostDAO _singlePostDAO = null;
-	private PostDAO getSinglePostDAO()
-	{
-		if (_singlePostDAO == null)
-		{
-			_singlePostDAO = new PostDAO();
-		}
-		return _singlePostDAO;
-	}
-	
 	
 	public PostEntity getPost(String p_id, String p_categoryId)
 	{
-		PostEntity post = getSinglePostDAO().selectById(p_id);
+		PostEntity post = getPostDAO().selectById(p_id);
 		if (post == null) return null;
 		
 		String categoryId = post.getCategoryId();
