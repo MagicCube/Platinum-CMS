@@ -1,7 +1,12 @@
 package platinum.cms.admin.web.rest;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
+import java.util.TimeZone;
 
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
@@ -17,6 +22,7 @@ import platinum.cms.common.entity.PostEntity;
 import platinum.cms.common.search.PostSearchEngine;
 import platinum.cms.common.search.PostSearchResult;
 import platinum.cms.common.serialization.PostJSONSerializer;
+import platinum.common.util.DateUtil;
 import platinum.framework.web.rest.AbstractResource;
 
 @Path("admin/post")
@@ -63,6 +69,17 @@ public class PostAdminResource extends AbstractResource
 			) throws JSONException
 	{
 		PostEntity post = PostAdminManager.getInstance().getPostById(p_id);
-		return responseWithJSONObject(PostJSONSerializer.toDetailObject(post));
+		
+		String ifModifiedSince = getHttpHeader("If-Modified-Since");
+		if (ifModifiedSince != null)
+		{
+			
+			String lastModified = DateUtil.formatGMTDate(post.getUpdateTime());
+			if (lastModified.equals(ifModifiedSince))
+			{
+				return responseNotModified();
+			}
+		}
+		return responseWithJSONObject(PostJSONSerializer.toDetailObject(post), post.getUpdateTime());
 	}
 }

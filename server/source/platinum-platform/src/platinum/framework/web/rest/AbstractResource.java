@@ -113,15 +113,36 @@ public abstract class AbstractResource
 	{
 		return Response.ok(rawJSON, MediaType.APPLICATION_JSON_TYPE).build();
 	}
+	protected Response responseWithJSONString(String rawJSON, Date p_lastModifyTime)
+	{
+		ResponseBuilder builder = Response.ok(rawJSON, MediaType.APPLICATION_JSON_TYPE);
+		builder.lastModified(p_lastModifyTime);
+		builder.expires(new Date(0));
+		return builder.build();
+	}
 
 	protected Response responseWithJSONObject(JSONObject jsonObject)
 	{
 		return Response.ok(jsonObject, MediaType.APPLICATION_JSON_TYPE).build();
 	}
+	protected Response responseWithJSONObject(JSONObject jsonObject, Date p_lastModifyTime)
+	{
+		ResponseBuilder builder = Response.ok(jsonObject, MediaType.APPLICATION_JSON_TYPE);
+		builder.lastModified(p_lastModifyTime);
+		builder.expires(new Date(0));
+		return builder.build();
+	}
 
 	protected Response responseWithJSONArray(JSONArray jsonArray)
 	{
 		return Response.ok(jsonArray, MediaType.APPLICATION_JSON_TYPE).build();
+	}
+	protected Response responseWithJSONArray(JSONArray jsonArray, Date p_lastModifyTime)
+	{
+		ResponseBuilder builder = Response.ok(jsonArray, MediaType.APPLICATION_JSON_TYPE);
+		builder.lastModified(p_lastModifyTime);
+		builder.expires(new Date(0));
+		return builder.build();
 	}
 
 	protected Response responseWithFile(File file, String mediaType, Date date)
