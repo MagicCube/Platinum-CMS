@@ -10,6 +10,8 @@
 <%@ attribute name="subcategoryId" rtexprvalue="true"%>
 <%@ attribute name="count" required="true" rtexprvalue="true" type="java.lang.Integer"%>
 <%@ attribute name="cssClass" rtexprvalue="true"%>
+<%@ attribute name="displaySummary" rtexprvalue="true" type="java.lang.Boolean"%>
+<%@ attribute name="displayPhoto" rtexprvalue="true" type="java.lang.Boolean"%>
 <%
 PostRuntimeManager manager = new PostRuntimeManager();
 List<PostEntity> posts = null;
