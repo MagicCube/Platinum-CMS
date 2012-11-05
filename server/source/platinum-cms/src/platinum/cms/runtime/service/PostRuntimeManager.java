@@ -58,7 +58,7 @@ public class PostRuntimeManager
 	
 	public List<PostEntity> loadLatestPostBySubcategory(String p_subcategoryId, int p_count)
 	{
-		DAOQuery query = _createQuery("subcategoryId=:subcategoryId", p_count);
+		DAOQuery query = _createQuery("subcategory_id=:subcategoryId", p_count);
 		query.setParameter("subcategoryId", p_subcategoryId);
 		List<PostEntity> result = getPostDAO().select(query);
 		return result;
