@@ -26,6 +26,13 @@ else if (StringUtil.notNullOrEmpty(subcategoryId))
 %>
 <ul id="${id}" class="PostList ${cssClass}">
 <% for (PostEntity post : posts) {%>
-<li><a href="<%= post.getLink()%>"><span><%= post.getTitle()%></span></a></li>
+<li>
+    <a href="<%= post.getLink()%>">
+        <div id="title"><%= post.getTitle()%></div>
+        <% if (displaySummary != null && displaySummary) {%>
+        <div id="summary"><%= post.getSummary()%></div>
+        <% } %>
+    </a>
+</li>
 <% } %>
 </ul>
