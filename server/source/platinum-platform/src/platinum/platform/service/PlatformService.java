@@ -7,6 +7,7 @@ import platinum.common.PTEnvironment;
 import platinum.common.PTLog;
 import platinum.common.PTRuntimeException;
 import platinum.common.conf.ConfigurationManager;
+import platinum.common.util.PathUtil;
 import platinum.framework.dao.GlobalSessionFactory;
 
 
@@ -43,6 +44,11 @@ public class PlatformService
 	
 	public void start(String p_rootPhysicalPath, String p_rootWebPath)
 	{
+		if (_state != PlatformState.INITIALIZED && _state != PlatformState.STOPPED)
+		{
+			return;
+		}
+		
 		PTEnvironment.setRootPhysicalPath(p_rootPhysicalPath);		
 		PTEnvironment.setWebContextPath(p_rootWebPath);
 		PTEnvironment.getSharedPath();
@@ -65,6 +71,11 @@ public class PlatformService
 		setState(PlatformState.RUNNING);
 		
 		System.out.println("\r\n\r\n");
+	}
+	
+	public void start()
+	{
+		start(PathUtil.combineFilePath(System.getenv("PT_CMS_WEBCONTENT"), "WEB-INF/pt"), "/");
 	}
 	
 	public void stop()

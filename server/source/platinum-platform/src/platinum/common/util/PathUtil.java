@@ -64,11 +64,6 @@ public final class PathUtil
                 path = path.substring(0, path.length() - 1);
             }
 
-            if (i == 0)
-            {
-                path = File.separator + path;
-            }
-
             if (!path.equals(""))
             {
                 builder.append(path);
