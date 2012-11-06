@@ -14,7 +14,7 @@ import platinum.framework.entity.StandardEntity;
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 public class UserEntity extends StandardEntity
 {
-	public static final String ADMIN_USER_ID = "USR-00000000-0000-0000-0000-000000000001";
+	public static final String ADMIN_USER_ID = "USER-000000000000000000000000001";
 	
 	
 	private String _userName;
