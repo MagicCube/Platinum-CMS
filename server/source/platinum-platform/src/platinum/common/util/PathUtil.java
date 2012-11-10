@@ -54,9 +54,12 @@ public final class PathUtil
                 isDir = false;
             }
 
-            while (path.startsWith(File.separator))
+            if (i != 0)
             {
-                path = path.substring(1);
+	            while (path.startsWith(File.separator))
+	            {
+	                path = path.substring(1);
+	            }
             }
 
             while (path.endsWith(File.separator))
