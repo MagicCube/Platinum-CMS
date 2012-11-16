@@ -1,6 +1,6 @@
 ﻿/*==============================================================*/
 /* DBMS name:      ORACLE Version 11g                           */
-/* Created on:     2012/10/14 20:54:06                          */
+/* Created on:     2012/11/16 13:47:15                          */
 /*==============================================================*/
 
 
@@ -41,7 +41,7 @@ drop table PT_SYS.PTT_USER_GROUP_2_USER cascade constraints;
 /*==============================================================*/
 create table PT_CMS.PTT_CATEGORY 
 (
-   ID                   NVARCHAR2(32)        not null,
+   ID                   VARCHAR2(32)         not null,
    CATEGORY_NAME        NVARCHAR2(32)        not null,
    POST_TYPE            SMALLINT             default 1 not null,
    CREATE_TIME          TIMESTAMP            default sysdate not null,
@@ -54,8 +54,8 @@ create table PT_CMS.PTT_CATEGORY
 /*==============================================================*/
 create table PT_CMS.PTT_CATEGORY_2_USER_GROUP 
 (
-   USER_GROUP_ID        CHAR(32)             not null,
-   CATEGORY_ID          NVARCHAR2(32)        not null,
+   USER_GROUP_ID        VARCHAR2(32)         not null,
+   CATEGORY_ID          VARCHAR2(32)         not null,
    constraint PK_PTT_CATEGORY_2_USER_GROUP primary key (USER_GROUP_ID, CATEGORY_ID)
 );
 
@@ -78,9 +78,9 @@ create index PT_CMS.PTT_USER_GROUP_2_CATEGORY2_FK on PT_CMS.PTT_CATEGORY_2_USER_
 /*==============================================================*/
 create table PT_CMS.PTT_POST 
 (
-   ID                   CHAR(32)             not null,
-   SUBCATEGORY_ID       CHAR(32),
-   CATEGORY_ID          NVARCHAR2(32),
+   ID                   VARCHAR2(32)         not null,
+   SUBCATEGORY_ID       VARCHAR2(32),
+   CATEGORY_ID          VARCHAR2(32),
    POST_CONTENT_ID      CHAR(32)             not null,
    POST_VIEWS_ID        CHAR(32)             not null,
    TITLE                NVARCHAR2(128)       not null,
@@ -134,8 +134,8 @@ create table PT_CMS.PTT_POST_VIEWS
 /*==============================================================*/
 create table PT_CMS.PTT_SUBCATEGORY 
 (
-   ID                   CHAR(32)             not null,
-   CATEGORY_ID          NVARCHAR2(32),
+   ID                   VARCHAR2(32)         not null,
+   CATEGORY_ID          VARCHAR2(32),
    SUBCATEGORY_NAME     NVARCHAR2(32)        not null,
    CREATE_TIME          TIMESTAMP            default sysdate not null,
    UPDATE_TIME          TIMESTAMP            default sysdate not null,
@@ -154,7 +154,7 @@ create index PT_CMS.FK_CATEGORY_2_SUBCATEGORY_FK on PT_CMS.PTT_SUBCATEGORY (
 /*==============================================================*/
 create table PT_SYS.PTT_USER 
 (
-   ID                   CHAR(32)             not null,
+   ID                   VARCHAR2(32)         not null,
    USER_NAME            NVARCHAR2(32)        not null,
    USER_ROLE            NVARCHAR2(32)        not null,
    LOGIN_NAME           NVARCHAR2(32)        not null,
@@ -169,7 +169,7 @@ create table PT_SYS.PTT_USER
 /*==============================================================*/
 create table PT_SYS.PTT_USER_GROUP 
 (
-   ID                   CHAR(32)             not null,
+   ID                   VARCHAR2(32)         not null,
    USER_GROUP_NAME      NVARCHAR2(32)        not null,
    CREATE_TIME          TIMESTAMP            default sysdate not null,
    UPDATE_TIME          TIMESTAMP            default sysdate not null,
@@ -181,8 +181,8 @@ create table PT_SYS.PTT_USER_GROUP
 /*==============================================================*/
 create table PT_SYS.PTT_USER_GROUP_2_USER 
 (
-   USER_GROUP_ID        CHAR(32)             not null,
-   USER_ID              CHAR(32)             not null,
+   USER_GROUP_ID        VARCHAR2(32)         not null,
+   USER_ID              VARCHAR2(32)         not null,
    constraint PK_PTT_USER_GROUP_2_USER primary key (USER_GROUP_ID, USER_ID)
 );
 
