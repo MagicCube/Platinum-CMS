@@ -26,7 +26,7 @@ pt.cms.admin.common.page.AdminPageController = function()
         
         me.restClient = new pt.cms.admin.rest.RESTClient();
         me.navigationListViewController = new pt.cms.admin.common.view.NavigationListViewController({
-            view: { $element: me.$page.children("#navigationListView"), bounds: { left: 0, top: 40, bottom: 0, width: 205 } },
+            view: { $element: me.$page.children("#navigationListView"), frame: { left: 0, top: 40, bottom: 0, width: 205 } },
             items: [
                 { id: "dashboard", title: "My Dashboard", description: "显示我发布的内容和常规任务" },
                 { id: "post", title: "内容", description: "添加及维护各种形式的内容" },

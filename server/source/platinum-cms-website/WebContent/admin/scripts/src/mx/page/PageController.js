@@ -58,7 +58,7 @@ mx.page.PageController = function()
         
         
         me.rootViewController = p_controller;
-        me.rootViewController.view.setBounds({ left: 0, width: "100%", top: 0, bottom: 0 });
+        me.rootViewController.view.setFrame({ left: 0, width: "100%", top: 0, bottom: 0 });
         var $e = me.rootViewController.view.$element;
         $e.css({ left: (me.$container.width() + 15) * ani, opacity: 0.5 });
         me.addSubview(p_controller.view);

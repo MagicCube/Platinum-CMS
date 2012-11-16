@@ -22,7 +22,7 @@ pt.cms.admin.post.view.RootViewController = function()
         me.postListViewController = new pt.cms.admin.post.view.PostListViewController({
             restClient: me.restClient,
             view: {
-                bounds: { left: 0, top: 38, bottom: 0, width: "38%" },
+                frame: { left: 0, top: 38, bottom: 0, width: "38%" },
                 onselectionchanged: _postListView_onselectionchanged
             }
         });
@@ -31,7 +31,7 @@ pt.cms.admin.post.view.RootViewController = function()
         me.postDetailViewController = new pt.cms.admin.post.view.PostDetailViewController({
             restClient: me.restClient,
             view: {
-                bounds: { left: parseInt(me.postListViewController.view.bounds.width) + ".2%", right: 0, top: 0, bottom: 0 }
+                frame: { left: parseInt(me.postListViewController.view.frame.width) + ".2%", right: 0, top: 0, bottom: 0 }
             }
         });
         me.view.addSubview(me.postDetailViewController.view);
@@ -44,10 +44,10 @@ pt.cms.admin.post.view.RootViewController = function()
     
     function _initToolbars()
     {
-        me.postListViewController.toolbar.setBounds({ left: 0, top: 0, width: me.postListViewController.view.bounds.width });
+        me.postListViewController.toolbar.setFrame({ left: 0, top: 0, width: me.postListViewController.view.frame.width });
         me.toolbars.add(me.postListViewController.toolbar);
         
-        me.postDetailViewController.toolbar.setBounds({ left: me.postDetailViewController.view.bounds.left, top: 0, right: me.postDetailViewController.view.bounds.right });
+        me.postDetailViewController.toolbar.setFrame({ left: me.postDetailViewController.view.frame.left, top: 0, right: me.postDetailViewController.view.frame.right });
         me.toolbars.add(me.postDetailViewController.toolbar);
     }
     

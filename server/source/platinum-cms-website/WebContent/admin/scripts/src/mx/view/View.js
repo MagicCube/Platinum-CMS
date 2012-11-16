@@ -10,7 +10,7 @@ mx.view.View = function()
     me.$container = null;
     me.elementTag = "div";
     
-    me.bounds = null;
+    me.frame = null;
     me.subviews = [];
     
     base.init = me.init;
@@ -33,38 +33,38 @@ mx.view.View = function()
         }
         me.$element.attr("id", me.id);
 
-        me.setBounds(me.bounds);
+        me.setFrame(me.frame);
     };
     
-    me.setBounds = function(p_bounds)
+    me.setFrame = function(p_frame)
     {
-        if (p_bounds != null)
+        if (p_frame != null)
         {
-            if (p_bounds.left != null)
+            if (p_frame.left != null)
             {
-                me.$element.css("left", p_bounds.left);
+                me.$element.css("left", p_frame.left);
             }
-            if (p_bounds.right != null)
+            if (p_frame.right != null)
             {
-                me.$element.css("right", p_bounds.right);
+                me.$element.css("right", p_frame.right);
             }
-            if (p_bounds.top != null)
+            if (p_frame.top != null)
             {
-                me.$element.css("top", p_bounds.top);
+                me.$element.css("top", p_frame.top);
             }
-            if (p_bounds.bottom != null)
+            if (p_frame.bottom != null)
             {
-                me.$element.css("bottom", p_bounds.bottom);
+                me.$element.css("bottom", p_frame.bottom);
             }
-            if (p_bounds.width != null)
+            if (p_frame.width != null)
             {
-                me.$element.css("width", p_bounds.width);
+                me.$element.css("width", p_frame.width);
             }
-            if (p_bounds.height != null)
+            if (p_frame.height != null)
             {
-                me.$element.css("height", p_bounds.height);
+                me.$element.css("height", p_frame.height);
             }
-            if (p_bounds.left != null || p_bounds.right != null || p_bounds.top != null || p_bounds.bottom != null)
+            if (p_frame.left != null || p_frame.right != null || p_frame.top != null || p_frame.bottom != null)
             {
                 me.$element.css("position", "absolute");
             }
