@@ -11,8 +11,11 @@ pt.cms.admin.post.view.PostEditViewController = function()
     var base = {};
     
     me.data = null;
+    me.categories = null;
     me.contentEditor = null;
+    me.resetClient = null;
     
+    me.$id = null;
     me.$title = null;
     me.$summary = null;
     me.$category = null;
@@ -47,13 +50,13 @@ pt.cms.admin.post.view.PostEditViewController = function()
         
         var $div = $("<div class=section id=titleSection />");
         me.$title = $("<input id=title type=text/>");
-        me.$title.hint({ text: "请在这里输入标题" });
+        me.$title.attr({ title: "请在这里输入标题" });
         $div.append(me.$title);
         $main.append($div);
         
         $div = $("<div class='section' id='summarySection'>");
         me.$summary = $("<textarea id=summary/>");
-        me.$summary.hint({ text: "请在这里添加摘要" });
+        me.$summary.attr({ title: "请在这里添加摘要" });
         $div.append(me.$summary);
         $main.append($div);
         
@@ -61,18 +64,26 @@ pt.cms.admin.post.view.PostEditViewController = function()
         $main.append(me.$content);
         
         
-        var $dl = $("<dl><dt>状态</dt> <dd></dd></dl>");
+        
+
+        
+        var $dl = $("<dl><dt>唯一标识</dt> <dd></dd></dl>");
+        me.$id = $("<input type=text id=id readonly onclick='this.select()'>");
+        $dl.children("dd").append(me.$id);
+        $sideBar.append($dl);
+        
+        $dl = $("<dl><dt>状态</dt> <dd></dd></dl>");
         me.$postStatus = $("<select id=postStatus><option value=0>尚未发布</option><option value=1>已发布</option></select>");
         $dl.children("dd").append(me.$postStatus);
         $sideBar.append($dl);
         
         var $dl = $("<dl><dt>栏目</dt> <dd></dd></dl>");
-        me.$category = $("<select id=category><option>请选择栏目</option></select>");
+        me.$category = $("<select id=category><option value=0>(请选择栏目)</option></select>");
         $dl.children("dd").append(me.$category);
         $sideBar.append($dl);
         
         var $dl = $("<dl><dt>子栏目</dt> <dd></dd></dl>");
-        me.$subcategory = $("<select id=subcategory><option>请选择子栏目</option></select>");
+        me.$subcategory = $("<select id=subcategory><option value=0>(空)</option></select>");
         $dl.children("dd").append(me.$subcategory);
         $sideBar.append($dl);
         
@@ -98,6 +109,27 @@ pt.cms.admin.post.view.PostEditViewController = function()
         
         me.view.$element.append($main);
         me.view.$element.append($sideBar);
+        
+        
+        me.restClient.GET("admin/category/", null)
+            .success(function(p_result){
+                me.categories = p_result;
+                for (var i = 0; i < me.categories.length; i++)
+                {
+                    var category = me.categories[i];
+                    var $opt = $("<option>");
+                    $opt.attr("value", category.id);
+                    $opt.text(category.name);
+                    me.$category.append($opt);
+                }
+                if (me.data != null && me.data.categoryId)
+                {
+                    me.$category.val(me.data.categoryId);
+                    _category_onchanged();
+                    me.$subcategory.val(me.data.subcategoryId);
+                }
+            });
+        me.$category.change(_category_onchanged);
     };
     
     me.setData = function(p_data)
@@ -108,10 +140,22 @@ pt.cms.admin.post.view.PostEditViewController = function()
     
     me.renderView = function()
     {
+        me.$id.val(me.data.id);
         me.$title.val(me.data.title);
         me.$title.blur();
         me.$summary.val(me.data.summary);
         me.$summary.blur();
+        
+        me.$category.val(me.data.categoryId);
+        _category_onchanged();
+        if (me.data.subcategoryId != null)
+        {
+            me.$subcategory.val(me.data.subcategoryId);
+        }
+        else
+        {
+            me.$subcategory.val(0);
+        }
         
         me.$postStatus.val(me.data.postStatus);
         me.$source.val(me.data.source);
@@ -152,18 +196,81 @@ pt.cms.admin.post.view.PostEditViewController = function()
         }
     };
     
-    
-    
-    function _btnSave_onclick(e)
+    me.savePost = function()
     {
         me.contentEditor.updateTextArea();
         var post = {};
-        post.title = me.$title.val();
-        post.summary = me.$summary.val();
-        //post.contentText = me.$content.val();
+        post.id = me.data.id;
+        post.title = me.$title.val().trim();
+        if (post.title == "")
+        {
+            _showWarning("title", "标题不能为空。");
+            return;
+        }
+        
+        if (post.title.length > 60)
+        {
+            _showWarning("title", "标题不能超过 60 个汉字。");
+            return;
+        }
+        
+        post.summary = me.$summary.val().trim();
+        if (post.summary.length > 120)
+        {
+            _showWarning("summary", "摘要不能超过 120 个汉字。");
+            return;
+        }
+        
+        
+        post.categoryId = me.$category.val();
+        if (post.categoryId == 0)
+        {
+            _showWarning("category", "请选择该文章所在的栏目。");
+            return;
+        }
+        
+        post.subcategoryId = me.$subcategory.val();
+        post.contentText = me.$content.val();
         post.postStatus = parseInt(me.$postStatus.val());
         post.source = me.$source.val();
-        alert(JSON.stringify(post));
+        
+    };
+    
+    
+    function _showWarning(p_field, p_message)    
+    {
+        me.view.$element.find("#" + p_field).focus();
+        me.view.$element.find("#" + p_field).select();
+    }
+    
+    function _btnSave_onclick(e)
+    {
+        me.savePost();
+    }
+    
+    function _category_onchanged(e)
+    {
+        var categoryId = me.$category.attr("value");
+        me.$subcategory.children("option[value!=\"0\"]").remove();
+        if (categoryId != 0)
+        {
+            for (var i = 0; i < me.categories.length; i++)
+            {
+                if (me.categories[i].id == categoryId)
+                {
+                    var subcategories = me.categories[i].subcategories;
+                    for (var j = 0; j < subcategories.length; j++)
+                    {
+                        var sc = subcategories[j];
+                        var $opt = $("<option>");
+                        $opt.attr("value", sc.id);
+                        $opt.text(sc.name);
+                        me.$subcategory.append($opt);
+                    }
+                    break;
+                }
+            }
+        }
     }
     
     

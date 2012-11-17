@@ -72,7 +72,7 @@ pt.cms.admin.post.view.PostDetailViewController = function()
     {
         if (me.postEditViewController == null)
         {
-            me.postEditViewController = new pt.cms.admin.post.view.PostEditViewController();
+            me.postEditViewController = new pt.cms.admin.post.view.PostEditViewController({ restClient: me.restClient });
         }
         $pageController.pushViewController(me.postEditViewController);
         me.postEditViewController.setData(me.data);
