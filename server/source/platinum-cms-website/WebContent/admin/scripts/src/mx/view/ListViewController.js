@@ -10,7 +10,7 @@ mx.view.ListViewController = function()
     me.viewClass = mx.view.ListView;
     var base = {};
     
-    me.items = [];
+    me.data = [];
     
     base.init = me.init;
     me.init = function(p_options)
@@ -19,17 +19,6 @@ mx.view.ListViewController = function()
         
         me.view.on("selectionchanging", me.selectionWillChange);
         me.view.on("selectionchanged", me.selectionDidChange);
-    };
-    
-    base.viewDidLoad = me.viewDidLoad;
-    me.viewDidLoad = function()
-    {
-        base.viewDidLoad();
-        
-        if (me.items == null)
-        {
-            me.items = [];
-        }
     };
     
     me.newItem = function(p_options)
@@ -47,12 +36,12 @@ mx.view.ListViewController = function()
     
     me.addItem = function(p_item)
     {
-        me.items.add(p_item);
+        me.data.add(p_item);
         if (notEmpty(p_item.id))
         {
-            me.items[p_item.id] = p_item;
+            me.data[p_item.id] = p_item;
         }
-        var $row = me.createRowAt(me.items.length - 1);
+        var $row = me.createRowAt(me.data.length - 1);
         me.view.addRow($row);
     };
     
@@ -67,34 +56,34 @@ mx.view.ListViewController = function()
         
         if (notEmpty(p_item.id))
         {
-            delete me.items[p_item.id];
+            delete me.data[p_item.id];
         }
         
-        var index = me.items.indexOf(p_item);
-        me.items.removeAt(index);
+        var index = me.data.indexOf(p_item);
+        me.data.removeAt(index);
         me.view.removeRowAt(index);
     };
     
     me.removeItemAt = function(p_index)
     {
-        var item = me.items[p_index];
+        var item = me.data[p_index];
         if (item != null)
         {
             me.removeItem(item);
         }
     };
     
-    me.clearItems = function()
+    me.clearData = function()
     {
-        me.items.clear();
-        me.items = null;
-        me.items = [];
+        me.data.clear();
+        me.data = null;
+        me.data = [];
         me.view.clearRows();
     };
     
-    me.setItems = function(p_items)
+    me.setData = function(p_data)
     {
-        me.items = p_items;
+        me.data = p_data;
         me.reloadRows();
     };
     
@@ -103,12 +92,12 @@ mx.view.ListViewController = function()
     
     me.getRowCount = function()
     {
-        return me.items.length;
+        return me.data.length;
     };
     
     me.createRowAt = function(p_index)
     {
-        var item = me.items[p_index];
+        var item = me.data[p_index];
         var $row = me.createBlankRow(p_index);
         me.renderRow($row, item);
         return $row;
@@ -135,7 +124,7 @@ mx.view.ListViewController = function()
     me.updateRowAt = function(p_index)
     {
         var $row = me.view.getRowAt(p_index);
-        var item = me.items[p_index];
+        var item = me.data[p_index];
         if ($row != null && item != null)
         {
             me.renderRow($row, item);
@@ -168,7 +157,7 @@ mx.view.ListViewController = function()
     
     me.selectItemAt = function(p_index, p_fireEvent)
     {
-        me.selectItem(me.items[p_index], p_fireEvent);
+        me.selectItem(me.data[p_index], p_fireEvent);
     };
     
     me.selectionWillChange = function(e)
