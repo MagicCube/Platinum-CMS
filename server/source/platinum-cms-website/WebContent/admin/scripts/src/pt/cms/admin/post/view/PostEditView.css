@@ -1,4 +1,113 @@
 .PostEditView
 {
-    background: yellow;
+    background: white;
+}
+
+.PostEditView > #main
+{
+    position: absolute;
+    left: 0;
+    right: 250px;
+    top: 0;
+    bottom: 0;
+}
+
+.PostEditView > #sideBar
+{
+    position: absolute;
+    right: 0;
+    width: 250px;
+    top: 0;
+    bottom: 0;
+    background: #f1f1f1;
+    border-left: 1px solid #e6e6e6;
+}
+
+.PostEditView > #main > .section
+{
+    height: 38px;
+    line-height: 40px;
+    border-bottom: 1px solid #ededed;
+}
+
+.PostEditView > #main > #categorySection
+{
+    padding-left: 20px;
+}
+
+.PostEditView > #main > #categorySection > select
+{
+    width: 150px;
+    margin-right: 10px;
+}
+
+.PostEditView > #main > .section > input, .PostEditView > #main > .section > textarea
+{
+    width: 100%;
+    padding-left: 20px;
+    border: none;
+    color: black;
+}
+
+.PostEditView > #main > .section > input
+{
+    height: 24px;
+    line-height: 22px;
+    font-size: 16px;
+}
+
+.PostEditView > #main > .section > textarea
+{
+    height: 100%;
+}
+
+.PostEditView > #main > .section > input#title
+{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.PostEditView > #sideBar > dl
+{
+    display: block;
+    clear: both;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.PostEditView > #sideBar > dl > dt
+{
+    display: block;
+    float: left;
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0;
+    padding-right: 8px;
+    text-align: right;
+    background: #d9d9d9;
+    border-right: 1px solid #dddddd;
+    color: gray;
+}
+
+.PostEditView > #sideBar > dl > dd
+{
+    display: block;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    padding: 0;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.PostEditView > #sideBar > dl > dd > input, .PostEditView > #sideBar > dl > dd > select
+{
+    width: 150px;
 }

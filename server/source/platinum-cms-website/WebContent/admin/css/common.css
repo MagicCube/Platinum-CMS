@@ -16,7 +16,8 @@ a, b, button, code, div, i, input, label, li, menu, ol, p, pre, select, table, t
     font-size: 12px;
 }
 
-input
+input, textarea, button
 {
     outline: none;
+    resize: none;
 }
