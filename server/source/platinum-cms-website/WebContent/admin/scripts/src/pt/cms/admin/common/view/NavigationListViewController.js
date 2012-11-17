@@ -51,7 +51,7 @@ pt.cms.admin.common.view.NavigationListViewController = function()
             }
         }
         
-        $path = me.items[e.selectedIndex].id;
+        $path = me.data[e.selectedIndex].id;
         $pageController.navigateTo($path, animation);
     };
     
