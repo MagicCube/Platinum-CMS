@@ -33,7 +33,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
     
     function _btnCancel_onclick(e)
     {
-        adminPageController.popViewController();
+        $pageController.popViewController();
     }    
     
     return me.endOfClass(arguments);

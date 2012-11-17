@@ -74,7 +74,7 @@ pt.cms.admin.post.view.PostDetailViewController = function()
         {
             me.postEditViewController = new pt.cms.admin.post.view.PostEditViewController();
         }
-        adminPageController.pushViewController(me.postEditViewController);
+        $pageController.pushViewController(me.postEditViewController);
     }
     
     return me.endOfClass(arguments);
