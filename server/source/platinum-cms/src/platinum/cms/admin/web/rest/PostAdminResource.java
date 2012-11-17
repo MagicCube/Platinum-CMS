@@ -4,15 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.ws.rs.DefaultValue;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 
 import org.codehaus.jettison.json.JSONException;
+import org.codehaus.jettison.json.JSONObject;
 
 import platinum.cms.admin.service.PostAdminManager;
+import platinum.cms.common.PostStatus;
 import platinum.cms.common.entity.PostEntity;
 import platinum.cms.common.search.PostSearchEngine;
 import platinum.cms.common.search.PostSearchResult;
@@ -75,5 +79,39 @@ public class PostAdminResource extends AbstractResource
 			}
 		}
 		return responseWithJSONObject(PostJSONSerializer.toDetailObject(post), post.getUpdateTime());
+	}
+	
+	@PUT
+	@Path("/{id}")
+	public Response updatePost(
+			@PathParam("id") String p_id,
+			@FormParam("post") String p_postJSONString
+			) throws JSONException
+	{
+		PostEntity post = PostAdminManager.getInstance().getPostById(p_id);
+		if (post != null)
+		{
+			JSONObject postJSON = new JSONObject(p_postJSONString);
+			post.setTitle(postJSON.getString("title"));
+			post.setContentText(postJSON.getString("contentText"));
+			post.setSummary(postJSON.getString("summary"));
+			post.setCategoryId(postJSON.getString("categoryId"));
+			post.setSubcategoryId(postJSON.getString("subcategoryId"));
+			post.setSource(postJSON.getString("source"));
+			post.setPostStatus(PostStatus.values()[postJSON.getInt("postStatus")]);
+			
+			PostAdminManager.getInstance().updatePost(post);
+			
+			JSONObject jsonResult = new JSONObject();
+			jsonResult.put("id", post.getId());
+			jsonResult.put("publisher", post.getPublisher());
+			jsonResult.put("createTime", post.getCreateTime().getTime());
+			jsonResult.put("updateTime", post.getUpdateTime().getTime());
+			return responseWithJSONObject(jsonResult);
+		}
+		else
+		{
+			return responseWithException("没有找到标识为“" + p_id + "”的文章。");
+		}
 	}
 }

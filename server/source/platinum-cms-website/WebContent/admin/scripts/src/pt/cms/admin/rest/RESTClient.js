@@ -28,6 +28,17 @@ pt.cms.admin.rest.RESTClient = function()
         });
         return result;
     };
+    
+    me.PUT = function(p_path, p_data)
+    {
+        var url = me.baseUrl + p_path;
+        var result = $.ajax({
+            type: "PUT",
+            url: url,
+            data: p_data
+        });
+        return result;
+    };
 
     me.DELETE = function(p_path, p_data)
     {

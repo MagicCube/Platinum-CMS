@@ -47,4 +47,10 @@ public class PostAdminManager
 		List<PostEntity> poList = getPostDAO().select(query);
 		return poList;
 	}
+	
+	public PostEntity updatePost(PostEntity p_post)
+	{
+		getPostDAO().update(p_post);
+		return p_post;
+	}
 }

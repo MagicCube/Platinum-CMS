@@ -8,7 +8,6 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
@@ -22,16 +21,15 @@ import platinum.framework.entity.StandardEntity;
 @Table(name = "PTT_POST", schema = "PT_CMS")
 public class PostEntity extends StandardEntity
 {
-	private SubcategoryEntity _subcategory = null;
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "SUBCATEGORY_ID")
-	public SubcategoryEntity getSubcategory()
+	private String _subcategoryId = null;
+	@Column(name = "SUBCATEGORY_ID")
+	public String getSubcategoryId()
 	{
-		return _subcategory;
+		return _subcategoryId;
 	}
-	public void setSubcategory(SubcategoryEntity value)
+	public void setSubcategoryId(String value)
 	{
-		_subcategory = value;
+		_subcategoryId = value;
 	}
 	
 	private String _categoryID = null;

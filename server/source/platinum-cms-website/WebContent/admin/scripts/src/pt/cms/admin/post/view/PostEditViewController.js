@@ -13,7 +13,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
     me.data = null;
     me.categories = null;
     me.contentEditor = null;
-    me.resetClient = null;
+    me.restClient = null;
     
     me.$id = null;
     me.$title = null;
@@ -39,7 +39,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         
         me.toolbar = new pt.cms.admin.common.view.Toolbar();
         me.toolbar.addButton("savePost", "保存").addClass("default").click(_btnSave_onclick);
-        me.toolbar.addButton("cancel", "取消").addClass("yellow").click(_btnCancel_onclick);
+        me.toolbar.addButton("cancel", "返回").addClass("yellow").click(_btnCancel_onclick);
         me.toolbars = [me.toolbar];
     };
     
@@ -234,6 +234,15 @@ pt.cms.admin.post.view.PostEditViewController = function()
         post.postStatus = parseInt(me.$postStatus.val());
         post.source = me.$source.val();
         
+        if (post.id != null)
+        {
+            me.restClient.PUT("admin/post/" + post.id, { post: JSON.stringify(post) })
+                .success(function(p_result){
+                    $.extend(me.data, post);
+                    $.extend(me.data, p_result);
+                    me.renderView();
+                });
+        }
     };
     
     

@@ -5,7 +5,6 @@ import java.util.List;
 import platinum.cms.common.dao.CategoryDAO;
 import platinum.cms.common.dao.SubcategoryDAO;
 import platinum.cms.common.entity.CategoryEntity;
-import platinum.cms.common.entity.PostEntity;
 import platinum.cms.common.entity.SubcategoryEntity;
 import platinum.framework.dao.DAOQuery;
 
