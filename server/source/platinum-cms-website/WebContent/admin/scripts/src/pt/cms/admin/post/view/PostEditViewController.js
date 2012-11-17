@@ -240,7 +240,29 @@ pt.cms.admin.post.view.PostEditViewController = function()
                 .success(function(p_result){
                     $.extend(me.data, post);
                     $.extend(me.data, p_result);
+                    
                     me.renderView();
+                    $pageController.rootViewControllers["post"].postDetailViewController.renderView();
+                    
+                    var listViewController = $pageController.rootViewControllers["post"].postListViewController;
+                    var postInList = listViewController.data[listViewController.view.selectedIndex];
+                    postInList.title = me.data.title;
+                    postInList.updateTime = me.data.updateTime;
+                    postInList.source = me.data.source;
+                    postInList.summary = me.data.summary;
+                    listViewController.reloadSelectedRow();
+                    
+                    alert("您已成功保存当前操作的文章。");
+                });
+        }
+        else
+        {
+            me.restClient.POST("admin/post/", { post: JSON.stringify(post) })
+                .success(function(p_result){
+                    $.extend(me.data, post);
+                    $.extend(me.data, p_result);
+                    me.renderView();
+                    alert("您已成功创建当前操作的文章。");
                 });
         }
     };

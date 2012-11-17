@@ -121,16 +121,6 @@ mx.view.ListViewController = function()
         }
     };
     
-    me.updateRowAt = function(p_index)
-    {
-        var $row = me.view.getRowAt(p_index);
-        var item = me.data[p_index];
-        if ($row != null && item != null)
-        {
-            me.renderRow($row, item);
-        }
-    };
-    
     me.reloadRows = function()
     {
         me.view.clearRows();
@@ -141,7 +131,25 @@ mx.view.ListViewController = function()
             me.view.addRow($row);
         }
     };
+    
 
+    
+    me.reloadRowAt = function(p_index)
+    {
+        var $row = me.view.getRowAt(p_index);
+        var item = me.data[p_index];
+        if ($row != null && $row.length > 0 && item != null)
+        {
+            me.renderRow($row, item);
+        }
+    };
+    me.reloadSelectedRow = function()
+    {
+        if (me.view.selectedIndex >= 0)
+        {
+            me.reloadRowAt(me.view.selectedIndex);
+        }
+    };
 
     
     me.selectItemById = function(p_id, p_fireEvent)
