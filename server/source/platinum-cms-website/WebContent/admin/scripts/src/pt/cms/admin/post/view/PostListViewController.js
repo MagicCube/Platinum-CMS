@@ -34,10 +34,13 @@ pt.cms.admin.post.view.PostListViewController = function()
         me.$searchBar.append(_$keywords);
         
         me.toolbar.$element.append(me.$searchBar);
+        
+        me.toolbar.addButton("newPost", "新建").addClass("default");
+        me.toolbar.addButton("deletePost", "删除").addClass("red");
     };
     
     
-    me.loadItems = function()
+    me.loadData = function()
     {
         me.queryByCategory(null);
     };
@@ -48,7 +51,7 @@ pt.cms.admin.post.view.PostListViewController = function()
         _renderMode = "html";
         me.restClient.GET("admin/post/", { keywords: p_keywords })
             .success(function(p_result){
-                me.setItems(p_result);
+                me.setData(p_result);
             });
     };
     
@@ -57,7 +60,7 @@ pt.cms.admin.post.view.PostListViewController = function()
         _renderMode = "text";
         me.restClient.GET("admin/post/")
             .success(function(p_result){
-                me.setItems(p_result);
+                me.setData(p_result);
             });
     };
     
