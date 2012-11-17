@@ -35,11 +35,14 @@
                     {
                         $input.val(title).addClass(settings.blurClass);
                     }
+                    else
+                    {
+                        $input.removeClass(settings.blurClass);
+                    }
                 }).blur(); // now change all inputs to title
 
                 $input.focus(function()
                 {
-
                     if (settings.resetCursorPos)
                     {
                         // check if IE
@@ -81,7 +84,7 @@
     $.fn.hint.defaults =
     {
         text : '',
-        blurClass : 'blur',
+        blurClass : 'empty',
         retain : false,
         resetCursorPos : true
     };

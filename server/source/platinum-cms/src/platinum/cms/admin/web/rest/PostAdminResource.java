@@ -68,7 +68,6 @@ public class PostAdminResource extends AbstractResource
 		String ifModifiedSince = getHttpHeader("If-Modified-Since");
 		if (ifModifiedSince != null)
 		{
-			
 			String lastModified = DateUtil.formatGMTDate(post.getUpdateTime());
 			if (lastModified.equals(ifModifiedSince))
 			{

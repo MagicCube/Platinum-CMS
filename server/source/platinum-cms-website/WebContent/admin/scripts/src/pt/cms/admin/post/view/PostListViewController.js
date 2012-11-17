@@ -80,8 +80,6 @@ pt.cms.admin.post.view.PostListViewController = function()
     {
         base.renderRow($p_row, p_item);
         
-        
-        
         var updateTime = new Date(p_item.updateTime);
         $p_row.children("#updateTime").text($format(updateTime, "smart"));
         $p_row.children("#updateTime").attr("title", $format(updateTime, "yyyy年M日d日 HH:mm:ss"));

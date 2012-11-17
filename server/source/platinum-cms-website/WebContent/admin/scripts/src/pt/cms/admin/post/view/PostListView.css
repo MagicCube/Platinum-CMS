@@ -84,7 +84,7 @@ sour.PostListView
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-#postListToolbar #keywords
+#postListToolbar > #searchBar > #keywords
 {
     position: absolute;
     top: 7px;
@@ -100,7 +100,7 @@ sour.PostListView
     background-color: #efefef;    
 }
 
-#postListToolbar #keywords.blur
+#postListToolbar #keywords.empty
 {
     color: gray;
 }

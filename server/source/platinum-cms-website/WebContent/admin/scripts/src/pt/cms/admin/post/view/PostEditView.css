@@ -19,7 +19,8 @@
     width: 250px;
     top: 0;
     bottom: 0;
-    background: #f1f1f1;
+    padding-top: 10px;
+    background: #f1f1f1 url(images/post_edit_view_side_bar_bg.png) repeat-y;
     border-left: 1px solid #e6e6e6;
 }
 
@@ -30,15 +31,9 @@
     border-bottom: 1px solid #ededed;
 }
 
-.PostEditView > #main > #categorySection
+.PostEditView > #main > #content
 {
-    padding-left: 20px;
-}
-
-.PostEditView > #main > #categorySection > select
-{
-    width: 150px;
-    margin-right: 10px;
+    
 }
 
 .PostEditView > #main > .section > input, .PostEditView > #main > .section > textarea
@@ -47,6 +42,11 @@
     padding-left: 20px;
     border: none;
     color: black;
+}
+
+.PostEditView > #main > .section > input.empty, .PostEditView > #main > .section > textarea.empty
+{
+    color: gray;
 }
 
 .PostEditView > #main > .section > input
@@ -91,9 +91,8 @@
     padding: 0;
     padding-right: 8px;
     text-align: right;
-    background: #d9d9d9;
-    border-right: 1px solid #dddddd;
-    color: gray;
+    color: #888;
+    text-shadow: 0 1px #efefef;
 }
 
 .PostEditView > #sideBar > dl > dd
@@ -110,4 +109,9 @@
 .PostEditView > #sideBar > dl > dd > input, .PostEditView > #sideBar > dl > dd > select
 {
     width: 150px;
+}
+
+.PostEditView > #sideBar > dl > dd > input
+{
+    padding-left: 4px;
 }

@@ -22,7 +22,7 @@ public class PostJSONSerializer
 		try
 		{
 			json.put("id", p_post.getId());
-			json.put("updateTime", p_post.getUpdateTime());
+			json.put("updateTime", p_post.getUpdateTime().getTime());
 			
 			json.put("title", p_post.getTitle());
 			json.put("source", p_post.getSource());
@@ -75,9 +75,10 @@ public class PostJSONSerializer
 			json.put("subcategory", p_post.getSubcategory().getSubcategoryName());
 			json.put("contentText", p_post.getContentText());
 			json.put("postType", p_post.getPostType());
-			json.put("postStatus", p_post.getPostStatus());
+			json.put("postStatus", p_post.getPostStatus().ordinal());
 			json.put("publisher", p_post.getPublisher());
 			json.put("source", p_post.getSource());
+			json.put("createTime", p_post.getCreateTime().getTime());
 		}
 		catch (JSONException e)
 		{
