@@ -27,7 +27,7 @@ pt.cms.admin.common.page.AdminPageController = function()
         me.restClient = new pt.cms.admin.rest.RESTClient();
         me.navigationListViewController = new pt.cms.admin.common.view.NavigationListViewController({
             view: { $element: me.$page.children("#navigationListView"), frame: { left: 0, top: 40, bottom: 0, width: 205 } },
-            items: [
+            data: [
                 { id: "dashboard", title: "My Dashboard", description: "显示我发布的内容和常规任务" },
                 { id: "post", title: "内容", description: "添加及维护各种形式的内容" },
                 { id: "category", title: "栏目", description: "添加及维护内容的栏目" },
@@ -37,7 +37,8 @@ pt.cms.admin.common.page.AdminPageController = function()
         });
         me.navigationListViewController.reloadRows();
         
-        me.navigateTo($path, false);
+        //me.navigateTo($path, false);
+        me.navigateTo("post", false);
     };
     
     me.navigateTo = function(p_path, p_animation)
@@ -88,6 +89,24 @@ pt.cms.admin.common.page.AdminPageController = function()
                 _$blankToolbar = $("<div class='Toolbar'>");
             }
             $toolstrip.append(_$blankToolbar);
+        }
+    };
+    
+    
+    var _viewControllerStack = [];
+    me.pushViewController = function(p_controller, p_animation)
+    {
+        _viewControllerStack.push(me.rootViewController);
+        me.setRootViewController(p_controller, p_animation);
+    };
+    
+
+    me.popViewController = function()
+    {
+        var viewController = _viewControllerStack.pop();
+        if (viewController != null)
+        {
+            me.setRootViewController(viewController, -1);
         }
     };
     
