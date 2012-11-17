@@ -38,7 +38,7 @@ pt.cms.admin.post.view.RootViewController = function()
 
         _initToolbars();
         
-        me.postListViewController.loadItems();
+        me.postListViewController.loadData();
     };
     
     
@@ -55,8 +55,8 @@ pt.cms.admin.post.view.RootViewController = function()
     
     function _postListView_onselectionchanged(e)
     {
-        var post = me.postListViewController.items[me.postListViewController.view.selectedIndex];
-        me.postDetailViewController.loadItem(post.id);
+        var post = me.postListViewController.data[me.postListViewController.view.selectedIndex];
+        me.postDetailViewController.loadData(post.id);
     }
     
     return me.endOfClass(arguments);
