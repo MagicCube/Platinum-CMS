@@ -65,7 +65,7 @@ public class PostSpider implements IPostSpider
 		Elements subcategoryElement = document.select("#article #locate a").eq(2);
 		String subcategoryName = subcategoryElement.text();
 		SubcategoryEntity subcategory = _getSubcategoryByName(subcategoryName, post.getCategoryId());
-		post.setSubcategory(subcategory);
+		post.setSubcategoryId(subcategory.getId());
 		
 		
 		// 内容
