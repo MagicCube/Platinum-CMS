@@ -153,7 +153,7 @@ public class PostAdminResource extends AbstractResource
 		post.setContentText(postJSON.getString("contentText"));
 		post.setSummary(postJSON.getString("summary"));
 		post.setCategoryId(postJSON.getString("categoryId"));
-		if (postJSON.get("subcategoryId") == null)
+		if (postJSON.getString("subcategoryId") != "null")
 		{
 			post.setSubcategoryId(postJSON.getString("subcategoryId"));
 		}
@@ -162,7 +162,7 @@ public class PostAdminResource extends AbstractResource
 			post.setSubcategoryId(null);
 		}
 		post.setSource(postJSON.getString("source"));
-		if (postJSON.get("photoURL") == null)
+		if (postJSON.getString("photoURL") != "null")
 		{
 			post.setPhotoURL(postJSON.getString("photoURL"));
 		}
