@@ -129,43 +129,7 @@
 			<!-- begin of block_home_slider -->
 			 <div class="block_home_slider">
                     		<div id="home_slider" class="flexslider">
-                            	<ul class="slides">
-                                	<li>
-                                    	<a>
-                                            <img src="static/temp/1.jpg" height = "260px" alt="" />
-                                            <span class="caption">
-                                                
-                                            </span>
-                                        </a>
-                                    </li>
-                                    
-                                    <li>
-                                    	<a>
-                                            <img src="static/temp/1.jpg" height = "260px" alt="" />
-                                            <span class="caption">
-                                               
-                                            </span>
-                                        </a>
-                                    </li>
-                                    
-                                    <li>
-                                    	<a>
-                                            <img src="static/temp/1.jpg" height = "260px" alt="" />
-                                            <span class="caption">
-                                                
-                                            </span>
-                                        </a>
-                                    </li>
-                                    
-                                    <li>
-                                    	<a>
-                                            <img src="static/temp/1.jpg" height = "260px" alt="" />
-                                            <span class="caption">
-                                                
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
+                            	<cms:PostList id="tsztList" cssClass="slides" categoryId="news" displayPhoto="true" count="4" />
                             </div>
                             
                             <script type="text/javascript">
@@ -187,11 +151,11 @@
 			<div id = "news">
 				<span><img src = "static/home/images/news.png" alt = ""/></span>
 				<div id = "part1">
-					<cms:PostList id="xwdtList" cssClass="PhotoList" subcategoryId="SC000000000000000000000000000006" displayPhoto="true" count="3" />
+					<cms:PostList id="xwdtList1" cssClass="PhotoList" subcategoryId="SC000000000000000000000000000006" displayPhoto="true" count="3" />
 				</div>
 				
 				<div id = "part2">
-					<cms:PostList id="xwdtList2" subcategoryId="SC000000000000000000000000000006" count="6" />
+					<cms:PostList id="xwdtList2" subcategoryId="SC000000000000000000000000000006" where="photoURL is null" count="6" />
 					<p id = "position_2"><a href = "home/list.jsp">更多...</a></p>
 				</div>
 			</div>
@@ -199,11 +163,11 @@
 			<div id = "schoolnews">
 				<span><img src = "static/home/images/schoolnews.png" alt = ""/></span>
 				<div id = "part1">
-					<cms:PostList id="xydtList" cssClass="PhotoList" subcategoryId="SC000000000000000000000000000020" displayPhoto="true" count="3" />
+					<cms:PostList id="xydtList1" cssClass="PhotoList" subcategoryId="SC000000000000000000000000000020" displayPhoto="true" count="3" />
 				</div>
 				
 				<div id = "part2">
-					<cms:PostList id="xydtList2" subcategoryId="SC000000000000000000000000000020" count="6" />
+					<cms:PostList id="xydtList2" subcategoryId="SC000000000000000000000000000020" where="photoURL is null" count="6" />
 					<p id = "position_2"><a href = "home/list.jsp">更多...</a></p>
 				</div>				
 			</div>			
