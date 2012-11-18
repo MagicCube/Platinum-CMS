@@ -49,6 +49,7 @@ pt.cms.admin.post.view.PostDetailViewController = function()
     {
         if (me.data != null)
         {
+            me.view.$element.show();
             me.view.$element.children("h1").text(me.data.title);
             me.view.$element.find("#info").text($format(new Date(me.data.updateTime), "yyyy年M月d日 HH:mm") + " " + me.data.source);
             me.view.$element.find("ul > #category").text(me.data.categoryId + " > ");
@@ -60,6 +61,7 @@ pt.cms.admin.post.view.PostDetailViewController = function()
         }
         else
         {
+            me.view.$element.hide();
             me.toolbar.getButton("editPost").hide();
         }
     };

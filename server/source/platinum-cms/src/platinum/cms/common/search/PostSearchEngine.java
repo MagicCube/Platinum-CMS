@@ -11,6 +11,7 @@ import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.Field.Index;
 import org.apache.lucene.document.Field.Store;
+import org.apache.lucene.index.CorruptIndexException;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
@@ -133,7 +134,7 @@ public class PostSearchEngine
 		}
 		catch (Exception e)
 		{
-			
+			e.printStackTrace();
 		}
 	}
 	
@@ -146,11 +147,22 @@ public class PostSearchEngine
 		}
 		catch (Exception e)
 		{
-
+			e.printStackTrace();
 		}
 	}
 
-	
+	public void deleteIndex(String p_id)
+	{
+		try
+		{
+			_indexWriter.deleteDocuments(new Term("id", p_id));
+			_indexWriter.commit();
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
 	
 	
 	

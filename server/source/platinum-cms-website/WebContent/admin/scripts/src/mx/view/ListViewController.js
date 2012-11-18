@@ -47,7 +47,13 @@ mx.view.ListViewController = function()
     
     me.insertItem = function(p_index, p_item)
     {
-        
+        me.data.insert(p_index, p_item);
+        if (notEmpty(p_item.id))
+        {
+            me.data[p_item.id] = p_item;
+        }
+        var $row = me.createRowAt(p_index);
+        me.view.insertRow(p_index, $row);
     };
     
     me.removeItem = function(p_item)

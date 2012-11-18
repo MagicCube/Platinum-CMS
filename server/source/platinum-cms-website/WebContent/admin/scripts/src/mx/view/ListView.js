@@ -54,7 +54,15 @@ mx.view.ListView = function()
     
     me.insertRow = function(p_index, $p_row)
     {
-        
+        if (me.$element.children().length > 0)
+        {
+            var $target = me.$element.children().eq(p_index);
+            $p_row.insertBefore($target);
+        }
+        else
+        {
+            me.addRow($p_row);
+        }
     };
 
     me.removeRow = function($p_row)
@@ -65,12 +73,17 @@ mx.view.ListView = function()
     me.removeRowAt = function(p_index)
     {
         me.$element.children().eq(p_index).remove();
+        if (me.selectedIndex == p_index)
+        {
+            me.selectedIndex = -1;
+        }
     };
     
     me.clearRows = function()
     {
         me.deselectAllRows();
         me.$element.children("li").remove();
+        me.selectedIndex = -1;
     };
     
     

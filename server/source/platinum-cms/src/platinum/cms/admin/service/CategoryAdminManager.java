@@ -49,7 +49,7 @@ public class CategoryAdminManager
 	{
 		// TODO 关联用户。
 		DAOQuery query = new DAOQuery();
-		query.setOrderByClause("createTime desc");
+		query.setOrderByClause("createTime");
 		List<CategoryEntity> entityList = getCategoryDAO().select(query);
 		return entityList;
 	}

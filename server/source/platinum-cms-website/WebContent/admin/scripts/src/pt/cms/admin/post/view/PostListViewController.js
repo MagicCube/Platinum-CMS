@@ -105,7 +105,7 @@ pt.cms.admin.post.view.PostListViewController = function()
     {
         $pageController.rootViewController.editPost({
             id: null,
-            title: "标题",
+            title: "在这里修改标题",
             postStatus: 0,
             summary: "在这里添加摘要（120字以内）",
             contentText: "在这里添加正文"
@@ -122,8 +122,14 @@ pt.cms.admin.post.view.PostListViewController = function()
             if (confirm("确实要删除“" + post.title + "”吗？"))
             {
                 me.restClient.DELETE("admin/post/" + post.id, null)
-                    .success(function(){
-                        
+                    .success(function()
+                    {
+                        me.removeItemAt(me.view.selectedIndex);
+                        $pageController.rootViewController.postDetailViewController.setData(null);
+                    })
+                    .fail(function()
+                    {
+                        alert("无法正确删除指定的文章。");
                     });
             }
         }

@@ -264,17 +264,29 @@ pt.cms.admin.post.view.PostEditViewController = function()
                     listViewController.reloadSelectedRow();
                     
                     alert("您已成功保存当前操作的文章。");
+                })
+                .fail(function()
+                {
+                    alert("无法正确保存指定的文章。");
                 });
         }
         else
         {
             me.restClient.POST("admin/post/", { post: JSON.stringify(post) })
-                .success(function(p_result){
+                .success(function(p_result)
+                {
                     $.extend(me.data, post);
                     $.extend(me.data, p_result);
                     me.renderView();
                     
+                    var listViewController = $pageController.rootViewControllers["post"].postListViewController;
+                    listViewController.insertItem(0, me.data);
+                    
                     alert("您已成功创建当前操作的文章。");
+                })
+                .fail(function()
+                {
+                    alert("保存文章失败。");
                 });
         }
     };

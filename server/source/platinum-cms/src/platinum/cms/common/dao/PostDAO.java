@@ -79,5 +79,6 @@ public class PostDAO extends StandardEntityDAO<PostEntity>
 		{
 			getSession().delete(p_entity.getViews());
 		}
+		PostSearchEngine.getInstance().deleteIndex(p_entity.getId());
 	}
 }
