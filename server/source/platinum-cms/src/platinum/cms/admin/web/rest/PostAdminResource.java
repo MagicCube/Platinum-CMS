@@ -97,15 +97,9 @@ public class PostAdminResource extends AbstractResource
 		post.setContentText(postJSON.getString("contentText"));
 		post.setSummary(postJSON.getString("summary"));
 		post.setCategoryId(postJSON.getString("categoryId"));
-		if (postJSON.getString("subcategoryId") != null)
-		{
-			post.setSubcategoryId(postJSON.getString("subcategoryId"));
-		}
-		else
-		{
-			post.setSubcategoryId(null);
-		}	
+		post.setSubcategoryId(postJSON.getString("subcategoryId"));	
 		post.setSource(postJSON.getString("source"));
+		post.setPhotoURL(postJSON.getString("photoURL"));
 		post.setPostStatus(PostStatus.values()[postJSON.getInt("postStatus")]);
 		
 		PostAdminManager.getInstance().savePost(post);
@@ -135,6 +129,7 @@ public class PostAdminResource extends AbstractResource
 			post.setCategoryId(postJSON.getString("categoryId"));
 			post.setSubcategoryId(postJSON.getString("subcategoryId"));
 			post.setSource(postJSON.getString("source"));
+			post.setPhotoURL(postJSON.getString("photoURL"));
 			post.setPostStatus(PostStatus.values()[postJSON.getInt("postStatus")]);
 			
 			PostAdminManager.getInstance().updatePost(post);

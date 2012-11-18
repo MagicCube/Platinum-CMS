@@ -23,6 +23,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
     me.$content = null;
     me.$postStatus = null;
     me.$source = null;
+    me.$photoURL = null;
     me.$publisher = null;
     me.$createTime = null;
     me.$updateTime = null;
@@ -85,6 +86,11 @@ pt.cms.admin.post.view.PostEditViewController = function()
         var $dl = $("<dl><dt>子栏目</dt> <dd></dd></dl>");
         me.$subcategory = $("<select id=subcategory><option value=0>(空)</option></select>");
         $dl.children("dd").append(me.$subcategory);
+        $sideBar.append($dl);
+        
+        var $dl = $("<dl><dt>图片</dt> <dd></dd></dl>");
+        me.$photoURL = $("<input type=text id=photoURL />");
+        $dl.children("dd").append(me.$photoURL);
         $sideBar.append($dl);
         
         var $dl = $("<dl><dt>来源</dt> <dd></dd></dl>");
@@ -167,6 +173,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         me.$postStatus.val(me.data.postStatus);
         me.$source.val(me.data.source);
         me.$publisher.text(me.data.publisher);
+        me.$photoURL.val(me.data.photoURL);
         
         if (me.data.createTime)
         {
@@ -244,6 +251,12 @@ pt.cms.admin.post.view.PostEditViewController = function()
         post.contentText = me.$content.val();
         post.postStatus = parseInt(me.$postStatus.val());
         post.source = me.$source.val();
+        
+        post.photoURL = me.$photoURL.val();
+        if (post.photoURL == "")
+        {
+            post.photoURL = null;
+        }
         
         if (post.id != null)
         {

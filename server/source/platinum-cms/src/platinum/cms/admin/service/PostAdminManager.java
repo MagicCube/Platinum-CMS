@@ -43,7 +43,7 @@ public class PostAdminManager
 	{
 		DAOQuery query = new DAOQuery();
 		query.setOrderByClause("createTime desc");
-		query.setPageSize(50);
+		query.setPageSize(100);
 		List<PostEntity> poList = getPostDAO().select(query);
 		return poList;
 	}
