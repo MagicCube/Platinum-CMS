@@ -8,10 +8,11 @@
 <%@ attribute name="id" required="true" rtexprvalue="true"%>
 <%@ attribute name="categoryId" rtexprvalue="true"%>
 <%@ attribute name="subcategoryId" rtexprvalue="true"%>
-<%@ attribute name="count" required="true" rtexprvalue="true" type="java.lang.Integer"%>
-<%@ attribute name="cssClass" rtexprvalue="true"%>
+<%@ attribute name="where" rtexprvalue="true"%>
 <%@ attribute name="displaySummary" rtexprvalue="true" type="java.lang.Boolean"%>
 <%@ attribute name="displayPhoto" rtexprvalue="true" type="java.lang.Boolean"%>
+<%@ attribute name="count" required="true" rtexprvalue="true" type="java.lang.Integer"%>
+<%@ attribute name="cssClass" rtexprvalue="true"%>
 <%
 if (displayPhoto == null)
 {
@@ -22,11 +23,11 @@ PostRuntimeManager manager = new PostRuntimeManager();
 List<PostEntity> posts = null;
 if (StringUtil.notNullOrEmpty(categoryId))
 {
-    posts = manager.loadLatestPostByCategory(categoryId, displayPhoto, count);
+    posts = manager.loadLatestPostByCategory(categoryId, displayPhoto, where, count);
 }
 else if (StringUtil.notNullOrEmpty(subcategoryId))
 {
-    posts = manager.loadLatestPostBySubcategory(subcategoryId, displayPhoto, count);
+    posts = manager.loadLatestPostBySubcategory(subcategoryId, displayPhoto, where, count);
 }
 %>
 <ul id="${id}" class="PostList ${cssClass}">
