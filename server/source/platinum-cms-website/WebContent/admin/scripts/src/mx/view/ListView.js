@@ -64,11 +64,6 @@ mx.view.ListView = function()
             me.addRow($p_row);
         }
     };
-
-    me.removeRow = function($p_row)
-    {
-        me.$element.remove($p_row);
-    };
     
     me.removeRowAt = function(p_index)
     {
