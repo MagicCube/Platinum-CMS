@@ -244,7 +244,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         }
         
         post.subcategoryId = me.$subcategory.val();
-        if (post.subcategoryId == "")
+        if (post.subcategoryId == 0)
         {
             post.subcategoryId = null;
         }

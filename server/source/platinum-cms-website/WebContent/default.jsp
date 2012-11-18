@@ -12,12 +12,7 @@
 <body>
 <div id="home" class="page">
 
-<cms:Header/>
-
-<cms:PostList id="newsList" categoryId="news" count="5"/>
-<cms:PostList id="activitiesList" categoryId="activities" count="5"/>
-
-<cms:Footer/>
+<cms:PostList id="newsList" categoryId="news" displayPhoto="true" count="5"/>
 
 </div>
 </body>

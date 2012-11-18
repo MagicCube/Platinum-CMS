@@ -1,4 +1,4 @@
-<%@tag import="platinum.common.util.DateUtil"%>
+<%@ tag import="platinum.common.util.DateUtil"%>
 <%@ tag import="java.util.ArrayList"%>
 <%@ tag import="java.util.List"%>
 <%@ tag import="platinum.common.util.StringUtil"%>
@@ -13,21 +13,29 @@
 <%@ attribute name="displaySummary" rtexprvalue="true" type="java.lang.Boolean"%>
 <%@ attribute name="displayPhoto" rtexprvalue="true" type="java.lang.Boolean"%>
 <%
+if (displayPhoto == null)
+{
+	displayPhoto = false;
+}
+
 PostRuntimeManager manager = new PostRuntimeManager();
 List<PostEntity> posts = null;
 if (StringUtil.notNullOrEmpty(categoryId))
 {
-    posts = manager.loadLatestPostByCategory(categoryId, count);
+    posts = manager.loadLatestPostByCategory(categoryId, displayPhoto, count);
 }
 else if (StringUtil.notNullOrEmpty(subcategoryId))
 {
-    posts = manager.loadLatestPostBySubcategory(subcategoryId, count);
+    posts = manager.loadLatestPostBySubcategory(subcategoryId, displayPhoto, count);
 }
 %>
 <ul id="${id}" class="PostList ${cssClass}">
 <% for (PostEntity post : posts) {%>
 <li>
     <a href="<%= post.getLink()%>">
+        <% if (displayPhoto) {%>
+        <img src='<%= post.getPhotoURL()%>' />
+        <% } %>
         <span id="title"><%= post.getTitle()%></span>
         <% if (displaySummary != null && displaySummary) {%>
         <span id="summary"><%= post.getSummary()%></span>

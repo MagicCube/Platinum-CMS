@@ -42,51 +42,31 @@ public class PostRuntimeManager
 	
 
 	
-	public List<PostEntity> loadLatestPostByCategory(String p_categoryId, int p_count)
+	public List<PostEntity> loadLatestPostByCategory(String p_categoryId, boolean p_hasPhoto, int p_count)
 	{
-		DAOQuery query = _createQuery("categoryId=:categoryId", p_count);
+		DAOQuery query = _createQuery("categoryId=:categoryId", p_hasPhoto, p_count);
 		query.setParameter("categoryId", p_categoryId);
 		List<PostEntity> result = getPostDAO().select(query);
 		return result;
 	}
-	public List<PostEntity>loadLatestPostByCategory(String p_categoryId)
+	
+	
+	
+	public List<PostEntity> loadLatestPostBySubcategory(String p_subcategoryId, boolean p_hasPhoto, int p_count)
 	{
-		return loadLatestPostByCategory(p_categoryId, 0);
-	}
-	
-	
-	
-	public List<PostEntity> loadLatestPostBySubcategory(String p_subcategoryId, int p_count)
-	{
-		DAOQuery query = _createQuery("subcategory_id=:subcategoryId", p_count);
+		DAOQuery query = _createQuery("subcategory_id=:subcategoryId", p_hasPhoto, p_count);
 		query.setParameter("subcategoryId", p_subcategoryId);
 		List<PostEntity> result = getPostDAO().select(query);
 		return result;
 	}
-	public List<PostEntity> loadLatestPostBySubcategory(String p_subcategoryId)
+	
+	
+	
+	
+	
+	private DAOQuery _createQuery(String p_whereClause, boolean p_hasPhoto, int p_count)
 	{
-		return loadLatestPostBySubcategory(p_subcategoryId, 0);
-	}
-	
-	
-	
-	public List<PostEntity> loadLatestPhotoNews(int p_count)
-	{
-		DAOQuery query = _createQuery("photoURL is not null", p_count);
-		query.setOrderByClause("createTime desc");
-		query.setParameter("postStatus", PostStatus.PUBLISHED);
-		query.setPageSize(p_count);
-		List<PostEntity> result = getPostDAO().select(query);
-		return result;
-	}
-	
-	
-	
-	
-	
-	private DAOQuery _createQuery(String p_whereClause, int p_count)
-	{
-		DAOQuery query = new DAOQuery("postStatus=:postStatus and " + p_whereClause);
+		DAOQuery query = new DAOQuery("postStatus=:postStatus and " + (p_hasPhoto ? " (photoURL is not null) and " : "") + p_whereClause);
 		query.setOrderByClause("createTime desc");
 		query.setParameter("postStatus", PostStatus.PUBLISHED);
 		query.setPageSize(p_count);

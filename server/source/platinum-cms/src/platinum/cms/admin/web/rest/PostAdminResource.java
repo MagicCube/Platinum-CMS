@@ -93,22 +93,12 @@ public class PostAdminResource extends AbstractResource
 		JSONObject postJSON = new JSONObject(p_postJSONString);
 		PostEntity post = new PostEntity();
 		post.setPublisher(Membership.getInstance().getCurrentUser().getUserName());
-		post.setTitle(postJSON.getString("title"));
-		post.setContentText(postJSON.getString("contentText"));
-		post.setSummary(postJSON.getString("summary"));
-		post.setCategoryId(postJSON.getString("categoryId"));
-		post.setSubcategoryId(postJSON.getString("subcategoryId"));	
-		post.setSource(postJSON.getString("source"));
-		post.setPhotoURL(postJSON.getString("photoURL"));
-		post.setPostStatus(PostStatus.values()[postJSON.getInt("postStatus")]);
+		
+		_parsePostFromJSON(postJSON, post);
 		
 		PostAdminManager.getInstance().savePost(post);
 		
-		JSONObject jsonResult = new JSONObject();
-		jsonResult.put("id", post.getId());
-		jsonResult.put("publisher", post.getPublisher());
-		jsonResult.put("createTime", post.getCreateTime().getTime());
-		jsonResult.put("updateTime", post.getUpdateTime().getTime());
+		JSONObject jsonResult = _generateSimplePostJSON(post);
 		return responseWithJSONObject(jsonResult);
 	}
 	
@@ -123,22 +113,12 @@ public class PostAdminResource extends AbstractResource
 		if (post != null)
 		{
 			JSONObject postJSON = new JSONObject(p_postJSONString);
-			post.setTitle(postJSON.getString("title"));
-			post.setContentText(postJSON.getString("contentText"));
-			post.setSummary(postJSON.getString("summary"));
-			post.setCategoryId(postJSON.getString("categoryId"));
-			post.setSubcategoryId(postJSON.getString("subcategoryId"));
-			post.setSource(postJSON.getString("source"));
-			post.setPhotoURL(postJSON.getString("photoURL"));
-			post.setPostStatus(PostStatus.values()[postJSON.getInt("postStatus")]);
+			
+			_parsePostFromJSON(postJSON, post);
 			
 			PostAdminManager.getInstance().updatePost(post);
 			
-			JSONObject jsonResult = new JSONObject();
-			jsonResult.put("id", post.getId());
-			jsonResult.put("publisher", post.getPublisher());
-			jsonResult.put("createTime", post.getCreateTime().getTime());
-			jsonResult.put("updateTime", post.getUpdateTime().getTime());
+			JSONObject jsonResult = _generateSimplePostJSON(post);
 			return responseWithJSONObject(jsonResult);
 		}
 		else
@@ -146,6 +126,7 @@ public class PostAdminResource extends AbstractResource
 			return responseWithException("没有找到标识为“" + p_id + "”的文章。");
 		}
 	}
+
 	
 	@DELETE
 	@Path("/{id}")
@@ -156,4 +137,51 @@ public class PostAdminResource extends AbstractResource
 		PostAdminManager.getInstance().deletePost(p_id);
 		return responseOK();
 	}
+	
+	
+	
+	
+	
+	
+	
+
+
+	private void _parsePostFromJSON(JSONObject postJSON, PostEntity post)
+			throws JSONException
+	{
+		post.setTitle(postJSON.getString("title"));
+		post.setContentText(postJSON.getString("contentText"));
+		post.setSummary(postJSON.getString("summary"));
+		post.setCategoryId(postJSON.getString("categoryId"));
+		if (postJSON.get("subcategoryId") == null)
+		{
+			post.setSubcategoryId(postJSON.getString("subcategoryId"));
+		}
+		else
+		{
+			post.setSubcategoryId(null);
+		}
+		post.setSource(postJSON.getString("source"));
+		if (postJSON.get("photoURL") == null)
+		{
+			post.setPhotoURL(postJSON.getString("photoURL"));
+		}
+		else
+		{
+			post.setPhotoURL(null);
+		}
+		post.setPostStatus(PostStatus.values()[postJSON.getInt("postStatus")]);
+	}
+	
+	private JSONObject _generateSimplePostJSON(PostEntity post)
+			throws JSONException
+	{
+		JSONObject jsonResult = new JSONObject();
+		jsonResult.put("id", post.getId());
+		jsonResult.put("publisher", post.getPublisher());
+		jsonResult.put("createTime", post.getCreateTime().getTime());
+		jsonResult.put("updateTime", post.getUpdateTime().getTime());
+		return jsonResult;
+	}
+
 }

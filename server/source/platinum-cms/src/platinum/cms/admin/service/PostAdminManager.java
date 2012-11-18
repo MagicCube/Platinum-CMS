@@ -58,7 +58,9 @@ public class PostAdminManager
 	
 	public PostEntity updatePost(PostEntity p_post)
 	{
+		getPostDAO().beginTransaction();
 		getPostDAO().update(p_post);
+		getPostDAO().commitTransaction();
 		return p_post;
 	}
 	
