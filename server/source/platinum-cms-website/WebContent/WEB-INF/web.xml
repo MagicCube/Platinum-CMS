@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:javaee="http://java.sun.com/xml/ns/javaee"
-    xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
-    id="teched" version="2.4">
+<web-app version="2.4">
     
     <display-name>Platinum CMS 网站</display-name>
     
@@ -70,16 +66,14 @@
     
     
     <filter>
-        <display-name>Post 转发重写过滤器</display-name>
-        <filter-name>PostRewriteFilter</filter-name>
-        <filter-class>platinum.cms.runtime.web.filter.PostRewriteFilter</filter-class>
+        <display-name>转发重写过滤器</display-name>
+        <filter-name>RewriteFilter</filter-name>
+        <filter-class>platinum.cms.runtime.web.filter.RewriteFilter</filter-class>
     </filter>
     <filter-mapping>
-        <filter-name>PostRewriteFilter</filter-name>
-        <url-pattern>*.html</url-pattern>
+        <filter-name>RewriteFilter</filter-name>
+        <url-pattern>/*</url-pattern>
     </filter-mapping>
-
-
     
     
     

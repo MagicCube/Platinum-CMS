@@ -21,13 +21,13 @@ if (displayPhoto == null)
 
 PostRuntimeManager manager = new PostRuntimeManager();
 List<PostEntity> posts = null;
-if (StringUtil.notNullOrEmpty(categoryId))
+if (StringUtil.notNullOrEmpty(subcategoryId))
 {
-    posts = manager.loadLatestPostByCategory(categoryId, displayPhoto, where, count);
+	posts = manager.loadLatestPostBySubcategory(subcategoryId, displayPhoto, where, count);
 }
-else if (StringUtil.notNullOrEmpty(subcategoryId))
+else if (StringUtil.notNullOrEmpty(categoryId))
 {
-    posts = manager.loadLatestPostBySubcategory(subcategoryId, displayPhoto, where, count);
+	posts = manager.loadLatestPostByCategory(categoryId, displayPhoto, where, count);
 }
 %>
 <ul id="${id}" class="PostList ${cssClass}">

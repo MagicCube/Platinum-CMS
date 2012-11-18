@@ -16,7 +16,8 @@ import javax.servlet.http.HttpServletResponse;
 public class RewriteFilter implements Filter
 {
 	private static Pattern _postURLPattern = null;
-	private static Pattern _moreURLPattern = null;
+	private static Pattern _moreCategoryURLPattern = null;
+	private static Pattern _moreSubcategoryURLPattern = null;
 	
 	@Override
 	public void init(FilterConfig p_config) throws ServletException
@@ -25,9 +26,13 @@ public class RewriteFilter implements Filter
 		{
 			_postURLPattern = Pattern.compile("/([a-z]+)/([a-f0-9]{32}).html");
 		}
-		if (_moreURLPattern == null)
+		if (_moreCategoryURLPattern == null)
 		{
-			_moreURLPattern = Pattern.compile("/([a-z]+)/more");
+			_moreCategoryURLPattern = Pattern.compile("/([a-z]+)/more");
+		}
+		if (_moreSubcategoryURLPattern == null)
+		{
+			_moreSubcategoryURLPattern = Pattern.compile("/([a-z]+)/([A-Za-z0-9]{32})/more");
 		}
 	}
 	
@@ -50,11 +55,17 @@ public class RewriteFilter implements Filter
 			
 			request.getRequestDispatcher("/post.jsp?id=" + postId + "&categoryId=" + categoryId).forward(request, response);
 		}
-		if ((matcher = _moreURLPattern.matcher(uri)).find())
+		else if ((matcher = _moreCategoryURLPattern.matcher(uri)).find())
 		{
 			String categoryId = matcher.group(1);
 			
 			request.getRequestDispatcher("/more.jsp?categoryId=" + categoryId).forward(request, response);
+		}
+		else if ((matcher = _moreSubcategoryURLPattern.matcher(uri)).find())
+		{
+			String categoryId = matcher.group(1);
+			String subcategoryId = matcher.group(2);
+			request.getRequestDispatcher("/more.jsp?categoryId=" + categoryId + "&subcategoryId=" + subcategoryId).forward(request, response);
 		}
 		else
 		{
