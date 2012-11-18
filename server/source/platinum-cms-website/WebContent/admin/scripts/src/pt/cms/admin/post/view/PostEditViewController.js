@@ -140,7 +140,14 @@ pt.cms.admin.post.view.PostEditViewController = function()
     
     me.renderView = function()
     {
-        me.$id.val(me.data.id);
+        if (me.data.id != null)
+        {
+            me.$id.val(me.data.id);
+        }
+        else
+        {
+            me.$id.val("");
+        }            
         me.$title.val(me.data.title);
         me.$title.blur();
         me.$summary.val(me.data.summary);
@@ -186,7 +193,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         {
             me.contentEditor = me.$content.cleditor({
                 width: "100%",
-                height: "90%",
+                height: "80%",
             })[0];
         }
         else
@@ -197,7 +204,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
     };
     
     me.savePost = function()
-    {
+    {        
         me.contentEditor.updateTextArea();
         var post = {};
         post.id = me.data.id;
@@ -230,6 +237,10 @@ pt.cms.admin.post.view.PostEditViewController = function()
         }
         
         post.subcategoryId = me.$subcategory.val();
+        if (post.subcategoryId == "")
+        {
+            post.subcategoryId = null;
+        }
         post.contentText = me.$content.val();
         post.postStatus = parseInt(me.$postStatus.val());
         post.source = me.$source.val();
@@ -262,6 +273,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
                     $.extend(me.data, post);
                     $.extend(me.data, p_result);
                     me.renderView();
+                    
                     alert("您已成功创建当前操作的文章。");
                 });
         }
@@ -272,6 +284,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
     {
         me.view.$element.find("#" + p_field).focus();
         me.view.$element.find("#" + p_field).select();
+        alert(p_message);
     }
     
     function _btnSave_onclick(e)

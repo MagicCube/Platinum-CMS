@@ -11,6 +11,7 @@ pt.cms.admin.post.view.RootViewController = function()
     me.toolbars = [];
     me.postListViewController = null;
     me.postDetailViewController = null;
+    me.postEditViewController = null;
     
     me.restClient = null;
     
@@ -39,6 +40,16 @@ pt.cms.admin.post.view.RootViewController = function()
         _initToolbars();
         
         me.postListViewController.loadData();
+    };
+    
+    me.editPost = function(p_post)
+    {
+        if (me.postEditViewController == null)
+        {
+            me.postEditViewController = new pt.cms.admin.post.view.PostEditViewController({ restClient: me.restClient });
+        }
+        $pageController.pushViewController(me.postEditViewController);
+        me.postEditViewController.setData(p_post);
     };
     
     

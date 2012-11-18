@@ -3,9 +3,11 @@ package platinum.cms.admin.web.rest;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.ws.rs.DELETE;
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -23,6 +25,7 @@ import platinum.cms.common.search.PostSearchResult;
 import platinum.cms.common.serialization.PostJSONSerializer;
 import platinum.common.util.DateUtil;
 import platinum.framework.web.rest.AbstractResource;
+import platinum.security.Membership;
 
 @Path("admin/post")
 public class PostAdminResource extends AbstractResource
@@ -81,6 +84,40 @@ public class PostAdminResource extends AbstractResource
 		return responseWithJSONObject(PostJSONSerializer.toDetailObject(post), post.getUpdateTime());
 	}
 	
+	@POST
+	@Path("/")
+	public Response savePost(
+			@FormParam("post") String p_postJSONString
+			) throws JSONException
+	{
+		JSONObject postJSON = new JSONObject(p_postJSONString);
+		PostEntity post = new PostEntity();
+		post.setPublisher(Membership.getInstance().getCurrentUser().getUserName());
+		post.setTitle(postJSON.getString("title"));
+		post.setContentText(postJSON.getString("contentText"));
+		post.setSummary(postJSON.getString("summary"));
+		post.setCategoryId(postJSON.getString("categoryId"));
+		if (postJSON.getString("subcategoryId") != null)
+		{
+			post.setSubcategoryId(postJSON.getString("subcategoryId"));
+		}
+		else
+		{
+			post.setSubcategoryId(null);
+		}	
+		post.setSource(postJSON.getString("source"));
+		post.setPostStatus(PostStatus.values()[postJSON.getInt("postStatus")]);
+		
+		PostAdminManager.getInstance().savePost(post);
+		
+		JSONObject jsonResult = new JSONObject();
+		jsonResult.put("id", post.getId());
+		jsonResult.put("publisher", post.getPublisher());
+		jsonResult.put("createTime", post.getCreateTime().getTime());
+		jsonResult.put("updateTime", post.getUpdateTime().getTime());
+		return responseWithJSONObject(jsonResult);
+	}
+	
 	@PUT
 	@Path("/{id}")
 	public Response updatePost(
@@ -113,5 +150,15 @@ public class PostAdminResource extends AbstractResource
 		{
 			return responseWithException("没有找到标识为“" + p_id + "”的文章。");
 		}
+	}
+	
+	@DELETE
+	@Path("/{id}")
+	public Response deletePost(
+			@PathParam("id") String p_id
+			) throws JSONException
+	{
+		PostAdminManager.getInstance().deletePost(p_id);
+		return responseOK();
 	}
 }

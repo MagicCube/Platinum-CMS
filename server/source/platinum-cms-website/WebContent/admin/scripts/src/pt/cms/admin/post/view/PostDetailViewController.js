@@ -14,7 +14,6 @@ pt.cms.admin.post.view.PostDetailViewController = function()
     me.toolbar = null;
     me.restClient = null;
     
-    me.postEditViewController = null;
 
     base.viewDidLoad = me.viewDidLoad;
     me.viewDidLoad = function()
@@ -70,12 +69,7 @@ pt.cms.admin.post.view.PostDetailViewController = function()
     
     function _btnEdit_onclick(e)
     {
-        if (me.postEditViewController == null)
-        {
-            me.postEditViewController = new pt.cms.admin.post.view.PostEditViewController({ restClient: me.restClient });
-        }
-        $pageController.pushViewController(me.postEditViewController);
-        me.postEditViewController.setData(me.data);
+        $pageController.rootViewController.editPost(me.data);
     }
     
     return me.endOfClass(arguments);

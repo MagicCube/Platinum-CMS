@@ -48,9 +48,24 @@ public class PostAdminManager
 		return poList;
 	}
 	
+	public PostEntity savePost(PostEntity p_post)
+	{
+		getPostDAO().beginTransaction();
+		getPostDAO().save(p_post);
+		getPostDAO().commitTransaction();
+		return p_post;
+	}
+	
 	public PostEntity updatePost(PostEntity p_post)
 	{
 		getPostDAO().update(p_post);
 		return p_post;
+	}
+	
+	public void deletePost(String p_postId)
+	{
+		getPostDAO().beginTransaction();
+		getPostDAO().deleteById(p_postId);
+		getPostDAO().commitTransaction();
 	}
 }

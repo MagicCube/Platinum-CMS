@@ -66,4 +66,18 @@ public class PostDAO extends StandardEntityDAO<PostEntity>
 	{
 		getSession().update(p_views);
 	}
+	
+	@Override
+	public void delete(PostEntity p_entity)
+	{
+		super.delete(p_entity);
+		if (p_entity.getContent() != null)
+		{
+			getSession().delete(p_entity.getContent());
+		}
+		if (p_entity.getViews() != null)
+		{
+			getSession().delete(p_entity.getViews());
+		}
+	}
 }

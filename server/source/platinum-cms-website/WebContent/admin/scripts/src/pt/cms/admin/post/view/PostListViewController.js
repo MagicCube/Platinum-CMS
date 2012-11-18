@@ -35,8 +35,8 @@ pt.cms.admin.post.view.PostListViewController = function()
         
         me.toolbar.$element.append(me.$searchBar);
         
-        me.toolbar.addButton("newPost", "新建").addClass("default");
-        me.toolbar.addButton("deletePost", "删除").addClass("red");
+        me.toolbar.addButton("newPost", "新建").addClass("default").click(_btnNewPost_onclick);
+        me.toolbar.addButton("deletePost", "删除").addClass("red").click(_btnDeletePost_onclick);
     };
     
     
@@ -101,6 +101,44 @@ pt.cms.admin.post.view.PostListViewController = function()
     };
     
     
+    me.newPost=  function()
+    {
+        $pageController.rootViewController.editPost({
+            id: null,
+            title: "标题",
+            postStatus: 0,
+            summary: "在这里添加摘要（120字以内）",
+            contentText: "在这里添加正文"
+        });
+    };
+    
+    me.deleteSelectedPost = function()
+    {
+        if (me.view.selectedIndex < 0) return;
+        
+        var post = me.data[me.view.selectedIndex];
+        if (post != null)
+        {
+            if (confirm("确实要删除“" + post.title + "”吗？"))
+            {
+                me.restClient.DELETE("admin/post/" + post.id, null)
+                    .success(function(){
+                        
+                    });
+            }
+        }
+    };
+    
+    
+    function _btnNewPost_onclick(e)
+    {
+        me.newPost();
+    }
+    
+    function _btnDeletePost_onclick(e)
+    {
+        me.deleteSelectedPost();
+    }
     
     function _keywords_onkeydown(e)
     {
