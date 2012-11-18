@@ -13,14 +13,22 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class PostRewriteFilter implements Filter
+public class RewriteFilter implements Filter
 {
-	Pattern urlPattern = null;
+	private static Pattern _postURLPattern = null;
+	private static Pattern _moreURLPattern = null;
 	
 	@Override
 	public void init(FilterConfig p_config) throws ServletException
 	{
-		urlPattern = Pattern.compile("/([a-z]+)/([a-f0-9]{32}).html");
+		if (_postURLPattern == null)
+		{
+			_postURLPattern = Pattern.compile("/([a-z]+)/([a-f0-9]{32}).html");
+		}
+		if (_moreURLPattern == null)
+		{
+			_moreURLPattern = Pattern.compile("/([a-z]+)/more");
+		}
 	}
 	
 
@@ -34,17 +42,24 @@ public class PostRewriteFilter implements Filter
 		HttpServletResponse response = (HttpServletResponse)p_response;
 		String uri = request.getRequestURI();
 		
-		Matcher matcher = urlPattern.matcher(uri);
-		if (matcher.find())
+		Matcher matcher = null;
+		if ((matcher = _postURLPattern.matcher(uri)).find())
 		{
 			String categoryId = matcher.group(1);
 			String postId = matcher.group(2);
 			
 			request.getRequestDispatcher("/post.jsp?id=" + postId + "&categoryId=" + categoryId).forward(request, response);
-			return;
 		}
-		
-		response.setStatus(404);
+		if ((matcher = _moreURLPattern.matcher(uri)).find())
+		{
+			String categoryId = matcher.group(1);
+			
+			request.getRequestDispatcher("/more.jsp?categoryId=" + categoryId).forward(request, response);
+		}
+		else
+		{
+			p_chain.doFilter(request, response);
+		}
 	}
 	
 	
