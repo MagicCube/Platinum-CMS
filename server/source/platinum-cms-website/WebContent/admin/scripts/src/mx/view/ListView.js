@@ -54,6 +54,13 @@ mx.view.ListView = function()
     
     me.insertRow = function(p_index, $p_row)
     {
+        if (me.selectedIndex != -1)
+        {
+            if (p_index <= me.selectedIndex)
+            {
+                me.selectedIndex++;
+            }
+        }
         if (me.$element.children().length > 0)
         {
             var $target = me.$element.children().eq(p_index);
