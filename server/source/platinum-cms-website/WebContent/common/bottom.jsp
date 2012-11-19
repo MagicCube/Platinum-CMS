@@ -9,25 +9,25 @@
         <table >
             <tr>
                 <td>
-                    <a href = "#"><img src = "static/college/image/1.jpg"/></a>
+                    <a href = "#"><img src = "/static/temp/1.jpg"/></a>
                 </td>
                 <td>
-                    <a href = "#"><img src = "static/college/image/2.jpg"/></a>
+                    <a href = "#"><img src = "/static/temp/1.jpg"/></a>
                 </td>
                 <td>
-                    <a href = "#"><img src = "static/college/image/3.jpg"/></a>
+                    <a href = "#"><img src = "/static/temp/1.jpg"/></a>
                 </td>
             </tr>
             
             <tr>
                 <td>
-                    <a href = "#"><img src = "static/college/image/4.jpg"/></a>
+                    <a href = "#"><img src = "/static/temp/1.jpg"/></a>
                 </td>
                 <td>
-                    <a href = "#"><img src = "static/college/image/a.jpg"/></a>
+                    <a href = "#"><img src = "/static/temp/1.jpg"/></a>
                 </td>
                 <td>
-                    <a href = "#"><img src = "static/college/image/b.jpg"/></a>
+                    <a href = "#"><img src = "/static/temp/1.jpg"/></a>
                 </td>
             </tr>
         </table>

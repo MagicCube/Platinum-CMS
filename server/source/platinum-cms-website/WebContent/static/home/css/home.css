@@ -163,14 +163,14 @@
 	height: 220px;
 	width: 300px;
 	padding: 0;
-	margin: 0;
+	margin: -27px 0 0 0;
 	float: left;
 }
 
 #part1 ul.PhotoList li
 {
 	height: 65px;
-	width: 360px;
+	width: 300px;
 	position: relative;
 	left: 0;
 	margin-top: 15px;
@@ -201,48 +201,16 @@
 
 #part1 ul.PhotoList li a span#title
 {
-	width: 250px;
+	width: 170px;
 	position: absolute;
 	height: 15px;
-	top: 0;
+	top: 10px;
 	left: 120px;
 	font-weight: bold;
 	color: #000;
 }
 
-/*#part1 img
-{
-	height: 60px;
-	width: 100px;
-	border: 4px solid #f2f2f2;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;
-	margin-bottom: 5px;
-}
 
-#part1 p
-{
-	width: 165px;
-	height: auto;
-	float: right;
-	margin:5px 10px 0 0;
-	overflow-x: hidden;
-	overflow-y: hidden;
-}
-
-#part1 p a
-{
-	font-size: 13px;
-	font-weight: bold;
-	color: #000;
-	text-decoration: none;
-}
-
-#part1 p a:hover
-{
-	color : rgba(0, 0, 0, 0.5);
-}*/
 
 #part2
 {
@@ -273,7 +241,7 @@
 }
 
 
-#part2 ul li a div
+#part2 ul li a 
 {
 	font-size: 12px;
 	color: #000;
@@ -337,7 +305,7 @@
 	width: 250px;
 	position: absolute;
 	height: 15px;
-	top: 0;
+	top: 5px;
 	left: 120px;
 	font-weight: bold;
 	color: #000;
@@ -348,7 +316,7 @@
 	width: 250px;
 	position: absolute;
 	left: 120px;
-	margin-top: 20px;
+	margin-top: 33px;
 	height: 20px;
 	color : rgba(0, 0, 0, 0.5);
 }
