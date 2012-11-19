@@ -12,6 +12,11 @@ pt.cms.admin.post.view.PostListViewController = function()
     me.toolbar = null;
     
     me.restClient = null;
+    me.loading = false;
+    
+    me.pageIndex = 0;
+    me.pageCount = 1000;
+    me.pageSize = 20;
     
     me.$searchBar = null;
     
@@ -37,6 +42,8 @@ pt.cms.admin.post.view.PostListViewController = function()
         
         me.toolbar.addButton("newPost", "新建").addClass("default").click(_btnNewPost_onclick);
         me.toolbar.addButton("deletePost", "删除").addClass("red").click(_btnDeletePost_onclick);
+        
+        me.view.$element.scroll(_onscroll);
     };
     
     
@@ -49,18 +56,74 @@ pt.cms.admin.post.view.PostListViewController = function()
     me.queryByKeywords = function(p_keywords)
     {
         _renderMode = "html";
+        me.pageIndex = 0;
+        me.pageCount = 1000;
+        me.loading = true;
         me.restClient.GET("admin/post/", { keywords: p_keywords })
             .success(function(p_result){
+                me.loading = false;
                 me.setData(p_result);
+            })
+            .fail(function(){
+                me.loading = false;
             });
     };
     
     me.queryByCategory = function(p_categoryId)
     {
         _renderMode = "text";
-        me.restClient.GET("admin/post/")
+        me.pageIndex = 0;
+        me.pageCount = 1000;
+        me.loading = true;
+        me.restClient.GET("admin/post/", { pageSize: me.pageSize })
             .success(function(p_result){
+                me.loading = false;
                 me.setData(p_result);
+                if (p_result.length < me.pageSize)
+                {
+                    if (p_result.length == 0)
+                    {
+                        me.pageCount = me.pageIndex;
+                    }
+                    else
+                    {
+                        me.pageCount = me.pageIndex + 1;
+                    }
+                }
+            })
+            .fail(function(){
+                me.loading = false;
+            });
+    };
+    
+    me.nextPage = function()
+    {
+        if (me.loading) return;
+        
+        if (me.pageIndex + 1 >= me.pageCount)
+        {
+            return;
+        };
+        
+        me.loading = true;
+        me.restClient.GET("admin/post/", { pageIndex: ++me.pageIndex, pageSize: me.pageSize })
+            .success(function(p_result){
+                me.loading = false;
+                me.addItems(p_result);
+                if (p_result.length < me.pageSize)
+                {
+                    if (p_result.length == 0)
+                    {
+                        me.pageCount = me.pageIndex;
+                    }
+                    else
+                    {
+                        me.pageCount = me.pageIndex + 1;
+                    }
+                }
+            })
+            .fail(function(){
+                me.loading = false;
             });
     };
     
@@ -135,6 +198,19 @@ pt.cms.admin.post.view.PostListViewController = function()
         }
     };
     
+    
+    
+    
+    
+    function _onscroll(e)
+    {
+        var e = me.view.$element.get(0);
+        var scroll = e.scrollHeight - e.scrollTop - me.view.$element.height();
+        if (scroll < 80)
+        {
+            me.nextPage();
+        }
+    }
     
     function _btnNewPost_onclick(e)
     {

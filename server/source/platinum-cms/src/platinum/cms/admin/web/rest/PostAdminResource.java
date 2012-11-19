@@ -35,7 +35,8 @@ public class PostAdminResource extends AbstractResource
 	public Response loadPosts(
 			@QueryParam("categoryId") String p_categoryId,
 			@QueryParam("keywords") String p_keywords,
-			@QueryParam("pageIndex") @DefaultValue("0") int p_pageIndex
+			@QueryParam("pageIndex") @DefaultValue("0") int p_pageIndex,
+			@QueryParam("pageSize") @DefaultValue("20") int p_pageSize
 			) throws JSONException
 	{
 		List<PostEntity> posts = null;
@@ -59,7 +60,7 @@ public class PostAdminResource extends AbstractResource
 		}
 		else
 		{
-			posts = PostAdminManager.getInstance().loadPostsByCategory(null);
+			posts = PostAdminManager.getInstance().loadPostsByCategory(null, p_pageIndex, p_pageSize);
 		}
 		return responseWithJSONArray(PostJSONSerializer.toSimpleArray(posts));
 	}

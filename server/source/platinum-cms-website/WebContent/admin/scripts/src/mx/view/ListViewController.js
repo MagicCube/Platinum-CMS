@@ -45,6 +45,14 @@ mx.view.ListViewController = function()
         me.view.addRow($row);
     };
     
+    me.addItems = function(p_items)
+    {
+        for (var i = 0; i < p_items.length; i++)
+        {
+            me.addItem(p_items[i]);
+        }
+    };
+    
     me.insertItem = function(p_index, p_item)
     {
         me.data.insert(p_index, p_item);

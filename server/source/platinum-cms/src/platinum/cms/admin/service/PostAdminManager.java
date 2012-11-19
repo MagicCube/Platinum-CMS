@@ -39,11 +39,12 @@ public class PostAdminManager
 		return entity;
 	}
 	
-	public List<PostEntity> loadPostsByCategory(String p_categoryId)
+	public List<PostEntity> loadPostsByCategory(String p_categoryId, int p_pageIndex, int p_pageSize)
 	{
 		DAOQuery query = new DAOQuery();
 		query.setOrderByClause("createTime desc");
-		query.setPageSize(100);
+		query.setPageIndex(p_pageIndex);
+		query.setPageSize(p_pageSize);
 		List<PostEntity> poList = getPostDAO().select(query);
 		return poList;
 	}
