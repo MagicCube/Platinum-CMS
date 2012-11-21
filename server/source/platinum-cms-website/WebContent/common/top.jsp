@@ -2,6 +2,8 @@
 <%@ taglib prefix="cms" tagdir="/WEB-INF/tags" %>
 
 <link href = "/static/common/css/common.css" rel = "stylesheet"></link>
+<link href = "/static/home/css/home.css" rel = "stylesheet"></link>
+<link href = "/static/common/css/post.css" rel = "stylesheet"></link>
 
 <div id = "header">
     <div id = "linklabel">
@@ -53,5 +55,5 @@
 
 
 <% if (request.getParameter("displaySideBar").equals("true")) {%>
-<div id="sideBar">SideBar</div>
+
 <%}%>

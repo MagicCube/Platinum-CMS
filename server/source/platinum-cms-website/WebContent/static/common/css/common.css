@@ -251,7 +251,6 @@ li.subMenu > a
 li.subMenu > a:hover
 {
 	color: #f64a32;
-	margin-left: 30px;
 }
 
 /*尾部*/
@@ -345,3 +344,5 @@ li.subMenu > a:hover
 	font-size: 10px;
 	font-weight: normal;
 }
+
+

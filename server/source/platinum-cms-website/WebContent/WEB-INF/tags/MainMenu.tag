@@ -22,6 +22,7 @@
     <li class = "main"><a href = "#" onclick = "down_3();">教学科研</a>
         <ul id = "down_3">
             <li class = "subMenu"><a href = "/teaching/Educational.htm">教务处</a></li>
+            <li class = "subMenu"><a href = "http://222.192.5.246/(byn3ui55hhycibfaa4lgghi1)/default2.aspx">教务系统</a></li>
         </ul>
     </li>
     <li class = "main" onclick = "down_4();"><a href = "#">师资队伍</a>
@@ -52,10 +53,16 @@
         <ul id = "down_8">
             <li class = "subMenu"><a href = "/public/Calendar.htm">校历</a></li>
             <li class = "subMenu"><a href = "http://zbzs.njnu.edu.cn/e-book/index.asp">来稿须知</a></li>
+            <li class = "subMenu"><a href = "#">办事指南</a></li>
             <li class = "subMenu"><a href = "/public/TimeTable.htm">作息时间</a></li>
             <li class = "subMenu"><a href = "/public/TelSearch.htm">办公电话查询</a></li>
             <li class = "subMenu"><a href = "/public/Map.htm">校园地图与交通信息</a></li>
         </ul>
     </li>
-    <li class = "main"><a href = "#">技术支持</a></li>
+    <li class = "main"><a href = "#">技术支持</a>
+    	<ul id = "down_8" style = "margin-left: -82px;">
+            <li class = "subMenu"><a href = "#"  style = "margin-left: 100px;">中北信息科</a></li>
+         	<li class = "subMenu"><a href = "#"  style = "margin-left: 50px;">软件研发与培训中心</a></li>
+        </ul>
+    </li>
 </menu>
