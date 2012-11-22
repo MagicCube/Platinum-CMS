@@ -44,7 +44,20 @@ public class PostRuntimeManager
 	
 	public List<PostEntity> loadLatestPostByCategory(String p_categoryId, boolean p_hasPhoto, String p_extra, int p_count)
 	{
-		DAOQuery query = _createQuery("categoryId=:categoryId", p_hasPhoto, p_extra, p_count);
+		DAOQuery query = _createQuery("categoryId=:categoryId", p_hasPhoto, p_extra);
+		if (p_count != Integer.MAX_VALUE)
+		{
+			query.setPageSize(p_count);
+		}
+		query.setParameter("categoryId", p_categoryId);
+		List<PostEntity> result = getPostDAO().select(query);
+		return result;
+	}
+	public List<PostEntity> loadLatestPostByCategory(String p_categoryId, boolean p_hasPhoto, String p_extra, int p_pageIndex, int p_pageSize)
+	{
+		DAOQuery query = _createQuery("categoryId=:categoryId", p_hasPhoto, p_extra);
+		query.setPageIndex(p_pageIndex);
+		query.setPageSize(p_pageSize);
 		query.setParameter("categoryId", p_categoryId);
 		List<PostEntity> result = getPostDAO().select(query);
 		return result;
@@ -52,9 +65,25 @@ public class PostRuntimeManager
 	
 	
 	
+	
+	
+	
 	public List<PostEntity> loadLatestPostBySubcategory(String p_subcategoryId, boolean p_hasPhoto, String p_extra, int p_count)
 	{
-		DAOQuery query = _createQuery("subcategory_id=:subcategoryId", p_hasPhoto, p_extra, p_count);
+		DAOQuery query = _createQuery("subcategory_id=:subcategoryId", p_hasPhoto, p_extra);
+		if (p_count != Integer.MAX_VALUE)
+		{
+			query.setPageSize(p_count);
+		}
+		query.setParameter("subcategoryId", p_subcategoryId);
+		List<PostEntity> result = getPostDAO().select(query);
+		return result;
+	}
+	public List<PostEntity> loadLatestPostBySubcategory(String p_subcategoryId, boolean p_hasPhoto, String p_extra, int p_pageIndex, int p_pageSize)
+	{
+		DAOQuery query = _createQuery("subcategory_id=:subcategoryId", p_hasPhoto, p_extra);
+		query.setPageIndex(p_pageIndex);
+		query.setPageSize(p_pageSize);
 		query.setParameter("subcategoryId", p_subcategoryId);
 		List<PostEntity> result = getPostDAO().select(query);
 		return result;
@@ -64,7 +93,10 @@ public class PostRuntimeManager
 	
 	
 	
-	private DAOQuery _createQuery(String p_whereClause, boolean p_hasPhoto, String p_extra, int p_count)
+	
+	
+	
+	private DAOQuery _createQuery(String p_whereClause, boolean p_hasPhoto, String p_extra)
 	{
 		DAOQuery query = new DAOQuery(
 				"postStatus=:postStatus and " + 
@@ -74,7 +106,6 @@ public class PostRuntimeManager
 		);
 		query.setOrderByClause("createTime desc");
 		query.setParameter("postStatus", PostStatus.PUBLISHED);
-		query.setPageSize(p_count);
 		return query;
 	}
 }
