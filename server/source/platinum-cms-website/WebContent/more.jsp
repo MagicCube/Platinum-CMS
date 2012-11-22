@@ -7,7 +7,7 @@
 <%
 String categoryId = request.getParameter("categoryId");
 String subcategoryId = request.getParameter("subcategoryId");
-if (subcategoryId.equals(""))
+if (subcategoryId != null && subcategoryId.equals(""))
 {
     subcategoryId = null;
 }
