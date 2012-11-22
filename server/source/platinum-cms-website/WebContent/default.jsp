@@ -31,7 +31,7 @@
 			<!-- begin of block_home_slider -->
 			 <div class="block_home_slider">
                     		<div id="home_slider" class="flexslider">
-                            	<cms:SpecialTopic id="tsztList" cssClass="slides" categoryId="news" displayPhoto="true" count="4" />
+                            	<cms:PhotoSlide id="tsztList" cssClass="slides" categoryId="news" displayPhoto="true" count="4" />
                             </div>
                             
                             <script type="text/javascript">
@@ -57,7 +57,7 @@
 				
 				<div id = "part2">
 					<cms:PostList id="xwdtList2" subcategoryId="sc000000000000000000000000000006" where="photoURL is null" count="6" />
-					<p id = "position_2"><a href = "/news/more">更多...</a></p>
+					<p id = "position_2"><a href = "/news/more/">更多...</a></p>
 				</div>
 			</div>
 			
@@ -69,7 +69,7 @@
 				
 				<div id = "part2">
 					<cms:PostList id="xydtList2" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="6" />
-					<p id = "position_2"><a href = "/news/more">更多...</a></p>
+					<p id = "position_2"><a href = "/news/more/">更多...</a></p>
 				</div>				
 			</div>			
 		</div>
@@ -78,7 +78,7 @@
 		<div id = "right">
 			<div id = "topic">
 				<span id = "position_1"><img src = "/static/home/images/topic.gif" alt = ""/></span>
-				<p id = "position_2"><a href = "/news/more">更多...</a></p>
+				<p id = "position_2"><a href = "/news/more/">更多...</a></p>
 				
 				<div id = "right_part">
 					<cms:PostList id="ztbdList" cssClass="PhotoSummaryList" categoryId="news" displaySummary="true" displayPhoto="true" count="3" />
@@ -87,7 +87,7 @@
 			
 			<div id = "inform">
 				<span id = "position_1"><img src = "static/home/images/inform.gif" alt = ""/></span>
-				<p id = "position_2"><a href = "/news/more">更多...</a></p>
+				<p id = "position_2"><a href = "/news/more/">更多...</a></p>
 				<div id = "part2" style = "width : 360px; margin-top: -10px;">
 					<cms:PostList id="tzggList" subcategoryId="sc000000000000000000000000000008" count="7" />
 				</div>				
@@ -95,7 +95,7 @@
 			
 			<div id = "video">
 				<span id = "position_1"><img src = "/static/home/images/movie.gif" alt = ""/></span>
-				<p id = "position_2"><a href = "/news/more">更多...</a></p>
+				<p id = "position_2"><a href = "/news/more/">更多...</a></p>
                 <div id = "medium">
                 	<img src = "/static/home/images/movie.jpg" alt = ""/>
                 </div>

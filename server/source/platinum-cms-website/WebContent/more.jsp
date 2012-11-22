@@ -22,11 +22,7 @@ String subcategoryId = request.getParameter("subcategoryId");
 <body>
 
 <cms:Header path="<%= categoryId%>" displaySideBar="true"/>
-	<div id = "postDetail">
-		<div id = "list">
 			<cms:PostList id="postList" subcategoryId="<%= subcategoryId%>" categoryId="<%= categoryId%>" count="1000"></cms:PostList>
-		</div>
-	</div>
 <cms:Footer path="<%= categoryId%>"/>
 </body>
 </html>
