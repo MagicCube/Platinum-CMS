@@ -25,14 +25,9 @@ public class RewriteFilter implements Filter
 		if (_postURLPattern == null)
 		{
 			_postURLPattern = Pattern.compile("/([a-z]+)/([a-f0-9]{32}).html");
-		}
-		if (_moreCategoryURLPattern == null)
-		{
-			_moreCategoryURLPattern = Pattern.compile("/([a-z]+)/more");
-		}
-		if (_moreSubcategoryURLPattern == null)
-		{
-			_moreSubcategoryURLPattern = Pattern.compile("/([a-z]+)/([A-Za-z0-9]{32})/more");
+			
+			_moreCategoryURLPattern = Pattern.compile("/([a-z]+)/more/([0-9]*)");
+			_moreSubcategoryURLPattern = Pattern.compile("/([a-z]+)/([A-Za-z0-9]{32})/more/([0-9]*)");
 		}
 	}
 	
@@ -58,14 +53,36 @@ public class RewriteFilter implements Filter
 		else if ((matcher = _moreCategoryURLPattern.matcher(uri)).find())
 		{
 			String categoryId = matcher.group(1);
-			
-			request.getRequestDispatcher("/more.jsp?categoryId=" + categoryId).forward(request, response);
+			int pageIndex = 1;
+			try
+			{
+				pageIndex = Integer.parseInt(matcher.group(2));
+			}
+			catch (Exception e) {}
+			request.getRequestDispatcher("/more.jsp?categoryId=" + categoryId + "&pageIndex=" + pageIndex).forward(request, response);
 		}
 		else if ((matcher = _moreSubcategoryURLPattern.matcher(uri)).find())
 		{
 			String categoryId = matcher.group(1);
 			String subcategoryId = matcher.group(2);
-			request.getRequestDispatcher("/more.jsp?categoryId=" + categoryId + "&subcategoryId=" + subcategoryId).forward(request, response);
+			int pageIndex = 1;
+			try
+			{
+				pageIndex = Integer.parseInt(matcher.group(3));
+			}
+			catch (Exception e) {}
+			request.getRequestDispatcher("/more.jsp?categoryId=" + categoryId + "&subcategoryId=" + subcategoryId + "&pageIndex=" + pageIndex).forward(request, response);
+		}
+		else if ((matcher = _moreCategoryURLPattern.matcher(uri)).find())
+		{
+			String categoryId = matcher.group(1);
+			request.getRequestDispatcher("/more.jsp?categoryId=" + categoryId + "&pageIndex=1").forward(request, response);
+		}
+		else if ((matcher = _moreSubcategoryURLPattern.matcher(uri)).find())
+		{
+			String categoryId = matcher.group(1);
+			String subcategoryId = matcher.group(2);
+			request.getRequestDispatcher("/more.jsp?categoryId=" + categoryId + "&subcategoryId=" + subcategoryId + "&pageIndex=1").forward(request, response);
 		}
 		else
 		{

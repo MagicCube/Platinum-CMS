@@ -12,7 +12,7 @@
 <body>
 <div id="home" class="page">
 
-<cms:PostList id="newsList" categoryId="news" displayPhoto="true" count="5"/>
+<cms:PostList id="newsList" categoryId="news" pageIndex="0" pageSize="20"/>
 
 </div>
 </body>

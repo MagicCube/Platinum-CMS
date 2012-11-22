@@ -14,7 +14,7 @@ String subcategoryId = request.getParameter("subcategoryId");
 <head>
     <title></title>
     <link rel="stylesheet" href="/static/common/css/basic.css"/>
-    <link rel="stylesheet" href="/static/common/css/post.css"/>
+    <link rel="stylesheet" href="/static/common/css/more.css"/>
     <script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
     <!-- <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script> -->
 </head>
@@ -22,7 +22,7 @@ String subcategoryId = request.getParameter("subcategoryId");
 <body>
 
 <cms:Header path="<%= categoryId%>" displaySideBar="true"/>
-			<cms:PostList id="postList" subcategoryId="<%= subcategoryId%>" categoryId="<%= categoryId%>" count="1000"></cms:PostList>
+	<cms:PostList id="postList" subcategoryId="<%= subcategoryId%>" categoryId="<%= categoryId%>" pageIndex='<%= Integer.parseInt(request.getParameter("pageIndex")) - 1%>' pageSize="25"/>
 <cms:Footer path="<%= categoryId%>"/>
 </body>
 </html>
