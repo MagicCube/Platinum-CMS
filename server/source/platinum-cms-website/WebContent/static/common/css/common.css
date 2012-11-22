@@ -157,7 +157,7 @@
 	float: left;
 	font-size: 14px;
 	line-height: 22px;
-	font-family: 微软雅黑, 黑体;
+	font-family: 宋体,微软雅黑, 黑体;
 	padding: 0;
 }
 
@@ -377,4 +377,29 @@ li.subMenu > a:hover
 .CategoryNavigationBar li a:hover
 {
     text-decoration: underline;
+}
+
+
+
+#body
+{
+	width: 990px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+
+#bodyContent
+{
+	width: 600px;
+}
+
+
+
+#sideBar
+{
+	position: absolute;
+	right: 0;
+	width: 390px;
 }

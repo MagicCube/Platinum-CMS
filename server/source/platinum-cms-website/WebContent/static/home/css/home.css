@@ -38,7 +38,7 @@
 	line-height:0px;
 }
 
-.block_home_slider .slide {position:relative;}
+.block_home_slider .slide {position:relative; height: 260px; over-flow: hidden;}
 .block_home_slider .caption {padding:0px; position:absolute; left:0px; right:0px; bottom:0px; background:url(../../home/images/bg_caption.png); text-align:center; height: 30px;}
 .block_home_slider .caption p {padding-bottom:0px; font-size:11px; color:#dedede; text-shadow:0px -1px #000000; line-height:11px;}
 .block_home_slider .caption p.title {padding-bottom:6px; font-size:15px; color:#ffffff; font-weight:bold; line-height:5px;}
@@ -115,7 +115,7 @@
 
 #position_2
 {
-	width: 40px;
+	width: 60px;
 	height: 20px;
 	float: right;
 	margin-top: 10px;
@@ -224,7 +224,7 @@
 {
 	list-style:none inside url(../../common/images/list.gif);
 	padding: 0;
-	margin: 0 0 0 10px;
+	margin: -15px 0 0 10px;
 }
 
 #part2 ul li 
@@ -262,18 +262,18 @@
 
 #right_part ul.PhotoSummaryList
 {
-	width: 360px;
-	margin: -20px 0 0 0;
+	width: 370px;
+	margin: -5px 0 0 0;
 	padding: 0;	 
 }
 
 #right_part ul.PhotoSummaryList li
 {
-	height: 65px;
-	width: 360px;
+	height: 90px;
+	width: 370px;
 	position: relative;
 	left: 0;
-	margin-top: 15px;
+	margin-top: -7px;
 }
 
 #right_part ul.PhotoSummaryList li a
@@ -302,11 +302,12 @@
 {
 	width: 250px;
 	position: absolute;
-	height: 15px;
-	top: 2px;
+	height: 25px;
 	left: 120px;
 	font-weight: bold;
 	color: #000;
+	text-overflow: ellipsis;
+	overflow: shidden;
 }
 
 #right_part ul.PhotoSummaryList li a span#summary
@@ -314,9 +315,11 @@
 	width: 250px;
 	position: absolute;
 	left: 120px;
-	margin-top: 30px;
-	height: 20px;
+	margin-top: 28px;
+	height: 36px;
 	color : rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 #lineheight

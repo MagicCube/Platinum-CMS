@@ -26,5 +26,6 @@ else
 
 %>
 <jsp:include page='<%= page%>'>
+	<jsp:param name="path" value='<%= path != null ? path : "news"%>'/>
     <jsp:param name="displaySideBar" value='<%= displaySideBar ? "true" : "false"%>'/>
 </jsp:include>

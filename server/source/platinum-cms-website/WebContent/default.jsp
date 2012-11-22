@@ -34,18 +34,7 @@
                             	<cms:PhotoSlide id="tsztList" cssClass="slides" categoryId="news" displayPhoto="true" count="4" />
                             </div>
                             
-                            <script type="text/javascript">
-								$(function () {
-									$('#home_slider').flexslider({
-										animation : 'slide',
-										controlNav : true,
-										directionNav : true,
-										animationLoop : true,
-										slideshow : false,
-										useCSS : false
-									});								
-								});
-							</script>
+                            
              </div>
 			<!-- end of block_home_slider-->
 					

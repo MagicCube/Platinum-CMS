@@ -2,8 +2,6 @@
 <%@ taglib prefix="cms" tagdir="/WEB-INF/tags" %>
 
 <link href = "/static/common/css/common.css" rel = "stylesheet"></link>
-<link href = "/static/home/css/home.css" rel = "stylesheet"></link>
-<link href = "/static/common/css/post.css" rel = "stylesheet"></link>
 
 <div id = "header">
     <div id = "linklabel">
@@ -53,7 +51,10 @@
 
 <cms:MainMenu/>
 
-
+<div id="body">
 <% if (request.getParameter("displaySideBar").equals("true")) {%>
-
+	<div id="sideBar">
+		<cms:PostList id="xwdtList" categoryId='<%= request.getParameter("path")%>' count="5" />
+	</div>
+	<div id="bodyContent">
 <%}%>

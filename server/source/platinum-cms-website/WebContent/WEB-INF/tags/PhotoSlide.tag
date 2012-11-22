@@ -45,3 +45,16 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 </li>
 <% } %>
 </ul>
+
+<script type="text/javascript">
+								$(function () {
+									$('#home_slider').flexslider({
+										animation : 'slide',
+										controlNav : true,
+										directionNav : true,
+										animationLoop : true,
+										slideshow : false,
+										useCSS : false
+									});								
+								});
+							</script>
