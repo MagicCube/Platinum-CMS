@@ -15,12 +15,37 @@
 
 #postList li
 {
+	width: 690px;
     line-height: 22px;
     margin: 0;
     padding:　0;
+    list-style:none inside url(../images/list.gif);
+    border-bottom: 1px #ddd dashed;   
+    margin-left: 5px;
+}
+
+#postList li a
+{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+#postList li a:hover
+{
+	color: rgba(0, 0, 0, 0.2);
 }
 
 #postList #pageNavigationBar
 {
     margin-top: 20px;
+}
+
+#categoryNavigationBar
+{
+	margin-left: 10px;
+}
+
+#categoryNavigationBar a 
+{
+	color: 
 }

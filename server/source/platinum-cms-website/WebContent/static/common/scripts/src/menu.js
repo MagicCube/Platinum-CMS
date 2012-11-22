@@ -3,14 +3,12 @@ $(document).ready(function(){
 			function()
 			{
 				$('ul', this).css('visibility', 'visible');
-				$('#content').css('z-index', '-1');
-				$('#mainbody #maincontent').css('z-index', '-1');
+				$('ul').css('z-index', '99');
 			},
 			function()
 			{
 				$('ul', this).css('visibility', 'hidden');
-				$('#content').css('z-index', '0');
-				$('#mainbody #maincontent').css('z-index', '0');
+				$('ul').css('z-index', '0');
 			});
 });
 

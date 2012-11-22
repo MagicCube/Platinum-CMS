@@ -12,6 +12,7 @@
 <%@ attribute name="where" rtexprvalue="true"%>
 <%@ attribute name="displaySummary" rtexprvalue="true" type="java.lang.Boolean"%>
 <%@ attribute name="displayPhoto" rtexprvalue="true" type="java.lang.Boolean"%>
+<%@ attribute name="displayDate" rtexprvalue="true" type="java.lang.Boolean"%>
 <%@ attribute name="count" rtexprvalue="true" type="java.lang.Integer"%>
 <%@ attribute name="pageSize" rtexprvalue="true" type="java.lang.Integer"%>
 <%@ attribute name="pageIndex" rtexprvalue="true" type="java.lang.Integer"%>
@@ -43,7 +44,11 @@ if (openInNewWindow == null)
 {
 	openInNewWindow = false;
 }
-
+if (displayDate == null)
+{
+	displayDate = false;
+}
+	
 PostRuntimeManager manager = PostRuntimeManager.getInstance();
 List<PostEntity> posts = null;
 if (StringUtil.notNullOrEmpty(subcategoryId))
@@ -81,6 +86,9 @@ else if (StringUtil.notNullOrEmpty(categoryId))
         <span id="summary"><%= post.getSummary()%></span>
         <% } %>
     </a>
+    <%if (displayDate) {%>
+    <span id="date"><%= DateUtil.formatDate(post.getCreateTime(), "yyyy年M月d日") %></span>
+    <%} %>
 </li>
 <% } %>
 <% if (displayPageNavigationBar) {%>

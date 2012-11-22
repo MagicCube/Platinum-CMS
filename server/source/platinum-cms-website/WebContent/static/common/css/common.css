@@ -217,6 +217,7 @@
 	margin: 0;
 	padding: 0;
 	visibility: hidden;
+	position: absolute;
 }
 
 li.subMenu
@@ -379,8 +380,6 @@ li.subMenu > a:hover
     text-decoration: underline;
 }
 
-
-
 #body
 {
 	width: 990px;
@@ -389,17 +388,15 @@ li.subMenu > a:hover
 	position: relative;
 }
 
-
 #bodyContent
 {
-	width: 600px;
+	width: 695px;
+	border: 1px #ddd solid; 
 }
-
-
 
 #sideBar
 {
 	position: absolute;
 	right: 0;
-	width: 390px;
+	width: 300px;
 }
