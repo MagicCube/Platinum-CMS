@@ -15,7 +15,8 @@
         
         <!-- 数据库连接设置 -->
         <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
-        <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.1.100:1521:ptdb</property>
+        <!-- <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.1.100:1521:ptdb</property> -->
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:ptcms</property>
         <property name="hibernate.connection.username">PT_SYS</property>
         <property name="hibernate.connection.password">sys</property>
         

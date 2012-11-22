@@ -1,0 +1,16 @@
+#postList
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 990px;
+}
+
+#postList li
+{
+    line-height: 22px;
+}
+
+#postList #pageNavigationBar
+{
+    margin-top: 20px;
+}
