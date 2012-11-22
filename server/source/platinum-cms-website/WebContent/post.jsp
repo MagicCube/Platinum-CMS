@@ -7,28 +7,12 @@
 <%
 String id = request.getParameter("id");
 String categoryId = request.getParameter("categoryId");
-PostRuntimeManager postManager = new PostRuntimeManager();
+PostRuntimeManager postManager = PostRuntimeManager.getInstance();
 PostEntity post = postManager.getPost(id, categoryId);
 if (post == null)
 {
     response.setStatus(404);
     return;
-}
-else
-{
-    /*
-    String ifModifiedSince = request.getHeader("If-Modified-Since");
-    String lastModified = DateUtil.formatGMTDate(post.getUpdateTime());
-    if (ifModifiedSince != null && ifModifiedSince.equals(lastModified))
-    {
-        response.setStatus(304);
-        return;
-    }
-    else
-    {
-       response.setHeader("Last-Modified", lastModified);
-    }
-    */
 }
 %>
 
@@ -47,11 +31,7 @@ else
 <cms:Header path="<%= categoryId%>" displaySideBar="true"/>
 
 <div id="postDetail">
-    <ul id="navigationBar">
-        <li id="location"><a href="<%=request.getContextPath()%>/">首页</a> &gt; </li>
-        <li id="category"><a href="#"><%= post.getCategoryId()%></a> &gt; </li>
-        <li>正文</li>
-    </ul>
+    <cms:CategoryNavigationBar id="categoryNavigationBar" categoryId="<%= categoryId%>" subcategoryId="<%= post.getSubcategoryId()%>"></cms:CategoryNavigationBar>
 
     <h1 id="title"><%= post.getTitle()%></h1>    
     

@@ -12,6 +12,7 @@
 <body>
 <div id="home" class="page">
 
+<cms:CategoryNavigationBar id="navigationBar" categoryId="news" subcategoryId="4028b8813b07c8f4013b07c919a40059"></cms:CategoryNavigationBar>
 <cms:PostList id="newsList" categoryId="news" pageIndex="0" pageSize="20"/>
 
 </div>

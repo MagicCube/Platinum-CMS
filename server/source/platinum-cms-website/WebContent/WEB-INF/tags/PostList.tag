@@ -44,7 +44,7 @@ if (openInNewWindow == null)
 	openInNewWindow = false;
 }
 
-PostRuntimeManager manager = new PostRuntimeManager();
+PostRuntimeManager manager = PostRuntimeManager.getInstance();
 List<PostEntity> posts = null;
 if (StringUtil.notNullOrEmpty(subcategoryId))
 {

@@ -9,9 +9,19 @@ import platinum.framework.dao.DAOQuery;
 
 public class PostRuntimeManager
 {
-	public PostRuntimeManager()
+	private PostRuntimeManager()
 	{
 		
+	}
+	
+	private static PostRuntimeManager _instance = null;
+	public static PostRuntimeManager getInstance()
+	{
+		if (_instance == null)
+		{
+			_instance = new PostRuntimeManager();
+		}
+		return _instance;
 	}
 	
 	private PostDAO _postDAO = null;
