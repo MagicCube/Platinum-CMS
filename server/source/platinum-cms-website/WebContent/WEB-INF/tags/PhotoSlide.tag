@@ -18,7 +18,7 @@ if (displayPhoto == null)
 	displayPhoto = false;
 }
 
-PostRuntimeManager manager = new PostRuntimeManager();
+PostRuntimeManager manager = PostRuntimeManager.getInstance();
 List<PostEntity> posts = null;
 if (StringUtil.notNullOrEmpty(subcategoryId))
 {
