@@ -346,3 +346,35 @@ li.subMenu > a:hover
 }
 
 
+
+
+.CategoryNavigationBar
+{
+    padding: 0;
+    margin: 0;
+    clear: both;
+    display: block;
+    list-style: none;
+    height: 22px;
+    line-height: 22px;
+}
+
+.CategoryNavigationBar li
+{
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: left;
+}
+
+.CategoryNavigationBar li a
+{
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.CategoryNavigationBar li a:hover
+{
+    text-decoration: underline;
+}
