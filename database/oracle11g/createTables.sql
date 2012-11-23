@@ -1,6 +1,6 @@
 ﻿/*==============================================================*/
 /* DBMS name:      ORACLE Version 11g                           */
-/* Created on:     2012/11/16 13:47:15                          */
+/* Created on:     2012/11/23 13:41:42                          */
 /*==============================================================*/
 
 
@@ -11,6 +11,8 @@ drop index PT_CMS.PTT_USER_GROUP_2_CATEGORY2_FK;
 drop index PT_CMS.PTT_USER_GROUP_2_CATEGORY_FK;
 
 drop table PT_CMS.PTT_CATEGORY_2_USER_GROUP cascade constraints;
+
+drop index "Relationship_8_FK";
 
 drop index "Relationship_7_FK";
 
@@ -80,6 +82,7 @@ create table PT_CMS.PTT_POST
 (
    ID                   VARCHAR2(32)         not null,
    SUBCATEGORY_ID       VARCHAR2(32),
+   HOME_SUBCATEGORY_ID  VARCHAR2(32),
    CATEGORY_ID          VARCHAR2(32),
    POST_CONTENT_ID      CHAR(32)             not null,
    POST_VIEWS_ID        CHAR(32)             not null,
@@ -106,6 +109,13 @@ create index PT_CMS.FK_CATEGORY_2_POST_FK on PT_CMS.PTT_POST (
 /* Index: "Relationship_7_FK"                                   */
 /*==============================================================*/
 create index "Relationship_7_FK" on PT_CMS.PTT_POST (
+   HOME_SUBCATEGORY_ID ASC
+);
+
+/*==============================================================*/
+/* Index: "Relationship_8_FK"                                   */
+/*==============================================================*/
+create index "Relationship_8_FK" on PT_CMS.PTT_POST (
    SUBCATEGORY_ID ASC
 );
 
