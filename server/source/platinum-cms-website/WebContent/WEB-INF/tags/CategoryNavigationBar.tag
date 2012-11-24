@@ -17,6 +17,7 @@ if (subcategoryId != null)
 %>
 
 <ul id="${id}" class="CategoryNavigationBar">
+	<li>当前位置:</li>
     <li><a href="/">首页</a></li>
     <li> &gt; <a href="/${categoryId}/"><%= category != null ? category.getCategoryName() : categoryId%></a></li>
     <% if (subcategoryId != null) {%>

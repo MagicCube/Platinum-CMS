@@ -87,7 +87,7 @@ else if (StringUtil.notNullOrEmpty(categoryId))
         <% } %>
     </a>
     <%if (displayDate) {%>
-    <span id="date"><%= DateUtil.formatDate(post.getCreateTime(), "yyyy年M月d日") %></span>
+    <span id="date" style = "float: right;">[<%= DateUtil.formatDate(post.getCreateTime(), "yyyy年M月d日") %>]</span>
     <%} %>
 </li>
 <% } %>

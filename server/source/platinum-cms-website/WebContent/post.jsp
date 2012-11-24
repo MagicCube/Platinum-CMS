@@ -36,8 +36,8 @@ if (post == null)
     <h1 id="title"><%= post.getTitle()%></h1>    
     
     <div id="info">
-        <div id="source"><span>来源：</span><a href="#"><%= post.getSource()%></a></div>
-        <div id="updateTime"><span>更新时间：</span><a><%= DateUtil.formatDate(post.getUpdateTime(), "yyyy年M月d日HH:mm")%></a></div>
+        <span id="source"><span>来源：</span><a href="#"><%= post.getSource()%></a></span>
+        <span id="updateTime"><span>更新时间：</span><a><%= DateUtil.formatDate(post.getUpdateTime(), "yyyy年M月d日HH:mm")%></a></s>
     </div>
 
     <div id="social">
@@ -52,7 +52,6 @@ if (post == null)
         document.getElementById("weibo").title = $("#summary").text();
     </script>
 </div>
-
 <cms:Footer path="<%= categoryId%>"/>
 
 </body>

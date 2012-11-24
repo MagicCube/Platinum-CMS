@@ -3,5 +3,53 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    min-height: 600px;
 }
 
+#postDetail h1
+{
+	text-align: center;
+}
+
+#info 
+{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#info a
+{
+	color: #3399CC;
+	text-decoration: none;
+}
+
+#info a:hover
+{
+	color: #339900;
+}
+
+#summary
+{
+	border: 1px #ddd dashed;
+	padding-left: 20px;
+	padding-right: auto;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: #3399cc;
+	font-size: 14px;
+	line-height: 16px;	
+}
+
+#content
+{
+	font-size: 14px;
+}
+
+#content img
+{
+	margin-top: 10px;
+	margin-left: 40px;
+	border: 1px solid #ddd;
+	-moz-box-shadow: gray 0px 3px 10px;
+	box-shadow: gray 0px 3px 10px;	
+}

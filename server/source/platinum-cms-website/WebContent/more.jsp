@@ -46,9 +46,12 @@ if (subcategoryId != null)
 
 <cms:Header path="<%= categoryId%>" displaySideBar="true"/>
     <div id="more">
-        <cms:CategoryNavigationBar id="categoryNavigationBar" categoryId="<%= categoryId%>" subcategoryId="<%= subcategoryId%>"></cms:CategoryNavigationBar>
+      	<cms:CategoryNavigationBar id="categoryNavigationBar" categoryId="<%= categoryId%>" subcategoryId="<%= subcategoryId%>"></cms:CategoryNavigationBar>
     	<cms:PostList id="postList" subcategoryId="<%= subcategoryId%>" categoryId="<%= categoryId%>" displayDate="true" pageIndex='<%= Integer.parseInt(request.getParameter("pageIndex")) - 1%>' pageSize="20"/>
     </div>
+</div>
+</div>
 <cms:Footer path="<%= categoryId%>"/>
+
 </body>
 </html>
