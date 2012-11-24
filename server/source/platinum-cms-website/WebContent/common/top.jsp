@@ -6,7 +6,7 @@
 <div id = "header">
     <div id = "linklabel">
         <ul>
-            <li><a href = "#">南京师范大学</a></li>
+            <li><a href = "http://www.njnu.edu.cn/">南京师范大学</a></li>
             <li><a href = "#">网站地图</a></li>
             <li><a href = "#">联系我们</a></li>
         </ul>
