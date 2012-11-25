@@ -1,0 +1,325 @@
+﻿@CHARSET "UTF-8";
+
+#maincontent
+{
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 990px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	position: relative;
+	background: #fff;
+	height: 620px;
+}
+
+
+#maincontent > #inform
+{
+	position: absolute;
+	width: 258px;
+	height: 300px;
+	top: 15px;
+	left: 18px;
+}
+
+#maincontent > #inform ul
+{
+	margin:10px 0 0 0;
+	padding:0;
+	list-style:url(/static/zuzhi/images/list.png);
+	list-style-position:inside;
+}
+
+#maincontent > #inform ul li
+{
+	padding: 0;
+	margin: 6px 0 0 0;
+	width: 258px;			/*已修改过*/
+	font-size: 13px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#maincontent a
+{
+	color:#000000;
+	text-decoration: none;
+}
+
+#maincontent a:hover
+{
+	color:rgba(255, 0, 0, 0.5);
+}
+
+#maincontent > #pic
+{
+	position: absolute;
+	padding: 0;
+	top: 10px;
+	left: 305px;
+	width: 380px;
+	height: 300px;
+	background: url(/static/zuzhi/images/Board_person_1.jpg) no-repeat;
+}
+
+#pic >#browsable
+{
+	width: 380px;	/*已修改过*/
+	height: 300px;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#box
+{
+	position: relative;
+	width: 380px;	
+	height: 300px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#box .list
+{
+	padding: 0;
+	margin: 0;
+	width: 380px;
+	height: 300px;
+	list-style-type: none;
+	background: #fff; 
+}
+
+#box .list li
+{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 380px;
+	height: 300px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+#box .list li img
+{
+	width: 380px;
+	height: 300px;
+}
+
+#box .list li.current
+{
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+#box .list li span#title
+{
+	background-color: rgba(0,0,0,0.6);
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#A0000000', EndColorStr='#A0000000');
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 380px;
+	height: 24px;
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+	text-decoration: none;
+	font: 12px Microsoft YaHei, Verdana;
+}
+
+#box .count
+{
+	position: absolute;
+	bottom: 5px;
+	left: 30px;
+	list-style-type: none;
+}
+
+#box .count li
+{
+	font-size: 11px;
+	font-family: Microsoft YaHei;
+	color: #000000;
+	float: left;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	text-align: center;
+	margin-right: 9px;
+	background: #FFFFFF;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	border-radius: 0px;
+}
+
+#box .count li.current
+{
+	color: #fff;
+	opacity: 1;
+	filter: alpha(opacity=100);
+	font-weight: 250;
+	background: #f60;
+}
+#maincontent > #activity
+{
+	position: absolute;
+	padding: 0;
+	top: 15px;
+	width: 258px;
+	height: 300px;
+	left: 715px;
+}
+
+#maincontent > #activity ul
+{
+	margin:10px 0 0 0;
+	padding:0;
+	list-style:url(/static/zuzhi/images/list.png);
+	list-style-position:inside;
+}
+
+#maincontent > #activity ul li
+{
+	padding: 0;
+	margin: 6px 0 0 0;
+	width: 258px;			/*已修改过*/
+	font-size: 13px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#maincontent > #box-bottom
+{
+	position: absolute;
+	padding: 0;
+	top: 300px;
+	width: 957px;
+	height: 375px;
+	left: 15px;
+	background: url(/static/zuzhi/images/Board_person_box.gif) no-repeat;
+}
+
+#box-bottom > #boxContent
+{
+	width: 920px;
+	height: 339px;
+	margin-top: 18px;
+	matgin-left: 18px;
+	position: relative;
+	margin: 0;
+}
+
+#box-bottom > #boxContent > #policy
+{
+	width: 290px;
+	height: 300px;
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	margin: 0;
+}
+
+#box-bottom  > #boxContent > #policy ul
+{
+	margin:10px 0 0 0;
+	padding:0;
+	list-style:url(/static/zuzhi/images/list.png);
+	list-style-position:inside;
+}
+
+#box-bottom  > #boxContent > #policy ul li
+{
+	padding: 0;
+	margin: 6px 0 0 0;
+	width: 258px;			/*已修改过*/
+	font-size: 13px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#box-bottom  > #boxContent > #download
+{
+	width: 290px;
+	height: 300px;
+	position: absolute;
+	top: 25px;
+	left: 330px;
+	margin: 0;
+}
+
+#box-bottom  > #boxContent > #download ul
+{
+	margin:10px 0 0 0;
+	padding:0;
+	list-style:url(/static/zuzhi/images/list.png);
+	list-style-position:inside;
+}
+
+#box-bottom  > #boxContent > #download ul li
+{
+	padding: 0;
+	margin: 6px 0 0 0;
+	width: 258px;			/*已修改过*/
+	font-size: 13px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#box-bottom  > #boxContent > #outline
+{
+	width: 290px;
+	height: 300px;
+	position: absolute;
+	top: 25px;
+	left: 640px;
+	margin: 0;
+}
+
+#box-bottom  > #boxContent > #outline ul
+{
+	margin:10px 0 0 0;
+	padding:0;
+	list-style:url(/static/zuzhi/images/list.png);
+	list-style-position:inside;
+}
+
+#box-bottom  > #boxContent > #outline ul li
+{
+	padding: 0;
+	margin: 6px 0 0 0;
+	width: 258px;			/*已修改过*/
+	font-size: 13px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#more
+{
+	float: right;
+}
+
+#more a
+{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 9px;
+}
+
+#more a:hover
+{
+	color: rgba(0, 0, 0, 0.5);
+}

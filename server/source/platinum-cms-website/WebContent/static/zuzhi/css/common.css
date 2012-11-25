@@ -1,0 +1,322 @@
+@CHARSET "UTF-8";
+
+html, body
+{
+	background: #eee;
+	margin: 0;
+}
+
+#head
+{
+	height: 170px;
+	background: url(/static/zuzhi/images/redbk.gif) repeat;
+}
+
+#box-top
+{
+	width: 990px;
+	height: 170px;
+	margin-left: auto;
+	margin-right: auto; 
+	display: block;
+}
+
+#logo
+{
+	margin: 10px 0 0 0;
+	height: 60px;
+	width: 450px;
+	background: url(/static/zuzhi/images/logo.png) no-repeat;
+	float:left;
+}
+
+#link_search
+{
+	margin: 20px 10px 0 0;
+	width: 200px;
+	float: right;
+}
+
+#search
+{
+	padding: 0;
+	margin: 10px 0 0 0;
+	width: 160px;
+	height: 22px;
+	background: url(/static/zuzhi/images/text.png) no-repeat;
+}
+
+#description
+{
+	width:118px;
+	height: 22px;
+	line-height: 18px;
+	padding: 0;
+	margin: 0;
+	float: left;
+	border: 0;
+	background-color: #FFFFFF;
+	font-size: 12px;
+}
+
+#button
+{
+	float: left;
+	height: 22px;
+	width: 23px;
+	background: url(/static/zuzhi/images/button.png) no-repeat;
+	background-repeat: no-repeat;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+#link_search #text
+{
+	width: 200px;
+	line-height: 15px;
+	padding: 0;
+	margin: 0;
+	padding-left: 20px;
+}
+
+#link_search #text a
+{
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#link_search #text a:hover
+{
+	color: rgba(0, 0, 0, 0.4);
+}
+
+menu#nav
+{
+	width: 987px;
+	padding: 0;
+	margin-top: -80px;
+	margin-left: auto;
+	margin-right: auto;
+	display: bolock;
+}
+
+menu#nav ul#zuzhi
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	float: left;
+}
+
+menu#nav ul#zuzhi li
+{
+	padding: 0;
+	margin: 0;
+	float: left;
+	width: 141px;
+	height: 36px;
+	line-height: 35px;
+	text-align: center;
+	background: url(/static/zuzhi/images/menu.gif) no-repeat;
+}
+
+menu#nav ul#zuzhi li a
+{
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	font-family: 微软雅黑;
+	text-decoration: none;
+	margin: 0;
+}
+
+menu#nav ul#zuzhi li a:hover
+{
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 14px;
+	font-family: 微软雅黑;
+	text-decoration: none;
+	background: url(/static/zuzhi/images/hover.png) no-repeat;
+	background-position: bottom;
+	font-weight: bold;
+}
+
+#footer
+{
+	height: 160px;
+	background: url(/static/zuzhi/images/redbk.gif) repeat;
+	margin-top: -20px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+
+#deplink_1
+{
+	height: 140px;
+	top: 0;
+	left: 100px;
+	position: absolute;
+	font-size: 12px;
+	color: #fff;
+}
+
+#deplink_1 a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#deplink_1 a:hover
+{
+	color: rgba(0, 0, 0, 0.8);
+	text-decoration: none;
+}
+
+#deplink_2
+{
+	height: 140px;
+	top: 14px;
+	left: 300px;
+	position: absolute;
+}
+
+#deplink_2 a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#deplink_2 a:hover
+{
+	color: rgba(0, 0, 0, 0.8);
+	text-decoration: none;
+}
+
+#facultylink
+{
+	height: 140px;
+	top: 0;
+	left: 490px;
+	position: absolute;
+}
+
+#facultylink a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#facultylink a:hover
+{
+	color: rgba(0, 0, 0, 0.8);
+	text-decoration: none;
+}
+
+
+#system_link
+{
+	height: 140px;
+	top: 0px;
+	left: 790px;
+	position: absolute;
+}
+
+#system_link a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#system_link a:hover
+{
+	color: rgba(0, 0, 0, 0.8);
+	text-decoration: none;
+}
+
+table
+{
+	margin: 10px 0 0 0;
+	paddiong: 0;
+}
+
+table td
+{
+	height: 25px;
+}
+
+table tr td a
+{
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+
+
+
+.CategoryNavigationBar
+{
+    padding: 0;
+    margin: 0;
+    clear: both;
+    display: block;
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+}
+
+.CategoryNavigationBar li
+{
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: left;
+}
+
+.CategoryNavigationBar li a
+{
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.CategoryNavigationBar li a:hover
+{
+    text-decoration: none;
+}
+
+#categoryNavigationBar
+{
+	border-bottom: 1px #ddd solid;
+	width: 990px;
+	color: #000;
+	font-weight: bold;
+}
+
+#categoryNavigationBar li:first-child
+{
+	margin-left: 10px;
+}
+
+#categoryNavigationBar a 
+{
+	color: #000;
+	text-decoration: none;
+}
+
+#categoryNavigationBar a:hover
+{
+	color: rgba(0, 0, 0, 0.5);
+}
+
+#bodycontent
+{
+	width: 990px;
+	margin-left: auto;
+	margin-right: auto;
+}
