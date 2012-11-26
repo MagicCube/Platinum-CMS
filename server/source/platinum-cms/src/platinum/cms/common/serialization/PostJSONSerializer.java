@@ -29,6 +29,7 @@ public class PostJSONSerializer
 			json.put("summary", p_post.getSummary());
 			json.put("categoryId", p_post.getCategoryId());
 			json.put("subcategoryId", p_post.getSubcategoryId());
+			json.put("homeSubcategoryId", p_post.getHomeSubcategoryId());
 			json.put("photoURL", p_post.getPhotoURL());
 		}
 		catch (JSONException e)
@@ -73,7 +74,7 @@ public class PostJSONSerializer
 		try
 		{
 			json.put("contentText", p_post.getContentText());
-			json.put("postType", p_post.getPostType());
+			json.put("postType", p_post.getPostType().ordinal());
 			json.put("postStatus", p_post.getPostStatus().ordinal());
 			json.put("publisher", p_post.getPublisher());
 			json.put("source", p_post.getSource());

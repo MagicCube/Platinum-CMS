@@ -20,7 +20,9 @@ pt.cms.admin.post.view.PostEditViewController = function()
     me.$summary = null;
     me.$category = null;
     me.$subcategory = null;
+    me.$homeSubcategory = null;
     me.$content = null;
+    me.$postType = null;
     me.$postStatus = null;
     me.$source = null;
     me.$photoURL = null;
@@ -73,6 +75,13 @@ pt.cms.admin.post.view.PostEditViewController = function()
         $dl.children("dd").append(me.$id);
         $sideBar.append($dl);
         
+
+        $dl = $("<dl><dt>类型</dt> <dd></dd></dl>");
+        me.$postType = $("<select id=postStatus><option value=0>静态信息</option><option value=1>新闻</option><option value=2>通知</option></select>");
+        $dl.children("dd").append(me.$postType);
+        $sideBar.append($dl);
+        
+        
         $dl = $("<dl><dt>状态</dt> <dd></dd></dl>");
         me.$postStatus = $("<select id=postStatus><option value=0>尚未发布</option><option value=1>已发布</option></select>");
         $dl.children("dd").append(me.$postStatus);
@@ -86,6 +95,11 @@ pt.cms.admin.post.view.PostEditViewController = function()
         var $dl = $("<dl><dt>子栏目</dt> <dd></dd></dl>");
         me.$subcategory = $("<select id=subcategory><option value=0>(空)</option></select>");
         $dl.children("dd").append(me.$subcategory);
+        $sideBar.append($dl);
+        
+        var $dl = $("<dl><dt>首页栏目</dt> <dd></dd></dl>");
+        me.$homeSubcategory = $("<select id=subcategory><option value=0>(空)</option></select>");
+        $dl.children("dd").append(me.$homeSubcategory);
         $sideBar.append($dl);
         
         var $dl = $("<dl><dt>图片</dt> <dd></dd></dl>");
@@ -134,6 +148,27 @@ pt.cms.admin.post.view.PostEditViewController = function()
                     _category_onchanged();
                     me.$subcategory.val(me.data.subcategoryId);
                 }
+                
+                for (var i = 0; i < me.categories.length; i++)
+                {
+                    if (me.categories[i].id == "news")
+                    {
+                        var subcategories = me.categories[i].subcategories;
+                        for (var j = 0; j < subcategories.length; j++)
+                        {
+                            var sc = subcategories[j];
+                            var $opt = $("<option>");
+                            $opt.attr("value", sc.id);
+                            $opt.text(sc.name);
+                            me.$homeSubcategory.append($opt);
+                        }
+                        break;
+                    }
+                }
+                if (me.data != null && me.data.homeSubcategoryId != null)
+                {
+                    me.$homeSubcategory.val(me.data.homeSubcategoryId);
+                }
             });
         me.$category.change(_category_onchanged);
     };
@@ -161,6 +196,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         
         me.$category.val(me.data.categoryId);
         _category_onchanged();
+        
         if (me.data.subcategoryId != null)
         {
             me.$subcategory.val(me.data.subcategoryId);
@@ -170,7 +206,17 @@ pt.cms.admin.post.view.PostEditViewController = function()
             me.$subcategory.val(0);
         }
         
+        if (me.data.homeSubcategoryId != null)
+        {
+            me.$homeSubcategory.val(me.data.homeSubcategoryId);
+        }
+        else
+        {
+            me.$homeSubcategory.val(0);
+        }
+        
         me.$postStatus.val(me.data.postStatus);
+        me.$postType.val(me.data.postType);
         me.$source.val(me.data.source);
         me.$publisher.text(me.data.publisher);
         me.$photoURL.val(me.data.photoURL);
@@ -248,8 +294,16 @@ pt.cms.admin.post.view.PostEditViewController = function()
         {
             post.subcategoryId = null;
         }
+        
+        post.homeSubcategoryId = me.$homeSubcategory.val();
+        if (post.homeSubcategoryId == 0)
+        {
+            post.homeSubcategoryId = null;
+        }
+        
         post.contentText = me.$content.val();
         post.postStatus = parseInt(me.$postStatus.val());
+        post.postType = parseInt(me.$postType.val());
         post.source = me.$source.val();
         
         post.photoURL = me.$photoURL.val();

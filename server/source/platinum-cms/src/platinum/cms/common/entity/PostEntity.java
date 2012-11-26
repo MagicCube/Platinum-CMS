@@ -21,6 +21,17 @@ import platinum.framework.entity.StandardEntity;
 @Table(name = "PTT_POST", schema = "PT_CMS")
 public class PostEntity extends StandardEntity
 {
+	private String _homeSubcategoryId = null;
+	@Column(name = "HOME_SUBCATEGORY_ID")
+	public String getHomeSubcategoryId()
+	{
+		return _homeSubcategoryId;
+	}
+	public void setHomeSubcategoryId(String value)
+	{
+		_homeSubcategoryId = value;
+	}
+	
 	private String _subcategoryId = null;
 	@Column(name = "SUBCATEGORY_ID")
 	public String getSubcategoryId()

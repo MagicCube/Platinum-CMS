@@ -19,6 +19,7 @@ import org.codehaus.jettison.json.JSONObject;
 
 import platinum.cms.admin.service.PostAdminManager;
 import platinum.cms.common.PostStatus;
+import platinum.cms.common.PostType;
 import platinum.cms.common.entity.PostEntity;
 import platinum.cms.common.search.PostSearchEngine;
 import platinum.cms.common.search.PostSearchResult;
@@ -162,6 +163,14 @@ public class PostAdminResource extends AbstractResource
 		{
 			post.setSubcategoryId(null);
 		}
+		if (postJSON.getString("homeSubcategoryId") != "null")
+		{
+			post.setHomeSubcategoryId(postJSON.getString("homeSubcategoryId"));
+		}
+		else
+		{
+			post.setHomeSubcategoryId(null);
+		}
 		post.setSource(postJSON.getString("source"));
 		if (postJSON.getString("photoURL") != "null")
 		{
@@ -172,6 +181,7 @@ public class PostAdminResource extends AbstractResource
 			post.setPhotoURL(null);
 		}
 		post.setPostStatus(PostStatus.values()[postJSON.getInt("postStatus")]);
+		post.setPostType(PostType.values()[postJSON.getInt("postType")]);
 	}
 	
 	private JSONObject _generateSimplePostJSON(PostEntity post)
