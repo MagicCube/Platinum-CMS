@@ -43,19 +43,19 @@
 				<div id = "boxContent">
 					<div id = "policy">
 						<span><img src = "/static/zuzhi/images/policy.gif"/></span>
-						<cms:PostList id = "zzhdlist" subcategoryId="sc000000000000000000000000000042" count="9" />
+						<cms:PostList id = "zcfglist" subcategoryId="sc000000000000000000000000000042" count="9" />
 						<div id = "nice"><a href = "#" style ="font-size: 12px;">更多...</a></div>
 					</div>
 					
 					<div id = "download">
 						<span><img src = "/static/zuzhi/images/policy.gif"/></span>
-						<cms:PostList id = "zzhdlist" subcategoryId="sc000000000000000000000000000043" count="9" />				
+						<cms:PostList id = "zlxzlist" subcategoryId="sc000000000000000000000000000043" count="9" />				
 						<div id = "nice"><a href = "/zuzhi/more/" style ="font-size: 12px;">更多...</a></div>
 					</div>
 					
 					<div id = "outline">
 						<span><img src = "/static/zuzhi/images/policy.gif"/></span>
-						<cms:PostList id = "zzhdlist" subcategoryId="sc000000000000000000000000000044" count="9" />
+						<cms:PostList id = "ffznlist" subcategoryId="sc000000000000000000000000000044" count="9" />
 						<div id = "nice"><a href = "/zuzhi/more/" style ="font-size: 12px;">更多...</a></div>
 					</div>
 				</div>
