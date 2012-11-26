@@ -37,4 +37,4 @@
 		</ul>
 	</menu>
 	
-	<div id = "bodycontent">
+	<div id = "bodyContent">

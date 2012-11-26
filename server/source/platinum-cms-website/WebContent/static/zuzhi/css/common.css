@@ -146,18 +146,28 @@ menu#nav ul#zuzhi li a:hover
 
 #footer
 {
-	height: 160px;
+	height: 200px;
 	background: url(/static/zuzhi/images/redbk.gif) repeat;
-	margin-top: -20px;
-	margin-right: auto;
-	margin-left: auto;
 	position: relative;
+}
+
+#footer_box
+{
+	width: 990px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+#footer_box p
+{
+	font-weight: bold;
 }
 
 #deplink_1
 {
 	height: 140px;
-	top: 0;
+	top: -5px;
 	left: 100px;
 	position: absolute;
 	font-size: 12px;
@@ -172,16 +182,17 @@ menu#nav ul#zuzhi li a:hover
 
 #deplink_1 a:hover
 {
-	color: rgba(0, 0, 0, 0.8);
-	text-decoration: none;
+	color: yellow;
 }
 
-#deplink_2
+#deplink_2 
 {
 	height: 140px;
-	top: 14px;
-	left: 300px;
+	top: -5px;
+	left: 400px;
 	position: absolute;
+	font-size: 12px;
+	color: #fff;
 }
 
 #deplink_2 a
@@ -192,37 +203,17 @@ menu#nav ul#zuzhi li a:hover
 
 #deplink_2 a:hover
 {
-	color: rgba(0, 0, 0, 0.8);
-	text-decoration: none;
+	color: yellow;
 }
-
-#facultylink
-{
-	height: 140px;
-	top: 0;
-	left: 490px;
-	position: absolute;
-}
-
-#facultylink a
-{
-	color: #fff;
-	text-decoration: none;
-}
-
-#facultylink a:hover
-{
-	color: rgba(0, 0, 0, 0.8);
-	text-decoration: none;
-}
-
 
 #system_link
 {
 	height: 140px;
-	top: 0px;
-	left: 790px;
+	top: -5px;
+	left: 700px;
 	position: absolute;
+	font-size: 12px;
+	color: #fff;
 }
 
 #system_link a
@@ -233,41 +224,51 @@ menu#nav ul#zuzhi li a:hover
 
 #system_link a:hover
 {
-	color: rgba(0, 0, 0, 0.8);
-	text-decoration: none;
+	color: yellow;
+}
+
+#bottom
+{
+	position: absolute;
+	text-align: center;
+	line-height: 25px;
+	font-size: 12px;
+	color: #fff;
+	top: 170px;
+	border-top: 1px #fff solid;
+	width: 990px;
 }
 
 table
 {
-	margin: 10px 0 0 0;
+	margin: -10px 0 0 0;
 	paddiong: 0;
 }
 
 table td
 {
 	height: 25px;
-}
-
-table tr td a
-{
-	color: #fff;
-	font-size: 12px;
-	text-decoration: none;
 	margin-right: 30px;
 }
 
-
-
-
-.CategoryNavigationBar
+table td a
 {
-    padding: 0;
+	margin-right: 30px;	
+}
+
+#categoryNavigationBar
+{
+	padding: 0;
     margin: 0;
-    clear: both;
     display: block;
     list-style: none;
     height: 30px;
     line-height: 30px;
+	border-bottom: 1px #ddd solid;
+	width: 990px;
+	color: #000;
+	font-weight: bold;
+	color: #fff;
 }
 
 .CategoryNavigationBar li
@@ -278,45 +279,44 @@ table tr td a
     float: left;
 }
 
-.CategoryNavigationBar li a
-{
-    color: blue;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.CategoryNavigationBar li a:hover
-{
-    text-decoration: none;
-}
-
-#categoryNavigationBar
-{
-	border-bottom: 1px #ddd solid;
-	width: 990px;
-	color: #000;
-	font-weight: bold;
-}
-
 #categoryNavigationBar li:first-child
 {
 	margin-left: 10px;
+	color: #fff;
 }
 
-#categoryNavigationBar a 
+#categoryNavigationBar li a 
 {
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 }
 
-#categoryNavigationBar a:hover
+#categoryNavigationBar li a:hover
 {
-	color: rgba(0, 0, 0, 0.5);
+	color: yellow;
 }
 
-#bodycontent
+#bodyContent
 {
 	width: 990px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 20px;
+}
+
+#more
+{
+	margin-top: 48px;
+	 
+}
+
+#postDetail
+{
+	margin-top: 48px;
+}
+
+#content
+{
+	margin-top: 20px;
+	line-height: 20px;
 }
