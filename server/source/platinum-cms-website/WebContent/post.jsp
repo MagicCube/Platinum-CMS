@@ -1,3 +1,4 @@
+<%@page import="platinum.cms.common.PostType"%>
 <%@page import="platinum.common.util.DateUtil"%>
 <%@page import="platinum.cms.common.entity.PostEntity"%>
 <%@page import="platinum.cms.runtime.service.PostRuntimeManager"%>
@@ -28,30 +29,10 @@ if (post == null)
 
 <body>
 
-<cms:Header path="<%= categoryId%>" displaySideBar="true"/>
+<cms:Header path="<%= categoryId%>" displaySideBar="<%= post.getPostType() != PostType.INFORMATION%>"/>
 
-<div id="postDetail">
-    <cms:CategoryNavigationBar id="categoryNavigationBar" categoryId="<%= categoryId%>" subcategoryId="<%= post.getSubcategoryId()%>"></cms:CategoryNavigationBar>
+<cms:PostDetail id="postDetail" postId="<%= id%>" categoryId="<%= categoryId%>"></cms:PostDetail>
 
-    <h1 id="title"><%= post.getTitle()%></h1>    
-    
-    <div id="info">
-        <span id="source"><span>来源：</span><a href="#"><%= post.getSource()%></a></span>
-        <span id="updateTime"><span>更新时间：</span><a><%= DateUtil.formatDate(post.getUpdateTime(), "yyyy年M月d日HH:mm")%></a></s>
-    </div>
-
-    <div id="social">
-        <wb:share-button id="weibo" url="<%= post.getAbsoluteLink()%>" type="icon"></wb:share-button>
-    </div>
-
-
-    <div id="summary"><%= post.getSummary()%></div>
-    <div id="content"><%= post.getContentText()%></div>
-    
-    <script>
-        document.getElementById("weibo").title = $("#summary").text();
-    </script>
-</div>
 <cms:Footer path="<%= categoryId%>"/>
 
 </body>
