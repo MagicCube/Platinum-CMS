@@ -307,19 +307,9 @@
 	overflow: hidden;
 }
 
-#more
+#nice
 {
 	float: right;
 }
 
-#more a
-{
-	text-decoration: none;
-	color: rgba(0, 0, 0, 0.8);
-	font-size: 9px;
-}
 
-#more a:hover
-{
-	color: rgba(0, 0, 0, 0.5);
-}

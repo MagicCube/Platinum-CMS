@@ -4,6 +4,8 @@
 <link href = "/static/zuzhi/css/common.css" rel = "stylesheet"></link>
 
 	<div id = "footer">
+	 <div id = "footer_box">
+	 
 		<div id = "deplink_1">
 			 <p>部门链接</p>
             <table>
@@ -47,9 +49,9 @@
         </table>
 		</div>
 		
-		<div id = "facultylink">
-			<p id = sj>系部链接</p>
-			 <table >
+		<div id = "deplink_2">
+			 <p>系部链接</p>
+			<table >
             <tr>
                 <td>
                     <a href = "faculty/XinXi.htm">信息科学与技术系</a>
@@ -88,12 +90,22 @@
                 </td>
             </tr>
         </table>    
-		</div>        
+		</div>   
+		     
         <div id = "system_link">
 			<p id = "sj">常用系统</p>
-			<p><a href = "#">人才招聘系统</a></p>			
-			<p><a href = "#">年终考核系统</a></p>
+			<table>
+				<tr>
+					<td><a href = "#">人才招聘系统</a></td>
+				</tr>
+				<tr>
+					<td><a href = "#">年终考核系统</a></td>
+				</tr>
+			</table>
 		</div>
-		<hr/>
-		<p style = "text-align: center; font-size: 12px;">版权所有©南京师范大学中北学院</p>	
+	
+		<div id = "bottom">
+			南京师范大学中北学院版权所有
+		</div>
 	</div>
+  </div>

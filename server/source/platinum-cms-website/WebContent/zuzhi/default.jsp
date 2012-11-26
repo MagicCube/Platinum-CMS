@@ -17,7 +17,7 @@
 			<div id = "inform">
 				<span><img src="/static/zuzhi/images/inform.gif"/></span>
 				<cms:PostList id = "ggtzlist" subcategoryId="sc000000000000000000000000000040" count="9" />
-				<div id = "more"><a href = "/zuzhi/more/" style ="font-size: 9px;">更多...</a></div>
+				<div id = "nice"><a href = "/zuzhi/more/" style ="font-size: 12px;">更多...</a></div>
 			</div>
 			<div id = "pic">
 				<div id="browsable">
@@ -36,7 +36,7 @@
 			<div id = "activity">
 				<span><img src = "/static/zuzhi/images/activity.gif"/></span>
 				<cms:PostList id = "zzhdlist" subcategoryId="sc000000000000000000000000000041" count="9" />
-				<div id = "more"><a href = "/zuzhi/more/" style ="font-size: 9px;">更多...</a></div>
+				<div id = "nice"><a href = "/zuzhi/more/" style ="font-size: 12px;">更多...</a></div>
 			</div>
 			
 			<div id = "box-bottom">
@@ -44,22 +44,23 @@
 					<div id = "policy">
 						<span><img src = "/static/zuzhi/images/policy.gif"/></span>
 						<cms:PostList id = "zzhdlist" subcategoryId="sc000000000000000000000000000042" count="9" />
-						<div id = "more"><a href = "#" style ="font-size: 9px;">更多...</a></div>
+						<div id = "nice"><a href = "#" style ="font-size: 12px;">更多...</a></div>
 					</div>
 					
 					<div id = "download">
 						<span><img src = "/static/zuzhi/images/policy.gif"/></span>
 						<cms:PostList id = "zzhdlist" subcategoryId="sc000000000000000000000000000043" count="9" />				
-						<div id = "more"><a href = "/zuzhi/more/" style ="font-size: 9px;">更多...</a></div>
+						<div id = "nice"><a href = "/zuzhi/more/" style ="font-size: 12px;">更多...</a></div>
 					</div>
 					
 					<div id = "outline">
 						<span><img src = "/static/zuzhi/images/policy.gif"/></span>
 						<cms:PostList id = "zzhdlist" subcategoryId="sc000000000000000000000000000044" count="9" />
-						<div id = "more"><a href = "/zuzhi/more/" style ="font-size: 9px;">更多...</a></div>
+						<div id = "nice"><a href = "/zuzhi/more/" style ="font-size: 12px;">更多...</a></div>
 					</div>
 				</div>
-			</div>	
+			</div>
+		</div>
 	</div>
 	
 	<cms:Footer path = "zuzhi"/>
