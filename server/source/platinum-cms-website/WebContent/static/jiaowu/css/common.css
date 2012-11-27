@@ -59,7 +59,7 @@ ul { list-style: none; }
 	margin: 35px 0 0 0;
 	height: 60px;
 	width: 700px;
-	background:url(../images/Board_person_logo.png) no-repeat;
+	background:url(/static/jiaowu/images/logo.png) no-repeat;
 	float: left;
 }
 
@@ -77,7 +77,7 @@ ul { list-style: none; }
 	margin: 10px 0 0 0;
 	width: 160px;
 	height: 22px;
-	background: url(../images/Board_person_textField.png) no-repeat;
+	background: url(/static/jiaowu/images/textfield.png) no-repeat;
 }
 
 #description
@@ -99,7 +99,7 @@ ul { list-style: none; }
 	float: left;
 	height: 22px;
 	width: 23px;
-	background: url(../images/Board_person_SearchButton.png) no-repeat;
+	background: url(/static/jiaowu/images/button.png) no-repeat;
 	background-repeat: no-repeat;
 	border: 0;
 	padding: 0;
@@ -233,14 +233,14 @@ ul { list-style: none; }
 }
 
 #ja-mainnav > ul > li.active {
-	background: url(../images/arrow2.png) no-repeat bottom center #444444;
+	background: url(/static/jiaowu/images/hover.png) no-repeat bottom center #444444;
 	color: #CCCCCC;
 }
 
 #ja-mainnav > ul > li:hover,
 #ja-mainnav > ul > li:active,
 #ja-mainnav > ul > li:focus {
-	background: url(../images/arrow2.png) no-repeat bottom center #555555;
+	background: url(/static/jiaowu/images/hover.png) no-repeat bottom center #555555;
 	color: #FFFFFF;
 }
 
@@ -369,7 +369,7 @@ The second part will define the visual look for this menu.
 #ja-mainnav ul.menu li a:hover,
 #ja-mainnav ul.menu li a:active,
 #ja-mainnav ul.menu li a:focus {
-	background: url(../images/arrow2.png) no-repeat bottom center #555555;
+	background: url(/static/jiaowu/images/hover.png) no-repeat bottom center #555555;
 	color: #FFFFFF;
 }
 
@@ -381,7 +381,7 @@ The second part will define the visual look for this menu.
 #ja-mainnav ul.menu li.sfhover,
 #ja-mainnav ul.menu li.parentsfhover,
 #ja-mainnav ul.menu li.parent-activesfhover {
-	background: url(../images/arrow2.png) no-repeat bottom center #555555;
+	background: url(/static/jiaowu/images/hover.png) no-repeat bottom center #555555;
 	color: #FFFFFF;
 }
 
@@ -389,7 +389,7 @@ The second part will define the visual look for this menu.
 #ja-mainnav ul.menu li.active a:hover,
 #ja-mainnav ul.menu li.active a:active,
 #ja-mainnav ul.menu li.active a:focus {
-	background: url(../images/arrow2.png) no-repeat bottom center #333333;
+	background: url(/static/jiaowu/images/hover.png) no-repeat bottom center #333333;
 	color: #FFFFFF;
 }
 
@@ -418,7 +418,7 @@ The second part will define the visual look for this menu.
 
 #ja-mainnav ul.menu li.havesubchild,
 #ja-mainnav ul.menu li.havesubchild-active {
-	background: url(../imagess/bullet2.gif) no-repeat 94% 50%;
+	background: url(/static/jiaowu/images/bullet2.gif) no-repeat 94% 50%;
 }
 
 #ja-mainnav ul.menu li ul a:hover,
@@ -461,3 +461,61 @@ The second part will define the visual look for this menu.
 	margin: 0;
 	padding: 0;
 }
+
+#categoryNavigationBar
+{
+	padding: 0;
+    margin: 0;
+    display: block;
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+	border-bottom: 1px #ddd solid;
+	width: 990px;
+	color: #ccc;
+	font-weight: bold;
+}
+
+.CategoryNavigationBar li
+{
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: left;
+}
+
+#categoryNavigationBar li:first-child
+{
+	margin-left: 10px;
+	color: #ccc;
+}
+
+#categoryNavigationBar li a 
+{
+	color: #ccc;
+	text-decoration: none;
+}
+
+#categoryNavigationBar li a:hover
+{
+	color: #888;
+}
+
+#bodyContent
+{
+	width: 990px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#postDetail
+{
+	margin-top: 48px;
+}
+
+#content
+{
+	margin-top: 20px;
+	line-height: 20px;
+}
+

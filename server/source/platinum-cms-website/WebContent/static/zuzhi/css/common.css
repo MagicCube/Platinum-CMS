@@ -268,7 +268,6 @@ table td a
 	width: 990px;
 	color: #000;
 	font-weight: bold;
-	color: #fff;
 }
 
 .CategoryNavigationBar li
@@ -304,19 +303,8 @@ table td a
 	margin-top: 20px;
 }
 
-#more
-{
-	margin-top: 48px;
-	 
-}
-
-#postDetail
-{
-	margin-top: 48px;
-}
-
 #content
 {
-	margin-top: 20px;
+	margin-top: 30px;
 	line-height: 20px;
 }

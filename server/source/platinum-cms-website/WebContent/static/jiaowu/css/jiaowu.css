@@ -37,18 +37,7 @@ div.category_1
 	padding-left:10px;
 	 height: 230px;
 }
-/*
-#left_part h3
-{
-	display: block;
-	font-size: 1.17em;
-	-webkit-margin-before: 1em;
-	-webkit-margin-after: 1em;
-	-webkit-margin-start: 0px;
-	-webkit-margin-end: 0px;
 
-	font-weight: bold;
-}*/
 div.category_name
 {
 	background-color:#f6f6f6;
@@ -112,11 +101,16 @@ div.category_1 h3
 	margin-bottom: 10px;
 }
 
+#left_part ul
+{
+	margin-left: -15px;
+}
+
 #left_part ul li
 {
-	padding-left: 15px;
+	padding-left: 20px;
 	margin: 0;
-	background: url(../images/list.gif) no-repeat 5px 50%;
+	background: url(/static/jiaowu/images/list.png) no-repeat 5px 50%;
 }
 
 #left_part ul li a:hover{color:#7BA566;}
