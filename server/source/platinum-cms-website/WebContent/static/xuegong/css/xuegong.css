@@ -1,0 +1,329 @@
+@CHARSET "UTF-8";
+
+
+#content
+{
+	margin: 20px 0 0 0;
+	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 990px;
+	height: 610px;	
+	position: relative;	
+}
+#content > #mainContent
+{
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	width: 990px;
+	height: 610px;
+	float: left;
+}
+
+#content > #mainContent > #picNews
+{
+	width: 400px;
+	margin: 0;
+	margin-left:33px;
+	padding : 0;
+	height: 300px;
+	float:left;
+}
+
+#picNews >#browsable
+{
+	width: 400px;
+	height: 300px;
+	margin: 0;
+	padding: 0;
+}
+
+#box
+{
+	position: relative;
+	width: 400px;	
+	height: 300px;
+	margin: 0;
+	padding: 0;
+}
+
+#box .list
+{
+	padding: 0;
+	margin: 0;
+	width: 400px;
+	height:300px;
+	list-style-type: none;
+}
+
+
+#box .list li
+{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 380px;
+	height: 300px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+#box .list li img
+{
+	width: 380px;
+	height: 300px;
+}
+
+#box .list li.current
+{
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+#box .list li span#title
+{
+	background-color: rgba(0,0,0,0.6);
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#A0000000', EndColorStr='#A0000000');
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 380px;
+	height: 24px;
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+	text-decoration: none;
+	font: 12px Microsoft YaHei, Verdana;
+}
+
+#box .count
+{
+	position: absolute;
+	bottom: 5px;
+	left: 0px;
+	list-style-type: none;
+}
+
+#box .count li
+{
+	font-size: 11px;
+	font-family: Microsoft YaHei;
+	color: #000000;
+	float: left;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	text-align: center;
+	margin-right: 9px;
+	background: #FFFFFF;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	border-radius: 1px;
+}
+
+#box .count li.current
+{
+	color: #fff;
+	opacity: 1;
+	filter: alpha(opacity=100);
+	font-weight: 250;
+	background: #f60;
+}
+
+#content > #mainContent > #textNews
+{
+	width: 260px;
+	margin: 0;
+	padding : 0;
+	height: 298px;
+	float:right;
+	border:#fff 1px solid;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+    overflow: hidden;
+	background-color:#e5e5e5;
+}
+
+#content > #mainContent > #textNews ul
+{
+	margin:5px 0 0 0;
+	margin-left:10px;
+	padding:0;
+	list-style:url(/static/xuegong/images/list.png);
+	list-style-position:inside;
+}
+
+#content > #mainContent > #textNews li
+{
+	padding: 0;
+	margin: 8px 0 0 0;
+	width: 240px;
+	font-size: 13px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#content > #mainContent > #gongNews
+{
+	width: 260px;
+	margin: 0;
+	padding : 0;
+	height: 298px;
+	float:left; 
+    border:#fff 1px solid;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+    overflow: hidden;
+	background-color:#e5e5e5;
+
+
+}
+#content > #mainContent > #informs
+{
+	width: 310px;
+	margin: 0;
+	margin-top:10px;
+	padding :0;
+	height: 278px;
+	float:left;
+	border:#fff 1px solid;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	overflow: hidden;
+	background-color:#e5e5e5;
+
+}
+
+#content > #mainContent > #teaching
+{
+	width: 310px;
+	margin: 0;
+	margin-left:25px;
+	margin-top:10px;
+	padding : 0;
+	height: 278px;
+	float:left;
+	border:#fff 1px solid;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	overflow: hidden;
+	background-color:#e5e5e5; 
+
+}
+#content > #mainContent > #email
+{
+	width: 310px;
+	margin: 0;
+	margin-left:0px;
+	margin-top:10px;
+	padding : 0;
+	height: 278px;
+	float:right;
+	border:#fff 1px solid;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	overflow: hidden;
+	background-color:#e5e5e5; 
+
+}
+
+#content > #mainContent a
+{
+	color:#000000;
+	text-decoration: none;
+}
+
+#content > #mainContent a:hover
+{
+	color:#88ccee;
+}
+
+#content > #mainContent > #gongNews ul
+{
+	margin:5px 0 0 0;
+	margin-left:10px;
+	padding:0;
+	list-style:url(/static/xuegong/images/list.png);
+	list-style-position:inside;
+}
+
+#content > #mainContent > #gongNews li
+{
+	padding: 0;
+	margin: 8px 0 0 0;
+	width: 240px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#content > #mainContent > #informs ul
+{
+	margin:5px 0 0 0;
+	margin-left:10px;
+	padding:0;
+	list-style:url(/static/xuegong/images/list.png) inside;
+}
+
+#content > #mainContent > #informs li
+{
+	padding: 0;
+	margin: 8px 0 0 0;
+	width: 280px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#content > #mainContent > #teaching ul
+{
+	margin:10px 0 0 0;
+	margin-left:10px;
+	padding:0;
+	list-style:url(/static/xuegong/images/list.png) inside;
+}
+
+#content > #mainContent > #teaching li 
+{
+	padding: 0;
+	margin: 8px 0 0 0;
+	width: 280px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#content > #mainContent > #email ul
+{
+	margin:10px 0 0 0;
+	margin-left:10px;
+	padding:0;
+	list-style:url(/static/xuegong/images/list.png) inside;
+}
+
+#content > #mainContent > #email li 
+{
+	padding: 0;
+	margin: 8px 0 0 0;
+	width: 280px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#more
+{
+	padding: 0;
+	margin: 10px 30px 0 0;
+	width: 80px;
+	height: 20px;
+	float: right;
+}
+
+

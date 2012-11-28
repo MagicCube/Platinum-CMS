@@ -1,0 +1,48 @@
+#categoryNavigationBar
+{
+	padding: 0;
+    margin: 0;
+    display: block;
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+	border-bottom: 1px #ddd solid;
+	width: 990px;
+	color: #000;
+	font-weight: bold;
+}
+
+#postDetail
+{
+	width: 990px; 
+	min-height: 880px;
+	position: relative;
+}
+
+#imageContent
+{
+	position: absolute;
+	height: 200px;
+	width: 250px;
+	top: 50px;
+	left: 20px;
+}
+
+#imageContent img
+{
+	margin: 5px; 
+	border: 1px solid #ddd;
+	box-shadow: gray 0px 3px 10px;	
+	padding: 5px;
+	height: 200px;
+	width: 250px;
+}
+
+#textContent
+{
+	position: absolute;
+	right: 20px;
+	width: 600px;
+	line-height: 15px;
+}
+
