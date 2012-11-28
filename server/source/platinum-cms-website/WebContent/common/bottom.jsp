@@ -4,7 +4,7 @@
 
 <!-- 底部 -->
 <div id = "bottom">
-    <div id = "view">
+    <!-- <div id = "view">
         <p>校园美景</p>
         <table >
             <tr>
@@ -31,7 +31,7 @@
                 </td>
             </tr>
         </table>
-    </div>
+    </div> -->
     
     <div id = "fastlink">
         <p>部门链接</p>
@@ -77,7 +77,7 @@
     </div>
     
     
-    <div id = "fastlink" style = "left: 720px;">
+    <div id = "fastlink" style = "left: 350px;">
         <p>系部链接</p> 
         <table >
             <tr>

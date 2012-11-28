@@ -32,9 +32,7 @@
 			 <div class="block_home_slider">
                     		<div id="home_slider" class="flexslider">
                             	<cms:PhotoSlide id="tsztList" cssClass="slides" categoryId="news" displayPhoto="true" count="4" />
-                            </div>
-                            
-                            
+                            </div>                       
              </div>
 			<!-- end of block_home_slider-->
 					

@@ -51,8 +51,9 @@
 
 <cms:MainMenu/>
 
-<div id="body">
+
 <% if (request.getParameter("displaySideBar").equals("true")) {%>
+<div id="body">
 	<div id="sideBar">
 		<div id = "sideBarin">
 		<div id = "title_style"><strong>要文回顾</strong><span style= "float: right;"><a href = "/news/more/">更多</a></span></div>

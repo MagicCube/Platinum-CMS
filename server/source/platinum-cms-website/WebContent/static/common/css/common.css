@@ -198,7 +198,6 @@
 	text-decoration: none;
 	display: block;
 	color: #ffffff;
-	font-size: 13px;
 	text-align: center;
 	text-shadow: 0px -1px rgba(0, 0, 0, 0.5); 
 }
@@ -240,8 +239,6 @@ li.subMenu > a
 	width: 180px;
 	height: 34px;
 	line-height: 34px;
-	font-family: 微软雅黑 ,黑体;
-	font-size: 13px;
 	display: block;
 	text-align: left;
 	margin-left: 20px;
@@ -300,7 +297,7 @@ li.subMenu > a:hover
 	width: 290px;
 	height: 200px;
 	position: absolute;
-	left: 420px;
+	left: 40px;
 }
 
 
@@ -344,37 +341,6 @@ li.subMenu > a:hover
 {
 	font-size: 10px;
 	font-weight: normal;
-}
-
-.CategoryNavigationBar
-{
-    padding: 0;
-    margin: 0;
-    clear: both;
-    display: block;
-    list-style: none;
-    height: 22px;
-    line-height: 22px;
-}
-
-.CategoryNavigationBar li
-{
-    padding: 0;
-    margin: 0;
-    display: block;
-    float: left;
-}
-
-.CategoryNavigationBar li a
-{
-    color: blue;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.CategoryNavigationBar li a:hover
-{
-    text-decoration: none;
 }
 
 #body
@@ -448,25 +414,42 @@ li.subMenu > a:hover
 
 #categoryNavigationBar
 {
+	padding: 0;
+    margin: 0;
+    display: block;
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
 	border-bottom: 1px #ddd solid;
-	width: 690px;
+	width: 990px;
 	color: #000;
 	font-weight: bold;
+}
+
+.CategoryNavigationBar li
+{
+    padding: 0;
+    margin: 0;
+    display: block;
+    float: left;
 }
 
 #categoryNavigationBar li:first-child
 {
 	margin-left: 10px;
+	color: #000;
 }
 
-#categoryNavigationBar a 
+#categoryNavigationBar li a 
 {
 	color: #000;
 	text-decoration: none;
 }
 
-#categoryNavigationBar a:hover
+#categoryNavigationBar li a:hover
 {
 	color: rgba(0, 0, 0, 0.5);
 }
+
+
 
