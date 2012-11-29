@@ -77,7 +77,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         
 
         $dl = $("<dl><dt>类型</dt> <dd></dd></dl>");
-        me.$postType = $("<select id=postStatus><option value=0>静态信息</option><option value=1>新闻</option><option value=2>通知</option></select>");
+        me.$postType = $("<select id=postStatus><option value=0>静态信息</option><option value=1 selected=selected>新闻</option><option value=2>通知</option></select>");
         $dl.children("dd").append(me.$postType);
         $sideBar.append($dl);
         

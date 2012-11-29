@@ -53,3 +53,28 @@
 	-moz-box-shadow: gray 0px 3px 10px;
 	box-shadow: gray 0px 3px 10px;	
 }
+
+#imageContent
+{
+	float: left;
+	margin: 30px 0 0 30px;
+}
+
+#imageContent img
+{
+	height: 200px;
+	width: 250px;
+	border: 1px solid #ddd;
+	box-shadow: gray 0px 3px 10px;	
+}
+
+#textContent
+{
+	width: 650px;
+	margin-left: 350px;
+}
+
+#content
+{
+	width: 650px;
+}

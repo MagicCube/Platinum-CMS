@@ -13,7 +13,7 @@ PostRuntimeManager postManager = PostRuntimeManager.getInstance();
 PostEntity post = postManager.getPost(postId, categoryId);
 %>
 
-<div id="<%= id%>">
+<div id="<%= id%>" class="PostDetail <%= post.getPostType()%>">
     <cms:CategoryNavigationBar id="categoryNavigationBar" categoryId="<%= categoryId%>" subcategoryId="<%= post.getSubcategoryId()%>"></cms:CategoryNavigationBar>
 
     <% if (post.getPostType() == PostType.NEWS) {%>

@@ -77,7 +77,7 @@
     </div>
     
     
-    <div id = "fastlink" style = "left: 350px;">
+    <div id = "fastlink" style = "left: 750px;">
         <p>系部链接</p> 
         <table >
             <tr>

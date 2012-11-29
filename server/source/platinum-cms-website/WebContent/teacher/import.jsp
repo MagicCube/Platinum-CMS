@@ -14,7 +14,7 @@
 <body>
 <cms:Header/>	
 	
-	<cms:PostDetail id="postDetail" postId="402881e93b44d032013b44d2f5060002" categoryId="introduce"></cms:PostDetail>
+	<cms:PostDetail id="postDetail" postId="ff8081813b46b724013b470d206e002c" categoryId="teacher"></cms:PostDetail>
 
 <cms:Footer/>
 </body>

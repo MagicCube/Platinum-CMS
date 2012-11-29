@@ -12,7 +12,6 @@
 <link href = "/static/home/css/home.css" rel = "stylesheet"></link>
 <script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
 
-
 <!-- FlexSlider start -->
 <link rel="stylesheet" href="/static/home/plugins/flexslider/flexslider.css" type="text/css" />
 <script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
@@ -22,7 +21,6 @@
 <body>
 
     <cms:Header/>
-
 	
 	<!-- 正文内容 -->
 	<div id = "content">
@@ -44,7 +42,7 @@
 				
 				<div id = "part2">
 					<cms:PostList id="xwdtList2" subcategoryId="sc000000000000000000000000000006" where="photoURL is null" count="6" />
-					<p id = "position_2"><a href = "/news/more/">更多...</a></p>
+					<p id = "position_2"><a href = "/news/sc000000000000000000000000000006/more/">更多...</a></p>
 				</div>
 			</div>
 			
@@ -56,35 +54,37 @@
 				
 				<div id = "part2">
 					<cms:PostList id="xydtList2" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="6" />
-					<p id = "position_2"><a href = "/news/more/">更多...</a></p>
+					<p id = "position_2"><a href = "/news/sc000000000000000000000000000020/more/">更多...</a></p>
 				</div>				
 			</div>			
 		</div>
 		<!-- left end -->
 		
 		<div id = "right">
-			<div id = "topic">
+			<!-- <div id = "topic">
 				<span id = "position_1"><img src = "/static/home/images/topic.gif" alt = ""/></span>
 				<p id = "position_2"><a href = "/news/more/">更多...</a></p>
 				
 				<div id = "right_part">
 					<cms:PostList id="ztbdList" cssClass="PhotoSummaryList" categoryId="news" displaySummary="true" displayPhoto="true" count="3" />
 				</div>				
-			</div>
+			</div> -->
 			
 			<div id = "inform">
 				<span id = "position_1"><img src = "static/home/images/inform.gif" alt = ""/></span>
 				<p id = "position_2"><a href = "/news/more/">更多...</a></p>
-				<div id = "part2" style = "width : 360px; margin-top: -10px;">
-					<cms:PostList id="tzggList" subcategoryId="sc000000000000000000000000000008" count="7" />
-				</div>				
+					<cms:PostList id="tzggList" subcategoryId="sc000000000000000000000000000008" count="12" />				
 			</div> 
 			
+			<div id = "fastPipe">
+				<span id = "position_1"><img src = "static/home/images/fastpipe.gif" alt = ""/></span>
+					
+			</div>
+			
 			<div id = "video">
-				<span id = "position_1"><img src = "/static/home/images/movie.gif" alt = ""/></span>
-				<p id = "position_2"><a href = "/news/more/">更多...</a></p>
+				<span id = "position_1"><img src = "/static/home/images/view.gif" alt = ""/></span>
                 <div id = "medium">
-                	<img src = "/static/home/images/movie.jpg" alt = ""/>
+                	<img style = "float: right;" src = "/static/home/images/movie.jpg" alt = ""/>
                 </div>
 			</div>
 		</div>

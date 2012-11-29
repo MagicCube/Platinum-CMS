@@ -7,7 +7,7 @@
     <li class = "main"><a href = "/">首页</a></li>
     <li class ="main" onclick = "down_1();"><a href = "#">学院概况</a>
         <ul>
-            <li class = "subMenu"><a href = "/introduce/college.jsp">学院简介</a></li>
+            <li class = "subMenu"><a href = "/introduce/402881e93b44d032013b44d2f5060002.html">学院简介</a></li>
             <li class = "subMenu"><a href = "/introduce/leader.jsp">领导简介</a></li>
             <li class = "subMenu"><a href = "/introduce/view.jsp">校园美景</a></li>
             <li class = "subMenu"><a href = "/introduce/symbol.jsp">学院标志</a></li>
@@ -15,8 +15,8 @@
     </li>
     <li class = "main" onclick = "down_2();"><a href = "#">组织机构</a>
         <ul>
-            <li class = "subMenu"><a href = "/organization/FacultySet.htm" >系部设置</a></li>
-            <li class = "subMenu"><a href = "/organization/DepartmentSet.htm">部门设置</a></li>
+            <li class = "subMenu"><a href = "/organization/facultyset.jsp" >系部设置</a></li>
+            <li class = "subMenu"><a href = "/organization/depset.jsp">部门设置</a></li>
         </ul>
     </li>
     <li class = "main"><a href = "#" onclick = "down_3();">教学科研</a>

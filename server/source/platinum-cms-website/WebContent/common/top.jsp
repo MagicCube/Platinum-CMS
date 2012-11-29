@@ -11,23 +11,13 @@
             <li><a href = "#">联系我们</a></li>
         </ul>
     </div>
-    <div id = "login">  
-        <form id = "_login" name = "login" method = "post" action = "#">
-            <ul>
-                <li>用户</li>
-                <li>
-                    <input type = "text" style = "width: 100px; height: 14px;"/>
-                </li>
-                <li>密码</li>
-                <li>
-                    <input type = "password" style = "width: 100px; height: 14px;"/>
-                </li>
-                <li>
-                    <input type = "submit" name = "btn" id = "button" value = ""/>
-                </li>
-            </ul>
-        </form>
-    </div>  
+  	
+  	
+    <ul id="mail">
+           		<li><a href = "#">院长邮箱</a></li>
+           		<li><a href = "#">书记邮箱</a></li>
+     </ul>
+
 </div>
 
 <div id = "logo_search">
@@ -51,9 +41,8 @@
 
 <cms:MainMenu/>
 
-
-<% if (request.getParameter("displaySideBar").equals("true")) {%>
 <div id="body">
+<% if (request.getParameter("displaySideBar").equals("true")) {%>
 	<div id="sideBar">
 		<div id = "sideBarin">
 		<div id = "title_style"><strong>要文回顾</strong><span style= "float: right;"><a href = "/news/more/">更多</a></span></div>
