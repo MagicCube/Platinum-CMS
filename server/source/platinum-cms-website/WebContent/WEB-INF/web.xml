@@ -25,7 +25,8 @@
             <param-name>com.sun.jersey.config.property.packages</param-name>
             <param-value>
                 platinum.security.web.rest,
-                platinum.cms.admin.web.rest
+                platinum.cms.admin.web.rest,
+                platinum.cms.runtime.web.rest
             </param-value>
         </init-param>
         <init-param>

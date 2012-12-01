@@ -25,7 +25,7 @@ public class PostRuntimeManager
 	}
 	
 	private PostDAO _postDAO = null;
-	private PostDAO getPostDAO()
+	public PostDAO getPostDAO()
 	{
 		if (_postDAO == null)
 		{
@@ -117,5 +117,24 @@ public class PostRuntimeManager
 		query.setOrderByClause("createTime desc");
 		query.setParameter("postStatus", PostStatus.PUBLISHED);
 		return query;
+	}
+
+
+	public int hitPost(String p_postId)
+	{
+		PostDAO dao = getPostDAO();
+		PostEntity post = dao.selectById(p_postId);
+		if (post != null)
+		{
+			dao.beginTransaction();
+			post.setViewCount(post.getViewCount() + 1);
+			dao.updatePostViews(post.getViews());
+			dao.commitTransaction();
+			return post.getViewCount();
+		}
+		else
+		{
+			return 0;
+		}
 	}
 }

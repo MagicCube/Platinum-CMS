@@ -23,7 +23,7 @@ public class CategoryRuntimeManager
 	}
 	
 	private CategoryDAO _categoryDAO = null;
-	private CategoryDAO getCategoryDAO()
+	public CategoryDAO getCategoryDAO()
 	{
 		if (_categoryDAO == null)
 		{
@@ -33,11 +33,11 @@ public class CategoryRuntimeManager
 	}
 	
 	private SubcategoryDAO _subcategoryDAO = null;
-	private SubcategoryDAO getSubcategoryDAO()
+	public SubcategoryDAO getSubcategoryDAO()
 	{
 		if (_subcategoryDAO == null)
 		{
-			_subcategoryDAO = new SubcategoryDAO();
+			_subcategoryDAO = new SubcategoryDAO(getCategoryDAO().getSession());
 		}
 		return _subcategoryDAO;
 	}

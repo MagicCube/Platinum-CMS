@@ -23,7 +23,24 @@ PostEntity post = postManager.getPost(postId, categoryId);
             <% if (post.getSource() != null) {%>
             <span id="source"><span>来源：</span><a href="#"><%= post.getSource()%></a></span>
             <% } %>
-            <span id="updateTime"><span>更新时间：</span><a><%= DateUtil.formatDate(post.getUpdateTime(), "yyyy年M月d日HH:mm")%></a></s>
+            <span id="updateTime"><span>更新时间：</span><a><%= DateUtil.formatDate(post.getUpdateTime(), "yyyy年M月d日HH:mm")%></a></span>
+            
+            <span id="viewCount" style="display:none;"><span>浏览次数：</span><span id="count"></span></span>
+            <script>
+            $(function()
+            {
+                setTimeout(function()
+                {
+                    $.ajax({
+                        url: "/api/0/runtime/post/<%= post.getId()%>/view",
+                        type: "post"
+                    }).success(function(p_result){
+                        $("#viewCount > #count").text(p_result);
+                        $("#viewCount").fadeIn();
+                    });
+                }, 1000);
+            });
+            </script>
         </div>
     
         <% if (post.getContentText() != null) {%>
@@ -42,7 +59,7 @@ PostEntity post = postManager.getPost(postId, categoryId);
         <div id="textContent">
             <h1 id="title"><%= post.getTitle()%></h1>
             <div id="info">
-                <span id="updateTime"><span>更新时间：</span><a><%= DateUtil.formatDate(post.getUpdateTime(), "yyyy年M月d日")%></a></s>
+                <span id="updateTime"><span>更新时间：</span><a><%= DateUtil.formatDate(post.getUpdateTime(), "yyyy年M月d日")%></a></span>
             </div>
             <div id="content"><%= post.getContentText()%></div>
         </div>

@@ -24,7 +24,7 @@ public class PostAdminManager
 	}
 	
 	private PostDAO _postDAO = null;
-	private PostDAO getPostDAO()
+	public PostDAO getPostDAO()
 	{
 		if (_postDAO == null)
 		{

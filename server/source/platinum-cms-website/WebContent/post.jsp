@@ -24,7 +24,6 @@ if (post == null)
     <link rel="stylesheet" href="/static/common/css/basic.css"/>
     <link rel="stylesheet" href="/static/common/css/post.css"/>
     <script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
-    <!-- <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script> -->
 </head>
 
 <body>
