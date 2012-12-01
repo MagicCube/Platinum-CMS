@@ -33,7 +33,7 @@ PostEntity post = postManager.getPost(postId, categoryId);
                 {
                     $.ajax({
                         url: "/api/0/runtime/post/<%= post.getId()%>/view",
-                        type: "post"
+                        type: "GET"
                     }).success(function(p_result){
                         $("#viewCount > #count").text(p_result);
                         $("#viewCount").fadeIn();

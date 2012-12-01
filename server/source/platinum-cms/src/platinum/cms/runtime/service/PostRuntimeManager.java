@@ -34,11 +34,15 @@ public class PostRuntimeManager
 		return _postDAO;
 	}
 	
+	public PostEntity getPost(String p_id)
+	{
+		PostEntity post = getPostDAO().selectById(p_id);
+		return post;
+	}
 	
 	public PostEntity getPost(String p_id, String p_categoryId)
 	{
-		PostEntity post = getPostDAO().selectById(p_id);
-		if (post == null) return null;
+		PostEntity post = getPost(p_id);
 		
 		String categoryId = post.getCategoryId();
 		if (!categoryId.equals(p_categoryId))

@@ -89,6 +89,11 @@ public abstract class AbstractResource
 		return Response.ok(text, MediaType.TEXT_PLAIN_TYPE).build();
 	}
 
+	protected Response responseWithText(String text, Date p_lastModified)
+	{
+		return Response.ok(text, MediaType.TEXT_PLAIN_TYPE).lastModified(p_lastModified).build();
+	}
+	
 	protected Response responseWithMedia(String content, MediaType mediaType)
 	{
 		return Response.ok(content, mediaType).build();
