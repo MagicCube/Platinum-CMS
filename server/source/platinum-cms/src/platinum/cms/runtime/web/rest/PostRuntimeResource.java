@@ -2,7 +2,7 @@ package platinum.cms.runtime.web.rest;
 
 import java.util.Date;
 
-import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
@@ -16,7 +16,7 @@ import platinum.framework.web.rest.AbstractResource;
 @Path("runtime/post")
 public class PostRuntimeResource extends AbstractResource
 {
-	@GET
+	@POST
 	@Path("/{postId}/view")
 	public Response hitPost(
 			@PathParam("postId") String p_postId
