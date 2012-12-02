@@ -53,24 +53,49 @@ PostRuntimeManager manager = PostRuntimeManager.getInstance();
 List<PostEntity> posts = null;
 if (StringUtil.notNullOrEmpty(subcategoryId))
 {
-    if (pageSize == 0)
+    if (subcategoryId.equals("rank"))
     {
-	    posts = manager.loadLatestPostBySubcategory(subcategoryId, displayPhoto, where, count);
+        if (pageSize > 0 || displayPageNavigationBar)
+        {
+            throw new RuntimeException("在“排行榜”模式下不允许使用分页。");
+        }
+        if (displayPhoto)
+        {
+        	throw new RuntimeException("在“排行榜”模式下不允许指定 displayPhoto 参数为 true。");
+        }
+        if (StringUtil.notNullOrEmpty(where))
+        {
+        	throw new RuntimeException("在“排行榜”模式下不允许指定 where 参数。");
+        }
+        
+        if (count == 0 || count == Integer.MAX_VALUE)
+        {
+            count = 10;
+        }
+        if (StringUtil.isNullOrEmpty(categoryId))
+        {
+        	categoryId = "news";
+        }
+        posts = manager.loadTopPostsByCategory(categoryId, count);
+    }
+    else if (pageSize == 0)
+    {
+	    posts = manager.loadLatestPostsBySubcategory(subcategoryId, displayPhoto, where, count);
     }
     else
     {
-        posts = manager.loadLatestPostBySubcategory(subcategoryId, displayPhoto, where, pageIndex, pageSize);  
+        posts = manager.loadLatestPostsBySubcategory(subcategoryId, displayPhoto, where, pageIndex, pageSize);  
     }
 }
 else if (StringUtil.notNullOrEmpty(categoryId))
 {
     if (pageSize == 0)
     {
-	    posts = manager.loadLatestPostByCategory(categoryId, displayPhoto, where, count);
+	    posts = manager.loadLatestPostsByCategory(categoryId, displayPhoto, where, count);
     }
     else
     {
-        posts = manager.loadLatestPostByCategory(categoryId, displayPhoto, where, pageIndex, pageSize);
+        posts = manager.loadLatestPostsByCategory(categoryId, displayPhoto, where, pageIndex, pageSize);
     }
 }
 %>
