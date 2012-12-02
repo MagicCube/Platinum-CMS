@@ -1,8 +1,14 @@
+<%@page import="platinum.platform.web.HttpClientCache"%>
 <%@page import="platinum.cms.common.entity.SubcategoryEntity"%>
 <%@page import="platinum.cms.runtime.service.CategoryRuntimeManager"%>
 <%@page import="platinum.cms.common.entity.CategoryEntity"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="cms" tagdir="/WEB-INF/tags" %>
+
+<%
+HttpClientCache clientCache = new HttpClientCache(request, response);
+clientCache.setMaxAge(30);
+%>
 
 <%
 String categoryId = request.getParameter("categoryId");
