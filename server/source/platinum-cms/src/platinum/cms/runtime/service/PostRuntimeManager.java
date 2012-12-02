@@ -56,7 +56,7 @@ public class PostRuntimeManager
 	
 
 	
-	public List<PostEntity> loadLatestPostByCategory(String p_categoryId, boolean p_hasPhoto, String p_extra, int p_count)
+	public List<PostEntity> loadLatestPostsByCategory(String p_categoryId, boolean p_hasPhoto, String p_extra, int p_count)
 	{
 		DAOQuery query = _createQuery("categoryId=:categoryId", p_hasPhoto, p_extra);
 		if (p_count != Integer.MAX_VALUE)
@@ -67,7 +67,7 @@ public class PostRuntimeManager
 		List<PostEntity> result = getPostDAO().select(query);
 		return result;
 	}
-	public List<PostEntity> loadLatestPostByCategory(String p_categoryId, boolean p_hasPhoto, String p_extra, int p_pageIndex, int p_pageSize)
+	public List<PostEntity> loadLatestPostsByCategory(String p_categoryId, boolean p_hasPhoto, String p_extra, int p_pageIndex, int p_pageSize)
 	{
 		DAOQuery query = _createQuery("categoryId=:categoryId", p_hasPhoto, p_extra);
 		query.setPageIndex(p_pageIndex);
@@ -81,8 +81,22 @@ public class PostRuntimeManager
 	
 	
 	
+	public List<PostEntity> loadTopPostsByCategory(String p_categoryId, int p_count)
+	{
+		DAOQuery query = new DAOQuery("categoryId=:categoryId");
+		query.setParameter("categoryId", p_categoryId);
+		query.setOrderByClause("views.count desc");
+		query.setPageSize(p_count);
+		List<PostEntity> result = getPostDAO().select(query);
+		return result;
+	}
 	
-	public List<PostEntity> loadLatestPostBySubcategory(String p_subcategoryId, boolean p_hasPhoto, String p_extra, int p_count)
+	
+	
+	
+	
+	
+	public List<PostEntity> loadLatestPostsBySubcategory(String p_subcategoryId, boolean p_hasPhoto, String p_extra, int p_count)
 	{
 		DAOQuery query = _createQuery("subcategory_id=:subcategoryId", p_hasPhoto, p_extra);
 		if (p_count != Integer.MAX_VALUE)
@@ -93,7 +107,7 @@ public class PostRuntimeManager
 		List<PostEntity> result = getPostDAO().select(query);
 		return result;
 	}
-	public List<PostEntity> loadLatestPostBySubcategory(String p_subcategoryId, boolean p_hasPhoto, String p_extra, int p_pageIndex, int p_pageSize)
+	public List<PostEntity> loadLatestPostsBySubcategory(String p_subcategoryId, boolean p_hasPhoto, String p_extra, int p_pageIndex, int p_pageSize)
 	{
 		DAOQuery query = _createQuery("subcategory_id=:subcategoryId", p_hasPhoto, p_extra);
 		query.setPageIndex(p_pageIndex);
