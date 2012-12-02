@@ -85,8 +85,9 @@ public class PostRuntimeManager
 	{
 		DAOQuery query = new DAOQuery("categoryId=:categoryId");
 		query.setParameter("categoryId", p_categoryId);
-		query.setOrderByClause("views.count desc");
+		query.setOrderByClause("views.count desc, createTime desc");
 		query.setPageSize(p_count);
+		query.setCacheRegion("twelveHoursCache");
 		List<PostEntity> result = getPostDAO().select(query);
 		return result;
 	}
@@ -110,6 +111,7 @@ public class PostRuntimeManager
 	public List<PostEntity> loadLatestPostsBySubcategory(String p_subcategoryId, boolean p_hasPhoto, String p_extra, int p_pageIndex, int p_pageSize)
 	{
 		DAOQuery query = _createQuery("subcategory_id=:subcategoryId", p_hasPhoto, p_extra);
+		query.setCachable(true);
 		query.setPageIndex(p_pageIndex);
 		query.setPageSize(p_pageSize);
 		query.setParameter("subcategoryId", p_subcategoryId);
@@ -132,6 +134,7 @@ public class PostRuntimeManager
 				(p_extra != null ? (" " + p_extra + " and ") : "") +
 				p_whereClause
 		);
+		query.setCacheRegion("threeMinutesCache");
 		query.setOrderByClause("createTime desc");
 		query.setParameter("postStatus", PostStatus.PUBLISHED);
 		return query;

@@ -7,11 +7,51 @@
     <Cache name="eternalCache"
         eternal="true"
         overflowToDisk="false"/>
+
+    <Cache name="oneMinuteCache"
+        overflowToDisk="false"
+        timeToIdleSeconds="60"
+        timeToLiveSeconds="60"/>
+        
+    <Cache name="threeMinutesCache"
+        overflowToDisk="false"
+        timeToIdleSeconds="180"
+        timeToLiveSeconds="180"/>
+    
+    <Cache name="fiveMinutesCache"
+        overflowToDisk="false"
+        timeToIdleSeconds="300"
+        timeToLiveSeconds="300"/>
+
+    <Cache name="tenMinutesCache"
+        overflowToDisk="false"
+        timeToIdleSeconds="60"
+        timeToLiveSeconds="60"/>
+
+    <Cache name="thirtyMinutesCache"
+        overflowToDisk="false"
+        timeToIdleSeconds="1800"
+        timeToLiveSeconds="1800"/>
     
     <Cache name="oneHourCache"
         overflowToDisk="false"
         timeToIdleSeconds="3600"
         timeToLiveSeconds="3600"/>
+
+    <Cache name="twoHoursCache"
+        overflowToDisk="false"
+        timeToIdleSeconds="7200"
+        timeToLiveSeconds="7200"/>
+
+    <Cache name="eightHoursCache"
+        overflowToDisk="false"
+        timeToIdleSeconds="28800"
+        timeToLiveSeconds="28800"/>
+
+    <Cache name="twelveHoursCache"
+        overflowToDisk="false"
+        timeToIdleSeconds="43200"
+        timeToLiveSeconds="43200"/>
     
     <Cache name="dailyCache"
         overflowToDisk="false"
