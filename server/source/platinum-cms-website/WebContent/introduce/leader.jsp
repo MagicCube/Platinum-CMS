@@ -22,27 +22,27 @@
 				<table>
 					<tr>
 						<td>院 长:</td>
-						<td><a href = "">赵仁康</a></td>
+						<td><a href = "/introduce/402881e93b6059fb013b6081a5230002.html">赵仁康</a></td>
 					</tr>
 					<tr>
 						<td>书 记:</td>
-						<td><a href = "">沈勇</a></td>
+						<td><a href = "/introduce/402881e93b6059fb013b60879f7b0005.html">沈勇</a></td>
 					</tr>
 					<tr>
 						<td>副院长：</td>
-						<td><a href = "">张亚梅</a></td>
+						<td><a href = "/introduce/402881e93b6059fb013b6090ea3d0008.html">张亚梅</a></td>
 					</tr>
 					<tr>
 						<td>副院长:</td>
-						<td><a href = "">偰伟林</a></td>
+						<td><a href = "/introduce/402881e93b6059fb013b60920eda000b.html">偰伟林</a></td>
 					</tr>
 					<tr>
 						<td>副院长:</td>
-						<td><a href = "">杨作东</a></td>
+						<td><a href = "/introduce/402881e93b6059fb013b6093c7ec000e.html">杨作东</a></td>
 					</tr>
 					<tr>
 						<td>副书记:</td>
-						<td><a href = "">彭 海</a></td>
+						<td><a href = "/introduce/402881e93b6059fb013b609499070011.html">彭 海</a></td>
 					</tr>
 				</table>
 			</div>		

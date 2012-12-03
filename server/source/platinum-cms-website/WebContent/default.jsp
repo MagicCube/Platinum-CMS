@@ -78,7 +78,7 @@ clientCache.setMaxAge(60);
 			
 			<div id = "inform">
 				<span id = "position_1"><img src = "static/home/images/inform.gif" alt = ""/></span>
-				<p id = "position_2"><a href = "/news/more/">更多...</a></p>
+				<p id = "position_2"><a href = "/news/sc000000000000000000000000000008/more/">更多...</a></p>
 					<cms:PostList id="tzggList" subcategoryId="sc000000000000000000000000000008" count="12" />				
 			</div> 
 			

@@ -21,15 +21,14 @@
     </li>
     <li class = "main"><a href = "#" onclick = "down_3();">教学科研</a>
         <ul>
-            <li class = "subMenu"><a href = "/jiaowu/default.jsp">教务处</a></li>
-            <li class = "subMenu"><a href = "http://222.192.5.246/(byn3ui55hhycibfaa4lgghi1)/default2.aspx">教务系统</a></li>
+            <li class = "subMenu"><a href = "/jiaowu/">教务处</a></li>
         </ul>
     </li>
     <li class = "main" onclick = "down_4();"><a href = "#">师资队伍</a>
         <ul>
-            <li class = "subMenu"><a href = "/teacher/policy.jsp">人才政策</a></li>
-            <li class = "subMenu"><a href = "/teacher/import.jsp">人才引进</a></li>
-            <li class = "subMenu"><a href = "/teacher/notice.jsp">人事通知</a></li>
+            <li class = "subMenu"><a href = "/teacher/402881e93b60acd0013b60ae3bae0002.html">人才政策</a></li>
+            <li class = "subMenu"><a href = "/teacher/402881e93b60af69013b60b1decc0002.html">人才引进</a></li>
+            <li class = "subMenu"><a href = "/teacher/402881e93b60af69013b60b2b1d80005.html">人事通知</a></li>
         </ul>
     </li>
     <li class = "main" onclick = "down_5();"><a href = "#">招生就业</a>
@@ -40,29 +39,29 @@
     </li>
     <li class = "main" onclick = "down_6();"><a href = "#">交流合作</a>
         <ul>
-            <li class = "subMenu"><a href = "/international/International.htm">海外学习计划</a></li>
+            <li class = "subMenu"><a href = "/international/international.jsp">海外学习计划</a></li>
         </ul>
     </li>
     <li class = "main" onclick = "down_7();"><a href = "#">学生工作</a>
         <ul>
-            <li class = "subMenu"><a href = "/xuegong/default.jsp">学工处</a></li>
-            <li class = "subMenu"><a href = "/tuanwei/default.jsp">团委</a></li>             
+            <li class = "subMenu"><a href = "/xuegong/">学工处</a></li>
+            <li class = "subMenu"><a href = "/tuanwei/">团委</a></li>             
         </ul>
     </li>
     <li class = "main" onclick = "down_8();"><a href = "#">公共服务</a>
         <ul>
-            <li class = "subMenu"><a href = "/service/calendar.jsp">校历</a></li>
+            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b46ca7df60005.html">校历</a></li>
             <li class = "subMenu"><a href = "http://zbzs.njnu.edu.cn/e-book/index.asp">来稿须知</a></li>
-            <li class = "subMenu"><a href = "/service/guide.jsp">办事指南</a></li>
-            <li class = "subMenu"><a href = "/service/time.jsp">作息时间</a></li>
-            <li class = "subMenu"><a href = "/service/telphone.jsp">办公电话查询</a></li>
-            <li class = "subMenu"><a href = "/service/traffic.jsp">校园地图与交通信息</a></li>
+            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b47051b320023.html">办事指南</a></li>
+            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b470dedf3002f.html">作息时间</a></li>
+            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b470e818a0032.html">办公电话查询</a></li>
+            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b470f903c0035.html">校园地图与交通信息</a></li>
         </ul>
     </li>
     <li class = "main"><a href = "#">技术支持</a>
     	<ul style = "margin-left: -82px;">
-            <li class = "subMenu"><a href = "/technology/xiandai.jsp"  style = "margin-left: 60px;">现代教育技术中心</a></li>
-         	<li class = "subMenu"><a href = "/technology/ruanyan.jsp"  style = "margin-left: 50px;">软件研发与培训中心</a></li>
+            <li class = "subMenu"><a href = "/technology/402881e93b60b9e7013b60bd01350005.html"  style = "margin-left: 60px;">现代教育技术中心</a></li>
+         	<li class = "subMenu"><a href = "/technology/402881e93b60b9e7013b60bc1d8d0002.html"  style = "margin-left: 50px;">软件研发与培训中心</a></li>
         </ul>
     </li>
 </menu>

@@ -36,13 +36,7 @@
 	padding-bottom: 10px;
 	padding-top: 10px;
 	color: #3399cc;
-	font-size: 14px;
 	line-height: 16px;	
-}
-
-#content
-{
-	font-size: 14px;
 }
 
 #content img
@@ -56,8 +50,10 @@
 
 #imageContent
 {
-	float: left;
+	width: 250px;
+	padding: 0;
 	margin: 30px 0 0 30px;
+	float: left;
 }
 
 #imageContent img
@@ -66,12 +62,13 @@
 	width: 250px;
 	border: 1px solid #ddd;
 	box-shadow: gray 0px 3px 10px;	
+	padding: 5px;
 }
 
 #textContent
 {
 	width: 650px;
-	margin-left: 350px;
+	margin:30px 0 0 350px;
 }
 
 #content

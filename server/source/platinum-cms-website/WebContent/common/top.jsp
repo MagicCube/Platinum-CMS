@@ -14,8 +14,8 @@
   	
   	
     <ul id="mail">
-           		<li><a href = "#">院长邮箱</a></li>
-           		<li><a href = "#">书记邮箱</a></li>
+           		<li><a href = "http://zbvip.njnu.edu.cn/vip/mail/add-mail.asp?who=yz">院长邮箱</a></li>
+           		<li><a href = "http://zbvip.njnu.edu.cn/vip/mail/add-mail.asp?who=sj">书记邮箱</a></li>
      </ul>
 
 </div>
