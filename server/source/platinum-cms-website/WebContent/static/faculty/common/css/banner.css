@@ -1,0 +1,62 @@
+/* begin: slideshow */
+.slideshow {
+	position:relative;
+	padding:0;
+	margin:0;
+}
+.slideshow a img {
+    border:none;
+}
+.slideshow li.slide {
+    list-style-type:none;
+}
+.slideshow .slides {
+	height:260px;
+	margin:0;
+}
+.slideshow .slides li.slide {
+	visibility:hidden;
+	position:absolute;
+	left:0px;
+	top:0;
+}
+.slideshow .buttons {
+    display:none;
+}
+.slideshow .buttons {
+    display:block;
+	position:absolute;
+	z-index:100;
+	left:0px;
+	bottom:20px;
+	margin:0;
+}
+.slideshow .buttons li {
+	float:left;
+	display:inline;
+	width:30px;
+	height:30px;
+	margin:0;
+	padding-left:11px;
+	line-height:30px;
+	background-image:url('../images/buttonBg.png');
+	background-repeat:no-repeat;
+}
+.slideshow .buttons li a {
+	float:left;
+    text-decoration:none;
+	width:30px;
+	height:30px;
+	color:#fff;
+	outline:0;
+}
+.slideshow ul.buttons li a:hover {
+    text-decoration:none;
+    color:#0a0a0a;
+}
+.slideshow ul.buttons li.active a:hover,
+.slideshow ul.buttons li.active a {
+	color:#666666;
+}
+/* end: slideshow */
+

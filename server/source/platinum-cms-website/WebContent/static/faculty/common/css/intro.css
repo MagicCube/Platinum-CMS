@@ -1,0 +1,32 @@
+/*专业简介*/
+#imageContent
+{
+	float:left;
+	height: 250px;
+	width: 280px;
+	margin:20px 0 0 20px;
+}
+#imageContent img
+{
+	margin: 5px;
+	border: 1px solid #DDD;
+	box-shadow: gray 0px 3px 10px;
+	padding: 5px;
+	height: 200px;
+	width: 250px;
+}
+#textContent
+{
+	float:right;
+	width:390px;
+	padding:20px 5px 0px 5px;
+}
+#textContent #title
+{
+	text-align: center;
+	font-size:19px;
+}
+#info {
+text-align: center;
+margin-bottom: 10px;
+}

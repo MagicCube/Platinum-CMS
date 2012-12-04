@@ -1,0 +1,422 @@
+﻿@CHARSET "UTF-8";
+
+
+html, body
+{
+	height: 100%;
+	font-family: 微软雅黑,黑体,Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000; 
+	
+}
+
+#header
+{
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	width: 990px;
+	background: url(/static/news/image/footer.png) repeat;
+
+}
+
+#linklabel
+{
+	height: 40px;
+	width: 250px;
+	float: left;
+}
+
+#linklabel ul
+{
+	height: 40px;
+	width: 250px;
+	float: left;
+	margin-left: -35px;
+}
+
+#linklabel ul li 
+{
+	display: block;
+	float: left;
+	height: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#linklabel ul li a
+{
+	height: 40px;
+	line-height: 20px;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+}
+
+#linklabel ul li a:hover
+{
+	color: #f64a32;
+}
+
+#login
+{
+	width: 390px;
+	height: 40px;
+	float: right;
+}
+
+#login ul
+{
+	width: 360px;
+	height: 40px;
+	display: block;
+	float: left;
+}
+
+#login ul li
+{
+	color: #fff;
+	float: left;
+	display: block;
+	height: 40px;
+	line-height: 20px;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#tf
+{
+	background: url(/static/news/image/tf.png) no-repeat;
+	width: 120px;
+	height: 24px;
+	margin-top: 10px;
+	line-height: 20px;
+}
+
+#login ul li #button
+{
+	line-height: 20px;
+	border: none;
+	height: 20px;
+	width: 40px;
+	background: url(/static/news/image/login.png) no-repeat;
+	cursor: pointer;
+}
+
+#logo_search
+{
+	height: 140px;
+	width: 990px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logo_search > #logo
+{
+	height: 140px;
+	float: left;
+	width: 620px;
+	margin-left: -40px;
+	margin-top: 10px;
+}
+
+#logo_search > #search
+{
+	height: 150px;
+	float: right;
+	width: 310px;
+}
+
+#search > #setting
+{
+	width: 175px;
+	height: 20px;
+	float: right;
+	margin-top: 52px;
+	text-align: right;
+}
+
+#search > #setting a
+{
+	color: #000000;
+	font-size: 14px;
+	text-decoration: none;
+	font-family: 微软雅黑;
+}
+
+#search > #setting a:hover
+{
+	color: #f64a32;
+}
+
+#search > #searchbar
+{	
+	height: 34px;
+	width: 304px;
+	float: right;
+	margin-top: 6px;
+	background: url(/static/news/image/searchbar.gif) no-repeat;
+}
+
+#input
+{
+	width: 262px;
+	height: 24px;
+	margin-left: 3px;
+	margin-top: 3px;
+	float: left;
+	font-size: 14px;
+	line-height: 22px;
+	font-family: 微软雅黑, 黑体;
+	padding: 0;
+}
+
+#button
+{
+	height: 34px;
+	width: 34px;
+	border: none;
+	float: left;
+	margin-left: 1px;
+	background: url(/static/news/image/searchbtn.gif) no-repeat;
+	cursor: pointer; 
+}
+
+#main_menu 
+{
+	height: 34px;
+	width: 990px;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(/static/news/image/bk.png) repeat-x;
+}
+
+#main_menu li.main
+{
+	width: 165px;
+	height: 34px;
+	float: left;
+	display: inline-block;
+	background:url(/static/news/image/line_menu.gif) no-repeat right; 
+}
+
+#main_menu li.main > a
+{
+	height: 34px;
+	line-height: 34px;
+	text-decoration: none;
+	display: block;
+	color: #ffffff;
+	font-size: 13px;
+	text-align: center;
+	text-shadow: 0px -1px rgba(0, 0, 0, 0.5); 
+}
+
+#main_menu li.main > a:hover
+{
+	display: block;
+	background:url(/static/news/image/bottom_menu.gif) no-repeat ; 
+	background-position: bottom;
+}
+
+
+#main_menu li.main > ul
+{
+	width: 180px;
+	margin: 0;
+	padding: 0;
+	visibility: hidden;
+}
+
+li.subMenu
+{
+	display: block;
+	height: 34px;
+	width: 178px;
+	padding: 0;
+	margin: 0;
+	overflow:hidden; 
+	background-color:#fdfdfd; 
+	border-left:1px solid #f3f3f3; 
+	border-right:1px solid #f3f3f3;
+	border-top:1px solid #ffffff; 
+	border-bottom:1px solid #f3f3f3;
+}
+
+li.subMenu > a
+{
+	width: 180px;
+	height: 34px;
+	line-height: 34px;
+	font-family: 微软雅黑 ,黑体;
+	font-size: 13px;
+	display: block;
+	text-align: left;
+	margin-left: 20px;
+	text-decoration: none;
+	color:#6b6b6b;
+}
+
+li.subMenu > a:hover
+{
+	color: #f64a32;
+	margin-left: 30px;
+}
+
+#footer
+{
+	margin: 0;
+	padding: 0;
+	margin-top:10px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 230px;
+	width: 990px;
+    background: url(/static/news/image/footer.png);
+	line-height: 23px;
+	font-size: 12px;
+	text-align:center;
+	position:relative;
+
+}
+
+#footer > #fastlink
+{
+	width: 250px;
+	height: 180px;
+	position:absolute;
+
+
+
+}
+
+
+
+#footer > #fastlink table
+{
+	margin: 0 0 0 0;
+	paddiong: 0;
+	text-align:left;
+}
+
+#footer > #fastlink table td
+{
+	height: 5px;
+}
+
+#footer > #fastlink table tr td a
+{
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+	margin-right: 20px;
+
+}
+
+#footer > #fastlink  a:hover
+{
+	color:#88ccee;
+}
+#footer p
+{
+	font-size: 14px;
+	font-weight: bold;
+	text-align:left;
+	color: #fff;
+}
+
+
+#footer > #bottom 
+{
+ 
+	margin-left: auto;
+	margin-right: auto;
+	width: 990px;
+	height: 30px;
+	border: 1px solid #fff;
+	bottom: 0;
+	position:absolute;
+}
+
+#footer > #bottom p
+{
+	font-size: 10px;
+	font-weight: normal;
+}
+#more
+{
+
+	width: 990px;
+	margin-top:10px;
+
+	 
+}
+#categoryNavigationBar
+{
+	padding: 0;
+    margin: 0;
+    display: block;
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+	border-bottom: 1px #ddd solid;
+	width: 990px;
+	color: #000;
+	font-weight: bold;
+	color:#999999;
+}
+
+.CategoryNavigationBar li
+{
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    display: block;
+    float: left;
+}
+
+#categoryNavigationBar li:first-child
+{
+	margin-left: 10px;
+	color:#999999;
+}
+
+#categoryNavigationBar li a 
+{
+	color:#999999;
+	text-decoration: none;
+}
+
+#categoryNavigationBar li a:hover
+{
+	color: #88ccee;
+}
+#postList li a
+{
+	font-size: 13px;
+	color:#999999;
+	width:500px;
+	overflow: hidden;/*表示溢出的内容会被隐藏*/
+	-o-text-overflow: ellipsis;    /* for Opera */
+	text-overflow: ellipsis;        /* for IE *//*当文本溢出时显示…此时还必须定义：强制文本在一行内显示（white-space:nowrap）及溢出内容为隐藏（overflow:hidden）*/
+	white-space: nowrap;/*表示文本不会换行*/
+}
+
+#postList li a:hover
+{
+	color:#88ccee;
+	font-size: 13px;
+}
+#postDetail
+{
+	width: 990px;
+	margin-top:10px;
+	margin-bottom:10px;
+	
+}
+#summary 
+{
+	text-align: center;
+}

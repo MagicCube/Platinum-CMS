@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+#header > #logo_pic{background-color:#d81900;}
+#header > #link_search{background-color:#d81900;}
+/*网页侧边栏*/
+#side
+{background-color: #d81900;}
+
+#side #school_link #first
+{background-color: #8a1203;}
+
+/*网页右侧内容*/
+#r_content #menu #menu_ul
+{background-color: #d81900;}
+#r_content #menu #menu_ul #nav{padding-left:50px;}
+#r_content #menu #menu_ul #nav li a:hover{color: #d81900;}
+.previous b:hover, .next b:hover{color: #d81900;}
+/*当前位置*/
+.CategoryNavigationBar a:hover{color:#d81900;}
+/*postlist*/
+#postList{margin-left:20px; height:auto;}
+/*新闻和公共*/
+#r_content #am .title, #r_content #new .title, #r_content #job .title{color: #d81900;}
+#r_content .detail .content_li{background-image:url(../images/GongGuan_news_dt.png);}
+#r_content .detail .current{background-image:url(../images/GongGuan_news_dt.png);}
+#r_content .detail .current a:hover{color: #d81900;}
+#r_content .list_more a{color:#000;}
+#r_content .list_more a:hover{color: #d81900;}
+/*页脚部分*/
+#footer{background-color: #d81900;}
