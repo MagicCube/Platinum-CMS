@@ -5,8 +5,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link href = "/static/common/css/basic.css" rel = "stylesheet"></link>
+<link href = "/static/home/css/home.css" rel = "stylesheet"></link>
+<script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>	
+<!-- FlexSlider start -->
+<link rel="stylesheet" href="/static/home/plugins/flexslider/flexslider.css" type="text/css" />
+<script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
+<!-- FlexSlider end -->
+
 <link href = "/static/xuegong/css/xuegong.css" rel = "stylesheet"/>
-<script src="/static/common/scripts/src/dynamicPic.js" type = "text/javascript"></script>
+
 <title>学工处</title>
 </head>
 <body>
@@ -25,14 +34,13 @@
 			    <div id = "picNews">
 				  <div id="browsable">
             			<div id="box">				
-						<cms:PostList id = "tpxwlist" cssClass = "list" subcategoryId = "sc000000000000000000000000000032" displayPhoto = "true" count = "4"/> 
-					
-					<ul class="count">
-						<li class="current">1</li>
-                				<li>2</li>
-                				<li>3</li>
-                				<li>4</li>
-					</ul>	
+			<!-- begin of block_home_slider -->
+			 <div class="block_home_slider" >
+                    		<div id="home_slider" class="flexslider">
+                            	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000032" displayPhoto="true" count="4" />
+                            </div>                       
+             </div>
+			<!-- end of block_home_slider-->
 								
 				    </div>
 				</div>

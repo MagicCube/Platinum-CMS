@@ -1,8 +1,9 @@
+@CHARSET "UTF-8";
 *
 {
 	margin: 0;
 	padding: 0;
-	font-family: 微软雅黑;
+	font-family: 寰蒋闆呴粦;
 	font-size: 12px;
 }
 
@@ -14,10 +15,10 @@ a
 li
 {
 	list-style:none;
-	overflow: hidden;/*表示溢出的内容会被隐藏*/
+	overflow: hidden;/*琛ㄧず婧㈠嚭鐨勫唴瀹逛細琚殣钘�/
 	-o-text-overflow: ellipsis;    /* for Opera */
-	text-overflow: ellipsis;        /* for IE *//*当文本溢出时显示…此时还必须定义：强制文本在一行内显示（white-space:nowrap）及溢出内容为隐藏（overflow:hidden）*/
-	white-space: nowrap;/*表示文本不会换行*/
+	text-overflow: ellipsis;        /* for IE *//*褰撴枃鏈孩鍑烘椂鏄剧ず鈥︽鏃惰繕蹇呴』瀹氫箟锛氬己鍒舵枃鏈湪涓�鍐呮樉绀猴紙white-space:nowrap锛夊強婧㈠嚭鍐呭涓洪殣钘忥紙overflow:hidden锛�/
+	white-space: nowrap;/*琛ㄧず鏂囨湰涓嶄細鎹㈣*/
 }
 
 p, hr { color: #fff; }
@@ -43,7 +44,7 @@ html, body
 ul { list-style: none; }
 
 
-/*头部*/
+/*澶撮儴*/
 #header
 {
 	height: 130px;
@@ -120,7 +121,7 @@ ul { list-style: none; }
 {
 	color: #fff;
 	font-size: 14px;
-	font-family: 微软雅黑;
+	font-family: 寰蒋闆呴粦;
 	text-decoration: none;
 }
 
@@ -162,7 +163,7 @@ ul { list-style: none; }
 	padding: 10px 20px;
 }
 
-#ja-mainnav a span{font-size:14px;}
+#ja-mainnav a span{font-size:13px;}
 
 #ja-mainnav li 
 { /* all list items */
@@ -282,7 +283,7 @@ The second part will define the visual look for this menu.
 #ja-mainnav {
 	margin: 0;
 	padding: 0;
-	font-family: 微软雅黑, 黑体;
+	font-family: 寰蒋闆呴粦, 榛戜綋;
 	font-size: 14px;
 }
 
@@ -510,12 +511,23 @@ The second part will define the visual look for this menu.
 
 #postDetail
 {
-	margin-top: 48px;
+	margin-top: 10px;
 }
 
 #content
 {
 	margin-top: 20px;
+	margin-left:45px;
 	line-height: 20px;
+	width:900px;
 }
-
+#postDetail h1
+{
+	margin-top:10px;
+	font-size: 20px;
+}
+#info
+{
+	margin-top:10px;
+	font-size: 15px;
+}

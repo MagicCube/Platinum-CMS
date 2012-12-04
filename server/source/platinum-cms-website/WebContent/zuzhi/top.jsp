@@ -28,12 +28,12 @@
 	<menu id = "nav">
 		<ul id = "zuzhi">
 			<li><a href = "/zuzhi/default.jsp">首页</a></li>
-			<li><a href = "#">部门概况</a></li>
-			<li><a href = "#">各类公示</a></li>
-			<li><a href = "#">理论学习</a></li>
-			<li><a href = "#">党建工作</a></li>
-			<li><a href = "#">招聘信息</a></li>
-			<li><a href = "#">人事管理</a></li>
+			<li><a href = "/zuzhi/ff8081813b50f9a5013b56798ea40008.html">部门概况</a></li>
+			<li><a href = "/zuzhi/sc000000000000000000000000000035/more/">各类公示</a></li>
+			<li><a href = "/zuzhi/sc000000000000000000000000000036/more/">理论学习</a></li>
+			<li><a href = "/zuzhi/sc000000000000000000000000000037/more/">党建工作</a></li>
+			<li><a href = "/zuzhi/sc000000000000000000000000000038/more/">招聘信息</a></li>
+			<li><a href = "/zuzhi/sc000000000000000000000000000039/more/">人事管理</a></li>
 		</ul>
 	</menu>
 	

@@ -1,5 +1,5 @@
 /*正文*/
-
+@CHARSET "UTF-8";
 #ja-containerwrap-fr
 {
 	width: 990px;
@@ -31,7 +31,15 @@ div.category_1
 	padding-right:10px;
 	margin-bottom: 15px;
 
-}	
+}
+div.category_1 #position_2
+{
+	width: 60px;
+	height: 10px;
+	float: right;
+	margin-top: 10px;
+}
+
 .left_category_column_1
 {
 	padding-left:10px;
@@ -57,7 +65,7 @@ div.category_1 h3
 }
 #left_part .latestnews_menu
 {
-	height:22px;
+	height:175px;
 	line-height:22px;
 	margin-top:5px;
 	padding-left:10px;
@@ -110,10 +118,17 @@ div.category_1 h3
 {
 	padding-left: 20px;
 	margin: 0;
+	width:290px;
+	line-height:25px;
 	background: url(/static/jiaowu/images/list.png) no-repeat 5px 50%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 15px;
+	color:#000000;
 }
 
-#left_part ul li a:hover{color:#7BA566;}
+#left_part  a:hover{color:#7BA566;}
 /****/
 
 #right_part
@@ -123,7 +138,8 @@ div.category_1 h3
 	background-color:#f6f6f6;
 }
 
-#ja-containerwrap-fr #right_part .menu a { padding: 2px 0;
+#ja-containerwrap-fr #right_part .menu a {
+padding: 2px 0;
 display: block;
 text-decoration: none;
 outline: none;color: #7BA566; }
@@ -134,14 +150,15 @@ outline: none;
 background-color:rgb(221, 221, 221); }
 
 
-.moduletable_menu { height: 230px; }
+.moduletable_menu { height: 230px;}
+
 
 div.moduletable, div.moduletable_menu, div.moduletable_text
 {
 	padding: 0;
 	padding-left:10px;
 	padding-right:10px;
-
+	width:280px;
 	background: url(../images/hdot.gif) repeat-x bottom;
 }
 
@@ -152,11 +169,11 @@ div.moduletable, div.moduletable_menu, div.moduletable_text
 	margin-top:5px;
 	padding-left:10px;
 }
-
 #right_part .menu
 {
 	padding-left:10px;
 	padding-right:30px;
+	width:280px;
 }
 #right_part .link_2
 {
@@ -196,6 +213,14 @@ div.moduletable h3, div.moduletable_menu h3, div.moduletable_text h3
 #right_part ul li, #ja-col2 ul li
 {
 	padding-left: 15px;
+	line-height:22px;
 	margin: 0;
+	width:250px;
 	background: url(../images/bullet.gif) no-repeat 5px 50%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 15px;
+	color:#000000;
+
 }

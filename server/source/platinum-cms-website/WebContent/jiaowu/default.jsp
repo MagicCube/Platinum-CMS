@@ -24,6 +24,7 @@
               <h3>教务新闻</h3>
               </div>
               	<cms:PostList id = "jwxwlist" cssClass = "latestnews_menu" subcategoryId = "sc000000000000000000000000000046" count = "10"/>
+                <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000046/more/">更多...</a></p>
               </div>
       
             <div class="category_1">
@@ -31,6 +32,7 @@
               <h3>教务管理</h3>
             </div>
               <cms:PostList id = "jwgllist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000047" count = "10"/>
+              <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000047/more/">更多...</a></p>
             </div>
             
 
@@ -40,6 +42,7 @@
               <h3>实践教学</h3>
             </div>
                <cms:PostList id = "sjjxlist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000048" count = "10"/>
+               <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000048/more/">更多...</a></p>
             </div>
             
            </div>
@@ -51,6 +54,7 @@
               <h3>教学评估</h3>
             </div>
               <cms:PostList id = "sjjxlist" cssClass = "latestnews_menu" subcategoryId = "sc000000000000000000000000000049" count = "10"/>
+              <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000049/more/">更多...</a></p>
             </div>
 
             
@@ -59,6 +63,7 @@
               <h3>教学研究</h3>
             </div>
               <cms:PostList id = "jxyjlist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000050" count = "10"/>            
+              <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000050/more/">更多...</a></p>
             </div>
             
 
@@ -68,6 +73,7 @@
               <h3>国际交流与合作</h3>
             </div>
             	<cms:PostList id = "jxyjlist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000051" count = "10"/>
+                <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000051/more/">更多...</a></p>
             </div>
            
            </div>

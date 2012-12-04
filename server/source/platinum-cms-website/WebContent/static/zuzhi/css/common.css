@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
+﻿@CHARSET "UTF-8";
 
 html, body
 {
@@ -266,7 +266,7 @@ table td a
     line-height: 30px;
 	border-bottom: 1px #ddd solid;
 	width: 990px;
-	color: #000;
+	color: #fff;
 	font-weight: bold;
 }
 
@@ -306,5 +306,30 @@ table td a
 #content
 {
 	margin-top: 30px;
+	margin-left:45px;
 	line-height: 20px;
+	width:900px;
+}
+#more
+{
+	margin-top:48px;
+	
+}
+#postList .current
+{
+	padding-left: 15px;
+	width:800px;
+	line-height: 30px;
+	background-image:url(../images/list.gif);
+
+}
+#postList #pageNavigationBar 
+{
+	margin-top:15px;
+}
+#postDetail
+{
+	margin-top:48px;
+
+	
 }

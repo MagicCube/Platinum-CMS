@@ -9,13 +9,13 @@
   <div id = "link_search">
     <div id = "text">
       <span>
-      <a href = "http://localhost:8080/9_26EX/index.html">
+      <a href = "/jiaowu">
         回到首页
       </a>
       </span>
       <span style = "color: #fff;"> |</span>
       <span>
-      <a href = "http://njnu.edu.cn">
+      <a href = "/">
         南师大
       </a>
       </span>
@@ -43,37 +43,37 @@
         </a>
       </li>
       <li class="item4">
-        <a href="/jiaowu/more/">
+        <a href="/jiaowu/sc000000000000000000000000000045/more/">
           <span>通知与公告</span>
         </a>
       </li>
       <li class="item3">
-        <a href="/jiaowu/more/">
+        <a href="/jiaowu/sc000000000000000000000000000046/more/">
           <span>教务新闻</span>
         </a>
       </li>
       <li class="item5">
-        <a href="/jiaowu/more/">
+        <a href="/jiaowu/sc000000000000000000000000000047/more/">
           <span>教务管理</span>
         </a>
       </li>
       <li class="item16">
-        <a href="/jiaowu/more/">
+        <a href="/jiaowu/sc000000000000000000000000000048/more/">
           <span>实践教学</span>
         </a>
       </li>
       <li class="item6">
-        <a href="/jiaowu/more/">
+        <a href="/jiaowu/sc000000000000000000000000000049/more/">
           <span>教学评估</span>
         </a>
       </li>
       <li class="item17">
-        <a href="/jiaowu/more/">
+        <a href="/jiaowu/sc000000000000000000000000000050/more/">
           <span>教学研究</span>
         </a>
       </li>
       <li class="item7">
-        <a href="/jiaowu/more/">
+        <a href="/jiaowu/sc000000000000000000000000000051/more/">
           <span>国际交流与合作</span>
         </a>
       </li>
