@@ -7,14 +7,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>领导简介</title>
 <link href = "/static/common/css/basic.css" rel = "stylesheet"></link>
-<link href="/static/college/css/normal.css" rel="stylesheet"/>
+<link href="/static/common/css/normal.css" rel="stylesheet"/>
 <script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
 </head>
 <body>
 	<cms:Header/>
 		<div id = "maincontent" style = "height: 700px;">
 			<div id = "layoutleft" >
-				<img src = "/static/college/images/leader.jpg" height = 200; width = 250px;/>
+				<img src = "/static/common/images/leader.jpg" height = 200; width = 250px;/>
 			</div>
 			<div id = "layoutright">
 				<h2>南京师范大学中北学院领导简介</h2>

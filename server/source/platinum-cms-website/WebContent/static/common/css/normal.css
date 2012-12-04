@@ -15,8 +15,8 @@ ul
 
 #maincontent
 {
-	padding: 0;
-	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
 	width: 990px;
 	height: 500px;
 	position: relative;
@@ -72,38 +72,54 @@ ul
 	margin-right: auto;
 }
 
-#mainbody ul.international
+#mainbody > ul#hzjllist
 {
 	width: 990px;
 	padding: 0;
 	margin: 0;
 	list-style: none;
+	height: 800px;
 }
 
-#mainbody ul.international li#current
+#mainbody ul#hzjllist li.current
 {
 	width: 990px;
 	padding: 0;
 	margin: 0;
+	margin-top: 10px;
+	height: 250px;
 }
 
-#mainbody ul.international li#current > img
+
+#mainbody ul#hzjllist li.current a
+{
+	text-decoration: none;
+	margin: 40px;
+}
+
+#mainbody ul#hzjllist li.current  img
 {
 	float: left;
 	border: 1px solid #ddd;
 	box-shadow: gray 0px 3px 10px;	
 	padding: 5px;
+	width: 250px;
+	height: 200px;
 }
 
-#mainbody ul.international li#current > #title
+#mainbody ul#hzjllist li.current #title
 {
-	text-align: left;
-	margin-left: 650px;
+	margin-left: 300px;
+	color: #000;
+	font-weight: bold;
+	font-size: 16px;
 }
 
-#mainbody ul.international li#current > #summary
+#mainbody ul#hzjllist li.current #summary
 {
-	margin-left: 650px;
+	color: #000;
+	font-size: 12px;
+	margin: 20px 0 0 300px;
 }
 
 

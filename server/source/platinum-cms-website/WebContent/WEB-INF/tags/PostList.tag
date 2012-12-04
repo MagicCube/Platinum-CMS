@@ -106,9 +106,9 @@ else if (StringUtil.notNullOrEmpty(categoryId))
         <% if (displayPhoto) {%>
         <img src='<%= post.getPhotoURL()%>' />
         <% } %>
-        <span id="title"><%= post.getTitle()%></span>
+        <div id="title"><%= post.getTitle()%></div>
         <% if (displaySummary != null && displaySummary) {%>
-        <span id="summary"><%= post.getSummary()%></span>
+        <div id="summary"><%= post.getSummary()%></div>
         <% } %>
     </a>
     <%if (displayDate) {%>
