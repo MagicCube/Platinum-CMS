@@ -58,32 +58,6 @@ html, body
 	color: #f64a32;
 }
 
-#login
-{
-	width: 390px;
-	height: 40px;
-	float: right;
-}
-
-#login ul
-{
-	width: 360px;
-	height: 40px;
-	display: block;
-	float: left;
-}
-
-#login ul li
-{
-	color: #fff;
-	float: left;
-	display: block;
-	height: 40px;
-	line-height: 20px;
-	text-align: center;
-	margin-left: 5px;
-	margin-right: 5px;
-}
 
 #tf
 {

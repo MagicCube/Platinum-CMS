@@ -318,34 +318,47 @@
 	top: 300px;	
 }
 
-#fastPipe ul
+#fastPipe  ul
 {
 	list-style: none;
-	margin: 0 0 0 10px;
+	margin: 0 0 0 25px;
 	padding: 0;	
 	width: 350px;
+	float: left;
 }
 
-#fastPipe ul li
+#fastPipe ul > li
 {
-	margin: 0;
-	padding: 0;
-	width: 350px;
+	width: 120px;
+	margin-right:20px;
+	margin-left: 20px;
+	float: left;
 }
 
-#fastPipe ul li span > a
+#fastPipe ul > li > a
 {
+	font-weight: bold;
 	display: block;
-	color: #666;
-	padding: 10px 22px 10px 10px;
-	border-bottom: 1px solid #E6E6E6;
 	text-decoration: none; 
+	text-align: center;
+	height: 12px;
+	line-height: 12px;
+	padding: 10px 14px;
+	border-radius: 17px;
+	margin-top: 20px;
+	white-space: nowrap;
+	font-size: 12px;
+	background-color: transparent;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1,startColorStr=#60000000,endColorStr=#60000000);
+	overflow: hidden;
+	width: 120px;
+	color: #fff;
 }
 
-#fastPipe ul li span > a:hover
+#fastPipe ul > li a:hover
 {
-	background: #015835;
-	color: #fff;
+	color: #013c36;
 }
 
 #video

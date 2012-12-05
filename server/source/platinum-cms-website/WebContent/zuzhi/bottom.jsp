@@ -10,39 +10,39 @@
             <table>
             <tr>
                 <td>
-                    <a href = "department/President.htm">院长办公室</a>
+                    <a href = "/yuanzhang/ff8081813b606afb013b66088ff500a7.html">院长办公室</a>
                 </td>
                 <td>
-                    <a href = "department/BackOffice.htm">后勤保卫处</a>
-                </td>
-            </tr>       
-            <tr>
-                <td>
-                    <a href = "teaching/Educational.htm">教务处</a>
-                </td>
-                <td>
-                    <a href = "department/XianDaiJiaoYu.htm">现代教育技术中心</a>
+                    <a href = "/houqin/ff8081813b606afb013b660cef4700aa.html">后勤保卫处</a>
                 </td>
             </tr>       
             <tr>
                 <td>
-                    <a href = "#">组织人事处</a>
+                    <a href = "/jiaowu/">教务处</a>
                 </td>
                 <td>
-                    <a href = "department/Assets.htm">资产管理办公室</a>
+                    <a href = "/xiandai/">现代教育技术中心</a>
+                </td>
+            </tr>       
+            <tr>
+                <td>
+                    <a href = "/zuzhi/">组织人事处</a>
+                </td>
+                <td>
+                    <a href = "/zichan/ff8081813b606afb013b6607431500a1.html">资产管理办公室</a>
                 </td>
             </tr>   
             <tr>
                 <td>
-                    <a href = "stuManage/stuManage.htm">学生工作处</a>
+                    <a href = "egong/">学生工作处</a>
                 </td>
                 <td>
-                    <a href = "department/TangShan.htm">汤山校区综合管理办公室</a>
+                    <a href = "/tangshan/ff8081813b606afb013b6604411e009e.html">汤山校区综合管理办公室</a>
                 </td>
             </tr>   
             <tr>
                 <td>
-                    <a href = "#">财务处</a>
+                    <a href = "/caiwu/">财务处</a>
                 </td>
             </tr>
         </table>
@@ -53,39 +53,39 @@
 			<table >
             <tr>
                 <td>
-                    <a href = "faculty/XinXi.htm">信息科学与技术系</a>
+                    <a href = "/xinxi/">信息科学与技术系</a>
                 </td>
                 <td>
-                    <a href = "faculty/GongXue.htm">工学系</a>
-                </td>
-            </tr>       
-            <tr>
-                <td>
-                    <a href = "faculty/RenWen.htm">人文系</a>
-                </td>
-                <td>
-                    <a href = "faculty/MeiShu.htm">美术系</a>
+                    <a href = "/gongxue/">工学系</a>
                 </td>
             </tr>       
             <tr>
                 <td>
-                    <a href ="faculty/GongGuan.htm">公共管理系</a>
+                    <a href = "/renwen/">人文系</a>
                 </td>
                 <td>
-                    <a href = "faculty/YinYue.htm">音乐系</a>
+                    <a href = "/meishu/">美术系</a>
+                </td>
+            </tr>       
+            <tr>
+                <td>
+                    <a href ="/gongguan/">公共管理系</a>
+                </td>
+                <td>
+                    <a href = "/yinyue/">音乐系</a>
                 </td>
             </tr>   
             <tr>
                 <td>
-                    <a href = "faculty/WaiYu.htm">外语系</a>
+                    <a href = "/waiyu/">外语系</a>
                 </td>
                 <td>
-                    <a href = "faculty/QiangHua.htm">强化部</a>
+                    <a href = "/qianghua/">强化部</a>
                 </td>
             </tr>           
             <tr>
                 <td>
-                    <a href = "faculty/JingGuan.htm">经济与管理系</a>
+                    <a href = "/jingguan/">经济与管理系</a>
                 </td>
             </tr>
         </table>    
@@ -106,5 +106,6 @@
 		<div id = "bottom">
 			南京师范大学中北学院版权所有
 		</div>
+
 	</div>
   </div>
