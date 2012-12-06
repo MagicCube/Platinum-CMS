@@ -10,26 +10,17 @@
             <li class = "subMenu"><a href = "/introduce/402881e93b44d032013b44d2f5060002.html">学院简介</a></li>
             <li class = "subMenu"><a href = "/introduce/leader.jsp">领导简介</a></li>
             <li class = "subMenu"><a href = "/introduce/view.jsp">校园美景</a></li>
-            <li class = "subMenu"><a href = "/introduce/symbol.jsp">学院标志</a></li>
+            <li class = "subMenu"><a href = "/introduce/symbol.jsp">联系我们</a></li>
         </ul>
     </li>
-    <li class = "main" onclick = "down_2();"><a href = "#">组织机构</a>
+    <li class = "main" onclick = "down_2();"><a href = "#">部门机构</a>
         <ul>
             <li class = "subMenu"><a href = "/organization/facultyset.jsp" >系部设置</a></li>
             <li class = "subMenu"><a href = "/organization/depset.jsp">部门设置</a></li>
         </ul>
     </li>
-    <li class = "main"><a href = "#" onclick = "down_3();">教学科研</a>
-        <ul>
-            <li class = "subMenu"><a href = "/jiaowu/">教务处</a></li>
-        </ul>
-    </li>
-    <li class = "main" onclick = "down_4();"><a href = "#">师资队伍</a>
-        <ul>
-            <li class = "subMenu"><a href = "/teacher/402881e93b60acd0013b60ae3bae0002.html">人才政策</a></li>
-            <li class = "subMenu"><a href = "/teacher/402881e93b60af69013b60b1decc0002.html">人才引进</a></li>
-            <li class = "subMenu"><a href = "/teacher/402881e93b60af69013b60b2b1d80005.html">人事通知</a></li>
-        </ul>
+    <li class = "main"><a href = "/jiaowu/">教学科研</a>
+       
     </li>
     <li class = "main" onclick = "down_5();"><a href = "#">招生就业</a>
         <ul>
@@ -37,9 +28,12 @@
             <li class = "subMenu"><a href = "http://zbzs.njnu.edu.cn/job/index.asp">就业指导</a></li>
         </ul>
     </li>
+     <li class = "main" onclick = "down_4();"><a href = "/zuzhi/">组织人事</a>
+    </li>
     <li class = "main" onclick = "down_6();"><a href = "#">交流合作</a>
         <ul>
             <li class = "subMenu"><a href = "/international/international.jsp">海外学习计划</a></li>
+            <li class = "subMenu"><a href = "#">联合办学</a></li>
         </ul>
     </li>
     <li class = "main" onclick = "down_7();"><a href = "#">学生工作</a>
