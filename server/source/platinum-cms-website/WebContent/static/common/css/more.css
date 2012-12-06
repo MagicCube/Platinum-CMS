@@ -36,6 +36,16 @@
 	color: rgba(0, 0, 0, 0.4);
 }
 
+#postList li a > div
+{
+	display: inline;
+}
+
+#postList li span
+{
+	float: right;
+}
+
 #postList #pageNavigationBar
 {
     margin-top: 20px;

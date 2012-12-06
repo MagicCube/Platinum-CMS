@@ -85,20 +85,20 @@ clientCache.setMaxAge(60);
 			<div id = "fastPipe">
 				<span id = "position_1"><img src = "static/home/images/fastpipe.gif" alt = ""/></span>
 				<ul>
-					<li><a href="http://222.192.5.246/wap/">教工之家</a></li>
+					<li><a href="http://zbvip.njnu.edu.cn/">教工之家</a></li>
 					<li><a href="http://222.192.5.246/(khvomn45dim5kn3kj4t0gh55)/default2.aspx">教务系统</a></li>
 				</ul>
-				<ul>
-					<li><a href="http://web.mobset.com/index.html">短信平台</a></li>
-					<li><a href="/zuzhi/">组织人事</a></li>
+				<ul>	
+					<li><a href="/jiaowu/">教学科研</a></li>
+					<li><a href="/xuegong/">学生工作</a></li>
 				</ul>
 				<ul>
-					<li><a href="/xuegong/">学生工作</a></li>
-					<li><a href="/jiaowu/">教务教学</a></li>
+					<li><a href="/zuzhi/">组织人事</a></li>
+					<li><a href="#">招生录取</a></li>
 				</ul>
 				<ul>
 					<li><a href="/technology/402881e93b60b9e7013b60bc1d8d0002.html">软研中心</a></li>
-					<li><a href="#">联系我们</a></li>
+					<li><a href="http://web.mobset.com/index.html">短信平台</a></li>
 				</ul>	
 			</div>
 			
