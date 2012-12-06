@@ -44,12 +44,12 @@
     </li>
     <li class = "main" onclick = "down_8();"><a href = "#">公共服务</a>
         <ul>
-            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b46ca7df60005.html">校历</a></li>
+            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b470dedf3002f.html">校历</a></li>
             <li class = "subMenu"><a href = "http://zbzs.njnu.edu.cn/e-book/index.asp">来稿须知</a></li>
-            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b47051b320023.html">办事指南</a></li>
-            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b470dedf3002f.html">作息时间</a></li>
-            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b470e818a0032.html">办公电话查询</a></li>
-            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b470f903c0035.html">校园地图与交通信息</a></li>
+            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b46ca7df60005.html">办事指南</a></li>
+            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b4710fff3003b.html">作息时间</a></li>
+            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b470f903c0035.html">办公电话查询</a></li>
+            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b471051720038.html">校园地图与交通信息</a></li>
         </ul>
     </li>
     <li class = "main"><a href = "#">技术支持</a>
