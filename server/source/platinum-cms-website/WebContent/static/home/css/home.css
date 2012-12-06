@@ -141,24 +141,6 @@
 	line-height: 18px;
 }
 
-/*#part2
-{
-	float: left;
-	width:290px;
-	height: 250px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	margin-top: 10px;	
-}
-
-#part2 ul.TextList
-{
-	display: block;
-	margin:  0 0 0 10px;
-    padding: 0;
-
-}*/
-
 #part2
 {
 	list-style: none;
