@@ -124,9 +124,7 @@
 	width: 100px;
 	height: 65px;
 	left: 0;
-	border:4px solid #f2f2f2;	
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
+	border:4px solid #e8e8e8;	
 	border-radius:3px;
 	position: absolute;
 }
@@ -143,7 +141,7 @@
 	line-height: 18px;
 }
 
-#part2
+/*#part2
 {
 	float: left;
 	width:290px;
@@ -153,40 +151,83 @@
 	margin-top: 10px;	
 }
 
-#part2 ul
+#part2 ul.TextList
 {
+	display: block;
+	margin:  0 0 0 10px;
+    padding: 0;
+
+}*/
+
+#part2
+{
+	list-style: none;
+	margin: 0;
+    padding: 0;
+}
+
+#part2 ul.TextList
+{
+	display: block;
+	margin: 10px 0 0 10px;
+    padding: 0;
 	list-style:none inside url(/static/common/images/list.png);
-	padding: 0;
-	margin: -15px 0 0 10px;
 }
 
-#part2 ul li
+#part2 ul.TextList li
 {
-	width: 260px;
-	height: 15px;
-	margin: 15px 0 5px 0;
+    line-height: 20px;
+    margin: 0 0 10px 0;
+    padding:　0;      
+    margin-left: 5px;
+    white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
-#part2 ul li a 
+#part2 ul.TextList li a
+{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+#part2 ul.TextList li a:hover
+{
+	color: rgba(0, 0, 0, 0.4);
+}
+
+#part2 ul.TextList li a > div
+{
+	display: inline;
+}
+
+/*#part2 ul.TextList li.current
+{
+    margin: 0 0 10px 0;
+    background-image: url(/static/common/images/list.png) no-repeat;
+}
+
+#part2 ul.TextList li.current a 
 {
 	font-size: 12px;
 	color: #000;
 	text-decoration: none;
-	line-height: 15px;
 }
 
-#part2 ul li a:hover
+#part2 ul.TextList li.current a > div#title
+{
+	line-height: 15px;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+#part2 ul.TextList li.current a:hover
 {
 	color : rgba(0, 0, 0, 0.5);
-}
+}*/
 
-#part2 ul li a > div
-{
-	white-space:nowrap;
-	text-overflow:ellipsis;
-	-o-text-overflow:ellipsis;
-	overflow:hidden;
-}
+
 /*
 #right_part
 {
@@ -278,38 +319,7 @@
 	top: 0;
 }
 
-#inform ul
-{
-	list-style:none inside url(/static/common/images/list.png);
-	padding: 0;
-	margin: 0 0 0 10px;
-	width: 380px;
-}
 
-#inform ul li 
-{
-	width: 380px;
-	height: 15px;
-	margin: 15px 0 5px 0;
-	white-space:nowrap;
-	text-overflow:ellipsis;
-	-o-text-overflow:ellipsis;
-	overflow:hidden;
-}
-
-
-#inform ul li a 
-{
-	font-size: 12px;
-	color: #000;
-	text-decoration: none;
-	line-height: 15px;
-}
-
-#inform ul li  a:hover
-{
-	color : rgba(0, 0, 0, 0.5);
-}
 
 #fastPipe
 {
@@ -351,7 +361,7 @@
 	white-space: nowrap;
 	font-size: 12px;
 	background-color: transparent;
-	background: none repeat scroll 0 0 #037c70;/*rgba(0, 0, 0, 0.4)*/
+	background: none repeat scroll 0 0 #037c70;
 	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1,startColorStr=#60000000,endColorStr=#60000000);
 	overflow: hidden;
 	width: 120px;

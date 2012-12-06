@@ -47,7 +47,7 @@ clientCache.setMaxAge(60);
 				</div>
 				
 				<div id = "part2">
-					<cms:PostList id="xwdtList2" subcategoryId="sc000000000000000000000000000006" where="photoURL is null" count="6" />
+					<cms:PostList id="xwdtList2" cssClass="TextList" subcategoryId="sc000000000000000000000000000006" where="photoURL is null" count="6" />
 					<p id = "position_2"><a href = "/news/sc000000000000000000000000000006/more/">更多...</a></p>
 				</div>
 			</div>
@@ -59,7 +59,7 @@ clientCache.setMaxAge(60);
 				</div>
 				
 				<div id = "part2">
-					<cms:PostList id="xydtList2" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="6" />
+					<cms:PostList id="xydtList2" cssClass="TextList" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="6" />
 					<p id = "position_2"><a href = "/news/sc000000000000000000000000000020/more/">更多...</a></p>
 				</div>				
 			</div>			
@@ -79,7 +79,9 @@ clientCache.setMaxAge(60);
 			<div id = "inform">
 				<span id = "position_1"><img src = "static/home/images/inform.gif" alt = ""/></span>
 				<p id = "position_2"><a href = "/news/sc000000000000000000000000000008/more/">更多...</a></p>
-					<cms:PostList id="tzggList" subcategoryId="sc000000000000000000000000000008" count="12" />				
+				<div id="part2" style="width:360px; margin: 0;">
+					<cms:PostList id="tzggList" cssClass="TextList" subcategoryId="sc000000000000000000000000000008" count="12" />				
+				</div>
 			</div> 
 			
 			<div id = "fastPipe">
