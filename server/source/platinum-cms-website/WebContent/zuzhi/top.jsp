@@ -5,7 +5,8 @@
 
 <div id = "head">
 	<div id = "box-top">
-		<img style = "float: left; margin: 10px 0 0 0;" src = "/static/zuzhi/images/logo.png" alt = "组织人事处" />		
+		<img style = "float: left; margin: 10px 0 0 0;" src = "/static/zuzhi/images/logo.png" alt = "组织人事处" title="组织人事处"/>		
+		<img style="padding: 8px;" src="/static/zuzhi/images/zuzhi.png"/>
 		<div id = "link_search">
 			<div id = "text">
 				<span><a href = "/zuzhi/default.jsp">回到首页 |</a></span>

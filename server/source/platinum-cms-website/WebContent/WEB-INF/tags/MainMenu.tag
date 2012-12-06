@@ -54,8 +54,8 @@
     </li>
     <li class = "main"><a href = "#">技术支持</a>
     	<ul style = "margin-left: -82px;">
-            <li class = "subMenu"><a href = "/technology/402881e93b60b9e7013b60bd01350005.html"  style = "margin-left: 60px;">现代教育技术中心</a></li>
-         	<li class = "subMenu"><a href = "/technology/402881e93b60b9e7013b60bc1d8d0002.html"  style = "margin-left: 50px;">软件研发与培训中心</a></li>
+            <li class = "subMenu"><a href = "/xiandai/"  style = "margin-left: 60px;">现代教育技术中心</a></li>
+         	<li class = "subMenu"><a href = "/ruanyan/"  style = "margin-left: 50px;">软件研发与培训中心</a></li>
         </ul>
     </li>
 </menu>

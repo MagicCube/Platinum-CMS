@@ -368,6 +368,42 @@ li.subMenu > a:hover
 	border-bottom: 1px solid #ddd;
 }
 
+ul.TextList
+{
+	display: block;
+	margin: 10px 0 0 0px;
+    padding: 0;
+	list-style: none inside url(/static/common/images/square.gif);
+	
+}
+
+ul.TextList li
+{
+    line-height: 20px;
+    margin: 0 0 10px 0;
+    padding:　0;      
+    margin-left: 5px;
+    white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+ul.TextList li a
+{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+ul.TextList li a:hover
+{
+	color: rgba(0, 0, 0, 0.4);
+}
+
+ul.TextList li a > div
+{
+	display: inline;
+}
+
 #title_style a
 {
 	color: #bebebe;
@@ -386,7 +422,7 @@ li.subMenu > a:hover
 	right: 0;
 }
 
-#sideBar #ywhgList
+/*#sideBar #ywhgList
 {
 	display: block;
 	list-style: none;
@@ -413,7 +449,8 @@ li.subMenu > a:hover
 #sideBar #ywhgList li a:hover
 {
 	color: rgba(0, 0, 0, 0.5);
-}
+}*/
+
 
 #categoryNavigationBar
 {

@@ -6,6 +6,7 @@
 <div id = "header">
 	<div id = "box-top">
 		<img style = "float: left; margin: 10px 0 0 0;" src = "/static/zuzhi/images/logo.png" alt = "组织人事处" />		
+		<img style="padding: 8px;" src="/static/xuegong/images/xuegong.png"/>
 		<div id = "link_search">
 			<div id = "text">
 				<span><a href = "/zuzhi/default.jsp">回到首页 |</a></span>

@@ -46,7 +46,8 @@
             
             <tr>
             	<td><a href="/technology/402881e93b60b9e7013b60bc1d8d0002.html">软件研发与培训中心</a></td>
-            </tr>
+           		<td><a href="/library/">图书馆</a></td>	
+			</tr>
         </table>
     </div>
     

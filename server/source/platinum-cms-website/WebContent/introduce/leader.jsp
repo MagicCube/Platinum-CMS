@@ -12,7 +12,7 @@
 </head>
 <body>
 	<cms:Header/>
-		<div id = "maincontent" style = "height: 700px;">
+		<div id = "maincontent" style = "height: 500px;">
 			<div id = "layoutleft" >
 				<img src = "/static/common/images/leader.jpg" height = 200; width = 250px;/>
 			</div>

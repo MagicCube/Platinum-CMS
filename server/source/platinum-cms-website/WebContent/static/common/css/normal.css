@@ -8,10 +8,8 @@ p
 	line-height: 20px;
 }
 
-ul
-{
-	list-style-type: square;
-}
+
+
 
 #maincontent
 {
@@ -122,4 +120,17 @@ ul
 	margin: 20px 0 0 300px;
 }
 
+#layoutright table tr td
+{
+	padding: 10px 0 10px 0;
+}
 
+#layoutright ul
+{
+	list-style-type: square;
+}
+
+#layoutright ul li
+{
+	padding: 10px 0 10px 0px;
+}

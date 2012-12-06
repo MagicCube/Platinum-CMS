@@ -12,8 +12,8 @@
 </head>
 <body>
 	<cms:Header/>
-	<div id = "mainbody" style = "height: 500px;">
-		<div id = "maincontent" style = "height: 500px;">
+	<div id = "mainbody" style = "height: 600px;">
+		<div id = "maincontent" style = "height: 600px;">
 			<div id = "layoutleft" >
 				<img src = "/static/common/images/department.jpg" height = 200; width = 250px;/>
 			</div>
@@ -23,12 +23,14 @@
 				<ul>
 					<li><a href = "/yuzhang/">院长办公室（党委办公室）</a></li>
  					<li><a href = "/jiaowu/">教务处</a></li>
-					<li><a href = "/xuegong/">学生工作处(部)团委</a></li>
+					<li><a href = "/xuegong/">学生工作处</a></li>
+					<li><a href = "/tuanwei/">团委</a></li>
 					<li><a href = "/caiwu/">财务处</a></li>
 					<li><a href = "/zuzhi/">组织人事处</a></li>
 					<li><a href = "/houqin/">后勤保卫处</a></li>
 					<li><a href = "/zichan/">资产管理办公室</a></li>
-					<li><a href = "/technology/">现在教育技术中心</a></li>
+					<li><a href = "/xiandai/">现在教育技术中心</a></li>
+					<li><a href = "/ruanyan/">软件培训与研发中心</a></li>
 					<li><a href = "/library/">图书资料室</a></li>
 					<li><a href = "/tangshan/">汤山校区综合管理办公室</a></li>
 				</ul>		

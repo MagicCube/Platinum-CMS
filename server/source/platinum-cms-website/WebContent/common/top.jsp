@@ -45,10 +45,10 @@
 <% if (request.getParameter("displaySideBar").equals("true")) {%>
 	<div id="sideBar">
 		<div id = "sideBarin">
-		<div id = "title_style"><strong>要文回顾</strong><span style= "float: right;"><a href = "/news/more/">更多</a></span></div>
-		<cms:PostList id="ywhgList" categoryId='<%= request.getParameter("path")%>' count="9" />
-		<div id = "title_style"><strong>新闻排行榜</strong><span style= "float: right;"><a href = "/news/more/">更多</a></span></div>
-		<cms:PostList id="ywhgList" categoryId='<%= request.getParameter("path")%>' count="9" />
+		<div id = "title_style"><strong>要文回顾</strong><span style= "float: right;"><a href = "/news/more/">更多...</a></span></div>
+		<cms:PostList id="ywhgList" cssClass="TextList" categoryId='<%= request.getParameter("path")%>' count="9" />
+		<div id = "title_style"><strong>新闻排行榜</strong><span style= "float: right;"><a href = "/news/more/">更多...</a></span></div>
+		<cms:PostList id="ywhgList" cssClass="TextList" categoryId='<%= request.getParameter("path")%>' count="9" />
 		</div>
 	</div>
 	<div id = "bodyContent">
