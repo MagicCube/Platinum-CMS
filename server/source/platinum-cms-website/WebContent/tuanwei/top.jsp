@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <link rel="stylesheet" href="/static/tuanwei/css/commom.css" type="text/css" />
 <div id="main">
-
+<!--
 <div id="top">
 
 		<div id="login">	
@@ -26,7 +26,7 @@
 			<ul>
 				<li><a href="#" target=_banlk title="腾讯微博"><img src="/static/tuanwei/images/weibo.gif" height="25px;" /></a></li>
 
-				<li><a href="#" target=_banlk title="QQ微博"><img src="/static/tuanwei/images/qq.gif" height="25px;" /></a></li>
+				<li><a href="#" target=_banlk title="QQ微博"><img src="/static/tuanwei/images/weibo-qq-icon.png" height="25px;" /></a></li>
 
                                 <li><a href="#" target=_banlk title="团委人人"><img src="/static/tuanwei/images/renren.gif" height="25px;" /></a></li>
 			</ul>
@@ -34,7 +34,7 @@
        
 	</div>
 
-  <!--头部开始-->
+  头部开始-->
 
   
   <div id="header">
@@ -59,6 +59,7 @@
     <img src="/static/tuanwei/images/logo.gif" height="90px" width="90px" style="padding-bottom:90px; padding-left:20px;"/>
     <img src="/static/tuanwei/images/logo_1.gif" height="192" width="500" />
     </div>
+
     <div id = "link_search">
       <div id = "text">
         <span>

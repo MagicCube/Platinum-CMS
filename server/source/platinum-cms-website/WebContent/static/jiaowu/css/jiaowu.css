@@ -27,7 +27,6 @@ div.category_1
 {
 	height: 230px;
 	padding: 0;
-	padding-left:10px;
 	padding-right:10px;
 	margin-bottom: 15px;
 
@@ -49,15 +48,17 @@ div.category_1 #position_2
 div.category_name
 {
 	background-color:#f6f6f6;
+	height: 30px;
 }
 div.category_1 h3
 {
-	padding: 5px 0 5px 10px;
+	padding: 0 0 5px 10px;
 	margin: 0;
 	color: #b1b1ad;
 	font-size: 125%;
 	font-weight: bold;
 	text-transform: uppercase;
+	line-height: 15px;
 }
 #ja-containerwrap-fr .category_1 a
 {

@@ -17,6 +17,7 @@
 <script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
 <!-- FlexSlider end -->
 
+<script type="text/javascript" src="home.js"></script>
 <script src="/static/faculty/common/script/jump.js"
 	type="text/javascript"></script>
 
@@ -100,7 +101,6 @@
 	<!--右侧正文结束-->
 
 	<cms:Footer path="xinxi"></cms:Footer>
-
 	</div>
 
 </body>

@@ -27,9 +27,8 @@
                  <td>
                     <a href = "/zuzhi/">组织人事处</a>
                 </td>
-                <td>
-                    <a href = "/xiandai/">现代教育技术中心</a>
-                </td>
+                <td><a href="/library/">图书馆</a></td>
+                
             </tr> 
                   
             <tr>    
@@ -40,13 +39,18 @@
                     <a href = "/zichan/ff8081813b606afb013b6607431500a1.html">资产管理办公室</a>
                 </td>
                 <td>
-                    <a href = "/tangshan/ff8081813b606afb013b6604411e009e.html">汤山校区综合管理办公室</a>
+                    <a href = "/tuanwei/">团委</a>
                 </td> 
             </tr>
             
             <tr>
             	<td><a href="/technology/402881e93b60b9e7013b60bc1d8d0002.html">软件研发与培训中心</a></td>
-           		<td><a href="/library/">图书馆</a></td>	
+           		<td>
+                    <a href = "/xiandai/">现代教育技术中心</a>
+                </td>
+                <td>
+                    <a href = "/tangshan/ff8081813b606afb013b6604411e009e.html">汤山校区综合管理办公室</a>
+                </td> 	
 			</tr>
         </table>
     </div>

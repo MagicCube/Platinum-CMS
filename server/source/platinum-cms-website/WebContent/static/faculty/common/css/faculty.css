@@ -27,12 +27,12 @@ a
 a img{ border:none	}
 
 
-body { background-color: #c9c9c9; }
+body { /*background-color: #cfcfcf; */background:url(/static/faculty/common/images/body_bg.png);}
 
 /*网页主体*/
-
 #main
-{
+{ 
+
 	margin: 0 auto;
 	width: 987px;
 	background-color: #FFF;
@@ -48,7 +48,7 @@ body { background-color: #c9c9c9; }
 #header
 {
 	width: 960px;
-	height: 104px;
+	height: 124px;
 	margin-left: auto;
 	margin-right: auto;
 /*	padding-top: 8px;
@@ -60,7 +60,7 @@ body { background-color: #c9c9c9; }
 #header > #logo_pic
 {
 	width:700px;
-	height:96px;
+	height:116px;
 	margin:0;
 	padding:0;
 	float:left;
@@ -73,7 +73,7 @@ body { background-color: #c9c9c9; }
 {
 	margin:0;
 	padding:0;
-	height: 96px;
+	height: 116px;
 	width: 260px;
 	float: right;
 }
@@ -81,7 +81,7 @@ body { background-color: #c9c9c9; }
 #link_search > #search
 {
 	padding: 0;
-	margin:  50px 0px 0px 40px;
+	margin:  70px 0px 0px 40px;
 /*	margin-left:40px;*/
 	width: 160px;
 	height: 22px;
@@ -123,7 +123,7 @@ body { background-color: #c9c9c9; }
 	margin-top:20px;
 	margin-left:0px;
 	padding-left: 40px;*/
-	margin:20px 0 0 0;
+	margin:40px 0 0 0;
 	padding:0 0 0 40px; 
 }
 
@@ -140,6 +140,18 @@ body { background-color: #c9c9c9; }
 
 
 /*网页侧边栏*/
+#sidebar {
+	position: absolute;
+	top: 0;
+	margin-top: 5px;
+	padding-top: 0px;
+	background-color: white;
+}
+
+#sidebar.fixed {
+	position: fixed;
+	top: 0;
+}
 #side
 {
 	width: 212px;
@@ -200,9 +212,7 @@ body { background-color: #c9c9c9; }
 	width: 200px;
 	height: 30px;
 	color: #FFF;
-	background-image:url(../images/arrow-01.gif);
-	background-repeat: no-repeat;
-	background-position: 170px center;
+
 }
 
 #side #school_link #first .firstimg { padding-top: 4px; }
@@ -495,6 +505,11 @@ li:hover ul, li.over ul {
 	color: #000;
 }
 
+#r_content .detail li a > div
+{
+	display: inline;
+}
+
 #r_content .detail li a:hover
 {
 	font-size: 13px;
@@ -509,7 +524,7 @@ li:hover ul, li.over ul {
 	margin-left: 14px;
 	margin-bottom:10px;
 	width: 960px;
-	height: 50px;
+	height: 60px;
 }
 
 #text
@@ -521,7 +536,7 @@ li:hover ul, li.over ul {
 	text-align:center;
 	float:left;
 	margin:0 auto;
-	margin-top:10px;
+	margin-top:20px;
 }
 
 #text a
@@ -675,3 +690,6 @@ line-height:20px;
 }
 .block_home_slider .caption {height:20px;}
 .block_home_slider .flex-control-paging {padding-top:8px;}
+
+/*more*/
+#postList li {max-width: 700px;}

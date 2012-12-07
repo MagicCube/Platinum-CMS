@@ -92,7 +92,7 @@
   <!--公告开始-->
     <div id="am">
       <div class="title">&nbsp;&raquo;&nbsp;&nbsp;公告通知</div>
-      <cms:PostList id="detail" cssClass="detail" subcategoryId="sc000000000000000000000000000080" count="6" ></cms:PostList>
+      <cms:PostList id="detail" cssClass="detail" subcategoryId="sc000000000000000000000000000080" count="5" ></cms:PostList>
       <div id = "moer_list" class="list_more"><a href = "/meishu/sc000000000000000000000000000080/more/" >更多...</a></div>
     </div>
 

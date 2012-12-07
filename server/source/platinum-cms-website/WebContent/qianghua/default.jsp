@@ -32,7 +32,7 @@
 		<div id="menu">
 			<div id="menu_ul">
 				<ul id="nav">
-					<li><a href="/qianghua/ff8081813b46b724013b47022983001d.html">
+					<li><a href="/qianghua/ff8081813b362c79013b3c8546cd01ee.html">
 							系科介绍 </a></li>
 					<li><a href="/qianghua/sc000000000000000000000000000084/more/">
 							学科建设 </a></li>

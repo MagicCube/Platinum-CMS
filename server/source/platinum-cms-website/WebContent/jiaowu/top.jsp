@@ -4,18 +4,18 @@
 <link href = "/static/jiaowu/css/common.css" rel = "stylesheet"/>
 
 <div id = "header">
-  <div id = "_logo">
+  <div id = "_logo"><img src="/static/jiaowu/images/jiaowu.png" style="padding:0px 0 0 470px;">
   </div>
   <div id = "link_search">
     <div id = "text">
       <span>
-      <a href = "/jiaowu">
-        回到首页
+      <a href = "/">
+        学院首页
       </a>
       </span>
       <span style = "color: #fff;"> |</span>
       <span>
-      <a href = "/">
+      <a href = "http://njnu.edu.cn/">
         南师大
       </a>
       </span>
@@ -37,7 +37,7 @@
 <div id="ja-mainnavwrap">
   <div id="ja-mainnav" class="clearfix">
     <ul class="menu">
-      <li id="current" class="active item1">
+      <li id="first" class="">
         <a href="/jiaowu/default.jsp">
           <span>教务处首页</span>
         </a>
@@ -77,7 +77,7 @@
           <span>国际交流与合作</span>
         </a>
       </li>
-      <li class="item15">
+      <li class="end">
         <a href="/jiaowu/more/">
           <span>联系我们</span>
         </a>

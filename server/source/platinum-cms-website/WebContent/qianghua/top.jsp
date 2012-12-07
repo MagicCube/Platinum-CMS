@@ -8,7 +8,7 @@
 <div id="main">
   <!--头部开始-->
   <div id="header">
-    <div id="logo_pic"></div>
+    <div id="logo_pic"><img src="/static/faculty/images/qianghua.png" style="padding:25px 0 0 470px;"></div>
     <div id = "link_search">
 			<div id = "text">
 				<span><a href = "/">学院首页</a></span>
@@ -33,7 +33,7 @@
    <div id="side">
     <ul id="xibu_link">
       <li class="xibu"><img src="/static/faculty/images/QiangHua_nav_link_first.png" width="4" height="7" />
-        <a href="/QiangHua/">
+        <a href="/qianghua/">
           首页
         </a>
       </li>
@@ -102,16 +102,17 @@
 				</select>
 			<select name = "department" onChange="MM_jumpMenu('parent',this,1)" style = "margin:5px 0 0 0px; width: 178px;">
 					<option value = "#" selected>部门站点</option>
-					<option value="YuanBanDangWei.html">院长办公室（党委办公室）</option>
+					<option value="/yuanzhang/ff8081813b606afb013b66088ff500a7.html">院长办公室（党委办公室）</option>
 					<option value="/jiaowu/">教务处</option>
 					<option value="/tuanwei/">学生工作处(部)团委</option>
 					<option value="/caiwu/">财务处</option>
 					<option value="/zuzhi/">组织人事处</option>
-					<option value="backoffice.html">后勤保卫处</option>
-					<option value="ZiChanGuanLi.html">资产管理办公室</option>
-					<option value="XianDaiJiaoYu.html">现在教育技术中心</option>
-					<option value="">图书资料室</option>
-					<option value="#">汤山校区综合管理办公室</option>
+					<option value="/houqin/ff8081813b606afb013b660cef4700aa.html">后勤保卫处</option>
+					<option value="/zichan/ff8081813b606afb013b6607431500a1.html">资产管理办公室</option>
+					<option value="/ruanyan/">软件培训与研发中心</option>
+					<option value="/xiandai/">现代教育技术中心</option>
+					<option value="/library/ff8081813b6fee04013b7006298300fb.html">图书资料室</option>
+					<option value="/tangshan/ff8081813b606afb013b6604411e009e.html">汤山校区综合管理办公室</option>
 			</select>
             </div>
   </div>

@@ -30,7 +30,7 @@
 	<style type="text/css">
 
 		ul {list-style:none;}
-		#marquee1 {position:relative; margin:0 auto;width:900px;height:100px;overflow:hidden;background:#fff;}
+		#marquee1 {position:relative; margin:0 auto;width:900px;height:150px;overflow:hidden;background:#fff;}
 		#marquee1 ul li {float:left; padding:5px 1px;}
 		#marquee1 ul li img {display:block; width:110px; height:100px;}
 		#marquee1 ul li span#title {display:block; width:100px; height:10px;}
@@ -86,7 +86,7 @@ a img{ border:none}
          <cms:PostList id = "twxwlist" subcategoryId="sc000000000000000000000000000142" count="6" />
          <div class="more" >
             <a href="/tuanwei/more/" target="_blank">
-              ..更多
+              	更多...
             </a>
           </div>
            <br/>
@@ -103,7 +103,7 @@ a img{ border:none}
          <cms:PostList id = "twtzlist" subcategoryId="sc000000000000000000000000000144" count="10" />
          <div class="more" >
             <a href="/tuanwei/more/" target="_blank">
-              ..更多
+              	更多...
             </a>
           </div>
       </div>
