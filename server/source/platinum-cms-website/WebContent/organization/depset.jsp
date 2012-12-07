@@ -29,9 +29,9 @@
 					<li><a href = "/zuzhi/">组织人事处</a></li>
 					<li><a href = "/houqin/ff8081813b606afb013b660cef4700aa.html">后勤保卫处</a></li>
 					<li><a href = "/zichan/ff8081813b606afb013b6607431500a1.html">资产管理办公室</a></li>
-					<li><a href = "/xiandai/">现在教育技术中心</a></li>
+					<li><a href = "/xiandai/ff8081813b7439db013b7440a6a30005.html">现在教育技术中心</a></li>
 					<li><a href = "/technology/402881e93b60b9e7013b60bc1d8d0002.html">软件培训与研发中心</a></li>
-					<li><a href = "/library/">图书资料室</a></li>
+					<li><a href = "/library/ff8081813b7439db013b743cc0620002.html">图书资料室</a></li>
 					<li><a href = "/tangshan/ff8081813b606afb013b6604411e009e.html">汤山校区综合管理办公室</a></li>
 				</ul>		
 			</div>		

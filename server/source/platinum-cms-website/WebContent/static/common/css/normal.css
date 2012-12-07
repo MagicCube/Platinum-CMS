@@ -8,9 +8,6 @@ p
 	line-height: 20px;
 }
 
-
-
-
 #maincontent
 {
 	margin-left: auto;
@@ -133,4 +130,69 @@ p
 #layoutright ul li
 {
 	padding: 10px 0 10px 0px;
+}
+
+#maincontent > #rightside
+{
+	font-family: 微软雅黑 黑体;
+	font-size: 14px;
+	color: #000000;
+	width: 650px;
+	margin: 0 0 0 320px;
+	padding:5px;
+	text-align: left;
+	position: absolute;
+}
+
+#rightside a
+{
+	color: #000000;
+	font-size: 14px;
+	font-family: 微软雅黑, 黑体;
+	text-decoration: none; 
+}
+
+#rightside a:hover
+{
+	color: #3399CC;
+}
+
+#rightside ul.TextList
+{
+	display: block;
+	margin: 10px 0 0 10px;
+    padding: 0;
+	list-style:none inside url(/static/common/images/list.png);
+}
+
+#rightside ul.TextList li
+{
+    line-height: 20px;
+    margin: 0 0 10px 0;
+    padding:　0;      
+    margin-left: 5px;
+    white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+#rightside ul.TextList li a
+{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+#rightside ul.TextList li a:hover
+{
+	color: rgba(0, 0, 0, 0.4);
+}
+
+#rightside ul.TextList li a > div
+{
+	display: inline;
+}
+
+#rightside span a:hover
+{
+	color: rgba(0, 0, 0, 0.4);
 }
