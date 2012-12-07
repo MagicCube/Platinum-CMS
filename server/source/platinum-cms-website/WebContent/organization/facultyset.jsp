@@ -23,7 +23,7 @@
 				<p style = "color: #3399CC; font-size: 14px;">更新日期： 2012/10/16</p>
 				<ul>
 					<li><a href = "/xinxi/">信息科学与技术系</a></li>
- 					<li><a href = "/jingji/">经济与管理系</a></li>
+ 					<li><a href = "/jingguan/">经济与管理系</a></li>
 					<li><a href = "/gongguan/">公共管理系</a></li>
 					<li><a href = "/renwen/">人文系</a></li>
 					<li><a href = "/waiyu/">外语系</a></li>

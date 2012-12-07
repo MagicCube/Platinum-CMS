@@ -35,17 +35,17 @@
   <!--右侧正文结束-->
 <!--页脚开始-->
   <div id="footer">
-    <p id = "text">版权所有©南京师范大学中北学院　　地址:南京市栖霞区学林路2号　　邮编:210046 <br/>
-    </p>
-                      		<div id="linklabel">
+    <span id = "text">版权所有©南京师范大学中北学院　　地址:南京市栖霞区学林路2号　　邮编:210046 
+    	<span id="linklabel">
 			<ul>
 				<li><a href="#" target=_banlk title="中北团委"><img src="/static/tuanwei/images/weibo.gif" height="25px;" /></a></li>
 
 				<li><a href="#" target=_banlk title="中北团委"><img src="/static/tuanwei/images/qq.gif" height="25px;" /></a></li>
 
-                                <li><a href="#" target=_banlk title="团委人人"><img src="/static/tuanwei/images/renren.gif" height="25px;" /></a></li>
+                <li><a href="#" target=_banlk title="团委人人"><img src="/static/tuanwei/images/renren.gif" height="25px;" /></a></li>
 			</ul>
-		</div>
+		</span>
+    </span>
   </div>
   </div>
     </div>

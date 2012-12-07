@@ -1,0 +1,353 @@
+﻿@CHARSET "UTF-8";
+*
+{
+	font-family: 微软雅黑;
+}
+
+a
+{
+	color:#ffffff;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #798da5;
+	text-decoration: none;
+}
+
+
+#content
+{
+	margin: 20px 0 0 0;
+	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 990px;
+	height: 620px;	
+	position: relative;	
+}
+#content > #mainContent
+{
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	width: 990px;
+	height: 620px;
+	float: left;
+
+}
+#content > #mainContent > #news
+{
+	width: 580px;
+	margin: 0;
+	padding : 0;
+	margin-top:10px;
+	height: 600px;
+	float:right;
+	border:#fff 1px solid;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+    overflow: hidden;
+	background-color:#798da5;
+}
+#content > #mainContent > #news > #menu
+{
+	width: 580px;
+	margin: 0;
+	padding : 0;
+	margin-top:10px;
+	height: 32px;
+	float:right;
+	background-color:#9C0;
+	background: url(/static/caiwu/image/di.png);
+}
+#content > #mainContent > #news > #menu ul
+{
+	margin:0 0 0 0;
+	margin-left:10px;
+	padding:0;
+	list-style-position:inside;
+}
+#content > #mainContent > #news > #menu li
+{
+	padding: 0;
+	margin: 8px 0 0 0;
+	width: 140px;
+	height: 32px;
+	font-size: 13px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: center;
+
+}
+#content > #mainContent > #news > #menu li a:hover
+{
+	color:#ffffff;
+}
+.singleMenu1
+{
+	float: left;
+	font-size: 15px;
+	font-family: 黑体;
+	display: inline-block;
+	height: 32px;
+	width: 140px;
+	padding: 0;
+	margin: 0;
+
+
+}
+#content > #mainContent > #news > #textNews
+{
+	width: 580px;
+	margin: 0;
+	padding : 0;
+	margin-top:10px;
+	height: 500px;
+	float:right;
+
+    overflow: hidden;
+	background-color:#cadae9;
+}
+#content > #mainContent > #news > #textNews ul
+{
+	margin:5px 0 0 0;
+	margin-left:10px;
+	padding:0;
+	list-style:url(/static/caiwu/image/list1.png);
+	list-style-position:inside;
+}
+
+#content > #mainContent > #news > #textNews li
+{
+	padding: 0;
+	margin: 8px 0 0 0;
+	width: 500px;
+	font-size: 13px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#content > #mainContent > #news > #textNews li a:hover
+{
+	color:#798da5;
+}
+#content > #mainContent > #gongNews
+{
+	width: 34px;
+	margin: 0;
+	padding : 0;
+	height: 600px;
+	margin-top:10px;
+	margin-left:30px;
+	float:left; 
+    border:#fff 1px solid;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+    overflow: hidden;
+	background: url(/static/caiwu/image/zhong.png);
+
+
+}
+#content > #mainContent > #gongNews ul
+{
+	height: 90px;
+	width: 990px;
+	margin-left:15px;
+	margin-top:5px;
+	padding:0;
+	list-style:none;
+	list-style-position:inside;
+}
+
+#content > #mainContent > #gongNews img
+{
+	height: 60px;
+	width: 100px;
+	border: 4px solid #f2f2f2;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	margin-bottom: 5px;
+}
+#content > #mainContent > #gongNews li a
+{
+	display: block;
+	height: 30px;
+	height:90px;
+	line-height: 16px;
+	text-decoration: none;
+	text-align: center;
+	list-style: none;
+
+
+}
+.picture
+{
+	float: left;
+	font-size: 15px;
+	font-family: 黑体;
+	display: inline-block;
+	height: 100px;
+	width: 110px;
+	padding: 0;
+	margin: 0;
+	margin:5px;
+
+}
+
+#content > #mainContent > #gongNews p
+{
+	width: 100px;
+	height: auto;
+	float: right;
+	margin:5px 10px 0 0;
+
+}
+
+#content > #mainContent > #gongNews p a
+{
+	font-size: 13px;
+	font-weight: bold;
+	color: #000;
+
+}
+
+
+#content > #mainContent > #informs
+{
+	width: 260px;
+	margin: 0;
+	padding :0;
+	height: 210px;
+	margin-top:10px;
+	margin-left:50px;
+	float:left;
+
+	overflow: hidden;
+
+	border: 1px solid #ddd;
+	-moz-box-shadow: #798da5 0px 3px 10px;
+	box-shadow: #798da5 0px 3px 10px;	
+
+}
+
+#content > #mainContent > #teaching
+{
+	width: 490px;
+	margin: 0;
+	margin-top:10px;
+	padding : 0;
+	height: 298px;
+	float:left;
+	border:#fff 1px solid;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	overflow: hidden;
+	background-color:#ecfbff; 
+
+}
+#content > #mainContent > #email
+{
+	width: 490px;
+	margin: 0;
+	margin-top:10px;
+	padding : 0;
+	height: 298px;
+	float:right;
+	border:#fff 1px solid;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	overflow: hidden;
+	background-color:#ecfbff; 
+
+}
+
+#content > #mainContent a
+{
+	font-family: 微软雅黑;
+	font-size: 13px;
+	color:#000000;
+}
+
+
+
+#content > #mainContent > #informs ul
+{
+	margin:5px 0 0 0;
+	margin-left:10px;
+	padding:0;
+	list-style:url(/static/caiwu/image/list1.png) inside ;
+}
+
+#content > #mainContent > #informs li
+{
+	padding: 0;
+	margin: 8px 0 0 0;
+	width: 400px;
+	font-size: 13px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#content > #mainContent > #teaching ul
+{
+	margin:10px 0 0 0;
+	margin-left:10px;
+	padding:0;
+	list-style:url(/static/caiwu/image/list1.png) inside ;
+}
+
+#content > #mainContent > #teaching li 
+{
+	padding: 0;
+	margin: 8px 0 0 0;
+	width: 400px;
+	font-size: 13px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#content > #mainContent > #email ul
+{
+	margin:10px 0 0 0;
+	margin-left:10px;
+	padding:0;
+	list-style:url(/static/caiwu/image/list1.png) inside ;
+}
+
+#content > #mainContent > #email li 
+{
+	padding: 0;
+	margin: 8px 0 0 0;
+	width: 400px;
+	font-size: 13px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#more
+{
+	padding: 0;
+	margin: 10px 30px 0 0;
+	width: 80px;
+	height: 20px;
+	float: right;
+}
+#nice
+{
+	float: right;
+	margin-right:20px;
+	margin-top:5px;
+}
+
+

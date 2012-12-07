@@ -57,13 +57,13 @@
 					</div>
 					
 					<div id = "download">
-						<span><img src = "/static/zuzhi/images/policy.gif"/></span>
+						<span><img src = "/static/zuzhi/images/download.gif"/></span>
 						<cms:PostList id = "zlxzlist" cssClass="TextList" subcategoryId="sc000000000000000000000000000043" count="7" />				
 						<div id = "nice"><a href = "/zuzhi/more/" style ="font-size: 12px;">更多...</a></div>
 					</div>
 					
 					<div id = "outline">
-						<span><img src = "/static/zuzhi/images/policy.gif"/></span>
+						<span><img src = "/static/zuzhi/images/outline.gif"/></span>
 						<cms:PostList id = "ffznlist" cssClass="TextList" subcategoryId="sc000000000000000000000000000044" count="7" />
 						<div id = "nice"><a href = "/zuzhi/more/" style ="font-size: 12px;">更多...</a></div>
 					</div>

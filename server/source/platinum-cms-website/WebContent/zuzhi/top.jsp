@@ -9,7 +9,7 @@
 		<img style="padding: 8px;" src="/static/zuzhi/images/zuzhi.png"/>
 		<div id = "link_search">
 			<div id = "text">
-				<span><a href = "/zuzhi/default.jsp">回到首页 |</a></span>
+				<span><a href = "/">回到首页 |</a></span>
 				<span><a href = "http://njnu.edu.cn"> 南师大</a></span>
 			</div>
 			<div id = "search">

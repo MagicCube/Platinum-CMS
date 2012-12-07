@@ -21,18 +21,18 @@
 				<h2>部门设置</h2>
 				<p style = "color: #3399CC; font-size: 14px;">更新日期： 2012/10/16</p>
 				<ul>
-					<li><a href = "/yuzhang/">院长办公室（党委办公室）</a></li>
+					<li><a href = "/yuanzhang/ff8081813b606afb013b66088ff500a7.html">院长办公室（党委办公室）</a></li>
  					<li><a href = "/jiaowu/">教务处</a></li>
 					<li><a href = "/xuegong/">学生工作处</a></li>
 					<li><a href = "/tuanwei/">团委</a></li>
 					<li><a href = "/caiwu/">财务处</a></li>
 					<li><a href = "/zuzhi/">组织人事处</a></li>
-					<li><a href = "/houqin/">后勤保卫处</a></li>
-					<li><a href = "/zichan/">资产管理办公室</a></li>
+					<li><a href = "/houqin/ff8081813b606afb013b660cef4700aa.html">后勤保卫处</a></li>
+					<li><a href = "/zichan/ff8081813b606afb013b6607431500a1.html">资产管理办公室</a></li>
 					<li><a href = "/xiandai/">现在教育技术中心</a></li>
-					<li><a href = "/ruanyan/">软件培训与研发中心</a></li>
+					<li><a href = "/technology/402881e93b60b9e7013b60bc1d8d0002.html">软件培训与研发中心</a></li>
 					<li><a href = "/library/">图书资料室</a></li>
-					<li><a href = "/tangshan/">汤山校区综合管理办公室</a></li>
+					<li><a href = "/tangshan/ff8081813b606afb013b6604411e009e.html">汤山校区综合管理办公室</a></li>
 				</ul>		
 			</div>		
 		</div>
