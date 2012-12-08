@@ -51,6 +51,51 @@
 .block_home_slider .flex-control-paging li a {width:12px; height:12px; display:block; background-repeat:no-repeat; background-image:url(../../home/images/sprite_nav_3.png); text-indent:-9000px; cursor:pointer;}
 .block_home_slider .flex-control-paging li a.flex-active {background-position:right top;}
 
+.block_calendar h4 {padding-bottom:18px;}
+.block_calendar .line_2 {margin-top:20px;}
+.block_calendar .datepickerNotInMonth a, .block_calendar .datepickerNotInMonth span {color:#cccccc;}
+.block_calendar .datepickerBorderT,
+.block_calendar .datepickerBorderB,
+.block_calendar .datepickerBorderL,
+.block_calendar .datepickerBorderR,
+.block_calendar .datepickerBorderTL,
+.block_calendar .datepickerBorderTR,
+.block_calendar .datepickerBorderBL,
+.block_calendar .datepickerBorderBR {display:none;}
+.block_calendar .datepickerContainer {width:auto !important; left:0px; top:0px;}
+
+.block_calendar div.datepicker table table th {vertical-align:top;}
+.block_calendar div.datepicker table table td {vertical-align:top; background-color:#ffffff; color:#676767; text-align:center;}
+.block_calendar div.datepicker table table td a {width:42px; height:19px; line-height:19px; display:block; color:#676767; border-left:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5;}
+.block_calendar div.datepicker table table td:first-child a {width:41px;}
+.block_calendar div.datepicker table table td.last a {width:41px; border-right:1px solid #e5e5e5;}
+.block_calendar div.datepicker table table td a:hover span {height:17px; line-height:17px; display:block; background-color:#f5f5f5; border:1px solid #ffffff;}
+
+.block_calendar .datepickerDays tr:first-child a {border-top:1px solid #262626;}
+
+.block_calendar div.datepicker table table td.datepickerSelected span,
+.block_calendar div.datepicker table table td.datepickerSelected a:hover span
+{height:17px; line-height:17px; display:block; background-color:#f24024; border:1px solid #ffffff; color:#ffffff;}
+
+.block_calendar .datepickerGoPrev {width:42px; height:33px; background:url(/static/home/images/bg_month.jpg) repeat-x;}
+.block_calendar .datepickerGoPrev a {width:41px; height:33px; display:block; font-size:0px; line-height:0px;}
+.block_calendar .datepickerGoPrev span {width:40px; height:32px; display:block; background:url(/static/home/images/arrow_7.png) no-repeat 10px 12px; border-left:1px solid #e6e6e6; text-indent:-9000px;}
+
+.block_calendar .datepickerMonth {height:33px; background:url(/static/home/images/bg_month.jpg) repeat-x; text-align:center;}
+.block_calendar .datepickerMonth a {font-size:14px; color:#000; font-weight:bold; line-height:32px;}
+
+.block_calendar .datepickerGoNext {width:43px; height:33px; background:url(/static/home/images/bg_month.jpg) repeat-x;}
+.block_calendar .datepickerGoNext a {width:43px; height:33px; display:block; font-size:0px; line-height:0px;}
+.block_calendar .datepickerGoNext span {width:42px; height:32px; display:block; background:url(/static/home/images/arrow_8.png) no-repeat 27px 12px; border-right:1px solid #e6e6e6; text-indent:-9000px;}
+
+.block_calendar .datepickerDoW {}
+.block_calendar .datepickerDoW th {background-color:#474747; color:#ededed; text-align:center;}
+.block_calendar .datepickerDoW th span {width:42px; height:21px; line-height:21px; display:block; border-left:1px solid #666666; border-top:1px solid #262626;}
+.block_calendar .datepickerDoW th:first-child span {width:41px; border-left:1px solid #262626;}
+.block_calendar .datepickerDoW th.last span {width:41px; border-right:1px solid #262626;}
+
+
+
 #content > #left > #news
 {
 	width: 595px;
@@ -303,16 +348,34 @@
 
 
 
-#fastPipe
+#plugins
 {
-	width: 380px;
-	height: 260px;
+	width: 370px;
+	height: 265px;
 	position: absolute;
 	right: 0;
-	top: 300px;	
+	top: 290px;	
+	border-top: 1px #eee solid;
+	border-bottom: 1px #eee solid;
 }
 
-#fastPipe  ul
+#plugins > #weather-plugins
+{
+	margin-top: 15px;
+	width: 380px;
+	display: block;
+	float: left;
+	height: 40px;
+}
+
+#plugins > #calendar-plugins
+{
+	width: 380px;
+	display: block;
+	float: left;
+}
+
+/*#fastPipe  ul
 {
 	list-style: none;
 	margin: 0 0 0 25px;
@@ -339,7 +402,7 @@
 	line-height: 12px;
 	padding: 10px 14px;
 	/*border-radius: 17px;*/
-	margin-top: 20px;
+	/*margin-top: 20px;
 	white-space: nowrap;
 	font-size: 12px;
 	background-color: transparent;
@@ -353,7 +416,7 @@
 #fastPipe ul > li a:hover
 {
 	color: #ccc;
-}
+}*/
 
 #video
 {
