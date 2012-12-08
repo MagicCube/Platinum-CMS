@@ -111,8 +111,8 @@ clientCache.setMaxAge(60);
 			
 			<div id="plugins">
 				<div id="weather-plugins">
-					 <iframe src="http://m.weather.com.cn/m/pn5/weather.htm " width="200" height="40" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>
-					 <iframe src="" width=70 height=20 frameborder=0 scrolling=no allowTransparency=true></iframe>
+					<iframe src="http://m.weather.com.cn/m/pn5/weather.htm " width="200" height="40" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>
+					 
 					<!-- <iframe style="float: right;" src="http://m.weather.com.cn/m/pn11/weather.htm " width="374px" height="80px" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe> -->
 				</div>
 				<div id="calendar-plugins">

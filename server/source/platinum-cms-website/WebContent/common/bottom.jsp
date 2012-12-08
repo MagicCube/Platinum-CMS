@@ -97,7 +97,9 @@
                      
         </table>    
     </div>
+
     <div id = "footer">
+    <hr/>
         <p style = "text-align: center;">南京师范大学中北学院版权所有</p>
     </div>
 </div>

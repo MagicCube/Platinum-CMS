@@ -277,7 +277,7 @@ li.subMenu > a:hover
 	color: #fff;
 }
 
-#bottom > #view img
+/*#bottom > #view img
 {
 	height: 60px;
 	width: 100px;
@@ -288,7 +288,7 @@ li.subMenu > a:hover
 	-moz-box-shadow: #f2f2f2 0px 0px 5px;
 	box-shadow: #f2f2f2 0px 0px 5px;
 	margin: 5px 10px;	
-}
+}*/
 
 #bottom > #fastlink
 {
@@ -336,8 +336,8 @@ li.subMenu > a:hover
 	margin-right: auto;
 	width: 990px;
 	height: 30px;
-	border: 1px solid #fff;
-	bottom: 0;
+
+	bottom: 10px;
 }
 
 #bottom #footer p
@@ -491,5 +491,9 @@ ul.TextList li a > div
 	color: rgba(0, 0, 0, 0.5);
 }
 
+hr
+{
+	border: 1px #fff solid;
+}
 
 

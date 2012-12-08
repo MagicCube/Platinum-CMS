@@ -19,6 +19,8 @@ applet,object,iframe,blockquote,pre,abbr,acronym,address,big,cite,code,del,dfn,e
 
 body {
     line-height: 1;
+    padding: 0;
+    margin: 0;
 }
 
 h1,h2,h3,h4,h5,h6 {
