@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+
+#bodyContent
+{
+	margin: 0 auto;
+	padding: 0px;
+	width: 990px;
+	min-height: 594px;
+	border: 0;	
+	background:url(/static/jiuye/images/background_02.png) ;
+	background-size:cover;
+	text-align:center;
+	
+}
+
+.CategoryNavigationBar{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+#bodyContent > #mainContent
+{
+	padding: 0;
+	margin: 0 auto;
+	width: 850px;
+	background-color: red
+	
+	
+
+}
+
+#postDetail{
+	margin: 0 auto;
+	padding: 0px;
+	width: 990px;	
+	background-size:cover;
+	text-align:center;
+	overflow: hidden;
+	
+	
+}
+#bodyContent > #mainContent > #workNews{
+
+	
+	margin: 0;
+	padding : 0;
+	width: 240px;
+	height: 270px;
+	float: left;
+	background-image:url(../images/workNews.png);
+	background-repeat:no-repeat;
+
+	
+
+}
+
+#bodyContent > #mainContent > #emNews{
+
+	
+	margin: 0;
+	padding : 0;
+	
+	width: 240px;
+	height: 270px;
+	float: right;
+	margin-left: 5px;
+	background-image:url(../images/em.png);
+	background-repeat:no-repeat;
+
+}
+
+#bodyContent > #mainContent > #picNews{
+
+	margin: 0;	
+	width: 350px;
+	height: 260px;	
+	margin-top: 15px;
+	margin-bottom: 0px;
+	margin-left: 14px;	
+	float: left;
+}
+
+
+#bodyContent > #mainContent > #zfNews{
+
+	margin: 0;
+	padding : 0;
+	width: 280px;
+	height: 300px;
+	float: left;
+	margin-right: 5px;
+	margin-top: 12px;
+	background-image:url(../images/zcfg.png);
+	background-repeat: no-repeat;
+   
+	 
+
+}
+#bodyContent > #mainContent > #zyghNews{
+
+	margin: 0;
+	padding : 0;
+	width: 280px;
+	height: 300px;
+	background-image:url(../images/zysygh.png);
+	background-repeat:no-repeat;
+	margin-top: 12px;
+	float: left;
+	margin-right: 5px;
+    
+	 
+
+}
+#bodyContent > #mainContent > #jyzdNews{
+
+	margin: 0;
+	padding : 0;
+	width: 280px;
+	height: 300px;
+	margin-top: 12px;
+	float: right;
+	
+	background-image:url(../images/jyzd%20.png);
+	background-repeat: no-repeat;
+   
+	 
+
+}
+
+.UL ul {
+	
+	padding:0;
+	border: 0;
+	padding-top: 8px;
+	list-style:url(/static/jiuye/images/list1.png);
+	list-style-position:inside;
+	text-align:left;
+	
+	
+	 
+	
+}
+.UL li a{
+	
+	line-height: 18px;
+	font-family: 宋体;
+	
+}
+.UL li:first-child{
+	margin-top:  13px;
+	
+}
+
+ .UL #title{
+
+	padding: 0;
+	margin: 7px 0 0 0;
+	width: 250px;
+	font-size: 13px;
+	font-family: 宋体；
+	color:#000000;
+	word-break:keep-all;/* 不换行 */
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;	
+	
+}
+
+#jyzdNews #title{
+	width: 275px;
+	
+}
+#zfNews #title{
+	width: 275px;
+	
+}
+ #zyghNews #title{
+	width: 275px;
+	
+}
+
+#picNews >#browsable
+{
+	width: 360px;
+	height: 270px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	z-index:0;
+}
+
+#box
+{
+	position: relative;
+	width: 340px;
+	height: 240px;
+	margin: 0;
+	padding: 0;
+}
+
+#bodyContent > #mainContent a
+{
+	font-family: 宋体;
+	font-size: 13px;
+	text-decoration: none;
+	color:#000000;
+}
+
+#bodyContent > #mainContent a:hover
+{
+	color:#88ccee;
+}
+
+
+#more
+{
+	padding: 0;	
+}
+#more #postList{
+	list-style-position:inside;
+	text-align:left;
+	margin-left: 70px;
+	margin-top: 30px;
+	font-size: 15px;
+	
+	
+}
+#postList li{
+	width: 850px;
+	
+}
+
+/*    2012 12 06*/
+.CategoryNavigationBar{
+padding: 0;
+margin-left: 56px;
+display: block;
+list-style: none;
+height: 30px;
+line-height: 30px;
+border-bottom: 1px #ddd solid;
+width: 990px;
+color: #000;
+font-weight: bold;
+color: #999999;
+	
+}
+
+.CategoryNavigationBar a{
+	
+	color: #000000;
+}
+
+#categoryNavigationBar li:first-child{
+	margin-left: 10px;
+	color: #000000;
+}
+
+.CategoryNavigationBar li{
+padding: 0;
+margin: 0;
+margin-left: 10px;
+display: block;
+float: left;	
+}
+
+
+
+h1 {
+display: block;
+font-size: 2em;
+-webkit-margin-before: 0.67em;
+-webkit-margin-after: 0.67em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold;
+}
+
+
+#content{
+
+	font-size: 20px;
+	margin: 0 auto;
+	width: 850px;
+	margin-top: 15px;
+	
+}
+
+	
+.m_More{
+	float: right;
+	font-size: 13px;
+	font-family: 宋体；
+
+	
+	
+}
+.m_More2{
+	float: right;
+	font-size: 13px;
+	font-family: 宋体;
+	margin-right:  12px;	
+}
+
+/**/
+.block_home_slider {
+	width:340px;
+	height:230px;
+	padding:1px;
+	position:relative;	
+	background-color:#ffffff;
+	border:4px solid #f2f2f2;	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;	
+	text-align:center;
+	line-height:0px;
+}
+
+.block_home_slider .slide {position:relative; height: 230px; over-flow: hidden;}
+.block_home_slider .caption {padding:0px; position:absolute; left:0px; right:0px; bottom:0px; background:url(../../home/images/bg_caption.png); text-align:center; height: 30px;}
+.block_home_slider .caption p {padding-bottom:0px; font-size:11px; color:#dedede; text-shadow:0px -1px #000000; line-height:25px;}
+.block_home_slider .caption p.title 
+{ 
+	font-size:15px; color:#ffffff; font-weight:bold;margin:0;line-height:25px;	overflow: hidden;/*表示溢出的内容会被隐藏*/
+	-o-text-overflow: ellipsis;    /* for Opera */
+	text-overflow: ellipsis;        /* for IE *//*当文本溢出时显示…此时还必须定义：强制文本在一行内显示（white-space:nowrap）及溢出内容为隐藏（overflow:hidden）*/
+	white-space: nowrap;/*表示文本不会换行*/
+}
+.block_home_slider .flex-direction-nav a {width:25px; height:25px; margin-top:-27px; display:block; position:absolute; top:50%; background-repeat:no-repeat; background-image:url(../../home/images/sprite_arrow_2.png); text-indent:-9000px;}
+.block_home_slider .flex-direction-nav a.flex-prev {left:6px; background-position:left top;}
+.block_home_slider .flex-direction-nav a.flex-prev:hover {background-position:left bottom;}
+.block_home_slider .flex-direction-nav a.flex-next {right:6px; background-position:right top;}
+.block_home_slider .flex-direction-nav a.flex-next:hover {background-position:right bottom;}
+.block_home_slider .flex-control-paging {padding-top:5px; display:inline-block;}
+.block_home_slider .flex-control-paging li {margin:0px; padding:0px; float:left; overflow:hidden;}
+.block_home_slider .flex-control-paging li a {width:12px; height:12px; display:block; background-repeat:no-repeat; background-image:url(../../home/images/sprite_nav_3.png); text-indent:-9000px; cursor:pointer;}
+.block_home_slider .flex-control-paging li a.flex-active {background-position:right top;}
+.flexslider .slides img {	width: 340px;height: 230px;}
+.block_home_slider  .flexslider .slides{width: 340px;height: 240px;	}

@@ -26,7 +26,7 @@
 		<div id = "mainContent">
                 <div id = "gongNews">
                 <span><img src = "/static/xuegong/images/gonggao.png"/></span>
-          		<cms:PostList id = "ggtzlist" cssClass="TextList" subcategoryId = "sc000000000000000000000000000028" count = "10"/>
+          		<cms:PostList id = "ggtzlist" subcategoryId = "sc000000000000000000000000000028" count = "10"/>
                 <span style = "float: right; margin-top: 5px;"><a href = "/xuegong/more/">更多...</a></span>
                 </div>
                 
@@ -47,25 +47,25 @@
 			</div>
 			<div id = "textNews">
                 <span><img src = "/static/xuegong/images/gongshi.png"/></span>        		
-        		<cms:PostList id = "gslmlist" cssClass="TextList" subcategoryId = "sc000000000000000000000000000029" count = "10"/>         		
+        		<cms:PostList id = "gslmlist" subcategoryId = "sc000000000000000000000000000029" count = "10"/>         		
 				 <span style = "float: right; margin-top: 5px;"><a href = "/xuegong/more/">更多...</a></span>
 			</div>
 			
 			<div id = "informs">
 	        <span><img src = "/static/xuegong/images/xinwen.png"/></span>			
-          		<cms:PostList id = "xwdtlist" cssClass="TextList" subcategoryId = "sc000000000000000000000000000030" count = "10"/>   		
+          		<cms:PostList id = "xwdtlist" subcategoryId = "sc000000000000000000000000000030" count = "10"/>   		
 				 <span style = "float: right; margin-top: 5px;"><a href = "/xuegong/more/">更多...</a></span>
 			</div>
 			
 			<div id = "teaching">
 			<span><img src = "/static/xuegong/images/xibu.png"/></span>
-         		<cms:PostList id = "xbkxlist" cssClass="TextList" subcategoryId = "sc000000000000000000000000000031" count = "10"/>         		
+         		<cms:PostList id = "xbkxlist" subcategoryId = "sc000000000000000000000000000031" count = "10"/>         		
 				 <span style = "float: right; margin-top: 5px;"><a href = "/xuegong/more/">更多...</a></span>
 			</div>
               
             <div id = "email">
 			<span><img src = "/static/xuegong/images/zhuanti.png"/></span>          		
-          		<cms:PostList id = "ztbdlist" cssClass="TextList" subcategoryId = "sc000000000000000000000000000032" count = "10"/>        		        		
+          		<cms:PostList id = "ztbdlist" subcategoryId = "sc000000000000000000000000000032" count = "10"/>        		        		
             	 <span style = "float: right; margin-top: 5px;"><a href = "/xuegong/more/">更多...</a></span>
             </div>
             

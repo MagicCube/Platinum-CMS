@@ -1,0 +1,262 @@
+@charset "utf-8";
+/* CSS Document */
+
+	
+	
+/* 链接 样式*/	
+a
+{
+	text-decoration: none;
+}
+
+
+
+html, body{
+	padding:0;
+	margin:0;
+	border:0;
+	text-align:center;
+}
+
+
+#head
+{
+	padding:0;
+	margin:0;
+	border:0;
+	width: 990px;
+	height: 200px;
+	margin: 0 auto;
+	background-color:#4c9900;
+	
+	
+	
+}
+
+/*头部*/
+#headLogo
+{
+	padding:0;
+	margin:0;
+	border:0;
+	width: 990px;
+	height: 140px;
+	
+}
+/*校院 Logo*/
+#schoolLogo
+{
+	padding:0;
+	margin: 0;
+	border:0;
+	float: left;
+	height: 80px;
+}
+	
+#ruanyanlogo
+{
+	display:block;
+	margin-left: 300px;
+}
+	
+/*搜索栏*/
+#Search
+{
+	margin:0px;
+	padding:0px;
+	width: 260px;
+	height: 96px;
+	float: right;
+	display: inline-block;
+}
+#link_search
+{
+	margin: 18px 10px 0 0;
+	height: 60px;
+	width: 200px;
+
+}/**/
+#link_search #text
+{
+	width: 200px;
+	height: 20px;
+	padding: 0;
+	margin: 0;
+
+}
+
+#link_search #text a
+{
+	color: #fff;
+	font-size: 12px;
+	font-family: 宋体;
+	text-decoration: none;
+}
+
+#link_search #text a:hover { color: #7BA566; }
+
+#link_search > #search
+{
+	padding: 0;
+	margin: 10px 0 0 30px;
+	width: 160px;
+	height: 22px;
+	background: url(/static/ruanyan/images/textfield.png) no-repeat;
+}
+
+
+#description
+{
+	width: 118px;
+	height: 22px;
+	line-height: 20px;
+	padding: 0;
+	margin: 0;
+	float: left;
+	border: 0;
+	background-color: #FFFFFF;
+	color: #888787;
+	font-size: 12px;
+}
+#button
+{
+	float: left;
+	height: 22px;
+	width: 23px;
+	background: url(/static/ruanyan/images/button.png) no-repeat;
+	background-repeat: no-repeat;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+
+/*导航栏*/
+
+#headMenu
+{
+	padding:0;
+	margin:0;
+	border:0;
+	width: 990px;
+	height: 54px;
+	text-align: center;
+	
+}
+
+#mainMenu
+{
+	padding:0;
+	margin:0 auto;
+	border-bottom: 1px #83b94f solid;
+	width: 966px;
+	height:34px;
+	display:block;
+	list-style: none;
+}
+
+
+#mainMenu .singleMenu
+{
+	float: left;
+	font-size: 12px;
+	width: 138px;
+	font-family: 宋体;
+	display: inline-block;
+	text-align:center;
+	line-height: 34px;
+
+}
+
+#mainMenu .singleMenu a
+{
+	color: #fff;
+	
+	}
+#mainMenu .singleMenu a:hover
+{
+	color: rgba(0, 0, 0, 0.4);
+	
+	
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*脚部分*/
+#footer
+{
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	height: 182px;
+	width: 990px;
+	background-color: #4c9900;
+}
+
+
+#bottom{
+	width: 990px;
+	height: 150px;
+	margin: 0 auto;
+	
+}
+#fastlink1, #fastlink2
+{
+	display: inline-block;
+	text-align: left;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+}
+#fastlink1
+{
+	margin:0px 40px 0px 70px;
+	}
+.fastLink a
+{
+	font: 宋体;
+	font-size:12px;
+	font-weight: normal;
+	color: #FFF;
+}
+.fastLink table td
+{
+	width:140px;
+	height: 20px;
+	}
+
+
+
+
+#footButtom{
+	width: 990px;
+	height: 32px;
+	margin: 0 auto;
+	
+	border-top: 1px #FFFFFF solid;
+	text-align:center;
+}
+#footButtom p
+{
+	color:#FFF;
+	font-size: 10px;
+	font-family: 宋体;
+	min-height: 10px;
+}
+

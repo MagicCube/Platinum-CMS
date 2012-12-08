@@ -45,7 +45,7 @@
 							学生工作 </a></li>
 					<li><a href="/xinxi/402881e73b5a7f4d013b5b16054f0002.html">
 							实验中心 </a></li>
-					<li><a href="/xinxi/402881e73b5a7f4d013b5b192d060008.html">
+					<li><a href="/xinxi/sc000000000000000000000000000117/more/">
 							班级风采 </a></li>
 				</ul>
 			</div>
@@ -69,7 +69,7 @@
 		<div id="am">
 			<div class="title">&nbsp;&raquo;&nbsp;&nbsp;公告通知</div>
 			<cms:PostList id="detail" cssClass="detail"
-				subcategoryId="sc000000000000000000000000000119" count="5"></cms:PostList>
+				subcategoryId="sc000000000000000000000000000119" count="6"></cms:PostList>
 			<div id="moer_list" class="list_more">
 				<a href="/xinxi/sc000000000000000000000000000119/more/">更多...</a>
 			</div>

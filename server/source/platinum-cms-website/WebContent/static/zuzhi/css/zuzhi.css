@@ -13,41 +13,6 @@
 	height: 620px;
 }
 
-ul.TextList
-{
-	display: block;
-	margin: 10px 0 0 10px;
-    padding: 0;
-	list-style:none inside url(/static/zuzhi/images/list.png);
-}
-
-ul.TextList li
-{
-    line-height: 20px;
-    margin: 0 0 10px 0;
-    padding:　0;      
-    margin-left: 5px;
-    white-space:nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
-}
-
-ul.TextList li a
-{
-	text-decoration: none;
-	color: rgba(0, 0, 0, 0.8);
-}
-
-ul.TextList li a:hover
-{
-	color: rgba(0, 0, 0, 0.4);
-}
-
-ul.TextList li a > div
-{
-	display: inline;
-}
-
 
 #maincontent > #inform
 {
@@ -58,7 +23,7 @@ ul.TextList li a > div
 	left: 18px;
 }
 
-/*#maincontent > #inform ul
+#maincontent > #inform ul
 {
 	margin:10px 0 0 0;
 	padding:0;
@@ -70,13 +35,13 @@ ul.TextList li a > div
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 258px;			
+	width: 258px;			/*已修改过*/
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
-}*/
+}
 
 #maincontent a
 {
@@ -220,17 +185,17 @@ ul.TextList li a > div
 	list-style-position:inside;
 }
 
-/*#maincontent > #activity ul li
+#maincontent > #activity ul li
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 258px;			
+	width: 258px;			/*已修改过*/
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
-}*/
+}
 
 #maincontent > #box-bottom
 {
@@ -263,7 +228,7 @@ ul.TextList li a > div
 	margin: 0;
 }
 
-/*#box-bottom  > #boxContent > #policy ul
+#box-bottom  > #boxContent > #policy ul
 {
 	margin:10px 0 0 0;
 	padding:0;
@@ -275,13 +240,13 @@ ul.TextList li a > div
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 258px;			
+	width: 258px;			/*已修改过*/
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
-}*/
+}
 
 #box-bottom  > #boxContent > #download
 {
@@ -293,7 +258,7 @@ ul.TextList li a > div
 	margin: 0;
 }
 
-/*#box-bottom  > #boxContent > #download ul
+#box-bottom  > #boxContent > #download ul
 {
 	margin:10px 0 0 0;
 	padding:0;
@@ -305,13 +270,13 @@ ul.TextList li a > div
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 258px;			
+	width: 258px;			/*已修改过*/
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
-}*/
+}
 
 #box-bottom  > #boxContent > #outline
 {
@@ -323,7 +288,7 @@ ul.TextList li a > div
 	margin: 0;
 }
 
-/*#box-bottom  > #boxContent > #outline ul
+#box-bottom  > #boxContent > #outline ul
 {
 	margin:10px 0 0 0;
 	padding:0;
@@ -335,16 +300,17 @@ ul.TextList li a > div
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 258px;			
+	width: 258px;			/*已修改过*/
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 }
-*/
+
 #nice
 {
+	margin-top:10px;
 	float: right;
 }
 

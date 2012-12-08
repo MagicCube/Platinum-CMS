@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+#BODY
+{
+
+	padding: 0;
+	border: 0;
+	width: 990px;
+	min-height: 500px;
+	margin: 0 auto;
+	
+	
+	
+}
+
+#bodyContent
+{
+
+	padding: 0;
+	border: 0;
+	width: 990px;
+	min-height: 500px;
+	margin: 0 auto;
+	
+	
+	
+}
+#mainPost
+{
+	
+	padding: 0;
+	border: 0;
+	width: 990px;
+	min-height: 500px;
+	margin: 0 auto;
+	margin: 20px 0 0 0;
+	
+}
+#mainPost img
+{
+	width: 300px;
+	height: 400px;
+	float: left;
+	
+	
+	
+}
+
+#mainPost li
+{
+	width: 990px;
+	float: left;
+	list-style: none;
+}
+
+	
+	
+
+	
+	
+/* 2012-12-08*/
+
+
+#categoryNavigationBar 
+{
+	padding: 0 0 0 10px;
+	margin: 0;
+	display: block;
+	list-style: none;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px #ddd solid;
+	width: 980px;
+	color: #000;
+	font-weight: bold;
+	text-align: left;
+}
+
+
+
+.CategoryNavigationBar li 
+{
+	padding: 0;
+	margin: 0;
+	display:inline-block;
+
+}
+
+.CategoryNavigationBar li a
+{
+	padding: 0;
+	margin: 0;
+	color:black;
+
+}
+
+
+#content
+{
+	margin:0;
+	padding: 0;
+	width: 640px;
+	text-align: left;
+}
+
+/* 列表 */
+#postList {
+display: block;
+list-style: none;
+margin: 0;
+padding: 0;
+height: 650px;
+}
+
+#postList li{
+	text-align: left;
+	margin: 0 auto;
+
+}
+
+/*  页标签 */
+
+#postList #pageNavigationBar {
+	
+	margin: 0 auto;
+	clear:both;
+
+
+	
+}
+

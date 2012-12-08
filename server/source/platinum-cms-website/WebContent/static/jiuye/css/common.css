@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html, body
+{
+	padding: 0;
+	margin: 0;	
+	text-align: center;
+}
+
+#headpart{
+	padding: 0;
+	margin: 0 auto;
+	height: 127px;
+	width: 990px;
+	background-image:url(/static/jiuye/images/headBackground.png);	
+}
+#headlogo{
+	padding: 0;
+	margin: 0;
+	height:70px;
+	width: 990px;
+	position:absolute;
+	top: 20px;	
+	display:block;
+}
+#logo{
+	
+	margin: 0;
+	padding: 0;
+	float: left;
+	margin-left: 10px;
+	
+}
+
+#head_logo{	
+	float:left;	
+}
+
+#mainpage
+{
+	height: 70px;
+	width: 180px;
+	float: right;
+	text-align:left;
+	margin-left:0px;
+	margin-top: 10px;
+	
+}
+#mainpage > a
+{
+	color:#000;	
+}
+
+#searchbar
+{
+	
+	float: right;
+	width: 180px;
+	height: 22px;
+	padding: 0;
+	margin: 10px 0 0 0;
+	background: url(/static/jiuye/images/searchbar.png) no-repeat;
+	color: rgba(255,255,255,0);
+	
+}
+
+.word {
+	width:118px;
+	height: 22px;
+	line-height: 22px;
+	padding: 0;
+	margin: 0;
+	float: left;
+	border: 0;
+	background-color: #FFFFFF;
+	color: #888787;
+	font-size: 10px;
+
+}
+
+.button {
+	float: left;
+	height: 21px;
+	width: 23px;
+    background: url(/static/jiuye/images/searchButton.png);
+	background-repeat: no-repeat;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+
+}
+
+
+#headmenu{
+	width: 990px;
+	position:absolute;
+	top: 90px;
+	text-align:center
+}
+
+menu#mainmenu
+{ 
+	display: block;
+	width: 850px;
+	height: 32px;
+	list-style: none;
+	padding: 0;
+	margin: 5px 0 0 0;
+	margin-left: auto;
+	margin-right: auto; 
+	border-bottom: 1px #fff solid;   
+}
+
+
+/*单个菜单条的属性*/
+.singleMenu
+{
+	float: left;
+	font-size: 12px;
+	font-family: 黑体;
+	display: inline-block;
+	height: 32px;
+	width: 140px;;
+	padding: 0;
+	margin: 0 ;
+}
+
+a{
+	text-decoration: none;
+}
+menu#mainmenu li a
+{
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	color: #000;	
+	text-align: center;
+	list-style: none;
+}
+
+
+menu#mainmenu li > a:hover
+{
+	color: #929292;
+}
+
+
+
+
+#footer{
+	height:79px;;
+	width: 990px;
+	margin: 0 auto;
+	background-image:url(/static/jiuye/images/background_03.png);	
+}
+
+
+
+
+/**/
+
+
+
+#link_search
+{
+	
+	
+	width: 200px;
+	float: right;
+	margin-right: 15px;
+	margin-top: 8px;
+}
+
+
+#link_search #text
+{
+	width: 200px;
+	line-height: 15px;
+	padding: 0;
+	margin: 0;
+	padding-left: 20px;
+	text-align: left;
+}
+#link_search #text a
+{
+	color: #000;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#link_search #text a:hover
+{
+	color: #ddd;
+}
+
+
+#description
+{
+	width:118px;
+	height: 22px;
+	line-height: 22px;
+	padding: 0;
+	margin: 0;
+	float: left;
+	border: 0;
+	background-color: #FFFFFF;
+	font-size: 12px;
+}
+#button
+{
+	float: left;
+	height: 22px;
+	width: 23px;
+	background: url(/static/jiuye/images/button.png) no-repeat;
+	background-repeat: no-repeat;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+#search
+{
+	padding: 0;
+	margin: 5px 0 0 0;
+	width: 160px;
+	height: 22px;
+	background: url(/static/xuegong/images/text.png) no-repeat;
+}
+
+

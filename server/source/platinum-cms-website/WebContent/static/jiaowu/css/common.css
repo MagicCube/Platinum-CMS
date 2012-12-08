@@ -40,9 +40,8 @@ html, body
 	overflow-x: hidden;
 	overflow-y: auto;
 	padding: 0;
-	background: url(/static/jiaowu/images/body_bg.png);
 }
-
+body { /*background-color: #cfcfcf; */background:url(/static/faculty/common/images/body_bg.png);}
 ul { list-style: none; }
 
 
@@ -326,7 +325,7 @@ ul { list-style: none; }
 	width: 990px;
 	margin-left: auto;
 	margin-right: auto;
-	background: #fff;
+	background:white;
 }
 
 #postDetail
@@ -449,4 +448,12 @@ ul { list-style: none; }
 	padding:5px;
 	font-size: 10px;
 	font-weight: normal;
+}
+/****/
+#left_part ul .current #title
+{	
+	overflow: hidden;/*表示溢出的内容会被隐藏*/
+	-o-text-overflow: ellipsis;    /* for Opera */
+	text-overflow: ellipsis;        /* for IE *//*当文本溢出时显示…此时还必须定义：强制文本在一行内显示（white-space:nowrap）及溢出内容为隐藏（overflow:hidden）*/
+	white-space: nowrap;/*表示文本不会换行*/
 }

@@ -27,14 +27,14 @@ a
 a img{ border:none	}
 
 
-body { /*background-color: #cfcfcf; */background:url(/static/faculty/common/images/body_bg.png);}
+body { background-color: #fff; background:url(/static/faculty/common/images/body_bg.png);}
 
 /*网页主体*/
 #main
 { 
 
 	margin: 0 auto;
-	width: 987px;
+	width: 990px;
 	background-color: #FFF;
 }
 
@@ -47,19 +47,17 @@ body { /*background-color: #cfcfcf; */background:url(/static/faculty/common/imag
 /*网页头部*/
 #header
 {
-	width: 960px;
+	/*width: 960px;*/width:990px;
 	height: 124px;
 	margin-left: auto;
 	margin-right: auto;
-/*	padding-top: 8px;
-	padding-left: 10px;
-	padding-right: 10px;*/
-	padding:8px 10px 0 10px;
+	margin-top:10px;
+	padding:0;/*padding:8px 10px 0 10px;*/
 }
 
 #header > #logo_pic
 {
-	width:700px;
+	/*width:700px;*/width:730px;
 	height:116px;
 	margin:0;
 	padding:0;
@@ -85,7 +83,7 @@ body { /*background-color: #cfcfcf; */background:url(/static/faculty/common/imag
 /*	margin-left:40px;*/
 	width: 160px;
 	height: 22px;
-	background:url(../images/textField.png) no-repeat;
+	background:url(/static/faculty/common/images/textField.png) no-repeat;
 }
 
 #description
@@ -107,7 +105,7 @@ body { /*background-color: #cfcfcf; */background:url(/static/faculty/common/imag
 	float: left;
 	height: 22px;
 	width: 23px;
-	background: url(../images/SearchButton.png) no-repeat;
+	background: url(/static/faculty/common/images/SearchButton.png) no-repeat;
 	background-repeat: no-repeat;
 	border: 0;
 	padding: 0;
@@ -119,10 +117,6 @@ body { /*background-color: #cfcfcf; */background:url(/static/faculty/common/imag
 {
 	width: 145px;
 	height: 20px;
-/*	padding: 0;
-	margin-top:20px;
-	margin-left:0px;
-	padding-left: 40px;*/
 	margin:40px 0 0 0;
 	padding:0 0 0 40px; 
 }
@@ -156,9 +150,7 @@ body { /*background-color: #cfcfcf; */background:url(/static/faculty/common/imag
 {
 	width: 212px;
 	float: left;
-/*	margin-top: 0;
-	margin-left: 14px;*/
-	margin:0 0 0 14px;
+	margin:0 0 0 0px;/*margin:0 0 0 14px;*/
 }
 
 #side #xibu_link { padding-top: 8px; }
@@ -222,17 +214,17 @@ body { /*background-color: #cfcfcf; */background:url(/static/faculty/common/imag
 
 #r_content
 {
-	width: 728px;
+	width:759px;/*width: 728px;*/
 	height:auto;
 	float: left;
 	margin-left: 19px;
-	background-image: url(../images/bg_context_1.png);
+	background-image: url(/static/faculty/common/images/bg_context_1.png);
 	background-repeat:repeat;
 }
 
 #r_content #menu
 {
-	width: 728px;
+	width:750px;/*width: 728px;*/
 	height: 56px;
 	margin: 0 auto;
 
@@ -241,10 +233,8 @@ body { /*background-color: #cfcfcf; */background:url(/static/faculty/common/imag
 #r_content #menu #menu_ul
 {
 	float: left;
-/*	margin-top: 6px;
-	margin-left:10px;*/
 	margin:6px 0 0 10px;
-	width: 708px;
+	width:730px;/*width: 708px;*/
 	height: 40px;
 }
 
@@ -332,7 +322,7 @@ li:hover ul, li.over ul {
 	width: 350px;
 	height: 225px;
 	float: left;
-	margin: 0 0 0 8px;
+	margin: 0 0 0 18px;/*margin: 0 0 0 8px;*/
 	padding: 0;
 	z-index:0;
 }
@@ -350,62 +340,6 @@ li:hover ul, li.over ul {
 	border: 1px solid #ddd;
 	-moz-box-shadow: #808080 0px 3px 10px;
 	box-shadow: #808080 0px 3px 10px;	
-}
-/* */
-#box .content_right{float:left;}
-#box .content_right .ad { 
-	margin-bottom:0px;
-	width:340px; 
-	height:220px; 
-	overflow:hidden;
-	position:relative;
-}
-#box .content_right .slider,.content_right .num {
-	position:absolute;
-}
-#box .content_right .slider{backgroung:#fff;}
-#box .content_right .slider li{ 
-	padding:5px;
-	list-style:none;
-	display:inline;
-}
-
-#box .content_right .num
-{ 
-	right:5px; 
-	bottom:8px;	
-}
-#box .content_right .num li
-{
-	overflow: hidden;	
-	font-size: 11px;
-	font-family: Microsoft YaHei;
-	color: #000000;
-	float: left;
-	width: 15px;
-	height: 15px;
-	cursor: pointer;
-	text-align: center;
-	margin-right: 9px;
-	background: #FFFFFF;
-	opacity: 0.7;
-	filter: alpha(opacity=70);
-	border-radius: 0px;
-}
-#box .content_right .num li.on
-{
-	color: #fff;
-	opacity: 1;
-	filter: alpha(opacity=100);
-	font-weight: 250;
-	background: #f60;
-}
-
-#box .ad .slider li.current 
-{
-	padding:5px;
-	width:340px;
-	height:220px;
 }
 
 #box .slider #title
@@ -428,16 +362,15 @@ li:hover ul, li.over ul {
 #r_content #am
 {
 	float: left;
-	width: 340px;
-	height: 220px;
+	width:350px;/*width: 340px;*/
+	height:230px;/*height: 220px;*/
 	margin-left: 28px;
-	margin-top: 5px;
 }
 
 #r_content #new
 {
 	float: left;
-	width: 340px;
+	width:360px;/*width: 340px;*/
 	height: 220px;
 	margin-left: 12px;
 	margin-top: 15px;
@@ -446,7 +379,7 @@ li:hover ul, li.over ul {
 #r_content #job
 {
 	float: left;
-	width: 340px;
+	width:360px;/*width: 340px;*/
 	height: 220px;
 	margin-left: 22px;
 	margin-top: 15px;
@@ -459,17 +392,14 @@ li:hover ul, li.over ul {
 	height: 30px;
 	font-size: 15px;
 	font-weight: bold;
-	background-image: url(../images/bg_new_title.png);
+	background-image: url(/static/faculty/common/images/bg_new_title.png);
 }
-
-
-
 
 #r_content .detail
 {
 	padding-top: 10px;
 	padding-left: 10px;
-	width: 270px;
+	width:350px;/*width: 270px;*/
 	list-style: none;
 	display: list-item;
 }
@@ -480,16 +410,18 @@ li:hover ul, li.over ul {
 	border-bottom-style: dashed;
 	border-bottom-color: #CCCCCC;
 	padding-left: 15px;
-	width: 300px;
+	width:335px;/*width: 300px;*/
 	line-height: 30px;
 	background-position: 0px center;
 	background-repeat: no-repeat;
-	overflow: hidden;/*表示溢出的内容会被隐藏*/
+}
+#r_content .detail .current #title{	overflow: hidden;/*表示溢出的内容会被隐藏*/
 	-o-text-overflow: ellipsis;    /* for Opera */
 	text-overflow: ellipsis;        /* for IE *//*当文本溢出时显示…此时还必须定义：强制文本在一行内显示（white-space:nowrap）及溢出内容为隐藏（overflow:hidden）*/
-	white-space: nowrap;/*表示文本不会换行*/
-}
-
+	white-space: nowrap;/*表示文本不会换行*/}
+#r_content #am .detail{width:340px;padding-top: 5px;}
+#r_content #am .detail .current{width:330px;}
+#r_content #am .detail .current #title{width:320px;}
 #r_content .list_more
 {
 	width: 300px;
@@ -505,11 +437,6 @@ li:hover ul, li.over ul {
 	color: #000;
 }
 
-#r_content .detail li a > div
-{
-	display: inline;
-}
-
 #r_content .detail li a:hover
 {
 	font-size: 13px;
@@ -521,9 +448,9 @@ li:hover ul, li.over ul {
 {
 	margin-top: 5px;
 	float: left;
-	margin-left: 14px;
+	margin-left:0px;/*margin-left: 14px;*/
 	margin-bottom:10px;
-	width: 960px;
+	width:990px;/*width: 960px;*/
 	height: 60px;
 }
 
@@ -558,7 +485,7 @@ li:hover ul, li.over ul {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	padding-bottom: 10px;
-	background-image: url(../../common/images/News_text_content_location.png)  top;
+	background-image: url(/static/faculty/common/images/News_text_content_location.png)  top;
 	background-repeat: repeat-x;
 }
 
@@ -589,7 +516,7 @@ list-style:none;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	padding-bottom: 10px;
-	background-image: url(../../common/images/News_text_content_location.png) top;
+	background-image: url(/static/faculty/common/images/News_text_content_location.png) top;
 	background-repeat: repeat-x;
 }
 
@@ -632,36 +559,6 @@ list-style:none;
 }
 /*摘要*/
 #summary{margin:10px;}
-
-/*学科建设*/
-#discipline
-{
-	list-style:none;
-	float: left;
-	width: 730px;
-	min-height:545px;
-	margin-left: 19px;
-	border: #CCF solid 1px;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	padding-bottom: 10px;
-	background-image: url(../../common/images/News_text_content_location.png) top;
-	background-repeat: repeat-x;
-}
-#discipline li{float:left;margin-top:10px;}
-#discipline #title{font-size:19px; float:right;width:430px;margin-top:20px;}
-#discipline #summary{font-size:9px; float:right;width:430px;margin-top:10px;}
-#discipline img
-{
-	float:left;
-	margin: 5px;
-	border: 1px solid #DDD;
-	box-shadow: gray 0px 3px 10px;
-	padding: 5px;
-	height: 200px;
-	width: 250px;
-}
 
 /*滚动新闻图片*/
 .block_home_slider {

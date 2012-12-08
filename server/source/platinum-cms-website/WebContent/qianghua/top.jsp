@@ -90,7 +90,7 @@
      <div id="link_list">
     			<select name = "facluty" onChange="MM_jumpMenu('parent',this,1)" style = "margin:5px 0 0 0px; width: 178px;">
 					<option value = "系部站点" selected = "selected">系部站点</option>
-					<option value = "/qianghua/">信息科学与技术系</option>
+					<option value = "/xinxi/">信息科学与技术系</option>
 					<option value = "/jingguan/">经济与管理系</option>
 					<option value = "/gongguan/">公共管理系</option>
 					<option value = "/qianghua/">强化部</option>

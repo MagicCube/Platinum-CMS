@@ -169,9 +169,8 @@ menu#mainmenu li > a:hover
 
 #deplink_1
 {
-	height: 140px;
-	top: -5px;
-	left: 100px;
+	height: 100px;
+	left: 60px;
 	position: absolute;
 	font-size: 12px;
 	color: #fff;
@@ -191,8 +190,7 @@ menu#mainmenu li > a:hover
 #deplink_2 
 {
 	height: 140px;
-	top: -5px;
-	left: 400px;
+	left: 520px;
 	position: absolute;
 	font-size: 12px;
 	color: #fff;
@@ -212,8 +210,7 @@ menu#mainmenu li > a:hover
 #system_link
 {
 	height: 140px;
-	top: -5px;
-	left: 700px;
+	left: 870px;
 	position: absolute;
 	font-size: 12px;
 	color: #fff;
@@ -242,12 +239,16 @@ menu#mainmenu li > a:hover
 	width: 990px;
 }
 
+#deplink_2 table
+{
+	margin: 10px 0 0 0;
+	padding: 0;
+}
 table
 {
 	margin: -10px 0 0 0;
-	paddiong: 0;
+	padding: 0;
 }
-
 table td
 {
 	height: 25px;

@@ -66,7 +66,7 @@
 		<div id="am">
 			<div class="title">&nbsp;&raquo;&nbsp;&nbsp;公告通知</div>
 			<cms:PostList id="detail" cssClass="detail"
-				subcategoryId="sc000000000000000000000000000090" count="5"></cms:PostList>
+				subcategoryId="sc000000000000000000000000000090" count="6"></cms:PostList>
 			<div id="moer_list" class="list_more">
 				<a href="/qianghua/sc000000000000000000000000000090/more/">更多...</a>
 			</div>

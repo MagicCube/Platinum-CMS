@@ -36,14 +36,14 @@
 							系科介绍 </a></li>
 					<li><a href="/renwen/sc000000000000000000000000000094/more/">
 							学科建设 </a></li>
-					<li><a href="/renwen/sc000000000000000000000000000095/more/">
-							教学管理 </a></li>
+					<li><a href="/renwen/sc000000000000000000000000000098/more/">
+							党团建设 </a></li>
 					<li><a href="/renwen/sc000000000000000000000000000096/more/">
 							规章制度 </a></li>
 					<li><a href="/renwen/sc000000000000000000000000000097/more/">
 							学生工作 </a></li>
-					<li><a href="/renwen/sc000000000000000000000000000098/more/">
-							实验中心 </a></li>
+					<li><a href="/renwen/sc000000000000000000000000000095/more/">
+							教学管理</a></li>
 					<li><a href="/renwen/sc000000000000000000000000000099/more/">
 							班级风采 </a></li>
 				</ul>
@@ -66,7 +66,7 @@
 		<div id="am">
 			<div class="title">&nbsp;&raquo;&nbsp;&nbsp;公告通知</div>
 			<cms:PostList id="detail" cssClass="detail"
-				subcategoryId="sc000000000000000000000000000100" count="5"></cms:PostList>
+				subcategoryId="sc000000000000000000000000000100" count="6"></cms:PostList>
 			<div id="moer_list" class="list_more">
 				<a href="/renwen/sc000000000000000000000000000100/more/">更多...</a>
 			</div>

@@ -1,41 +1,5 @@
 @CHARSET "UTF-8";
 
-ul.TextList
-{
-	display: block;
-	margin: 10px 0 0 10px;
-    padding: 0;
-	list-style:none inside url(/static/xuegong/images/list.png);
-}
-
-ul.TextList li
-{
-    line-height: 20px;
-    margin: 0 0 10px 0;
-    padding:　0;      
-    margin-left: 5px;
-    white-space:nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
-}
-
-ul.TextList li a
-{
-	text-decoration: none;
-	color: rgba(0, 0, 0, 0.8);
-}
-
-ul.TextList li a:hover
-{
-	color: rgba(0, 0, 0, 0.4);
-}
-
-ul.TextList li a > div
-{
-	display: inline;
-}
-
-
 
 #content
 {
@@ -181,7 +145,7 @@ ul.TextList li a > div
 	background-color:#e5e5e5;
 }
 
-/*#content > #mainContent > #textNews ul
+#content > #mainContent > #textNews ul
 {
 	margin:5px 0 0 0;
 	margin-left:10px;
@@ -200,8 +164,7 @@ ul.TextList li a > div
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
-}*/
-
+}
 #content > #mainContent > #gongNews
 {
 	width: 260px;
@@ -277,7 +240,7 @@ ul.TextList li a > div
 	color:#88ccee;
 }
 
-/*#content > #mainContent > #gongNews ul
+#content > #mainContent > #gongNews ul
 {
 	margin:5px 0 0 0;
 	margin-left:10px;
@@ -352,7 +315,7 @@ ul.TextList li a > div
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
-}*/
+}
 
 #more
 {

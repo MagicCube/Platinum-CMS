@@ -1,30 +1,30 @@
 @charset "utf-8";
 /* CSS Document */
-#header > #logo_pic{background-color:#a60a99;}
-#header > #link_search{background-color:#a60a99;}
+#header > #logo_pic{background-color:#ff46ff;}
+#header > #link_search{background-color:#ff46ff;}
 /*网页侧边栏*/
 #side
-{background-color: #a60a99;}
+{background-color: #ff46ff;}
 
 #side #school_link #first
 {background-color: #AA0055;}
 
 /*网页右侧内容*/
 #r_content #menu #menu_ul
-{background-color: #a60a99;}
+{background-color: #ff46ff;}
 #r_content #menu #menu_ul #nav{padding-left:50px;}
-#r_content #menu #menu_ul #nav li a:hover{color: #a60a99;}
-.previous b:hover, .next b:hover{color: #a60a99;}
+#r_content #menu #menu_ul #nav li a:hover{color: #ff46ff;}
+.previous b:hover, .next b:hover{color: #ff46ff;}
 /*当前位置*/
-.CategoryNavigationBar a:hover{color:#a60a99;}
+.CategoryNavigationBar a:hover{color:#ff46ff;}
 /*postlist*/
 #postList{margin-left:20px; height:auto;}
 /*新闻和公共*/
-#r_content #am .title, #r_content #new .title, #r_content #job .title{color: #a60a99;}
+#r_content #am .title, #r_content #new .title, #r_content #job .title{color: #ff46ff;}
 #r_content .detail .content_li{background-image:url(../images/RenWen_news_dt.png);}
 #r_content .detail .current{background-image:url(../images/RenWen_news_dt.png);}
-#r_content .detail .current a:hover{color: #a60a99;}
+#r_content .detail .current a:hover{color: #ff46ff;}
 #r_content .list_more a{color:#000;}
-#r_content .list_more a:hover{color: #a60a99;}
+#r_content .list_more a:hover{color: #ff46ff;}
 /*页脚部分*/
-#footer{background-color: #a60a99;}
+#footer{background-color: #ff46ff;}

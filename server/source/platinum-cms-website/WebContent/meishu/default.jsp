@@ -40,10 +40,10 @@
               学科建设
             </a>
                         <ul class="sub">
-              <li><a href="#" title="学科建设>教师风采">教师风采</a></li>
-              <li><a href="#" title="学科建设>教研组">教研组</a></li>
-              <li><a href="#" title="学科建设>教师作品">教师作品</a></li>
-              <li><a href="#" title="学科建设>专业设置">专业设置</a></li>
+              <li><a href="/meishu/ff8081813b750def013b75326484007d.html" title="学科建设>教师风采">教师风采</a></li>
+              <li><a href="/meishu/ff8081813b750def013b753179f0007a.html" title="学科建设>教研组">教研组</a></li>
+              <li><a href="/meishu/ff8081813b750def013b753004eb0077.html" title="学科建设>教师作品">教师作品</a></li>
+              <li><a href="/meishu/ff8081813b750def013b752c3aa50071.html" title="学科建设>专业设置">专业设置</a></li>
             </ul>
             
           </li>

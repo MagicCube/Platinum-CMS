@@ -24,7 +24,7 @@
     </li>
     <li class = "main"><a href = "#">招生就业</a>
         <ul>
-            <li class = "subMenu"><a href = "">招生录取</a></li>
+            <li class = "subMenu"><a href = "/zhaosheng/">招生录取</a></li>
             <li class = "subMenu"><a href = "/jiuye/">就业指导</a></li>
         </ul>
     </li>
