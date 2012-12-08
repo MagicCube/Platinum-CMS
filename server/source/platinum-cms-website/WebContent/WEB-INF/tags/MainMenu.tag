@@ -10,7 +10,7 @@
             <li class = "subMenu"><a href = "/introduce/402881e93b44d032013b44d2f5060002.html">学院简介</a></li>
             <li class = "subMenu"><a href = "/introduce/leader.jsp">领导简介</a></li>
             <li class = "subMenu"><a href = "/introduce/view.jsp">校园美景</a></li>
-            <li class = "subMenu"><a href = "#">联系我们</a></li>
+            <li class = "subMenu"><a href = "/introduce/contact.jsp">联系我们</a></li>
         </ul>
     </li>
     <li class = "main" onclick = "down_2();"><a href = "#">部门机构</a>
