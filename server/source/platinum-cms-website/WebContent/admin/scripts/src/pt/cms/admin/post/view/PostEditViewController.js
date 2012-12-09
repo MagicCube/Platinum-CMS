@@ -53,7 +53,8 @@ pt.cms.admin.post.view.PostEditViewController = function()
     {
         $.cleditor.buttons.image2 = {
             name: 'image2',
-            title: 'Insert/Upload Image',
+            title: '上传本地图片',
+            stripIndex: $.cleditor.buttons.image.stripIndex,
             command: 'insertimage',
             popupName: 'image2',
             popupClass: 'cleditorPrompt',
