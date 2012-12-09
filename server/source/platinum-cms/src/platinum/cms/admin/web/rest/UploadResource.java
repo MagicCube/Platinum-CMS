@@ -38,7 +38,7 @@ public class UploadResource extends AbstractResource
 		String ext = fileName.substring(fileName.lastIndexOf('.') + 1);
 		if (!_checkExtension(ext, "images"))
 		{
-			return responseWithText("ERR: 不合法的扩展名。");
+			return responseWithText("ERR: 不合法的图片扩展名。");
 		}
 		
 		try
@@ -48,16 +48,33 @@ public class UploadResource extends AbstractResource
 		}
 		catch (Exception e)
 		{
-			return responseWithText("ERR: 无法从读取上传的内容。");
+			return responseWithText("ERR: 无法读取上传的内容。");
 		}
 	}
 
 	@POST
 	@Path("attachment")
 	@Consumes(MediaType.MULTIPART_FORM_DATA)
-	public Response uploadAttachment()
+	public Response uploadAttachment(
+			@FormDataParam("file") InputStream p_inputStream,
+			@FormDataParam("file") FormDataContentDisposition p_fileDisposition)
 	{
-		return responseOK();
+		String fileName = p_fileDisposition.getFileName().toLowerCase();
+		String ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+		if (!_checkExtension(ext, "attachments"))
+		{
+			return responseWithText("ERR: 不合法的文件扩展名（只支持 png、jpg、gif 等格式）。");
+		}
+		
+		try
+		{
+			String relativePath = _uploadFile(p_inputStream, "attachments", ext);
+			return responseWithText(relativePath);
+		}
+		catch (Exception e)
+		{
+			return responseWithText("ERR: 无法读取上传的内容。");
+		}
 	}
 
 	private String _uploadFile(InputStream p_inputStream,
