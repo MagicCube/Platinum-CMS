@@ -50,6 +50,29 @@
 
 
 
+#albumOverlay
+{
+    display:none;
+    background: url(../../../images/opacity-80.png);
+    position: fixed;
+    z-index:9999998;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#albumMask
+{
+    display:none;
+    position: fixed;
+    z-index:9999999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 #albumMask #photoFrame
 {
     background: white;

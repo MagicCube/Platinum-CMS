@@ -1,23 +1,3 @@
- $.fn.opacity = function(p_opacity)
- {
-     var opacity = 0.5;
-     if (p_opacity != null)
-     {
-         opacity = p_opacity;
-     }
-     if ($.browser.msie && parseInt($.browser.version) <= 8)
-     {
-         this.css("filter", "progid:DXImageTransform.Microsoft.BasicImage(opacity=" + opacity + ")")
-     }
-     else
-     {
-         this.css("opacity", opacity);
-         this.css("webkitOpacity", opacity);
-         this.css("MozOpacity", opacity);
-     }
-     return this;
-};
-
 $.fn.album = function(opt)
 {
     var defaultOpt = {
@@ -47,6 +27,7 @@ $.fn.album = function(opt)
     
 
     var _selectedId = null;
+    var _$testImage = null;
     var _$overlay = null;
     var _$mask = null;
     var _$photoFrame = null;
@@ -57,12 +38,11 @@ $.fn.album = function(opt)
         var imgUrl = $(document.body).find("#" + _selectedId + " img").attr("src");
         if (_$overlay == null)
         {
-            _$overlay = $("<div id='albumOverlay' style='display:none; background: black; position: fixed; z-index:9999998; top: 0; bottom: 0; left: 0; right: 0;'/>");
-            _$overlay.opacity(0.8);
-            _$mask = $("<div id='albumMask' style='display:none; position: fixed; z-index:9999999; top: 0; bottom: 0; left: 0; right: 0;'/>");
+            _$overlay = $("<div id='albumOverlay'/>");
+            _$mask = $("<div id='albumMask'/>");
             
             _$photoFrame = $("<div id='photoFrame'><img id='photo'> <div id='close'/> <div id='previous'/> <div id='next'/> </div>");
-            _$photoFrame.find("div").opacity(0.5)
+            _$photoFrame.find("div")
                 .mouseenter(function()
                 {
                     $(this).opacity(1);
@@ -79,25 +59,15 @@ $.fn.album = function(opt)
                             _hideOverlay();
                             break;
                         case "previous":
-                            var $previous = $("#" + _selectedId).prev("li");
-                            if ($previous.length > 0)
-                            {
-                                var id = $previous.attr("id");
-                                _moveTo(id);
-                            }
+                            _movePrevious();
                             break;
                         case "next":
-                            var $next = $("#" + _selectedId).next("li");
-                            if ($next.length > 0)
-                            {
-                                var id = $next.attr("id");
-                                _moveTo(id);
-                            }
+                            _moveNext();
                             break;
                     }
                 });
             
-            _$photoFrame.find("img").on("load", function(){
+            _$photoFrame.find("#photo").on("load", function(){
                 var width = $(this).width();
                 var height = $(this).height();
                 
@@ -138,7 +108,50 @@ $.fn.album = function(opt)
     {
         _selectedId = p_id;
         var imgUrl = $(document.body).find("#" + _selectedId + " img").attr("src");
-        
+        if (_$testImage == null)
+        {
+            _$testImage = $("<img style='position: absolute; left: : -10000px; top: -10000px'/>");
+            _$testImage.on("load", function()
+            {
+                var width = $(this).width();
+                var height = $(this).height();
+                
+                _$photoFrame.animate({
+                    "left": (_$mask.width() - width) / 2,
+                    "top": (_$mask.height() - height) / 2,
+                    "width": width,
+                    "height": height
+                }, "fast", function()
+                {
+                    _$photoFrame.find("#photo")
+                        .attr("src", _$testImage.attr("src"))
+                        .hide()
+                        .fadeIn();
+                });
+            });
+            $(document.body).append(_$testImage);
+        }
+        _$testImage.attr("src", "").attr("src", imgUrl);
+    }
+    
+    function _movePrevious()
+    {
+        var $previous = $("#" + _selectedId).prev("li");
+        if ($previous.length > 0)
+        {
+            var id = $previous.attr("id");
+            _moveTo(id);
+        }
+    }
+    
+    function _moveNext()
+    {
+        var $next = $("#" + _selectedId).next("li");
+        if ($next.length > 0)
+        {
+            var id = $next.attr("id");
+            _moveTo(id);
+        }
     }
     
     function _hideOverlay()
