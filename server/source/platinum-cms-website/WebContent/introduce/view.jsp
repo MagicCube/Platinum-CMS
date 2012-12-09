@@ -10,31 +10,33 @@
 <link href = "/static/common/css/basic.css" rel = "stylesheet"></link>
 <link href="/static/common/css/normal.css" rel="stylesheet"/>
 <script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
-<style type="text/css">
-	#maincontent img
-	{
-		height: 250px;
-		width: 300px;
-		float: left;
-		margin: 10px 10px 0 10px;
-		border: 3px #ddd solid;
-	}
-</style>
 
 </head>
 <body>
 	<cms:Header/>
-		<div id="maincontent" style="height: 800px;">
-			<img src="/static/common/images/1.jpg"/>
-			<img src="/static/common/images/2.jpg"/>
-			<img src="/static/common/images/3.jpg"/>
-			<img src="/static/common/images/4.jpg"/>
-			<img src="/static/common/images/5.jpg"/>
-			<img src="/static/common/images/6.jpg"/>
-			<img src="/static/common/images/7.jpg"/>
-			<img src="/static/common/images/8.jpg"/>
-			<img src="/static/common/images/9.jpg"/>
-		</div>
+    
+    <ul id="album" class="PostList">
+        <% for (int i = 1; i <= 9; i++) {%>
+        <li id="x<%=i%>">
+            <a href="#">
+                <img src="/static/common/images/<%= i%>.jpg">
+                <div id="title">标题<%= i%></div>
+            </a>
+        </li>
+        <%} %>
+    </ul>
+    <link rel="stylesheet" href="/static/common/scripts/lib/album/album.css"/>
+    <script src="/static/common/scripts/lib/album/jquery.album.js"></script>
+    <script>
+    $("#album")
+        .album({
+            cellWidth: 316,
+            cellHeight: 210,
+            padding: 12
+        })
+        .height(250 * 3);
+    </script>
+    
 	<cms:Footer/>
 </body>
 </html>
