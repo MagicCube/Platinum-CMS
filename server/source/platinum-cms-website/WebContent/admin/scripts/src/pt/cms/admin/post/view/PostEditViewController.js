@@ -1,9 +1,10 @@
 $ns("pt.cms.admin.post.view");
 
-$include("~/scripts/lib/cleditor/jquery.cleditor.min.js");
+$include("~/scripts/lib/cleditor/jquery.cleditor.js");
 $include("~/scripts/lib/cleditor/jquery.cleditor.css");
 
 $include("$/pt/cms/admin/post/view/PostEditView.css");
+
 
 pt.cms.admin.post.view.PostEditViewController = function()
 {
@@ -33,7 +34,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
     
     base.viewDidLoad = me.viewDidLoad;
     me.viewDidLoad = function()
-    {
+    {        
         me.view.$element.addClass("PostEditView");
         
         base.viewDidLoad();
@@ -44,7 +45,55 @@ pt.cms.admin.post.view.PostEditViewController = function()
         me.toolbar.addButton("savePost", "保存").addClass("default").click(_btnSave_onclick);
         me.toolbar.addButton("cancel", "返回").addClass("yellow").click(_btnCancel_onclick);
         me.toolbars = [me.toolbar];
+        
+        _initImageUploader();        
     };
+    
+    function _initImageUploader()
+    {
+        $.cleditor.buttons.image2 = {
+            name: 'image2',
+            title: 'Insert/Upload Image',
+            command: 'insertimage',
+            popupName: 'image2',
+            popupClass: 'cleditorPrompt',
+            popupContent: "<iframe name='uploadFrame' style='display:none'></iframe><form id='uploadForm' target='uploadFrame' action='/api/0/admin/upload/image' method='post' enctype='multipart/form-data' style='display:none'><input type='file' name='file' id='uploadButton'/></form>",
+            buttonClick: _insertImage_onclick
+        };
+
+        function _insertImage_onclick(e, data)
+        {
+            var editor = data.editor;
+            var $popup = $(data.popup);
+            $uploadFrame = $popup.find("iframe");
+            $uploadForm = $popup.find("form");
+            $uploadForm.html("<input type='file' name='file' id='uploadButton' style='width:0;height:0'>");
+            $uploadControl= $popup.find("input");
+            
+            $uploadFrame.one("load", function(e)
+            {
+                var url = $uploadFrame.get(0).contentWindow.document.getElementById("result").innerHTML;
+                editor.execCommand(data.command, url, null, data.button);
+            });
+            
+            $uploadControl.one("change", function(){
+                if ($uploadControl.val() != "")
+                {
+                    if (true)
+                    {
+                        $uploadForm.get(0).submit();
+                    }
+                    else
+                    {
+                        editor.hidePopups();
+                        editor.focus();
+                    }
+                }
+            });
+            
+            $uploadControl.click();
+        }
+    }
     
     function _initView()
     {
@@ -244,9 +293,11 @@ pt.cms.admin.post.view.PostEditViewController = function()
         me.$content.val(me.data.contentText);
         if (me.contentEditor == null)
         {
+            
             me.contentEditor = me.$content.cleditor({
+                controls: $.cleditor.defaultOptions.controls.replace("image","image image2"),
                 width: "100%",
-                height: "80%",
+                height: "80%"
             })[0];
         }
         else

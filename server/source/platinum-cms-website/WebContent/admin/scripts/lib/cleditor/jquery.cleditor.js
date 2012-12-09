@@ -38,7 +38,7 @@
                     "333 600 930 963 660 060 366 009 339 636 " +
                     "000 300 630 633 330 030 033 006 309 303",    
       fonts:        // font names in the font popup
-                    "Arial,Arial Black,Comic Sans MS,Courier New,Narrow,Garamond," +
+                    "宋体,黑体,微软雅黑,Arial,Arial Black,Comic Sans MS,Courier New,Narrow,Garamond," +
                     "Georgia,Impact,Sans Serif,Serif,Tahoma,Trebuchet MS,Verdana",
       sizes:        // sizes in the font size popup
                     "1,2,3,4,5,6,7",
@@ -62,38 +62,38 @@
     buttons: {
       // name,title,command,popupName (""=use name)
       init:
-      "bold,,|" +
-      "italic,,|" +
-      "underline,,|" +
-      "strikethrough,,|" +
-      "subscript,,|" +
-      "superscript,,|" +
-      "font,,fontname,|" +
-      "size,Font Size,fontsize,|" +
-      "style,,formatblock,|" +
-      "color,Font Color,forecolor,|" +
-      "highlight,Text Highlight Color,hilitecolor,color|" +
-      "removeformat,Remove Formatting,|" +
-      "bullets,,insertunorderedlist|" +
-      "numbering,,insertorderedlist|" +
-      "outdent,,|" +
-      "indent,,|" +
-      "alignleft,Align Text Left,justifyleft|" +
-      "center,,justifycenter|" +
-      "alignright,Align Text Right,justifyright|" +
-      "justify,,justifyfull|" +
-      "undo,,|" +
-      "redo,,|" +
-      "rule,Insert Horizontal Rule,inserthorizontalrule|" +
-      "image,Insert Image,insertimage,url|" +
-      "link,Insert Hyperlink,createlink,url|" +
-      "unlink,Remove Hyperlink,|" +
-      "cut,,|" +
-      "copy,,|" +
-      "paste,,|" +
-      "pastetext,Paste as Text,inserthtml,|" +
-      "print,,|" +
-      "source,Show Source"
+      "bold,加粗,|" +
+      "italic,倾斜,|" +
+      "underline,下划线,|" +
+      "strikethrough,删除线,|" +
+      "subscript,下标,|" +
+      "superscript,上标,|" +
+      "font,字体,fontname,|" +
+      "size,字号,fontsize,|" +
+      "style,风格,formatblock,|" +
+      "color,字体颜色,forecolor,|" +
+      "highlight,文字背景颜色,hilitecolor,color|" +
+      "removeformat,去除格式,|" +
+      "bullets,项目符号,insertunorderedlist|" +
+      "numbering,项目编号,insertorderedlist|" +
+      "outdent,减少缩进量,|" +
+      "indent,增加缩进量,|" +
+      "alignleft,文本左对齐,justifyleft|" +
+      "center,文本居中对齐,justifycenter|" +
+      "alignright,文本右对齐,justifyright|" +
+      "justify,文本适中对齐,justifyfull|" +
+      "undo,撤销,|" +
+      "redo,重做,|" +
+      "rule,插入水平分割线,inserthorizontalrule|" +
+      "image,插入图片,insertimage,url|" +
+      "link,插入超链接,createlink,url|" +
+      "unlink,移除超链接,|" +
+      "cut,剪切,|" +
+      "copy,复制,|" +
+      "paste,粘贴,|" +
+      "pastetext,粘贴为文本,inserthtml,|" +
+      "print,打印,|" +
+      "source,显示 HTML 代码"
     },
 
     // imagesPath - returns the path to the images folder

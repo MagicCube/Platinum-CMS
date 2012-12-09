@@ -38,17 +38,17 @@ public class UploadResource extends AbstractResource
 		String ext = fileName.substring(fileName.lastIndexOf('.') + 1);
 		if (!_checkExtension(ext, "images"))
 		{
-			return responseWithText("ERR: 不合法的图片扩展名。");
+			return responseWithHTML("<div id='result' class='error'>不合法的图片扩展名。</div>");
 		}
 		
 		try
 		{
 			String relativePath = _uploadFile(p_inputStream, "images", ext);
-			return responseWithText(relativePath);
+			return responseWithHTML("<div id='result'>" + relativePath + "</div>");
 		}
 		catch (Exception e)
 		{
-			return responseWithText("ERR: 无法读取上传的内容。");
+			return responseWithHTML("<div id='result' class='error'>无法读取上传的内容。</div>");
 		}
 	}
 
@@ -63,17 +63,17 @@ public class UploadResource extends AbstractResource
 		String ext = fileName.substring(fileName.lastIndexOf('.') + 1);
 		if (!_checkExtension(ext, "attachments"))
 		{
-			return responseWithText("ERR: 不合法的文件扩展名（只支持 png、jpg、gif 等格式）。");
+			return responseWithHTML("<div id='result' class='error'>不合法的文件扩展名（只支持 png、jpg、gif 等格式）。</div>");
 		}
 		
 		try
 		{
 			String relativePath = _uploadFile(p_inputStream, "attachments", ext);
-			return responseWithText(relativePath);
+			return responseWithHTML("<div id='result'>" + relativePath + "</div>");
 		}
 		catch (Exception e)
 		{
-			return responseWithText("ERR: 无法读取上传的内容。");
+			return responseWithHTML("<div id='result' class='error'>无法读取上传的内容。</div>");
 		}
 	}
 
