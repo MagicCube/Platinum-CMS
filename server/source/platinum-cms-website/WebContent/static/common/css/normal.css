@@ -76,7 +76,7 @@ p
 	height: 800px;
 }
 
-#mainbody ul#hzjllist li.current
+#mainbody ul#hzjllist li
 {
 	width: 990px;
 	padding: 0;
@@ -86,13 +86,13 @@ p
 }
 
 
-#mainbody ul#hzjllist li.current a
+#mainbody ul#hzjllist li a
 {
 	text-decoration: none;
 	margin: 40px;
 }
 
-#mainbody ul#hzjllist li.current  img
+#mainbody ul#hzjllist li  img
 {
 	float: left;
 	border: 1px solid #ddd;
@@ -102,7 +102,7 @@ p
 	height: 200px;
 }
 
-#mainbody ul#hzjllist li.current #title
+#mainbody ul#hzjllist li #title
 {
 	margin-left: 300px;
 	color: #000;
@@ -110,7 +110,7 @@ p
 	font-size: 16px;
 }
 
-#mainbody ul#hzjllist li.current #summary
+#mainbody ul#hzjllist li #summary
 {
 	color: #000;
 	font-size: 12px;

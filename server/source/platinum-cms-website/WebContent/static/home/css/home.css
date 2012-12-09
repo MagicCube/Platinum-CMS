@@ -201,20 +201,20 @@
 	display: inline;
 }
 
-/*#part2 ul.TextList li.current
+/*#part2 ul.TextList li
 {
     margin: 0 0 10px 0;
     background-image: url(/static/common/images/list.png) no-repeat;
 }
 
-#part2 ul.TextList li.current a 
+#part2 ul.TextList li a 
 {
 	font-size: 12px;
 	color: #000;
 	text-decoration: none;
 }
 
-#part2 ul.TextList li.current a > div#title
+#part2 ul.TextList li a > div#title
 {
 	line-height: 15px;
 	white-space:nowrap;
@@ -222,7 +222,7 @@
 	overflow: hidden;
 }
 
-#part2 ul.TextList li.current a:hover
+#part2 ul.TextList li a:hover
 {
 	color : rgba(0, 0, 0, 0.5);
 }*/

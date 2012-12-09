@@ -156,7 +156,7 @@
 	filter: alpha(opacity=0);
 }
 
-#box .list li.current
+#box .list li
 {
 	opacity: 1;
 	filter: alpha(opacity=100);
@@ -204,7 +204,7 @@
 	border-radius: 0px;
 }
 
-#box .count li.current
+#box .count li
 {
 	color: #fff;
 	opacity: 1;

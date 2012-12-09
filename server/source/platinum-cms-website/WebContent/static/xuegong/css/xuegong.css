@@ -75,7 +75,7 @@
 	height: 300px;
 }
 
-#box .list li.current
+#box .list li
 {
 	opacity: 1;
 	filter: alpha(opacity=100);
@@ -122,7 +122,7 @@
 	border-radius: 1px;
 }
 
-#box .count li.current
+#box .count li
 {
 	color: #fff;
 	opacity: 1;
