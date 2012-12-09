@@ -4,9 +4,11 @@
 <link href = "/static/common/css/common.css" rel = "stylesheet"></link>
 
 <div id = "header">
+    <% if (request.getRequestURI().equals("/")) {%>
     <div id = "weather">
         <iframe src="http://m.weather.com.cn/m/pn5/weather.htm " width="200" height="30" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>
     </div>
+    <% } %>
   	
     <!-- <ul id="mail">
            		<li><a href = "http://zbvip.njnu.edu.cn/vip/mail/add-mail.asp?who=yz">院长邮箱</a></li>
