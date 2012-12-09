@@ -305,7 +305,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         {
             
             me.contentEditor = me.$content.cleditor({
-                controls: $.cleditor.defaultOptions.controls.replace("image","image image2"),
+                controls: $.cleditor.defaultOptions.controls.replace("image","image2"),
                 width: "100%",
                 height: "80%"
             })[0];
