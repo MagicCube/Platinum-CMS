@@ -16,6 +16,7 @@ import javax.ws.rs.core.Response;
 
 import platinum.common.PTEnvironment;
 import platinum.common.util.GUIDUtil;
+import platinum.common.util.ImageUtil;
 import platinum.framework.web.rest.AbstractResource;
 
 import com.sun.jersey.core.header.FormDataContentDisposition;
@@ -44,6 +45,8 @@ public class UploadResource extends AbstractResource
 		try
 		{
 			String relativePath = _uploadFile(p_inputStream, "images", ext);
+			String localPath = PTEnvironment.getSharedPath(relativePath);
+			ImageUtil.resize(localPath, 580, 720);
 			return responseWithHTML("<div id='result'>" + relativePath + "</div>");
 		}
 		catch (Exception e)

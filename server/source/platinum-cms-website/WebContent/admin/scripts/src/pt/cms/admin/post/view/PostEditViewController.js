@@ -64,6 +64,9 @@ pt.cms.admin.post.view.PostEditViewController = function()
         function _insertImage_onclick(e, data)
         {
             var editor = data.editor;
+            editor.hidePopups();
+            editor.focus();
+            
             var $popup = $(data.popup);
             $uploadFrame = $popup.find("iframe");
             $uploadForm = $popup.find("form");
@@ -72,22 +75,29 @@ pt.cms.admin.post.view.PostEditViewController = function()
             
             $uploadFrame.one("load", function(e)
             {
-                var url = $uploadFrame.get(0).contentWindow.document.getElementById("result").innerHTML;
-                editor.execCommand(data.command, url, null, data.button);
+                var div = $uploadFrame.get(0).contentWindow.document.getElementById("result");
+                var message = div.innerHTML;
+                if (div.className != "error")
+                {
+                    editor.execCommand(data.command, message, null, data.button);
+                    if (me.$photoURL.val() == "")
+                    {
+                        if (confirm("是否要将刚才上传的图片设置为封面图片？\r\n提示：您也可以在上传后，将图片直接拖拽到右侧信息栏的“封面图片”文本框中设置。"))
+                        {
+                            me.$photoURL.val(message);
+                        }
+                    }
+                }
+                else
+                {
+                    alert("上传图片失败。" + message);
+                }
             });
             
             $uploadControl.one("change", function(){
                 if ($uploadControl.val() != "")
                 {
-                    if (true)
-                    {
-                        $uploadForm.get(0).submit();
-                    }
-                    else
-                    {
-                        editor.hidePopups();
-                        editor.focus();
-                    }
+                    $uploadForm.get(0).submit();
                 }
             });
             
@@ -151,7 +161,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         $dl.children("dd").append(me.$homeSubcategory);
         $sideBar.append($dl);
         
-        var $dl = $("<dl><dt>图片</dt> <dd></dd></dl>");
+        var $dl = $("<dl><dt>封面图片</dt> <dd></dd></dl>");
         me.$photoURL = $("<input type=text id=photoURL />");
         $dl.children("dd").append(me.$photoURL);
         $sideBar.append($dl);
