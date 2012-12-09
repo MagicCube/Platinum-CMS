@@ -46,15 +46,18 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 <% } %>
 </ul>
 
+<link rel="stylesheet" href="/static/common/scripts/lib/flexslider/flexslider.css" type="text/css" />
+<script type="text/javascript" src="/static/common/scripts/lib/flexslider/jquery.flexslider-min.js"></script>
+
 <script type="text/javascript">
-								$(function () {
-									$('#home_slider').flexslider({
-										animation : 'slide',
-										controlNav : true,
-										directionNav : true,
-										animationLoop : true,
-										slideshow : false,
-										useCSS : false
-									});								
-								});
-							</script>
+	$(function () {
+		$('#home_slider').flexslider({
+			animation : 'slide',
+			controlNav : true,
+			directionNav : true,
+			animationLoop : true,
+			slideshow : false,
+			useCSS : false
+		});								
+	});
+</script>

@@ -1,0 +1,15 @@
+#photoList
+{
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#photoList li
+{
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+}

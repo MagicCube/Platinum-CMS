@@ -18,12 +18,6 @@ clientCache.setMaxAge(60);
 <link href = "/static/home/css/home.css" rel = "stylesheet"></link>
 <script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
 
-<!-- FlexSlider start -->
-<link rel="stylesheet" href="/static/home/plugins/flexslider/flexslider.css" type="text/css" />
-<script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
-<!-- FlexSlider end -->
-
-
 </head>
 <body>
 
