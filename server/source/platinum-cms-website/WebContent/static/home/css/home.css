@@ -38,7 +38,7 @@
 }
 
 .block_home_slider .slide {position:relative; height: 260px; over-flow: hidden;}
-.block_home_slider .caption {padding:0px; position:absolute; left:0px; right:0px; bottom:0px; background:url(../../home/images/bg_caption.png); text-align:center; height: 30px;}
+.block_home_slider .caption {padding:0px; position:absolute; left:0px; right:0px; bottom:0px; background: rgba(0, 0, 0, 0.3); text-align:center; height: 30px;}
 .block_home_slider .caption p {padding-bottom:0px; font-size:11px; color:#dedede; text-shadow:0px -1px #000000; line-height:11px;}
 .block_home_slider .caption p.title {padding-bottom:6px; font-size:15px; color:#ffffff; font-weight:bold; line-height:5px;}
 .block_home_slider .flex-direction-nav a {width:25px; height:25px; margin-top:-27px; display:block; position:absolute; top:50%; background-repeat:no-repeat; background-image:url(../../home/images/sprite_arrow_2.png); text-indent:-9000px;}
@@ -51,49 +51,6 @@
 .block_home_slider .flex-control-paging li a {width:12px; height:12px; display:block; background-repeat:no-repeat; background-image:url(../../home/images/sprite_nav_3.png); text-indent:-9000px; cursor:pointer;}
 .block_home_slider .flex-control-paging li a.flex-active {background-position:right top;}
 
-.block_calendar h4 {padding-bottom:18px;}
-.block_calendar .line_2 {margin-top:20px;}
-.block_calendar .datepickerNotInMonth a, .block_calendar .datepickerNotInMonth span {color:#cccccc;}
-.block_calendar .datepickerBorderT,
-.block_calendar .datepickerBorderB,
-.block_calendar .datepickerBorderL,
-.block_calendar .datepickerBorderR,
-.block_calendar .datepickerBorderTL,
-.block_calendar .datepickerBorderTR,
-.block_calendar .datepickerBorderBL,
-.block_calendar .datepickerBorderBR {display:none;}
-.block_calendar .datepickerContainer {width:auto !important; left:0px; top:0px;}
-
-.block_calendar div.datepicker table table th {vertical-align:top;}
-.block_calendar div.datepicker table table td {vertical-align:top; background-color:#ffffff; color:#676767; text-align:center;}
-.block_calendar div.datepicker table table td a {width:42px; height:19px; line-height:19px; display:block; color:#676767; border-left:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5;}
-.block_calendar div.datepicker table table td:first-child a {width:41px;}
-.block_calendar div.datepicker table table td.last a {width:41px; border-right:1px solid #e5e5e5;}
-.block_calendar div.datepicker table table td a:hover span {height:17px; line-height:17px; display:block; background-color:#f5f5f5; border:1px solid #ffffff;}
-
-.block_calendar .datepickerDays tr:first-child a {border-top:1px solid #262626;}
-
-.block_calendar div.datepicker table table td.datepickerSelected span,
-.block_calendar div.datepicker table table td.datepickerSelected a:hover span
-{height:17px; line-height:17px; display:block; background-color:#f24024; border:1px solid #ffffff; color:#ffffff;}
-
-.block_calendar .datepickerGoPrev {width:42px; height:33px; background:url(/static/home/images/bg_month.jpg) repeat-x;}
-.block_calendar .datepickerGoPrev a {width:41px; height:33px; display:block; font-size:0px; line-height:0px;}
-.block_calendar .datepickerGoPrev span {width:40px; height:32px; display:block; background:url(/static/home/images/arrow_7.png) no-repeat 10px 12px; border-left:1px solid #e6e6e6; text-indent:-9000px;}
-
-.block_calendar .datepickerMonth {height:33px; background:url(/static/home/images/bg_month.jpg) repeat-x; text-align:center;}
-.block_calendar .datepickerMonth a {font-size:14px; color:#000; font-weight:bold; line-height:32px;}
-
-.block_calendar .datepickerGoNext {width:43px; height:33px; background:url(/static/home/images/bg_month.jpg) repeat-x;}
-.block_calendar .datepickerGoNext a {width:43px; height:33px; display:block; font-size:0px; line-height:0px;}
-.block_calendar .datepickerGoNext span {width:42px; height:32px; display:block; background:url(/static/home/images/arrow_8.png) no-repeat 27px 12px; border-right:1px solid #e6e6e6; text-indent:-9000px;}
-
-.block_calendar .datepickerDoW {}
-.block_calendar .datepickerDoW th {background-color:#474747; color:#ededed; text-align:center;}
-.block_calendar .datepickerDoW th span {width:42px; height:21px; line-height:21px; display:block; border-left:1px solid #666666; border-top:1px solid #262626;}
-.block_calendar .datepickerDoW th:first-child span {width:41px; border-left:1px solid #262626;}
-.block_calendar .datepickerDoW th.last span {width:41px; border-right:1px solid #262626;}
-
 
 
 #content > #left > #news
@@ -105,6 +62,14 @@
 	left: 0;
 }
 
+#content > #left > #news > span
+{
+	float: left;
+	display: block;
+	width: 595px;
+	border-bottom: 1px #5F8A49 solid;
+}
+
 #content > #left > #schoolnews
 {
 	width: 595px;
@@ -112,6 +77,14 @@
 	position: absolute;
 	top: 560px;
 	left: 0;
+}
+
+#content > #left > #schoolnews > span
+{
+	float: left;
+	display: block;
+	width: 595px;
+	border-bottom: 1px #5F8A49 solid;
 }
 
 #content > #right
@@ -348,7 +321,7 @@
 
 
 
-#plugins
+/*#plugins
 {
 	width: 370px;
 	height: 265px;
@@ -373,16 +346,35 @@
 	width: 380px;
 	display: block;
 	float: left;
+}*/
+#fastPipe{
+	width: 370px;
+	height: 265px;
+	position: absolute;
+	right: 0;
+	top: 290px;	
+	
 }
 
-/*#fastPipe  ul
+#fastPipe #box_test
+{
+	width: 370px;
+	border: 1px #5F8A49 solid;
+	float: left;
+	margin-top: 10px;
+}
+
+
+#fastPipe  ul
 {
 	list-style: none;
-	margin: 0 0 0 25px;
+	margin: 0 0 0 10px;
 	padding: 0;	
-	width: 350px;
+	width: 370px;
 	float: left;
 }
+
+
 
 #fastPipe ul > li
 {
@@ -402,11 +394,11 @@
 	line-height: 12px;
 	padding: 10px 14px;
 	/*border-radius: 17px;*/
-	/*margin-top: 20px;
+	margin-top: 20px;
 	white-space: nowrap;
 	font-size: 12px;
 	background-color: transparent;
-	background: none repeat scroll 0 0 #037c70;
+	background: none repeat scroll 0 0 #60be00;
 	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1,startColorStr=#60000000,endColorStr=#60000000);
 	overflow: hidden;
 	width: 120px;
@@ -416,7 +408,7 @@
 #fastPipe ul > li a:hover
 {
 	color: #ccc;
-}*/
+}
 
 #video
 {

@@ -6,7 +6,7 @@
 <div id = "bottom">
     
     <div id = "fastlink">
-        <p>部门链接</p>
+       <!--  <p>部门链接</p> -->
             <table>
             <tr>
                 <td>
@@ -55,9 +55,11 @@
         </table>
     </div>
     
+    <div style = "position: absolute; height: 150px; width: 1px; background: #fff; left: 530px;">
+    </div>
     
     <div id = "fastlink" style = "left: 580px;">
-        <p>系部链接</p> 
+       <!--   <p>系部链接</p>  -->
         <table >
             <tr>
                 <td>
@@ -100,7 +102,8 @@
 
     <div id = "footer">
     <hr/>
-        <p style = "text-align: center;">南京师范大学中北学院版权所有</p>
+        <!--  <span style = "float: left; margin-left: 10px;">南京师范大学中北学院版权所有</span> <span style = "float: right; margin-right: 10px;">软件研发与培训中心&现代教育技术中心 开发、维护</span>-->
+   		<span style="float:left; margin-left: 10px;">南京师范大学中北学院版权所有</span> <span>www.nnuzc.cn</span> <span style="float:right; margin-right: 10px;">软件研发与培训中心&现代教育技术中心 开发、维护</span>
     </div>
 </div>
 

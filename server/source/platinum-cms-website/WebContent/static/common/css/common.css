@@ -3,74 +3,69 @@
 {
 	margin-left: auto;
 	margin-right: auto;
-	height: 40px;
+	height: 30px;
 	width: 990px;
-	background: url(../images/headerbk.gif) repeat;
+	background: #5F8A49;
 	overflow-y: hidden;
 }
 
 #linklabel
 {
-	height: 40px;
-	width: 250px;
-	float: left;
+	float: right;
 }
 
 #linklabel ul
 {
-	height: 40px;
-	width: 250px;
-	float: left;
-	margin-left: -35px;
+	height: 30px;
+	width: 260px;
+	padding: 0;
+	margin: 0;
 }
 
 #linklabel ul li 
 {
 	display: block;
 	float: left;
-	height: 40px;
-	margin-left: 10px;
-	margin-right: 10px;
+	height: 30px;
+	width: 80px;
+	text-align: center;
+}
+
+#linklabel ul li:first-child
+{
+	width: 100px;	
 }
 
 #linklabel ul li a
 {
-	height: 40px;
-	line-height: 20px;
+	height: 30px;
+	line-height: 30px;
+	display: block;
 	text-decoration: none;
 	color: #fff;
 	text-align: center;
+	border-right: 1px #fff solid;
 }
 
 #linklabel ul li a:hover
 {
-	color: #f64a32;
+	background: rgba(0, 0, 0, 0.4);
 }
 
-
-ul#mail
+#weather
 {
-	width: 140px;
+	float: left;
 	display: block;
-	float: right;
-	list-style: none;
+	padding: 5px 0 0 10px;
+	color: #fff;
 }
 
-
-ul#mail li a
+#weather a
 {
 	color: #fff;
-	float: left;
-	line-height: 20px;
-	text-align: center;
 	text-decoration: none;
-	padding: 0 10px 0 10px;
 }
 
-ul#mail li a:hover
-{
-	color: #f64a32;
-}
 
 #tf
 {
@@ -127,14 +122,12 @@ ul#mail li a:hover
 #search > #setting a
 {
 	color: #000000;
-	font-size: 14px;
 	text-decoration: none;
-	font-family: 微软雅黑;
 }
 
 #search > #setting a:hover
 {
-	color: #f64a32;
+	color: #5F8A49;
 }
 
 #search > #searchbar
@@ -177,7 +170,8 @@ ul#mail li a:hover
 	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
-	background: url(../images/bk.png) repeat-x;
+	/*background: url(../images/bk.png) repeat-x;*/
+	background: #5e8d4f;/*#609e00/*#5F8A49*/;
 }
 
 #main_menu li.main
@@ -225,11 +219,11 @@ li.subMenu
 	padding: 0;
 	margin: 0;
 	overflow:hidden; 
-	background-color:#fdfdfd; 
-	border-left:1px solid #f3f3f3; 
-	border-right:1px solid #f3f3f3;
+	background-color:#eee; 
+	border-left:1px solid #5F8A49; /*f3f3f3*/
+	border-right:1px solid #5F8A49;
 	border-top:1px solid #ffffff; 
-	border-bottom:1px solid #f3f3f3;
+	border-bottom:1px solid #5F8A49;
 }
 
 li.subMenu > a
@@ -247,58 +241,37 @@ li.subMenu > a
 li.subMenu > a:hover
 {
 	color: #f64a32;
+	margin-left: 30px;
 }
+
 
 /*尾部*/
 #bottom
 {
 	width: 990px;
-	height: 200px;
+	height: 150px;
 	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto; 
-	background: url(../images/headerbk.gif) ;
+	/*background: url(../images/headerbk.gif) ;*/
+	background: #5e8d4f/*#5F8A49*/;
 	position: relative;
 }
 
 
-#bottom > #view
+#bottom span
 {
-	height: 220px;
-	width: 223px;
-	left: 15px;
-	position: absolute;
-}
-
-#bottom p
-{
-	font-size: 14px;
-	font-weight: bold;
+	font-size: 12px;
 	color: #fff;
 }
-
-/*#bottom > #view img
-{
-	height: 60px;
-	width: 100px;
-	border: 2px solid #f2f2f2;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;
-	-moz-box-shadow: #f2f2f2 0px 0px 5px;
-	box-shadow: #f2f2f2 0px 0px 5px;
-	margin: 5px 10px;	
-}*/
 
 #bottom > #fastlink
 {
 	width: 480px;
-	height: 200px;
+	height: 150px;
 	position: absolute;
 	left: 50px;
 }
-
-
 
 #bottom > #fastlink table
 {
@@ -324,7 +297,7 @@ li.subMenu > a:hover
 	text-decoration: none;
 }
 
-#bottom > #fastlink  a:hover
+#bottom > #fastlink a:hover
 {
 	color: #f64a32;
 }
@@ -335,15 +308,11 @@ li.subMenu > a:hover
 	margin-left: auto;
 	margin-right: auto;
 	width: 990px;
-	height: 30px;
-
-	bottom: 10px;
-}
-
-#bottom #footer p
-{
-	font-size: 10px;
-	font-weight: normal;
+	height: 40px;
+	bottom: 0px;
+	text-align: center;
+	line-height: 20px;
+	background: #5F8A49;
 }
 
 #body
@@ -422,36 +391,6 @@ ul.TextList li a > div
 	right: 0;
 }
 
-/*#sideBar #ywhgList
-{
-	display: block;
-	list-style: none;
-	margin: 10px 0 0 0;
-    padding: 0;
-}
-
-#sideBar #ywhgList li
-{
-	width: 280px;
-	line-height: 28px;
-	overflow:hidden;
-	white-space:nowrap;
-	text-overflow:ellipsis;
-	list-style:none inside url(../images/list.gif);
-}
-
-#sideBar #ywhgList li a
-{
-	color: #000;
-	text-decoration: none;
-}
-
-#sideBar #ywhgList li a:hover
-{
-	color: rgba(0, 0, 0, 0.5);
-}*/
-
-
 #categoryNavigationBar
 {
 	padding: 0;
@@ -493,7 +432,10 @@ ul.TextList li a > div
 
 hr
 {
-	border: 1px #fff solid;
+	color: #fff;
+	size: 1px;
+	padding: 0;
+	margin: 0;
 }
 
 
