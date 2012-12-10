@@ -69,14 +69,12 @@ sour.PostListView
 
 
 
-
-
 #postListToolbar #searchBar
 {
     position: absolute;
+    top: 40px;
     left: 0;
     right: 0;
-    top: 40px;
     height: 38px;
     background: url(images/search_bar_bg.png);
     border-top: 1px solid #858787;
@@ -84,9 +82,10 @@ sour.PostListView
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-#postListToolbar > #searchBar > #keywords
+#postListToolbar #searchBar #keywords
 {
     position: absolute;
+    width: 95%;
     top: 7px;
     left: 5px;
     right: 5px;

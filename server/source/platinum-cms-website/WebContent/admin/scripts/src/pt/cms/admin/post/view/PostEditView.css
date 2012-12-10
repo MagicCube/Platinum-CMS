@@ -82,6 +82,7 @@
 
 .PostEditView > #sideBar > dl
 {
+    position: relative;
     display: block;
     clear: both;
     list-style: none;
@@ -91,31 +92,33 @@
 
 .PostEditView > #sideBar > dl > dt
 {
+    position: absolute;
     display: block;
-    float: left;
-    width: 80px;
+    top: 0;
+    left: 0;
+    width: 70px;
     height: 32px;
-    line-height: 32px;
-    padding: 0;
-    padding-right: 8px;
     text-align: right;
+    line-height: 32px;
     color: #888;
     text-shadow: 0 1px #efefef;
 }
 
 .PostEditView > #sideBar > dl > dd
 {
+    position: relative;
     display: block;
-    float: left;
+    top: 0;
+    left: 90px;
+    width: 200px;
     height: 32px;
     line-height: 32px;
-    padding: 0;
-    padding-left: 10px;
     margin: 0;
 }
 
 .PostEditView > #sideBar > dl > dd > input, .PostEditView > #sideBar > dl > dd > select
 {
+    margin: 0;
     width: 150px;
 }
 
