@@ -38,6 +38,7 @@ pt.cms.admin.security.page.LoginPageController = function()
             animation = animation.animate({left: (i % 2 == 0 ? offset : -offset)}, duration);
         }
         animation.animate({ left: 0 }, duration, function(){
+            $("#loginPassword").focus();
             $("#loginPassword").select();
         });
     }
