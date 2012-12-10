@@ -3,7 +3,7 @@
 <div id="main">
     <div class="line_4">
      <div class="link_1">
-                  <div class="title" style="background-image:url(/static/tuanwei/images/tagg_bg.gif); background-repeat:repeat-x;margin-left:20px;width:95%; padding-bottom:10px;"><p style="background-image:url(/static/tuanwei/images/tag_bg.gif); background-repeat:no-repeat; height:37px; color:#000;">&nbsp;友情链接</p></div>
+                  <div class="title" style="background-image:url(/static/tuanwei/images/tagg_bg.gif); background-repeat:repeat-x;margin-left:20px;width:95%; padding-bottom:10px;"><p style="background-image:url(/static/tuanwei/images/tag_bg.gif);font-weight:bold; background-repeat:no-repeat; height:37px;line-height:30px;color:#000;">&nbsp;友情链接</p></div>
         <div class="div_link">
                           
 <div style="width:20px; padding-top:0px;padding-left:10px;padding-right:10px;float:left; text-align:center; margin-left:20px;">共青团组织</div>

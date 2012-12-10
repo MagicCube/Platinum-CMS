@@ -55,7 +55,7 @@
 			<!-- begin of block_home_slider -->
 			 <div class="block_home_slider" >
                     		<div id="home_slider" class="flexslider">
-                            	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000101" displayPhoto="true" count="4" />
+                            	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000197" displayPhoto="true" count="4" />
                             </div>                       
              </div>
 			<!-- end of block_home_slider-->

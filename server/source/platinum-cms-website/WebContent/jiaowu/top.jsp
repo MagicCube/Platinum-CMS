@@ -78,7 +78,7 @@
         </a>
       </li>
       <li class="end">
-        <a href="/jiaowu/more/">
+        <a href="/jiaowu/sc000000000000000000000000000186/more/">
           <span>联系我们</span>
         </a>
       </li>

@@ -5,7 +5,7 @@
 <div id = "bottom">
     
     <div id = "fastlink">
-        <p>部门链接</p>
+        <p></p>
             <table>
             <tbody><tr>
                 <td>
@@ -26,7 +26,7 @@
                  <td>
                     <a href="/zuzhi/">组织人事处</a>
                 </td>
-                <td><a href="/library/">图书馆</a></td>
+                <td><a href="/library/ff8081813b7439db013b743cc0620002.html">图书馆</a></td>
                 
             </tr> 
                   
@@ -43,7 +43,7 @@
             </tr>
             
             <tr>
-            	<td><a href="/technology/402881e93b60b9e7013b60bc1d8d0002.html">软件研发与培训中心</a></td>
+            	<td><a href="/ruanyan/">软件研发与培训中心</a></td>
            		<td>
                     <a href="/xiandai/">现代教育技术中心</a>
                 </td>
@@ -55,7 +55,7 @@
         </table>    
     </div>
     <div id="fastlink" style="left: 580px;">
-        <p>系部链接</p> 
+        <p></p> 
         <table>
             <tbody><tr>
                 <td>

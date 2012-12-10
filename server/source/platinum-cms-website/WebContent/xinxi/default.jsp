@@ -41,7 +41,7 @@
 							教学管理 </a></li>
 					<li><a href="/xinxi/sc000000000000000000000000000115/more/">
 							规章制度 </a></li>
-					<li><a href="/xinxi/sc000000000000000000000000000115/more/">
+					<li><a href="/xinxi/sc000000000000000000000000000181/more/">
 							学生工作 </a></li>
 					<li><a href="/xinxi/402881e73b5a7f4d013b5b16054f0002.html">
 							实验中心 </a></li>
@@ -57,7 +57,7 @@
 			<!-- begin of block_home_slider -->
 			 <div class="block_home_slider" >
                     		<div id="home_slider" class="flexslider">
-                            	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000113" displayPhoto="true" count="4" />
+                            	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000204" displayPhoto="true" count="4" />
                             </div>                       
              </div>
 			<!-- end of block_home_slider-->

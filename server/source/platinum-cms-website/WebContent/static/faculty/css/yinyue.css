@@ -1,30 +1,30 @@
 @charset "utf-8";
 /* CSS Document */
-#header > #logo_pic{background-color:#AA0055;}
-#header > #link_search{background-color:#AA0055;}
+#header > #logo_pic{background-color:#CA0A3B;}
+#header > #link_search{background-color:#CA0A3B;}
 /*网页侧边栏*/
 #side
-{background-color: #AA0055;}
+{background-color: #CA0A3B;}
 
 #side #school_link #first
-{background-color: #810844;}
+{background-color: #9d042b;}
 
 /*网页右侧内容*/
 #r_content #menu #menu_ul
-{background-color: #AA0055;}
+{background-color: #CA0A3B;}
 #r_content #menu #menu_ul #nav{padding-left:50px;}
-#r_content #menu #menu_ul #nav li a:hover{color: #AA0055;}
-.previous b:hover, .next b:hover{color: #AA0055;}
+#r_content #menu #menu_ul #nav li a:hover{color: #CA0A3B;}
+.previous b:hover, .next b:hover{color: #CA0A3B;}
 /*当前位置*/
-.CategoryNavigationBar a:hover{color:#AA0055;}
+.CategoryNavigationBar a:hover{color:#CA0A3B;}
 /*postlist*/
 #postList{margin-left:20px; height:auto;}
 /*新闻和公共*/
-#r_content #am .title, #r_content #new .title, #r_content #job .title{color: #AA0055;}
+#r_content #am .title, #r_content #new .title, #r_content #job .title{color: #CA0A3B;}
 #r_content .detail .content_li{background-image:url(../images/YinYue_news_dt.png);}
 #r_content .detail .current{background-image:url(../images/YinYue_news_dt.png);}
-#r_content .detail .current a:hover{color: #AA0055;}
+#r_content .detail .current a:hover{color: #CA0A3B;}
 #r_content .list_more a{color:#000;}
-#r_content .list_more a:hover{color: #AA0055;}
+#r_content .list_more a:hover{color: #CA0A3B;}
 /*页脚部分*/
-#footer{background-color: #AA0055;}
+#footer{background-color: #CA0A3B;}

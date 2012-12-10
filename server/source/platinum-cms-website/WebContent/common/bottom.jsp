@@ -44,12 +44,12 @@
             </tr>
             
             <tr>
-            	<td><a href="/technology/402881e93b60b9e7013b60bc1d8d0002.html">软件研发与培训中心</a></td>
+            	<td><a href="/technology/">软件研发与培训中心</a></td>
            		<td>
-                    <a href = "/xiandai/ff8081813b7439db013b7440a6a30005.html">现代教育技术中心</a>
+                    <a href = "/xiandai/">现代教育技术中心</a>
                 </td>
                 <td>
-                    <a href = "/tangshan/ff8081813b606afb013b6604411e009e.html">汤山校区综合管理办公室</a>
+                    <a href = "/tangshan/">汤山校区综合管理办公室</a>
                 </td> 	
 			</tr>
         </table>
@@ -101,9 +101,8 @@
     </div>
 
     <div id = "footer">
-    <hr/>
         <!--  <span style = "float: left; margin-left: 10px;">南京师范大学中北学院版权所有</span> <span style = "float: right; margin-right: 10px;">软件研发与培训中心&现代教育技术中心 开发、维护</span>-->
-   		<span style="float:left; margin-left: 10px;">南京师范大学中北学院版权所有</span> <span>www.nnuzc.cn</span> <span style="float:right; margin-right: 10px;">软件研发与培训中心&现代教育技术中心 开发、维护</span>
+   		<span style="float:left; margin-left: 10px;">南京师范大学中北学院版权所有</span><span><a href="/">www.nnuzc.cn</a></span> <span style="float:right; margin-right: 10px;"><a href="/ruanyan/">软件研发与培训中心</a>&<a href="/xiandai/">现代教育技术中心</a> 开发、维护</span>
     </div>
 </div>
 

@@ -32,7 +32,7 @@
 		<div id="menu">
 			<div id="menu_ul">
 				<ul id="nav">
-					<li><a href="/gongguan/ff8081813b46b724013b47022983001d.html">
+					<li><a href="/gongguan/ff8081813b791852013b79660c6c0002.html">
 							系科介绍 </a></li>
 					<li><a href="/gongguan/sc000000000000000000000000000133/more/">
 							学科建设 </a></li>
@@ -40,7 +40,7 @@
 							党团建设 </a></li>
 					<li><a href="/gongguan/sc000000000000000000000000000135/more/">
 							教学管理</a></li>
-					<li><a href="/gongguan/ssc000000000000000000000000000136/more/">
+					<li><a href="/gongguan/sc000000000000000000000000000136/more/">
 							规章制度 </a></li>
 					<li><a href="/gongguan/sc000000000000000000000000000137/more/">
 							学生工作</a></li>
@@ -55,7 +55,7 @@
 			<!-- begin of block_home_slider -->
 			 <div class="block_home_slider" >
                     		<div id="home_slider" class="flexslider">
-                            	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000139" displayPhoto="true" count="4" />
+                            	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000202" displayPhoto="true" count="4" />
                             </div>                       
              </div>
 			<!-- end of block_home_slider-->
@@ -66,9 +66,9 @@
 		<div id="am">
 			<div class="title">&nbsp;&raquo;&nbsp;&nbsp;公告通知</div>
 			<cms:PostList id="detail" cssClass="detail"
-				subcategoryId="sc000000000000000000000000000139" count="6"></cms:PostList>
+				subcategoryId="sc000000000000000000000000000140" count="6"></cms:PostList>
 			<div id="moer_list" class="list_more">
-				<a href="/gongguan/sc000000000000000000000000000139/more/">更多...</a>
+				<a href="/gongguan/sc000000000000000000000000000140/more/">更多...</a>
 			</div>
 		</div>
 
@@ -77,9 +77,9 @@
 		<div id="new">
 			<div class="title">&nbsp;&raquo;&nbsp;&nbsp;新闻动态</div>
 			<cms:PostList id="detail" cssClass="detail"
-				subcategoryId="sc000000000000000000000000000140" count="6"></cms:PostList>
+				subcategoryId="sc000000000000000000000000000139" count="6"></cms:PostList>
 			<div id="moer_list" class="list_more">
-				<a href="/gongguan/sc000000000000000000000000000140/more/">更多...</a>
+				<a href="/gongguan/sc000000000000000000000000000139/more/">更多...</a>
 			</div>
 		</div>
 		<!--新闻结束-->

@@ -11,10 +11,11 @@ html, body
 
 #header
 {
+	width: 990px;
+	margin: 0 auto;
 	height: 150px;
-	margin: 0;
 	padding: 0;
-	background: url(/static/xuegong/images/bk.gif);
+	background: url(/static/xuegong/images/logo.png) left 10% no-repeat #183442;
 }
 
 #box-top
@@ -169,7 +170,9 @@ menu#mainmenu li > a:hover
 
 #deplink_1
 {
-	height: 100px;
+	border-right:1px solid #fff;
+	margin:20px 0 5px 0;
+	height: 110px;
 	left: 60px;
 	position: absolute;
 	font-size: 12px;
@@ -189,7 +192,9 @@ menu#mainmenu li > a:hover
 
 #deplink_2 
 {
-	height: 140px;
+	border-right:1px solid #fff;
+	margin:20px 0 5px 0;
+	height: 110px;
 	left: 520px;
 	position: absolute;
 	font-size: 12px;
@@ -209,6 +214,7 @@ menu#mainmenu li > a:hover
 
 #system_link
 {
+		margin:20px 0 5px 0;
 	height: 140px;
 	left: 870px;
 	position: absolute;
@@ -234,7 +240,7 @@ menu#mainmenu li > a:hover
 	line-height: 25px;
 	font-size: 12px;
 	color: #fff;
-	top: 170px;
+	top: 145px;
 	border-top: 1px #fff solid;
 	width: 990px;
 }
@@ -328,4 +334,14 @@ table td a
 #postList #pageNavigationBar 
 {
 	margin-top:15px;
+}
+
+/*postlist省略号 与图标同行*/
+.PostList .current #title
+{
+	display:inline;
+	overflow: hidden;/*表示溢出的内容会被隐藏*/
+	-o-text-overflow: ellipsis;    /* for Opera */
+	text-overflow: ellipsis;        /* for IE *//*当文本溢出时显示…此时还必须定义：强制文本在一行内显示（white-space:nowrap）及溢出内容为隐藏（overflow:hidden）*/
+	white-space: nowrap;/*表示文本不会换行*/
 }

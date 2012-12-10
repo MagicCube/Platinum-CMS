@@ -27,7 +27,7 @@ a
 a img{ border:none	}
 
 
-body { background-color: #fff; background:url(/static/faculty/common/images/body_bg.png);}
+body { background-color: #fff;/* background:url(/static/faculty/common/images/body_bg.png);*/}
 
 /*网页主体*/
 #main
@@ -508,7 +508,7 @@ list-style:none;
 #more
 {
 	float: left;
-	width: 730px;
+	width: 755px;
 	min-height:545px;
 	margin-left: 19px;
 	border: #CCF solid 1px;
@@ -558,7 +558,7 @@ list-style:none;
 	margin:5px 5px 5px 5px;
 }
 /*摘要*/
-#summary{margin:10px;}
+#summary{margin:10px;padding:10px;}
 
 /*滚动新闻图片*/
 .block_home_slider {
@@ -589,4 +589,7 @@ line-height:20px;
 .block_home_slider .flex-control-paging {padding-top:8px;}
 
 /*more*/
-#postList li {max-width: 700px;}
+#postList li {max-width: 780px;}
+#more .PostList{padding-left:10px;}
+/**/
+.PostDetail #content{width:700px;text-align:center;}

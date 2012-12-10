@@ -27,7 +27,7 @@
                 <div id = "gongNews">
                 <span><img src = "/static/xuegong/images/gonggao.png"/></span>
           		<cms:PostList id = "ggtzlist" subcategoryId = "sc000000000000000000000000000028" count = "10"/>
-                <span style = "float: right; margin-top: 5px;"><a href = "/xuegong/more/">更多...</a></span>
+                <span style = "float: right; margin-top: 5px;"><a href = "/xuegong/sc000000000000000000000000000028/more/">更多...</a></span>
                 </div>
                 
                 
@@ -37,7 +37,7 @@
 			<!-- begin of block_home_slider -->
 			 <div class="block_home_slider" >
                     		<div id="home_slider" class="flexslider">
-                            	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000032" displayPhoto="true" count="4" />
+                            	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000206" displayPhoto="true" count="4" />
                             </div>                       
              </div>
 			<!-- end of block_home_slider-->
@@ -48,25 +48,25 @@
 			<div id = "textNews">
                 <span><img src = "/static/xuegong/images/gongshi.png"/></span>        		
         		<cms:PostList id = "gslmlist" subcategoryId = "sc000000000000000000000000000029" count = "10"/>         		
-				 <span style = "float: right; margin-top: 5px;"><a href = "/xuegong/more/">更多...</a></span>
+				 <span style = "float: right; margin-top: 5px;"><a href = "/xuegong/sc000000000000000000000000000029/more/">更多...</a></span>
 			</div>
 			
 			<div id = "informs">
 	        <span><img src = "/static/xuegong/images/xinwen.png"/></span>			
           		<cms:PostList id = "xwdtlist" subcategoryId = "sc000000000000000000000000000030" count = "10"/>   		
-				 <span style = "float: right; margin-top: 5px;"><a href = "/xuegong/more/">更多...</a></span>
+				 <span style = "float: right; margin-top: 5px;"><a href = "/xuegong/sc000000000000000000000000000030/more/">更多...</a></span>
 			</div>
 			
 			<div id = "teaching">
 			<span><img src = "/static/xuegong/images/xibu.png"/></span>
          		<cms:PostList id = "xbkxlist" subcategoryId = "sc000000000000000000000000000031" count = "10"/>         		
-				 <span style = "float: right; margin-top: 5px;"><a href = "/xuegong/more/">更多...</a></span>
+				 <span style = "float: right; margin-top: 5px;"><a href = "/xuegong/sc000000000000000000000000000031/more/">更多...</a></span>
 			</div>
               
             <div id = "email">
 			<span><img src = "/static/xuegong/images/zhuanti.png"/></span>          		
           		<cms:PostList id = "ztbdlist" subcategoryId = "sc000000000000000000000000000032" count = "10"/>        		        		
-            	 <span style = "float: right; margin-top: 5px;"><a href = "/xuegong/more/">更多...</a></span>
+            	 <span style = "float: right; margin-top: 5px;"><a href = "/xuegong/sc000000000000000000000000000032/more/">更多...</a></span>
             </div>
             
       </div>	

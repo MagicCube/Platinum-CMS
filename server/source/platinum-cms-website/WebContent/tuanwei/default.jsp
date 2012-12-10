@@ -64,7 +64,7 @@ a img{ border:none}
 			<!-- begin of block_home_slider -->
 			 <div class="block_home_slider">
                     		<div id="home_slider" class="flexslider">
-                            	<cms:PhotoSlide id="tsztList" cssClass="slides" categoryId="news" displayPhoto="true" count="4" />
+                            	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000143" displayPhoto="true" count="4" />
                             </div>                       
              </div>
 			<!-- end of block_home_slider-->
@@ -75,17 +75,11 @@ a img{ border:none}
 
         <div id="headline">
         <cms:PostList id = "twxwlist" subcategoryId="sc000000000000000000000000000143" displaySummary = "true" count="1" />
-         <!--
-          <h6 style="font-size:16px; text-align:center; width:70%;margin:0 auto; padding-bottom:10px;">江苏省委教育工委高校党建工作调研组一行来我校调研党建工作</h6>
-          <span>
-          <p style=" text-indent:2em; width:90%; margin:0 auto;">11月20日，以江苏大学党委书记范明为组长的江苏省委教育工委高校党建工作调研组一行六人莅临我校调研党建工作。学校在厚生楼241召开汇报会和座谈会，校党..</p>
-          </span>
-          -->
         </div>
         <div id="headline1">
          <cms:PostList id = "twxwlist" subcategoryId="sc000000000000000000000000000142" count="6" />
          <div class="more" >
-            <a href="/tuanwei/more/" target="_blank">
+            <a href="/tuanwei/sc000000000000000000000000000142/more/" target="_blank">
               	更多...
             </a>
           </div>
@@ -102,7 +96,7 @@ a img{ border:none}
         <p style="background-image:url(/static/tuanwei/images/tag_bg.gif); background-position:0px 0px;background-repeat:no-repeat; height:37px; color:#000; padding-left:4px;">&nbsp;团委通知</p></div>
          <cms:PostList id = "twtzlist" subcategoryId="sc000000000000000000000000000144" count="10" />
          <div class="more" >
-            <a href="/tuanwei/more/" target="_blank">
+            <a href="/tuanwei/sc000000000000000000000000000144/more/" target="_blank">
               	更多...
             </a>
           </div>
@@ -123,39 +117,39 @@ a img{ border:none}
       <div id="activities" >
                 <div class="title" style=" margin-left:5px;background-image:url(/static/tuanwei/images/tagg_bg.gif); background-repeat:repeat-x;width:95%;"><p style="background-image:url(/static/tuanwei/images/tag_bg.gif); background-repeat:no-repeat; height:37px; color:#000;">&nbsp;特色活动</p></div>
         <div style="text-align:center;">
-   
-   
+   			<cms:PostList id = "twtzlist" subcategoryId="sc000000000000000000000000000187" displayPhoto="true" count="6" />
+   <!-- 
           <li class="content_li" style="padding-top:10px;">
-            <a href="#" target="_blank">
+            <a href="/tuanwei/sc000000000000000000000000000187/" target="_blank">
               <img src="/static/tuanwei/images/a.png" width="175px" height="50px;"/>
             </a>
           </li>
           <li class="content_li">
-            <a href="#" target="_blank">
+            <a href="/tuanwei/sc000000000000000000000000000187/" target="_blank">
               <img src="/static/tuanwei/images/jinlinyuan.png" width="175px" height="50px;"/>
             </a>
           </li>
           <li class="content_li">
-            <a href="#" target="_blank">
+            <a href="/tuanwei/sc000000000000000000000000000187/" target="_blank">
               <img src="/static/tuanwei/images/sun.png" width="175px" height="50px;"/>
             </a>
           </li>
           <li class="content_li">
-            <a href="#" target="_blank">
+            <a href="/tuanwei/sc000000000000000000000000000187/" target="_blank">
               <img src="/static/tuanwei/images/deifenyuan.png" width="175px" height="50px;"/>
             </a>
           </li>
                     <li class="content_li">
-            <a href="#" target="_blank">
+            <a href="/tuanwei/sc000000000000000000000000000187/" target="_blank">
               <img src="/static/tuanwei/images/qingchenwang.png" width="175px" height="50px;"/>
             </a>
           </li>
           <li class="content_li">
-            <a href="#" target="_blank">
+            <a href="/tuanwei/sc000000000000000000000000000187/" target="_blank">
               <img src="/static/tuanwei/images/library.png" width="175px" height="50px;"/>
             </a>
           </li>
-
+ -->
         </div>
       </div>
       

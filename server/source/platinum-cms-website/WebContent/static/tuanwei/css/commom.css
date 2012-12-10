@@ -131,8 +131,8 @@ body { background:url(../images/bgsite.jpg) repeat-x center top #FAEDBC; }
 {
 	padding: 0;
 	margin: 0;
-	margin-left:40px;
-	width: 160px;
+	margin-left:55px;
+	width: 145px;
 	height: 22px;
 	background:url(../images/textField.png) no-repeat;
 }
@@ -166,11 +166,11 @@ body { background:url(../images/bgsite.jpg) repeat-x center top #FAEDBC; }
 
 #link_search #text
 {
-	width: 145px;
+	width: 135px;
 	height: 20px;
 	padding: 0;
 	margin-top:20px;
-	margin-left: 50px;
+	margin-left: 65px;
 }
 
 #link_search #text a
@@ -438,6 +438,13 @@ overflow: hidden;
 	padding-bottom:10px;
 	 
 }
+#more .PostList .current #title
+{
+	overflow: hidden;/*表示溢出的内容会被隐藏*/
+	-o-text-overflow: ellipsis;    /* for Opera */
+	text-overflow: ellipsis;        /* for IE *//*当文本溢出时显示…此时还必须定义：强制文本在一行内显示（white-space:nowrap）及溢出内容为隐藏（overflow:hidden）*/
+	white-space: nowrap;/*表示文本不会换行*/
+}
 #postList
 {
 
@@ -454,34 +461,16 @@ overflow: hidden;
 	margin-left: 50px;
 	width:800px;
 	line-height: 30px;
-	background-image:url(../images/list.gif);
+	/*background-image:url(../images/list.gif);*/
 	background-position: 0px center;
 	background-repeat: no-repeat;
-	overflow: hidden;/*表示溢出的内容会被隐藏*/
-	-o-text-overflow: ellipsis;    /* for Opera */
-	text-overflow: ellipsis;        /* for IE *//*当文本溢出时显示…此时还必须定义：强制文本在一行内显示（white-space:nowrap）及溢出内容为隐藏（overflow:hidden）*/
-	white-space: nowrap;/*表示文本不会换行*/
 }
-#postList .current span#title
-{
-	width:500px;
-		background-position: 0px center;
-	background-repeat: no-repeat;
-	overflow: hidden;/*表示溢出的内容会被隐藏*/
-	-o-text-overflow: ellipsis;    /* for Opera */
-	text-overflow: ellipsis;        /* for IE *//*当文本溢出时显示…此时还必须定义：强制文本在一行内显示（white-space:nowrap）及溢出内容为隐藏（overflow:hidden）*/
-	white-space: nowrap;/*表示文本不会换行*/
-	
-}
+
 #postList li a
 {
 	font-size: 13px;
 	color: #000;
 	width:500px;
-	overflow: hidden;/*表示溢出的内容会被隐藏*/
-	-o-text-overflow: ellipsis;    /* for Opera */
-	text-overflow: ellipsis;        /* for IE *//*当文本溢出时显示…此时还必须定义：强制文本在一行内显示（white-space:nowrap）及溢出内容为隐藏（overflow:hidden）*/
-	white-space: nowrap;/*表示文本不会换行*/
 }
 
 #postList li a:hover

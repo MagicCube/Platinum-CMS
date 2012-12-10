@@ -28,10 +28,10 @@ clientCache.setMaxAge(60);
 		<!-- left side -->
 		<div id = "left">
 			<!-- begin of block_home_slider -->
-			 <div class="block_home_slider">
-                    		<div id="home_slider" class="flexslider">
-                            	<cms:PhotoSlide id="tsztList" cssClass="slides" categoryId="news" displayPhoto="true" count="4" />
-                            </div>                       
+			<div class="block_home_slider">
+                    <div id="home_slider" class="flexslider">
+                          <cms:PhotoSlide id="tsztList" cssClass="slides" categoryId="news" displayPhoto="true" count="4" />
+                    </div>                       
              </div>
 			<!-- end of block_home_slider-->
 					
@@ -72,7 +72,7 @@ clientCache.setMaxAge(60);
 			</div> -->
 			
 			<div id = "inform">
-				<span id = "position_1"><img src = "static/home/images/inform.gif" alt = ""/></span>
+				<span id="position_1"><img src="static/home/images/inform.gif" alt = ""/></span>
 				<p id = "position_2"><a href = "/news/sc000000000000000000000000000008/more/">更多...</a></p>
 				<div id="part2" style="width:360px; margin: 0;">
 					<cms:PostList id="tzggList" cssClass="TextList" subcategoryId="sc000000000000000000000000000008" count="12" />				
@@ -80,7 +80,7 @@ clientCache.setMaxAge(60);
 			</div> 
 			
 			<div id = "fastPipe">
-				<span id = "position_1"><img src = "static/home/images/commonlink.gif" alt = ""/></span>
+				<span id="position_1"><img src="static/home/images/commonlink.gif" alt = ""/></span>
 				<div id="box_test">
 				<ul>
 					<li><a href="http://zbvip.njnu.edu.cn/">教工之家</a></li>

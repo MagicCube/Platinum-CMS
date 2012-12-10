@@ -31,7 +31,7 @@
       <div id="menu_ul">
         <ul id="nav">
           <li>
-            <a href="/meishu/ff8081813b46b724013b47022983001d.html">
+            <a href="/meishu/ff8081813b845ff6013b849d3a250014.html">
               系科介绍
             </a>
           </li>
@@ -76,13 +76,13 @@
         </ul>
       </div>
     </div>
-    <!--导航结束-->
+    <!--图片开始-->
     <div id="browsable">
        	<div id="box"> 	
 			<!-- begin of block_home_slider -->
 			 <div class="block_home_slider" >
                     		<div id="home_slider" class="flexslider">
-                            	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000081" displayPhoto="true" count="4" />
+                            	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000200" displayPhoto="true" count="4" />
                             </div>                       
              </div>
 			<!-- end of block_home_slider-->

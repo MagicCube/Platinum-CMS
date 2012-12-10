@@ -32,7 +32,7 @@
     <!--左侧边栏开始-->
    <div id="side">
     <ul id="xibu_link">
-      <li class="xibu"><img src="/static/faculty/images/JingGuan_nav_link_first.png" width="4" height="7" />
+      <li class="xibu"><img src="/static/faculty/images/nav_link_first.png" width="4" height="7" />
         <a href="/jingguan/">
           首页
         </a>
@@ -104,7 +104,8 @@
 					<option value = "#" selected>部门站点</option>
 					<option value="/yuanzhang/ff8081813b606afb013b66088ff500a7.html">院长办公室（党委办公室）</option>
 					<option value="/jiaowu/">教务处</option>
-					<option value="/tuanwei/">学生工作处(部)团委</option>
+					<option value="/tuanwei/">团委</option>
+					<option value="/xuegong/">学生工作处(部)</option>
 					<option value="/caiwu/">财务处</option>
 					<option value="/zuzhi/">组织人事处</option>
 					<option value="/houqin/ff8081813b606afb013b660cef4700aa.html">后勤保卫处</option>

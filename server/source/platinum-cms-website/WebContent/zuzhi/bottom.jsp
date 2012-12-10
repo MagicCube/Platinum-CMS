@@ -6,7 +6,6 @@
 	 <div id = "footer_box">
 	 
 		<div id = "deplink_1">
-		 <p>部门链接</p>
             <table>
 <tr>
                 <td>
@@ -27,7 +26,7 @@
                  <td>
                     <a href="/zuzhi/">组织人事处</a>
                 </td>
-                <td><a href="/library/">图书馆</a></td>
+                <td><a href="/library/ff8081813b7439db013b743cc0620002.html">图书馆</a></td>
                 
             </tr> 
                   
@@ -44,7 +43,7 @@
             </tr>
             
             <tr>
-            	<td><a href="/technology/402881e93b60b9e7013b60bc1d8d0002.html">软件研发与培训中心</a></td>
+            	<td><a href="/ruanyan/">软件研发与培训中心</a></td>
            		<td>
                     <a href="/xiandai/">现代教育技术中心</a>
                 </td>
@@ -55,7 +54,6 @@
 		</div>
 		
 		<div id = "deplink_2">
-			 <p>系部链接</p>
 			<table >
            <tr>
                 <td>
@@ -96,7 +94,6 @@
 		</div>   
 		     
         <div id = "system_link">
-			<p id = "sj">常用系统</p>
 			<table>
 				<tr>
 					<td><a href = "#">人才招聘系统</a></td>

@@ -53,7 +53,7 @@ ul { list-style: none; }
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0;
-	background-color: #5F8A49;
+	background-color: #013c36;
 }
 
 #header > #_logo
@@ -176,9 +176,9 @@ ul { list-style: none; }
 /*--------------------------- VISUAL ----------------------------*/
 /* -------- All levels -------- */
 #ja-mainnavwrap {
-	border-top: 1px solid #3F6B28;
-	border-bottom: 1px solid #3F6B28;
-	background: #5F8A49;
+	border-top: 1px solid #032B26;
+	border-bottom: 1px solid #032B26;
+	background: #013c36;
 }
 #ja-mainnav ul, #ja-mainnav li {
 	background-images: none;
@@ -188,14 +188,14 @@ ul { list-style: none; }
 
 /* -------- Top level -------- */
 #ja-mainnav > ul {
-	background-color: #5F8A49;
+	background-color: #013c36;
 	padding-left: 20px;
 }
 
 #ja-mainnav > ul > li {
 	background-color: #444444;
-	border-left: 1px solid #7BA566;
-	border-right: 1px solid #3F6B28;
+	border-left: 1px solid #074E47;
+	border-right: 1px solid #001F1C;
 	margin-right: 1px;
 }
 
@@ -234,7 +234,7 @@ ul { list-style: none; }
 	position: relative;
 	list-style: none;
 }
-#ja-mainnav ul.menu .end a{border-right: 1px solid #7BA566;}
+#ja-mainnav ul.menu .end a{border-right: 1px solid #074E47;}
 
 
 /* STYLING THE MENU
@@ -243,8 +243,8 @@ ul { list-style: none; }
 #ja-mainnav ul.menu li a {
 	margin: 0;
 	padding: 10px 20px;
-	border-left: 1px solid #7BA566;
-	border-right: 1px solid #3F6B28;
+	border-left: 1px solid #035C53;
+	border-right: 1px solid #032B26;
 	display: block;
 	color: #CCCCCC;
 	font-weight: bold;
@@ -255,7 +255,7 @@ ul { list-style: none; }
 #ja-mainnav ul.menu li a:hover,
 #ja-mainnav ul.menu li a:active,
 #ja-mainnav ul.menu li a:focus {
-	background: url(/static/jiaowu/images/hover.png) no-repeat bottom center #3F6B28;
+	background: url(/static/jiaowu/images/hover.png) no-repeat bottom center #032B26;
 	color: #FFFFFF;
 }
 
@@ -356,10 +356,10 @@ ul { list-style: none; }
 #bottom
 {
 	width: 990px;
-	height: 200px;
+	height: 150px;
 	margin-left: auto;
 	margin-right: auto; 
-	background:#5F8A49;
+	background:#013c36;
 	position: relative;
 }
 
@@ -394,9 +394,11 @@ ul { list-style: none; }
 
 #bottom > #fastlink
 {
-	padding:15px;
+	border-right:1px solid #fff;
+	padding:0;
+	margin-top:10px;
 	width: 480px;
-	height: 200px;
+	height: 100px;
 	position: absolute;
 	left: 50px;
 }
@@ -439,7 +441,7 @@ ul { list-style: none; }
 	margin-right: auto;
 	width: 990px;
 	height: 30px;
-	border: 1px solid #fff;
+	border-top: 1px solid #fff;
 	bottom: 0;
 }
 

@@ -13,52 +13,17 @@
 	height: 620px;
 }
 
-ul.TextList
-{
-	display: block;
-	margin: 10px 0 0 10px;
-    padding: 0;
-	list-style:none inside url(/static/zuzhi/images/list.png);
-}
-
-ul.TextList li
-{
-    line-height: 20px;
-    margin: 0 0 10px 0;
-    padding:　0;      
-    margin-left: 5px;
-    white-space:nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
-}
-
-ul.TextList li a
-{
-	text-decoration: none;
-	color: rgba(0, 0, 0, 0.8);
-}
-
-ul.TextList li a:hover
-{
-	color: rgba(0, 0, 0, 0.4);
-}
-
-ul.TextList li a > div
-{
-	display: inline;
-}
-
 
 #maincontent > #inform
 {
 	position: absolute;
-	width: 258px;
+	width: 300px;
 	height: 300px;
 	top: 15px;
-	left: 18px;
+	left: 0px;
 }
 
-/*#maincontent > #inform ul
+#maincontent > #inform ul
 {
 	margin:10px 0 0 0;
 	padding:0;
@@ -70,13 +35,13 @@ ul.TextList li a > div
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 258px;			
+	width: 300px;			/*已修改过*/
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
-}*/
+}
 
 #maincontent a
 {
@@ -94,7 +59,7 @@ ul.TextList li a > div
 	position: absolute;
 	padding: 0;
 	top: 10px;
-	left: 305px;
+	left: 300px;
 	width: 380px;
 	height: 300px;
 	background: url(/static/zuzhi/images/Board_person_1.jpg) no-repeat;
@@ -207,9 +172,9 @@ ul.TextList li a > div
 	position: absolute;
 	padding: 0;
 	top: 15px;
-	width: 258px;
+	width: 300px;
 	height: 300px;
-	left: 715px;
+	left: 690px;
 }
 
 #maincontent > #activity ul
@@ -220,50 +185,49 @@ ul.TextList li a > div
 	list-style-position:inside;
 }
 
-/*#maincontent > #activity ul li
+#maincontent > #activity ul li
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 258px;			
+	width: 300px;			/*已修改过*/
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
-}*/
+}
 
 #maincontent > #box-bottom
 {
 	position: absolute;
 	padding: 0;
 	top: 300px;
-	width: 957px;
+	width: 990px;
 	height: 375px;
-	left: 15px;
+	left: 0px;
 	background: url(/static/zuzhi/images/Board_person_box.gif) no-repeat;
 }
 
 #box-bottom > #boxContent
 {
-	width: 920px;
+	width: 990px;
 	height: 339px;
 	margin-top: 18px;
-	matgin-left: 18px;
 	position: relative;
 	margin: 0;
 }
 
 #box-bottom > #boxContent > #policy
 {
-	width: 290px;
+	width: 300px;
 	height: 300px;
 	position: absolute;
 	top: 25px;
-	left: 20px;
+	left: 0px;
 	margin: 0;
 }
 
-/*#box-bottom  > #boxContent > #policy ul
+#box-bottom  > #boxContent > #policy ul
 {
 	margin:10px 0 0 0;
 	padding:0;
@@ -275,25 +239,25 @@ ul.TextList li a > div
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 258px;			
+	width: 300px;			/*已修改过*/
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
-}*/
+}
 
 #box-bottom  > #boxContent > #download
 {
-	width: 290px;
+	width: 300px;
 	height: 300px;
 	position: absolute;
 	top: 25px;
-	left: 330px;
+	left: 345px;
 	margin: 0;
 }
 
-/*#box-bottom  > #boxContent > #download ul
+#box-bottom  > #boxContent > #download ul
 {
 	margin:10px 0 0 0;
 	padding:0;
@@ -305,25 +269,25 @@ ul.TextList li a > div
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 258px;			
+	width: 300px;			/*已修改过*/
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
-}*/
+}
 
 #box-bottom  > #boxContent > #outline
 {
-	width: 290px;
+	width: 300px;
 	height: 300px;
 	position: absolute;
 	top: 25px;
-	left: 640px;
+	left: 690px;
 	margin: 0;
 }
 
-/*#box-bottom  > #boxContent > #outline ul
+#box-bottom  > #boxContent > #outline ul
 {
 	margin:10px 0 0 0;
 	padding:0;
@@ -335,16 +299,17 @@ ul.TextList li a > div
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 258px;			
+	width: 300px;			/*已修改过*/
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 }
-*/
+
 #nice
 {
+	margin-top:10px;
 	float: right;
 }
 
@@ -378,6 +343,7 @@ position: relative;
 height: 250px;
 over-flow: hidden;
 }
+.block_home_slider .slide img{width:380px;height:250px;}
 .block_home_slider .caption p.title {
 width:380px;
 overflow:hidden;
