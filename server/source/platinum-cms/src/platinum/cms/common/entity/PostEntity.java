@@ -1,5 +1,7 @@
 package platinum.cms.common.entity;
 
+import java.util.List;
+
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -8,7 +10,9 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.OrderBy;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
@@ -196,5 +200,19 @@ public class PostEntity extends StandardEntity
 	public String getAbsoluteLink()
 	{
 		return URLResolver.getAbsolutePostlink(getId(), getCategoryId());
+	}
+	
+	
+	
+	private List<PostAttachmentEntity> _attachments = null;
+	@OneToMany(mappedBy = "post", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@OrderBy("CREATE_TIME")
+	public List<PostAttachmentEntity> getAttachments()
+	{
+		return _attachments;
+	}
+	public void setAttachments(List<PostAttachmentEntity> value)
+	{
+		_attachments = value;
 	}
 }

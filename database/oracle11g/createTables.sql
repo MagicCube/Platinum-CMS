@@ -1,6 +1,6 @@
 ﻿/*==============================================================*/
 /* DBMS name:      ORACLE Version 11g                           */
-/* Created on:     2012/11/23 13:41:42                          */
+/* Created on:     2012/12/10 14:31:30                          */
 /*==============================================================*/
 
 
@@ -19,6 +19,10 @@ drop index "Relationship_7_FK";
 drop index PT_CMS.FK_CATEGORY_2_POST_FK;
 
 drop table PT_CMS.PTT_POST cascade constraints;
+
+drop index PT_CMS.FK_POST_2_ATTACHMENT_FK;
+
+drop table PT_CMS.PTT_POST_ATTACHMENT cascade constraints;
 
 drop table PT_CMS.PTT_POST_CONTENT cascade constraints;
 
@@ -117,6 +121,28 @@ create index "Relationship_7_FK" on PT_CMS.PTT_POST (
 /*==============================================================*/
 create index "Relationship_8_FK" on PT_CMS.PTT_POST (
    SUBCATEGORY_ID ASC
+);
+
+/*==============================================================*/
+/* Table: PTT_POST_ATTACHMENT                                   */
+/*==============================================================*/
+create table PT_CMS.PTT_POST_ATTACHMENT 
+(
+   ID                   NVARCHAR2(32)        not null,
+   POST_ID              VARCHAR2(32),
+   FILE_NAME            NVARCHAR2(128)       not null,
+   FILE_SIZE            INTEGER              not null,
+   RELATIVE_PATH        NVARCHAR2(256)       not null,
+   CREATE_TIME          TIMESTAMP            default sysdate not null,
+   UPDATE_TIME          TIMESTAMP            default sysdate not null,
+   constraint PK_PTT_POST_ATTACHMENT primary key (ID)
+);
+
+/*==============================================================*/
+/* Index: FK_POST_2_ATTACHMENT_FK                               */
+/*==============================================================*/
+create index PT_CMS.FK_POST_2_ATTACHMENT_FK on PT_CMS.PTT_POST_ATTACHMENT (
+   POST_ID ASC
 );
 
 /*==============================================================*/
