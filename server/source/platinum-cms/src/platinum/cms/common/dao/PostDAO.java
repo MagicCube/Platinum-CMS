@@ -1,14 +1,18 @@
 package platinum.cms.common.dao;
 
+import java.io.File;
 import java.util.Date;
+import java.util.List;
 
 import org.hibernate.Session;
 
+import platinum.cms.admin.web.rest.UploadResource;
 import platinum.cms.common.entity.PostAttachmentEntity;
 import platinum.cms.common.entity.PostContentEntity;
 import platinum.cms.common.entity.PostEntity;
 import platinum.cms.common.entity.PostViewsEntity;
 import platinum.cms.common.search.PostSearchEngine;
+import platinum.common.PTEnvironment;
 import platinum.framework.dao.StandardEntityDAO;
 
 public class PostDAO extends StandardEntityDAO<PostEntity>
@@ -87,9 +91,26 @@ public class PostDAO extends StandardEntityDAO<PostEntity>
 	public void deletePostAttachment(String p_attachmentId)
 	{
 		PostAttachmentEntity attachment = (PostAttachmentEntity)getSession().get(PostAttachmentEntity.class, p_attachmentId);
-		if (attachment != null)
+		deletePostAttachment(attachment);
+	}
+	
+	public void deletePostAttachment(PostAttachmentEntity p_attachment)
+	{
+		if (p_attachment != null)
 		{
-			getSession().delete(attachment);
+			getSession().delete(p_attachment);
+			File file = PTEnvironment.getSharedFile(p_attachment.getRelativePath());
+			if (file.exists())
+			{
+				try
+				{
+					file.delete();
+				}
+				catch (Exception e)
+				{
+					
+				}
+			}
 		}
 	}
 	
@@ -108,6 +129,13 @@ public class PostDAO extends StandardEntityDAO<PostEntity>
 		{
 			getSession().delete(p_entity.getViews());
 		}
+		
+		List<PostAttachmentEntity> attachments = p_entity.getAttachments();
+		for (PostAttachmentEntity attachment : attachments)
+		{
+			deletePostAttachment(attachment);
+		}
+		
 		PostSearchEngine.getInstance().deleteIndex(p_entity.getId());
 	}
 }
