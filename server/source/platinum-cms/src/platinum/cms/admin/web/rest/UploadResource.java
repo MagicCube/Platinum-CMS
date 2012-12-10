@@ -32,6 +32,7 @@ public class UploadResource extends AbstractResource
 	@Path("image")
 	@Consumes(MediaType.MULTIPART_FORM_DATA)
 	public Response uploadImage(
+			@FormDataParam("postId") String p_postId,
 			@FormDataParam("file") InputStream p_inputStream,
 			@FormDataParam("file") FormDataContentDisposition p_fileDisposition)
 	{
@@ -59,6 +60,7 @@ public class UploadResource extends AbstractResource
 	@Path("attachment")
 	@Consumes(MediaType.MULTIPART_FORM_DATA)
 	public Response uploadAttachment(
+			@FormDataParam("postId") String p_postId,
 			@FormDataParam("file") InputStream p_inputStream,
 			@FormDataParam("file") FormDataContentDisposition p_fileDisposition)
 	{
