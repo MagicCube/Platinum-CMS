@@ -323,7 +323,7 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 							} else {
 								swfuploadify.cancelUpload($(this).attr('id'));
 							}
-							$(this).find('.data').removeClass('data').html(' - Cancelled');
+							$(this).find('.data').removeClass('data').html(' - 取消');
 							$(this).find('.uploadify-progress-bar').remove();
 							$(this).delay(1000 + 100 * delay).fadeOut(500, function() {
 								$(this).remove();
@@ -336,7 +336,7 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 					} else {
 						for (var n = 0; n < args.length; n++) {
 							swfuploadify.cancelUpload(args[n]);
-							$('#' + args[n]).find('.data').removeClass('data').html(' - Cancelled');
+							$('#' + args[n]).find('.data').removeClass('data').html(' - 取消');
 							$('#' + args[n]).find('.uploadify-progress-bar').remove();
 							$('#' + args[n]).delay(1000 + 100 * n).fadeOut(500, function() {
 								$(this).remove();
@@ -347,7 +347,7 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 					var item = $('#' + settings.queueID).find('.uploadify-queue-item').get(0);
 					$item = $(item);
 					swfuploadify.cancelUpload($item.attr('id'));
-					$item.find('.data').removeClass('data').html(' - Cancelled');
+					$item.find('.data').removeClass('data').html(' - 取消');
 					$item.find('.uploadify-progress-bar').remove();
 					$item.delay(1000).fadeOut(500, function() {
 						$(this).remove();
@@ -943,7 +943,7 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 
 			// Call the default event handler
 			if ($.inArray('onUploadSuccess', settings.overrideEvents) < 0) {
-				$('#' + file.id).find('.data').html(' - Complete');
+				$('#' + file.id).find('.data').html(' - 完成');
 			}
 
 			// Call the user-defined event handler

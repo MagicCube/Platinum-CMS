@@ -6,7 +6,6 @@ import java.util.List;
 
 import org.hibernate.Session;
 
-import platinum.cms.admin.web.rest.UploadResource;
 import platinum.cms.common.entity.PostAttachmentEntity;
 import platinum.cms.common.entity.PostContentEntity;
 import platinum.cms.common.entity.PostEntity;

@@ -15,8 +15,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import platinum.common.PTEnvironment;
-import platinum.common.util.GUIDUtil;
 import platinum.common.util.ImageUtil;
+import platinum.common.util.StringUtil;
 import platinum.framework.web.rest.AbstractResource;
 
 import com.sun.jersey.core.header.FormDataContentDisposition;
@@ -36,23 +36,31 @@ public class UploadResource extends AbstractResource
 			@FormDataParam("file") InputStream p_inputStream,
 			@FormDataParam("file") FormDataContentDisposition p_fileDisposition)
 	{
+		if (StringUtil.isNullOrEmpty(p_postId))
+		{
+			return responseWithException("缺少 postId 参数。");
+		}
+		
 		String fileName = p_fileDisposition.getFileName().toLowerCase();
 		String ext = fileName.substring(fileName.lastIndexOf('.') + 1);
 		if (!_checkExtension(ext, "images"))
 		{
-			return responseWithHTML("<div id='result' class='error'>不合法的图片扩展名。</div>");
+			return responseWithException("不合法的图片扩展名。");
 		}
 		
 		try
 		{
-			String relativePath = _uploadFile(p_inputStream, "images", ext);
+			String relativePath = _uploadFile(p_inputStream, "images", p_postId, fileName);
 			String localPath = PTEnvironment.getSharedPath(relativePath);
-			ImageUtil.resize(localPath, 580, 720);
-			return responseWithHTML("<div id='result'>" + relativePath + "</div>");
+			if (localPath.endsWith(".jpg"))
+			{
+				ImageUtil.resize(localPath, 580, 720);
+			}
+			return responseWithText(relativePath);
 		}
 		catch (Exception e)
 		{
-			return responseWithHTML("<div id='result' class='error'>无法读取上传的内容。</div>");
+			return responseWithException("无法读取上传的内容。");
 		}
 	}
 
@@ -68,27 +76,31 @@ public class UploadResource extends AbstractResource
 		String ext = fileName.substring(fileName.lastIndexOf('.') + 1);
 		if (!_checkExtension(ext, "attachments"))
 		{
-			return responseWithHTML("<div id='result' class='error'>不合法的文件扩展名（只支持 png、jpg、gif 等格式）。</div>");
+			return responseWithException("不合法的文件扩展名。");
 		}
 		
 		try
 		{
-			String relativePath = _uploadFile(p_inputStream, "attachments", ext);
-			return responseWithHTML("<div id='result'>" + relativePath + "</div>");
+			String relativePath = _uploadFile(p_inputStream, "attachments", p_postId, fileName);
+			return responseWithText(relativePath);
 		}
 		catch (Exception e)
 		{
-			return responseWithHTML("<div id='result' class='error'>无法读取上传的内容。</div>");
+			return responseWithException("无法读取上传的内容。");
 		}
 	}
 
 	private String _uploadFile(InputStream p_inputStream,
-			String p_folderName, String p_fileExtension) throws IOException
+			String p_folderName, String p_postId, String p_fileName) throws IOException
 	{
-		String fileName = GUIDUtil.newGuid() + "." + p_fileExtension;
-		String relativePath = "/uploads/" + p_folderName + "/" + fileName;
-		String localPath = PTEnvironment.getSharedPath(relativePath);
-		File localFile = new File(localPath);
+		String folderPath = "/uploads/" + p_postId + "/" + p_folderName;
+		File folder = new File(PTEnvironment.getSharedPath(folderPath));
+		if (!folder.exists())
+		{
+			folder.mkdirs();
+		}
+		
+		File localFile = new File(folder, p_fileName);
 		
 		OutputStream outputStream = new FileOutputStream(localFile);
 		int length = 0;
@@ -100,7 +112,7 @@ public class UploadResource extends AbstractResource
 		outputStream.flush();
 		outputStream.close();
 
-		return relativePath;
+		return folderPath + "/" + p_fileName;
 	}
 	
 
@@ -122,6 +134,9 @@ public class UploadResource extends AbstractResource
 			if (ATTACHMENT_EXTENSION_LIST == null)
 			{
 				ATTACHMENT_EXTENSION_LIST = new ArrayList<String>();
+				ATTACHMENT_EXTENSION_LIST.add("jpg");
+				ATTACHMENT_EXTENSION_LIST.add("png");
+				ATTACHMENT_EXTENSION_LIST.add("gif");
 				ATTACHMENT_EXTENSION_LIST.add("pdf");
 				ATTACHMENT_EXTENSION_LIST.add("zip");
 				ATTACHMENT_EXTENSION_LIST.add("rar");

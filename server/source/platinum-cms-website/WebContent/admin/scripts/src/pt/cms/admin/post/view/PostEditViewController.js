@@ -2,6 +2,8 @@ $ns("pt.cms.admin.post.view");
 
 $include("~/scripts/lib/cleditor/jquery.cleditor.js");
 $include("~/scripts/lib/cleditor/jquery.cleditor.css");
+$include("~/scripts/lib/uploadify/jquery.uploadify.js");
+$include("~/scripts/lib/uploadify/uploadify.css");
 
 $include("$/pt/cms/admin/post/view/PostEditView.css");
 
@@ -32,6 +34,8 @@ pt.cms.admin.post.view.PostEditViewController = function()
     me.$publisher = null;
     me.$createTime = null;
     me.$updateTime = null;
+    me.$uploadAttachmentButton = null;
+    me.$uploadImageButton = null;
     
     
     base.viewDidLoad = me.viewDidLoad;
@@ -44,69 +48,50 @@ pt.cms.admin.post.view.PostEditViewController = function()
         _initView();
         
         me.toolbar = new pt.cms.admin.common.view.Toolbar();
-        me.toolbar.addButton("savePost", "保存").addClass("default").click(_btnSave_onclick);
         me.toolbar.addButton("cancel", "返回").addClass("yellow").click(_btnCancel_onclick);
+        me.toolbar.addButton("savePost", "保存").addClass("green").addClass("default").css("marginRight", 25).click(_btnSave_onclick);
+        me.toolbar.$element.append("<div id='upload' style='display:none;'><input type='file' name='file' id='uploadImage'/> <input type='file' name='file' id='uploadAttachment'/></div>");
         me.toolbars = [me.toolbar];
         
-        _initImageUploader();        
+        setTimeout(function(){
+            me.$uploadImageButton = me.toolbar.$element.find("#uploadImage"); 
+            me.$uploadImageButton.uploadify({
+                "uploader"          : "/api/0/admin/upload/image",
+                "swf"               : $mappath("~/scripts/lib/uploadify/uploadify.swf"),
+                "fileObjName"       : "file",
+                "fileTypeExts"      : "*.jpg; *.png; *.gif",
+                "fileTypeDesc"      : "所有图片",
+                "buttonText"        : "上传图片",
+                "height"            : 26,
+                "onDialogOpen"      : function()
+                {
+                    me.$uploadImageButton.uploadify("settings", "formData", { postId: me.data.id });
+                },
+                "onUploadSuccess"   : function(p_file, p_data, p_response)
+                {
+                    me.contentEditor.execCommand("insertimage", p_data, null, null);
+                }
+            });
+            
+            me.$uploadAttachmentButton = me.toolbar.$element.find("#uploadAttachment");
+            me.$uploadAttachmentButton.uploadify({
+                "uploader"      : "/api/0/admin/upload/attachment",
+                "swf"           : $mappath("~/scripts/lib/uploadify/uploadify.swf"),
+                "fileObjName"   : "file",
+                "buttonText"    : "上传附件",
+                "fileTypeDesc"  : "所有文件",
+                "height"        : 26,
+                "onDialogOpen"      : function()
+                {
+                    me.$uploadAttachmentButton.uploadify("settings", "formData", { postId: me.data.id });
+                },
+                "onUploadSuccess"   : function(p_file, p_data, p_response)
+                {
+                    alert(p_data);
+                }
+            });
+        }, 1);
     };
-    
-    function _initImageUploader()
-    {
-        $.cleditor.buttons.image2 = {
-            name: 'image2',
-            title: '上传本地图片',
-            stripIndex: $.cleditor.buttons.image.stripIndex,
-            command: 'insertimage',
-            popupName: 'image2',
-            popupClass: 'cleditorPrompt',
-            popupContent: "<iframe name='uploadFrame' style='display:none'></iframe><form id='uploadForm' target='uploadFrame' action='/api/0/admin/upload/image' method='post' enctype='multipart/form-data' style='display:none'><input type='file' name='file' id='uploadButton'/></form>",
-            buttonClick: _insertImage_onclick
-        };
-
-        function _insertImage_onclick(e, data)
-        {
-            var editor = data.editor;
-            editor.hidePopups();
-            editor.focus();
-            
-            var $popup = $(data.popup);
-            $uploadFrame = $popup.find("iframe");
-            $uploadForm = $popup.find("form");
-            $uploadForm.html("<input type='file' name='file' id='uploadButton' style='width:0;height:0'>");
-            $uploadControl= $popup.find("input");
-            
-            $uploadFrame.one("load", function(e)
-            {
-                var div = $uploadFrame.get(0).contentWindow.document.getElementById("result");
-                var message = div.innerHTML;
-                if (div.className != "error")
-                {
-                    editor.execCommand(data.command, message, null, data.button);
-                    if (me.$photoURL.val() == "")
-                    {
-                        if (confirm("是否要将刚才上传的图片设置为封面图片？\r\n提示：您也可以在上传后，将图片直接拖拽到右侧信息栏的“封面图片”文本框中设置。"))
-                        {
-                            me.$photoURL.val(message);
-                        }
-                    }
-                }
-                else
-                {
-                    alert("上传图片失败。" + message);
-                }
-            });
-            
-            $uploadControl.one("change", function(){
-                if ($uploadControl.val() != "")
-                {
-                    $uploadForm.get(0).submit();
-                }
-            });
-            
-            $uploadControl.click();
-        }
-    }
     
     function _initView()
     {
@@ -250,10 +235,12 @@ pt.cms.admin.post.view.PostEditViewController = function()
         if (me.data.id != null)
         {
             me.$id.val(me.data.id);
+            me.toolbar.$element.find("#upload").css("display", "inline-block");
         }
         else
         {
             me.$id.val("");
+            me.toolbar.$element.find("#upload").css("display", "none");
         }            
         me.$title.val(me.data.title);
         me.$title.blur();
@@ -311,7 +298,6 @@ pt.cms.admin.post.view.PostEditViewController = function()
         if (me.contentEditor == null)
         {
             me.contentEditor = me.$content.cleditor({
-                controls: $.cleditor.defaultOptions.controls.replace("image","image2"),
                 width: "100%",
                 height: "100%"
             })[0];
@@ -319,6 +305,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
 
         me.contentEditor.updateFrame();
         me.contentEditor.refresh();
+        me.contentEditor.focus();
     };
     
     me.savePost = function()
@@ -465,6 +452,17 @@ pt.cms.admin.post.view.PostEditViewController = function()
     function _btnCancel_onclick(e)
     {
         $pageController.popViewController();
+    }
+    
+    
+    function _btnUploadImage_onclick(e)
+    {
+        
+    }
+    
+    function _btnUploadAttachment_onclick(e)
+    {
+        
     }
     
     return me.endOfClass(arguments);

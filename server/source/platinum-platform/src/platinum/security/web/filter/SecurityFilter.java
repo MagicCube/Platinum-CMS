@@ -44,7 +44,7 @@ public class SecurityFilter implements Filter
 					!file.endsWith(".jpg") &&
 					!file.endsWith(".png"))
 			{
-				if (path.equals(_loginPath))
+				if (path.equals(_loginPath) || path.indexOf("/api/0/admin/upload") != -1)
 				{
 					// Login 页面
 					p_chain.doFilter(request, p_response);

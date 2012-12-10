@@ -412,7 +412,7 @@
 
           // Check for selection before showing the link url popup
           if (buttonName == "link" && selectedText(editor) === "") {
-            showMessage(editor, "A selection is required when inserting a link.", buttonDiv);
+            showMessage(editor, "请先选择一段文字，然后再点击“插入超链接”", buttonDiv);
             return false;
           }
 
@@ -635,13 +635,13 @@
 
     // URL
     else if (popupName == "url") {
-      $popup.html('Enter URL:<br><input type=text value="http://" size=35><br><input type=button value="Submit">');
+      $popup.html('输入网址:<br><input type=text value="http://" size=35><br><input type=button value="提交">');
       popupTypeClass = PROMPT_CLASS;
     }
 
     // Paste as Text
     else if (popupName == "pastetext") {
-      $popup.html('Paste your content here and click submit.<br /><textarea cols=40 rows=3></textarea><br /><input type=button value=Submit>');
+      $popup.html('请在此处粘贴:<br /><textarea cols=40 rows=3></textarea><br /><input type=button value=提交>');
       popupTypeClass = PROMPT_CLASS;
     }
 

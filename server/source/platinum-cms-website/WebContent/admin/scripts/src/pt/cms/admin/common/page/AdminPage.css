@@ -45,6 +45,13 @@ button.red
     border: 1px solid #B0281A;
 }
 
+button.green
+{
+    background-color: #09A05D;
+    background-image: -webkit-linear-gradient(top,#11bd6e,#11995D);
+    border: 1px solid #11995D;
+}
+
 button.yellow
 {
     color: gray;
