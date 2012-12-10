@@ -16,6 +16,8 @@ pt.cms.admin.post.view.PostEditViewController = function()
     me.contentEditor = null;
     me.restClient = null;
     
+    me.$main = null;
+    
     me.$id = null;
     me.$title = null;
     me.$summary = null;
@@ -109,6 +111,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
     function _initView()
     {
         var $main = $("<div id=main/>");
+        me.$main = $main;
         var $sideBar = $("<div id=sideBar/>");
         
         var $div = $("<div class=section id=titleSection />");
@@ -123,8 +126,11 @@ pt.cms.admin.post.view.PostEditViewController = function()
         $div.append(me.$summary);
         $main.append($div);
         
+        
+        var $contentFrame = $("<div id='contentFrame'/>");
         me.$content = $("<textarea id='content'/>");
-        $main.append(me.$content);
+        $contentFrame.append(me.$content);
+        $main.append($contentFrame);
         
         
         
@@ -304,18 +310,15 @@ pt.cms.admin.post.view.PostEditViewController = function()
         me.$content.val(me.data.contentText);
         if (me.contentEditor == null)
         {
-            
             me.contentEditor = me.$content.cleditor({
                 controls: $.cleditor.defaultOptions.controls.replace("image","image2"),
                 width: "100%",
-                height: "80%"
+                height: "100%"
             })[0];
         }
-        else
-        {
-            me.contentEditor.updateFrame();
-            me.contentEditor.refresh();
-        }
+
+        me.contentEditor.updateFrame();
+        me.contentEditor.refresh();
     };
     
     me.savePost = function()
@@ -462,7 +465,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
     function _btnCancel_onclick(e)
     {
         $pageController.popViewController();
-    }    
+    }
     
     return me.endOfClass(arguments);
 }
