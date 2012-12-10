@@ -155,17 +155,22 @@ MX = function()
         {
             element = e.target;
         }
-        if (element.readyState)
-        {
+        
+        if (element.readyState != null)
+        {                        
             // 如果是 IE 8 及以下版本
-            if (typeof(element.times) == "undefined")
+            if (typeof(element.times) == "undefined" && element.readyState != "complete")
             {
                 // onload 事件触发两次后才算加载完成。
                 // IE 的 onreadystate 事件机制有 Bug，不能相信 readyState 的值。
                 element.times = 1;
                 return;
             }
+            
+            
         }
+        
+        
         
         element.onload = null;
         element.onerror = null;
@@ -215,7 +220,6 @@ MX = function()
             func = null;
         }
         callbacks = null;
-        
         
         if (me.loadingStyles.length == 0 && me._styleReady_callbacks.length > 0)
         {
@@ -269,55 +273,61 @@ MX = function()
     me._ready_callbacks = [];
     me.whenReady = function(p_callback)
     {
-        if (typeof(p_callback) != "function")
-        {
-            return;
-        }
-        
-        if (me.loadingStyles.length == 0 && me.loadingScripts.length == 0)
-        {
-            p_callback();
-        }
-        else
-        {
-            me._ready_callbacks.push(p_callback);
-        }
+        setTimeout(function(){
+            if (typeof(p_callback) != "function")
+            {
+                return;
+            }
+            
+            if (me.loadingStyles.length == 0 && me.loadingScripts.length == 0)
+            {
+                p_callback();
+            }
+            else
+            {
+                me._ready_callbacks.push(p_callback);
+            }
+        }, 0);
     };
     
     me._styleReady_callbacks = [];
     me.whenStyleReady = function(p_callback)
     {
-        if (typeof(p_callback) != "function")
-        {
-            return;
-        }
-        
-        if (me.loadingStyles.length == 0)
-        {
-            p_callback();
-        }
-        else
-        {
-            me._styleReady_callbacks.push(p_callback); 
-        }
+        setTimeout(function(){
+            if (typeof(p_callback) != "function")
+            {
+                return;
+            }
+            
+            if (me.loadingStyles.length == 0)
+            {
+                p_callback();
+            }
+            else
+            {
+                me._styleReady_callbacks.push(p_callback); 
+            }
+        }, 0);
     };
     
     me._scriptReady_callbacks = [];
     me.whenScriptReady = function(p_callback)
     {
-        if (typeof(p_callback) != "function")
-        {
-            return;
-        }
-        
-        if (me.loadingScripts.length == 0)
-        {
-            p_callback();
-        }
-        else
-        {
-            me._scriptReady_callbacks.push(p_callback); 
-        }
+        setTimeout(function(){
+            if (typeof(p_callback) != "function")
+            {
+                return;
+            }
+            
+            if (me.loadingScripts.length == 0)
+            {
+                p_callback();
+            }
+            else
+            {
+                me._scriptReady_callbacks.push(p_callback); 
+            }
+        }, 0);
     };
     
     

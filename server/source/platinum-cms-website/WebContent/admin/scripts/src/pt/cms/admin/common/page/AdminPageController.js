@@ -48,7 +48,9 @@ pt.cms.admin.common.page.AdminPageController = function()
         if (me.rootViewControllers[p_path] == null)
         {
             mx.importClass("pt.cms.admin." + p_path + ".view.RootViewController");
-            mx.whenReady(function(){
+            
+            mx.whenReady(function()
+            {
                 var controller = new pt.cms.admin[p_path].view.RootViewController({
                     restClient: me.restClient
                 });
