@@ -340,10 +340,10 @@ pt.cms.admin.post.view.PostEditViewController = function()
     
     me.addAttachment = function(p_attachment)
     {
-        var $li = $("<li> <span id='name'/> <span id='size'/> <div id='delete'/> </li>");
+        var $li = $("<li> <span id='name'/> <span id='size'/> <div id='delete' title='删除附件'/> </li>");
         $li.attr("id", p_attachment.id);
-        $li.children("#name").text(p_attachment.name);
-        $li.children("#size").text(_formatFileSize(p_attachment.size));
+        $li.children("#name").text(p_attachment.name).attr("title", p_attachment.name);
+        $li.children("#size").text(_formatFileSize(p_attachment.size)).attr("title", p_attachment.size.toString().replace(/(\d\d\d)/g,function($0,$1){return $1+","}) + " 个字节");
         me.$attachmentList.append($li);
     };
     
