@@ -115,6 +115,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         
         $div = $("<div class='section' id='attachmentSection'> <ul id='attachmentList'></ul> </div>");
         me.$attachmentList = $div.children("#attachmentList");
+        me.$attachmentList.on("click", "#delete", _btnDeleteAttachment_onclick);
         $main.append($div);
                 
         
@@ -314,8 +315,6 @@ pt.cms.admin.post.view.PostEditViewController = function()
         
         _autoResize();
 
-        me.contentEditor.updateFrame();
-        me.contentEditor.refresh();
         me.contentEditor.focus();
     };
     
@@ -329,6 +328,14 @@ pt.cms.admin.post.view.PostEditViewController = function()
         for (var i = 0; i < me.data.attachments.length; i++)
         {
             me.addAttachment(me.data.attachments[i]);
+        }
+        if (me.data.attachments.length == 0)
+        {
+            me.$main.find("#attachmentSection").hide();
+        }
+        else
+        {
+            me.$main.find("#attachmentSection").show();
         }
     };
     
@@ -481,6 +488,15 @@ pt.cms.admin.post.view.PostEditViewController = function()
         }
     }
     
+    function _btnDeleteAttachment_onclick(e)
+    {
+        var id = $(e.target).parent().attr("id");
+        if (confirm("确实要删除所选择的附件吗？"))
+        {
+            alert(id);
+        }
+    }
+    
     
     function _btnCancel_onclick(e)
     {
@@ -494,9 +510,14 @@ pt.cms.admin.post.view.PostEditViewController = function()
         var $children = me.$main.children(".section");
         for (var i = 0; i < $children.length; i++)
         {
-            offsetTop += $children.eq(i).height() + 1;
+            if ($children.eq(i).css("display") != "none")
+            {
+                offsetTop += $children.eq(i).height() + 1;
+            }
         }
-        me.$main.find("#contentFrame").css("top", offsetTop);        
+        me.$main.find("#contentFrame").css("top", offsetTop);
+        me.contentEditor.updateFrame();
+        me.contentEditor.refresh();
     }
     $(window).resize(_autoResize);
     
