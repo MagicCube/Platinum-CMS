@@ -75,9 +75,9 @@ PostEntity post = postManager.getPost(postId, categoryId);
             <% for (int i = 0; i < post.getAttachments().size(); i++) {
                    PostAttachmentEntity attachment = post.getAttachments().get(i);
             %>
-            <li>
+            <li id="<%= attachment.getId()%>">
                 <span id="index">附件<%= i + 1%>: </span>
-                <a href="#">
+                <a target="_blank" href="<%= attachment.getRelativePath()%>">
                     <span id="name"><%= attachment.getFileName()%></span>
                 </a>
                 <span id="size">(<%= _formatFileSize(attachment.getFileSize())%>)</span>
@@ -104,9 +104,9 @@ PostEntity post = postManager.getPost(postId, categoryId);
                 <% for (int i = 0; i < post.getAttachments().size(); i++) {
                        PostAttachmentEntity attachment = post.getAttachments().get(i);
                 %>
-                <li>
+                <li id="<%= attachment.getId()%>">
                     <span id="index">附件<%= i + 1%>: </span>
-                    <a href="#">
+                    <a target="_blank" href="<%= attachment.getRelativePath()%>">
                         <span id="name"><%= attachment.getFileName()%></span>
                     </a>
                     <span id="size">(<%= _formatFileSize(attachment.getFileSize())%>)</span>
