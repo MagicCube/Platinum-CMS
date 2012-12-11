@@ -19,8 +19,8 @@
 				<form id="searchForm_1" name="form_1" method="post" action="#" target="_blank">
 					<label>
 						<input type="hidden" id="searchVpath" name="vpath" value="" />
-       					<input type="text" id="description" value="Search..." onfocus="this.value=''" 
-       					  	 onBlur="if(this.value==''){this.value='Search...';}"
+       					<input type="text" id="description" value="搜索..." onfocus="this.value=''" 
+       					  	 onBlur="if(this.value==''){this.value='搜索...';}"
        					  	 style = "height: 18px; margin-left: 3px; margin-top: 2px;"/>
        					<input type = "submit" name = "button" id = "button" value = "" />
 					</label>
@@ -118,4 +118,26 @@
             </div>
   </div>
   <!--左侧边栏结束-->
-   
+   <div id="r_content">
+		<!--导航开始-->
+		<div id="menu">
+			<div id="menu_ul">
+				<ul id="nav">
+					<li><a href="/renwen/ff8081813b6fee04013b6ff28321000e.html">
+							系科介绍 </a></li>
+					<li><a href="/renwen/sc000000000000000000000000000094/more/">
+							学科建设 </a></li>
+					<li><a href="/renwen/sc000000000000000000000000000098/more/">
+							党团建设 </a></li>
+					<li><a href="/renwen/sc000000000000000000000000000096/more/">
+							规章制度 </a></li>
+					<li><a href="/renwen/sc000000000000000000000000000097/more/">
+							学生工作 </a></li>
+					<li><a href="/renwen/sc000000000000000000000000000095/more/">
+							教学管理</a></li>
+					<li><a href="/renwen/sc000000000000000000000000000099/more/">
+							班级风采 </a></li>
+				</ul>
+			</div>
+		</div>
+		<!--导航结束-->

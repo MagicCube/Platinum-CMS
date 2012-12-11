@@ -137,7 +137,7 @@
 	filter: alpha(opacity=0);
 }
 
-#box .list li
+#box .list li.current
 {
 	opacity: 1;
 	filter: alpha(opacity=100);
@@ -184,7 +184,7 @@
 	border-radius: 0px;
 }
 
-#box .count li
+#box .count li.current
 {
 	color: #fff;
 	opacity: 1;
@@ -206,14 +206,18 @@
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 380px;			/*已修改过*/
+	width: 400px;			/*已修改过*/
 	font-size: 13px;
 	color:#000000;
+
+}
+#content > #mainContent > #textNews li #title
+{
+	width: 400px;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 }
-
 #content > #mainContent a
 {
 	font-family: 微软雅黑;
@@ -221,7 +225,6 @@
 	color:#000000;
 	text-decoration: none;
 }
-
 #content > #mainContent a:hover
 {
 	color: #098ef6;
@@ -239,14 +242,17 @@
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 500px;		/*已修改过*/
+	width: 550px;		/*已修改过*/
 	font-size: 13px;
 	color:#000000;
+}
+#content > #mainContent > #informs li #title
+{
+	width: 550px;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 }
-
 #content > #mainContent > #teaching ul
 {
 	margin:10px 0 0 0;
@@ -287,10 +293,10 @@
 
 
 
-#more
+#more1
 {
 	padding: 0;
-	margin: 10px 30px 0 0;
+	margin: 5px 10px 0 0;
 	width: 80px;
 	height: 20px;
 	float: right;

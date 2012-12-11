@@ -110,6 +110,7 @@
 	float: right;
 	margin-top: 52px;
 	text-align: right;
+	margin-right: 5px;
 }
 
 #search > #setting a
@@ -314,13 +315,28 @@ li.subMenu > a:hover
 	color: #fff;
 	text-decoration: none;
 }
+#bottom #footer #copyright
+{
+	float:left; 
+	margin-left: 10px;
+}
+
+#bottom #footer #icp
+{
+	float: left; 
+	display: block; 
+	clear: both; 
+	margin-left: 10px; 
+	margin-top: -15px; 
+	color: #fff;
+}
 
 #bottom #footer span > a:hover
 {
 	color: #f64a32;
 }
 
-#footer > #line
+#footer > #developer
 {
 	float: right;
 	width: 190px; 
@@ -332,24 +348,29 @@ li.subMenu > a:hover
 	position: relative;
 }
 
-#line ul
+#developer ul
 {
 	margin: 0;
 	padding: 0;	
 }
 
-#line li
+#developer li
 {
 	height: 15px;
 }
 
-#line a
+#developer a
 {
 	color: #fff;
 	text-decoration: none;
 }
 
-#line span
+#developer a:hover
+{
+	color: #f64a32;
+}
+
+#developer span
 {
 	position: absolute;
 	left: 120px;

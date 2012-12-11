@@ -350,3 +350,11 @@ height:30px;
 line-height:30px;
 }
 .block_home_slider .caption {height:30px;}
+/*12-11*/
+.PostList li a #title
+{
+	-o-text-overflow:ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}

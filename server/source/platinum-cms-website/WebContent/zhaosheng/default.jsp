@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>南京师范大学中北学院招生就业</title>
 
+
 <link href = "/static/common/css/basic.css" rel = "stylesheet"></link>
 
 <script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>	
@@ -26,7 +27,7 @@
 			<div id = "picNews">
 				<div id="browsable">
             			<div id="box">
-			<!-- begin of block_home_slider -->
+            			<!-- begin of block_home_slider -->
 			 <div class="block_home_slider" >
                     		<div id="home_slider" class="flexslider">
                             	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000179" displayPhoto="true" count="4" />
@@ -40,49 +41,49 @@
 				<span><img src = "/static/zhaosheng/image/daodu.png"/></span>
 				<cms:PostList id = "zxddlist" subcategoryId="sc000000000000000000000000000176" count="7" />
           		<div id = "more1" align = "right">
-          			<a href = "/zhaosheng/sc000000000000000000000000000176/more/" style = "color: #fff;"><img src = "/static/zhaosheng/image/more.gif"/></a>
+          			<a href = "/zhaosheng/sc000000000000000000000000000176/more/">更多...</a>
           		</div>
 			</div>
 			<div id = "informs">
 				<span><img src = "/static/zhaosheng/image/zhaosheng.png"/></span>
 				<cms:PostList id = "zxddlist" subcategoryId="sc000000000000000000000000000172" count="7" />
           		<div id = "more1" align = "right">
-          			<a href = "/zhaosheng/sc000000000000000000000000000172/more/" style = "color: #fff;"><img src = "/static/zhaosheng/image/more.gif"/></a>
+          			<a href = "/zhaosheng/sc000000000000000000000000000172/more/">更多...</a>
           		</div>	
 			</div>
 			<div id = "teaching">
 				<span><img src = "/static/zhaosheng/image/zhengce.png"/></span>
 				<cms:PostList id = "zcjzlist" subcategoryId="sc000000000000000000000000000173" count="7" />
 				<div id = "more1" align = "right">
-          			<a href = "/zhaosheng/sc000000000000000000000000000173/more/" style = "color: #fff;"><img src = "/static/zhaosheng/image/more.gif"/></a>
+          			<a href = "/zhaosheng/sc000000000000000000000000000173/more/">更多...</a>
           		</div>
 			</div>
             <div id = "redian">
 				<span><img src = "/static/zhaosheng/image/redian.png"/></span>
 				<cms:PostList id = "rdddlist" subcategoryId="sc000000000000000000000000000177" count="7" />
 				<div id = "more1" align = "right">
-          			<a href = "/zhaosheng/sc000000000000000000000000000177/more/" style = "color: #fff;"><img src = "/static/zhaosheng/image/more.gif"/></a>
+          			<a href = "/zhaosheng/sc000000000000000000000000000177/more/">更多...</a>
           		</div>
 			</div>
             <div id = "zhuanye">
 				<span><img src = "/static/zhaosheng/image/zhuanye.png"/></span>
 				<cms:PostList id = "rdddlist" subcategoryId="sc000000000000000000000000000175" count="7" />
 				<div id = "more1" align = "right">
-          			<a href = "/zhaosheng/sc000000000000000000000000000175/more/" style = "color: #fff;"><img src = "/static/zhaosheng/image/more.gif"/></a>
+          			<a href = "/zhaosheng/sc000000000000000000000000000175/more/">更多...</a>
           		</div>
 			</div>
             <div id = "jiangzhu">
 				<span><img src = "/static/zhaosheng/image/jiangzhu.png"/></span>
 				<cms:PostList id = "rdddlist" subcategoryId="sc000000000000000000000000000174" count="7" />
 				<div id = "more1" align = "right">
-          			<a href = "/zhaosheng/sc000000000000000000000000000174/more/" style = "color: #fff;"><img src = "/static/zhaosheng/image/more.gif"/></a>
+          			<a href = "/zhaosheng/sc000000000000000000000000000174/more/">更多...</a>
           		</div>
 			</div>
             <div id = "zhuanti">
 				<span><img src = "/static/zhaosheng/image/zhuanti.png"/></span>
 				<cms:PostList id = "rdddlist" subcategoryId="sc000000000000000000000000000178" count="7" />
 				<div id = "more1" align = "right">
-          			<a href = "/zhaosheng/sc000000000000000000000000000178/more/" style = "color: #fff;"><img src = "/static/zhaosheng/image/more.gif"/></a>
+          			<a href = "/zhaosheng/sc000000000000000000000000000178/more/">更多...</a>
           		</div>
 			</div>
 		</div>

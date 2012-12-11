@@ -27,29 +27,7 @@
 	<cms:Header path="gongguan" />
 
 	<!--右侧正文开始-->
-	<div id="r_content">
-		<!--导航开始-->
-		<div id="menu">
-			<div id="menu_ul">
-				<ul id="nav">
-					<li><a href="/gongguan/ff8081813b791852013b79660c6c0002.html">
-							系科介绍 </a></li>
-					<li><a href="/gongguan/sc000000000000000000000000000133/more/">
-							学科建设 </a></li>
-					<li><a href="/gongguan/sc000000000000000000000000000134/more/">
-							党团建设 </a></li>
-					<li><a href="/gongguan/sc000000000000000000000000000135/more/">
-							教学管理</a></li>
-					<li><a href="/gongguan/sc000000000000000000000000000136/more/">
-							规章制度 </a></li>
-					<li><a href="/gongguan/sc000000000000000000000000000137/more/">
-							学生工作</a></li>
-					<li><a href="/gongguan/sc000000000000000000000000000138/more/">
-							班级风采 </a></li>
-				</ul>
-			</div>
-		</div>
-		<!--导航结束-->
+
 		<div id="browsable">
 			<div id="box">
 			<!-- begin of block_home_slider -->

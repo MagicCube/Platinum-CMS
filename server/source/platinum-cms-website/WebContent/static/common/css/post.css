@@ -4,6 +4,8 @@
     margin-right: auto;
     width: 100%;
     min-height: 600px;
+    border-right: 1px #ddd solid;
+    padding-right: 2px;
 }
 
 #postDetail h1
@@ -36,7 +38,10 @@
 	padding-bottom: 10px;
 	padding-top: 10px;
 	color: #3399cc;
-	line-height: 16px;	
+	line-height: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 630px;	
 }
 
 #content img

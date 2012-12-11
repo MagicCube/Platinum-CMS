@@ -27,29 +27,7 @@
 	<cms:Header path="yinyue" />
 
 	<!--右侧正文开始-->
-	<div id="r_content">
-		<!--导航开始-->
-		<div id="menu">
-			<div id="menu_ul">
-				<ul id="nav">
-					<li><a href="/yinyue/ff8081813b50f9a5013b5bb3dfc00017.html">
-							系科介绍 </a></li>
-					<li><a href="/yinyue/sc000000000000000000000000000123/more/">
-							学科建设 </a></li>
-					<li><a href="/yinyue/sc000000000000000000000000000124/more/">
-							教学管理 </a></li>
-					<li><a href="/yinyue/sc000000000000000000000000000125/more/">
-							规章制度 </a></li>
-					<li><a href="/yinyue/sc000000000000000000000000000126/more/">
-							学生工作 </a></li>
-					<li><a href="/yinyue/sc000000000000000000000000000127/more/">
-							活动介绍</a></li>
-					<li><a href="/yinyue/sc000000000000000000000000000128/more/">
-							班团风采 </a></li>
-				</ul>
-			</div>
-		</div>
-		<!--导航结束-->
+
 		<div id="browsable">
 			<div id="box">
 							<!-- begin of block_home_slider -->

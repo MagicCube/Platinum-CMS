@@ -438,7 +438,7 @@ overflow: hidden;
 	padding-bottom:10px;
 	 
 }
-#more .PostList .current #title
+#more .PostList li #title
 {
 	overflow: hidden;/*表示溢出的内容会被隐藏*/
 	-o-text-overflow: ellipsis;    /* for Opera */
@@ -455,7 +455,7 @@ overflow: hidden;
 	list-style: none;
 	display: list-item;
 }
-#postList .current
+#postList li
 {
 	padding-left: 15px;
 	margin-left: 50px;

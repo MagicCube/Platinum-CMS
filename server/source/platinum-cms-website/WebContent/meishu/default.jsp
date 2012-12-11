@@ -25,57 +25,7 @@
 <cms:Header path = "meishu"/> 
 
   <!--右侧正文开始-->
-  <div id="r_content">
-    <!--导航开始-->
-    <div id="menu">
-      <div id="menu_ul">
-        <ul id="nav">
-          <li>
-            <a href="/meishu/ff8081813b845ff6013b849d3a250014.html">
-              系科介绍
-            </a>
-          </li>
-          <li>
-           <a class="discipline" href="/meishu/sc000000000000000000000000000074/more/">
-              学科建设
-            </a>
-                        <ul class="sub">
-              <li><a href="/meishu/ff8081813b750def013b75326484007d.html" title="学科建设>教师风采">教师风采</a></li>
-              <li><a href="/meishu/ff8081813b750def013b753179f0007a.html" title="学科建设>教研组">教研组</a></li>
-              <li><a href="/meishu/ff8081813b750def013b753004eb0077.html" title="学科建设>教师作品">教师作品</a></li>
-              <li><a href="/meishu/ff8081813b750def013b752c3aa50071.html" title="学科建设>专业设置">专业设置</a></li>
-            </ul>
-            
-          </li>
-          <li>
-            <a href="/meishu/sc000000000000000000000000000075/more/">
-              教学管理
-            </a>
-          </li>
-          <li>
-            <a href="/meishu/sc000000000000000000000000000076/more/">
-              学生工作
-            </a>
-          </li>
-          <li>
-            <a href="/meishu/sc000000000000000000000000000077/more/">
-              党团建设
-
-            </a>
-          </li>
-          <li>
-            <a href="/meishu/sc000000000000000000000000000078/more/">
-              作品展示
-            </a>
-          </li>       
-          <li>
-            <a href="/meishu/sc000000000000000000000000000079/more/">
-              班级风采
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+  
     <!--图片开始-->
     <div id="browsable">
        	<div id="box"> 	

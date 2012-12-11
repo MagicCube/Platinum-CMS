@@ -22,8 +22,8 @@
 /*新闻和公共*/
 #r_content #am .title, #r_content #new .title, #r_content #job .title{color: #ff46ff;}
 #r_content .detail .content_li{background-image:url(../images/RenWen_news_dt.png);}
-#r_content .detail .current{background-image:url(../images/RenWen_news_dt.png);}
-#r_content .detail .current a:hover{color: #ff46ff;}
+#r_content .detail li{background-image:url(../images/RenWen_news_dt.png);}
+#r_content .detail li a:hover{color: #ff46ff;}
 #r_content .list_more a{color:#000;}
 #r_content .list_more a:hover{color: #ff46ff;}
 /*页脚部分*/

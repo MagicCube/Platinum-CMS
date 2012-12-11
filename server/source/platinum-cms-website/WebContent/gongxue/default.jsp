@@ -27,29 +27,7 @@
 	<cms:Header path="gongxue" />
 
 	<!--右侧正文开始-->
-	<div id="r_content">
-		<!--导航开始-->
-		<div id="menu">
-			<div id="menu_ul">
-				<ul id="nav">
-					<li><a href="/gongxue/ff8081813b50f9a5013b5b7d54080011.html">
-							系科介绍 </a></li>
-					<li><a href="/gongxue/sc000000000000000000000000000054/more/">
-							学科建设 </a></li>
-					<li><a href="/gongxue/sc000000000000000000000000000055/more/">
-							教学管理 </a></li>
-					<li><a href="/gongxue/sc000000000000000000000000000056/more/">
-							规章制度 </a></li>
-					<li><a href="/gongxue/sc000000000000000000000000000057/more/">
-							学生工作 </a></li>
-					<li><a href="/gongxue/sc000000000000000000000000000058/more/">
-							实验中心 </a></li>
-					<li><a href="/gongxue/sc000000000000000000000000000059/more/">
-							班级风采 </a></li>
-				</ul>
-			</div>
-		</div>
-		<!--导航结束-->
+
 		<div id="browsable">
 			<div id="box">
 			<!-- begin of block_home_slider -->

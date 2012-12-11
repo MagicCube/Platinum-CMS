@@ -34,8 +34,8 @@
 			<div id = "textNews">
 				<span><img src = "/static/xiandai/image/fuwu.png"/></span>
 				<cms:PostList id = "fwznlist" subcategoryId="sc000000000000000000000000000191" count="9" />
-          		<div id = "more" align = "right">
-          			<a href = "/xiandai/sc000000000000000000000000000191/more/" style = "color: #000000;" target="_blank">...更多</a>
+          		<div id = "more1" align = "right">
+          			<a href = "/xiandai/sc000000000000000000000000000191/more/" style = "color: #000000;" target="_blank">更多...</a>
           		</div>	  
 			</div>
             
@@ -44,8 +44,8 @@
 			<div id = "informs">
 				<span><img src = "/static/xiandai/image/zhongxin.png"/></span>
 				<cms:PostList id = "zxdtlist" subcategoryId="sc000000000000000000000000000194" count="8" />
-          		<div id = "more" align = "right">
-          			<a href = "/xiandai/sc000000000000000000000000000194/more/" style = "color: #000000;" target="_blank">...更多</a>
+          		<div id = "more1" align = "right">
+          			<a href = "/xiandai/sc000000000000000000000000000194/more/" style = "color: #000000;" target="_blank">更多...</a>
           		</div>	          
 			</div>
             

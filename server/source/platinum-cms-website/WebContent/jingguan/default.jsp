@@ -27,29 +27,7 @@
 	<cms:Header path="jingguan" />
 
 	<!--右侧正文开始-->
-	<div id="r_content">
-		<!--导航开始-->
-		<div id="menu">
-			<div id="menu_ul">
-				<ul id="nav">
-					<li><a href="/jingguan/ff8081813b50f9a5013b5b82f08d0014.html">
-							系科介绍 </a></li>
-					<li><a href="/jingguan/sc000000000000000000000000000064/more/">
-							学科建设 </a></li>
-					<li><a href="/jingguan/sc000000000000000000000000000065/more/">
-							党团建设</a></li>
-					<li><a href="/jingguan/sc000000000000000000000000000066/more/">
-							规章制度 </a></li>
-					<li><a href="/jingguan/sc000000000000000000000000000067/more/">
-							班级风采 </a></li>
-					<li><a href="/jingguan/sc000000000000000000000000000068/more/">
-							资料下载 </a></li>
-					<li><a href="/jingguan/ff8081813b606afb013b63becb570059.html/">
-							回音壁</a></li>
-				</ul>
-			</div>
-		</div>
-		<!--导航结束-->
+
 		<div id="browsable">
 			<div id="box">
 			<!-- begin of block_home_slider -->

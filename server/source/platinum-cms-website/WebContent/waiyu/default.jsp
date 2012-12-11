@@ -27,29 +27,7 @@
 	<cms:Header path="waiyu" />
 
 	<!--右侧正文开始-->
-	<div id="r_content">
-		<!--导航开始-->
-		<div id="menu">
-			<div id="menu_ul">
-				<ul id="nav">
-					<li><a href="/waiyu/ff8081813b606afb013b63c546dd005c.html">
-							系科介绍 </a></li>
-					<li><a href="/waiyu/sc000000000000000000000000000104/more/">
-							学科建设 </a></li>
-					<li><a href="/waiyu/sc000000000000000000000000000105/more/">
-							党团建设 </a></li>
-					<li><a href="/waiyu/sc000000000000000000000000000106/more/">
-							教学管理 </a></li>
-					<li><a href="/waiyu/sc000000000000000000000000000107/more/">
-							规章制度</a></li>
-					<li><a href="/waiyu/sc000000000000000000000000000108/more/">
-							学生工作 </a></li>
-					<li><a href="/waiyu/sc000000000000000000000000000109/more/">
-							班级风采 </a></li>
-				</ul>
-			</div>
-		</div>
-		<!--导航结束-->
+	
 		<div id="browsable">
 			<div id="box">
 			<!-- begin of block_home_slider -->

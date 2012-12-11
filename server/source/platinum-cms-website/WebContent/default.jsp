@@ -42,7 +42,7 @@ clientCache.setMaxAge(60);
 				</div>
 				
 				<div id = "part2">
-					<cms:PostList id="xwdtList2" cssClass="TextList" subcategoryId="sc000000000000000000000000000006" where="photoURL is null" count="6" />
+					<cms:PostList id="xwdtList2" cssClass="TextList" subcategoryId="sc000000000000000000000000000006" where="photoURL is null" count="8" />
 					<p id = "position_2"><a href = "/news/sc000000000000000000000000000006/more/">更多...</a></p>
 				</div>
 			</div>
@@ -54,7 +54,7 @@ clientCache.setMaxAge(60);
 				</div>
 				
 				<div id = "part2">
-					<cms:PostList id="xydtList2" cssClass="TextList" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="6" />
+					<cms:PostList id="xydtList2" cssClass="TextList" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="7" />
 					<p id = "position_2"><a href = "/news/sc000000000000000000000000000020/more/">更多...</a></p>
 				</div>				
 			</div>			

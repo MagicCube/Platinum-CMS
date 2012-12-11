@@ -19,8 +19,8 @@
 				<form id="searchForm_1" name="form_1" method="post" action="#" target="_blank">
 					<label>
 						<input type="hidden" id="searchVpath" name="vpath" value="" />
-       					<input type="text" id="description" value="Search..." onfocus="this.value=''" 
-       					  	 onBlur="if(this.value==''){this.value='Search...';}"
+       					<input type="text" id="description" value="搜索..." onfocus="this.value=''" 
+       					  	 onBlur="if(this.value==''){this.value='搜索...';}"
        					  	 style = "height: 18px; margin-left: 3px; margin-top: 2px;"/>
        					<input type = "submit" name = "button" id = "button" value = "" />
 					</label>
@@ -118,4 +118,26 @@
             </div>
   </div>
   <!--左侧边栏结束-->
-   
+   	<div id="r_content">
+		<!--导航开始-->
+		<div id="menu">
+			<div id="menu_ul">
+				<ul id="nav">
+					<li><a href="/qianghua/ff8081813b362c79013b3c8546cd01ee.html">
+							系科介绍 </a></li>
+					<li><a href="/qianghua/sc000000000000000000000000000084/more/">
+							学科建设 </a></li>
+					<li><a href="/qianghua/sc000000000000000000000000000085/more/">
+							教学管理 </a></li>
+					<li><a href="/qianghua/sc000000000000000000000000000086/more/">
+							规章制度 </a></li>
+					<li><a href="/qianghua/sc000000000000000000000000000087/more/">
+							学生工作 </a></li>
+					<li><a href="/qianghua/sc000000000000000000000000000088/more/">
+							就业指导 </a></li>
+					<li><a href="/qianghua/sc000000000000000000000000000089/more/">
+							班级风采 </a></li>
+				</ul>
+			</div>
+		</div>
+		<!--导航结束-->

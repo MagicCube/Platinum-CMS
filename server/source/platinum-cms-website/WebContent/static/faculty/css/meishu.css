@@ -23,8 +23,8 @@ li .sub {background-color: #9E379F;height:100px;border-top:2px solid #6f0770;}
 /*新闻和公共*/
 #r_content #am .title, #r_content #new .title, #r_content #job .title{color: #9e379f;}
 #r_content .detail .content_li{background-image:url(../images/MeiShu_news_dt.png);}
-#r_content .detail .current{background-image:url(../images/MeiShu_news_dt.png);}
-#r_content .detail .current a:hover{color: #9e379f;}
+#r_content .detail li{background-image:url(../images/MeiShu_news_dt.png);}
+#r_content .detail li a:hover{color: #9e379f;}
 #r_content .list_more a{color:#000;}
 #r_content .list_more a:hover{color: #9e379f;}
 /*页脚部分*/

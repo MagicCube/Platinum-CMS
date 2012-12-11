@@ -26,9 +26,10 @@ html, body
 	padding-top:20px;
 	margin-left: auto;
 	margin-right: auto;
-	height: 120px;
+	height: 130px;
 	width: 990px;
-	background-color:#4b8f89;
+	background-color:#ee911a;
+	
 }
 #headcontain > #mainpage
 {
@@ -41,10 +42,12 @@ html, body
 {
 	color:#ffffff;
 	text-decoration: none;
+	margin-left:9px;
+	margin-right:9px;
 }
 #headcontain > #mainpage a:hover
 {
-	color: #06f5e0;
+	color:rgba(0,0,0,0.5);
 	text-decoration: none;
 }
 #headcontain > #mainpage > #searchbar
@@ -88,12 +91,13 @@ html, body
 menu#mainmenu
 {
 	display: block;
-	width: 990px;
+	width: 970px;
 	height: 32px;
 	list-style: none;
 	padding: 0;
 	margin:  0;
-	margin-left: auto;
+	margin-top:35px;
+	margin-left: 10px;
 	margin-right: auto;
 	border-top: 1px solid #fff;
 }
@@ -113,20 +117,19 @@ menu#mainmenu li a
 menu#mainmenu li a:hover
 {
 
-	color: #06f5e0;
+	color: #fdbc30;
 }
 /*单个菜单条的属性*/
 .singleMenu
 {
 	float: left;
-	font-size: 15px;
+	font-size: 10px;
 	font-family: 黑体;
 	display: inline-block;
 	height: 32px;
-	width: 165px;
+	width: 161.6px;
 	padding: 0;
 	margin: 0;
-	background-color:#4b8f89;
 }
 
 
@@ -145,61 +148,78 @@ menu#mainmenu li a:hover
 	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
-	height: 230px;
+	height: 163px;
 	width: 990px;
-	background-color:#4b8f89;
+	background-color:#ee911a;
 	line-height: 23px;
 	font-size: 12px;
 	text-align:center;
 	position:relative;
-
-}
-
-#foot > #footer > #fastlink
-{
-	width: 250px;
-	height: 200px;
-	position: absolute;
-
-
-}
-
-
-
-#foot > #footer > #fastlink table
-{
-	margin: 0 0 0 0;
-	paddiong: 0;
-	text-align:left;
-}
-
-#foot > #footer > #fastlink table td
-{
-	height: 10px;
-
-}
-
-#foot > #footer > #fastlink table tr td a
-{
-	color: #fff;
-	font-size: 12px;
 	text-decoration: none;
-	margin-right: 20px;
 
 }
 
-#foot > #footer > #fastlink  a:hover
-{
-	color: #06f5e0;
+ #bottom{
+	width: 990px;
+	height: 132px;
+	margin: 0 auto;
+	
 }
-#foot > #footer p
+#fastlink1, #fastlink2
 {
+	display: inline-block;
+	text-align: left;
 	font-size: 14px;
 	font-weight: bold;
-	text-align:left;
 	color: #fff;
+	text-decoration: none;
 }
-#foot > #footer > #bottom 
+#fastlink1
+{
+	margin:0px 0px 0px 70px;
+	border-right: 1px solid #fff;
+	width:450px;
+}
+#fastlink2
+{
+	margin:0px 0px 0px 20px;
+}
+	
+.fastLink a
+{
+	font: 宋体;
+	font-size:12px;
+	font-weight: normal;
+	color: #FFF;
+}
+.fastLink table td
+{
+	width:140px;
+	height: 20px;
+	text-decoration: none;
+	}
+.fastLink table td a
+{text-decoration: none;}	
+.fastLink table td a:hover
+{
+ color:#fdbc30;
+}
+#righttable
+{
+	margin: 22px 0 0 0;
+	
+}
+
+
+#footButtom{
+	width: 990px;
+	height: 32px;
+	margin: 0 auto;
+
+	border-top: 1px #FFFFFF solid; 
+	text-align:center;
+}
+#foot > #footer > #bottom1 
 {
  
 	margin-left: auto;
@@ -212,10 +232,11 @@ menu#mainmenu li a:hover
 	line-height: 10px;
 }
 
-#foot > #footer > #bottom p
+#foot > #footer > #bottom1 p
 {
 	font-size: 10px;
 	font-weight: normal;
+	color:#fff;
 }
 
 
@@ -229,7 +250,7 @@ menu#mainmenu li a:hover
     line-height: 30px;
 	border-bottom: 1px #ddd solid;
 	width: 990px;
-	color: #ccc;
+	color: #000;
 	font-weight: bold;
 }
 
@@ -244,32 +265,44 @@ menu#mainmenu li a:hover
 #categoryNavigationBar li:first-child
 {
 	margin-left: 10px;
-	color: #ccc;
+	color: #000;
 }
 
 #categoryNavigationBar li a 
 {
-	color: #ccc;
+	color: #000;
 	text-decoration: none;
 }
 
 #categoryNavigationBar li a:hover
 {
-	color: #888;
+	color: #fdbc30;
 }
 #more
 {
 	width:990px;
-	margin-top:20px;
+	margin-top:10px;
+	border-left: 1px #ccc dashed;
+	border-right: 1px #ccc dashed;
 	
 }
 #postList
 {
-	margin-left:18px;
+
+}
+#postList li 
+{
+	width:980px;
+}
+#postList li a:hover
+{
+	color: #fdbc30;
 }
 #postDetail
 {
-	width:990px;
+	width:988px;
+	border-left: 1px #ccc dashed;
+	border-right: 1px #ccc dashed;
 }
 #summary 
 {

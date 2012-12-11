@@ -590,5 +590,5 @@ over-flow: hidden;
 }
 /**/
 #activities .PostList{margin-top:10px;}
-#activities .PostList .current{height:50px;margin-bottom:3px;}
-#activities .PostList .current img{width:175px; height:50px;}
+#activities .PostList li{height:50px;margin-bottom:3px;}
+#activities .PostList li img{width:175px; height:50px;}

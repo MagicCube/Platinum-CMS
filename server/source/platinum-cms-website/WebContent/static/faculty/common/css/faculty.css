@@ -218,22 +218,21 @@ body { background-color: #fff;/* background:url(/static/faculty/common/images/bo
 	height:auto;
 	float: left;
 	margin-left: 19px;
-	background-image: url(/static/faculty/common/images/bg_context_1.png);
-	background-repeat:repeat;
 }
 
 #r_content #menu
 {
-	width:750px;/*width: 728px;*/
+	width:760px;/*width: 728px;*/
 	height: 56px;
 	margin: 0 auto;
-
+	background-image: url(/static/faculty/common/images/bg_context.png);
+	background-repeat:repeat;
 }
 
 #r_content #menu #menu_ul
 {
 	float: left;
-	margin:6px 0 0 10px;
+	margin:6px 0 0 15px;
 	width:730px;/*width: 708px;*/
 	height: 40px;
 }
@@ -404,7 +403,7 @@ li:hover ul, li.over ul {
 	display: list-item;
 }
 
-#r_content .detail .current
+#r_content .detail li
 {
 	border-bottom-width: 1px;
 	border-bottom-style: dashed;
@@ -415,13 +414,13 @@ li:hover ul, li.over ul {
 	background-position: 0px center;
 	background-repeat: no-repeat;
 }
-#r_content .detail .current #title{	overflow: hidden;/*表示溢出的内容会被隐藏*/
+#r_content .detail li #title{	overflow: hidden;/*表示溢出的内容会被隐藏*/
 	-o-text-overflow: ellipsis;    /* for Opera */
 	text-overflow: ellipsis;        /* for IE *//*当文本溢出时显示…此时还必须定义：强制文本在一行内显示（white-space:nowrap）及溢出内容为隐藏（overflow:hidden）*/
 	white-space: nowrap;/*表示文本不会换行*/}
 #r_content #am .detail{width:340px;padding-top: 5px;}
-#r_content #am .detail .current{width:330px;}
-#r_content #am .detail .current #title{width:320px;}
+#r_content #am .detail li{width:330px;}
+#r_content #am .detail li #title{width:320px;}
 #r_content .list_more
 {
 	width: 300px;
@@ -477,9 +476,9 @@ li:hover ul, li.over ul {
 /*postDetial*/
 #postDetail {
 	float:left;
-	width:727px;
+	width:756px;
 	min-height:545px;
-	margin-left: 19px;
+
 	border: #CCF solid 1px;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -510,7 +509,6 @@ list-style:none;
 	float: left;
 	width: 755px;
 	min-height:545px;
-	margin-left: 19px;
 	border: #CCF solid 1px;
 	border-radius: 5px;
 	-moz-border-radius: 5px;

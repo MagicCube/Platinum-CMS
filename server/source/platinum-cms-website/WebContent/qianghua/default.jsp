@@ -27,29 +27,7 @@
 	<cms:Header path="qianghua" />
 
 	<!--右侧正文开始-->
-	<div id="r_content">
-		<!--导航开始-->
-		<div id="menu">
-			<div id="menu_ul">
-				<ul id="nav">
-					<li><a href="/qianghua/ff8081813b362c79013b3c8546cd01ee.html">
-							系科介绍 </a></li>
-					<li><a href="/qianghua/sc000000000000000000000000000084/more/">
-							学科建设 </a></li>
-					<li><a href="/qianghua/sc000000000000000000000000000085/more/">
-							教学管理 </a></li>
-					<li><a href="/qianghua/sc000000000000000000000000000086/more/">
-							规章制度 </a></li>
-					<li><a href="/qianghua/sc000000000000000000000000000087/more/">
-							学生工作 </a></li>
-					<li><a href="/qianghua/sc000000000000000000000000000088/more/">
-							就业指导 </a></li>
-					<li><a href="/qianghua/sc000000000000000000000000000089/more/">
-							班级风采 </a></li>
-				</ul>
-			</div>
-		</div>
-		<!--导航结束-->
+
 		<div id="browsable">
 			<div id="box">
 			<!-- begin of block_home_slider -->
