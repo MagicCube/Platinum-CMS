@@ -1,8 +1,8 @@
 package platinum.cms.common.dao;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 import org.hibernate.Session;
 
@@ -83,6 +83,10 @@ public class PostDAO extends StandardEntityDAO<PostEntity>
 			p_attachment.setPost(post);
 			p_attachment.setCreateTime(new Date());
 			p_attachment.setUpdateTime(new Date());
+			if (post.getAttachments() == null)
+			{
+				post.setAttachments(new ArrayList<PostAttachmentEntity>());
+			}
 			post.getAttachments().add(p_attachment);
 			getSession().save(post);
 		}
@@ -129,15 +133,6 @@ public class PostDAO extends StandardEntityDAO<PostEntity>
 		if (p_entity.getViews() != null)
 		{
 			getSession().delete(p_entity.getViews());
-		}
-		
-		List<PostAttachmentEntity> attachments = p_entity.getAttachments();
-		if (attachments != null)
-		{
-			for (PostAttachmentEntity attachment : attachments)
-			{
-				deletePostAttachment(attachment);
-			}
 		}
 		
 		File folder = PTEnvironment.getSharedFile("uploads/" + p_entity.getId());
