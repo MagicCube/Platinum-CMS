@@ -3,7 +3,7 @@
 #content
 {
 	width: 990px;
-	height: auto;
+	height: 880px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -12,7 +12,6 @@
 #content > #left
 {
 	width: 609px;
-	height: 817px;
 	margin: 0;
 	padding: 0;
 	position: absolute;
@@ -22,7 +21,7 @@
 
 .block_home_slider {
 	width:580px;
-	height:260px;
+	height:320px;
 	padding:1px;
 	position:relative;
 	
@@ -37,7 +36,7 @@
 	line-height:0px;
 }
 
-.block_home_slider .slide {position:relative; height: 260px; over-flow: hidden;}
+.block_home_slider .slide {position:relative; height: 320px; over-flow: hidden;}
 .block_home_slider .caption {padding:0px; position:absolute; left:0px; right:0px; bottom:0px; background: rgba(0, 0, 0, 0.3); text-align:center; height: 30px;}
 .block_home_slider .caption p {padding-bottom:0px; font-size:11px; color:#dedede; text-shadow:0px -1px #000000; line-height:11px;}
 .block_home_slider .caption p.title {padding-bottom:6px; font-size:15px; color:#ffffff; font-weight:bold; line-height:5px;}
@@ -58,7 +57,7 @@
 	width: 595px;
 	height: 264px;
 	position: absolute;
-	top: 300px;
+	top: 350px;
 	left: 0;
 }
 
@@ -75,7 +74,7 @@
 	width: 595px;
 	height: 264px;
 	position: absolute;
-	top: 560px;
+	top: 620px;
 	left: 0;
 }
 
@@ -325,7 +324,7 @@
 	height: 265px;
 	position: absolute;
 	right: 0;
-	top: 300px;	
+	top: 350px;	
 	
 }
 
@@ -390,7 +389,7 @@
 	height: 260px;
 	position: absolute;
 	right: 0;
-	top: 560px;
+	top: 610px;
 }
 
 #position_1

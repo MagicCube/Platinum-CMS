@@ -32,7 +32,7 @@
     
     <div id = "search">
         <div id = "setting">
-            <span><a href = "#">设为主页 </a></span>|<span><a href = "#"> English Version </a></span>
+            <span><a href = "#">设为主页 </a></span>|<span><a href = "#"> English Version </a>|<a href="192.168.1.100："> 手机门户入口</a></span>
         </div>
         
         <div id = "searchbar">

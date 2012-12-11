@@ -5,7 +5,7 @@
 	margin-right: auto;
 	height: 30px;
 	width: 990px;
-	background: #5F8A49;
+	background: #4F8A49;
 	overflow-y: hidden;
 }
 
@@ -105,7 +105,7 @@
 
 #search > #setting
 {
-	width: 175px;
+	width: 300px;
 	height: 20px;
 	float: right;
 	margin-top: 52px;
@@ -242,7 +242,7 @@ li.subMenu > a:hover
 #bottom
 {
 	width: 990px;
-	height: 150px;
+	height: 160px;
 	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto; 
@@ -261,7 +261,7 @@ li.subMenu > a:hover
 #bottom > #fastlink
 {
 	width: 480px;
-	height: 150px;
+	height: 140px;
 	position: absolute;
 	left: 50px;
 }
@@ -301,11 +301,11 @@ li.subMenu > a:hover
 	margin-left: auto;
 	margin-right: auto;
 	width: 990px;
-	height: 30px;
+	height: 50px;
 	bottom: 0px;
 	text-align: center;
 	line-height: 30px;
-	background: #5F8A49;
+	background: #4F8A49;
 	border-top: 1px #fff solid;
 }
 
@@ -318,6 +318,42 @@ li.subMenu > a:hover
 #bottom #footer span > a:hover
 {
 	color: #f64a32;
+}
+
+#footer > #line
+{
+	float: right;
+	width: 190px; 
+	margin: 0; 
+	padding: 0; 
+	display: bolck;
+	text-align: left;
+	color: #fff;
+	position: relative;
+}
+
+#line ul
+{
+	margin: 0;
+	padding: 0;	
+}
+
+#line li
+{
+	height: 15px;
+}
+
+#line a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#line span
+{
+	position: absolute;
+	left: 120px;
+	top: 10px;
 }
 
 #body
@@ -417,6 +453,7 @@ ul.TextList li a > div
     display: block;
     float: left;
 }
+
 
 #categoryNavigationBar li:first-child
 {

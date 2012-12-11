@@ -30,7 +30,7 @@ clientCache.setMaxAge(60);
 			<!-- begin of block_home_slider -->
 			<div class="block_home_slider">
                     <div id="home_slider" class="flexslider">
-                          <cms:PhotoSlide id="tsztList" cssClass="slides" categoryId="news" displayPhoto="true" count="4" />
+                          <cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000207" displayPhoto="true" count="4" />
                     </div>                       
              </div>
 			<!-- end of block_home_slider-->
@@ -75,7 +75,7 @@ clientCache.setMaxAge(60);
 				<span id="position_1"><img src="static/home/images/inform.gif" alt = ""/></span>
 				<p id = "position_2"><a href = "/news/sc000000000000000000000000000008/more/">更多...</a></p>
 				<div id="part2" style="width:360px; margin: 0;">
-					<cms:PostList id="tzggList" cssClass="TextList" subcategoryId="sc000000000000000000000000000008" count="12" />				
+					<cms:PostList id="tzggList" cssClass="TextList" subcategoryId="sc000000000000000000000000000008" count="10" />				
 				</div>
 			</div> 
 			
@@ -92,11 +92,11 @@ clientCache.setMaxAge(60);
 				</ul>
 				<ul>
 					
-					<li><a href="#">招生录取</a></li>
-					<li><a href="/technology/402881e93b60b9e7013b60bc1d8d0002.html">校园交通</a></li>
+					<li><a href="/zhaosheng/">招生录取</a></li>
+					<li><a href="/service/ff8081813b6fee04013b6ff158fb0008.html">校园交通</a></li>
 				</ul>
 				<ul style="margin-bottom: 15px;">
-					<li><a href="/zuzhi/">部门电话</a></li>
+					<li><a href="/service/ff8081813b898578013b89f2dcdb006c.html">部门电话</a></li>
 					
 					<li><a href="http://web.mobset.com/index.html">短信平台</a></li>
 				</ul>

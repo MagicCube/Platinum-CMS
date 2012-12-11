@@ -63,7 +63,8 @@
         <table >
             <tr>
                 <td>
-                    <a href = "/xinxi/">信息科学与技术系</a>
+                    
+                    <a href = "/yinyue/">音乐系</a>
                 </td>
                 <td>
                     <a href = "/gongxue/">工学系</a>
@@ -81,7 +82,7 @@
                     <a href ="/gongguan/">公共管理系</a>
                 </td>
                 <td>
-                    <a href = "/yinyue/">音乐系</a>
+                   <a href = "/jingguan/">经济与管理系</a>
                 </td>              
             </tr>  
                  
@@ -93,7 +94,7 @@
                     <a href = "/qianghua/">强化部</a>
                 </td>
                 <td>
-                    <a href = "/jingguan/">经济与管理系</a>
+                    <a href = "/xinxi/">信息科学与技术系</a>
                 </td>        
             </tr>  
                      
@@ -102,7 +103,15 @@
 
     <div id = "footer">
         <!--  <span style = "float: left; margin-left: 10px;">南京师范大学中北学院版权所有</span> <span style = "float: right; margin-right: 10px;">软件研发与培训中心&现代教育技术中心 开发、维护</span>-->
-   		<span style="float:left; margin-left: 10px;">南京师范大学中北学院版权所有</span><span><a href="/">www.nnuzc.cn</a></span> <span style="float:right; margin-right: 10px;"><a href="/ruanyan/">软件研发与培训中心</a>&<a href="/xiandai/">现代教育技术中心</a> 开发、维护</span>
+   		<span style="float:left; margin-left: 10px; ">2012 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院</span><span style="margin-left: -200px;"><a href="/">www.nnuzc.cn</a></span>
+    	<div style="float: left; display: block; clear: both; margin-left: 10px; margin-top: -15px; color: #fff;">苏ICP备05080300号</div>
+    	<div id="line" style="margin-top: -30px;">	 
+    		<ul>
+    			<li><a href="#">软件研发与培训中心</a></li>
+    			<li><a href="#">现代教育技术中心</a></li>
+    		</ul>
+    		<span>开发、维护</span>
+    	</div>
     </div>
 </div>
 
