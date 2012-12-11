@@ -31,7 +31,6 @@ import com.sun.jersey.multipart.FormDataParam;
 public class UploadResource extends AbstractResource
 {
 	private static List<String> IMAGE_EXTENSION_LIST = null;
-	private static List<String> ATTACHMENT_EXTENSION_LIST = null;
 	
 	@POST
 	@Path("image")
@@ -151,30 +150,7 @@ public class UploadResource extends AbstractResource
 		}
 		else
 		{
-			if (ATTACHMENT_EXTENSION_LIST == null)
-			{
-				ATTACHMENT_EXTENSION_LIST = new ArrayList<String>();
-				ATTACHMENT_EXTENSION_LIST.add("jpg");
-				ATTACHMENT_EXTENSION_LIST.add("png");
-				ATTACHMENT_EXTENSION_LIST.add("gif");
-				ATTACHMENT_EXTENSION_LIST.add("pdf");
-				ATTACHMENT_EXTENSION_LIST.add("zip");
-				ATTACHMENT_EXTENSION_LIST.add("rar");
-				ATTACHMENT_EXTENSION_LIST.add("doc");
-				ATTACHMENT_EXTENSION_LIST.add("docx");
-				ATTACHMENT_EXTENSION_LIST.add("ppt");
-				ATTACHMENT_EXTENSION_LIST.add("pptx");
-				ATTACHMENT_EXTENSION_LIST.add("xls");
-				ATTACHMENT_EXTENSION_LIST.add("xlsx");
-				ATTACHMENT_EXTENSION_LIST.add("xlsx");
-				ATTACHMENT_EXTENSION_LIST.add("rmvb");
-				ATTACHMENT_EXTENSION_LIST.add("rm");
-				ATTACHMENT_EXTENSION_LIST.add("wmv");
-				ATTACHMENT_EXTENSION_LIST.add("mov");
-				ATTACHMENT_EXTENSION_LIST.add("mp4");
-				ATTACHMENT_EXTENSION_LIST.add("mp3");
-			}		
-			return ATTACHMENT_EXTENSION_LIST.contains(p_extension);
+			return true;
 		}
 	}
 }
