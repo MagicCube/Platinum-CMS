@@ -9,8 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -98,6 +100,14 @@ public class UploadResource extends AbstractResource
 		{
 			return responseWithException("无法读取上传的内容。");
 		}
+	}
+	
+	@DELETE
+	@Path("attachment/{id}")
+	public Response uploadAttachment(@PathParam("id") String p_attachmentId)
+	{
+		PostAdminManager.getInstance().deletePostAttachment(p_attachmentId);
+		return responseOK();
 	}
 
 	private String _uploadFile(InputStream p_inputStream,

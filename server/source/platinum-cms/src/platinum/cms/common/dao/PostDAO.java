@@ -97,6 +97,7 @@ public class PostDAO extends StandardEntityDAO<PostEntity>
 	{
 		if (p_attachment != null)
 		{
+			p_attachment.getPost().getAttachments().remove(p_attachment);
 			getSession().delete(p_attachment);
 			File file = PTEnvironment.getSharedFile(p_attachment.getRelativePath());
 			if (file.exists())
@@ -135,6 +136,11 @@ public class PostDAO extends StandardEntityDAO<PostEntity>
 			deletePostAttachment(attachment);
 		}
 		
+		File folder = PTEnvironment.getSharedFile("uploads/" + p_entity.getId());
+		if (folder.exists())
+		{
+			folder.delete();
+		}
 		PostSearchEngine.getInstance().deleteIndex(p_entity.getId());
 	}
 }

@@ -329,14 +329,6 @@ pt.cms.admin.post.view.PostEditViewController = function()
         {
             me.addAttachment(me.data.attachments[i]);
         }
-        if (me.data.attachments.length == 0)
-        {
-            me.$main.find("#attachmentSection").hide();
-        }
-        else
-        {
-            me.$main.find("#attachmentSection").show();
-        }
     };
     
     me.addAttachment = function(p_attachment)
@@ -493,7 +485,31 @@ pt.cms.admin.post.view.PostEditViewController = function()
         var id = $(e.target).parent().attr("id");
         if (confirm("确实要删除所选择的附件吗？"))
         {
-            alert(id);
+            me.restClient.DELETE("admin/upload/attachment/" + id, null)
+            .success(function(p_result){
+                for (var i = 0; i < me.data.attachments.length; i++)
+                {
+                    var att = me.data.attachments[i];
+                    if (att.id == id)
+                    {
+                        me.data.attachments.removeAt(i);
+                        break;
+                    }
+                }
+                var $li = me.$attachmentList.find("#" + id);
+                $li.animate({
+                    width: 0,
+                    opacity: 0
+                }, function()
+                {
+                    $li.remove();
+                    _autoResize();
+                });
+            })
+            .fail(function()
+            {
+                alert("无法正确删除指定的附件。");
+            });
         }
     }
     
@@ -506,6 +522,15 @@ pt.cms.admin.post.view.PostEditViewController = function()
     
     function _autoResize() 
     {
+        if (me.data.attachments == null || me.data.attachments.length == 0)
+        {
+            me.$main.find("#attachmentSection").hide();
+        }
+        else
+        {
+            me.$main.find("#attachmentSection").show();
+        }
+
         var offsetTop = 0;
         var $children = me.$main.children(".section");
         for (var i = 0; i < $children.length; i++)
@@ -523,7 +548,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
     
     function _formatFileSize(p_size)
     {
-        if (p_size < 10240)
+        if (p_size < 1024 * 5)
         {
             return Math.round(p_size * 10 / 1024) / 10 + "KB";
         }
