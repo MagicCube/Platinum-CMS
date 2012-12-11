@@ -9,10 +9,15 @@
 <link href = "/static/common/css/basic.css" rel = "stylesheet"></link>
 <link href="/static/common/css/normal.css" rel="stylesheet"/>
 <script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
+<style type="text/css">
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 </head>
 <body>
 		<cms:Header/>
-			<div id = "maincontent" style = "height: 800px;">
+			<div id = "maincontent" style = "height: 580px;">
 			<div id = "layoutleft" >
 				<img src = "/static/common/images/glasses.jpg" height = 200; width = 250px;/>
 			</div>
@@ -21,10 +26,105 @@
 				<p style = "color: #3399CC; font-size: 14px;">更新日期： 2012/10/16</p>
 				<p>联系电话：</p>
 				<p>联系地址：</p>
-				<div style="width:646px; height: 400px;border: 2px #eee solid; margin: 200px 0 0 0;">
-					<iframe width="646px" height="396px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://ditu.google.cn/maps?f=q&amp;source=s_q&amp;hl=zh-CN&amp;geocode=&amp;q=%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%8D%97%E4%BA%AC%E6%A0%96%E9%9C%9E%E5%8C%BA%E5%AD%A6%E6%9E%97%E8%B7%AF2%E5%8F%B7%E5%8D%97%E4%BA%AC%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E4%B8%AD%E5%8C%97%E5%AD%A6%E9%99%A2&amp;aq=0&amp;oq=%E5%8D%97%E4%BA%AC%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E4%B8%AD%E5%8C%97%E5%AD%A6%E9%99%A2%E5%AD%A6%E6%9E%97%E8%B7%AF2%E5%8F%B7&amp;sll=32.060255,118.796877&amp;sspn=0.676189,1.234589&amp;brcurrent=3,0x35b5e9a7d7054203:0x1bfa14ce3a889f62,0,0x35b58c9b668dcd83:0x8ffbb60b79df1b06%3B5,0,0&amp;ie=UTF8&amp;hq=%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%8D%97%E4%BA%AC%E6%A0%96%E9%9C%9E%E5%8C%BA%E5%AD%A6%E6%9E%97%E8%B7%AF2%E5%8F%B7%E5%8D%97%E4%BA%AC%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E4%B8%AD%E5%8C%97%E5%AD%A6%E9%99%A2&amp;t=m&amp;ll=32.11384,118.908634&amp;spn=0.01454,0.025706&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://ditu.google.cn/maps?f=q&amp;source=embed&amp;hl=zh-CN&amp;geocode=&amp;q=%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%8D%97%E4%BA%AC%E6%A0%96%E9%9C%9E%E5%8C%BA%E5%AD%A6%E6%9E%97%E8%B7%AF2%E5%8F%B7%E5%8D%97%E4%BA%AC%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E4%B8%AD%E5%8C%97%E5%AD%A6%E9%99%A2&amp;aq=0&amp;oq=%E5%8D%97%E4%BA%AC%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E4%B8%AD%E5%8C%97%E5%AD%A6%E9%99%A2%E5%AD%A6%E6%9E%97%E8%B7%AF2%E5%8F%B7&amp;sll=32.060255,118.796877&amp;sspn=0.676189,1.234589&amp;brcurrent=3,0x35b5e9a7d7054203:0x1bfa14ce3a889f62,0,0x35b58c9b668dcd83:0x8ffbb60b79df1b06%3B5,0,0&amp;ie=UTF8&amp;hq=%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%8D%97%E4%BA%AC%E6%A0%96%E9%9C%9E%E5%8C%BA%E5%AD%A6%E6%9E%97%E8%B7%AF2%E5%8F%B7%E5%8D%97%E4%BA%AC%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E4%B8%AD%E5%8C%97%E5%AD%A6%E9%99%A2&amp;t=m&amp;ll=32.11384,118.908634&amp;spn=0.01454,0.025706&amp;z=15&amp;iwloc=A" style="color:#0000FF;text-align:left;"></a></small>
-				</div>	
-			</div>		
+				<div style="width:600px;height:400px;border:#ccc solid 1px;" id="dituContent"></div>
+				<script type="text/javascript">
+				    //创建和初始化地图函数：
+				    function initMap(){
+				        createMap();//创建地图
+				        setMapEvent();//设置地图事件
+				        addMapControl();//向地图添加控件
+				        addMarker();//向地图中添加marker
+				    }
+				    
+				    //创建地图函数：
+				    function createMap(){
+				        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+				        var point = new BMap.Point(118.921532,32.120941);//定义一个中心点坐标
+				        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+				        window.map = map;//将map变量存储在全局
+				    }
+				    
+				    //地图事件设置函数：
+				    function setMapEvent(){
+				        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+				        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+				        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+				        map.enableKeyboard();//启用键盘上下左右键移动地图
+				    }
+				    
+				    //地图控件添加函数：
+				    function addMapControl(){
+				        //向地图中添加缩放控件
+					var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+					map.addControl(ctrl_nav);
+				        //向地图中添加缩略图控件
+					var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_TOP_RIGHT,isOpen:1});
+					map.addControl(ctrl_ove);
+				        //向地图中添加比例尺控件
+					var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+					map.addControl(ctrl_sca);
+				    }
+				    
+				    //标注点数组
+				    var markerArr = [{title:"南京师范大学中北学院",content:"我的备注",point:"118.921689|32.121017",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+						 ];
+				    //创建marker
+				    function addMarker(){
+				        for(var i=0;i<markerArr.length;i++){
+				            var json = markerArr[i];
+				            var p0 = json.point.split("|")[0];
+				            var p1 = json.point.split("|")[1];
+				            var point = new BMap.Point(p0,p1);
+							var iconImg = createIcon(json.icon);
+				            var marker = new BMap.Marker(point,{icon:iconImg});
+							var iw = createInfoWindow(i);
+							var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+							marker.setLabel(label);
+				            map.addOverlay(marker);
+				            label.setStyle({
+				                        borderColor:"#808080",
+				                        color:"#333",
+				                        cursor:"pointer"
+				            });
+							
+							(function(){
+								var index = i;
+								var _iw = createInfoWindow(i);
+								var _marker = marker;
+								_marker.addEventListener("click",function(){
+								    this.openInfoWindow(_iw);
+							    });
+							    _iw.addEventListener("open",function(){
+								    _marker.getLabel().hide();
+							    })
+							    _iw.addEventListener("close",function(){
+								    _marker.getLabel().show();
+							    })
+								label.addEventListener("click",function(){
+								    _marker.openInfoWindow(_iw);
+							    })
+								if(!!json.isOpen){
+									label.hide();
+									_marker.openInfoWindow(_iw);
+								}
+							})()
+				        }
+				    }
+				    //创建InfoWindow
+				    function createInfoWindow(i){
+				        var json = markerArr[i];
+				        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+				        return iw;
+				    }
+				    //创建一个Icon
+				    function createIcon(json){
+				        var icon = new BMap.Icon("http://map.baidu.com/image/us_cursor.gif", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+				        return icon;
+				    }
+				    
+				    initMap();//创建和初始化地图
+				</script>
+			</div>
 		</div>
 		<cms:Footer/>
 </body>

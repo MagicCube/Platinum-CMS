@@ -7,7 +7,7 @@
     <li class = "main"><a href = "/">首页</a></li>
     <li class ="main"><a href = "#">学院概况</a>
         <ul>
-            <li class = "subMenu"><a href = "/introduce/402881e93b44d032013b44d2f5060002.html">学院简介</a></li>
+            <li class = "subMenu"><a href = "/introduce/402881e93b41ec78013b41f8a5cf0008.html">学院简介</a></li>
             <li class = "subMenu"><a href = "/introduce/leader.jsp">领导简介</a></li>
             <li class = "subMenu"><a href = "/introduce/view.jsp">校园美景</a></li>
             <li class = "subMenu"><a href = "/introduce/contact.jsp">联系我们</a></li>
@@ -44,12 +44,12 @@
     </li>
     <li class = "main"><a href = "#">公共服务</a>
         <ul>
-            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b470dedf3002f.html">校历</a></li>
+            <li class = "subMenu"><a href = "/service/ff8081813b6fee04013b6fef4b390002.html">校历</a></li>
             <li class = "subMenu"><a href = "/service/ff8081813b7a2ecd013b7a384fb20008.html">来稿须知</a></li>
             <li class = "subMenu"><a href = "/service/guide.jsp">办事指南</a></li>
-            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b4710fff3003b.html">作息时间</a></li>
-            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b470f903c0035.html">办公电话查询</a></li>
-            <li class = "subMenu"><a href = "/service/ff8081813b46b724013b471051720038.html">校园地图与交通信息</a></li>
+            <li class = "subMenu"><a href = "/service/ff8081813b6fee04013b6ff2b1d90011.html">作息时间</a></li>
+            <li class = "subMenu"><a href = "/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话查询</a></li>
+            <li class = "subMenu"><a href = "/service/ff8081813b6fee04013b6ff158fb0008.html">校园地图与交通信息</a></li>
         </ul>
     </li>
     <li class = "main"><a href = "#">技术支持</a>

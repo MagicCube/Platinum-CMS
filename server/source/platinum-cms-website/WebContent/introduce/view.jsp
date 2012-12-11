@@ -30,11 +30,11 @@
     <script>
     $("#album")
         .album({
-            cellWidth: 316,
+            cellWidth: 320,
             cellHeight: 210,
-            padding: 12
+            padding: 10
         })
-        .height(250 * 3);
+        .height(221 * 3);
     </script>
     
 	<cms:Footer/>
