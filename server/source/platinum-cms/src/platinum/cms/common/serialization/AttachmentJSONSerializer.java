@@ -37,6 +37,10 @@ public class AttachmentJSONSerializer
 
 	public static JSONArray toSimpleArray(List<PostAttachmentEntity> p_attachments)
 	{
+		if (p_attachments == null)
+		{
+			return null; 
+		}
 		JSONArray array = new JSONArray();
 		for (PostAttachmentEntity attachment : p_attachments)
 		{

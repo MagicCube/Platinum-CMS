@@ -172,7 +172,8 @@ pt.cms.admin.post.view.PostListViewController = function()
             postType: 1,
             postStatus: 0,
             summary: "在这里添加摘要（120字以内）",
-            contentText: "在这里添加正文"
+            contentText: "在这里添加正文",
+            attachments: []
         });
     };
     

@@ -77,7 +77,7 @@
     border: 1px solid #cfcfcf;
 }
 
-.PostEditView > #main > #attachmentSection > ul > li > #fileName
+.PostEditView > #main > #attachmentSection > ul > li > #name
 {
     display: block;
     position: absolute;
@@ -89,7 +89,7 @@
     text-overflow: ellipsis;
 }
 
-.PostEditView > #main > #attachmentSection > ul > li > #fileSize
+.PostEditView > #main > #attachmentSection > ul > li > #size
 {
     position: absolute;
     right: 23px;

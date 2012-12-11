@@ -35,6 +35,10 @@ public class SubcategoryJSONSerializer
 
 	public static JSONArray toSimpleArray(List<SubcategoryEntity> p_categories)
 	{
+		if (p_categories == null)
+		{
+			return null;
+		}
 		JSONArray array = new JSONArray();
 		for (SubcategoryEntity category : p_categories)
 		{

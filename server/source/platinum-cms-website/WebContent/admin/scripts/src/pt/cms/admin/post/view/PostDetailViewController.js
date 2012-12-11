@@ -32,7 +32,7 @@ pt.cms.admin.post.view.PostDetailViewController = function()
     
     me.loadData = function(p_id)
     {
-        me.restClient.GET("admin/post/" + p_id)
+        me.restClient.GET("admin/post/" + p_id + "?rnd=" + Math.random())
             .success(function(p_result){
                 me.setData(p_result);
             });
@@ -51,7 +51,7 @@ pt.cms.admin.post.view.PostDetailViewController = function()
         {
             me.view.$element.show();
             me.view.$element.children("h1").text(me.data.title);
-            me.view.$element.find("#info").text($format(new Date(me.data.updateTime), "yyyy年M月d日 HH:mm") + " " + me.data.source);
+            me.view.$element.find("#info").text($format(new Date(me.data.updateTime), "yyyy年M月d日 HH:mm") + " " + (me.data.source ? me.data.source : ""));
             me.view.$element.find("ul > #category").text(me.data.categoryId + " > ");
             me.view.$element.find("ul > #subcategory").text(me.data.subcategoryName);
             me.view.$element.children("#content").html(me.data.contentText);

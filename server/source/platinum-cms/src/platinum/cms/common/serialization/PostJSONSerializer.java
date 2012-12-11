@@ -96,6 +96,10 @@ public class PostJSONSerializer
 
 	public static JSONArray toSimpleArray(List<PostEntity> p_posts)
 	{
+		if (p_posts == null)
+		{
+			return null; 
+		}
 		JSONArray array = new JSONArray();
 		for (PostEntity post : p_posts)
 		{
@@ -106,6 +110,10 @@ public class PostJSONSerializer
 	
 	public static JSONArray toSimpleArray2(List<PostSearchResult> p_posts)
 	{
+		if (p_posts == null)
+		{
+			return null; 
+		}
 		JSONArray array = new JSONArray();
 		for (PostSearchResult post : p_posts)
 		{

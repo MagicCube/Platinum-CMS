@@ -131,17 +131,18 @@ pt.cms.admin.post.view.PostEditViewController = function()
         me.$id = $("<input type=text id=id readonly onclick='this.select()'>");
         $dl.children("dd").append(me.$id);
         $sideBar.append($dl);
-        
 
-        $dl = $("<dl><dt>类型</dt> <dd></dd></dl>");
-        me.$postType = $("<select id=postStatus><option value=0>静态信息</option><option value=1 selected=selected>新闻</option><option value=2>通知</option></select>");
-        $dl.children("dd").append(me.$postType);
-        $sideBar.append($dl);
         
         
         $dl = $("<dl><dt>状态</dt> <dd></dd></dl>");
         me.$postStatus = $("<select id=postStatus><option value=0>尚未发布</option><option value=1>已发布</option></select>");
         $dl.children("dd").append(me.$postStatus);
+        $sideBar.append($dl);
+        
+
+        $dl = $("<dl><dt>类型</dt> <dd></dd></dl>");
+        me.$postType = $("<select id=postStatus><option value=0>静态信息</option><option value=1 selected=selected>新闻</option><option value=2>通知</option></select>");
+        $dl.children("dd").append(me.$postType);
         $sideBar.append($dl);
         
         var $dl = $("<dl><dt>栏目</dt> <dd></dd></dl>");
@@ -309,11 +310,35 @@ pt.cms.admin.post.view.PostEditViewController = function()
             })[0];
         }
         
+        me.renderAttachmentListView();
+        
         _autoResize();
 
         me.contentEditor.updateFrame();
         me.contentEditor.refresh();
         me.contentEditor.focus();
+    };
+    
+    me.renderAttachmentListView = function()
+    {
+        me.$attachmentList.children().remove();
+        if (me.data.attachments == null)
+        {
+            me.data.attachments = [];
+        }
+        for (var i = 0; i < me.data.attachments.length; i++)
+        {
+            me.addAttachment(me.data.attachments[i]);
+        }
+    };
+    
+    me.addAttachment = function(p_attachment)
+    {
+        var $li = $("<li> <span id='name'/> <span id='size'/> <div id='delete'/> </li>");
+        $li.attr("id", p_attachment.id);
+        $li.children("#name").text(p_attachment.name);
+        $li.children("#size").text(_formatFileSize(p_attachment.size));
+        me.$attachmentList.append($li);
     };
     
     me.savePost = function()
@@ -474,6 +499,22 @@ pt.cms.admin.post.view.PostEditViewController = function()
         me.$main.find("#contentFrame").css("top", offsetTop);        
     }
     $(window).resize(_autoResize);
+    
+    function _formatFileSize(p_size)
+    {
+        if (p_size < 10240)
+        {
+            return Math.round(p_size * 10 / 1024) / 10 + "KB";
+        }
+        else if (p_size < 10240000)
+        {
+            return Math.round(p_size * 10 / 1024000) / 10 + "MB";
+        }
+        else
+        {
+            return Math.round(p_size * 10 / 1024000000) / 10 + "GB";
+        }
+    }
     
     return me.endOfClass(arguments);
 }
