@@ -12,6 +12,7 @@ import platinum.cms.common.entity.PostEntity;
 import platinum.cms.common.entity.PostViewsEntity;
 import platinum.cms.common.search.PostSearchEngine;
 import platinum.common.PTEnvironment;
+import platinum.common.util.FileSystemUtil;
 import platinum.framework.dao.StandardEntityDAO;
 
 public class PostDAO extends StandardEntityDAO<PostEntity>
@@ -138,7 +139,7 @@ public class PostDAO extends StandardEntityDAO<PostEntity>
 		File folder = PTEnvironment.getSharedFile("uploads/" + p_entity.getId());
 		if (folder.exists())
 		{
-			folder.delete();
+			FileSystemUtil.delete(folder);
 		}
 		PostSearchEngine.getInstance().deleteIndex(p_entity.getId());
 	}
