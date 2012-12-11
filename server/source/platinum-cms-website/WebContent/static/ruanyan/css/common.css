@@ -9,6 +9,13 @@ a
 	text-decoration: none;
 }
 
+a:hover
+{
+	color: rgba(88, 88, 88, 1);
+	
+	
+	}
+	
 
 
 html, body{
@@ -25,9 +32,9 @@ html, body{
 	margin:0;
 	border:0;
 	width: 990px;
-	height: 200px;
+	height: 190px;
 	margin: 0 auto;
-	background-color:#4c9900;
+	background-color:#8e1818;
 	
 	
 	
@@ -55,8 +62,9 @@ html, body{
 	
 #ruanyanlogo
 {
+	clear: both;
 	display:block;
-	margin-left: 300px;
+	margin: 0 auto;
 }
 	
 /*搜索栏*/
@@ -64,14 +72,14 @@ html, body{
 {
 	margin:0px;
 	padding:0px;
-	width: 260px;
-	height: 96px;
+	width: 230px;
+	height: 80px;
 	float: right;
 	display: inline-block;
 }
 #link_search
 {
-	margin: 18px 10px 0 0;
+	margin-top: 17px;
 	height: 60px;
 	width: 200px;
 
@@ -93,7 +101,9 @@ html, body{
 	text-decoration: none;
 }
 
-#link_search #text a:hover { color: #7BA566; }
+#link_search #text a:hover { color: rgba(88, 88, 88, 1); }
+
+
 
 #link_search > #search
 {
@@ -140,7 +150,7 @@ html, body{
 	margin:0;
 	border:0;
 	width: 990px;
-	height: 54px;
+	height: 36px;
 	text-align: center;
 	
 }
@@ -149,11 +159,12 @@ html, body{
 {
 	padding:0;
 	margin:0 auto;
-	border-bottom: 1px #83b94f solid;
+	border-bottom: 1px #eee6cb solid; 
 	width: 966px;
 	height:34px;
 	display:block;
 	list-style: none;
+	
 }
 
 
@@ -176,7 +187,7 @@ html, body{
 	}
 #mainMenu .singleMenu a:hover
 {
-	color: rgba(0, 0, 0, 0.4);
+	color: rgba(88, 88, 88, 1);
 	
 	
 	}
@@ -206,7 +217,7 @@ html, body{
 	border: 0;
 	height: 182px;
 	width: 990px;
-	background-color: #4c9900;
+	background-color: #8e1818;
 }
 
 
@@ -226,8 +237,19 @@ html, body{
 }
 #fastlink1
 {
-	margin:0px 40px 0px 70px;
+	float:left;
+	padding:0px 26px 0px 60px;
+	
+
 	}
+#fastlink2
+{
+	float:right;
+	
+	
+
+	}
+	
 .fastLink a
 {
 	font: 宋体;
@@ -241,15 +263,34 @@ html, body{
 	height: 20px;
 	}
 
-
-
+#righttable
+{
+	margin: 20px 0 0 0;
+	
+}
+#lefttable
+{
+	margin: 22px 0 0 0;
+	
+}
+#divcenter
+{
+	border: 0;
+	padding:0;
+	margin: 20px 0 0 0;
+	width: 1px;
+	height: 110px;
+	background-color: #fff;
+	display:inline-block;
+	float: left;
+}
 
 #footButtom{
 	width: 990px;
 	height: 32px;
 	margin: 0 auto;
 	
-	border-top: 1px #FFFFFF solid;
+	border-top: 1px #FFFFFF solid; 
 	text-align:center;
 }
 #footButtom p

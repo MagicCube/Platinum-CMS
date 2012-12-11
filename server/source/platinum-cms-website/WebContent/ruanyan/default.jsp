@@ -23,7 +23,7 @@
 	    </div>
 	    
 		 
-		</div>
+	
 		<cms:Footer path="ruanyan"></cms:Footer>
 
 

@@ -109,7 +109,7 @@ clientCache.setMaxAge(60);
 			<div id = "video">
 				<span id = "position_1"><img src = "/static/home/images/view.gif" alt = ""/></span>
                 <div id = "medium">
-                	<img style = "float: right;" src = "/static/home/images/movie.jpg" alt = ""/>
+                	<a href="/introduce/view.jsp"><img style = "float: right;" src = "/static/home/images/movie.jpg" alt = "校园美景" title="校园美景"/></a>
                 </div>
 			</div>
 		</div>

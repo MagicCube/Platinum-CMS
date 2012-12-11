@@ -6,12 +6,19 @@
 
 	padding: 0;
 	border: 0;
-	width: 990px;
-	min-height: 500px;
+	width: 988px;
+/*	min-height: 500px; */
 	margin: 0 auto;
+	border-left: 1px #bbb dashed;
+	border-right: 1px #bbb dashed;
+	overflow: hidden;
+		
 	
-	
-	
+}
+#summary
+{
+	border-left: none;
+	border-right: none;
 }
 
 #bodyContent
@@ -19,8 +26,8 @@
 
 	padding: 0;
 	border: 0;
-	width: 990px;
-	min-height: 500px;
+	width: 988px;
+	min-height: 600px;
 	margin: 0 auto;
 	
 	
@@ -31,27 +38,33 @@
 	
 	padding: 0;
 	border: 0;
-	width: 990px;
-	min-height: 500px;
+	width: 988px;
+	min-height: 600px;
 	margin: 0 auto;
-	margin: 20px 0 0 0;
+	padding: 20px 0 0 0;
 	
 }
 #mainPost img
 {
 	width: 300px;
-	height: 400px;
+	height: 300px;
 	float: left;
-	
+	margin-left: 10px;
+	border: 2px #eee solid;
 	
 	
 }
 
 #mainPost li
 {
-	width: 990px;
-	float: left;
+	width: 988px;
+	
 	list-style: none;
+}
+
+#mainPost li a
+{
+	color: #000;
 }
 
 	
@@ -71,7 +84,7 @@
 	height: 30px;
 	line-height: 30px;
 	border-bottom: 1px #ddd solid;
-	width: 980px;
+	width: 988px;
 	color: #000;
 	font-weight: bold;
 	text-align: left;
@@ -98,35 +111,84 @@
 
 #content
 {
-	margin:0;
-	padding: 0;
-	width: 640px;
+	width: 988px;
+	line-height: 24px;
 	text-align: left;
+	margin:0 auto;
+	
 }
-
+#textContent > #content
+{
+	width: 640px;
+	line-height: 24px;
+	text-align: left;
+	margin:0 auto;
+	float: right;
+	
+}
 /* 列表 */
 #postList {
 display: block;
 list-style: none;
 margin: 0;
 padding: 0;
-height: 650px;
+min-height: 550px;
+position: relative;
 }
 
 #postList li{
 	text-align: left;
 	margin: 0 auto;
+	width:970px;	
+
+}
+#postList li:nth-child(2n+1){
+	background-color: #fff;
+
+}
+
+#postList li:nth-child(2n+2){
+	
+
+	background-color: rgba(238,230,203,0.4);
 
 }
 
 /*  页标签 */
 
-#postList #pageNavigationBar {
+#postList >#pageNavigationBar {
 	
 	margin: 0 auto;
-	clear:both;
+	position: absolute;
+	bottom: 20px;
+	width:988px;
+	text-align:center;
 
 
+}
+
+
+
+
+/* postList内容格式 */
+
+
+#postDetail > #textContent
+{
+
+	float:right;
+	width: 640px;
+	margin:15px 5px 0 0;
+	text-align: center;
 	
+	}
+
+
+
+/*20121209*/
+#postDetail
+{
+	min-height: 660px;
+	width: 988px;
 }
 

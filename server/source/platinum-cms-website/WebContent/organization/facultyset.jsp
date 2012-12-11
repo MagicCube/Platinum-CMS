@@ -12,29 +12,22 @@
 </head>
 <body>
 	<cms:Header/>
+
 	
-	<div id = "mainbody" style = "height: 500px;">
-		<div id = "maincontent" style = "height: 500px;">
-			<div id = "layoutleft" >
-				<img src = "/static/common/images/department.jpg" height = 200; width = 250px;/>
-			</div>
-			<div id = "layoutright">
-				<h2>部门设置</h2>
-				<p style = "color: #3399CC; font-size: 14px;">更新日期： 2012/10/16</p>
-				<ul>
-					<li><a href = "/xinxi/">信息科学与技术系</a></li>
- 					<li><a href = "/jingguan/">经济与管理系</a></li>
-					<li><a href = "/gongguan/">公共管理系</a></li>
-					<li><a href = "/renwen/">人文系</a></li>
-					<li><a href = "/waiyu/">外语系</a></li>
-					<li><a href = "/gongxue/">工学系</a></li>
-					<li><a href = "/meishu/">美术系</a></li>
-					<li><a href = "/yinyue/">音乐系</a></li>
-					<li><a href = "/qianghua/">强化部</a></li>
-				</ul>		
-			</div>		
-		</div>
-	</div>	
+		<div id="middle">
+			<span><img src="/static/common/images/struct.png" title="结构图" usemap="#facultymap"/></span>
+			<map name="facultymap">
+				<area shape="rect" coords="310,40,400,170" href ="/xinxi/" alt="xinxi"/>
+				<area shape="rect" coords="510,50,610,107" href ="/yinyue/" alt="yinyue"/>
+				<area shape="rect" coords="557,170,657,242" href ="/gongxue/" alt="yinyue"/>
+				<area shape="rect" coords="280,240,368,322" href ="/renwen/" alt="yinyue"/>
+				<area shape="rect" coords="520,320,580,383" href ="/meishu/" alt="yinyue"/>
+				<area shape="rect" coords="370,360,456,468" href ="/gongguan/" alt="yinyue"/>
+				<area shape="rect" coords="520,460,596,523" href ="/waiyu/" alt="yinyue"/>
+				<area shape="rect" coords="370,550,451,616" href ="/qianghua/" alt="yinyue"/>
+				<area shape="rect" coords="460,600,640,642" href ="/jingguan/" alt="yinyue"/>
+			</map>
+		</div>	
 		
 		
 	<cms:Footer/>

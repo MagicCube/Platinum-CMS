@@ -14,9 +14,9 @@ PostEntity post = postManager.getPost(postId, categoryId);
 %>
 
 <div id="<%= id%>" class="PostDetail <%= post.getPostType()%>">
-    <cms:CategoryNavigationBar id="categoryNavigationBar" categoryId="<%= categoryId%>" subcategoryId="<%= post.getSubcategoryId()%>"></cms:CategoryNavigationBar>
-
+   
     <% if (post.getPostType() == PostType.NEWS) {%>
+    	 <cms:CategoryNavigationBar id="categoryNavigationBar" categoryId="<%= categoryId%>" subcategoryId="<%= post.getSubcategoryId()%>"></cms:CategoryNavigationBar>
         <h1 id="title"><%= post.getTitle()%></h1>    
         
         <div id="info">

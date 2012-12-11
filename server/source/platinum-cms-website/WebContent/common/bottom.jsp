@@ -44,7 +44,7 @@
             </tr>
             
             <tr>
-            	<td><a href="/technology/">软件研发与培训中心</a></td>
+            	<td><a href="/ruanyan/">软件研发与培训中心</a></td>
            		<td>
                     <a href = "/xiandai/">现代教育技术中心</a>
                 </td>
