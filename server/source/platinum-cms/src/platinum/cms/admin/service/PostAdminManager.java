@@ -5,6 +5,7 @@ import java.util.List;
 import platinum.cms.common.dao.PostDAO;
 import platinum.cms.common.entity.PostAttachmentEntity;
 import platinum.cms.common.entity.PostEntity;
+import platinum.cms.runtime.service.PostRuntimeManager;
 import platinum.framework.dao.DAOQuery;
 
 public class PostAdminManager
@@ -29,7 +30,7 @@ public class PostAdminManager
 	{
 		if (_postDAO == null)
 		{
-			_postDAO = new PostDAO();
+			_postDAO = PostRuntimeManager.getInstance().getPostDAO();
 		}
 		return _postDAO;
 	}
