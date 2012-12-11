@@ -1,5 +1,6 @@
 package platinum.cms.common.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Basic;
@@ -204,7 +205,7 @@ public class PostEntity extends StandardEntity
 	
 	
 	
-	private List<PostAttachmentEntity> _attachments = null;
+	private List<PostAttachmentEntity> _attachments = new ArrayList<PostAttachmentEntity>();
 	@OneToMany(mappedBy = "post", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@OrderBy("CREATE_TIME")
 	public List<PostAttachmentEntity> getAttachments()
