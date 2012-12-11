@@ -132,9 +132,12 @@ public class PostDAO extends StandardEntityDAO<PostEntity>
 		}
 		
 		List<PostAttachmentEntity> attachments = p_entity.getAttachments();
-		for (PostAttachmentEntity attachment : attachments)
+		if (attachments != null)
 		{
-			deletePostAttachment(attachment);
+			for (PostAttachmentEntity attachment : attachments)
+			{
+				deletePostAttachment(attachment);
+			}
 		}
 		
 		File folder = PTEnvironment.getSharedFile("uploads/" + p_entity.getId());
