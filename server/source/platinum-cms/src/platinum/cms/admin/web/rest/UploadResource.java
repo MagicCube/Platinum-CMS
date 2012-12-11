@@ -14,6 +14,9 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import platinum.cms.admin.service.PostAdminManager;
+import platinum.cms.common.entity.PostAttachmentEntity;
+import platinum.cms.common.serialization.AttachmentJSONSerializer;
 import platinum.common.PTEnvironment;
 import platinum.common.util.ImageUtil;
 import platinum.common.util.StringUtil;
@@ -82,7 +85,14 @@ public class UploadResource extends AbstractResource
 		try
 		{
 			String relativePath = _uploadFile(p_inputStream, "attachments", p_postId, fileName);
-			return responseWithText(relativePath);
+			File file = PTEnvironment.getSharedFile(relativePath);
+			if (file.exists())
+			{
+				PostAttachmentEntity attachment = new PostAttachmentEntity(fileName, file.length(), relativePath);
+				PostAdminManager.getInstance().uploadPostAttachment(attachment, p_postId);
+				return responseWithJSONObject(AttachmentJSONSerializer.toSimpleObject(attachment));
+			}
+			return responseWithException("无法完成上传操作。");
 		}
 		catch (Exception e)
 		{

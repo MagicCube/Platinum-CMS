@@ -6,6 +6,7 @@ import org.codehaus.jettison.json.JSONArray;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 
+import platinum.cms.common.entity.PostAttachmentEntity;
 import platinum.cms.common.entity.PostEntity;
 import platinum.cms.common.search.PostSearchResult;
 
@@ -79,6 +80,9 @@ public class PostJSONSerializer
 			json.put("publisher", p_post.getPublisher());
 			json.put("source", p_post.getSource());
 			json.put("createTime", p_post.getCreateTime().getTime());
+			
+			List<PostAttachmentEntity> attachments = p_post.getAttachments();
+			json.put("attachments", AttachmentJSONSerializer.toSimpleArray(attachments));
 		}
 		catch (JSONException e)
 		{

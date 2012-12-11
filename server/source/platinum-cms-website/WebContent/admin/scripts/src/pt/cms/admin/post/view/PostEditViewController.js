@@ -36,6 +36,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
     me.$updateTime = null;
     me.$uploadAttachmentButton = null;
     me.$uploadImageButton = null;
+    me.$attachmentList = null;
     
     
     base.viewDidLoad = me.viewDidLoad;
@@ -87,7 +88,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
                 },
                 "onUploadSuccess"   : function(p_file, p_data, p_response)
                 {
-                    alert(p_data);
+                    console.log(p_data);
                 }
             });
         }, 1);
@@ -111,6 +112,11 @@ pt.cms.admin.post.view.PostEditViewController = function()
         $div.append(me.$summary);
         $main.append($div);
         
+        
+        $div = $("<div class='section' id='attachmentSection'> <ul id='attachmentList'></ul> </div>");
+        me.$attachmentList = $div.children("#attachmentList");
+        $main.append($div);
+                
         
         var $contentFrame = $("<div id='contentFrame'/>");
         me.$content = $("<textarea id='content'/>");
@@ -302,6 +308,8 @@ pt.cms.admin.post.view.PostEditViewController = function()
                 height: "100%"
             })[0];
         }
+        
+        _autoResize();
 
         me.contentEditor.updateFrame();
         me.contentEditor.refresh();
@@ -455,15 +463,17 @@ pt.cms.admin.post.view.PostEditViewController = function()
     }
     
     
-    function _btnUploadImage_onclick(e)
+    function _autoResize() 
     {
-        
+        var offsetTop = 0;
+        var $children = me.$main.children(".section");
+        for (var i = 0; i < $children.length; i++)
+        {
+            offsetTop += $children.eq(i).height() + 1;
+        }
+        me.$main.find("#contentFrame").css("top", offsetTop);        
     }
-    
-    function _btnUploadAttachment_onclick(e)
-    {
-        
-    }
+    $(window).resize(_autoResize);
     
     return me.endOfClass(arguments);
 }

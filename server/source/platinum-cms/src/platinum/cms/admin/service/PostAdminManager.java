@@ -3,6 +3,7 @@ package platinum.cms.admin.service;
 import java.util.List;
 
 import platinum.cms.common.dao.PostDAO;
+import platinum.cms.common.entity.PostAttachmentEntity;
 import platinum.cms.common.entity.PostEntity;
 import platinum.framework.dao.DAOQuery;
 
@@ -69,6 +70,22 @@ public class PostAdminManager
 	{
 		getPostDAO().beginTransaction();
 		getPostDAO().deleteById(p_postId);
+		getPostDAO().commitTransaction();
+	}
+
+	public void uploadPostAttachment(
+			PostAttachmentEntity p_postAttachment, String p_postId)
+	{
+		getPostDAO().beginTransaction();
+		getPostDAO().addPostAttachment(p_postAttachment, p_postId);
+		getPostDAO().commitTransaction();
+	}
+
+	public void deletePostAttachment(
+			String p_attachmentId)
+	{
+		getPostDAO().beginTransaction();
+		getPostDAO().deletePostAttachment(p_attachmentId);
 		getPostDAO().commitTransaction();
 	}
 }
