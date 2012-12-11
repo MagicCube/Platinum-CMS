@@ -1,3 +1,4 @@
+<%@tag import="platinum.cms.common.entity.PostAttachmentEntity"%>
 <%@ tag import="platinum.cms.common.PostType"%>
 <%@ tag import="platinum.common.util.DateUtil"%>
 <%@ tag import="platinum.cms.common.entity.PostEntity"%>
@@ -7,6 +8,24 @@
 <%@ attribute name="id" required="true" rtexprvalue="true" %>
 <%@ attribute name="postId" rtexprvalue="true" %>
 <%@ attribute name="categoryId" rtexprvalue="true" %>
+
+<%!
+private String _formatFileSize(long p_size)
+{
+	if (p_size < 1024 * 5)
+    {
+        return Math.round(p_size * 10 / 1024) / 10.0 + "KB";
+    }
+    else if (p_size < 10240000)
+    {
+        return Math.round(p_size * 10 / 1024000) / 10.0 + "MB";
+    }
+    else
+    {
+        return Math.round(p_size * 10 / 1024000000) / 10.0 + "GB";
+    }
+}
+%>
 
 <%
 PostRuntimeManager postManager = PostRuntimeManager.getInstance();
@@ -50,6 +69,23 @@ PostEntity post = postManager.getPost(postId, categoryId);
         <% if (post.getContentText() != null) {%>
         <div id="content"><%= post.getContentText()%></div>
         <% } %>
+        
+        <% if (post.getAttachments().size() > 0) {%>
+        <ul id="attachmentList">
+            <% for (int i = 0; i < post.getAttachments().size(); i++) {
+                   PostAttachmentEntity attachment = post.getAttachments().get(i);
+            %>
+            <li>
+                <span id="index">附件<%= i + 1%>: </span>
+                <a href="#">
+                    <span id="name"><%= attachment.getFileName()%></span>
+                </a>
+                <span id="size">(<%= _formatFileSize(attachment.getFileSize())%>)</span>
+            </li>
+            <% } %>
+        </ul>
+        <% } %>
+        
     <%} else {%>
         <div id="imageContent">
             <% if (post.getPhotoURL() != null) {%>
@@ -62,6 +98,22 @@ PostEntity post = postManager.getPost(postId, categoryId);
                 <span id="updateTime"><span>更新时间：</span><a><%= DateUtil.formatDate(post.getUpdateTime(), "yyyy年M月d日")%></a></span>
             </div>
             <div id="content"><%= post.getContentText()%></div>
+            
+            <% if (post.getAttachments().size() > 0) {%>
+            <ul id="attachmentList">
+                <% for (int i = 0; i < post.getAttachments().size(); i++) {
+                       PostAttachmentEntity attachment = post.getAttachments().get(i);
+                %>
+                <li>
+                    <span id="index">附件<%= i + 1%>: </span>
+                    <a href="#">
+                        <span id="name"><%= attachment.getFileName()%></span>
+                    </a>
+                    <span id="size">(<%= _formatFileSize(attachment.getFileSize())%>)</span>
+                </li>
+                <% } %>
+            </ul>
+            <% } %>
         </div>
     <%} %>
 </div>
