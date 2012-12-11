@@ -83,7 +83,8 @@ public class PostDAO extends StandardEntityDAO<PostEntity>
 			p_attachment.setPost(post);
 			p_attachment.setCreateTime(new Date());
 			p_attachment.setUpdateTime(new Date());
-			getSession().save(p_attachment);
+			post.getAttachments().add(p_attachment);
+			getSession().save(post);
 		}
 	}
 	

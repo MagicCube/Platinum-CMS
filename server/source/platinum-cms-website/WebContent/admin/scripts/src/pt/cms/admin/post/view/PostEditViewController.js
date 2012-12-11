@@ -88,7 +88,14 @@ pt.cms.admin.post.view.PostEditViewController = function()
                 },
                 "onUploadSuccess"   : function(p_file, p_data, p_response)
                 {
-                    console.log(p_data);
+                    if (me.data.attachments == null)
+                    {
+                        me.data.attachments = [];
+                    }
+                    var attachment = eval("(" + p_data + ")");
+                    me.data.attachments.add(attachment);
+                    me.addAttachment(attachment);
+                    _autoResize();
                 }
             });
         }, 1);
