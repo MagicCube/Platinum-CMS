@@ -34,7 +34,7 @@ PostEntity post = postManager.getPost(postId, categoryId);
 
 <div id="<%= id%>" class="PostDetail <%= post.getPostType()%>">
    
-    <% if (post.getPostType() == PostType.NEWS) {%>
+    <% if (post.getPostType() == PostType.NEWS || post.getPostType() == PostType.NOTIFICATION) {%>
     	 <cms:CategoryNavigationBar id="categoryNavigationBar" categoryId="<%= categoryId%>" subcategoryId="<%= post.getSubcategoryId()%>"></cms:CategoryNavigationBar>
         <h1 id="title"><%= post.getTitle()%></h1>    
         
