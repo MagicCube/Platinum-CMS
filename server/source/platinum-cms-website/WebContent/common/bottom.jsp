@@ -102,7 +102,7 @@
     </div>
 
     <div id = "footer">
-   		<span id="copyright">2012 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院</span><span style="margin-left: -200px;"><a href="/">www.nnuzc.cn</a></span>
+   		<span id="copyright"><span id="time">2012</span> 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院</span><span style="margin-left: -200px;"><a href="/">www.nnuzc.cn</a></span>
     	<div id="icp">苏ICP备05080300号</div>
     	<div id="developer" style="margin-top: -30px;">	 
     		<ul>

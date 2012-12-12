@@ -80,3 +80,21 @@
 {
 	width: 650px;
 }
+
+#attachmentList
+{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+#attachmentList a
+{
+	text-decoration: none;
+}
+
+#attachmentList a:hover
+{
+	text-decoration: underline;
+}
+

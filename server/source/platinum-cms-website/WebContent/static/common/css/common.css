@@ -11,7 +11,7 @@
 
 #linklabel
 {
-	float: right;
+	float: left;
 }
 
 #linklabel ul
@@ -30,7 +30,6 @@
 	width: 80px;
 	text-align: center;
 }
-
 #linklabel ul li:first-child
 {
 	width: 100px;	
@@ -44,10 +43,53 @@
 	text-decoration: none;
 	color: #fff;
 	text-align: center;
-	border-right: 1px #fff solid;
+	border-left: 1px #fff solid;
 }
 
 #linklabel ul li a:hover
+{
+	background: rgba(0, 0, 0, 0.4);
+}
+
+#review
+{
+	float: right;
+}
+
+#review ul
+{
+	height: 30px;
+	padding: 0;
+	margin: 0;
+}
+
+#review ul li:first-child
+{
+	width: 100px;	
+}
+
+#review ul li 
+{
+	display: block;
+	float: left;
+	height: 30px;
+	width: 80px;
+	text-align: center;
+}
+
+
+#review ul li a
+{
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	border-right: 1px #fff solid;
+}
+
+#review ul li a:hover
 {
 	background: rgba(0, 0, 0, 0.4);
 }

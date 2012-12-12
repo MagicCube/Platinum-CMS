@@ -4,11 +4,7 @@
 <link href = "/static/common/css/common.css" rel = "stylesheet"></link>
 
 <div id = "header">
-    <% if (request.getRequestURI().equals("/")) {%>
-    <div id = "weather">
-        <iframe src="http://m.weather.com.cn/m/pn5/weather.htm " width="200" height="30" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>
-    </div>
-    <% } %>
+  
   	
     <!-- <ul id="mail">
            		<li><a href = "http://zbvip.njnu.edu.cn/vip/mail/add-mail.asp?who=yz">院长邮箱</a></li>
@@ -22,6 +18,14 @@
             <li><a href = "/introduce/contact.jsp">联系我们</a></li>
         </ul>
      </div>
+     
+     <div id="review">
+     	<ul>
+            <li><a href = "http://www.njnu.edu.cn/">设为主页</a></li>
+            <li><a href = "/service/webmap.jsp">加入收藏</a></li>
+        </ul>
+     </div>
+     
 
 </div>
 
@@ -32,7 +36,7 @@
     
     <div id = "search">
         <div id = "setting">
-            <span><a href = "#">设为主页 </a></span>|<span><a href = "#"> English Version </a>|<a href="192.168.1.100："> 手机门户入口</a></span>
+            <span><a href="#"> 手机门户入口 </a>|<a href = "#"> 旧版回顾 </a></span>|<span><a href = "#"> English Version </a></span>
         </div>
         
         <div id = "searchbar">
