@@ -135,6 +135,7 @@ ul > li a > div
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	text-align: left;
 }
 
 #emNews ul
@@ -152,6 +153,7 @@ ul > li a > div
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	text-align: left;
 }
 
 #zfNews ul
@@ -169,6 +171,7 @@ ul > li a > div
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	text-align: left;
 }
 
 #zyghNews ul
@@ -186,6 +189,7 @@ ul > li a > div
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	text-align: left;
 }
 
 #jyzdNews ul
@@ -203,6 +207,7 @@ ul > li a > div
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	text-align: left;
 }
 
 #mainContent a
