@@ -324,3 +324,40 @@ table td a
 }
 
 #more .PostList li{width:980px;}
+
+/*简介*/
+#postDetail #imageContent{float:left;margin-top:50px;}
+#postDetail #textContent{margin-top:50px;width:650px;float:right;padding:10px 0 0 0;}
+#textContent > #content{width:650px;}
+
+#imageContent img
+{
+	margin: 5px 0 0 10px;
+	border: 1px solid #DDD;
+	box-shadow: gray 0px 3px 10px;
+	padding: 5px;
+	height: 200px;
+	width: 250px;
+}
+
+#textContent, #content
+{
+	margin:0px 10px 0px 10px;
+}
+#textContent #title,#postDetail #title
+{
+	text-align: center;
+	font-size:19px;
+}
+#postDetail > #title{margin-top:20px;}
+#textContent #info, #info
+{
+	text-align: center;
+	margin: 10px 0 10px 0;
+}
+#content img
+{
+	clear:both;
+	max-width:700px;
+	margin:5px 5px 5px 5px;
+}

@@ -21,8 +21,8 @@
      
      <div id="review">
      	<ul>
-            <li><a href = "http://www.njnu.edu.cn/">设为主页</a></li>
-            <li><a href = "/service/webmap.jsp">加入收藏</a></li>
+            <li><a href = "#">设为主页</a></li>
+            <li><a href = "#">加入收藏</a></li>
         </ul>
      </div>
      
@@ -36,7 +36,7 @@
     
     <div id = "search">
         <div id = "setting">
-            <span><a href="#"> 手机门户入口 </a>|<a href = "#"> 旧版回顾 </a></span>|<span><a href = "#"> English Version </a></span>
+            <span><a href="http://www.nnuzc.cn/wap"> 手机版入口 </a>|<a href = "http://www.zbzs.njnu.edu.cn"> 旧版回顾 </a></span>|<span><a href = "#"> English Version </a></span>
         </div>
         
         <div id = "searchbar">

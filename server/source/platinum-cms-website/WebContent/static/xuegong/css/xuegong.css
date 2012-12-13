@@ -150,13 +150,12 @@
 	margin:5px 0 0 0;
 	margin-left:10px;
 	padding:0;
-	list-style:url(/static/xuegong/images/list.png);
-	list-style-position:inside;
+
 }
 
 #content > #mainContent > #textNews li
 {
-	padding: 0;
+
 	margin: 8px 0 0 0;
 	width: 240px;
 	font-size: 13px;
@@ -245,13 +244,11 @@
 	margin:5px 0 0 0;
 	margin-left:10px;
 	padding:0;
-	list-style:url(/static/xuegong/images/list.png);
-	list-style-position:inside;
 }
 
 #content > #mainContent > #gongNews li
 {
-	padding: 0;
+
 	margin: 8px 0 0 0;
 	width: 240px;
 	color:#000000;
@@ -265,12 +262,11 @@
 	margin:5px 0 0 0;
 	margin-left:10px;
 	padding:0;
-	list-style:url(/static/xuegong/images/list.png) inside;
 }
 
 #content > #mainContent > #informs li
 {
-	padding: 0;
+
 	margin: 8px 0 0 0;
 	width: 280px;
 	color:#000000;
@@ -284,12 +280,11 @@
 	margin:10px 0 0 0;
 	margin-left:10px;
 	padding:0;
-	list-style:url(/static/xuegong/images/list.png) inside;
 }
 
 #content > #mainContent > #teaching li 
 {
-	padding: 0;
+
 	margin: 8px 0 0 0;
 	width: 280px;
 	color:#000000;
@@ -303,12 +298,11 @@
 	margin:10px 0 0 0;
 	margin-left:10px;
 	padding:0;
-	list-style:url(/static/xuegong/images/list.png) inside;
 }
 
 #content > #mainContent > #email li 
 {
-	padding: 0;
+
 	margin: 8px 0 0 0;
 	width: 280px;
 	color:#000000;
@@ -357,4 +351,12 @@ line-height:30px;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+}
+/*12-12*/
+#content  #mainContent  div ul li
+{
+	padding-left:15px;
+	background-image: url(/static/xuegong/images/list.png);
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
 }

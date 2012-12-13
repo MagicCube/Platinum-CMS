@@ -24,8 +24,8 @@
 			<div id = "layoutright">
 				<h2>联系我们</h2>
 				<p style = "color: #3399CC; font-size: 14px;">更新日期： 2012/10/16</p>
-				<p>联系电话：</p>
-				<p>联系地址：</p>
+				<p>联系地址：南京市栖霞区南京师范大学中北学院学林路2号</p>
+				<p>邮政编码：210023</p>				
 				<div style="width:600px;height:400px;border:#ccc solid 1px;" id="dituContent"></div>
 				<script type="text/javascript">
 				    //创建和初始化地图函数：

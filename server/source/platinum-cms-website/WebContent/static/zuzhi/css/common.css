@@ -325,6 +325,8 @@ table td a
 	margin-top:48px;
 	
 }
+/*12-13*/
+#postList{width:990px;border-right:none;}
 #postList li
 {
 	padding-left: 15px;
@@ -339,7 +341,8 @@ table td a
 }
 #postDetail
 {
-	margin-top:48px;	
+	margin-top:48px;
+	border-right:none;	
 }
 
 /*postlist省略号 与图标同行*/
@@ -350,4 +353,40 @@ table td a
 	-o-text-overflow: ellipsis;    /* for Opera */
 	text-overflow: ellipsis;        /* for IE *//*当文本溢出时显示…此时还必须定义：强制文本在一行内显示（white-space:nowrap）及溢出内容为隐藏（overflow:hidden）*/
 	white-space: nowrap;/*表示文本不会换行*/
+}
+/*简介*/
+#postDetail #imageContent{float:left;margin-top:50px;}
+#postDetail #textContent{margin-top:50px;width:650px;float:right;padding:10px 0 0 0;}
+#textContent > #content{width:650px;}
+
+#imageContent img
+{
+	margin: 5px 0 0 10px;
+	border: 1px solid #DDD;
+	box-shadow: gray 0px 3px 10px;
+	padding: 5px;
+	height: 200px;
+	width: 250px;
+}
+
+#textContent, #content
+{
+	margin:0px 10px 0px 10px;
+}
+#textContent #title,#postDetail #title
+{
+	text-align: center;
+	font-size:19px;
+}
+#postDetail > #title{margin-top:20px;}
+#textContent #info, #info
+{
+	text-align: center;
+	margin: 10px 0 10px 0;
+}
+#content img
+{
+	clear:both;
+	max-width:700px;
+	margin:5px 5px 5px 5px;
 }

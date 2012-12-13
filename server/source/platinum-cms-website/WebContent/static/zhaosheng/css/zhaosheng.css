@@ -4,241 +4,198 @@
 	padding: 0px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 990px;	/*已修改过*/
-	height: 820px;	
+	width: 990px;
+	min-height: 820px;	
 	position: relative;	
 }
 
-#content > #mainContent
+#content > #browsable
 {
-	padding: 0;
-	margin: 0;
+	width: 600px;
+	height: 300px;
 	position: absolute;
-	width: 990px;	/*已修改过*/
-	height: 810px;  /*已修改过*/
-	float: left;
-}
-#content > #mainContent li a #title
-{
-
-    width:320px;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-}
-#content > #sidebar
-{
-	padding: 0;
-	margin: 0;
-	position: absolute;
-	width: 181;		/*已修改过*/
-	height: 600px;  /*已修改过*/
-	left: 806px;
-	font-family: 微软雅黑;
-	font-size: 12px;
-	border-left: 1px solid #e6e4db;
-}
-
-#content > #mainContent > #picNews
-{
-	width: 630px;	/*已修改过*/
-	margin: 0;
-	padding : 0;
-	height: 250px;
-	float:left;
-	margin-top:10px;
-}
-
-#content > #mainContent > #textNews
-{
-	width: 330px;   /*已修改过*/	
-	margin: 0;
-	padding : 0;
-	height: 250px;
-	float:right;
-	margin-top:10px;
-
-}
-
-#content > #mainContent > #informs
-{
-	width: 330px;   /*已修改过*/
-	margin: 0;
-	padding : 0;
-	height: 250px;
-	float:left;
-	margin-top:15px;
-	overflow: hidden;
-}
-
-#content > #mainContent > #teaching
-{
-	width: 310px;	/*已修改过*/
-	margin: 0;
-	padding : 0;
-	height: 250px;
-	float:left;
-	margin-top:15px;
-	margin-left:10px;
-	margin-right:10px;
-	overflow: hidden;
-}
-#content > #mainContent > #redian
-{
-	width: 330px;	/*已修改过*/
-	margin: 0;
-	padding : 0;
-	height: 250px;
-	float:left;
-	margin-top:15px;
-	overflow: hidden;
-}
-#content > #mainContent > #zhuanye
-{
-	width: 330px;	/*已修改过*/
-	margin: 0;
-	padding : 0;
-	height: 250px;
-	float:left;
-	margin-top:15px;
-	overflow: hidden;
-}
-#content > #mainContent > #jiangzhu
-{
-	width: 310px;	/*已修改过*/
-	margin: 0;
-	padding : 0;
-	height: 250px;
-	float:left;
-	margin-top:15px;
-	margin-left:10px;
-	margin-right:10px;
-	overflow: hidden;
-}
-#content > #mainContent > #zhuanti
-{
-	width: 330px;	/*已修改过*/
-	margin: 0;
-	padding : 0;
-	height: 250px;
-	float:left;
-	margin-top:15px;
-	overflow: hidden;
-}
-#picNews > #browsable
-{
-	width: 630px;	/*已修改过*/
-	height: 250px;
-	float: left;
-	margin: 0;
-	padding: 0;
-}
-
-#box
-{
-	position: relative;
-	width: 620px;	
-	height: 240px;
-	margin: 0;
-	padding: 0;
-	float: left;
-	border: 1px solid #ee911a;
-	-moz-box-shadow: #ee911a 0px 3px 10px;
-	box-shadow: #ee911a 0px 3px 10px;	
-}
-
-#box .list
-{
-	padding: 0;
-	margin: 0;
-	width: 620px;
-	height: 240px;
-	list-style-type: none;
-	background: #fff; 
-}
-
-#box .list li
-{
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	width: 610px;
-	height: 230px;
-	opacity: 0;
-	filter: alpha(opacity=0);
-}
-
-#box .list li.current
-{
-	opacity: 1;
-	filter: alpha(opacity=100);
-}
-
-#box .list li span#title
-{
-	background-color: rgba(0,0,0,0.3);
-	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#A0000000', EndColorStr='#A0000000');
-	position: absolute;
-	top: 0;
 	left: 0;
-	width: 610px;
-	height: 24px;
-	text-decoration: none;
-	font: 12px Microsoft YaHei, Verdana;
-	color: #fff;
-	text-align: center;
-	line-height: 25px;
+	top: 10px;
+	margin: 0;
+	padding: 0;
 }
 
+.block_home_slider {
+	width:600px;
+	height:300px;
+	padding:1px;
+	position:relative;	
+	background-color:#ffffff;
+	border:4px solid #f2f2f2;	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;	
+	text-align:center;
+	line-height:0px;
+}
 
-#box .count
+.block_home_slider .slide {position:relative; height: 300px; overflow: hidden;}
+.block_home_slider .caption {padding:0px; position:absolute; left:0px; right:0px; bottom:0px; background:url(../../home/images/bg_caption.png); text-align:center; height: 30px;}
+.block_home_slider .caption p {padding-bottom:0px; font-size:11px; color:#dedede; text-shadow:0px -1px #000000; line-height:11px;}
+.block_home_slider .caption p.title {padding-bottom:6px; font-size:15px; color:#ffffff; font-weight:bold; line-height:5px;}
+.block_home_slider .flex-direction-nav a {width:25px; height:25px; margin-top:-27px; display:block; position:absolute; top:50%; background-repeat:no-repeat; background-image:url(../../home/images/sprite_arrow_2.png); text-indent:-9000px;}
+.block_home_slider .flex-direction-nav a.flex-prev {left:6px; background-position:left top;}
+.block_home_slider .flex-direction-nav a.flex-prev:hover {background-position:left bottom;}
+.block_home_slider .flex-direction-nav a.flex-next {right:6px; background-position:right top;}
+.block_home_slider .flex-direction-nav a.flex-next:hover {background-position:right bottom;}
+.block_home_slider .flex-control-paging {padding-top:12px; display:inline-block;}
+.block_home_slider .flex-control-paging li {margin:0px; padding:0px; float:left; overflow:hidden;}
+.block_home_slider .flex-control-paging li a {width:12px; height:12px; display:block; background-repeat:no-repeat; background-image:url(../../home/images/sprite_nav_3.png); text-indent:-9000px; cursor:pointer;}
+.block_home_slider .flex-control-paging li a.flex-active {background-position:right top;}
+.flexslider .slides img { width: 600px; height: 300px;}
+
+#content > #textNews
 {
 	position: absolute;
-	bottom: 5px;
-	left: -30px;
-	list-style-type: none;
+	width: 330px;  	
+	margin: 0;
+	padding : 0;
+	height: 300px;
+	left: 660px;
+	top: 10px;
 }
 
-#box .count li
+#content > #informs
 {
-	font-size: 11px;
-	font-family: Microsoft YaHei;
-	color: #000000;
-	float: left;
-	width: 15px;
-	height: 15px;
-	cursor: pointer;
-	text-align: center;
-	margin-right: 9px;
-	background: #FFFFFF;
-	opacity: 0.7;
-	filter: alpha(opacity=70);
-	border-radius: 0px;
+	width: 310px;  
+	margin: 0;
+	padding : 0;
+	height: 250px;
+	margin-top:15px;
+	overflow: hidden;
+	position: absolute;
+	top: 320px;
+	left: 0;
 }
 
-#box .count li.current
+#content > #teaching
 {
-	color: #fff;
-	opacity: 1;
-	filter: alpha(opacity=100);
-	font-weight: 250;
-	background: #f60;
+	position: absolute;
+	width: 310px;
+	margin: 0;
+	padding : 0;
+	height: 250px;
+	top: 320px;
+	left: 320px;
+	margin-top:15px;
+	margin-left:10px;
+	margin-right:10px;
+	overflow: hidden;
+}
+
+#content > #redian
+{
+	position: absolute;
+	width: 330px;
+	margin: 0;
+	padding : 0;
+	height: 250px;
+	left: 660px;
+	top: 320px;
+	margin-top:15px;
+	overflow: hidden;
+}
+
+#content > #zhuanye
+{
+	position: absolute;
+	top: 560px;
+	width: 310px;
+	margin: 0;
+	padding : 0;
+	height: 250px;
+	left: 0;
+	margin-top:15px;
+	overflow: hidden;
+}
+
+#content > #jiangzhu
+{
+	position: absolute;
+	top: 560px;
+	width: 310px;
+	margin: 0;
+	padding : 0;
+	height: 250px;
+	left: 320px;
+	margin-top:15px;
+	margin-left:10px;
+	margin-right:10px;
+	overflow: hidden;
+}
+
+#content > #zhuanti
+{
+	position: absolute;
+	top: 560px;
+	width: 330px;
+	margin: 0;
+	padding : 0;
+	height: 250px;
+	left: 660px;
+	margin-top:15px;
+	overflow: hidden;
 }
 
 
-#content > #mainContent > #textNews ul
+#content a
 {
+	font-size: 13px;
+	color:#000000;
+	text-decoration: none;
+}
+
+#content a:hover
+{
+	color: #fdbc30;
+	text-decoration: none;
+}
+
+
+ul > li a > div
+{
+	display: inline;
+}
+
+#content > #textNews ul
+{	
+	width: 100%;
+	display: block;
 	margin:10px 0 0 0;
 	padding:0;
 	list-style:url(/static/zhaosheng/image/list.png);
 	list-style-position:inside;
 }
 
-#content > #mainContent > #textNews li
+#content > #textNews li
+{
+	padding: 0;
+	margin: 5px 0 0 0;
+	width: 320px;		
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#content > #informs ul
+{
+	display: block;
+	margin:10px 0 0 0;
+	padding:0;
+	list-style:url(/static/zhaosheng/image/list.png) inside ;
+}
+
+#content > #informs li
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 320px;			/*已修改过*/
+	width: 320px;
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -246,32 +203,118 @@
 	overflow: hidden;
 }
 
-#content > #mainContent a
+#content > #teaching ul
 {
-	font-family: 微软雅黑;
+	display: block;
+	margin:10px 0 0 0;
+	padding:0;
+	list-style:url(/static/zhaosheng/image/list.png) inside ;
+}
+
+#content > #teaching li 
+{
+	padding: 0;
+	margin: 6px 0 0 0;
+	width: 310px;
 	font-size: 13px;
 	color:#000000;
-	text-decoration: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
-#content > #mainContent a:hover
+#content > #zhengce ul
 {
-	color: #fdbc30;
-	text-decoration: none;
+	display: block;
+	margin:10px 0 0 0;
+	padding:0;
+	list-style:url(/static/zhaosheng/image/list.png) inside ;
 }
 
-#content > #mainContent > #informs ul
+#content > #zhengce li 
+{
+	padding: 0;
+	margin: 6px 0 0 0;
+	width: 320px;
+	font-size: 13px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#content > #redian ul
+{
+	display: block;
+	margin:10px 0 0 0;
+	padding:0;
+	list-style:url(/static/zhaosheng/image/list.png) inside ;
+}
+
+#content > #redian li 
+{
+	padding: 0;
+	margin: 6px 0 0 0;
+	width: 320px;	
+	font-size: 13px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#content > #zhuanti ul
+{
+	display: block;
+	margin:10px 0 0 0;
+	padding:0;
+	list-style:url(/static/zhaosheng/image/list.png) inside ;
+}
+
+#content > #zhuanti li 
+{
+	padding: 0;
+	margin: 6px 0 0 0;
+	width: 320px;	
+	font-size: 13px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#content > #jiangzhu ul
+{
+	display: block;
+	margin:10px 0 0 0;
+	padding:0;
+	list-style:url(/static/zhaosheng/image/list.png) inside ;
+}
+
+#content > #jiangzhu li 
+{
+	padding: 0;
+	margin: 6px 0 0 0;
+	width: 310px;	
+	font-size: 13px;
+	color:#000000;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#content > #zhuanye ul
 {
 	margin:10px 0 0 0;
 	padding:0;
 	list-style:url(/static/zhaosheng/image/list.png) inside ;
 }
 
-#content > #mainContent > #informs li
+#content > #zhuanye li 
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 320px;		/*已修改过*/
+	width: 320px;	
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -279,115 +322,6 @@
 	overflow: hidden;
 }
 
-#content > #mainContent > #teaching ul
-{
-	margin:10px 0 0 0;
-	padding:0;
-	list-style:url(/static/zhaosheng/image/list.png) inside ;
-}
-
-#content > #mainContent > #teaching li 
-{
-	padding: 0;
-	margin: 6px 0 0 0;
-	width: 310px;		/*已修改过*/
-	font-size: 13px;
-	color:#000000;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-}
-#content > #mainContent > #zhengce ul
-{
-	margin:10px 0 0 0;
-	padding:0;
-	list-style:url(/static/zhaosheng/image/list.png) inside ;
-}
-
-#content > #mainContent > #zhengce li 
-{
-	padding: 0;
-	margin: 6px 0 0 0;
-	width: 320px;		/*已修改过*/
-	font-size: 13px;
-	color:#000000;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-}
-
-#content > #mainContent > #redian ul
-{
-	margin:10px 0 0 0;
-	padding:0;
-	list-style:url(/static/zhaosheng/image/list.png) inside ;
-}
-
-#content > #mainContent > #redian li 
-{
-	padding: 0;
-	margin: 6px 0 0 0;
-	width: 320px;		/*已修改过*/
-	font-size: 13px;
-	color:#000000;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-}
-#content > #mainContent > #zhuanti ul
-{
-	margin:10px 0 0 0;
-	padding:0;
-	list-style:url(/static/zhaosheng/image/list.png) inside ;
-}
-
-#content > #mainContent > #zhuanti li 
-{
-	padding: 0;
-	margin: 6px 0 0 0;
-	width: 320px;		/*已修改过*/
-	font-size: 13px;
-	color:#000000;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-}
-#content > #mainContent > #jiangzhu ul
-{
-	margin:10px 0 0 0;
-	padding:0;
-	list-style:url(/static/zhaosheng/image/list.png) inside ;
-}
-
-#content > #mainContent > #jiangzhu li 
-{
-	padding: 0;
-	margin: 6px 0 0 0;
-	width: 310px;		/*已修改过*/
-	font-size: 13px;
-	color:#000000;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-}
-#content > #mainContent > #zhuanye ul
-{
-	margin:10px 0 0 0;
-	padding:0;
-	list-style:url(/static/zhaosheng/image/list.png) inside ;
-}
-
-#content > #mainContent > #zhuanye li 
-{
-	padding: 0;
-	margin: 6px 0 0 0;
-	width: 320px;		/*已修改过*/
-	font-size: 13px;
-	color:#000000;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-}
 #more1
 {
 	padding: 0;
@@ -404,33 +338,4 @@
 	height: 230px;
 }
 
-/**/
-.block_home_slider {
-	width:610px;
-	height:230px;
-	padding:1px;
-	position:relative;
-	
-	background-color:#ffffff;
-	border:4px solid #f2f2f2;	
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;	
-	text-align:center;
-	line-height:0px;
-}
 
-.block_home_slider .slide {position:relative; height: 230px; over-flow: hidden;}
-.block_home_slider .caption {padding:0px; position:absolute; left:0px; right:0px; bottom:0px; background:url(../../home/images/bg_caption.png); text-align:center; height: 30px;}
-.block_home_slider .caption p {padding-bottom:0px; font-size:11px; color:#dedede; text-shadow:0px -1px #000000; line-height:11px;}
-.block_home_slider .caption p.title {padding-bottom:6px; font-size:15px; color:#ffffff; font-weight:bold; line-height:5px;}
-.block_home_slider .flex-direction-nav a {width:25px; height:25px; margin-top:-27px; display:block; position:absolute; top:50%; background-repeat:no-repeat; background-image:url(../../home/images/sprite_arrow_2.png); text-indent:-9000px;}
-.block_home_slider .flex-direction-nav a.flex-prev {left:6px; background-position:left top;}
-.block_home_slider .flex-direction-nav a.flex-prev:hover {background-position:left bottom;}
-.block_home_slider .flex-direction-nav a.flex-next {right:6px; background-position:right top;}
-.block_home_slider .flex-direction-nav a.flex-next:hover {background-position:right bottom;}
-.block_home_slider .flex-control-paging {padding-top:12px; display:inline-block;}
-.block_home_slider .flex-control-paging li {margin:0px; padding:0px; float:left; overflow:hidden;}
-.block_home_slider .flex-control-paging li a {width:12px; height:12px; display:block; background-repeat:no-repeat; background-image:url(../../home/images/sprite_nav_3.png); text-indent:-9000px; cursor:pointer;}
-.block_home_slider .flex-control-paging li a.flex-active {background-position:right top;}
-.flexslider .slides img {	width: 610px;height: 230px;}

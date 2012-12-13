@@ -26,7 +26,6 @@
 </head>
 <body>
 	<cms:Header path="xinxi" />
-
 	<!--右侧正文开始-->
 
 		<div id="browsable">
@@ -75,11 +74,11 @@
 		</div>
 
 		<!--就业结束-->
-	</div>
+
 	<!--右侧正文结束-->
 
 	<cms:Footer path="xinxi"></cms:Footer>
-	</div>
+
 
 </body>
 </html>

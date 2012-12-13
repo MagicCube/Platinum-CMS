@@ -48,8 +48,8 @@
             <li class = "subMenu"><a href = "/service/ff8081813b7a2ecd013b7a384fb20008.html">来稿须知</a></li>
             <li class = "subMenu"><a href = "/service/guide.jsp">办事指南</a></li>
             <li class = "subMenu"><a href = "/service/ff8081813b6fee04013b6ff2b1d90011.html">作息时间</a></li>
-            <li class = "subMenu"><a href = "/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话查询</a></li>
-            <li class = "subMenu"><a href = "/service/ff8081813b6fee04013b6ff158fb0008.html">校园地图与交通信息</a></li>
+            <li class = "subMenu"><a href = "/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话</a></li>
+            <li class = "subMenu"><a href = "/service/ff8081813b6fee04013b6ff158fb0008.html">校园地图</a></li>
         </ul>
     </li>
     <li class = "main"><a href = "#">技术支持</a>

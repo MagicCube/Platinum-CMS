@@ -25,7 +25,7 @@
 	<div id = "maincontent">
 			<div id = "inform">
 				<span><img src="/static/zuzhi/images/inform.gif"/></span>
-				<cms:PostList id = "ggtzlist" subcategoryId="sc000000000000000000000000000040" count="9" />
+				<cms:PostList id = "ggtzlist" subcategoryId="sc000000000000000000000000000040" count="10" />
 				<div id = "nice"><a href = "/zuzhi/sc000000000000000000000000000040/more/" style ="font-size: 12px;">更多...</a></div>
 			</div>
 			<div id = "pic">
@@ -44,7 +44,7 @@
 			
 			<div id = "activity">
 				<span><img src = "/static/zuzhi/images/activity.gif"/></span>
-				<cms:PostList id = "zzhdlist" subcategoryId="sc000000000000000000000000000041" count="9" />
+				<cms:PostList id = "zzhdlist" subcategoryId="sc000000000000000000000000000041" count="10" />
 				<div id = "nice"><a href = "/zuzhi/sc000000000000000000000000000041/more/" style ="font-size: 12px;">更多...</a></div>
 			</div>
 			
@@ -52,19 +52,19 @@
 				<div id = "boxContent">
 					<div id = "policy">
 						<span><img src = "/static/zuzhi/images/policy.gif"/></span>
-						<cms:PostList id = "zcfglist" subcategoryId="sc000000000000000000000000000042" count="9" />
+						<cms:PostList id = "zcfglist" subcategoryId="sc000000000000000000000000000042" count="10" />
 						<div id = "nice"><a href = "/zuzhi/sc000000000000000000000000000042/more/" style ="font-size: 12px;">更多...</a></div>
 					</div>
 					
 					<div id = "download">
 						<span><img src = "/static/zuzhi/images/download.gif"/></span>
-						<cms:PostList id = "zlxzlist" subcategoryId="sc000000000000000000000000000043" count="9" />				
+						<cms:PostList id = "zlxzlist" subcategoryId="sc000000000000000000000000000043" count="10" />				
 						<div id = "nice"><a href = "/zuzhi/sc000000000000000000000000000043/more/" style ="font-size: 12px;">更多...</a></div>
 					</div>
 					
 					<div id = "outline">
 						<span><img src = "/static/zuzhi/images/outline.gif"/></span>
-						<cms:PostList id = "ffznlist" subcategoryId="sc000000000000000000000000000044" count="9" />
+						<cms:PostList id = "ffznlist" subcategoryId="sc000000000000000000000000000044" count="10" />
 						<div id = "nice"><a href = "/zuzhi/sc000000000000000000000000000044/more/" style ="font-size: 12px;">更多...</a></div>
 					</div>
 				</div>

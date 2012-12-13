@@ -55,7 +55,7 @@
         </table>
     </div>
     
-    <div style = "position: absolute; height: 150px; width: 1px; background: #fff; left: 530px;">
+    <div style = "position: absolute; height: 150px; width: 1px; background: #fff; left: 510px;">
     </div>
     
     <div id = "fastlink" style = "left: 580px;">
@@ -102,8 +102,9 @@
     </div>
 
     <div id = "footer">
-   		<span id="copyright"><span id="time">2012</span> 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院</span><span style="margin-left: -200px;"><a href="/">www.nnuzc.cn</a></span>
+   		<span id="copyright"><span id="time"></span> 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院</span><span style="margin-left: -200px;"><a href="/">www.nnuzc.cn</a></span>
     	<div id="icp">苏ICP备05080300号</div>
+    	<div id="address">南京市栖霞区南京师范大学中北学院学林路2号 210023</div>
     	<div id="developer" style="margin-top: -30px;">	 
     		<ul>
     			<li><a href="/ruanyan/">软件研发与培训中心</a></li>
@@ -111,8 +112,15 @@
     		</ul>
     		<span>开发、维护</span>
     	</div>
+    	<script>
+			var date = new Date();
+			var year = date.getFullYear();
+			$('#time').append(year);
+		</script>
     </div>
+    
 </div>
+
 
 </div>
 </div>

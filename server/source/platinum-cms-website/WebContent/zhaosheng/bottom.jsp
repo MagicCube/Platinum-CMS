@@ -98,7 +98,7 @@
             </div>
             	</div>
         <div id = "bottom1">
-			<p style = "text-align: center;">南京师范大学中北学院版权所有</p>
+			<p style = "text-align: center;">版权所有 南京师范大学中北学院</p>
 		</div>
 
     </div>

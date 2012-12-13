@@ -5,14 +5,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>南京师范大学中北学院欢迎您</title>
-<link href = "/static/xiandai/css/common.css" rel = "stylesheet"></link>
-<link href = "/static/xiandai/css/xiandai.css" rel = "stylesheet"></link>
-
-
-
 <script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
 <link rel="stylesheet" href="/static/home/plugins/flexslider/flexslider.css" type="text/css" />
 <script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
+
+<link href = "/static/xiandai/css/common.css" rel = "stylesheet"></link>
+<link href = "/static/xiandai/css/xiandai.css" rel = "stylesheet"></link>
 </head>
 <body>
  <cms:Header path = "xiandai"/>
@@ -35,7 +33,7 @@
 				<span><img src = "/static/xiandai/image/fuwu.png"/></span>
 				<cms:PostList id = "fwznlist" subcategoryId="sc000000000000000000000000000191" count="9" />
           		<div id = "more1" align = "right">
-          			<a href = "/xiandai/sc000000000000000000000000000191/more/" style = "color: #000000;" target="_blank">更多...</a>
+          			<a href = "/xiandai/sc000000000000000000000000000191/more/"  target="_blank">更多...</a>
           		</div>	  
 			</div>
             
@@ -45,7 +43,7 @@
 				<span><img src = "/static/xiandai/image/zhongxin.png"/></span>
 				<cms:PostList id = "zxdtlist" subcategoryId="sc000000000000000000000000000194" count="8" />
           		<div id = "more1" align = "right">
-          			<a href = "/xiandai/sc000000000000000000000000000194/more/" style = "color: #000000;" target="_blank">更多...</a>
+          			<a href = "/xiandai/sc000000000000000000000000000194/more/"  target="_blank">更多...</a>
           		</div>	          
 			</div>
             

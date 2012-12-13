@@ -11,12 +11,16 @@ h2
 
 
 
-html, body
+html
 {
 	padding: 0;
 	margin: 0;
-	overflow-x: hidden; 
-	overflow-y: auto; 	
+	overflow-x: hidden; 	
+}
+
+body
+{
+	overflow-y: hidden; 
 }
 
 #headcontain
@@ -96,7 +100,7 @@ menu#mainmenu
 	list-style: none;
 	padding: 0;
 	margin:  0;
-	margin-top:35px;
+	margin-top:25px;
 	margin-left: 10px;
 	margin-right: auto;
 	border-top: 1px solid #fff;
@@ -116,31 +120,20 @@ menu#mainmenu li a
 /*当鼠标划过时背景,字体颜色改变*/
 menu#mainmenu li a:hover
 {
-
-	color: #fdbc30;
+	color: rgba(0, 0, 0, 0.5);
 }
+
 /*单个菜单条的属性*/
 .singleMenu
 {
 	float: left;
 	font-size: 10px;
-	font-family: 黑体;
 	display: inline-block;
 	height: 32px;
 	width: 161.6px;
 	padding: 0;
 	margin: 0;
 }
-
-
-
-
-
-
-#foot
-{
-}
-
 
 #foot > #footer
 {

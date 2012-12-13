@@ -4,7 +4,7 @@
 	overflow:hidden;
 	margin: 0;
 	padding: 0;
-	font-family: 寰蒋闆呴粦;
+	font-family: 
 	font-size: 12px;
 }
 
@@ -16,13 +16,12 @@ a
 li
 {
 	list-style:none;
-	overflow: hidden;/*琛ㄧず婧㈠嚭鐨勫唴瀹逛細琚殣钘�/
-	-o-text-overflow: ellipsis;    /* for Opera */
-	text-overflow: ellipsis;        /* for IE *//*褰撴枃鏈孩鍑烘椂鏄剧ず鈥︽鏃惰繕蹇呴』瀹氫箟锛氬己鍒舵枃鏈湪涓�鍐呮樉绀猴紙white-space:nowrap锛夊強婧㈠嚭鍐呭涓洪殣钘忥紙overflow:hidden锛�/
-	white-space: nowrap;/*琛ㄧず鏂囨湰涓嶄細鎹㈣*/
+	overflow: hidden;
+	-o-text-overflow: ellipsis;    
+	text-overflow: ellipsis;        
+	white-space: nowrap;
 }
 
-p, hr { color: #fff; }
 
 hr{height:0; border-top:1px dotted #ccc; background:#fff; color:#fff;}
 
@@ -45,7 +44,7 @@ body { /*background-color: #cfcfcf; */background:url(/static/faculty/common/imag
 ul { list-style: none; }
 
 
-/*澶撮儴*/
+
 #header
 {
 	height: 130px;
@@ -122,7 +121,7 @@ ul { list-style: none; }
 {
 	color: #fff;
 	font-size: 14px;
-	font-family: 寰蒋闆呴粦;
+	font-family: '微软雅黑';
 	text-decoration: none;
 }
 

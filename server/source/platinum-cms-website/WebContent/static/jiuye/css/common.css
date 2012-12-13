@@ -12,10 +12,11 @@ html, body
 #headpart{
 	padding: 0;
 	margin: 0 auto;
-	height: 127px;
+	height: 140px;
 	width: 990px;
-	background-image:url(/static/jiuye/images/headBackground.png);	
+	background: #009bcb;	
 }
+
 #headlogo{
 	padding: 0;
 	margin: 0;
@@ -25,6 +26,7 @@ html, body
 	top: 20px;	
 	display:block;
 }
+
 #logo{
 	
 	margin: 0;
@@ -48,9 +50,15 @@ html, body
 	margin-top: 10px;
 	
 }
-#mainpage > a
+
+#mainpage a
 {
-	color:#000;	
+	color: #fff;
+}
+
+#mainpage a: hover
+{
+	color: rgba(0, 0, 0, 0.5);	
 }
 
 #searchbar
@@ -62,8 +70,6 @@ html, body
 	padding: 0;
 	margin: 10px 0 0 0;
 	background: url(/static/jiuye/images/searchbar.png) no-repeat;
-	color: rgba(255,255,255,0);
-	
 }
 
 .word {
@@ -104,7 +110,7 @@ html, body
 menu#mainmenu
 { 
 	display: block;
-	width: 850px;
+	width: 900px;
 	height: 32px;
 	list-style: none;
 	padding: 0;
@@ -114,8 +120,6 @@ menu#mainmenu
 	border-bottom: 1px #fff solid;   
 }
 
-
-/*单个菜单条的属性*/
 .singleMenu
 {
 	float: left;
@@ -136,7 +140,7 @@ menu#mainmenu li a
 	display: block;
 	height: 32px;
 	line-height: 32px;
-	color: #000;	
+	color: #fff;	
 	text-align: center;
 	list-style: none;
 }
@@ -144,30 +148,11 @@ menu#mainmenu li a
 
 menu#mainmenu li > a:hover
 {
-	color: #929292;
+	color: rgba(0, 0, 0, 0.5 );
 }
-
-
-
-
-#footer{
-	height:79px;;
-	width: 990px;
-	margin: 0 auto;
-	background-image:url(/static/jiuye/images/background_03.png);	
-}
-
-
-
-
-/**/
-
-
 
 #link_search
 {
-	
-	
 	width: 200px;
 	float: right;
 	margin-right: 15px;
@@ -184,16 +169,17 @@ menu#mainmenu li > a:hover
 	padding-left: 20px;
 	text-align: left;
 }
+
 #link_search #text a
 {
-	color: #000;
+	color: #fff;
 	font-size: 12px;
 	text-decoration: none;
 }
 
 #link_search #text a:hover
 {
-	color: #ddd;
+	color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -209,6 +195,7 @@ menu#mainmenu li > a:hover
 	background-color: #FFFFFF;
 	font-size: 12px;
 }
+
 #button
 {
 	float: left;
@@ -232,3 +219,99 @@ menu#mainmenu li > a:hover
 }
 
 
+#foot > #footer
+{
+	margin: 0px 0 0 0;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	height: 163px;
+	width: 990px;
+	background: #009bcb;
+	line-height: 23px;
+	font-size: 12px;
+	text-align:center;
+	position:relative;
+	text-decoration: none;
+
+}
+
+ #bottom{
+	width: 990px;
+	height: 132px;
+	margin: 0 auto;
+	
+}
+#fastlink1, #fastlink2
+{
+	display: inline-block;
+	text-align: left;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+#fastlink1
+{
+	margin:0px 0px 0px 70px;
+	border-right: 1px solid #fff;
+	width:450px;
+}
+#fastlink2
+{
+	margin:0px 0px 0px 20px;
+}
+	
+.fastLink a
+{
+	font: 宋体;
+	font-size:12px;
+	font-weight: normal;
+	color: #FFF;
+}
+.fastLink table td
+{
+	width:140px;
+	height: 20px;
+	text-decoration: none;
+	}
+.fastLink table td a
+{text-decoration: none;}	
+.fastLink table td a:hover
+{
+ color: rgba(0, 0, 0, 0.5);
+}
+#righttable
+{
+	margin: 22px 0 0 0;
+	
+}
+
+
+#footButtom{
+	width: 990px;
+	height: 32px;
+	margin: 0 auto;
+
+	border-top: 1px #FFFFFF solid; 
+	text-align:center;
+}
+#foot > #footer > #bottom1 
+{
+ 
+	margin-left: auto;
+	margin-right: auto;
+	width: 990px;
+	height: 30px;
+	border-top: 1px solid #fff;
+	bottom: 0;
+	position:absolute;
+	line-height: 10px;
+}
+
+#foot > #footer > #bottom1 span
+{
+	font-size: 12px;
+	color:#fff;
+	line-height: 30px;
+}

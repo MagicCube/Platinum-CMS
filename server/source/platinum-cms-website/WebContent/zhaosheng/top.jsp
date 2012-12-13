@@ -2,8 +2,8 @@
     pageEncoding="UTF-8"%>
 <link href = "/static/zhaosheng/css/common.css" rel = "stylesheet"></link>
 <div id = "headcontain">
-       <span><img src = "/static/zhaosheng/image/logo.png"  /></span>
-
+       <span ><img src = "/static/zhaosheng/image/logo.png" style="margin-top: 5px;" /></span>
+		<span><img src = "/static/zhaosheng/image/vicezhaosheng.png"></span>
 		<div id = mainpage style="color: #fff; font-size: 12px;">
 			<a href = "/">学院首页  </a>|<a href = "www.njnu.edu.cn"> 南师大 </a>
 		<div id = "searchbar">
@@ -12,7 +12,7 @@
     			<label>
        				<input type="hidden" id="searchVpath" name="vpath" value="" />
        				<input type="text" class="word" value="搜索..." onfocus="this.value=''" 
-       					   onBlur="if(this.value==''){this.value='Search...';}"
+       					   onBlur="if(this.value==''){this.value='搜索...';}"
        					   style = "height: 18px; margin-top: 3px; margin-left: 2px;"/>
        				<input type = "submit" name = "button" class = "button" value = "" />
       			</label>

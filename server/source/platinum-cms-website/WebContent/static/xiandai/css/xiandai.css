@@ -7,10 +7,10 @@
 	padding: 0px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 990px;	/*已修改过*/
+	width: 990px;	
 	height: 605px;	
-	background-image: url(/static/xiandai/image/di.png);
 
+	background-image: url(/static/xiandai/image/di.png);
 }
 
 #content > #mainContent
@@ -18,8 +18,8 @@
 	padding: 0;
 	margin: 0;
 	position: absolute;
-	width: 990px;	/*已修改过*/
-	height: 605px;  /*已修改过*/
+	width: 990px;	
+	height: 605px; 
 	float: left;
 }
 
@@ -29,8 +29,8 @@
 	margin: 0;
 	margin-top:15px;
 	position: absolute;
-	width: 181;		/*已修改过*/
-	height: 600px;  /*已修改过*/
+	width: 181;		
+	height: 600px; 
 	left: 806px;
 	font-family: 微软雅黑;
 	font-size: 12px;
@@ -39,7 +39,7 @@
 
 #content > #mainContent > #picNews
 {
-	width: 550px;	/*已修改过*/
+	width: 550px;	
 	margin: 0;
 	padding : 0;
 	height: 300px;
@@ -50,7 +50,7 @@
 
 #content > #mainContent > #textNews
 {
-	width: 400px;   /*已修改过*/	
+	width: 400px;  
 	margin: 0;
 	padding : 0;
 	height: 300px;
@@ -61,7 +61,7 @@
 
 #content > #mainContent > #informs
 {
-	width: 550px;   /*已修改过*/
+	width: 550px; 
 	margin: 0;
 	padding : 0;
 	height: 300px;
@@ -73,7 +73,7 @@
 
 #content > #mainContent > #teaching
 {
-	width: 200px;	/*已修改过*/
+	width: 200px;
 	margin: 0;
 	padding : 0;
 	height: 300px;
@@ -84,7 +84,7 @@
 }
 #content > #mainContent > #redian
 {
-	width: 200px;	/*已修改过*/
+	width: 200px;	
 	margin: 0;
 	padding : 0;
 	height: 300px;
@@ -96,7 +96,7 @@
 
 #picNews > #browsable
 {
-	width: 550px;	/*已修改过*/
+	width: 550px;	
 	height: 300px;
 	float: left;
 	margin: 0;
@@ -198,22 +198,25 @@
 {
 	margin:10px 0 0 0;
 	padding:0;
-	list-style:url(/static/xiandai/image/list.png);
-	list-style-position:inside;
+	list-style: none outside none;
+
 }
 
 #content > #mainContent > #textNews li
 {
-	padding: 0;
 	margin: 6px 0 0 0;
-	width: 400px;			/*已修改过*/
+	width: 380px;		
 	font-size: 13px;
 	color:#000000;
+	padding-left:15px;
+	background-image:url(/static/xiandai/image/list.png);
+    background-repeat:no-repeat;
+    background-position:0 50%;
 
 }
 #content > #mainContent > #textNews li #title
 {
-	width: 400px;
+	width: 380px;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
@@ -235,20 +238,25 @@
 {
 	margin:10px 0 0 0;
 	padding:0;
-	list-style:url(/static/xiandai/image/list.png) inside ;
+	list-style: none outside none;
+
 }
 
 #content > #mainContent > #informs li
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 550px;		/*已修改过*/
+	width: 530px;	
 	font-size: 13px;
 	color:#000000;
+	padding-left:15px;
+	background-image:url(/static/xiandai/image/list.png);
+    background-repeat:no-repeat;
+    background-position:0 50%;
 }
 #content > #mainContent > #informs li #title
 {
-	width: 550px;
+	width: 530px;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
@@ -283,7 +291,7 @@
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 320px;		/*已修改过*/
+	width: 320px;	
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -302,13 +310,7 @@
 	float: right;
 	font-size: 18px;
 }
-#text
-{
-	color: #000000; 
-	font-size: 12px; 
-	float: right; 
-	margin: 35px 60px 10px 0;
-}
+
 .block_home_slider {
 	width:530px;
 	height:280px;
