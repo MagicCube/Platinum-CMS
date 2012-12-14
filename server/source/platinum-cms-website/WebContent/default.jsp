@@ -109,8 +109,17 @@ clientCache.setMaxAge(60);
 			<div id = "video">
 				<span id = "position_1"><img src = "/static/home/images/view.gif" alt = ""/></span>
                 <div id = "medium">
-                	<a id="randomPhoto" href="/introduce/view.jsp"></a>				
+                	<a id="randomPhoto" href="/introduce/view.jsp"></a>              	
                 </div>
+                <script>
+                		var $x = Math.floor(Math.random()*10 + 1);
+                		if($x >= 10)
+                		{
+                			$x = 9;
+                		}
+                		var $path = $('<img src="/static/common/images/'+$x+'.jpg"/>');
+                		$('#randomPhoto').append($path);
+                </script>
 			</div>
 		</div>
 		<!-- right end -->

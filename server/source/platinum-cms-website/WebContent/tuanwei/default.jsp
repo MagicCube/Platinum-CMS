@@ -102,54 +102,37 @@ a img{ border:none}
           </div>
       </div>
       <!--通知结束-->
+      <div style="width:236px;height:386px;float:left">
        <!--院报开始-->
-      <div id="paper" >
+      <div id="paper" style="height:150px;">
         <div class="title" style=" margin-left:5px;background-image:url(/static/tuanwei/images/tagg_bg.gif); background-repeat:repeat-x;width:95%;"><p style="background-image:url(/static/tuanwei/images/tag_bg.gif); background-repeat:no-repeat; height:37px; color:#000;">&nbsp;中北之声</p></div>
         <div style="margin:0 auto; text-align:center;">
           <a href="/tuanwei/sc000000000000000000000000000156/more/" >
-            <img src="/static/tuanwei/images/paper.jpg" width="200px" height="317px" style="padding-top:10px; margin:0 auto;" />
+            <img src="/static/tuanwei/images/paper.jpg" width="150px" height="160px" style="padding-top:10px; margin:0 auto;" />
            </a>
         </div>
-      </div>
-      
+      </div>    
       <!--院报结束-->
+      <!--社团开始-->
+      <div id="shetuan" style="height:180px;width: 220px;float: left;margin-top:5px;margin-left: 10px;border: 3px solid #D41F00;-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;background-color: white;padding-top: 10px;padding-bottom: 10px;">
+        <div class="title" style=" margin-left:5px;background-image:url(/static/tuanwei/images/tagg_bg.gif); background-repeat:repeat-x;width:95%;"><p style="background-image:url(/static/tuanwei/images/tag_bg.gif); background-repeat:no-repeat; height:37px; color:#000;">&nbsp;学生组织</p></div>
+        <div style="margin:0 auto; text-align:center;postion:relative;width:220px;height:185px;">
+        	<div style="position:relative;margin-left:10px;width:200px;height:200px;">
+        		<img src="/static/tuanwei/images/kexie.gif" width="50px" height="50px" style="position:absolute;top:5px;left:75px;"></img>
+        		<img src="/static/tuanwei/images/kexie.gif" width="50px" height="50px" style="position:absolute;top:45px;left:20px;"></img>
+        		<img src="/static/tuanwei/images/kexie.gif" width="50px" height="50px" style="position:absolute;top:45px;left:130px;"></img>
+        		<img src="/static/tuanwei/images/kexie.gif" width="50px" height="50px" style="position:absolute;top:95px;left:50px;"></img>
+        		<img src="/static/tuanwei/images/kexie.gif" width="50px" height="50px" style="position:absolute;top:95px;left:105px;"></img>
+        	</div>
+        </div>
+      </div>    
+      <!--社团结束-->
+      </div>
       <!--特色活动开始-->
       <div id="activities" >
                 <div class="title" style=" margin-left:5px;background-image:url(/static/tuanwei/images/tagg_bg.gif); background-repeat:repeat-x;width:95%;"><p style="background-image:url(/static/tuanwei/images/tag_bg.gif); background-repeat:no-repeat; height:37px; color:#000;">&nbsp;特色活动</p></div>
         <div style="text-align:center;">
    			<cms:PostList id = "twtzlist" subcategoryId="sc000000000000000000000000000187" displayPhoto="true" count="6" />
-   <!-- 
-          <li class="content_li" style="padding-top:10px;">
-            <a href="/tuanwei/sc000000000000000000000000000187/" target="_blank">
-              <img src="/static/tuanwei/images/a.png" width="175px" height="50px;"/>
-            </a>
-          </li>
-          <li class="content_li">
-            <a href="/tuanwei/sc000000000000000000000000000187/" target="_blank">
-              <img src="/static/tuanwei/images/jinlinyuan.png" width="175px" height="50px;"/>
-            </a>
-          </li>
-          <li class="content_li">
-            <a href="/tuanwei/sc000000000000000000000000000187/" target="_blank">
-              <img src="/static/tuanwei/images/sun.png" width="175px" height="50px;"/>
-            </a>
-          </li>
-          <li class="content_li">
-            <a href="/tuanwei/sc000000000000000000000000000187/" target="_blank">
-              <img src="/static/tuanwei/images/deifenyuan.png" width="175px" height="50px;"/>
-            </a>
-          </li>
-                    <li class="content_li">
-            <a href="/tuanwei/sc000000000000000000000000000187/" target="_blank">
-              <img src="/static/tuanwei/images/qingchenwang.png" width="175px" height="50px;"/>
-            </a>
-          </li>
-          <li class="content_li">
-            <a href="/tuanwei/sc000000000000000000000000000187/" target="_blank">
-              <img src="/static/tuanwei/images/library.png" width="175px" height="50px;"/>
-            </a>
-          </li>
- -->
         </div>
       </div>
       
