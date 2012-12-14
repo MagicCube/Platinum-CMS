@@ -15,6 +15,7 @@
 	float:left;
 	width:70%;
 	padding:0;
+	font-size: 12px;
 }
  #left_part #left_column_1,  #left_part #left_column_2
 {
@@ -25,7 +26,7 @@
 }
 div.category_1
 {
-	height: 230px;
+	height: 100%;
 	padding: 0;
 	padding-left:10px;
 	padding-right:10px;
@@ -48,8 +49,12 @@ div.category_1 #position_2
 
 div.category_name
 {
-	background-color:#f6f6f6;
-	height:30px;
+	margin: 0;
+	background-color: #F6F6F6;
+	height: 30px;
+	line-height: 20px;
+	display: block;
+	padding: 0 5px 10px 5px;
 }
 div.category_1 h3
 {

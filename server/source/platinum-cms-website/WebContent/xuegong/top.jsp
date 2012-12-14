@@ -5,7 +5,8 @@
 
 <div id = "header">
 	<div id = "box-top">
-		<img style = "float: left; margin: 10px 0 0 480px;" src = "/static/xuegong/images/xuegong.png" alt = "学工处" />		
+		<img src="/static/xuegong/images/logo.png" style="margin-top: 20px;"/>
+		<img src = "/static/xuegong/images/xuegong.png" style="margin-top: 20px;" alt = "学工处" />		
 		<div id = "link_search">
 			<div id = "text">
 				<span><a href = "/">学院首页 |</a></span>

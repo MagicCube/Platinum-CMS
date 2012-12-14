@@ -15,7 +15,7 @@ html, body
 	margin: 0 auto;
 	height: 150px;
 	padding: 0;
-	background: url(/static/xuegong/images/logo.png) left 10% no-repeat #183442;
+	background: #183442;
 }
 
 #box-top
@@ -107,6 +107,7 @@ menu#mainmenu
 	height: 32px;
 	list-style: none;
 	padding: 0;
+	margin-top: 25px;
 	margin-left: auto;
 	margin-right: auto; 
 	border-bottom: 1px #fff solid;     
@@ -118,7 +119,6 @@ menu#mainmenu
 {
 	float: left;
 	font-size: 12px;
-	font-family: 黑体;
 	display: inline-block;
 	height: 32px;
 	width: 110px;
@@ -146,13 +146,40 @@ menu#mainmenu li > a:hover
 	color: #88ccee;
 }
 
+.block_home_slider {
+	width:400px;
+	height:290px;
+	padding:1px;
+	position:relative;	
+	background-color:#ffffff;
+	border:4px solid #f2f2f2;	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;	
+	text-align:center;
+	line-height:0px;
+}
+
+.block_home_slider .slide {position:relative; height: 290px; overflow: hidden;}
+.block_home_slider .caption {padding:0px; position:absolute; left:0px; right:0px; bottom:0px; background:url(../../home/images/bg_caption.png); text-align:center; height: 30px;}
+.block_home_slider .caption p {padding-bottom:0px; font-size:11px; color:#dedede; text-shadow:0px -1px #000000; line-height:11px;}
+.block_home_slider .caption p.title {padding-bottom:6px; font-size:15px; color:#ffffff; font-weight:bold; line-height:5px;}
+.block_home_slider .flex-direction-nav a {width:25px; height:25px; margin-top:-27px; display:block; position:absolute; top:50%; background-repeat:no-repeat; background-image:url(../../home/images/sprite_arrow_2.png); text-indent:-9000px;}
+.block_home_slider .flex-direction-nav a.flex-prev {left:6px; background-position:left top;}
+.block_home_slider .flex-direction-nav a.flex-prev:hover {background-position:left bottom;}
+.block_home_slider .flex-direction-nav a.flex-next {right:6px; background-position:right top;}
+.block_home_slider .flex-direction-nav a.flex-next:hover {background-position:right bottom;}
+.block_home_slider .flex-control-paging {padding-top:12px; display:inline-block;}
+.block_home_slider .flex-control-paging li {margin:0px; padding:0px; float:left; overflow:hidden;}
+.block_home_slider .flex-control-paging li a {width:12px; height:12px; display:block; background-repeat:no-repeat; background-image:url(../../home/images/sprite_nav_3.png); text-indent:-9000px; cursor:pointer;}
+.block_home_slider .flex-control-paging li a.flex-active {background-position:right top;}
+.flexslider .slides img { width: 4000px; height: 290px;}
 
 #footer
 {
 	height: 200px;
 	background: url(/static/xuegong/images/bk.gif) repeat;
 	position: relative;
-	font-family: 黑体;
 }
 
 #footer_box
@@ -340,16 +367,13 @@ table td a
 	width: 250px;
 }
 
-#textContent, #content
-{
-	margin:0px 10px 0px 10px;
-}
 #textContent #title,#postDetail #title
 {
 	text-align: center;
 	font-size:19px;
 }
 #postDetail > #title{margin-top:20px;}
+
 #textContent #info, #info
 {
 	text-align: center;
@@ -360,4 +384,97 @@ table td a
 	clear:both;
 	max-width:700px;
 	margin:5px 5px 5px 5px;
+}
+
+#bottom
+{
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	width: 990px;
+	height: 50px;
+	bottom: 0;
+	text-align: center;
+	line-height: 30px;
+	background: url(/static/xuegong/images/bk.gif) repeat;
+	border-top: 1px #fff solid;
+}
+
+#bottom span > a
+{
+	color: #fff;
+	text-decoration: none;
+}
+#bottom #copyright
+{
+	float:left; 
+	margin-left: 10px;
+	padding: 0;
+}
+
+#bottom #icp
+{
+	float: left; 
+	display: block; 
+	clear: both; 
+	margin-left: 10px; 
+	margin-top: -15px; 
+	color: #fff;
+}
+
+#bottom span > a:hover
+{
+	color: #88ccee;
+}
+
+#bottom > #developer
+{
+	float: right;
+	width: 190px; 
+	margin: 0; 
+	padding: 0; 
+	display: bolck;
+	text-align: left;
+	color: #fff;
+	position: relative;
+}
+
+#developer ul
+{
+	margin: 10px 0 0 0;
+	padding: 0;	
+}
+
+#developer li
+{
+	height: 15px;
+	line-height: 12px;
+}
+
+#developer a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#developer a:hover
+{
+	color: #88ccee;
+}
+
+#developer span
+{
+	position: absolute;
+	left: 120px;
+	top: 10px;
+}
+
+#bottom > #address
+{
+	position: absolute;
+	top: 18px;
+	left: 380px;	
+	color: #fff;
 }

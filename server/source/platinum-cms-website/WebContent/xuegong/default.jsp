@@ -22,7 +22,7 @@
 
 	<cms:Header path = "xuegong"/>
 
-	<div id = "content">
+	<div id = "xgcontent">
 		<div id = "mainContent">
                 <div id = "gongNews">
                 <span><img src = "/static/xuegong/images/gonggao.png"/></span>
@@ -31,20 +31,14 @@
                 </div>
                 
                 
-			    <div id = "picNews">
-				  <div id="browsable">
-            			<div id="box">				
-			<!-- begin of block_home_slider -->
-			 <div class="block_home_slider" >
+				<div id="browsable">			
+				 	<div class="block_home_slider" >
                     		<div id="home_slider" class="flexslider">
                             	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000206" displayPhoto="true" count="4" />
                             </div>                       
-             </div>
-			<!-- end of block_home_slider-->
-								
-				    </div>
+            		 </div>			
 				</div>
-			</div>
+
 			<div id = "textNews">
                 <span><img src = "/static/xuegong/images/gongshi.png"/></span>        		
         		<cms:PostList id = "gslmlist" subcategoryId = "sc000000000000000000000000000029" count = "8"/>         		

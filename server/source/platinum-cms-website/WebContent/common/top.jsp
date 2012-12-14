@@ -4,13 +4,6 @@
 <link href = "/static/common/css/common.css" rel = "stylesheet"></link>
 
 <div id = "header">
-  
-  	
-    <!-- <ul id="mail">
-           		<li><a href = "http://zbvip.njnu.edu.cn/vip/mail/add-mail.asp?who=yz">院长邮箱</a></li>
-           		<li><a href = "http://zbvip.njnu.edu.cn/vip/mail/add-mail.asp?who=sj">书记邮箱</a></li>
-     </ul> -->
-     
      <div id="linklabel">
      	<ul>
             <li><a href = "http://www.njnu.edu.cn/">南京师范大学</a></li>
@@ -21,8 +14,8 @@
      
      <div id="review">
      	<ul>
-            <li><a href = "#">设为主页</a></li>
-            <li><a href = "#">加入收藏</a></li>
+            <li><a href="javascript:void(0)" onClick="this.style.behavior='url (#default#homepage)';this.setHomePage('');">设为主页</a></li>
+            <li><a href="javascript:void(0)" onClick=" window.external.AddFavorite(document.location.href, document.title);">加入收藏</a></li>
         </ul>
      </div>
      
@@ -36,7 +29,7 @@
     
     <div id = "search">
         <div id = "setting">
-            <span><a href="http://www.nnuzc.cn/wap"> 手机版入口 </a>|<a href = "http://www.zbzs.njnu.edu.cn"> 旧版回顾 </a></span>|<span><a href = "#"> English Version </a></span>
+            <span><a href="http://www.nnuzc.cn/wap"> 手机版入口 </a>|<a href = "http://zbzs.njnu.edu.cn/"> 旧版回顾 </a></span>|<span><a href = "#"> English Version </a></span>
         </div>
         
         <div id = "searchbar">

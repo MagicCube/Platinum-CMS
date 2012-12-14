@@ -355,40 +355,12 @@ ul { list-style: none; }
 #bottom
 {
 	width: 990px;
-	height: 150px;
+	height: 170px;
 	margin-left: auto;
 	margin-right: auto; 
 	background:#013c36;
 	position: relative;
-}
-
-
-#bottom > #view
-{
-	height: 220px;
-	width: 223px;
-	left: 15px;
-	position: absolute;
-}
-
-#bottom p
-{
-	font-size: 14px;
-	font-weight: bold;
 	color: #fff;
-}
-
-#bottom > #view img
-{
-	height: 60px;
-	width: 100px;
-	border: 2px solid #f2f2f2;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;
-	-moz-box-shadow: #f2f2f2 0px 0px 5px;
-	box-shadow: #f2f2f2 0px 0px 5px;
-	margin: 5px 10px;	
 }
 
 #bottom > #fastlink
@@ -433,23 +405,99 @@ ul { list-style: none; }
 	color: #f64a32;
 }
 
-#bottom #footer
+
+#footer
 {
+	font-size: 12px;
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
 	width: 990px;
-	height: 30px;
-	border-top: 1px solid #fff;
+	height: 50px;
 	bottom: 0;
+	text-align: center;
+	line-height: 30px;
+	background: #013C36;
+	border-top: 1px #fff solid;
 }
 
-#bottom #footer p
+#footer span > a
 {
-	padding:5px;
-	font-size: 10px;
-	font-weight: normal;
+	color: #fff;
+	text-decoration: none;
 }
+#footer #copyright
+{
+	float:left; 
+	margin-left: 10px;
+	padding: 0;
+}
+
+#footer #icp
+{
+	float: left; 
+	display: block; 
+	clear: both; 
+	margin-left: 10px; 
+	margin-top: -15px; 
+	color: #fff;
+}
+
+#footer span > a:hover
+{
+	color: #f64a32;
+}
+
+#footer > #developer
+{
+	float: right;
+	width: 190px; 
+	margin: 0; 
+	padding: 0; 
+	display: bolck;
+	text-align: left;
+	color: #fff;
+	position: relative;
+}
+
+#developer ul
+{
+	margin: 10px 0 0 0;
+	padding: 0;	
+}
+
+#developer li
+{
+	height: 15px;
+	line-height: 12px;
+}
+
+#developer a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#developer a:hover
+{
+	color: #f64a32;
+}
+
+#developer span
+{
+	position: absolute;
+	left: 120px;
+	top: 10px;
+}
+
+#footer > #address
+{
+	position: absolute;
+	top: 18px;
+	left: 380px;	
+	color: #fff;
+}
+
 /****/
 #left_part ul li #title
 {	
@@ -461,3 +509,4 @@ ul { list-style: none; }
 
 /*12-10*/
 #more .PostList li{padding-left:15px;width:950px;}
+

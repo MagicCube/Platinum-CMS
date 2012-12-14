@@ -225,7 +225,7 @@ menu#mainmenu li > a:hover
 	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
-	height: 163px;
+	height: 143px;
 	width: 990px;
 	background: #009bcb;
 	line-height: 23px;
@@ -233,7 +233,6 @@ menu#mainmenu li > a:hover
 	text-align:center;
 	position:relative;
 	text-decoration: none;
-
 }
 
  #bottom{
@@ -296,7 +295,7 @@ menu#mainmenu li > a:hover
 	border-top: 1px #FFFFFF solid; 
 	text-align:center;
 }
-#foot > #footer > #bottom1 
+/*#foot > #footer > #bottom1 
 {
  
 	margin-left: auto;
@@ -314,4 +313,115 @@ menu#mainmenu li > a:hover
 	font-size: 12px;
 	color:#fff;
 	line-height: 30px;
+}*/
+
+#bottom1
+{
+	font-size: 12px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	width: 990px;
+	height: 50px;
+	bottom: 0;
+	text-align: center;
+	line-height: 30px;
+	background: #ee911a;
+	border-top: 1px #fff solid;
+	color: #fff;
+}
+
+#_bottom
+{
+	font-size: 12px;
+	width: 990px;
+	height: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: #009bcb;
+	border-top: 1px #fff solid;
+	color: #fff;
+	position: relative;
+}
+
+#_bottom span > a
+{
+	color: #fff;
+	text-decoration: none;
+}
+#_bottom #copyright
+{
+	float:left; 
+	margin-left: 10px;
+	padding: 0;
+	margin-top: 10px;
+}
+
+#_bottom #icp
+{
+	float: left; 
+	display: block; 
+	clear: both; 
+	margin-left: 10px; 
+	color: #fff;
+	margin-top: 2px;
+}
+
+#_bottom span > a:hover
+{
+	color: rgba(0, 0, 0, 0.5);
+}
+
+#_bottom > #developer
+{
+	float: right;
+	width: 190px; 
+	margin: 0; 
+	padding: 0; 
+	display: bolck;
+	text-align: left;
+	color: #fff;
+	position: relative;
+}
+
+#developer ul
+{
+	margin: 15px 0 0 0;
+	padding: 0;	
+	list-style: none;
+}
+
+#developer li
+{
+	height: 15px;
+	line-height: 12px;
+}
+
+#developer a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#developer a:hover
+{
+	color: rgba(0, 0, 0, 0.5);
+}
+
+#developer span
+{
+	position: absolute;
+	left: 120px;
+	top: 10px;
+	margin-top: 15px;
+}
+
+#_bottom > #address
+{
+	position: absolute;
+	top: 18px;
+	left: 380px;	
+	color: #fff;
+	margin-top: 10px;
 }

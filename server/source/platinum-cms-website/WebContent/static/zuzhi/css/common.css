@@ -10,8 +10,8 @@ html, body
 {
 	margin:0 auto;
 	width:990px;
-	height: 170px;
-	background: url(/static/zuzhi/images/logo.png) left 10% no-repeat #e60012;
+	height: 180px;
+	background: #e60012;
 }
 
 #box-top
@@ -237,17 +237,6 @@ menu#nav ul#zuzhi li a:hover
 	color: yellow;
 }
 
-#bottom
-{
-	position: absolute;
-	text-align: center;
-	line-height: 25px;
-	font-size: 12px;
-	color: #fff;
-	top: 150px;
-	border-top: 1px #fff solid;
-	width: 990px;
-}
 
 table
 {
@@ -389,4 +378,97 @@ table td a
 	clear:both;
 	max-width:700px;
 	margin:5px 5px 5px 5px;
+}
+
+#bottom
+{
+	font-size: 12px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	width: 990px;
+	height: 50px;
+	bottom: -200px;
+	text-align: center;
+	line-height: 30px;
+	background: url(/static/zuzhi/images/redbk.gif) repeat;
+	border-top: 1px #fff solid;
+	color: #fff;
+}
+
+#bottom span > a
+{
+	color: #fff;
+	text-decoration: none;
+}
+#bottom #copyright
+{
+	float:left; 
+	margin-left: 10px;
+	padding: 0;
+}
+
+#bottom #icp
+{
+	float: left; 
+	display: block; 
+	clear: both; 
+	margin-left: 10px; 
+	margin-top: -15px; 
+	color: #fff;
+}
+
+#bottom span > a:hover
+{
+	color: yellow;
+}
+
+#bottom > #developer
+{
+	float: right;
+	width: 190px; 
+	margin: 0; 
+	padding: 0; 
+	display: bolck;
+	text-align: left;
+	color: #fff;
+	position: relative;
+}
+
+#developer ul
+{
+	margin: 10px 0 0 0;
+	padding: 0;	
+}
+
+#developer li
+{
+	height: 15px;
+	line-height: 12px;
+}
+
+#developer a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#developer a:hover
+{
+	color: yellow;
+}
+
+#developer span
+{
+	position: absolute;
+	left: 120px;
+	top: 10px;
+}
+
+#bottom > #address
+{
+	position: absolute;
+	top: 18px;
+	left: 380px;	
+	color: #fff;
 }

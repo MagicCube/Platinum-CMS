@@ -97,10 +97,23 @@
                              
                 </table>    
             </div>
-            	</div>
-        <div id = "bottom1">
-			<span style = "text-align: center;">版权所有 南京师范大学中北学院</span>
-		</div>
-
+          </div>   
+    </div>
+    <div id="_bottom">
+		<span id="copyright"><span id="time"></span> 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院</span><span style="margin-left: -200px; margin-top: 10px; line-height: 30px;"><a href="/">www.nnuzc.cn</a></span>
+    	<div id="icp">苏ICP备05080300号</div>
+    	<div id="address">南京市栖霞区南京师范大学中北学院学林路2号 210023</div>
+    	<div id="developer" style="margin-top: -30px;">	 
+    		<ul>
+    			<li><a href="/ruanyan/">软件研发与培训中心</a></li>
+    			<li><a href="/xiandai/">现代教育技术中心</a></li>
+    		</ul>
+    		<span>开发、维护</span>
+    	</div>
+    	<script>
+			var date = new Date();
+			var year = date.getFullYear();
+			$('#time').append(year);
+		</script>
     </div>
      

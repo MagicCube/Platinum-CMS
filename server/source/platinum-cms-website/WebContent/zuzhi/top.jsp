@@ -5,7 +5,8 @@
 
 <div id = "head">
 	<div id = "box-top">
-		<img style = "float: left; margin: 10px 0 0 480px;" src = "/static/zuzhi/images/zuzhi.png" alt = "组织人事处" />		
+		<img src="/static/zuzhi/images/logo.png" style="margin-top: 20px;"/>
+		<img src = "/static/zuzhi/images/zuzhi.png" alt = "组织人事处" />		
 		<div id = "link_search">
 			<div id = "text">
 				<span><a href = "/">学院首页 |</a></span>

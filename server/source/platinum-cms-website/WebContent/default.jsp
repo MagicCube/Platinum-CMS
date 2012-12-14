@@ -14,10 +14,9 @@ clientCache.setMaxAge(60);
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>南京师范大学中北学院欢迎您</title>
 
-<link href = "/static/common/css/basic.css" rel = "stylesheet"></link>
-<link href = "/static/home/css/home.css" rel = "stylesheet"></link>
-<script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
-
+<link href="/static/common/css/basic.css" rel = "stylesheet"></link>
+<link href="/static/home/css/home.css" rel = "stylesheet"></link>
+<script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
 </head>
 <body>
 
@@ -96,7 +95,7 @@ clientCache.setMaxAge(60);
 					<li><a href="/service/ff8081813b6fee04013b6ff158fb0008.html">校园交通</a></li>
 				</ul>
 				<ul style="margin-bottom: 15px;">
-					<li><a href="/service/ff8081813b898578013b89f2dcdb006c.html">部门电话</a></li>
+					<li><a href="/service/ff8081813b6fee04013b6ff3a36c0017.html">部门电话</a></li>
 					
 					<li><a href="http://web.mobset.com/index.html">短信平台</a></li>
 				</ul>

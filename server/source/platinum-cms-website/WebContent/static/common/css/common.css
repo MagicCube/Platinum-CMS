@@ -63,11 +63,6 @@
 	margin: 0;
 }
 
-#review ul li:first-child
-{
-	width: 100px;	
-}
-
 #review ul li 
 {
 	display: block;
@@ -77,6 +72,11 @@
 	text-align: center;
 }
 
+input, textarea, button
+{
+    outline: none;
+    resize: none;
+}
 
 #review ul li a
 {
@@ -94,13 +94,6 @@
 	background: rgba(0, 0, 0, 0.4);
 }
 
-#weather 
-{
-	float: left;
-	display: block;
-	padding: 5px 0 0 10px;
-	color: #fff;
-}
 
 #tf
 {
@@ -142,7 +135,7 @@
 {
 	height: 150px;
 	float: right;
-	width: 310px;
+	width: 320px;
 }
 
 #search > #setting
@@ -228,7 +221,7 @@
 	display: block;
 	color: #ffffff;
 	text-align: center;
-	text-shadow: 0px -1px rgba(0, 0, 0, 0.5); 
+	/*text-shadow: 0px -1px rgba(0, 0, 0, 0.5); */
 }
 
 #main_menu li.main > a:hover
@@ -338,7 +331,7 @@ li.subMenu > a:hover
 	color: #f64a32;
 }
 
-#bottom #footer
+#footer
 {
 	position: absolute;
 	margin-left: auto;

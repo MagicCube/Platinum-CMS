@@ -141,7 +141,7 @@ menu#mainmenu li a:hover
 	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
-	height: 163px;
+	height: 170px;
 	width: 990px;
 	background-color:#ee911a;
 	line-height: 23px;
@@ -169,13 +169,15 @@ menu#mainmenu li a:hover
 }
 #fastlink1
 {
-	margin:0px 0px 0px 70px;
+	margin: 0 0 0 50px;
 	border-right: 1px solid #fff;
 	width:450px;
+	padding: 0;
 }
 #fastlink2
 {
-	margin:0px 0px 0px 20px;
+	width:450px;
+	margin: 0 0 0 20px;
 }
 	
 .fastLink a
@@ -190,17 +192,20 @@ menu#mainmenu li a:hover
 	width:140px;
 	height: 20px;
 	text-decoration: none;
-	}
+	padding: 0;
+}
+
 .fastLink table td a
-{text-decoration: none;}	
+{text-decoration: none;}
+
 .fastLink table td a:hover
 {
  color:#fdbc30;
 }
 #righttable
 {
-	margin: 22px 0 0 0;
-	
+	margin: 10px 0 0 0;
+	padding: 0;
 }
 
 
@@ -208,10 +213,10 @@ menu#mainmenu li a:hover
 	width: 990px;
 	height: 32px;
 	margin: 0 auto;
-
 	border-top: 1px #FFFFFF solid; 
 	text-align:center;
 }
+
 #foot > #footer > #bottom1 
 {
  
@@ -305,4 +310,97 @@ menu#mainmenu li a:hover
 {
 	line-height: 20px;
 	width:990px;
+}
+
+#footer
+{
+	font-size: 12px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	width: 990px;
+	height: 50px;
+	bottom: 0;
+	text-align: center;
+	line-height: 30px;
+	background: #ee911a;
+	border-top: 1px #fff solid;
+	color: #fff;
+}
+
+#footer span > a
+{
+	color: #fff;
+	text-decoration: none;
+}
+#footer #copyright
+{
+	float:left; 
+	margin-left: 10px;
+	padding: 0;
+}
+
+#footer #icp
+{
+	float: left; 
+	display: block; 
+	clear: both; 
+	margin-left: 10px; 
+	margin-top: -15px; 
+	color: #fff;
+}
+
+#footer span > a:hover
+{
+	color: #fdbc30;
+}
+
+#footer > #developer
+{
+	float: right;
+	width: 190px; 
+	margin: 0; 
+	padding: 0; 
+	display: bolck;
+	text-align: left;
+	color: #fff;
+	position: relative;
+}
+
+#developer ul
+{
+	margin: 10px 0 0 0;
+	padding: 0;	
+}
+
+#developer li
+{
+	height: 15px;
+	line-height: 12px;
+}
+
+#developer a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#developer a:hover
+{
+	color: #fdbc30;
+}
+
+#developer span
+{
+	position: absolute;
+	left: 120px;
+	top: 10px;
+}
+
+#footer > #address
+{
+	position: absolute;
+	top: 18px;
+	left: 380px;	
+	color: #fff;
 }

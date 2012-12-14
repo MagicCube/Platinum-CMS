@@ -5,7 +5,7 @@
        <span ><img src = "/static/zhaosheng/image/logo.png" style="margin-top: 5px;" /></span>
 		<span><img src = "/static/zhaosheng/image/vicezhaosheng.png"></span>
 		<div id = mainpage style="color: #fff; font-size: 12px;">
-			<a href = "/">学院首页  </a>|<a href = "www.njnu.edu.cn"> 南师大 </a>
+			<a href = "/">学院首页  </a>|<a href = "http://www.njnu.edu.cn"> 南师大 </a>
 		<div id = "searchbar">
 		<!-- 表单 -->
 			<form id="searchForm" name="form1" method="post" action="#" target="_blank">

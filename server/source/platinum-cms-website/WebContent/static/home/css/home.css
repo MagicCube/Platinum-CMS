@@ -26,7 +26,7 @@
 	position:relative;
 	
 	background-color:#ffffff;
-	border:4px solid #f2f2f2;
+	border:4px solid #e8e8e8;
 	
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
@@ -426,7 +426,7 @@
 {
 	width: 360px;
 	height: 230px;
-	border:4px solid #f2f2f2;	
+	border:4px solid #e8e8e8;	
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	border-radius:3px;

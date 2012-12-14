@@ -7,7 +7,7 @@
 	 
 		<div id = "deplink_1">
             <table>
-<tr>
+			<tr>
                 <td>
                     <a href="/yuanzhang/ff8081813b606afb013b66088ff500a7.html">院长办公室</a>
                 </td>
@@ -102,11 +102,26 @@
 					<td><a href = "#">年终考核系统</a></td>
 				</tr>
 			</table>
+		
+		</div>
+		<div id = "bottom">
+			<span id="copyright"><span id="time"></span> 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院</span><span style="margin-left: -200px;"><a href="/">www.nnuzc.cn</a></span>
+    		<div id="icp">苏ICP备05080300号</div>
+    		<div id="address">南京市栖霞区南京师范大学中北学院学林路2号 210023</div>
+    		<div id="developer" style="margin-top: -30px;">	 
+    			<ul>
+    				<li><a href="/ruanyan/">软件研发与培训中心</a></li>
+    				<li><a href="/xiandai/">现代教育技术中心</a></li>
+    			</ul>
+    			<span>开发、维护</span>
+    		</div>
+    		<script>
+				var date = new Date();
+				var year = date.getFullYear();
+				$('#time').append(year);
+			</script>
+    		</div>
 		</div>
 	
-		<div id = "bottom">
-			南京师范大学中北学院版权所有
-		</div>
-
 	</div>
   </div>
