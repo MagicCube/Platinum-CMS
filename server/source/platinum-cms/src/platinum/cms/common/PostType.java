@@ -4,5 +4,6 @@ public enum PostType
 {
 	INFORMATION,
 	NEWS,
-	NOTIFICATION
+	NOTIFICATION,
+	LINK
 }

@@ -50,7 +50,8 @@ pt.cms.admin.post.view.PostEditViewController = function()
         
         me.toolbar = new pt.cms.admin.common.view.Toolbar();
         me.toolbar.addButton("cancel", "返回").addClass("yellow").click(_btnCancel_onclick);
-        me.toolbar.addButton("savePost", "保存").addClass("green").addClass("default").css("marginRight", 25).click(_btnSave_onclick);
+        me.toolbar.addButton("savePost", "保存").addClass("green").addClass("default").click(_btnSave_onclick);
+        me.toolbar.addButton("previewPost", "保存 + 预览").addClass("default").css("marginRight", 25).click(_btnPreviewPost_onclick);
         me.toolbar.$element.append("<div id='upload' style='display:none;'><input type='file' name='file' id='uploadImage'/> <input type='file' name='file' id='uploadAttachment'/></div>");
         me.toolbars = [me.toolbar];
         
@@ -149,7 +150,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         
 
         $dl = $("<dl><dt>类型</dt> <dd></dd></dl>");
-        me.$postType = $("<select id=postStatus><option value=0>静态信息</option><option value=1 selected=selected>新闻</option><option value=2>通知</option></select>");
+        me.$postType = $("<select id=postStatus><option value=0>静态信息</option><option value=1 selected=selected>新闻</option><option value=2>通知</option><option value=3>链接</option></select>");
         $dl.children("dd").append(me.$postType);
         $sideBar.append($dl);
         
@@ -347,7 +348,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         me.$attachmentList.append($li);
     };
     
-    me.savePost = function()
+    me.savePost = function(p_silentMode)
     {        
         me.contentEditor.updateTextArea();
         var post = {};
@@ -405,7 +406,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         
         if (post.id != null)
         {
-            me.restClient.PUT("admin/post/" + post.id, { post: JSON.stringify(post) })
+            return me.restClient.PUT("admin/post/" + post.id, { post: JSON.stringify(post) })
                 .success(function(p_result){
                     $.extend(me.data, post);
                     $.extend(me.data, p_result);
@@ -421,7 +422,10 @@ pt.cms.admin.post.view.PostEditViewController = function()
                     postInList.summary = me.data.summary;
                     listViewController.reloadSelectedRow();
                     
-                    alert("您已成功保存当前操作的文章。");
+                    if (!p_silentMode)
+                    {
+                        alert("您已成功保存当前操作的文章。");
+                    }
                 })
                 .fail(function()
                 {
@@ -430,7 +434,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         }
         else
         {
-            me.restClient.POST("admin/post/", { post: JSON.stringify(post) })
+            return me.restClient.POST("admin/post/", { post: JSON.stringify(post) })
                 .success(function(p_result)
                 {
                     $.extend(me.data, post);
@@ -460,6 +464,13 @@ pt.cms.admin.post.view.PostEditViewController = function()
     function _btnSave_onclick(e)
     {
         me.savePost();
+    }
+    
+    function _btnPreviewPost_onclick(e)
+    {
+        me.savePost(true).success(function(){
+            window.open("/" + me.data.categoryId + "/" + me.data.id + ".html");
+        });
     }
     
     function _category_onchanged(e)
