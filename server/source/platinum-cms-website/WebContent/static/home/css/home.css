@@ -187,127 +187,18 @@
 #part2 ul.TextList li a
 {
 	text-decoration: none;
-	color: rgba(0, 0, 0, 0.8);
+	color: #111;
 }
 
 #part2 ul.TextList li a:hover
 {
-	color: rgba(0, 0, 0, 0.4);
+	color: #aaa;
 }
 
 #part2 ul.TextList li a > div
 {
 	display: inline;
 }
-
-/*#part2 ul.TextList li
-{
-    margin: 0 0 10px 0;
-    background-image: url(/static/common/images/list.png) no-repeat;
-}
-
-#part2 ul.TextList li a 
-{
-	font-size: 12px;
-	color: #000;
-	text-decoration: none;
-}
-
-#part2 ul.TextList li a > div#title
-{
-	line-height: 15px;
-	white-space:nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
-}
-
-#part2 ul.TextList li a:hover
-{
-	color : rgba(0, 0, 0, 0.5);
-}*/
-
-
-/*
-#right_part
-{
-	width: 360px;
-	height: auto;
-	margin: -10px 0 0 10px;
-	float: left;
-}
-
-#right_part ul.PhotoSummaryList
-{
-	width: 370px;
-	margin: -5px 0 0 0;
-	padding: 0;	 
-}
-
-#right_part ul.PhotoSummaryList li
-{
-	height: 90px;
-	width: 370px;
-	position: relative;
-	left: 0;
-	margin-top: -7px;
-}
-
-#right_part ul.PhotoSummaryList li a
-{
-	text-decoration: none;
-	left: 0;
-	top: 5px;
-	height: 65px;
-	width: 360px;
-	position: absolute;
-}
-
-#right_part ul.PhotoSummaryList li a img
-{
-	width: 100px;
-	height: 65px;
-	left: 0;
-	border:4px solid #f2f2f2;	
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;
-	position: absolute;
-}
-
-#right_part ul.PhotoSummaryList li a span#title
-{
-	width: 250px;
-	position: absolute;
-	height: 25px;
-	left: 120px;
-	font-weight: bold;
-	color: #000;
-	text-overflow: ellipsis;
-	overflow: shidden;
-}
-
-#right_part ul.PhotoSummaryList li a span#summary
-{
-	width: 250px;
-	position: absolute;
-	left: 120px;
-	margin-top: 28px;
-	height: 36px;
-	color : rgba(0, 0, 0, 0.5);
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
-*/
-/*专题报道*/
-/*#topic 
-{
-	position: absolute;
-	width: 380px;
-	height: 300px;
-	right: 0;
-	top: 0;
-}*/
 
 #inform
 {
@@ -345,6 +236,7 @@
 	padding: 0;	
 	width: 370px;
 	float: left;
+	z-index: 10;
 }
 
 
@@ -413,7 +305,7 @@
 
 #position_2 a:hover
 {
-	color: rgba(0, 0, 0, 0.5);
+	color: #ccc;
 }
 
 #medium {

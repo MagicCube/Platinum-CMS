@@ -48,7 +48,7 @@
 
 #linklabel ul li a:hover
 {
-	background: rgba(0, 0, 0, 0.4);
+	background: url(/static/common/images/opacity-60.png);
 }
 
 #review
@@ -76,6 +76,8 @@ input, textarea, button
 {
     outline: none;
     resize: none;
+    background: transparent;
+    border: none;
 }
 
 #review ul li a
@@ -91,44 +93,28 @@ input, textarea, button
 
 #review ul li a:hover
 {
-	background: rgba(0, 0, 0, 0.4);
-}
-
-
-#tf
-{
-	background: url(../images/tf.png) no-repeat;
-	width: 120px;
-	height: 24px;
-	margin-top: 10px;
-	line-height: 20px;
-}
-
-#login ul li #button
-{
-	line-height: 20px;
-	border: none;
-	height: 20px;
-	width: 40px;
-	background: url(../images/login.png) no-repeat;
-	cursor: pointer;
+	background: url(/static/common/images/opacity-60.png);
 }
 
 #logo_search
 {
-	height: 140px;
+	height: 150px;
 	width: 990px;
 	margin-left: auto;
 	margin-right: auto;
+	background: url(/static/common/images/bkleaf.gif) no-repeat;
+	overflow: hidden;
 }
+
 
 #logo_search > #logo
 {
-	height: 140px;
+	height: 150px;
 	float: left;
 	width: 620px;
 	margin-left: -40px;
 	margin-top: 10px;
+
 }
 
 #logo_search > #search
@@ -165,19 +151,19 @@ input, textarea, button
 	width: 304px;
 	float: right;
 	margin-top: 6px;
-	background: url(../images/searchbar.gif) no-repeat;
+	background: url(../images/searchbar.png) no-repeat;
 }
 
 #input
 {
 	width: 262px;
-	height: 24px;
+	height: 30px;
 	margin-left: 3px;
-	margin-top: 3px;
+	margin-top: 2px;
 	float: left;
 	font-size: 14px;
-	line-height: 22px;
 	font-family: 宋体,微软雅黑, 黑体;
+	line-height: 25px;
 	padding: 0;
 }
 
@@ -188,7 +174,7 @@ input, textarea, button
 	border: none;
 	float: left;
 	margin-left: 1px;
-	background: url(../images/searchbtn.gif) no-repeat;
+	background: url(../images/searchbtn.png) no-repeat;
 	cursor: pointer; 
 }
 
@@ -198,11 +184,12 @@ input, textarea, button
 	height: 34px;
 	width: 990px;
 	padding: 0;
+	margin-top: 1px;
 	margin-left: auto;
 	margin-right: auto;
-	/*background: url(../images/bk.png) repeat-x;*/
-	background: #5e8d4f;/*#609e00/*#5F8A49*/;
+	background: url(../images/menu.gif) no-repeat;
 }
+
 
 #main_menu li.main
 {
@@ -210,7 +197,6 @@ input, textarea, button
 	height: 34px;
 	float: left;
 	display: inline-block;
-	background:url(../images/line_menu.gif) no-repeat right; 
 }
 
 #main_menu li.main > a
@@ -221,14 +207,12 @@ input, textarea, button
 	display: block;
 	color: #ffffff;
 	text-align: center;
-	/*text-shadow: 0px -1px rgba(0, 0, 0, 0.5); */
 }
 
 #main_menu li.main > a:hover
 {
 	display: block;
-	background:url(../images/bottom_menu.gif) no-repeat ; 
-	background-position: bottom;
+	background: #3f8a49;
 }
 
 
@@ -466,12 +450,12 @@ ul.TextList li
 ul.TextList li a
 {
 	text-decoration: none;
-	color: rgba(0, 0, 0, 0.8);
+	color: #000;
 }
 
 ul.TextList li a:hover
 {
-	color: rgba(0, 0, 0, 0.4);
+	color: #ccc;
 }
 
 ul.TextList li a > div
@@ -481,13 +465,13 @@ ul.TextList li a > div
 
 #title_style a
 {
-	color: #bebebe;
+	color: #999;
 	text-decoration: none;	
 }
 
 #title_style a:hover
 {
-	color: rgba(0, 0, 0, 0.4);
+	color: #ccc;
 }
 
 #sideBar
@@ -534,15 +518,8 @@ ul.TextList li a > div
 
 #categoryNavigationBar li a:hover
 {
-	color: rgba(0, 0, 0, 0.5);
+	color: #ccc;
 }
 
-/*hr
-{
-	color: #fff;
-	size: 1px;
-	padding: 0;
-	margin: 0;
-}*/
 
 

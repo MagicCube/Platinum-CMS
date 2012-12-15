@@ -4,7 +4,7 @@
 	overflow:hidden;
 	margin: 0;
 	padding: 0;
-	font-family: 
+	font-family: '微软雅黑';
 	font-size: 12px;
 }
 
@@ -40,6 +40,7 @@ html, body
 	overflow-y: auto;
 	padding: 0;
 }
+
 body { /*background-color: #cfcfcf; */background:url(/static/faculty/common/images/body_bg.png);}
 ul { list-style: none; }
 
