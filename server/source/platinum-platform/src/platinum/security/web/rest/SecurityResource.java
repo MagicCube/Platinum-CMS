@@ -32,6 +32,30 @@ public class SecurityResource extends AbstractResource
 	}
 	
 	@POST
+	@Path("password")
+	public Response changePassword(
+			@FormParam("loginPassword") String p_loginPassword,
+			@FormParam("newPassword") String p_newPassword
+			)
+	{
+		if (getSessionAttribute("pt.membership.currentUser") == null)
+		{
+			return responseForbidden();
+		}
+		
+		String userName = ((MembershipUser)getSessionAttribute("pt.membership.currentUser")).getUserName();
+		if (Membership.getInstance().validateUser(userName, p_loginPassword) != null)
+		{
+			Membership.getInstance().changeUserPassword(userName, p_newPassword);
+			return responseOK();
+		}
+		else
+		{
+			return responseForbidden();
+		}
+	}
+	
+	@POST
 	@Path("login")
 	public Response login(
 			@FormParam("loginName") String p_loginName,
