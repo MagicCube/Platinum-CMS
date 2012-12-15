@@ -13,6 +13,7 @@ public class MembershipUser extends PTObject
 		MembershipUser user = new MembershipUser();
 		user.set("id", p_po.getId());
 		user.set("userName", p_po.getUserName());
+		user.set("loginName", p_po.getLoginName());
 		user.set("userRole", p_po.getUserRole());
 		return user;
 	}
@@ -25,6 +26,11 @@ public class MembershipUser extends PTObject
 	public String getUserName()
 	{
 		return getString("userName");
+	}
+	
+	public String getLoginName()
+	{
+		return getString("loginName");
 	}
 	
 	public String getUserRole()

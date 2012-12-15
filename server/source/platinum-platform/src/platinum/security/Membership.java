@@ -74,6 +74,7 @@ public class Membership
 	{
 		if (StringUtil.notNullOrEmpty(p_newPassword))
 		{
+			_checkPassword(p_newPassword);
 			UserEntity user = _getUserEntityByLoginName(p_userName);
 			getUserEntityDAO().beginTransaction();
 			user.setLoginPass(EncryptionUtil.encryptPassword(p_newPassword));
@@ -83,6 +84,21 @@ public class Membership
 	}
 	
 	
+	private void _checkPassword(String p_newPassword)
+	{
+		if (p_newPassword.contains(" "))
+		{
+			throw new RuntimeException("密码中不能包含空格。");
+		}
+		else if (p_newPassword.contains("'"))
+		{
+			throw new RuntimeException("密码中不能包含“'”符号。");
+		}
+		else if (p_newPassword.length() < 5)
+		{
+			throw new RuntimeException("密码必须超过 5 个字符。");
+		}
+	}
 	private UserEntity _getUserEntityByLoginName(String p_userName)
 	{
 		DAOQuery query = new DAOQuery("loginName=:loginName");

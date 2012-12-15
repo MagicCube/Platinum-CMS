@@ -40,18 +40,25 @@ public class SecurityResource extends AbstractResource
 	{
 		if (getSessionAttribute("pt.membership.currentUser") == null)
 		{
-			return responseForbidden();
+			return responseWithException("密码修改失败，请重新登录。");
 		}
 		
-		String userName = ((MembershipUser)getSessionAttribute("pt.membership.currentUser")).getUserName();
+		String userName = ((MembershipUser)getSessionAttribute("pt.membership.currentUser")).getLoginName();
 		if (Membership.getInstance().validateUser(userName, p_loginPassword) != null)
 		{
-			Membership.getInstance().changeUserPassword(userName, p_newPassword);
-			return responseOK();
+			try
+			{
+				Membership.getInstance().changeUserPassword(userName, p_newPassword);
+				return responseOK();
+			}
+			catch (Exception e)
+			{
+				return responseWithException(e.getMessage());
+			}
 		}
 		else
 		{
-			return responseForbidden();
+			return responseWithException("原始密码输入错误。");
 		}
 	}
 	
@@ -100,6 +107,6 @@ public class SecurityResource extends AbstractResource
 			session.invalidate();
 		}
 		
-		return responseRedirectTo("/");
+		return responseRedirectTo("/admin/");
 	}
 }

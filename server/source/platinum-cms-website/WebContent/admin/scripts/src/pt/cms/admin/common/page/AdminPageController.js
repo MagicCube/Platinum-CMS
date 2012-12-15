@@ -30,9 +30,9 @@ pt.cms.admin.common.page.AdminPageController = function()
             data: [
                 { id: "dashboard", title: "My Dashboard", description: "显示我发布的内容和常规任务" },
                 { id: "post", title: "内容", description: "添加及维护各种形式的内容" },
-                { id: "category", title: "栏目", description: "添加及维护内容的栏目" },
-                { id: "user", title: "用户", description: "管理系统用户及其对应权限" },
-                { id: "system", title: "系统", description: "管理和配置系统" }
+                //{ id: "category", title: "栏目", description: "添加及维护内容的栏目" },
+                //{ id: "user", title: "用户", description: "管理系统用户及其对应权限" },
+                //{ id: "system", title: "系统", description: "管理和配置系统" }
             ]
         });
         me.navigationListViewController.reloadRows();
