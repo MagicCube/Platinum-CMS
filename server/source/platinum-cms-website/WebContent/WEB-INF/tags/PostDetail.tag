@@ -12,9 +12,18 @@
 <%!
 private String _formatFileSize(long p_size)
 {
+	if (p_size < 1024)
+	{
+		return "小于 1KB";
+	}
 	if (p_size < 1024 * 5)
     {
-        return Math.round(p_size * 10 / 1024) / 10.0 + "KB";
+        double size = Math.round(p_size * 10 / 1024) / 10.0;
+        if (size == 0)
+        {
+        	size = 1;
+        }
+        return size + "KB";
     }
     else if (p_size < 10240000)
     {

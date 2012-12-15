@@ -555,9 +555,15 @@ pt.cms.admin.post.view.PostEditViewController = function()
     
     function _formatFileSize(p_size)
     {
+    	var size = Math.round(p_size * 10 / 1024) / 10;
         if (p_size < 1024 * 5)
         {
-            return Math.round(p_size * 10 / 1024) / 10 + "KB";
+            size = Math.round(p_size * 10 / 1024) / 10;
+            if (size == 0)
+        	{
+            	size = 1;
+        	}
+            return size + "KB";
         }
         else if (p_size < 10240000)
         {
