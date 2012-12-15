@@ -71,7 +71,7 @@ PostEntity post = postManager.getPost(postId, categoryId);
             </script>
         </div>
     
-        <% if (post.getContentText() != null) {%>
+        <% if (post.getSummary() != null) {%>
         <div id="summary"><%= post.getSummary()%></div>
         <% } %>
         
