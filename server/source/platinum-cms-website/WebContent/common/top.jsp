@@ -24,7 +24,7 @@
 
 <div id = "logo_search">
     <div id = "logo">
-        <img src = "/static/common/images/logo.png" alt = "南京师范大学中北学院"/>
+        <img src = "/static/common/images/logo.jpg" alt = "南京师范大学中北学院"/>
     </div>
     
     <div id = "search">
