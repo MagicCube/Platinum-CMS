@@ -7,6 +7,9 @@
 	width: 990px;
 	background: #4F8A49;
 	overflow-y: hidden;
+	-moz-box-shadow: 1px 1px 3px gray;
+	-webkit-box-shadow: 1px 1px 3px gray;
+	box-shadow: 1px 1px 3px gray;
 }
 
 #linklabel
@@ -29,10 +32,12 @@
 	height: 30px;
 	width: 80px;
 	text-align: center;
+	border-left: 1px #fff solid
 }
 #linklabel ul li:first-child
 {
-	width: 100px;	
+	width: 100px;
+	border: none;	
 }
 
 #linklabel ul li a
@@ -43,7 +48,6 @@
 	text-decoration: none;
 	color: #fff;
 	text-align: center;
-	border-left: 1px #fff solid;
 }
 
 #linklabel ul li a:hover
@@ -70,6 +74,12 @@
 	height: 30px;
 	width: 80px;
 	text-align: center;
+	border-right: 1px #fff solid
+}
+
+#review ul li:last-child
+{
+	border: none;
 }
 
 
@@ -81,7 +91,6 @@
 	text-decoration: none;
 	color: #fff;
 	text-align: center;
-	border-right: 1px #fff solid;
 }
 
 #review ul li a:hover
@@ -271,6 +280,9 @@ li.subMenu > a:hover
 	/*background: url(../images/headerbk.gif) ;*/
 	background: #5e8d4f/*#5F8A49*/;
 	position: relative;
+	-moz-box-shadow: 1px 1px 3px gray;
+	-webkit-box-shadow: 1px 1px 3px gray;
+	box-shadow: 1px 1px 3px gray;
 }
 
 
