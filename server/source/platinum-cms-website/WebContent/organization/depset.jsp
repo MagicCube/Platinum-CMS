@@ -38,17 +38,21 @@
 		</div>
 	</div> -->
 	<div id="middle">
-			<span><img src="/static/common/images/depstruct.png" title="部门结构图" usemap="#depmap"/></span>
+			<span><img src="/static/common/images/depstruct.jpg" title="部门结构图" usemap="#depmap"/></span>
 			<map name="depmap">
-				<area shape="rect" coords="310,40,400,170" href ="/xinxi/" alt="xinxi"/>
-				<area shape="rect" coords="510,50,610,107" href ="/yinyue/" alt="yinyue"/>
-				<area shape="rect" coords="557,170,657,242" href ="/gongxue/" alt="yinyue"/>
-				<area shape="rect" coords="280,240,368,322" href ="/renwen/" alt="yinyue"/>
-				<area shape="rect" coords="520,320,580,383" href ="/meishu/" alt="yinyue"/>
-				<area shape="rect" coords="370,360,456,468" href ="/gongguan/" alt="yinyue"/>
-				<area shape="rect" coords="520,460,596,523" href ="/waiyu/" alt="yinyue"/>
-				<area shape="rect" coords="370,550,451,616" href ="/qianghua/" alt="yinyue"/>
-				<area shape="rect" coords="460,600,640,642" href ="/jingguan/" alt="yinyue"/>
+				<area shape="rect" coords="351,231,476,284" href="/yuanzhang/" />
+				<area shape="rect" coords="524,274,583,310" href="/jiaowu/" />
+				<area shape="rect" coords="350,380,474,450" href="/xuegong/" />
+				<area shape="rect" coords="244,402,284,422" href="/tuanwei/" />
+				<area shape="rect" coords="130,479,285,492" href="/jiuye/" />
+				<area shape="rect" coords="204,512,283,525" href="/zhaosheng/" />
+				<area shape="rect" coords="515,415,613,462" href="/zuzhi/" />
+				<area shape="rect" coords="522,516,586,552" href="/caiwu/" />
+				<area shape="rect" coords="373,593,475,626" href="/houqin/" />
+				<area shape="rect" coords="518,623,635,669" href="/zichan/" />
+				<area shape="rect" coords="518,701,635,757" href="/library/" />
+				<area shape="rect" coords="337,683,475,735" href="/xiandai/" />
+				<area shape="rect" coords="300,777,475,820" href="/xiandai/" />
 			</map>
 		</div>	
 	<cms:Footer/>

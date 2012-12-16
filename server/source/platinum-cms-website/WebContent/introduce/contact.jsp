@@ -19,7 +19,7 @@
 		<cms:Header/>
 			<div id = "maincontent" style = "height: 580px;">
 			<div id = "layoutleft" >
-				<img src = "/static/common/images/glasses.jpg" height = 200; width = 250px;/>
+				<img src = "/static/common/images/contact.jpg" height = 200; width = 250px;/>
 			</div>
 			<div id = "layoutright">
 				<h2>联系我们</h2>
