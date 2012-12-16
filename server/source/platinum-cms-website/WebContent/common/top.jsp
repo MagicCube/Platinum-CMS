@@ -14,7 +14,7 @@
      
      <div id="review">
      	<ul>
-            <li><a href="javascript:void(0)" onClick="this.style.behavior='url (#default#homepage)';this.setHomePage('');">设为主页</a></li>
+            <li><a href="javascript:void(0)" onClick="this.style.behavior='this.style.behavior='url (#default#homepage)';this.setHomePage('')">设为主页</a></li>
             <li><a href="javascript:void(0)" onClick=" window.external.AddFavorite(document.location.href, document.title);">加入收藏</a></li>
         </ul>
      </div>

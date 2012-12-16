@@ -10,7 +10,7 @@
             <table>
             <tr>
                 <td>
-                    <a href = "/yuanzhang/ff8081813b606afb013b66088ff500a7.html">院长办公室</a>
+                    <a href = "/yuanzhang/ff8081813ba1df1a013ba22c48110009.html">院长办公室</a>
                 </td>
                 <td>
                     <a href = "/houqin/ff8081813b606afb013b660cef4700aa.html">后勤保卫处</a>

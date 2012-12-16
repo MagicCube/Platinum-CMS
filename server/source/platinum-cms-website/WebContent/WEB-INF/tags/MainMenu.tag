@@ -39,7 +39,7 @@
     <li class = "main"><a href = "#">交流合作</a>
         <ul>
             <li class = "subMenu"><a href = "/international/international.jsp">海外学习计划</a></li>
-            <li class = "subMenu"><a href = "/cooperation/ff8081813b7a2ecd013b7a3a0ece000b.html">联合办学</a></li>
+            <!-- <li class = "subMenu"><a href = "/cooperation/ff8081813b7a2ecd013b7a3a0ece000b.html">联合办学</a></li> -->
         </ul>
     </li>
     <li class = "main"><a href = "#">公共服务</a>

@@ -242,8 +242,6 @@
 	z-index: 10;
 }
 
-
-
 #fastPipe ul > li
 {
 	width: 120px;
@@ -265,9 +263,6 @@
 	margin-top: 20px;
 	white-space: nowrap;
 	font-size: 12px;
-	/*background-color: transparent;
-	background: none repeat scroll 0 0 rgba(0, 100, 0, 0.5);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1,startColorStr=#60000000,endColorStr=#60000000);*/
 	background: url(../images/opacity-40.png);
 	overflow: hidden;
 	width: 120px;
