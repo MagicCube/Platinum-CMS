@@ -12,7 +12,7 @@
 </head>
 <body>
 	<cms:Header/>
-	<div id = "mainbody" style = "height: 600px;">
+	<!-- <div id = "mainbody" style = "height: 600px;">
 		<div id = "maincontent" style = "height: 600px;">
 			<div id = "layoutleft" >
 				<img src = "/static/common/images/department.jpg" height = 200; width = 250px;/>
@@ -36,7 +36,21 @@
 				</ul>		
 			</div>		
 		</div>
-	</div>
+	</div> -->
+	<div id="middle">
+			<span><img src="/static/common/images/depstruct.png" title="部门结构图" usemap="#depmap"/></span>
+			<map name="depmap">
+				<area shape="rect" coords="310,40,400,170" href ="/xinxi/" alt="xinxi"/>
+				<area shape="rect" coords="510,50,610,107" href ="/yinyue/" alt="yinyue"/>
+				<area shape="rect" coords="557,170,657,242" href ="/gongxue/" alt="yinyue"/>
+				<area shape="rect" coords="280,240,368,322" href ="/renwen/" alt="yinyue"/>
+				<area shape="rect" coords="520,320,580,383" href ="/meishu/" alt="yinyue"/>
+				<area shape="rect" coords="370,360,456,468" href ="/gongguan/" alt="yinyue"/>
+				<area shape="rect" coords="520,460,596,523" href ="/waiyu/" alt="yinyue"/>
+				<area shape="rect" coords="370,550,451,616" href ="/qianghua/" alt="yinyue"/>
+				<area shape="rect" coords="460,600,640,642" href ="/jingguan/" alt="yinyue"/>
+			</map>
+		</div>	
 	<cms:Footer/>
 </body>
 </html>

@@ -15,7 +15,7 @@
 
 	
 		<div id="middle">
-			<span><img src="/static/common/images/struct.png" title="结构图" usemap="#facultymap"/></span>
+			<span><img src="/static/common/images/facultystruct.png" title="结构图" usemap="#facultymap"/></span>
 			<map name="facultymap">
 				<area shape="rect" coords="310,40,400,170" href ="/xinxi/" alt="xinxi"/>
 				<area shape="rect" coords="510,50,610,107" href ="/yinyue/" alt="yinyue"/>

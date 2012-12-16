@@ -72,13 +72,6 @@
 	text-align: center;
 }
 
-input, textarea, button
-{
-    outline: none;
-    resize: none;
-    background: transparent;
-    border: none;
-}
 
 #review ul li a
 {
@@ -104,6 +97,8 @@ input, textarea, button
 	margin-right: auto;
 	background: url(/static/common/images/bkleaf.gif) no-repeat;
 	overflow: hidden;
+	opacity: 0.6;
+	filter: Alpha(opacity=60);
 }
 
 
@@ -157,14 +152,23 @@ input, textarea, button
 #input
 {
 	width: 262px;
-	height: 30px;
+	height: 27px;
 	margin-left: 3px;
-	margin-top: 2px;
+	margin-top: 3px;
 	float: left;
 	font-size: 14px;
 	font-family: 宋体,微软雅黑, 黑体;
-	line-height: 25px;
+	line-height: 22px;
 	padding: 0;
+	outline: none;
+    resize: none;
+    background: transparent;
+    border: none;
+}
+
+#input:focus
+{
+	background: #fff;
 }
 
 #button

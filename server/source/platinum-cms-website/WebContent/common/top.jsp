@@ -24,12 +24,12 @@
 
 <div id = "logo_search">
     <div id = "logo">
-        <img src = "/static/common/images/logo.jpg" alt = "南京师范大学中北学院"/>
+        <img src = "/static/common/images/logo.png" alt = "南京师范大学中北学院"/>
     </div>
     
     <div id = "search">
         <div id = "setting">
-            <span><a href="http://www.nnuzc.cn/wap"> 手机版入口 </a>|<a href = "http://zbzs.njnu.edu.cn/"> 旧版回顾 </a></span>|<span><a href = "#"> English Version </a></span>
+            <span><a href = "http://zbzs.njnu.edu.cn/"> 旧版回顾 </a></span>|<span><a href = "#"> English Version </a></span>
         </div>
         
         <div id = "searchbar">
