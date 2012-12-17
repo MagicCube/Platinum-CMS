@@ -268,169 +268,10 @@ li.subMenu > a:hover
 	padding-left: 40px;
 }
 
-
-/*尾部*/
-#bottom
-{
-	width: 990px;
-	height: 160px;
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto; 
-	/*background: url(../images/headerbk.gif) ;*/
-	background: #5e8d4f/*#5F8A49*/;
-	position: relative;
-	-moz-box-shadow: 1px 1px 3px gray;
-	-webkit-box-shadow: 1px 1px 3px gray;
-	box-shadow: 1px 1px 3px gray;
-}
-
-
-#bottom span
-{
-	font-size: 12px;
-	color: #fff;
-}
-
-#bottom > #fastlink
-{
-	width: 480px;
-	height: 140px;
-	position: absolute;
-	left: 50px;
-}
-
-#bottom > #fastlink table
-{
-	margin: 10px 0 0 0;
-	paddiong: 0;
-}
-
-#bottom > #fastlink table tr
-{
-	width: 450px;
-}
-
-#bottom > #fastlink table td
-{
-	height: 20px;
-	width: 140px;
-}
-
-#bottom > #fastlink table tr td > a
-{
-	color: #fff;
-	font-size: 12px;
-	text-decoration: none;
-}
-
-#bottom > #fastlink a:hover
-{
-	color: #f64a32;
-}
-
-#footer
-{
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	width: 990px;
-	height: 50px;
-	bottom: -8px;
-	text-align: center;
-	line-height: 30px;
-	background: #4F8A49;
-	border-top: 1px #fff solid;
-}
-
-#bottom #footer span > a
-{
-	color: #fff;
-	text-decoration: none;
-}
-#bottom #footer #copyright
-{
-	float:left; 
-	margin-top: 3px;
-	margin-left: 10px;
-}
-
-#bottom #footer #icp
-{
-	float: left; 
-	display: block; 
-	clear: both; 
-	margin-left: 10px; 
-	margin-top: -15px; 
-	color: #fff;
-}
-
-#bottom #footer span > a:hover
-{
-	color: #f64a32;
-}
-
-#footer > #developer
-{
-	float: right;
-	width: 190px; 
-	margin: 0; 
-	padding: 0; 
-	display: bolck;
-	text-align: left;
-	color: #fff;
-	position: relative;
-}
-
-#developer ul
-{
-	margin: 0;
-	padding: 0;	
-}
-
-#developer li
-{
-	height: 15px;
-}
-
-#developer a
-{
-	color: #fff;
-	text-decoration: none;
-}
-
-#developer a:hover
-{
-	color: #f64a32;
-}
-
-#developer span
-{
-	position: absolute;
-	left: 120px;
-	top: 10px;
-}
-
-#body
-{
-	width: 990px;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-}
-
 #bodyContent
 {
 	width: 690px;
 	min-height: 500px;
-}
-
-#footer > #address
-{
-	position: absolute;
-	top: 18px;
-	left: 380px;	
-	color: #fff;
 }
 
 #title_style
@@ -535,5 +376,197 @@ ul.TextList li a > div
 	color: #ccc;
 }
 
+#footer
+{
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	height: 170px;
+	width: 990px;
+	background-color: #5e8d4f;
+	line-height: 23px;
+	font-size: 12px;
+	text-align:center;
+	position:relative;
+	text-decoration: none;
+	-moz-box-shadow: 1px 1px 3px gray;
+	-webkit-box-shadow: 1px 1px 3px gray;
+	box-shadow: 1px 1px 3px gray;
+}
 
+ #bottom1{
+	width: 990px;
+	height: 120px;
+	position: absolute;
+	left:0;
+	
+}
+
+#fastlink1, #fastlink2
+{
+	display: inline-block;
+	text-align: left;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	margin: 10px 0 0 50px;
+	text-decoration: none;
+}
+
+#fastlink1
+{
+	border-right: 1px solid #fff;
+	width:450px;
+	position: absolute;
+	left:0;
+}
+
+#fastlink2
+{
+	width:450px;
+	position: absolute;
+	right:0;
+}
+	
+.fastLink a
+{
+	font: 宋体;
+	font-size:12px;
+	font-weight: normal;
+	color: #FFF;
+}
+
+table td
+{
+	width:140px;
+	height: 20px;
+	text-decoration: none;
+	padding: 0;
+}
+
+.fastLink table td a
+{
+	text-decoration: none;
+}
+
+.fastLink table td a:hover
+{
+ color: #f64a32;;
+}
+
+#bottom2
+{
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	width: 990px;
+	height: 50px;
+	bottom: 0;
+	background: #5e8d4f;
+	border-top: 1px #fff solid;
+	color: #fff;
+	left: 0;
+}
+
+
+#bottom2 p
+{
+	padding: 0;
+	margin: 0;
+	line-height: 15px;
+	float: left;
+	clear: both;
+}
+
+#bottom2 span > a
+{
+	color: #fff;
+	text-decoration: none;
+}
+#bottom2 #copyright
+{
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	padding: 0;
+	height: 50px;
+}
+
+#copyright span
+{
+	float: left;
+}
+
+#bottom2 span > a:hover
+{
+	color: #f64a32;
+}
+
+#bottom2 > #website
+{
+	position: absolute;
+	left: 350px;
+	top: 5px;
+	text-align: center;
+}
+
+#website a
+{
+	display: block;
+	text-decoration: none;
+	padding: 5px 0 4px 110px; 
+	color: #fff;
+}
+
+#website a:hover
+{
+	color: #f64a32;
+}
+
+
+#bottom2 > #developer
+{
+	position: absolute;
+	right: 0;
+	width: 190px; 
+	margin: 0; 
+	padding: 0; 
+	display: bolck;
+	text-align: left;
+	color: #fff;
+}
+
+#developer ul
+{
+	margin: 10px 0 0 0;
+	padding: 0;	
+	float: left;
+}
+
+#developer li
+{
+	display: block;
+	height: 20px;
+	line-height: 12px;
+}
+
+#developer a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#developer a:hover
+{
+	color: #f64a32;
+}
+
+#developer span
+{
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
 

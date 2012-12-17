@@ -328,9 +328,20 @@
 	-moz-box-shadow: 1px 1px 5px gray;
 	-webkit-box-shadow: 1px 1px 5px gray;
 	box-shadow:1px 1px 5px gray;
+	margin-top: 2px;
 }
 
 #lineheight
 {
 	line-height: 14px;
+}
+
+
+#code
+{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: url(../images/code.png);
 }

@@ -29,7 +29,7 @@
     
     <div id = "search">
         <div id = "setting">
-            <span><a href = "http://zbzs.njnu.edu.cn/"> 旧版回顾 </a></span>|<span><a href = "#"> English Version </a></span>
+            <span><a href = "http://zbzs.njnu.edu.cn/"> 旧版回顾 </a></span>|<span><a href = "/english/ff8081813ba236ac013ba27de91f0005.html"> English Version </a></span>
         </div>
         
         <div id = "searchbar">

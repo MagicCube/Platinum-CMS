@@ -1,27 +1,25 @@
 ﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <link href = "/static/xiandai/css/common.css" rel = "stylesheet"></link>
-
-<div id = "header">
-     <span><img src = "/static/xiandai/image/logo.png" /></span>	
-     <span><img src = "/static/xiandai/image/xiandai.png" /></span>	
-  <div id = "link_search" >
-    <div id = "text" style="color: #fff; font-size: 12px;">
-                 <span><a href = "/">学院首页 |</a></span>
-				 <span><a href = "http://njnu.edu.cn"> 南师大</a></span>
-    </div>
-    <div id = "search">
-      <form id="searchForm_1" name="form_1" method="post" action="#" target="_blank">
-        <label>
-          <input type="text" id="description" value="搜索" onfocus="this.value=''" 
-       					  	 onBlur="if(this.value==''){this.value='搜索';}"
-       					  	 style = "height: 18px; margin-left: 3px; margin-top: 2px;"/>
-          <input type = "submit" name = "button" id = "button" value = "" />
-        </label>
-      </form>
-    </div>
-  </div>
-  
+<div id="headcontainer">
+	<div id="header1">
+       	<span id="collegelogo"><img src = "/static/xiandai/image/logo.png" style="margin-top: 5px;" /></span>
+		<span id="secondlogo"><img src = "/static/xiandai/image/xiandai.png"></span>
+		<div id = "indexAndsearch" style="color: #fff; font-size: 12px;">
+			<a href = "/">学院首页  </a>|<a href = "http://www.njnu.edu.cn"> 南师大 </a>
+			<div id = "searchbar">
+				<form id="searchForm" name="form1" method="post" action="#" target="_blank">
+    				<label>
+       					<input type="text" class="word" value="搜索..." onfocus="this.value=''" 
+       					   onBlur="if(this.value==''){this.value='搜索...';}"
+       					   style = "height: 18px; margin-top: 3px; margin-left: 2px;"/>
+       					<input type = "submit" name = "button" class = "button" value = "" />
+      				</label>
+   				</form>
+			</div>
+		</div>	
+  	</div>
+	
 	<menu id = "mainmenu">
 		<li class = "singleMenu"><a href = "/xiandai/">首页</a>
 		</li>

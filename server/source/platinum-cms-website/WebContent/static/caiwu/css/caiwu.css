@@ -1,7 +1,8 @@
 ﻿@CHARSET "UTF-8";
 *
 {
-	font-family: 微软雅黑;
+	font-family: "宋体,微软雅黑";
+	font-size: 12px;
 }
 
 a
@@ -19,12 +20,12 @@ a:hover
 
 #content
 {
-	margin: 20px 0 0 0;
+	margin:0;
 	padding: 0px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 990px;
-	height: 550px;	
+	height: 530px;	
 	position: relative;	
 }
 #content > #mainContent

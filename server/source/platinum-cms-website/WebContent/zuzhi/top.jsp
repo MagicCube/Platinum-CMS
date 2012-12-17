@@ -3,29 +3,24 @@
 
 <link href = "/static/zuzhi/css/common.css" rel = "stylesheet"></link>
 
-<div id = "head">
-	<div id = "box-top">
-		<img src="/static/zuzhi/images/logo.png" style="margin-top: 20px;"/>
-		<img src = "/static/zuzhi/images/zuzhi.png" alt = "组织人事处" />		
-		<div id = "link_search">
-			<div id = "text">
-				<span><a href = "/">学院首页 |</a></span>
-				<span><a href = "http://njnu.edu.cn"> 南师大</a></span>
-			</div>
-			<div id = "search">
-				<form id="searchForm_1" name="form_1" method="post" action="#" target="_blank">
-					<label>
-       					<input type="text" id="description" value="搜索..." onfocus="this.value=''" 
-       					  	 onBlur="if(this.value==''){this.value='搜索...';}"
-       					  	 style = "height: 18px; margin-left: 3px; margin-top: 2px;"/>
-       					<input type = "submit" name = "button" id = "button" value = "" />
-					</label>
-				</form>
+<div id="headcontainer">
+	<div id="header1">
+       	<span id="collegelogo"><img src = "/static/zuzhi/images/logo.png" style="margin-top: 5px;" /></span>
+		<span id="secondlogo"><img src = "/static/zuzhi/images/zuzhi.png"></span>
+		<div id = "indexAndsearch" style="color: #fff; font-size: 12px;">
+			<a href = "/">学院首页  </a>|<a href = "http://www.njnu.edu.cn"> 南师大 </a>
+			<div id = "searchbar">
+				<form id="searchForm" name="form1" method="post" action="#" target="_blank">
+    				<label>
+       					<input type="text" class="word" value="搜索..." onfocus="this.value=''" 
+       					   onBlur="if(this.value==''){this.value='搜索...';}"
+       					   style = "height: 18px; margin-top: 3px; margin-left: 2px;"/>
+       					<input type = "submit" name = "button" class = "button" value = "" />
+      				</label>
+   				</form>
 			</div>
 		</div>	
-	</div>
-</div>
-	
+  	</div>
 	<menu id = "nav">
 		<ul id = "zuzhi">
 			<li><a href = "/zuzhi/default.jsp">首页</a></li>
@@ -37,5 +32,5 @@
 			<li><a href = "/zuzhi/sc000000000000000000000000000039/more/">人事管理</a></li>
 		</ul>
 	</menu>
-	
+</div>	
 	<div id = "bodyContent">

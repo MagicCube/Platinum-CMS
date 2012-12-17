@@ -15,7 +15,7 @@
 	<div id="middle">
 			<span><img src="/static/common/images/depstruct.jpg" title="部门结构图" usemap="#depmap"/></span>
 			<map name="depmap">
-				<area shape="rect" coords="351,231,476,284" href="/yuanzhang/ff8081813b606afb013b66088ff500a7.html" />
+				<area shape="rect" coords="351,231,476,284" href="/yuanzhang/ff8081813ba1df1a013ba22c48110009.html" />
 				<area shape="rect" coords="524,274,583,310" href="/jiaowu/" />
 				<area shape="rect" coords="350,380,474,450" href="/xuegong/" />
 				<area shape="rect" coords="244,402,284,422" href="/tuanwei/" />

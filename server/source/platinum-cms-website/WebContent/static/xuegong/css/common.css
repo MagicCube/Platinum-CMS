@@ -1,103 +1,114 @@
 @CHARSET "UTF-8";
 
-html, body
+html
+{
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y:auto; 	
+}
+
+body
 {
 	padding: 0;
 	margin: 0;
 	background: #fff;
 	font-family: 宋体, 微软雅黑;
 	font-size: 12px;
+	overflow-y:hidden;
 }
 
-#header
+#headcontainer
 {
-	width: 990px;
-	margin: 0 auto;
-	height: 150px;
 	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 140px;
+	width: 990px;
 	background: #183442;
 }
 
-#box-top
+#headcontainer > #header1
 {
-	width: 990px;
-	height: 70px;
 	margin-left: auto;
-	margin-right: auto; 
-	display: block;
+	margin-right: auto;
+	height: 100px;
+	width: 990px;
+	left: 0;
+	position: relative;
 }
 
-#logo
+#header1 > #indexAndsearch
 {
-	margin: 10px 0 0 0;
+	position: absolute;
+	margin-top: 15px;
 	height: 60px;
-	width: 450px;
-	background: url(/static/xuegong/images/logo.png) no-repeat;
-	float:left;
-}
-
-#link_search
-{
-	margin: 20px 10px 0 0;
 	width: 200px;
-	float: right;
+	right: 0;
 }
 
-#search
+
+#header1 > #indexAndsearch a
 {
-	padding: 0;
-	margin: 10px 0 0 0;
-	width: 160px;
-	height: 22px;
-	background: url(/static/xuegong/images/text.png) no-repeat;
+	color:#ffffff;
+	text-decoration: none;
+	margin-left:9px;
+	margin-right:9px;
 }
 
-#description
+#header1 > #indexAndsearch a:hover
 {
-	width:118px;
+	color: #ccc;
+}
+
+#header1 > #indexAndsearch > #searchbar
+{
+	width: 220px;
 	height: 22px;
-	line-height: 18px;
+	margin-top: 5px;
+	background: url(/static/xuegong/images/text.png);
+	background-repeat: no-repeat;
+}
+
+#header1 > #collegelogo
+{
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+
+#header1 > #secondlogo
+{
+	position: absolute;
+	left: 450px;
+	top: 10px;
+}
+
+.word {
+	width:120px;
+	height: 16px;
+	line-height: 16px;
 	padding: 0;
 	margin: 0;
 	float: left;
 	border: 0;
 	background-color: #FFFFFF;
-	font-size: 12px;
+	color: #888787;
+	font-size: 10px;
 }
 
-#button
-{
+.button {
 	float: left;
 	height: 22px;
-	width: 23px;
-	background: url(/static/xuegong/images/button.png) no-repeat;
+	width: 26px;
+	background: url(/static/xuegong/images/button.png);
 	background-repeat: no-repeat;
 	border: 0;
 	padding: 0;
 	margin: 0;
 	cursor: pointer;
-}
-
-#link_search #text
-{
-	width: 200px;
-	line-height: 15px;
-	padding: 0;
-	margin: 0;
-	padding-left: 20px;
-}
-
-
-#link_search #text a
-{
-	color: #fff;
-	font-size: 12px;
-	text-decoration: none;
-}
-
-#link_search #text a:hover
-{
-	color: #ddd;
 }
 
 menu#mainmenu
@@ -107,7 +118,7 @@ menu#mainmenu
 	height: 32px;
 	list-style: none;
 	padding: 0;
-	margin-top: 25px;
+	margin:0;
 	margin-left: auto;
 	margin-right: auto; 
 	border-bottom: 1px #fff solid;     
@@ -177,9 +188,12 @@ menu#mainmenu li > a:hover
 
 #footer
 {
-	height: 200px;
-	background: url(/static/xuegong/images/bk.gif) repeat;
+	height: 201px;
 	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 990px;
+	background-color:#183442;
 }
 
 #footer_box
@@ -188,6 +202,7 @@ menu#mainmenu li > a:hover
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
+	height: 150px;
 }
 
 #footer_box p
@@ -260,17 +275,6 @@ menu#mainmenu li > a:hover
 	color: #88ccee;
 }
 
-#bottom
-{
-	position: absolute;
-	text-align: center;
-	line-height: 25px;
-	font-size: 12px;
-	color: #fff;
-	top: 145px;
-	border-top: 1px #fff solid;
-	width: 990px;
-}
 
 #deplink_2 table
 {
@@ -386,70 +390,109 @@ table td a
 	margin:5px 5px 5px 5px;
 }
 
-#bottom
+#bottom2
 {
-	color: #fff;
-	font-size: 12px;
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
 	width: 990px;
 	height: 50px;
 	bottom: 0;
-	text-align: center;
-	line-height: 30px;
-	background: url(/static/xuegong/images/bk.gif) repeat;
 	border-top: 1px #fff solid;
+	color: #fff;
+	left: 0;
 }
 
-#bottom span > a
+
+#bottom2 p
+{
+	padding: 0;
+	margin: 0;
+	line-height: 15px;
+	float: left;
+	clear: both;
+}
+
+#bottom2 span > a
 {
 	color: #fff;
 	text-decoration: none;
 }
-#bottom #copyright
+#bottom2 #copyright
 {
-	float:left; 
-	margin-left: 10px;
+	display: block;
+	position: absolute;
+	top: 12px;
+	left: 10px;
 	padding: 0;
+	height: 50px;
 }
 
-#bottom #icp
+#copyright span
 {
-	float: left; 
-	display: block; 
-	clear: both; 
-	margin-left: 10px; 
-	margin-top: -15px; 
+	float: left;
+}
+#copyright p
+{
+	padding: 0;
+	margin: 0;
+	line-height: 15px;
+	float: left;
+	clear: both;
+	margin-top:5px;
+}
+
+
+#bottom2 span > a:hover
+{
+	color: #fdbc30;
+}
+
+#bottom2 > #website
+{
+	position: absolute;
+	left: 350px;
+	top: 5px;
+	text-align: center;
+}
+
+#website a
+{
+	display: block;
+	text-decoration: none;
+	padding: 5px 0 4px 110px; 
 	color: #fff;
 }
 
-#bottom span > a:hover
+#website a:hover
 {
 	color: #88ccee;
 }
 
-#bottom > #developer
+
+#bottom2 > #developer
 {
-	float: right;
+	position: absolute;
+	right: 0;
 	width: 190px; 
 	margin: 0; 
 	padding: 0; 
 	display: bolck;
 	text-align: left;
 	color: #fff;
-	position: relative;
 }
 
 #developer ul
 {
 	margin: 10px 0 0 0;
 	padding: 0;	
+	float: left;
 }
 
 #developer li
 {
-	height: 15px;
+	display: block;
+	height: 20px;
 	line-height: 12px;
 }
 
@@ -466,15 +509,7 @@ table td a
 
 #developer span
 {
-	position: absolute;
-	left: 120px;
-	top: 10px;
-}
-
-#bottom > #address
-{
-	position: absolute;
-	top: 18px;
-	left: 380px;	
-	color: #fff;
+	float: right;
+	margin-top: 20px;
+	margin-right: 10px;
 }

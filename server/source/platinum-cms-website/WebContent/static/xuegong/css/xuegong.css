@@ -66,6 +66,10 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	padding-left:15px;
+	background-image: url(/static/xuegong/images/list.png);
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
 }
 
 #xgcontent > #mainContent > #gongNews
@@ -151,6 +155,10 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	padding-left:15px;
+	background-image: url(/static/xuegong/images/list.png);
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
 }
 
 #xgcontent > #mainContent > #informs ul
@@ -168,6 +176,10 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	padding-left:15px;
+	background-image: url(/static/xuegong/images/list.png);
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
 }
 
 #xgcontent > #mainContent > #teaching ul
@@ -186,6 +198,10 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	padding-left:15px;
+	background-image: url(/static/xuegong/images/list.png);
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
 }
 
 #xgcontent > #mainContent > #email ul
@@ -204,6 +220,10 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	padding-left:15px;
+	background-image: url(/static/xuegong/images/list.png);
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
 }
 
 #more
@@ -225,12 +245,4 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
-}
-/*12-12*/
-#xgcontent  #mainContent  div ul li
-{
-	padding-left:15px;
-	background-image: url(/static/xuegong/images/list.png);
-	background-repeat: no-repeat;
-	background-position: 0% 50%;
 }

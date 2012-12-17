@@ -1,81 +1,91 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-html, body
+html
 {
 	padding: 0;
 	margin: 0;	
-	text-align: center;
+	overflow-x: hidden;
+	overflow-y:auto; 	
 }
-
-#headpart{
+body
+{
 	padding: 0;
-	margin: 0 auto;
+	margin: 0;	
+	overflow-y:hidden;
+}
+#headcontainer
+{
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 	height: 140px;
 	width: 990px;
-	background: #009bcb;	
+	background: #009bcb;
 }
 
-#headlogo{
-	padding: 0;
-	margin: 0;
-	height:70px;
+#headcontainer > #header1
+{
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
 	width: 990px;
-	position:absolute;
-	top: 20px;	
-	display:block;
+	left: 0;
+	position: relative;
 }
 
-#logo{
-	
-	margin: 0;
-	padding: 0;
-	float: left;
-	margin-left: 10px;
-	
-}
-
-#head_logo{	
-	float:left;	
-}
-
-#mainpage
+#header1 > #indexAndsearch
 {
-	height: 70px;
-	width: 180px;
-	float: right;
-	text-align:left;
-	margin-left:0px;
-	margin-top: 10px;
-	
+	position: absolute;
+	margin-top: 15px;
+	height: 60px;
+	width: 200px;
+	right: 0;
 }
 
-#mainpage a
+
+#header1 > #indexAndsearch a
 {
-	color: #fff;
+	color:#ffffff;
+	text-decoration: none;
+	margin-left:9px;
+	margin-right:9px;
 }
 
-#mainpage a: hover
+#header1 > #indexAndsearch a:hover
 {
-	color: rgba(0, 0, 0, 0.5);	
+	color: #ccc;
 }
 
-#searchbar
+#header1 > #indexAndsearch > #searchbar
 {
-	
-	float: right;
-	width: 180px;
+	width: 220px;
 	height: 22px;
-	padding: 0;
-	margin: 10px 0 0 0;
-	background: url(/static/jiuye/images/searchbar.png) no-repeat;
+	margin-top: 5px;
+	background: url(/static/jiuye/images/searchbar.png);
+	background-repeat: no-repeat;
+}
+
+#header1 > #collegelogo
+{
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+
+#header1 > #secondlogo
+{
+	position: absolute;
+	left: 520px;
+	top: 10px;
 }
 
 .word {
-	width:118px;
-	height: 22px;
-	line-height: 22px;
+	width:120px;
+	height: 16px;
+	line-height: 16px;
 	padding: 0;
 	margin: 0;
 	float: left;
@@ -83,30 +93,19 @@ html, body
 	background-color: #FFFFFF;
 	color: #888787;
 	font-size: 10px;
-
 }
 
 .button {
 	float: left;
-	height: 21px;
-	width: 23px;
+	height: 22px;
+	width: 26px;
     background: url(/static/jiuye/images/searchButton.png);
 	background-repeat: no-repeat;
 	border: 0;
 	padding: 0;
 	margin: 0;
 	cursor: pointer;
-
 }
-
-
-#headmenu{
-	width: 990px;
-	position:absolute;
-	top: 90px;
-	text-align:center
-}
-
 menu#mainmenu
 { 
 	display: block;
@@ -148,84 +147,16 @@ menu#mainmenu li a
 
 menu#mainmenu li > a:hover
 {
-	color: rgba(0, 0, 0, 0.5 );
-}
-
-#link_search
-{
-	width: 200px;
-	float: right;
-	margin-right: 15px;
-	margin-top: 8px;
+	color: #ccc;
 }
 
 
-#link_search #text
+#footer
 {
-	width: 200px;
-	line-height: 15px;
-	padding: 0;
-	margin: 0;
-	padding-left: 20px;
-	text-align: left;
-}
-
-#link_search #text a
-{
-	color: #fff;
-	font-size: 12px;
-	text-decoration: none;
-}
-
-#link_search #text a:hover
-{
-	color: rgba(0, 0, 0, 0.5);
-}
-
-
-#description
-{
-	width:118px;
-	height: 22px;
-	line-height: 22px;
-	padding: 0;
-	margin: 0;
-	float: left;
-	border: 0;
-	background-color: #FFFFFF;
-	font-size: 12px;
-}
-
-#button
-{
-	float: left;
-	height: 22px;
-	width: 23px;
-	background: url(/static/jiuye/images/button.png) no-repeat;
-	background-repeat: no-repeat;
-	border: 0;
-	padding: 0;
-	margin: 0;
-	cursor: pointer;
-}
-
-#search
-{
-	padding: 0;
-	margin: 5px 0 0 0;
-	width: 160px;
-	height: 22px;
-	background: url(/static/xuegong/images/text.png) no-repeat;
-}
-
-
-#foot > #footer
-{
-	margin: 0px 0 0 0;
 	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
-	height: 143px;
+	height: 170px;
 	width: 990px;
 	background: #009bcb;
 	line-height: 23px;
@@ -233,14 +164,17 @@ menu#mainmenu li > a:hover
 	text-align:center;
 	position:relative;
 	text-decoration: none;
+
 }
 
- #bottom{
+ #bottom1{
 	width: 990px;
-	height: 132px;
-	margin: 0 auto;
+	height: 120px;
+	position: absolute;
+	left:0;
 	
 }
+
 #fastlink1, #fastlink2
 {
 	display: inline-block;
@@ -248,17 +182,23 @@ menu#mainmenu li > a:hover
 	font-size: 14px;
 	font-weight: bold;
 	color: #fff;
+	margin: 10px 0 0 50px;
 	text-decoration: none;
 }
+
 #fastlink1
 {
-	margin:0px 0px 0px 70px;
 	border-right: 1px solid #fff;
 	width:450px;
+	position: absolute;
+	left:0;
 }
+
 #fastlink2
 {
-	margin:0px 0px 0px 20px;
+	width:450px;
+	position: absolute;
+	right:0;
 }
 	
 .fastLink a
@@ -268,133 +208,116 @@ menu#mainmenu li > a:hover
 	font-weight: normal;
 	color: #FFF;
 }
-.fastLink table td
+
+table td
 {
 	width:140px;
 	height: 20px;
 	text-decoration: none;
-	}
+	padding: 0;
+}
+
 .fastLink table td a
-{text-decoration: none;}	
+{text-decoration: none;}
+
 .fastLink table td a:hover
 {
- color: rgba(0, 0, 0, 0.5);
-}
-#righttable
-{
-	margin: 22px 0 0 0;
-	
+	color: #00fbcb;
 }
 
-
-#footButtom{
-	width: 990px;
-	height: 32px;
-	margin: 0 auto;
-
-	border-top: 1px #FFFFFF solid; 
-	text-align:center;
-}
-/*#foot > #footer > #bottom1 
+#bottom2
 {
- 
-	margin-left: auto;
-	margin-right: auto;
-	width: 990px;
-	height: 30px;
-	border-top: 1px solid #fff;
-	bottom: 0;
-	position:absolute;
-	line-height: 10px;
-}
-
-#foot > #footer > #bottom1 span
-{
-	font-size: 12px;
-	color:#fff;
-	line-height: 30px;
-}*/
-
-#bottom1
-{
-	font-size: 12px;
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
 	width: 990px;
 	height: 50px;
 	bottom: 0;
-	text-align: center;
-	line-height: 30px;
-	background: #ee911a;
 	border-top: 1px #fff solid;
 	color: #fff;
+	left: 0;
 }
 
-#_bottom
+
+#bottom2 p
 {
-	font-size: 12px;
-	width: 990px;
-	height: 50px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	background: #009bcb;
-	border-top: 1px #fff solid;
-	color: #fff;
-	position: relative;
+	padding: 0;
+	margin: 0;
+	line-height: 15px;
+	float: left;
+	clear: both;
 }
 
-#_bottom span > a
+#bottom2 span > a
 {
-	color: #fff;
+	color: #009bcb;
 	text-decoration: none;
 }
-#_bottom #copyright
+#bottom2 #copyright
 {
-	float:left; 
-	margin-left: 10px;
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 10px;
 	padding: 0;
-	margin-top: 10px;
+	height: 50px;
 }
 
-#_bottom #icp
+#copyright span
 {
-	float: left; 
-	display: block; 
-	clear: both; 
-	margin-left: 10px; 
+	float: left;
+}
+
+#bottom2 span > a:hover
+{
+	color: #00fbcb;
+}
+
+#bottom2 > #website
+{
+	position: absolute;
+	left: 350px;
+	top: 5px;
+	text-align: center;
+}
+
+#website a
+{
+	display: block;
+	text-decoration: none;
+	padding: 5px 0 4px 110px; 
 	color: #fff;
-	margin-top: 2px;
 }
 
-#_bottom span > a:hover
+#website a:hover
 {
-	color: rgba(0, 0, 0, 0.5);
+	color: #00fbcb;
 }
 
-#_bottom > #developer
+
+#bottom2 > #developer
 {
-	float: right;
+	position: absolute;
+	right: 0;
 	width: 190px; 
 	margin: 0; 
 	padding: 0; 
 	display: bolck;
 	text-align: left;
 	color: #fff;
-	position: relative;
 }
 
 #developer ul
 {
-	margin: 15px 0 0 0;
+	margin: 10px 0 0 0;
 	padding: 0;	
-	list-style: none;
+	float: left;
 }
 
 #developer li
 {
-	height: 15px;
+	display: block;
+	height: 20px;
 	line-height: 12px;
 }
 
@@ -406,22 +329,14 @@ menu#mainmenu li > a:hover
 
 #developer a:hover
 {
-	color: rgba(0, 0, 0, 0.5);
+	color: #00fbcb;
 }
 
 #developer span
 {
-	position: absolute;
-	left: 120px;
-	top: 10px;
-	margin-top: 15px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
 }
 
-#_bottom > #address
-{
-	position: absolute;
-	top: 18px;
-	left: 380px;	
-	color: #fff;
-	margin-top: 10px;
-}
+

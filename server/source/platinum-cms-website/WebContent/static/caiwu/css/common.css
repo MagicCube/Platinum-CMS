@@ -1,66 +1,91 @@
 ﻿@CHARSET "UTF-8";
 
-
-html, body
+html
 {
 	padding: 0;
 	margin: 0;
+	overflow-x: hidden;
+	overflow-y:auto; 	
 }
 
-#headcontain
+body
 {
 	padding: 0;
 	margin: 0;
+	overflow-y:hidden;
+}
+#headcontainer
+{
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	height: 140px;
+	height: 120px;
+	width: 990px;
 	background: url(/static/caiwu/image/head.png);
 }
 
-#headcontain > #box1
+#headcontainer > #header1
 {
-	height: 140px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 80px;
 	width: 990px;
-	margin-left:auto;
-	margin-right:auto;
-	padding-top:25px;
-	padding-left:30px;
-	
-	
+	left: 0;
+	position: relative;
 }
 
-#headcontain > #box1 > #mainpage
+#header1 > #indexAndsearch
 {
-	height: 50px;
-	width: 180px;
-	float: right;
-	margin-right:60px;
-	margin-top: 30px;
+	position: absolute;
+	margin-top: 15px;
+	height: 60px;
+	width: 200px;
+	right: 0;
 }
-#headcontain > #box1 > #mainpage a
+
+
+#header1 > #indexAndsearch a
 {
 	color:#ffffff;
 	text-decoration: none;
-	text-align: center;
 	margin-left:9px;
 	margin-right:9px;
 }
-#headcontain > #box1 > #mainpage > #searchbar
+
+#header1 > #indexAndsearch a:hover
 {
-	float: left;
-	width: 180px;
+	color: #ccc;
+}
+
+#header1 > #indexAndsearch > #searchbar
+{
+	width: 220px;
 	height: 22px;
-	padding: 0;
-	margin: 0;
-	background: url(/static/caiwu/image/searchbar.png) no-repeat;
-	color: rgba(255,255,255,0);
-	
+	margin-top: 5px;
+	background: url(/static/caiwu/image/searchbar.png);
+	background-repeat: no-repeat;
+}
+
+#header1 > #collegelogo
+{
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+
+#header1 > #secondlogo
+{
+	position: absolute;
+	left: 450px;
+	top: 10px;
 }
 
 .word {
-	width:118px;
-	height: 22px;
-	line-height: 22px;
+	width:120px;
+	height: 16px;
+	line-height: 16px;
 	padding: 0;
 	margin: 0;
 	float: left;
@@ -68,21 +93,20 @@ html, body
 	background-color: #FFFFFF;
 	color: #888787;
 	font-size: 10px;
-
 }
 
 .button {
 	float: left;
-	height: 21px;
-	width: 23px;
+	height: 22px;
+	width: 26px;
     background: url(/static/caiwu/image/searchButton.png);
 	background-repeat: no-repeat;
 	border: 0;
 	padding: 0;
 	margin: 0;
 	cursor: pointer;
-
 }
+
 menu#mainmenu
 { 
 	display: block;
@@ -103,7 +127,7 @@ menu#mainmenu
 {
 	float: left;
 	font-size: 10px;
-	font-family: 黑体;
+	font-family: 微软雅黑;
 	display: inline-block;
 	height: 32px;
 	width: 125px;
@@ -131,20 +155,15 @@ menu#mainmenu li > a:hover
 {
 	color: #cadae9;
 }
-#foot
-{
-	background: url(/static/caiwu/image/foot.png);
-}
 
-
-#foot > #footer
+#footer
 {
-	margin: 0px 0 0 0;
 	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
-	height: 163px;
+	height: 170px;
 	width: 990px;
+	background: url(/static/caiwu/image/foot.png);
 	line-height: 23px;
 	font-size: 12px;
 	text-align:center;
@@ -153,12 +172,14 @@ menu#mainmenu li > a:hover
 
 }
 
- #bottom{
+ #bottom1{
 	width: 990px;
-	height: 132px;
-	margin: 0 auto;
+	height: 120px;
+	position: absolute;
+	left:0;
 	
 }
+
 #fastlink1, #fastlink2
 {
 	display: inline-block;
@@ -166,17 +187,23 @@ menu#mainmenu li > a:hover
 	font-size: 14px;
 	font-weight: bold;
 	color: #fff;
+	margin: 10px 0 0 50px;
 	text-decoration: none;
 }
+
 #fastlink1
 {
-	margin:0px 0px 0px 70px;
 	border-right: 1px solid #fff;
 	width:450px;
+	position: absolute;
+	left:0;
 }
+
 #fastlink2
 {
-	margin:0px 0px 0px 20px;
+	width:450px;
+	position: absolute;
+	right:0;
 }
 	
 .fastLink a
@@ -186,51 +213,135 @@ menu#mainmenu li > a:hover
 	font-weight: normal;
 	color: #FFF;
 }
-.fastLink table td
+
+table td
 {
 	width:140px;
 	height: 20px;
 	text-decoration: none;
-	}
+	padding: 0;
+}
+
 .fastLink table td a
-{text-decoration: none;}	
+{text-decoration: none;}
+
 .fastLink table td a:hover
 {
- color:#098ef6;
+	color: #cadae9;
 }
-#righttable
+
+#bottom2
 {
-	margin: 22px 0 0 0;
-	
-}
-
-
-#footButtom{
-	width: 990px;
-	height: 32px;
-	margin: 0 auto;
-
-	border-top: 1px #FFFFFF solid; 
-	text-align:center;
-}
-#foot > #footer > #bottom1 
-{
- 
+	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
 	width: 990px;
-	height: 30px;
-	border-top: 1px solid #fff;
+	height: 50px;
 	bottom: 0;
-	position:absolute;
-	line-height: 10px;
+	border-top: 1px #fff solid;
+	color: #fff;
+	left: 0;
 }
 
-#foot > #footer > #bottom1 p
+
+#bottom2 p
 {
-	font-size: 10px;
-	font-weight: normal;
-	color:#fff;
+	padding: 0;
+	margin: 0;
+	line-height: 15px;
+	float: left;
+	clear: both;
+}
+
+#bottom2 span > a
+{
+	color: #fff;
+	text-decoration: none;
+}
+#bottom2 #copyright
+{
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	padding: 0;
+	height: 50px;
+}
+
+#copyright span
+{
+	float: left;
+}
+
+#bottom2 span > a:hover
+{
+	color: #cadae9;
+}
+
+#bottom2 > #website
+{
+	position: absolute;
+	left: 350px;
+	top: 5px;
+	text-align: center;
+}
+
+#website a
+{
+	display: block;
+	text-decoration: none;
+	padding: 5px 0 4px 110px; 
+	color: #fff;
+}
+
+#website a:hover
+{
+	color: #cadae9;
+}
+
+
+#bottom2 > #developer
+{
+	position: absolute;
+	right: 0;
+	width: 190px; 
+	margin: 0; 
+	padding: 0; 
+	display: bolck;
+	text-align: left;
+	color: #fff;
+}
+
+#developer ul
+{
+	margin: 10px 0 0 0;
+	padding: 0;	
+	float: left;
+}
+
+#developer li
+{
+	display: block;
+	height: 20px;
+	line-height: 12px;
+}
+
+#developer a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#developer a:hover
+{
+	color: #cadae9;
+}
+
+#developer span
+{
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
 }
 
 #categoryNavigationBar

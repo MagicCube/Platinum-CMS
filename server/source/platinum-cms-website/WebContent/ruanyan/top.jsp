@@ -52,7 +52,7 @@
             	<li class = "singleMenu"><a href="/ruanyan/" >关于我们</a></li>
             	<li class = "singleMenu"><a href="/ruanyan/sc000000000000000000000000000165/more/" >新闻动态</a></li> <!-- list -->
             	<li class = "singleMenu"><a href="/ruanyan/4028ba813b7f83c3013b7f8a654a0002.html" >软件开发</a></li>
-            	<li class = "singleMenu"><a href="/ruanyan/ff8081813ba1cfb0013ba1da38030002.html" >教育培训</a></li>
+            	<li class = "singleMenu"><a href="/ruanyan/4028ba813b7f83c3013b7f9972070005.html" >教育培训</a></li>
             	<li class = "singleMenu"><a href="/ruanyan/sc000000000000000000000000000168/more/" >成果论著</a></li> <!-- list -->
             	<li class = "singleMenu"><a href="/ruanyan/4028ba813b7f83c3013b7f9d17270008.html" >对外合作</a></li>
             	<li class = "singleMenu"><a href="/ruanyan/4028ba813b7f83c3013b7fa1b0ed000b.html" >联系我们</a></li>	

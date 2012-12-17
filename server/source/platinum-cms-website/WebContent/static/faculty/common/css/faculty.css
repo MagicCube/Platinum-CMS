@@ -3,6 +3,8 @@
 /* CSS Document */
 html
 {
+	margin: 0;
+	padding: 0;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
@@ -17,6 +19,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
 {
 	margin: 0;
 	padding: 0;
+	
 }
 
 a
@@ -27,7 +30,12 @@ a
 a img{ border:none	}
 
 
-body { background-color: #fff;/* background:url(/static/faculty/common/images/body_bg.png);*/}
+body 
+{
+	padding: 0;
+	margin: 0;
+	background:url(/static/faculty/common/images/3.jpg);
+}
 
 /*网页主体*/
 #main
@@ -51,7 +59,6 @@ body { background-color: #fff;/* background:url(/static/faculty/common/images/bo
 	height: 124px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top:10px;
 	padding:0;/*padding:8px 10px 0 10px;*/
 }
 
@@ -443,80 +450,113 @@ li:hover ul, li.over ul {
 }
 
 /*页脚部分*/
-#bottom
-{
+
+#main1
+{ 
+
+	margin: 0 auto;
 	width: 990px;
-	height: 50px;
-	margin-left: auto;
-	margin-right: auto; 
+	background-color: #FFF;
 	position: relative;
+	height:61px;
 }
-#footer
+#bottom2
 {
 	position: absolute;
+	bottom:0;
 	margin-left: auto;
 	margin-right: auto;
 	width: 990px;
 	height: 50px;
-	bottom: -8px;
-	text-align: center;
-	line-height: 30px;
 	border-top: 1px #fff solid;
+	color: #fff;
 }
-#footer span > a
+
+
+#bottom2 p
+{
+	padding: 0;
+	margin: 0;
+	line-height: 15px;
+	float: left;
+	clear: both;
+}
+
+#bottom2 span > a
 {
 	color: #fff;
 	text-decoration: none;
 }
-#footer #copyright
+#bottom2 #copyright
 {
-	float:left; 
-	margin-top: 3px;
-	margin-left: 10px;
-	color:#fff;
-}
-#footer #icp
-{
-	float: left; 
-	display: block; 
-	clear: both; 
-	margin-left: 10px; 
-	margin-top: -15px; 
-	color: #fff;
-}
-#footer > #address
-{
+	display: block;
 	position: absolute;
-	top: 18px;
-	left: 380px;	
-	color: #fff;
+	top: 12px;
+	left: 10px;
+	padding: 0;
+	height: 50px;
 }
-#footer span > a:hover
+#copyright p
 {
-	color:rgba(0,0,0,0.5);
+	margin-top:5px;
 }
 
-#footer > #developer
+#copyright span
 {
-	float: right;
-	width: 190px; 
+	float: left;
+}
+
+#bottom2 span > a:hover
+{
+	color: #ccc;
+}
+
+#bottom2 > #website
+{
+	position: absolute;
+	left: 350px;
+	top: 5px;
+	text-align: center;
+}
+
+#website a
+{
+	display: block;
+	text-decoration: none;
+	padding: 5px 0 4px 110px; 
+	color: #fff;
+}
+
+#website a:hover
+{
+	color: #ccc;
+}
+
+
+#bottom2 > #developer
+{
+	position: absolute;
+	right: 0;
+	width: 200px; 
 	margin: 0; 
 	padding: 0; 
 	display: bolck;
 	text-align: left;
 	color: #fff;
-	position: relative;
 }
 
 #developer ul
 {
-	margin: 0;
+	margin: 10px 0 0 0;
 	padding: 0;	
+	float: left;
 }
 
 #developer li
 {
-	height: 15px;
+	display: block;
+	height: 20px;
+	line-height: 12px;
 }
 
 #developer a
@@ -527,14 +567,15 @@ li:hover ul, li.over ul {
 
 #developer a:hover
 {
-	color:rgba(0,0,0,0.5);
+	color: #ccc;
 }
 
 #developer span
 {
+	right:5px;
+	top:20px;
 	position: absolute;
-	left: 120px;
-	top: 10px;
+	margin-right: 10px;
 }
 
 

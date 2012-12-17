@@ -1,6 +1,10 @@
 ﻿@CHARSET "UTF-8";
 
-
+*
+{
+	font-family: "宋体,微软雅黑";
+	font-size: 12px;
+}
 
 h2
 {
@@ -15,53 +19,83 @@ html
 {
 	padding: 0;
 	margin: 0;
-	overflow-x: hidden; 	
+	overflow-x: hidden;
+	overflow-y:auto; 	
 }
 
 body
 {
+	padding: 0;
+	margin: 0;
 	overflow-y: hidden; 
 }
 
-#headcontain
+#headcontainer
 {
 	padding: 0;
 	margin: 0;
-	padding-top:20px;
+	padding-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	height: 130px;
+	height: 140px;
 	width: 990px;
-	background-color:#ee911a;
-	
+	background: #ee911a;
 }
-#headcontain > #mainpage
+
+#headcontainer > #header1
 {
-	height: 50px;
-	width: 220px;
-	float: right;
-	margin-top:20px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+	width: 990px;
+	left: 0;
+	position: relative;
 }
-#headcontain > #mainpage a
+
+#header1 > #indexAndsearch
+{
+	position: absolute;
+	margin-top: 15px;
+	height: 60px;
+	width: 200px;
+	right: 0;
+}
+
+
+#header1 > #indexAndsearch a
 {
 	color:#ffffff;
 	text-decoration: none;
 	margin-left:9px;
 	margin-right:9px;
 }
-#headcontain > #mainpage a:hover
+
+#header1 > #indexAndsearch a:hover
 {
-	color:rgba(0,0,0,0.5);
-	text-decoration: none;
+	color: #ccc;
 }
-#headcontain > #mainpage > #searchbar
+
+#header1 > #indexAndsearch > #searchbar
 {
 	width: 220px;
-	float: left;
 	height: 22px;
 	margin-top: 5px;
 	background-image: url(/static/zhaosheng/image/searchbar.png);
 	background-repeat: no-repeat;
+}
+
+#header1 > #collegelogo
+{
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+
+#header1 > #secondlogo
+{
+	position: absolute;
+	left: 450px;
+	top: 10px;
 }
 
 .word {
@@ -100,7 +134,7 @@ menu#mainmenu
 	list-style: none;
 	padding: 0;
 	margin:  0;
-	margin-top:25px;
+	margin-top:10px;
 	margin-left: 10px;
 	margin-right: auto;
 	border-top: 1px solid #fff;
@@ -120,7 +154,7 @@ menu#mainmenu li a
 /*当鼠标划过时背景,字体颜色改变*/
 menu#mainmenu li a:hover
 {
-	color: rgba(0, 0, 0, 0.5);
+	color: #ccc;
 }
 
 /*单个菜单条的属性*/
@@ -135,9 +169,8 @@ menu#mainmenu li a:hover
 	margin: 0;
 }
 
-#foot > #footer
+#footer
 {
-	margin: 0px 0 0 0;
 	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
@@ -152,12 +185,14 @@ menu#mainmenu li a:hover
 
 }
 
- #bottom{
+ #bottom1{
 	width: 990px;
-	height: 132px;
-	margin: 0 auto;
+	height: 120px;
+	position: absolute;
+	left:0;
 	
 }
+
 #fastlink1, #fastlink2
 {
 	display: inline-block;
@@ -165,19 +200,23 @@ menu#mainmenu li a:hover
 	font-size: 14px;
 	font-weight: bold;
 	color: #fff;
+	margin: 10px 0 0 50px;
 	text-decoration: none;
 }
+
 #fastlink1
 {
-	margin: 0 0 0 50px;
 	border-right: 1px solid #fff;
 	width:450px;
-	padding: 0;
+	position: absolute;
+	left:0;
 }
+
 #fastlink2
 {
 	width:450px;
-	margin: 0 0 0 20px;
+	position: absolute;
+	right:0;
 }
 	
 .fastLink a
@@ -187,7 +226,8 @@ menu#mainmenu li a:hover
 	font-weight: normal;
 	color: #FFF;
 }
-.fastLink table td
+
+table td
 {
 	width:140px;
 	height: 20px;
@@ -202,40 +242,123 @@ menu#mainmenu li a:hover
 {
  color:#fdbc30;
 }
-#righttable
+
+#bottom2
 {
-	margin: 10px 0 0 0;
-	padding: 0;
-}
-
-
-#footButtom{
-	width: 990px;
-	height: 32px;
-	margin: 0 auto;
-	border-top: 1px #FFFFFF solid; 
-	text-align:center;
-}
-
-#foot > #footer > #bottom1 
-{
- 
+	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
 	width: 990px;
-	height: 30px;
-	border-top: 1px solid #fff;
+	height: 50px;
 	bottom: 0;
-	position:absolute;
-	line-height: 10px;
+	background: #ee911a;
+	border-top: 1px #fff solid;
+	color: #fff;
+	left: 0;
 }
 
-#foot > #footer > #bottom1 p
+
+#bottom2 p
 {
-	font-size: 10px;
-	font-weight: normal;
-	color:#fff;
+	padding: 0;
+	margin: 0;
+	line-height: 15px;
+	float: left;
+	clear: both;
 }
+
+#bottom2 span > a
+{
+	color: #fff;
+	text-decoration: none;
+}
+#bottom2 #copyright
+{
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	padding: 0;
+	height: 50px;
+}
+
+#copyright span
+{
+	float: left;
+}
+
+#bottom2 span > a:hover
+{
+	color: #fdbc30;
+}
+
+#bottom2 > #website
+{
+	position: absolute;
+	left: 350px;
+	top: 5px;
+	text-align: center;
+}
+
+#website a
+{
+	display: block;
+	text-decoration: none;
+	padding: 5px 0 4px 110px; 
+	color: #fff;
+}
+
+#website a:hover
+{
+	color: #fdbc30;
+}
+
+
+#bottom2 > #developer
+{
+	position: absolute;
+	right: 0;
+	width: 190px; 
+	margin: 0; 
+	padding: 0; 
+	display: bolck;
+	text-align: left;
+	color: #fff;
+}
+
+#developer ul
+{
+	margin: 10px 0 0 0;
+	padding: 0;	
+	float: left;
+}
+
+#developer li
+{
+	display: block;
+	height: 20px;
+	line-height: 12px;
+}
+
+#developer a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#developer a:hover
+{
+	color: #fdbc30;
+}
+
+#developer span
+{
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+
 
 
 #categoryNavigationBar
@@ -310,97 +433,4 @@ menu#mainmenu li a:hover
 {
 	line-height: 20px;
 	width:990px;
-}
-
-#footer
-{
-	font-size: 12px;
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	width: 990px;
-	height: 50px;
-	bottom: 0;
-	text-align: center;
-	line-height: 30px;
-	background: #ee911a;
-	border-top: 1px #fff solid;
-	color: #fff;
-}
-
-#footer span > a
-{
-	color: #fff;
-	text-decoration: none;
-}
-#footer #copyright
-{
-	float:left; 
-	margin-left: 10px;
-	padding: 0;
-}
-
-#footer #icp
-{
-	float: left; 
-	display: block; 
-	clear: both; 
-	margin-left: 10px; 
-	margin-top: -15px; 
-	color: #fff;
-}
-
-#footer span > a:hover
-{
-	color: #fdbc30;
-}
-
-#footer > #developer
-{
-	float: right;
-	width: 190px; 
-	margin: 0; 
-	padding: 0; 
-	display: bolck;
-	text-align: left;
-	color: #fff;
-	position: relative;
-}
-
-#developer ul
-{
-	margin: 10px 0 0 0;
-	padding: 0;	
-}
-
-#developer li
-{
-	height: 15px;
-	line-height: 12px;
-}
-
-#developer a
-{
-	color: #fff;
-	text-decoration: none;
-}
-
-#developer a:hover
-{
-	color: #fdbc30;
-}
-
-#developer span
-{
-	position: absolute;
-	left: 120px;
-	top: 10px;
-}
-
-#footer > #address
-{
-	position: absolute;
-	top: 18px;
-	left: 380px;	
-	color: #fff;
 }

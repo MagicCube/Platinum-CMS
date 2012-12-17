@@ -40,7 +40,6 @@ html, body
 	overflow-y: auto;
 	padding: 0;
 }
-
 body { /*background-color: #cfcfcf; */background:url(/static/faculty/common/images/body_bg.png);}
 ul { list-style: none; }
 
@@ -128,20 +127,6 @@ ul { list-style: none; }
 
 #link_search #text a:hover { color: #7BA566; }
 
-#foot
-{
-	width:990px;
-	margin:0 auto;
-}
-
-#foot #foot_content
-{
-	border-top:solid #ababab 5px;
-	text-align:center;
-	margin:0 auto;
-	padding-top:15px;
-	padding-bottom:21px;
-}
 
 /*menu*/
 #ja-mainnavwrap
@@ -353,123 +338,173 @@ ul { list-style: none; }
 /**/
 
 /*尾部*/
-#bottom
+#footer
 {
-	width: 990px;
-	height: 170px;
+	padding: 0;
 	margin-left: auto;
-	margin-right: auto; 
-	background:#013c36;
-	position: relative;
-	color: #fff;
-}
-
-#bottom > #fastlink
-{
-	border-right:1px solid #fff;
-	padding:0;
-	margin-top:10px;
-	width: 480px;
-	height: 100px;
-	position: absolute;
-	left: 50px;
-}
-
-
-
-#bottom > #fastlink table
-{
-	margin: 10px 0 0 0;
-	paddiong: 0;
-}
-
-#bottom > #fastlink table tr
-{
-	width: 450px;
-}
-
-#bottom > #fastlink table td
-{
-	height: 20px;
-	width: 140px;
-}
-
-#bottom > #fastlink table tr td > a
-{
-	color: #fff;
+	margin-right: auto;
+	height: 170px;
+	width: 990px;
+	background-color: #013c36;
+	line-height: 23px;
 	font-size: 12px;
+	text-align:center;
+	position:relative;
+	text-decoration: none;
+
+}
+
+ #bottom1{
+	width: 990px;
+	height: 120px;
+	position: absolute;
+	left:0;
+	
+}
+
+#fastlink1, #fastlink2
+{
+	display: inline-block;
+	text-align: left;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	margin: 10px 0 0 50px;
 	text-decoration: none;
 }
 
-#bottom > #fastlink  a:hover
+#fastlink1
 {
-	color: #f64a32;
+	border-right: 1px solid #fff;
+	width:450px;
+	position: absolute;
+	left:0;
 }
 
-
-#footer
+#fastlink2
 {
-	font-size: 12px;
+	width:450px;
+	position: absolute;
+	right:0;
+}
+	
+.fastLink a
+{
+	font: 宋体;
+	font-size:12px;
+	font-weight: normal;
+	color: #FFF;
+}
+
+table td
+{
+	width:140px;
+	height: 20px;
+	text-decoration: none;
+	padding: 0;
+}
+
+.fastLink table td a
+{text-decoration: none;}
+
+.fastLink table td a:hover
+{
+color: #7BA566;
+}
+
+#bottom2
+{
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
 	width: 990px;
 	height: 50px;
 	bottom: 0;
-	text-align: center;
-	line-height: 30px;
-	background: #013C36;
 	border-top: 1px #fff solid;
+	color: #fff;
+	left: 0;
 }
 
-#footer span > a
+
+#bottom2 p
+{
+	padding: 0;
+	margin: 0;
+	line-height: 15px;
+	float: left;
+	clear: both;
+}
+
+#bottom2 span > a
 {
 	color: #fff;
 	text-decoration: none;
 }
-#footer #copyright
+#bottom2 #copyright
 {
-	float:left; 
-	margin-left: 10px;
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 10px;
 	padding: 0;
+	height: 50px;
 }
 
-#footer #icp
+#copyright span
 {
-	float: left; 
-	display: block; 
-	clear: both; 
-	margin-left: 10px; 
-	margin-top: -15px; 
+	float: left;
+}
+
+#bottom2 span > a:hover
+{
+color: #7BA566;
+}
+
+#bottom2 > #website
+{
+	position: absolute;
+	left: 350px;
+	top: 5px;
+	text-align: center;
+}
+
+#website a
+{
+	display: block;
+	text-decoration: none;
+	padding: 5px 0 4px 110px; 
 	color: #fff;
 }
 
-#footer span > a:hover
+#website a:hover
 {
-	color: #f64a32;
+color: #7BA566;
 }
 
-#footer > #developer
+
+#bottom2 > #developer
 {
-	float: right;
+	position: absolute;
+	right: 0;
 	width: 190px; 
 	margin: 0; 
 	padding: 0; 
 	display: bolck;
 	text-align: left;
 	color: #fff;
-	position: relative;
 }
 
 #developer ul
 {
 	margin: 10px 0 0 0;
 	padding: 0;	
+	float: left;
 }
 
 #developer li
 {
-	height: 15px;
+	display: block;
+	height: 20px;
 	line-height: 12px;
 }
 
@@ -481,23 +516,16 @@ ul { list-style: none; }
 
 #developer a:hover
 {
-	color: #f64a32;
+color: #7BA566;
 }
 
 #developer span
 {
-	position: absolute;
-	left: 120px;
-	top: 10px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
 }
 
-#footer > #address
-{
-	position: absolute;
-	top: 18px;
-	left: 380px;	
-	color: #fff;
-}
 
 /****/
 #left_part ul li #title

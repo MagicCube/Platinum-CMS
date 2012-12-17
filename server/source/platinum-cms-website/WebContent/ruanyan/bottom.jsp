@@ -3,62 +3,61 @@
     <link rel="stylesheet" href="/static/ruanyan/css/ruanyan.css" type="text/css" />   
 	<link rel="stylesheet" href="/static/ruanyan/css/common.css" type="text/css" />
 	
-    	</div>
-       <div id = "footer">
-    
-    	<div id = "bottom" class="fastLink">
-    
+	<div id = "footer">
+		<div id = "bottom1"  class="fastLink">
               <div id = "fastlink1">
-                  <table id= "lefttable">
-                    <tr>
-                        <td>
-                            <a href = "/yuanzhang/">院长办公室</a>
-                        </td>
-                        <td>
-                            <a href = "/houqin/">后勤保卫处</a>
-                        </td>
-                         <td>
-                            <a href = "/jiaowu/">教务处</a>
-                        </td>
-                    </tr> 
-                          
-                    <tr>
-                         <td>
-                            <a href = "/xuegong/">学生工作处</a>
-                         </td>
-                         <td>
-                            <a href = "/zuzhi/">组织人事处</a>
-                        </td>
-                        <td>
-                            <a href = "/xiandai/">现代教育技术中心</a>
-                        </td>
-                    </tr> 
-                          
-                    <tr>    
-                        <td>
-                            <a href = "/caiwu/">财务处</a>
-                        </td>
-                        <td>
-                            <a href = "/zichan/">资产管理办公室</a>
-                        </td>
-                        <td>
-                            <a href = "/tangshan/">团委</a>
-                        </td> 
-                    </tr>
-                    
-                    <tr>
-                        <td><a href="/ruanyan/">软件研发与培训中心</a></td>
-                        <td><a href="/xiandai/">现代教育技术中心</a></td>
-                        <td><a href="/tangshan/ff8081813b606afb013b6604411e009e.html">汤山校区综合管理办公室</a></td>
+                <table>
+          		<tbody><tr>
+                <td>
+                    <a href="/yuanzhang/ff8081813b606afb013b66088ff500a7.html">院长办公室</a>
+                </td>
+                <td>
+                    <a href="/houqin/ff8081813b606afb013b660cef4700aa.html">后勤保卫处</a>
+                </td>
+                 <td>
+                    <a href="/jiaowu/">教务处</a>
+                </td>
+            </tr> 
                   
-                    </tr>
-                </table>
-            </div>
-            <div id = "divcenter"></div>
+            <tr>
+            	 <td>
+                    <a href="/xuegong/">学生工作处</a>
+                 </td>
+                 <td>
+                    <a href="/zuzhi/">组织人事处</a>
+                </td>
+                <td><a href="/library/ff8081813b7439db013b743cc0620002.html">图书馆</a></td>
+                
+            </tr> 
+                  
+            <tr>    
+            	 <td>
+                    <a href="/caiwu/">财务处</a>
+                </td>
+                <td>
+                    <a href="/zichan/ff8081813b606afb013b6607431500a1.html">资产管理办公室</a>
+                </td>
+                <td>
+                    <a href="/tuanwei/">团委</a>
+                </td> 
+            </tr>
             
-            <div id = "fastlink2" class="fastLink">
+            <tr>
+            	<td><a href="/ruanyan/">软件研发与培训中心</a></td>
+           		<td>
+                    <a href="/xiandai/">现代教育技术中心</a>
+                </td>
+                <td>
+                    <a href="/tangshan/ff8081813b606afb013b6604411e009e.html">汤山校区综合管理办公室</a>
+                </td> 	
+			</tr>
+        	</tbody>
+        	</table>    
+            </div>
+            
+            <div id = "fastlink2">
               
-                <table id= "righttable">
+                <table >
                	
                     <tr>
                         <td>
@@ -101,13 +100,31 @@
                              
                 </table>    
             </div>
-    </div>
-<!-- foot part-->
-		<div id = "footButtom">
-    	<p>南京师范大学中北学院版权所有</p>
-    	</div>
+            </div>
+        
+        <div id = "bottom2">
+        	<div id="copyright">
+				<span id="time"></span><span> 版权所有 </span> <span style="font-family: 'verdana';">©</span><span>南京师范大学中北学院</span>
+				<p>苏ICP备05080300号</p>
+			</div>
+			
+			<div id="website">
+				<p><a href="http://www.nnuzc.cn">www.nnuzc.cn</a></p>
+				<p>南京市栖霞区南京师范大学中北学院学林路2号 210023</p>
+			</div>
+    		
+    		<div id="developer">	 
+    			<ul>
+    				<li><a href="/ruanyan/">软件研发与培训中心</a></li>
+    				<li><a href="/xiandai/">现代教育技术中心</a></li>
+    			</ul>
+    			<span>开发、维护</span>
+    		</div>
+    	<script>
+			var date = new Date();
+			var year = date.getFullYear();
+			$('#time').append(year);
+		</script>
     </div>
 
-</body>
-</html>
-    
+    </div>

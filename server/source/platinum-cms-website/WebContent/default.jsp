@@ -22,6 +22,8 @@ clientCache.setMaxAge(60);
 
     <cms:Header/>
 	
+	<div id="code">
+	</div>
 	<!-- 正文内容 -->
 	<div id = "content">
 		<!-- left side -->
@@ -59,16 +61,6 @@ clientCache.setMaxAge(60);
 			</div>			
 		</div>
 		<!-- left end -->
-		
-		<div id = "right">
-			<!-- <div id = "topic">
-				<span id = "position_1"><img src = "/static/home/images/topic.gif" alt = ""/></span>
-				<p id = "position_2"><a href = "/news/more/">更多...</a></p>
-				
-				<div id = "right_part">
-					<cms:PostList id="ztbdList" cssClass="PhotoSummaryList" categoryId="news" displaySummary="true" displayPhoto="true" count="3" />
-				</div>				
-			</div> -->
 			
 			<div id = "inform">
 				<span id="position_1"><img src="static/home/images/inform.gif" alt = ""/></span>
@@ -102,8 +94,6 @@ clientCache.setMaxAge(60);
 				</div>	
 			</div>
 
-				</div>
-			</div>
 			
 			<div id = "video">
 				<span id = "position_1"><img src = "/static/home/images/view.gif" alt = ""/></span>
@@ -120,7 +110,7 @@ clientCache.setMaxAge(60);
                 		$('#randomPhoto').append($path);
                 </script>
 			</div>
-		</div>
+
 		<!-- right end -->
 	</div>
     
