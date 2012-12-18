@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
     <link rel="stylesheet" href="/static/ruanyan/css/ruanyan.css" type="text/css" />   
 	<link rel="stylesheet" href="/static/ruanyan/css/common.css" type="text/css" />
-	
+	    </div>
 	<div id = "footer">
 		<div id = "bottom1"  class="fastLink">
               <div id = "fastlink1">
@@ -127,4 +127,3 @@
 		</script>
     </div>
 
-    </div>

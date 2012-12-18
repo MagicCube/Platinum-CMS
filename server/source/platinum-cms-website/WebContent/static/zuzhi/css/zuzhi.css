@@ -35,7 +35,7 @@
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;			/*已修改过*/
+	width: 300px;		
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -51,7 +51,7 @@
 
 #maincontent a:hover
 {
-	color:rgba(255, 0, 0, 0.5);
+	color:red;
 }
 
 #maincontent > #pic
@@ -67,7 +67,7 @@
 
 #pic >#browsable
 {
-	width: 380px;	/*已修改过*/
+	width: 380px;	
 	height: 300px;
 	float: left;
 	margin: 0;
@@ -97,7 +97,7 @@
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;			/*已修改过*/
+	width: 300px;		
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -147,7 +147,7 @@
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;			/*已修改过*/
+	width: 300px;		
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -177,7 +177,7 @@
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;			/*已修改过*/
+	width: 300px;		
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -207,7 +207,7 @@
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;			/*已修改过*/
+	width: 300px;		
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;

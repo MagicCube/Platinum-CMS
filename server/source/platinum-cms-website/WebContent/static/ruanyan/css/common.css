@@ -398,3 +398,35 @@ table td
 	margin-top: 10px;
 	margin-right: 10px;
 }
+#categoryNavigationBar 
+{
+	padding: 0 0 0 10px;
+	margin: 0;
+	display: block;
+	list-style: none;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px #ddd solid;
+	width: 988px;
+	color: #000;
+	font-weight: bold;
+	text-align: left;
+}
+
+
+
+.CategoryNavigationBar li 
+{
+	padding: 0;
+	margin: 0;
+	display:inline-block;
+
+}
+
+.CategoryNavigationBar li a
+{
+	padding: 0;
+	margin: 0;
+	color:black;
+
+}

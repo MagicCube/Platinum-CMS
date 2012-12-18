@@ -24,7 +24,7 @@
 	<menu id = "nav">
 		<ul id = "zuzhi">
 			<li><a href = "/zuzhi/default.jsp">首页</a></li>
-			<li><a href = "/zuzhi/ff8081813b50f9a5013b56798ea40008.html">部门概况</a></li>
+			<li><a href = "/zuzhi/ff8081813ba86b8c013bad8fc9010005.html">部门概况</a></li>
 			<li><a href = "/zuzhi/sc000000000000000000000000000035/more/">各类公示</a></li>
 			<li><a href = "/zuzhi/sc000000000000000000000000000036/more/">理论学习</a></li>
 			<li><a href = "/zuzhi/sc000000000000000000000000000037/more/">党建工作</a></li>

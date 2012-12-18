@@ -33,7 +33,7 @@
    <div id="side">
     <ul id="xibu_link">
       <li class="xibu"><img src="/static/faculty/images/nav_link_first.png" width="4" height="7" />
-        <a href="/GongXue/">
+        <a href="/gongxue/">
           首页
         </a>
       </li>

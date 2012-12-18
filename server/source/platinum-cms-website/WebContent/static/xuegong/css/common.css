@@ -347,8 +347,10 @@ table td a
 {
 	margin-top: 30px;
 	line-height: 20px;
+	width:990px;
+	margin-left: auto;
+	margin-right: auto;
 }
-
 #postList #pageNavigationBar 
 {
 	margin-top:15px;
@@ -358,7 +360,7 @@ table td a
 
 /*简介*/
 #postDetail #imageContent{float:left;margin-top:50px;}
-#postDetail #textContent{margin-top:50px;width:650px;float:right;padding:10px 0 0 0;}
+#postDetail #textContent{margin:50px 0 0 0;width:650px;float:right;padding:10px 0 0 0;}
 #textContent > #content{width:650px;}
 
 #imageContent img

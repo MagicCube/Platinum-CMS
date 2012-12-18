@@ -1,9 +1,10 @@
 ﻿@CHARSET "UTF-8";
 
+
 *
 {
 	font-family: "宋体,微软雅黑";
-	font-size: 12px;
+
 }
 
 h2
@@ -12,7 +13,6 @@ h2
 	font-family: 微软雅黑;
 	text-align: left;
 }
-
 
 
 html

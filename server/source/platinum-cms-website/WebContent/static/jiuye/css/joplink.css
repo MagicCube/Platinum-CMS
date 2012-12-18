@@ -213,7 +213,7 @@ ul > li a > div
 #mainContent a
 {
 	text-decoration: none;
-	color: rgba(0, 0, 0, 0.6);
+	color: #000;
 }
 
 #mainContent a:hover
@@ -223,7 +223,6 @@ ul > li a > div
 
 .CategoryNavigationBar{
 padding: 0;
-margin-left: 56px;
 display: block;
 list-style: none;
 height: 30px;

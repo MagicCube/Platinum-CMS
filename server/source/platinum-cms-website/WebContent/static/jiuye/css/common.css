@@ -338,5 +338,6 @@ table td
 	margin-top: 10px;
 	margin-right: 10px;
 }
-
-
+#more{width:990px;	margin-left: auto;margin-right: auto;}
+#more .PostList li{padding-left:15px;width:950px;}
+#postList{width:980px;}

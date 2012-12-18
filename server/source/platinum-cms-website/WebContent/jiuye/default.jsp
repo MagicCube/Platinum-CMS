@@ -26,8 +26,8 @@
     	<div id = "mainContent">
     		<div id = "workNews">
     			<span><img src="/static/jiuye/images/gzdt.jpg"/></span>
-               	 <cms:PostList id = "gzdtlist" subcategoryId = "sc000000000000000000000000000162" count = "10"/>
-               	 <span class = "m_More"><a href = "/jiuye/sc000000000000000000000000000162/more/">更多...</a></span>
+               	 <cms:PostList id = "gzdtlist" subcategoryId = "sc000000000000000000000000000146" count = "10"/>
+               	 <span class = "m_More"><a href = "/jiuye/sc000000000000000000000000000146/more/">更多...</a></span>
             </div>
             
 			<div id="browsable">

@@ -283,7 +283,7 @@ table td a
     line-height: 30px;
 	border-bottom: 1px #ddd solid;
 	width: 990px;
-	color: #fff;
+	color: #000;
 	font-weight: bold;
 }
 
@@ -298,12 +298,12 @@ table td a
 #categoryNavigationBar li:first-child
 {
 	margin-left: 10px;
-	color: #fff;
+	color: #000;
 }
 
 #categoryNavigationBar li a 
 {
-	color: #fff;
+	color: #000;
 	text-decoration: none;
 }
 
