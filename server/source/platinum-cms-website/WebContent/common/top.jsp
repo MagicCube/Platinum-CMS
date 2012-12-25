@@ -2,6 +2,7 @@
 <%@ taglib prefix="cms" tagdir="/WEB-INF/tags" %>
 
 <link href = "/static/common/css/common.css" rel = "stylesheet"></link>
+<script src="/static/common/scripts/src/menu.js" type="text/javascript"></script>
 
 <div id = "headcontain">
 		<div id = mainpage>

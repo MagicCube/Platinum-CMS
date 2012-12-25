@@ -27,80 +27,30 @@ clientCache.setMaxAge(60);
 	<div id = "content">
 		<div id = "mainContent">
 			<div id = "picNews">
-				<span><img src = "images/picNews.png"/></span>
+				<span><img src = "/static/home/images/picNews.png"/></span>
 				<div id="browsable">
 					<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000207" displayPhoto="true" count="4" />
 				</div>
 			</div>
 			<div id = "textNews">
-				<span><img src = "images/textNews.png"/></span>
-					<cms:PostList id="xwdtList2" cssClass="TextList" subcategoryId="sc000000000000000000000000000006" where="photoURL is null" count="8" />
-          		<div id = "more" align = "right">
-          			<a href = "#" style = "color: #fff;"><img src = "images/more.gif"/></a>
+				<span><img src = "/static/home/images/textNews.png"/></span>
+					<cms:PostList id="xwdtList2" cssClass="TextList" subcategoryId="sc000000000000000000000000000006" count="8" />
+          		<div id="more" align="right">
+          			<a href="/news/sc000000000000000000000000000006/more/">更多...</a>
           		</div>
 			</div>
 			<div id = "informs">
-				<span><img src = "images/informs.png"/></span>
-				<ul>
-				<li><a href="http://zbzs.njnu.edu.cn/main/main_Show.asp?ArticleID=1835" target=_banlk title="我院举办2012级新生法制安全教育讲座">
-              		我院举办2012级新生法制安全教育讲座</a>
-          		</li>
-          		<li><a href="http://zbzs.njnu.edu.cn/main/main_Show.asp?ArticleID=1833" target=_banlk title="学院团委、学生联合会招新活动顺利完成">
-             		 学院团委、学生联合会招新活动顺利完成</a>
-          		</li>
-          		<li><a href="http://zbzs.njnu.edu.cn/main/main_Show.asp?ArticleID=1832" target=_banlk title="我院2011级本科生和2010级专转本新生图书馆入馆教育工作顺利完成">
-              		我院2011级本科生和2010级专转本新生图书馆入馆教育工作顺利完成</a>
-          		</li>
-          		<li><a href="http://zbzs.njnu.edu.cn/main/main_Show.asp?ArticleID=1815" target=_banlk title="我院举行2012年暑期社会实践活动出征仪式">
-              		我院举行2012年暑期社会实践活动出征仪式</a>
-          		</li>
-         	 	<li><a href="http://zbzs.njnu.edu.cn/main/main_Show.asp?ArticleID=1831" target=_banlk title="信息系尝试新办法 学生带席卡实名上课">
-              		信息系尝试新办法 学生带席卡实名上课</a>
-          		</li>
-          		<li><a href="http://zbzs.njnu.edu.cn/main/main_Show.asp?ArticleID=1805" target=_banlk title="我院第三届学生社团工作推进大会召开">
-              		我院第三届学生社团工作推进大会召开</a>
-          		</li>
-          		<li><a href="http://zbzs.njnu.edu.cn/main/main_Show.asp?ArticleID=1794" target=_banlk title="我院2012年暑期社会实践活动动员大会顺利召开">
-              		我院2012年暑期社会实践活动动员大会顺利召开</a>
-          		</li>
-          		<li><a href="http://zbzs.njnu.edu.cn/main/main_Show.asp?ArticleID=1793" target=_banlk title="我院人文系首届微电影节闭幕式暨颁奖典礼圆满举行">
-              		我院人文系首届微电影节闭幕式暨颁奖典礼圆满举行</a>
-          		</li>
-          		</ul>	
-          		<div id = "more" align = "right">
-          			<a href = "#" style = "color: #fff;"><img src = "images/more.gif"/></a>
+				<span><img src = "/static/home/images/informs.png"/></span>
+					<cms:PostList id="tzggList" cssClass="TextList" subcategoryId="sc000000000000000000000000000008" count="8" />
+          		<div id= "more" align="right">
+          			<a href="#">更多...</a>
           		</div>	
 			</div>
 			<div id = "teaching">
-				<span><img src = "images/teaching.png"/></span>
-				<ul>
-				 <li><a href="http://zbzs.njnu.edu.cn/main/main_Show.asp?ArticleID=1834" target=_banlk title="院领导亲切慰问带训教官和2012级新生">
-              		院领导亲切慰问带训教官和2012级新生</a>
-          		</li>
-          		<li><a href="http://zbzs.njnu.edu.cn/main/main_Show.asp?ArticleID=1830" target=_banlk title="喜报：中北学子在江苏省第十一届高等数学竞赛中取得优异成绩">
-              		喜报：中北学子在江苏省第十一届高等数学竞赛中取得优异成绩</a>
-          		</li>
-          		<li><a href="http://zbzs.njnu.edu.cn/main/main_Show.asp?ArticleID=1829" target=_banlk title="中北学院2012年新生开学典礼隆重举行">
-             		 中北学院2012年新生开学典礼隆重举行</a>
-          		</li>
-          		<li><a href="http://zbzs.njnu.edu.cn/main/main_Show.asp?ArticleID=1826" target=_banlk title="校领导视察中北学院新学期开学情况">
-              		校领导视察中北学院新学期开学情况</a>
-          		</li>
-          		<li><a href="http://zbzs.njnu.edu.cn/main/main_Show.asp?ArticleID=1828" target=_banlk title="金秋九月中北学院喜迎2012级新生">
-              		金秋九月中北学院喜迎2012级新生</a>
-          		</li>
-          		<li><a href="http://zbzs.njnu.edu.cn/main/main_Show.asp?ArticleID=1825" target=_banlk title="我院2011级汤山学生回迁独立校区工作顺利完成">
-              		我院2011级汤山学生回迁独立校区工作顺利完成</a>
-          		</li>
-          		<li><a href="http://zbzs.njnu.edu.cn/main/main_Show.asp?ArticleID=1824" target=_banlk title="我院召开秋季新学期全体教职工大会">
-              		我院召开秋季新学期全体教职工大会</a>
-          		</li>
-          		<li><a href="http://zbzs.njnu.edu.cn/main/main_Show.asp?ArticleID=1823" target=_banlk title="我院召开2012年度暑期学院中心组扩大会议">
-             	  	 我院召开2012年度暑期学院中心组扩大会议</a>
-          		</li>
-          		</ul>
-				<div id = "more" align = "right">
-          			<a href = "#" style = "color: #fff;"><img src = "images/more.gif"/></a>
+				<span><img src = "/static/home/images/teaching.png"/></span>
+					<cms:PostList id="xydtList2" cssClass="TextList" subcategoryId="sc000000000000000000000000000020" count="8" />
+				<div id="more" align="right">
+          			<a href="/news/sc000000000000000000000000000020/more/">更多...</a>
           		</div>
 			</div>
 		</div>
