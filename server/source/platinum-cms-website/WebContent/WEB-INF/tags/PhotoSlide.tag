@@ -29,35 +29,27 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 	posts = manager.loadLatestPostsByCategory(categoryId, displayPhoto, where, count);
 }
 %>
-<ul id="${id}" class="PhotoSlide ${cssClass}">
-<% for (PostEntity post : posts) {%>
-<li>
-	<div class = "slide">
-    	<a href="<%= post.getLink()%>">
-      	  <% if (displayPhoto) {%>
-       	  <img src='<%= post.getPhotoURL()%>' />
-      	  <% } %>
-      	  <div class = "caption">
-      	  	<p class ="title"><%= post.getTitle()%></p>
-          </div>
-    	</a>
-    </div>
-</li>
-<% } %>
-</ul>
+<script src="/static/common/scripts/src/dynamicPic.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="/static/common/scripts/lib/flexslider/flexslider.css" type="text/css" />
-<script type="text/javascript" src="/static/common/scripts/lib/flexslider/jquery.flexslider-min.js"></script>
 
-<script type="text/javascript">
-	$(function () {
-		$('#home_slider').flexslider({
-			animation : 'slide',
-			controlNav : true,
-			directionNav : true,
-			animationLoop : true,
-			slideshow : false,
-			useCSS : false
-		});								
-	});
-</script>
+<div id="box">
+    <ul id="${id}" class="list ${cssClass}">
+    	<%for(PostEntity post : posts) {%>
+    	<li class="current">
+	      	<% if (displayPhoto) {%>
+	       	  	<img src='<%= post.getPhotoURL()%>' />
+	      	<% } %>
+      	  	<a href="<%= post.getLink()%>" class ="title" style = "color: #fff;">
+      	  		<%= post.getTitle()%>
+      	  	</a>
+    	</li>
+    	<% }%>
+ 	</ul>
+ 	<ul class="count">
+		<li class="current">1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+ 	</ul> 
+  </div>
+
