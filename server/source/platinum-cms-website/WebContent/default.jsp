@@ -23,7 +23,6 @@ clientCache.setMaxAge(60);
 
 </head>
 <body>
-	<div id="layer1">
 		<cms:Header/>
 		<div id="code">
 			<a href="#"><img src="/static/common/images/code.png" title="扫描或点击体验中北学院移动门户" height="80px" width="80px"/></a>
@@ -68,7 +67,8 @@ clientCache.setMaxAge(60);
 			</div>
 			
 			<div id="news">
-				<div id="label"><span>新闻动态</span></div>
+				<div id="label"><span>新闻动态</span></div>	
+				<!--<cms:PostList id="xwdtList1" cssClass="PhotoList" subcategoryId="sc000000000000000000000000000006" displayPhoto="true" count="1" />-->
 				<ul id="textContent">
 					<li><a href="#">中共南京师范大学中北学院第二次代表大会胜利召开</a></li>
 					<li><a href="#">中北学院第四届党支部建设月圆满落幕</a></li>
@@ -82,6 +82,7 @@ clientCache.setMaxAge(60);
 			
 			<div id="school">
 				<div id="label"><span>校园动态</span></div>
+				<!--<cms:PostList id="xydtList1" cssClass="PhotoList" subcategoryId="sc000000000000000000000000000020" displayPhoto="true" count="1" />-->
 				<ul id="textContent">
 					<li><a href="#">我院学生联合会举行干事技能培训颁奖仪式暨部门风采展</a></li>
 					<li><a href="#">我院举办首届学生党支部书记工作论坛</a></li>
