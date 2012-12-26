@@ -179,7 +179,7 @@
 }
 
 
-#content > #mainContent > #textNews ul
+/*#content > #mainContent > #textNews ul
 {
 	margin:10px 0 0 0;
 	padding:0;
@@ -191,7 +191,7 @@
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 380px;			/*已修改过*/
+	width: 380px;			
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -222,7 +222,7 @@
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 380px;		/*已修改过*/
+	width: 380px;		
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -241,14 +241,49 @@
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 380px;		/*已修改过*/
+	width: 380px;		
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+}*/
+
+ul.TextList
+{
+	display: block;
+	margin: 10px 0 0 0px;
+    padding: 0;
+	list-style: none inside url(../images/listStyle.png);
+	
 }
 
+ul.TextList li
+{
+    line-height: 20px;
+    margin: 0 0 10px 0;
+    padding:　0;      
+    margin-left: 5px;
+    white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+ul.TextList li a
+{
+	text-decoration: none;
+	color: #000;
+}
+
+ul.TextList li a:hover
+{
+	color: #ccc;
+}
+
+ul.TextList li a > div
+{
+	display: inline;
+}
 
 #more
 {
@@ -258,7 +293,6 @@
 	height: 20px;
 	float: right;
 }
-
 
 #box1
 {

@@ -15,7 +15,7 @@ clientCache.setMaxAge(60);
 <title>南京师范大学中北学院欢迎您</title>
 
 <link href="/static/common/css/basic.css" rel = "stylesheet"></link>
-<link href="/static/home/css/home.css" rel = "stylesheet"></link>
+<link href="/static/home/css/home.css" rel = "stylesheet"></link> 
 <script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
 
 
