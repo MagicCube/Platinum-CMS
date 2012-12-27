@@ -12,24 +12,117 @@
 </head>
 <body>
 	<cms:Header/>
-	<div id="middle">
-			<span><img src="/static/common/images/depstruct.jpg" title="部门结构图" usemap="#depmap"/></span>
-			<map name="depmap">
-				<area shape="rect" coords="351,231,476,284" href="/yuanzhang/ff8081813ba1df1a013ba22c48110009.html" />
-				<area shape="rect" coords="524,274,583,310" href="/jiaowu/" />
-				<area shape="rect" coords="350,380,474,450" href="/xuegong/" />
-				<area shape="rect" coords="244,402,284,422" href="/tuanwei/" />
-				<area shape="rect" coords="130,479,285,492" href="/jiuye/" />
-				<area shape="rect" coords="204,512,283,525" href="/zhaosheng/" />
-				<area shape="rect" coords="515,415,613,462" href="/zuzhi/" />
-				<area shape="rect" coords="522,516,586,552" href="/caiwu/" />
-				<area shape="rect" coords="373,593,475,626" href="/houqin/ff8081813b606afb013b660cef4700aa.html" />
-				<area shape="rect" coords="518,623,635,669" href="/zichan/ff8081813b606afb013b6607431500a1.html" />
-				<area shape="rect" coords="518,701,635,757" href="/library/ff8081813b7439db013b743cc0620002.html" />
-				<area shape="rect" coords="337,683,475,735" href="/xiandai/" />
-				<area shape="rect" coords="300,777,475,820" href="/tangshan/ff8081813b606afb013b6604411e009e.html" />
-			</map>
-		</div>	
+	<div id = "maincontent" style = "height: 1000px;">
+			<div id = "layoutleft" >
+				<img src = "/static/common/images/contact.jpg" height = 200; width = 250px;/>
+			</div>
+			<div id = "layoutright">
+				<table border="1">
+					<tr>
+						<td><strong>院长办公室(党委办公室)</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>秘书科</td>
+						<td>综合科</td>
+						<td></td>
+						<td></td>
+					</tr>	
+					
+					<tr>
+						<td><strong>教务处</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>行政管理科</td>
+						<td>信息管理科</td>
+						<td>综合管理科</td>
+						<td>对外合作与发展办公室</td>
+					</tr>
+					
+					<tr>
+						<td>教学督导办公室</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					
+					<tr>
+						<td><strong>学生工作处(部)团委</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>学生教育管理办公室</td>
+						<td>学生资助管理办公室</td>
+						<td>团委</td>
+						<td>学生党建办公室</td>
+					</tr>
+					
+					<tr>
+						<td>大学生就业指导办公室</td>
+						<td>招生办公室</td>
+						<td>大学生心理健康办公室</td>
+						<td></td>
+					</tr>
+					
+					<tr>
+						<td><strong>组织人事处</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					
+					<tr>
+						<td><strong>财务处</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					
+					<tr>
+						<td><strong>后勤与保卫处</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					
+					<tr>
+						<td><strong>资产管理办公室</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					
+					<tr>
+						<td><strong>现代教育技术中心</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					
+					<tr>
+						<td><strong>图书资料室</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					
+					<tr>
+						<td><strong>汤山校区综合管理办公室</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+
+				</table>
+			</div>
+		</div>
 	<cms:Footer/>
 </body>
 </html>
