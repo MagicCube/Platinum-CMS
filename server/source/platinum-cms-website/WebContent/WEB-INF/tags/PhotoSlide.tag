@@ -29,27 +29,34 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 	posts = manager.loadLatestPostsByCategory(categoryId, displayPhoto, where, count);
 }
 %>
-<script src="/static/common/scripts/src/dynamicPic.js" type="text/javascript"></script>
 
+<ul id="${id}" class="PhotoSlide ${cssClass}">
+<% for (PostEntity post : posts) {%>
+<li>
+   	<a href="<%= post.getLink()%>">
+     	  <% if (displayPhoto) {%>
+      	  <img src='<%= post.getPhotoURL()%>' title='<%= post.getTitle()%>'/>
+     	  <% } %>
+   	</a>
+</li>
+<% } %>
+</ul>
 
-<div id="box">
-    <ul id="${id}" class="list ${cssClass}">
-    	<%for(PostEntity post : posts) {%>
-    	<li class="current">
-	      	<% if (displayPhoto) {%>
-	       	  	<img src='<%= post.getPhotoURL()%>' />
-	      	<% } %>
-      	  	<a href="<%= post.getLink()%>" class ="title" style = "color: #fff;">
-      	  		<%= post.getTitle()%>
-      	  	</a>
-    	</li>
-    	<% }%>
- 	</ul>
- 	<ul class="count">
-		<li class="current">1</li>
-		<li>2</li>
-		<li>3</li>
-		<li>4</li>
- 	</ul> 
-  </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="static/common/scripts/lib/bxslider/jquery.bxslider.min.js" type="text/javascript"></script>
+<script src="static/common/scripts/lib/bxslider/jquery.bxslider.js" type="text/javascript"></script>
+<link href="static/common/scripts/lib/bxslider/jquery.bxslider.css" rel="stylesheet" />
 
+<script>
+	$(document).ready(function(){
+		  $('.bxslider').bxSlider({
+			  auto: true,
+			  autoControls: true,
+			  controls: true,
+			  speed: 2000,
+			  adaptiveHeight: true,
+			  useCSS: true,
+			  captions: true,
+			  mode: 'fade'});
+	});
+</script>
