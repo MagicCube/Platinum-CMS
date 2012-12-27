@@ -53,7 +53,7 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 			  auto: true,
 			  autoControls: true,
 			  controls: true,
-			  speed: 2000,
+			  speed: 1000,
 			  adaptiveHeight: true,
 			  useCSS: true,
 			  captions: true,

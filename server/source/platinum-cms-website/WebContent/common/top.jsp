@@ -5,7 +5,7 @@
 <script src="/static/common/scripts/src/menu.js" type="text/javascript"></script>
 <div id="layer1">
 <div id="header">
-			<span style="float: left; padding-top: 10px;"><a href="/"><img src="/static/common/images/logo.png" title="南京师范大学中北学院" alt=""/></a></span>
+			<span style="float: left;"><a href="/"><img src="/static/common/images/logo.png" title="南京师范大学中北学院" alt=""/></a></span>
 			 <div id="headerRight">
 					<form id="search" action="" method="post">
 						<div id="searchline"><input type="text" id="searchField"/></div>
