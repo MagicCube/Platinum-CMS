@@ -12,7 +12,7 @@
 						<input type="submit" id="searchBtn" value=""/>
 					</form>
 					<div id="fastlink">
-						<span><a href="#">首页</a>|<a href="#">联系我们</a>|<a href="#">About NNUZC</a>|<a href="#">南京师范大学</a></span>
+						<span><a href="/">首页</a>|<a href="/introduce/contact.jsp">联系我们</a>|<a href="#">About NNUZC</a>|<a href="http://www.njnu.edu.cn/">南京师范大学</a></span>
 					</div>
 			</div>
 </div>
@@ -32,23 +32,23 @@
 	            <li><a href="/organization/depset.jsp">部门设置</a></li>
 	        </ul>
 	    </li>
-   		<li><a href="/jiaowu/">教学科研</a></li>
+   		<li><a href="http://zbzs.njnu.edu.cn/trch/index.htm">教学科研</a></li>
 	    <li><a href="#">学生工作</a>
 	        <ul id="downlist">
-	            <li><a href="/xuegong/">学工处</a></li>
-	            <li><a href="/tuanwei/">团委</a></li>             
+	            <li><a href="http://zbzs.njnu.edu.cn/stud/index.asp">学工处</a></li>
+	            <!-- <li><a href="/tuanwei/">团委</a></li>  -->            
 	        </ul>
 	    </li>
-   		<li><a href="/zuzhi/">组织人事</a></li>
+   		<li><a href="http://zbzs.njnu.edu.cn/part/index.htm">组织人事</a></li>
 	    <li><a href="#">招生就业</a>
 	        <ul id="downlist">
-	            <li><a href="/zhaosheng/">招生录取</a></li>
-	            <li><a href="/jiuye/">就业指导</a></li>
+	            <li><a href="http://zbzs.njnu.edu.cn/enrol/index.asp">招生录取</a></li>
+	            <li><a href="http://zbzs.njnu.edu.cn/job/index.asp">就业指导</a></li>
 	        </ul>
 	    </li>  
 	    <li><a href="#">交流合作</a>
 	        <ul id="downlist">
-	            <li><a href="/international/international.jsp">海外学习计划</a></li>
+	            <li><a href="http://zbzs.njnu.edu.cn/project.asp">海外学习计划</a></li>
 	            <!-- <li class = "subMenu"><a href = "/cooperation/ff8081813b7a2ecd013b7a3a0ece000b.html">联合办学</a></li> -->
 	        </ul>
 	    </li>

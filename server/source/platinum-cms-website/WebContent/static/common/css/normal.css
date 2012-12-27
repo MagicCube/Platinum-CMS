@@ -14,7 +14,10 @@ p
 	width: 990px;
 	height: 500px;
 	position: relative;
-
+	background: white;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 #maincontent > #layoutleft 
