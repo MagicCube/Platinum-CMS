@@ -71,7 +71,7 @@
 </menu>
 		
 
-<div id="body">
+<div id="MainBox">
 <% if (request.getParameter("displaySideBar").equals("true")) {%>
 	<div id="sideBar">
 		<div id = "sideBarin">
@@ -81,5 +81,4 @@
 		<cms:PostList id="ywhgList" cssClass="TextList" categoryId='news' subcategoryId="rank" count="9" />
 		</div>
 	</div>
-	<div id = "bodyContent">
 <%}%>

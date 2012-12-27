@@ -37,20 +37,20 @@ clientCache.setMaxAge(60);
 				<div id="label"><span>新闻动态</span></div>	
 				<cms:PostList id="xwdtList1" cssClass="PhotoList" subcategoryId="sc000000000000000000000000000006" displayPhoto="true" count="1" />
 				<cms:PostList id="textContent" subcategoryId="sc000000000000000000000000000006" where="photoURL is null" count="6" />
-				<div id="morelabel"><a href="#">+更多</a></div>
+				<div id="morelabel"><a href="/news/sc000000000000000000000000000006/more/">+更多</a></div>
 			</div>
 			
 			<div id="school">
 				<div id="label"><span>校园动态</span></div>
 				<cms:PostList id="xydtList1" cssClass="PhotoList" subcategoryId="sc000000000000000000000000000020" displayPhoto="true" count="1" />
 				<cms:PostList id="textContent" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="6" />
-				<div id="morelabel"><a href="#">+更多</a></div>
+				<div id="morelabel"><a href="/news/sc000000000000000000000000000020/more/">+更多</a></div>
 			</div>
 			
 				<div id="inform">
 				<div id="label"><span>通知公告</span></div>
 				<cms:PostList id="text_inform" subcategoryId="sc000000000000000000000000000008" where="photoURL is null" count="6" />
-				<div id="morelabel"><a href="#">+更多</a></div>
+				<div id="morelabel"><a href="/news/sc000000000000000000000000000008/more/">+更多</a></div>
 			</div>
 			
 			<div id="usedlink">
@@ -64,8 +64,7 @@ clientCache.setMaxAge(60);
 				</ul>
 			</div>
 		</div> 
-		
-	<cms:Footer/>
 	</div> 
+	<cms:Footer/>
 </body>
 </html>
