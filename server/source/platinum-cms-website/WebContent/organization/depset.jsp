@@ -14,11 +14,11 @@
 	<cms:Header/>
 	<div id = "maincontent" style = "height: 1000px;">
 			<div id = "layoutleft" >
-				<img src = "/static/common/images/contact.jpg" height = 200; width = 250px;/>
+				<img src = "/static/common/images/department.jpg" height = 200; width = 250px;/>
 			</div>
 			<div id = "layoutright">
-				<table border="1">
-					<tr>
+				<table id="dep" border="1" rules="all" style="margin: 10px 0 0 0;">
+					<tr style="border: 0;">
 						<td><strong>院长办公室(党委办公室)</strong></td>
 						<td></td>
 						<td></td>

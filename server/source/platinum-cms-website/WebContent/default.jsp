@@ -17,9 +17,6 @@ clientCache.setMaxAge(60);
 <link href="/static/common/css/basic.css" rel = "stylesheet"></link>
 <link href="/static/home/css/home.css" rel = "stylesheet"></link> 
 <script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
-<link href="/static/common/scripts/lib/photoslider/photoslider.css" rel="stylesheet"></link>
-<script src="/static/common/scripts/lib/photoslider/jquery.photoslider.js" type="text/javascript"></script>
-
 
 </head>
 <body>
@@ -58,32 +55,18 @@ clientCache.setMaxAge(60);
 			<div id="usedlink">
 				<div id="linklabel"><span><img style="margin: 10px 0 0 -10px" src="/static/home/images/usedlink.png"/></span></div>
 				 <ul id="left">
-					<li><a href="#">教工之家</a></li>
-					<li><a href="#">教务系统</a></li>
-					<li><a href="#">短信平台</a></li>
+					<li><a href="http://zbvip.njnu.edu.cn/">教工之家</a></li>
+					<li><a href="http://222.192.5.246/(khvomn45dim5kn3kj4t0gh55)/default2.aspx">教务系统</a></li>
+					<li><a href="http://web.mobset.com/index.html">短信平台</a></li>
 				</ul>
 				
 				<ul id="right" style="left: 140px;">
-					<li><a href="#">办公电话</a></li>
-					<li><a href="#">校园交通</a></li>
-					<li><a href="#">邮件在线</a></li>
+					<li><a href="/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话</a></li>
+					<li><a href="/service/ff8081813b6fee04013b6ff158fb0008.html">校园交通</a></li>
+					<li><a href="https://mail.njnu.edu.cn/">邮件在线</a></li>
 				</ul>
 				
-				<div id="morelabel"><a href="/news/sc000000000000000000000000000008/more/">更多</a></div>
-				<!-- <table>
-					<tr>
-						<td>教工之家</td>
-						<td>教务系统</td>
-					</tr>
-					<tr>
-						<td>短信平台</td>
-						<td>部门电话</td>
-					</tr>
-					<tr>
-						<td>校园交通</td>
-						<td>学生工作</td>
-					</tr>
-				</table> -->
+				<div id="morelabel"><a href="/service/ff8081813be18002013be18e03250002.html">更多</a></div>
 			</div>
 		</div> 
 	</div> 

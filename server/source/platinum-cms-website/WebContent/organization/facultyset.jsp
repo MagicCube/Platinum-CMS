@@ -14,12 +14,15 @@
 	<cms:Header/>
 		<div id = "maincontent" style = "height: 1000px;">
 			<div id = "layoutleft" >
-				<img src = "/static/common/images/contact.jpg" height = 200; width = 250px;/>
+				<img src = "/static/common/images/department.jpg" height = 200; width = 250px;/>
 			</div>
 			<div id = "layoutright">
-				<table id="setting">
+				<table border=1 rules="all" style="margin: 10px 0 0 0;">
 					<tr>
 						<td><strong>人文系</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
 						<td>广告学</td>
@@ -29,10 +32,16 @@
 					</tr>
 					<tr>
 						<td>汉语言文学</td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>			
 					
 					<tr>
 						<td><strong>外语系</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
 						<td>英语(实用英语)</td>
@@ -42,10 +51,16 @@
 					</tr>
 					<tr>
 						<td>法语</td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					
 					<tr>
 						<td><strong>经济与管理系</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
 						<td>工商管理</td>
@@ -58,10 +73,14 @@
 						<td>旅游管理(涉外旅游管理(强化英语教学))</td>
 						<td>金融学(艺术品投资)</td>
 						<td>会计学</td>
+						<td></td>
 					</tr>
 					
 					<tr>
 						<td><strong>公共管理系</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
 						<td>社会工作</td>
@@ -72,10 +91,16 @@
 					
 					<tr>
 						<td>法学</td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					
 					<tr>
 						<td><strong>信息科学与技术系</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
 						<td>通信工程</td>
@@ -87,10 +112,15 @@
 					<tr>
 						<td>电子信息工程</td>
 						<td>物流信息管理</td>
+						<td></td>
+						<td></td>
 					</tr>
 					
 					<tr>
 						<td><strong>工学系</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
 						<td>环境工程</td>
@@ -101,10 +131,16 @@
 					
 					<tr>
 						<td>生物技术</td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					
 					<tr>
 						<td><strong>美术系</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
 						<td>美术学</td>
@@ -115,22 +151,35 @@
 					
 					<tr>
 						<td>动画</td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					
 					<tr>
 						<td><strong>音乐系</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
 						<td>音乐学</td>
 						<td>音乐学(流行音乐)</td>
+						<td></td>
+						<td></td>
 					</tr>
 					
 					<tr>
 						<td><strong>强化部</strong></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
 						<td>电器信息类(理工科强化班)</td>
 						<td>经济学类(经济管理强化班)</td>
+						<td></td>
+						<td></td>
 					</tr>	
 				</table>
 			</div>

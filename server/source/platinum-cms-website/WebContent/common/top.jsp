@@ -3,10 +3,11 @@
 
 <link href = "/static/common/css/common.css" rel = "stylesheet"></link>
 <script src="/static/common/scripts/src/menu.js" type="text/javascript"></script>
+
 <div id="layer1">
 <div id="header">
-			<span style="float: left;"><a href="/"><img src="/static/common/images/logo.png" title="南京师范大学中北学院" alt=""/></a></span>
-			 <div id="headerRight">
+			<span style="float: left; margin-top: 30px; display: block;"><a href="/"><img src="/static/common/images/logo.png" title="南京师范大学中北学院" alt=""/></a></span>
+			<div id="headerRight">
 					<form id="search" action="" method="post">
 						<div id="searchline"><input type="text" id="searchField"/></div>
 						<input type="submit" id="searchBtn" value=""/>
@@ -54,14 +55,14 @@
 	    </li>
 	    <li><a href="#">公共服务</a>
 	        <ul id="downlist">
-	            <li><a href="/service/ff8081813b6fee04013b6fef4b390002.html">校历</a></li>
+	            <li><a href="/service/ff8081813b6fee04013b6fef4b390002.html">教学周历</a></li>
 	            <li><a href="/service/ff8081813b7a2ecd013b7a384fb20008.html">来稿须知</a></li>
 	            <li><a href="/service/guide.jsp">办事指南</a></li>
 	            <li><a href="/service/ff8081813b6fee04013b6ff2b1d90011.html">作息时间</a></li>	            
 	            <li><a href="/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话</a></li>
 	            <li><a href="/service/ff8081813b6fee04013b6ff158fb0008.html">校园交通</a></li>
 	      		<li><a href="http://www.njnu.edu.cn/jssd.htm">在线杀毒</a></li>
-	      		<li><a href="#">常用链接</a></li>
+	      		<li><a href="/service/ff8081813be18002013be18e03250002.html">常用链接</a></li>
 	        </ul>
 	    </li>
 	    <li><a href="#">技术支持</a>
