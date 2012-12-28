@@ -68,6 +68,7 @@
 	font-weight: bold;
 	color: #666;
 	padding-top: 20px;
+	display: none;
 }
 
 .bx-wrapper .bx-pager .bx-pager-item,

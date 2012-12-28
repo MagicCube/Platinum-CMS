@@ -51,10 +51,8 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 	$(document).ready(function(){
 		  $('.bxslider').bxSlider({
 			  auto: true,
-			  autoControls: true,
 			  controls: true,
 			  speed: 1000,
-			  adaptiveHeight: true,
 			  useCSS: true,
 			  captions: true,
 			  mode: 'fade'});

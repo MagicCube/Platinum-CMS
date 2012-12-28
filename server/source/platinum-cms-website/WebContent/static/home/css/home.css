@@ -13,38 +13,68 @@
 {
 	position: absolute;
 	display: block;
-	top: 0;
-	left: 0;
+	top: 0px;
+	left: 10px;
 	width: 375px;
 	height: 100%;
 }
 
-#label
+
+#schoollabel
 {
 	position: absolute;
 	top: 10px;
 	left: -6px;
 	height: 50px;
-	width: 200px;
-	background: url(../images/label.png) no-repeat;	
+	width: 280px;
+	background: url(../images/school.png) no-repeat;	
+}
+
+#newslabel
+{
+	position: absolute;
+	top: 10px;
+	left: -6px;
+	height: 50px;
+	width: 280px;
+	background: url(../images/newslabel.png) no-repeat;	
+}
+
+#labellong
+{
+	position: absolute;
+	top: 10px;
+	left: -6px;
+	height: 50px;
+	width: 370px;
+	background: url(../images/labellong.png) no-repeat;	
 }
 
 #label span
 {
 	display: block;
 	color: white;
-	font-size: 16px;
-	padding: 6px 0 5px 10px;
+	font-size: 14px;
+	padding: 3px 0 0 0;
+	font-weight: bold;
 }
 
+#labellong span
+{
+	display: block;
+	color: white;
+	font-size: 14px;
+	padding: 3px 0 0 0;
+	font-weight: bold;
+}
 #morelabel
 {
 	position: absolute;
 	display: block;
 	height: 20px;
 	width: 50px;
-	bottom: 20px;
-	left: 0;
+	bottom: 10px;
+	right: 5px;
 	background: url(../images/morelabel.png) no-repeat;	
 }
 
@@ -64,7 +94,6 @@
 #linklabel
 {
 	position: absolute;
-	top: 10px;
 	left: 10px;
 	color: #60be00;
 	font-size: 16px;
@@ -74,9 +103,9 @@
 {
 	position: absolute;
 	top: 0;
-	left: 390px;
+	left: 400px;
 	height: 500px;
-	width: 190px;
+	width: 280px;
 	background: white;
 	border-radius: 5px;
 }
@@ -85,10 +114,10 @@
 #inform
 {
 	position: absolute;
-	top: 0;
-	left: 800px;
-	width: 190px;
-	height: 300px;
+	top: 270px;
+	left: 10px;
+	width: 370px;
+	height: 250px;
 	background: white;
 	border-radius: 5px;
 }
@@ -96,10 +125,10 @@
 #usedlink
 {
 	position: absolute;
-	top: 310px; 
-	left: 800px;
-	width: 190px;
-	height: 180px;
+	top: 370px; 
+	left: 700px;
+	width: 280px;
+	height: 150px;
 	background: white;
 	border-radius: 5px;	
 }
@@ -110,19 +139,19 @@
 	position: absolute;
 	padding: 0;
 	margin: 0;
-	width: 100%;
-	top: 30px;
-	left: 0;
+	top: 40px;
+	left: 20px;
 	list-style: none;
 }
 
 #usedlink  ul li
 {
-	width: 100%;
+	width: 100px;
 }
 
 #usedlink  ul li a
 {
+	width: 100%;
 	display: block;
 	color: #696969;
 	text-decoration: none;
@@ -140,11 +169,46 @@
 {
 	position: absolute;
 	top: 0;
-	left: 595px;
-	width: 190px;
-	height: 460px;
+	left: 700px;
+	width: 280px;
+	height: 350px;
 	background: white;
 	border-radius: 5px;
+}
+
+ul#text_school
+{
+	position: absolute;
+	display: block;
+	top: 50px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	list-style: inside url(/static/common/images/list.png);
+}
+
+
+ul#text_school > li
+{
+	width: 100%;	
+}
+
+ul#text_school > li > a
+{
+	display: block;
+	width: 260px;
+	height: 100%;
+	text-decoration: none;
+	color: #333;
+	padding: 3px;
+	margin: 0;
+	border-bottom: 1px #eee solid;
+	line-height: 18px;
+}
+
+ul#text_school > li > a:hover
+{
+	color: #999;
 }
 
 ul#text_inform
@@ -154,7 +218,7 @@ ul#text_inform
 	top: 50px;
 	padding: 0;
 	margin: 0;
-	list-style: none;
+	list-style: inside url(/static/common/images/list.png);
 }
 
 ul#text_inform > li
@@ -165,12 +229,13 @@ ul#text_inform > li
 ul#text_inform > li > a
 {
 	display: block;
-	width: 170px;
+	width: 350px;
 	height: 100%;
 	text-decoration: none;
 	color: #333;
 	padding: 5px;
 	margin: 0 5px;
+	line-height: 18px;
 	border-bottom: 1px #eee solid;
 }
 
@@ -183,10 +248,10 @@ ul#textContent
 {
 	position: absolute;
 	display: block;
-	top: 200px;
+	top: 250px;
 	padding: 0;
 	margin: 0;
-	list-style: none;
+	list-style: inside url(/static/common/images/list.png);
 }
 
 ul#textContent > li
@@ -197,13 +262,14 @@ ul#textContent > li
 ul#textContent > li > a
 {
 	display: block;
-	width: 170px;
+	width: 260px;
 	height: 100%;
 	text-decoration: none;
 	color: #333;
 	padding: 5px;
 	margin: 0 5px;
 	border-bottom: 1px #eee solid;
+	line-height: 18px;
 }
 
 ul#textContent > li > a:hover
@@ -230,7 +296,7 @@ ul.PhotoList li
 ul.PhotoList li a
 {
 	display: block;
-	width: 170px;
+	width: 260px;
 	height: 100%;
 	text-decoration: none;
 	color: #000;
@@ -241,15 +307,16 @@ ul.PhotoList li a
 
 ul.PhotoList li a img
 {
-	width: 100%;
-	height: 100px;
+	width: 210;
+	height: 140px;
+	margin-left: 25px;
 	box-shadow: gray 0px 1px 10px;
 }
 
 ul.PhotoList li a #title
 {
 	display: block;
-	width: 170px;
+	width: 260px;
 	height: 25px;
 	color: #000;
 	font-weight: bold;

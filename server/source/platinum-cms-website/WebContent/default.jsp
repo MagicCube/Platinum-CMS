@@ -30,38 +30,60 @@ clientCache.setMaxAge(60);
 	
 		<div id="middle">
 			<div id="photoslider">
+				
 				<cms:PhotoSlide id="tsztList" cssClass="bxslider" subcategoryId="sc000000000000000000000000000207" displayPhoto="true" count="4" />	
+				
 			</div>
 			
 			<div id="news">
-				<div id="label"><span>新闻动态</span></div>	
+				<div id="newslabel"></div>	
 				<cms:PostList id="xwdtList1" cssClass="PhotoList" subcategoryId="sc000000000000000000000000000006" displayPhoto="true" count="1" />
-				<cms:PostList id="textContent" subcategoryId="sc000000000000000000000000000006" where="photoURL is null" count="6" />
-				<div id="morelabel"><a href="/news/sc000000000000000000000000000006/more/">+更多</a></div>
+				<cms:PostList id="textContent" subcategoryId="sc000000000000000000000000000006" where="photoURL is null" count="5" />
+				<div id="morelabel"><a href="/news/sc000000000000000000000000000006/more/">更多</a></div>
 			</div>
 			
 			<div id="school">
-				<div id="label"><span>校园动态</span></div>
-				<cms:PostList id="xydtList1" cssClass="PhotoList" subcategoryId="sc000000000000000000000000000020" displayPhoto="true" count="1" />
-				<cms:PostList id="textContent" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="6" />
-				<div id="morelabel"><a href="/news/sc000000000000000000000000000020/more/">+更多</a></div>
+				<div id="schoollabel"></div>
+				<!--<cms:PostList id="xydtList1" cssClass="PhotoList" subcategoryId="sc000000000000000000000000000020" displayPhoto="true" count="1" />-->
+				<cms:PostList id="text_school" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="6" />
+				<div id="morelabel"><a href="/news/sc000000000000000000000000000020/more/">更多</a></div>
 			</div>
 			
-				<div id="inform">
-				<div id="label"><span>通知公告</span></div>
-				<cms:PostList id="text_inform" subcategoryId="sc000000000000000000000000000008" where="photoURL is null" count="6" />
-				<div id="morelabel"><a href="/news/sc000000000000000000000000000008/more/">+更多</a></div>
+			<div id="inform">
+				<div id="labellong"></div>
+				<cms:PostList id="text_inform" subcategoryId="sc000000000000000000000000000008" where="photoURL is null" count="4" />
+				<div id="morelabel"><a href="/news/sc000000000000000000000000000008/more/">更多</a></div>
 			</div>
 			
 			<div id="usedlink">
-				<div id="linklabel">常用链接</div>
-				<ul>
+				<div id="linklabel"><span><img style="margin: 10px 0 0 -10px" src="/static/home/images/usedlink.png"/></span></div>
+				 <ul id="left">
 					<li><a href="#">教工之家</a></li>
 					<li><a href="#">教务系统</a></li>
 					<li><a href="#">短信平台</a></li>
-					<li><a href="#">部门电话</a></li>
-					<li><a href="#">校园交通</a></li>
 				</ul>
+				
+				<ul id="right" style="left: 140px;">
+					<li><a href="#">办公电话</a></li>
+					<li><a href="#">校园交通</a></li>
+					<li><a href="#">邮件在线</a></li>
+				</ul>
+				
+				<div id="morelabel"><a href="/news/sc000000000000000000000000000008/more/">更多</a></div>
+				<!-- <table>
+					<tr>
+						<td>教工之家</td>
+						<td>教务系统</td>
+					</tr>
+					<tr>
+						<td>短信平台</td>
+						<td>部门电话</td>
+					</tr>
+					<tr>
+						<td>校园交通</td>
+						<td>学生工作</td>
+					</tr>
+				</table> -->
 			</div>
 		</div> 
 	</div> 

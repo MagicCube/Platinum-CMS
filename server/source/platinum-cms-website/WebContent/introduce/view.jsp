@@ -14,7 +14,7 @@
 </head>
 <body>
 	<cms:Header/>
-    
+    <div id = "maincontent" style = "height: 660px; background: none;">
     <ul id="album" class="PostList">
         <% for (int i = 1; i <= 9; i++) {%>
         <li id="x<%=i%>">
@@ -36,7 +36,7 @@
         })
         .height(221 * 3);
     </script>
-    
+    </div>
 	<cms:Footer/>
 </body>
 </html>

@@ -12,7 +12,7 @@
 						<input type="submit" id="searchBtn" value=""/>
 					</form>
 					<div id="fastlink">
-						<span><a href="/">首页</a>|<a href="/introduce/contact.jsp">联系我们</a>|<a href="#">About NNUZC</a>|<a href="http://www.njnu.edu.cn/">南京师范大学</a></span>
+						<span><a href="/">首页</a>|<a href="/introduce/contact.jsp">联系我们</a>|<a href="/introduce/sc000000000000000000000000000300.html">About NNUZC</a>|<a href="http://www.njnu.edu.cn/">南京师范大学</a></span>
 					</div>
 			</div>
 </div>
@@ -57,9 +57,11 @@
 	            <li><a href="/service/ff8081813b6fee04013b6fef4b390002.html">校历</a></li>
 	            <li><a href="/service/ff8081813b7a2ecd013b7a384fb20008.html">来稿须知</a></li>
 	            <li><a href="/service/guide.jsp">办事指南</a></li>
-	            <li><a href="/service/ff8081813b6fee04013b6ff2b1d90011.html">作息时间</a></li>
+	            <li><a href="/service/ff8081813b6fee04013b6ff2b1d90011.html">作息时间</a></li>	            
 	            <li><a href="/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话</a></li>
 	            <li><a href="/service/ff8081813b6fee04013b6ff158fb0008.html">校园交通</a></li>
+	      		<li><a href="http://www.njnu.edu.cn/jssd.htm">在线杀毒</a></li>
+	      		<li><a href="#">常用链接</a></li>
 	        </ul>
 	    </li>
 	    <li><a href="#">技术支持</a>
