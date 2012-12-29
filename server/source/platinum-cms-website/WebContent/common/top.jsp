@@ -22,7 +22,7 @@
 						<input type="submit" id="searchBtn" value=""/>
 					</form>
 					<div id="fastlink">
-						<span><a href="/">首页</a>|<a href="/introduce/contact.jsp">联系我们</a>|<a href="/introduce/sc000000000000000000000000000300.html">About NNUZC</a>|<a href="http://www.njnu.edu.cn/">南京师范大学</a></span>
+						<span><a href="/">首页</a>|<a href="/introduce/contact.jsp">联系我们</a>|<a href="/introduce/ff8081813be4798a013be484d5540002.html">About NNUZC</a>|<a href="http://www.njnu.edu.cn/">南京师范大学</a></span>
 					</div>
 			</div>
 </div>
