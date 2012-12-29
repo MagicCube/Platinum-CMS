@@ -46,8 +46,8 @@ input
 #code
 {
 	position: fixed;
-	left: 0;
-	top: 400px;
+	right: 0;
+	top: 500px;
 	border: 2px #fff solid;
 	z-index: 99999999;
 }
