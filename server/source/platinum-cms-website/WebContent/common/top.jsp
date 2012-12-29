@@ -65,7 +65,7 @@
 	    <li><a href="#">公共服务</a>
 	        <ul id="downlist">
 	            <li><a href="/service/ff8081813b6fee04013b6fef4b390002.html">教学周历</a></li>
-	            <li><a href="/service/ff8081813b7a2ecd013b7a384fb20008.html">来稿须知</a></li>
+	            <!-- <li><a href="/service/ff8081813b7a2ecd013b7a384fb20008.html">来稿须知</a></li> -->
 	            <li><a href="/service/guide.jsp">办事指南</a></li>
 	            <li><a href="/service/ff8081813b6fee04013b6ff2b1d90011.html">作息时间</a></li>	            
 	            <li><a href="/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话</a></li>

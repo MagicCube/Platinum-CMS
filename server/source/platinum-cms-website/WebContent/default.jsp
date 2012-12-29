@@ -53,7 +53,7 @@ clientCache.setMaxAge(60);
 			</div>
 			
 			<div id="usedlink">
-				<div id="linklabel"><span><img style="margin: 10px 0 0 -10px" src="/static/home/images/usedlink.png"/></span></div>
+				<div id="linklabel"><span><img style="margin: 0 0 0 -16px" src="/static/home/images/usedlabel.png"/></span></div>
 				 <ul id="left">
 					<li><a href="http://zbvip.njnu.edu.cn/">教工之家</a></li>
 					<li><a href="http://222.192.5.246/(khvomn45dim5kn3kj4t0gh55)/default2.aspx">教务系统</a></li>
