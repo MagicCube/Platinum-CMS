@@ -9,6 +9,7 @@
 #postDetail h1
 {
 	text-align: center;
+	font-size: 16px;
 }
 
 #info 
@@ -81,8 +82,7 @@
 #attachmentList
 {
 	display: block;
-	padding: 0;
-	margin: 15px 0 0 0;
+	padding: 10px 0 0 0;
 }
 
 #attachmentList a
