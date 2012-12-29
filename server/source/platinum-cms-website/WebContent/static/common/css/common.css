@@ -59,11 +59,37 @@ input
 	margin-right: auto;
 }
 
+#dynamic
+{
+	display: block;
+	width: 350px;
+	height: 110px;
+	overflow:hidden;
+	float: left;
+	margin-left: 15px;
+}
+
+#dttpList
+{
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 165px;
+	height: 110px;
+}
+
+#dttpList > img
+{
+	width: 350px;
+	height: 110px;
+}
+
 #headerRight
 {
 	display: block;
 	height: 100%;
-	width: 350px;
+	width: 300px;
 	float: right;
 }
 
@@ -119,7 +145,7 @@ input
 {
 	color: #468d00;
 	text-decoration: none;
-	margin: 0 10px;
+	margin: 0 5px;
 }
 
 #fastlink span a:hover
@@ -212,6 +238,7 @@ input
 	display: block;
 	color: #fff;
 	font-weight: bold;
+	text-align: center;
 }
 
 #copyright p

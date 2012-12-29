@@ -3,10 +3,19 @@
 
 <link href = "/static/common/css/common.css" rel = "stylesheet"></link>
 <script src="/static/common/scripts/src/menu.js" type="text/javascript"></script>
+<script src="/static/common/scripts/src/dyamicPic.js" type="text/javascript"></script>
 
 <div id="layer1">
 <div id="header">
-			<span style="float: left; margin-top: 30px; display: block;"><a href="/"><img src="/static/common/images/logo.png" title="南京师范大学中北学院" alt=""/></a></span>
+			<span style="float: left; margin-top: 30px; display: block;"><a href="/"><img src="/static/common/images/logo.png" title="首页" alt=""/></a></span>
+			<div id="dynamic">
+				<ul id="dttpList">
+					<li><img src="/static/common/images/h1.png" alt="1"/></li>
+					<li><img src="/static/common/images/h2.png" alt="2"/></li>
+					<li><img src="/static/common/images/h3.png" alt="3"/></li>
+					<li><img src="/static/common/images/h4.png" alt="4"/></li>
+				</ul>
+			</div>
 			<div id="headerRight">
 					<form id="search" action="" method="post">
 						<div id="searchline"><input type="text" id="searchField"/></div>
@@ -34,9 +43,9 @@
 	        </ul>
 	    </li>
    		<li><a href="http://zbzs.njnu.edu.cn/trch/index.htm">教学科研</a></li>
-	    <li><a href="#">学生工作</a>
+	    <li><a href="http://zbzs.njnu.edu.cn/stud/index.asp">学生工作</a>
 	        <ul id="downlist">
-	            <li><a href="http://zbzs.njnu.edu.cn/stud/index.asp">学工处</a></li>
+	            <!-- <li><a href="http://zbzs.njnu.edu.cn/stud/index.asp">学工处</a></li> -->
 	            <!-- <li><a href="/tuanwei/">团委</a></li>  -->            
 	        </ul>
 	    </li>
