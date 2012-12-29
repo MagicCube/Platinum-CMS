@@ -67,7 +67,6 @@ input
 	height: 110px;
 	overflow:hidden;
 	float: left;
-	margin-left: 15px;
 }
 
 #dttpList
@@ -97,6 +96,7 @@ input
 #headerRight > #search
 {
 	margin-top: 30px;
+	margin-bottom: 10px;
 	float: right;
 }
 

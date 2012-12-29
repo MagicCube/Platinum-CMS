@@ -18,7 +18,6 @@
 			</div>
 			<div id = "layoutright">
 				<h2>南京师范大学中北学院领导简介</h2>
-				<p style = "color: #3399CC; font-size: 14px;">更新日期： 2012/10/16</p>
 				<table>
 					<tr>
 						<td>院 长:</td>

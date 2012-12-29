@@ -18,7 +18,6 @@
 			</div>
 			<div id = "layoutright">
 				<h2>网站地图</h2>
-				<p style = "color: #3399CC; font-size: 14px;">更新日期： 2012/10/16</p>
 			</div>
 		</div>
 		

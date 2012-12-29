@@ -19,9 +19,8 @@
 			</div>
 			<div id = "rightside">
 				<h2>办事指南</h2>
-				<p style = "color: #3399CC; font-size: 14px;">更新日期： 2012/10/16</p>
 				<cms:PostList id="bsznlist" cssClass="TextList" subcategoryId="sc000000000000000000000000000019" count="10"/>
-				<span style="float:right; margin-right: 120px;"><a href="#">更多...</a></span>
+				<span style="float:right; margin-right: 120px;"><a href="/service/sc000000000000000000000000000019/more/">更多...</a></span>
 			</div>		
 		</div>
 		

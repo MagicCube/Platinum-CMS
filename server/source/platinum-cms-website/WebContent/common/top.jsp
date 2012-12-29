@@ -7,7 +7,7 @@
 
 <div id="layer1">
 <div id="header">
-			<span style="float: left; margin-top: 30px; display: block;"><a href="/"><img src="/static/common/images/logo.png" title="首页" alt=""/></a></span>
+			<span style="float: left; margin-top: 18px; display: block;"><a href="/"><img src="/static/common/images/logo.png" title="首页" alt=""/></a></span>
 			<div id="dynamic">
 				<ul id="dttpList">
 					<li><img src="/static/common/images/h1.png" alt="1"/></li>
