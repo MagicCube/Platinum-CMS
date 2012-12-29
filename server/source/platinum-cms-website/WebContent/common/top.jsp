@@ -77,7 +77,7 @@
 	    <li><a href="#">技术支持</a>
 	    	<ul id="downlist">
 	    		<!-- <li><a href="/ruanyan/">软件研发与培训中心</a></li> -->
-	            <li><a href="/xiandai/ff8081813be56ecf013be5735ee90005.html">现代教育技术中心</a></li>	
+	            <li><a href="/xiandai/ff8081813be5798c013be58062050002.html">现代教育技术中心</a></li>	
 	        </ul>
 	    </li>	
 </menu>
