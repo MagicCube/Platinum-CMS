@@ -1,5 +1,5 @@
 $(document).ready(function(event){	
-	$('#homemenu li').hover(
+	/*$('#homemenu li').hover(
 			function()
 			{
 				$('ul#downlist').css('z-index', '10000000');
@@ -9,5 +9,13 @@ $(document).ready(function(event){
 			{
 				$('ul#downlist').css('z-index', '0');
 				$('ul#downlist', this).css('display', 'none');
-			});
+			});*/
+	
+	$('#homemenu li').mouseenter(function(){
+		$('ul#downlist').css('z-index', '10000000');
+		$('ul#downlist', this).css('display', 'block');
+	}).mouseleave(function(){
+		$('ul#downlist').css('z-index', '0');
+		$('ul#downlist', this).css('display', 'none');
+	});
 });
