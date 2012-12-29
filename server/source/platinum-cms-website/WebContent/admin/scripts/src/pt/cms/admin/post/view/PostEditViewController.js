@@ -393,7 +393,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
             post.homeSubcategoryId = null;
         }
         
-        post.contentText = me.$content.val();
+        post.contentText = _formatContent(me.$content.val());
         post.postStatus = parseInt(me.$postStatus.val());
         post.postType = parseInt(me.$postType.val());
         post.source = me.$source.val();
@@ -566,24 +566,37 @@ pt.cms.admin.post.view.PostEditViewController = function()
     
     function _formatFileSize(p_size)
     {
-    	var size = Math.round(p_size * 10 / 1024) / 10;
-        if (p_size < 1024 * 5)
+        if (p_size < 1024)
         {
-            size = Math.round(p_size * 10 / 1024) / 10;
+            return "小于 1KB";
+        }
+        
+        if (p_size < 1024 * 1000)
+        {
+            var size = Math.round(p_size * 10 / 1024) / 10.0;
             if (size == 0)
-        	{
-            	size = 1;
-        	}
+            {
+                size = 1;
+            }
             return size + "KB";
         }
-        else if (p_size < 10240000)
+        else if (p_size < 1024 * 1000 * 1000)
         {
-            return Math.round(p_size * 10 / 1024000) / 10 + "MB";
+            return Math.round(p_size * 10 / 1024000) / 10.0 + "MB";
         }
         else
         {
-            return Math.round(p_size * 10 / 1024000000) / 10 + "GB";
+            return Math.round(p_size * 10 / 1024000000) / 10.0 + "GB";
         }
+    }
+    
+    function _formatContent(p_content)
+    {
+        var prefix = "http://" + window.location.host + (window.location.port ? (":" + window.location.port) : "") + "/";
+        prefix = prefix.replace(/\./g, "\\.");
+        var result = p_content.replace(new RegExp(prefix,"ig"), "/");
+        console.log(result)
+        return result;
     }
     
     return me.endOfClass(arguments);

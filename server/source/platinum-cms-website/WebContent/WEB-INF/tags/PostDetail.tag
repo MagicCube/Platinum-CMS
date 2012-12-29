@@ -17,7 +17,6 @@ private String _formatFileSize(long p_size)
 		return "小于 1KB";
 	}
     
-    System.out.println(p_size);
 	if (p_size < 1024 * 1000)
     {
         double size = Math.round(p_size * 10 / 1024) / 10.0;
