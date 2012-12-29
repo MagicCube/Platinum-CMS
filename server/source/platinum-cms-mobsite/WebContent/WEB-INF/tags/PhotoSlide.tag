@@ -22,11 +22,11 @@ PostRuntimeManager manager = PostRuntimeManager.getInstance();
 List<PostEntity> posts = null;
 if (StringUtil.notNullOrEmpty(subcategoryId))
 {
-	posts = manager.loadLatestPostBySubcategory(subcategoryId, displayPhoto, where, count);
+	posts = manager.loadLatestPostsBySubcategory(subcategoryId, displayPhoto, where, count);
 }
 else if (StringUtil.notNullOrEmpty(categoryId))
 {
-	posts = manager.loadLatestPostByCategory(categoryId, displayPhoto, where, count);
+	posts = manager.loadLatestPostsByCategory(categoryId, displayPhoto, where, count);
 }
 %>
 <ul id="${id}" class="PhotoSlide ${cssClass}">
