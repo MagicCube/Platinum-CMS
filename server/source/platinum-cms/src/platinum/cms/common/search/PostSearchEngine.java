@@ -165,8 +165,17 @@ public class PostSearchEngine
 	
 	
 	
-	public List<PostSearchResult> search(String p_keywords)
+	public List<PostSearchResult> search(String p_keywords, int p_pageIndex, int p_pageSize, int p_maxCount, int p_fragmentSize)
 	{
+		if (p_pageIndex < 0)
+		{
+			p_pageIndex = 0;
+		}
+		if (p_pageSize < 0)
+		{
+			p_pageSize = 0;
+		}
+		
 		List<PostSearchResult> results = new ArrayList<PostSearchResult>();
 		Query query = null;
 		try
@@ -189,10 +198,18 @@ public class PostSearchEngine
 		
 		try
 		{
-			TopDocs hits = _indexSearcher.search(query, 50);
-			for (int i = 0; i < hits.scoreDocs.length; i++) {  
+			TopDocs hits = _indexSearcher.search(query, p_maxCount);
+			
+			if (p_pageSize > 0 && p_pageIndex > 0)
+			{
+				int index = p_pageIndex * p_pageSize;
+				ScoreDoc scoreDoc = hits.scoreDocs[index - 1];
+				hits = _indexSearcher.searchAfter(scoreDoc, query, p_pageSize);
+			}
+			
+			for (int i = 0; i < hits.scoreDocs.length && i < p_pageSize; i++) {  
 				  
-		        ScoreDoc scoreDoc = hits.scoreDocs[i];  
+				ScoreDoc scoreDoc = hits.scoreDocs[i];  
 		        Document doc = _indexSearcher.doc(scoreDoc.doc);
 		        PostSearchResult result = new PostSearchResult(doc);
 		        
@@ -200,12 +217,13 @@ public class PostSearchEngine
 		        SimpleHTMLFormatter simpleHTMLFormatter = new SimpleHTMLFormatter(  
 		                "<span class='keyword'>", "</span>");		        
 		        Highlighter highlighter = new Highlighter(simpleHTMLFormatter, new QueryScorer(query));  
-		        Fragmenter fragmenter = new SimpleFragmenter(40);  
+		        Fragmenter fragmenter = new SimpleFragmenter(p_fragmentSize);  
 		        highlighter.setTextFragmenter(fragmenter);
 		        
 		        
 		        // 内容
 		        String content = doc.get("contentText");
+		        content = content.replaceAll((char)160 + "", "").replaceAll("　", "");
 		        TokenStream tokenStream = getDefaultAnalyzer().tokenStream("contentText", new StringReader(content));  
 		        String highlightText;
 				highlightText = highlighter.getBestFragment(tokenStream, content);
@@ -215,7 +233,7 @@ public class PostSearchEngine
 				}
 				else
 				{
-					result.setSummary(content.substring(0, 40));
+					result.setSummary(content.substring(0, p_fragmentSize));
 				}
 				
 				
@@ -247,6 +265,10 @@ public class PostSearchEngine
 		return results;
 	}
 	
+	public List<PostSearchResult> search(String p_keywords, int p_maxCount, int p_fragmentSize)
+	{
+		return search(p_keywords, 0, 0, p_maxCount, p_fragmentSize);
+	}
 	
 	
 

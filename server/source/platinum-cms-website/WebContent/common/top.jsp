@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="cms" tagdir="/WEB-INF/tags" %>
+<%
+request.setCharacterEncoding("utf-8");
+%>
 
 <link href = "/static/common/css/common.css" rel = "stylesheet"></link>
 <script src="/static/common/scripts/src/menu.js" type="text/javascript"></script>
@@ -17,8 +20,8 @@
 				</ul>
 			</div>
 			<div id="headerRight">
-					<form id="search" action="" method="post">
-						<div id="searchline"><input type="text" id="searchField"/></div>
+					<form id="search" action="/search" method="get">
+						<div id="searchline"><input type="text" id="searchField" name="keyword" value="<%= request.getParameter("keyword") != null ? request.getParameter("keyword") : ""%>"/></div>
 						<input type="submit" id="searchBtn" value=""/>
 					</form>
 					<div id="fastlink">

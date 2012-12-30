@@ -4,6 +4,8 @@ import java.util.Date;
 
 import org.apache.lucene.document.Document;
 
+import platinum.cms.common.util.URLResolver;
+
 public class PostSearchResult
 {	
 	private String _id = null;
@@ -61,5 +63,16 @@ public class PostSearchResult
 	public String getPhotoURL()
 	{
 		return _photoURL;
+	}
+	
+	
+	
+	
+	
+	
+	
+	public String getLink()
+	{
+		return URLResolver.getPostlink(getId(), "search");
 	}
 }

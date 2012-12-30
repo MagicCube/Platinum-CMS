@@ -8,6 +8,7 @@
 <%
 HttpClientCache clientCache = new HttpClientCache(request, response);
 clientCache.setMaxAge(30);
+request.setCharacterEncoding("utf-8");
 %>
 
 <%

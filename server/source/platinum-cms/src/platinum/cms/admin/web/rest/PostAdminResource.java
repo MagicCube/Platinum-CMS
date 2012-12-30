@@ -55,7 +55,7 @@ public class PostAdminResource extends AbstractResource
 			}
 			if (posts == null)
 			{
-				List<PostSearchResult> docs = PostSearchEngine.getInstance().search(p_keywords);
+				List<PostSearchResult> docs = PostSearchEngine.getInstance().search(p_keywords, 50, 40);
 				return responseWithJSONArray(PostJSONSerializer.toSimpleArray2(docs));
 			}
 		}
