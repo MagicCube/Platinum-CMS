@@ -41,7 +41,7 @@ if (subcategoryId != null)
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns:wb="http://open.weibo.com/wb">
 <head>
-    <title></title>
+    <title><%= subcategory != null ? subcategory.getSubcategoryName() : category.getCategoryName()%> - 南京师范大学中北学院</title>
     <link rel="stylesheet" href="/static/common/css/basic.css"/>
     <link rel="stylesheet" href="/static/common/css/more.css"/>
     <script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
