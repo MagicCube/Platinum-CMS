@@ -21,6 +21,7 @@ $.fn.album = function(opt)
     });
     
     $li.click(function(e){
+    	$(this).find('a').removeAttr("href" );
         _showOverlay(this.id);
     });
     
