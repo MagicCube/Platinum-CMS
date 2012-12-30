@@ -7,7 +7,6 @@ request.setCharacterEncoding("utf-8");
 <link href = "/static/common/css/common.css" rel = "stylesheet"></link>
 <script src="/static/common/scripts/src/menu.js" type="text/javascript"></script>
 <script src="/static/common/scripts/src/dyamicPic.js" type="text/javascript"></script>
-
 <script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
 
 <div id="layer1">
@@ -40,13 +39,13 @@ request.setCharacterEncoding("utf-8");
 	            <li><a href="/introduce/402881e93b41ec78013b41f8a5cf0008.html">学院简介</a></li>
 	            <li><a href="/introduce/ff8081813be9dcbc013be9e6b7a00002.html">领导简介</a></li>
 	            <li><a href="/introduce/view.jsp">校园美景</a></li>
-	            <li><a href="/introduce/contact.jsp">联系我们</a></li>
+	            <li><a href="/introduce/ff8081813bea7af0013beaa152b8000b.html">联系我们</a></li>
 	        </ul>
 	    </li>
 	    <li><a href="#">部门机构</a>
 	        <ul id="downlist">
-	            <li><a href="/organization/facultyset.jsp" >系部设置</a></li>
-	            <li><a href="/organization/depset.jsp">部门设置</a></li>
+	            <li><a href="/organization/ff8081813bea7af0013bea9a8e700008.html" >系部设置</a></li>
+	            <li><a href="/organization/ff8081813bea7af0013bea97c53f0005.html">部门设置</a></li>
 	        </ul>
 	    </li>
    		<li><a href="http://zbzs.njnu.edu.cn/trch/index.htm">教学科研</a></li>
