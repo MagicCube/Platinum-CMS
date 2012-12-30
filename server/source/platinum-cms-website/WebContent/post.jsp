@@ -44,6 +44,7 @@ request.setCharacterEncoding("utf-8");
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns:wb="http://open.weibo.com/wb">
 <head>
+	<cms:Meta/>
     <title><%= post.getTitle()%> - 南京师范大学中北学院</title>
     <link rel="stylesheet" href="/static/common/css/basic.css"/>
     <link rel="stylesheet" href="/static/common/css/post.css"/>

@@ -8,12 +8,7 @@
 <title>联系我们</title>
 <link href = "/static/common/css/basic.css" rel = "stylesheet"></link>
 <link href="/static/common/css/normal.css" rel="stylesheet"/>
-<script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
-<style type="text/css">
-    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
-    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
-</style>
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
 </head>
 <body>
 		<cms:Header/>
