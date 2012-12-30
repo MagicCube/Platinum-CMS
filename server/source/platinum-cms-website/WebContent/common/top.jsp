@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="cms" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="cms" tagdir="/WEB-INF/tags"%>
 <%
 request.setCharacterEncoding("utf-8");
 %>
@@ -7,6 +7,13 @@ request.setCharacterEncoding("utf-8");
 <link href = "/static/common/css/common.css" rel = "stylesheet"></link>
 <script src="/static/common/scripts/src/menu.js" type="text/javascript"></script>
 <script src="/static/common/scripts/src/dyamicPic.js" type="text/javascript"></script>
+
+<script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
+<style type="text/css">
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 
 <div id="layer1">
 <div id="header">

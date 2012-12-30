@@ -15,16 +15,8 @@
 <body>
 	<cms:Header/>
     <div id = "maincontent" style = "height: 660px; background: none;">
-    <ul id="album" class="PostList">
-        <% for (int i = 1; i <= 9; i++) {%>
-        <li id="x<%=i%>">
-            <a href="#">
-                <img src="/static/common/images/<%= i%>.jpg">
-                <!-- <div id="title">标题<%= i%></div> -->
-            </a>
-        </li>
-        <%} %>
-    </ul>
+    
+    <cms:PostList id="album" cssClass="PostList" subcategory="/introduce/sc000000000000000000000000000003/more/"/>
     <link rel="stylesheet" href="/static/common/scripts/lib/album/album.css"/>
     <script src="/static/common/scripts/lib/album/jquery.album.js"></script>
     <script>
