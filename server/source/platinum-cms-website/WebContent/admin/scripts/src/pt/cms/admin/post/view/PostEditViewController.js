@@ -592,9 +592,9 @@ pt.cms.admin.post.view.PostEditViewController = function()
     
     function _formatContent(p_content)
     {
-        var prefix = "http://" + window.location.host + (window.location.port ? (":" + window.location.port) : "") + "/";
+        var prefix = "\"http://" + window.location.host + (window.location.port ? (":" + window.location.port) : "") + "/";
         prefix = prefix.replace(/\./g, "\\.");
-        var result = p_content.replace(new RegExp(prefix,"ig"), "/");
+        var result = p_content.replace(new RegExp(prefix,"ig"), "\"/");
         console.log(result)
         return result;
     }
