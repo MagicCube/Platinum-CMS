@@ -6,15 +6,23 @@
 <%@ taglib prefix="cms" tagdir="/WEB-INF/tags" %>
 
 <%
-HttpClientCache clientCache = new HttpClientCache(request, response);
-clientCache.setMaxAge(30 * 24 * 60);
-%>
-
-<%
 String id = request.getParameter("id");
 String categoryId = request.getParameter("categoryId");
 PostRuntimeManager postManager = PostRuntimeManager.getInstance();
-PostEntity post = postManager.getPost(id, categoryId);
+PostEntity post = null;
+if (categoryId.equals("search"))
+{
+    post = postManager.getPost(id);
+    if (post != null)
+    {
+        response.sendRedirect(post.getLink());
+        return;
+    }
+}
+else
+{
+	post = postManager.getPost(id, categoryId);
+}
 if (post == null)
 {
     response.setStatus(404);
@@ -25,6 +33,11 @@ else if (post.getPostType() == PostType.LINK)
     response.sendRedirect(post.getSummary());
     return;
 }
+%>
+
+<%
+HttpClientCache clientCache = new HttpClientCache(request, response);
+clientCache.setMaxAge(30 * 24 * 60);
 %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
