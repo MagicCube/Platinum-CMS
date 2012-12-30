@@ -42,7 +42,6 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 <% } %>
 </ul>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="static/common/scripts/lib/bxslider/jquery.bxslider.min.js" type="text/javascript"></script>
 <script src="static/common/scripts/lib/bxslider/jquery.bxslider.js" type="text/javascript"></script>
 <link href="static/common/scripts/lib/bxslider/jquery.bxslider.css" rel="stylesheet" />

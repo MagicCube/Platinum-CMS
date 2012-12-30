@@ -3,11 +3,10 @@
 <%
 request.setCharacterEncoding("utf-8");
 %>
-
+<script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
 <link href = "/static/common/css/common.css" rel = "stylesheet"></link>
 <script src="/static/common/scripts/src/menu.js" type="text/javascript"></script>
 <script src="/static/common/scripts/src/dyamicPic.js" type="text/javascript"></script>
-<script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
 
 <div id="layer1">
 <div id="header">
