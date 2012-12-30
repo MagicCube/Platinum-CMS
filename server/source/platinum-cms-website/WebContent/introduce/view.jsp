@@ -20,7 +20,7 @@
         <li id="x<%=i%>">
             <a href="#">
                 <img src="/static/common/images/<%= i%>.jpg">
-                <div id="title">标题<%= i%></div>
+                <!-- <div id="title">标题<%= i%></div> -->
             </a>
         </li>
         <%} %>
