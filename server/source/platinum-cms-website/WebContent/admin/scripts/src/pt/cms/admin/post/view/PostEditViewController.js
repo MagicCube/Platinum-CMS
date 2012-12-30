@@ -398,7 +398,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         post.postType = parseInt(me.$postType.val());
         post.source = me.$source.val();
         
-        post.photoURL = me.$photoURL.val();
+        post.photoURL = _formatLink(me.$photoURL.val());
         if (post.photoURL == "")
         {
             post.photoURL = null;
@@ -595,6 +595,15 @@ pt.cms.admin.post.view.PostEditViewController = function()
         var prefix = "\"http://" + window.location.host + (window.location.port ? (":" + window.location.port) : "") + "/";
         prefix = prefix.replace(/\./g, "\\.");
         var result = p_content.replace(new RegExp(prefix,"ig"), "\"/");
+        console.log(result)
+        return result;
+    }
+    
+    function _formatLink(p_content)
+    {
+        var prefix = "http://" + window.location.host + (window.location.port ? (":" + window.location.port) : "") + "/";
+        prefix = prefix.replace(/\./g, "\\.");
+        var result = p_content.replace(new RegExp(prefix,"ig"), "/");
         console.log(result)
         return result;
     }
