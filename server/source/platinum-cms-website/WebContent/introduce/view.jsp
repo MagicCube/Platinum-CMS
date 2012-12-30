@@ -9,12 +9,12 @@
 <title>校园美景</title>
 <link href = "/static/common/css/basic.css" rel = "stylesheet"></link>
 <link href="/static/common/css/normal.css" rel="stylesheet"/>
-<script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
 <link rel="stylesheet" href="/static/common/scripts/lib/album/album.css"/>
-<script src="/static/common/scripts/lib/album/jquery.album.js"></script>
 </head>
 <body>
 	<cms:Header/>
+	<script src="/static/common/scripts/lib/album/jquery.album.js"></script>
+	
     <div id = "maincontent" style = "height: 660px; background: none;">
     
     <cms:PostList id="album" subcategoryId="sc000000000000000000000000000003" displayPhoto="true" count="1"/>
