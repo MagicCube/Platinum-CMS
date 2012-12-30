@@ -38,7 +38,7 @@ request.setCharacterEncoding("utf-8");
 	            <li><a href="/introduce/402881e93b41ec78013b41f8a5cf0008.html">学院简介</a></li>
 	            <li><a href="/introduce/ff8081813be9dcbc013be9e6b7a00002.html">领导简介</a></li>
 	            <li><a href="/introduce/view.jsp">校园美景</a></li>
-	            <li><a href="/introduce/ff8081813bea7af0013beaa152b8000b.html">联系我们</a></li>
+	            <li><a href="/introduce/contact.jsp">联系我们</a></li>
 	        </ul>
 	    </li>
 	    <li><a href="#">部门机构</a>
