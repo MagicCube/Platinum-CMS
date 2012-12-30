@@ -69,6 +69,14 @@ public class PostRuntimeManager
 	}
 	public List<PostEntity> loadLatestPostsByCategory(String p_categoryId, boolean p_hasPhoto, String p_extra, int p_pageIndex, int p_pageSize)
 	{
+		if (p_pageIndex < 0)
+		{
+			p_pageIndex = 0;
+		}
+		if (p_pageSize < 0)
+		{
+			p_pageSize = 0;
+		}
 		DAOQuery query = _createQuery("categoryId=:categoryId", p_hasPhoto, p_extra);
 		query.setPageIndex(p_pageIndex);
 		query.setPageSize(p_pageSize);
@@ -110,6 +118,15 @@ public class PostRuntimeManager
 	}
 	public List<PostEntity> loadLatestPostsBySubcategory(String p_subcategoryId, boolean p_hasPhoto, String p_extra, int p_pageIndex, int p_pageSize)
 	{
+		if (p_pageIndex < 0)
+		{
+			p_pageIndex = 0;
+		}
+		if (p_pageSize < 0)
+		{
+			p_pageSize = 0;
+		}
+		
 		DAOQuery query = _createQuery("subcategory_id=:subcategoryId", p_hasPhoto, p_extra);
 		query.setCachable(true);
 		query.setPageIndex(p_pageIndex);
