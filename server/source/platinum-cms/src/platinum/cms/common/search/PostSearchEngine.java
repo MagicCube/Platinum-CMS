@@ -233,7 +233,14 @@ public class PostSearchEngine
 				}
 				else
 				{
-					result.setSummary(content.substring(0, p_fragmentSize));
+					if  (content.length() > p_fragmentSize)
+					{
+						result.setSummary(content.substring(0, p_fragmentSize));
+					}
+					else
+					{
+						result.setSummary(content);
+					}
 				}
 				
 				
