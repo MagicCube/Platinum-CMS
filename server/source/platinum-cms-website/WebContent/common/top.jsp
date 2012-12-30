@@ -58,8 +58,8 @@
 	    </li>  
 	    <li><a href="#">交流合作</a>
 	        <ul id="downlist">
-	            <li><a href="http://zbzs.njnu.edu.cn/project.asp">海外学习计划</a></li>
-	            <!-- <li class = "subMenu"><a href = "/cooperation/ff8081813b7a2ecd013b7a3a0ece000b.html">联合办学</a></li> -->
+	            <li><a href="/cooperation/4028b8813be95bab013be96125160002.html">海外学习计划</a></li>
+	            <!-- <li class = "subMenu"><a href = "/cooperation/f8081813b7a2ecd013b7a3a0ece000b.html">联合办学</a></li> -->
 	        </ul>
 	    </li>
 	    <li><a href="#">公共服务</a>

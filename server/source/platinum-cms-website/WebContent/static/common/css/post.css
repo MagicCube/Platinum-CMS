@@ -1,7 +1,19 @@
+a
+{
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover
+{
+	color: blue;
+}
+
+
 #postDetail
 {
 	width: 692px;
-    min-height: 600px;
+    min-height: 650px;
     height: 100%;
     padding-right: 10px;
 }
@@ -82,7 +94,7 @@
 #attachmentList
 {
 	display: block;
-	padding: 10px 0 0 0;
+	padding: 10px 0 20px 20px;
 }
 
 #attachmentList a

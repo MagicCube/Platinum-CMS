@@ -19,6 +19,13 @@
 	height: 100%;
 }
 
+#text
+{
+	font-size: 14px;
+	color: #fff;
+	margin-top: 10px;
+	margin-left: 20px;
+}
 
 #schoollabel
 {
