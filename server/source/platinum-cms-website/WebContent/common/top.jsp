@@ -34,7 +34,7 @@ request.setCharacterEncoding("utf-8");
    		<li><a href ="#">学院概况</a>
 	        <ul id="downlist">
 	            <li><a href="/introduce/402881e93b41ec78013b41f8a5cf0008.html">学院简介</a></li>
-	            <li><a href="/introduce/leader.jsp">领导简介</a></li>
+	            <li><a href="/introduce/ff8081813be9dcbc013be9e6b7a00002.html">领导简介</a></li>
 	            <li><a href="/introduce/view.jsp">校园美景</a></li>
 	            <li><a href="/introduce/contact.jsp">联系我们</a></li>
 	        </ul>
@@ -61,7 +61,7 @@ request.setCharacterEncoding("utf-8");
 	    </li>  
 	    <li><a href="#">交流合作</a>
 	        <ul id="downlist">
-	            <li><a href="/cooperation/4028b8813be95bab013be96125160002.html">海外学习计划</a></li>
+	            <li><a href="/cooperation/ff8081813be951ee013be993b7240002.html">海外学习计划</a></li>
 	            <!-- <li class = "subMenu"><a href = "/cooperation/f8081813b7a2ecd013b7a3a0ece000b.html">联合办学</a></li> -->
 	        </ul>
 	    </li>
