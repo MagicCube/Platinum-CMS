@@ -12,12 +12,14 @@ request.setCharacterEncoding("utf-8");
 <div id="header">
 			<span style="float: left; margin-top: 18px; display: block;"><a href="/"><img src="/static/common/images/logo.png" title="首页" alt=""/></a></span>
 			<div id="dynamic">
+				<a href="/introduce/view.jsp">
 				<ul id="dttpList">
 					<li><img src="/static/common/images/h1.png" alt="1"/></li>
 					<li><img src="/static/common/images/h2.png" alt="2"/></li>
 					<li><img src="/static/common/images/h3.png" alt="3"/></li>
 					<li><img src="/static/common/images/h4.png" alt="4"/></li>
 				</ul>
+				</a>
 			</div>
 			<div id="headerRight">
 					<form id="search" action="/search" method="get">
