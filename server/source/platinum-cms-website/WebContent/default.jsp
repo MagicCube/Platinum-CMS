@@ -54,7 +54,7 @@ request.setCharacterEncoding("utf-8");
 			</div>
 			
 			<div id="usedlink">
-				<div id="linklabel"><span><img style="margin: 0 0 0 -16px" src="/static/home/images/usedlabel.png"/></span></div>
+				<div id="linklabel"><span id="text">常用链接</span></div>
 				 <ul id="left">
 					<li><a href="http://zbvip.njnu.edu.cn/">教工之家</a></li>
 					<li><a href="http://222.192.5.246/(khvomn45dim5kn3kj4t0gh55)/default2.aspx">教务系统</a></li>

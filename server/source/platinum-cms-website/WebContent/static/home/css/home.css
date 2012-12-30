@@ -34,7 +34,7 @@
 	left: -6px;
 	height: 50px;
 	width: 280px;
-	background: url(../images/schoollabel.png) no-repeat;	
+	background: url(../images/label.png) no-repeat;	
 }
 
 #newslabel
@@ -44,7 +44,7 @@
 	left: -6px;
 	height: 50px;
 	width: 280px;
-	background: url(../images/newslabel.png) no-repeat;	
+	background: url(../images/label.png) no-repeat;	
 }
 
 #labellong
@@ -57,7 +57,7 @@
 	background: url(../images/labellong.png) no-repeat;	
 }
 
-#label span
+#middle span#text
 {
 	display: block;
 	color: white;
@@ -66,14 +66,7 @@
 	font-weight: bold;
 }
 
-#labellong span
-{
-	display: block;
-	color: white;
-	font-size: 14px;
-	padding: 3px 0 0 0;
-	font-weight: bold;
-}
+
 #morelabel
 {
 	position: absolute;
@@ -102,9 +95,11 @@
 #linklabel
 {
 	position: absolute;
-	left: 10px;
-	color: #60be00;
-	font-size: 16px;
+	top: 0;
+	left: -6px;
+	height: 50px;
+	width: 280px;
+	background: url(../images/label.png) no-repeat;	
 }
 
 #news
