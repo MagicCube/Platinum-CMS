@@ -23,7 +23,7 @@ request.setCharacterEncoding("utf-8");
 <body>
 		<cms:Header/>
 		<div id="code">
-			<a href="#"><img src="/static/common/images/code.png" title="扫描或点击体验中北学院移动门户" height="80px" width="80px"/></a>
+			<img src="/static/common/images/code.png" title="扫描体验中北学院移动门户" height="80px" width="80px"/>
 		</div>
 	
 		<div id="middle">
