@@ -191,12 +191,16 @@ ul#text_school
 
 ul#text_school li
 {
+	width: 270px;
     line-height: 20px;
     margin: 0 0 10px 0;
     padding:　0;      
     margin-left: 5px;
     margin-right: 5px;
     border-bottom: 1px #ddd solid;
+    white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 ul#text_school li a
@@ -225,16 +229,23 @@ ul#text_inform
 	padding: 0;
 	margin: 0;
 	list-style: inside url(/static/common/images/list.png);
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 ul#text_inform > li
 {
+	width: 360px;
 	line-height: 20px;
     margin: 0 0 10px 0;
     padding:　0;      
     margin-left: 5px;
     margin-right: 5px;
-    border-bottom: 1px #ddd solid;	
+    border-bottom: 1px #ddd solid;
+    white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;	
 }
 
 ul#text_inform  li  a
@@ -265,12 +276,16 @@ ul#textContent
 
 ul#textContent > li
 {
+	width: 270px;
 	line-height: 20px;
     margin: 0 0 10px 0;
     padding:　0;      
     margin-left: 5px;
     margin-right: 5px;
     border-bottom: 1px #ddd solid;	
+    white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 ul#textContent > li > a

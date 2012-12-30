@@ -35,20 +35,20 @@ request.setCharacterEncoding("utf-8");
 			<div id="news">
 				<div id="newslabel"><span id="text">新闻动态</span></div>	
 				<cms:PostList id="xwdtList1" cssClass="PhotoList" subcategoryId="sc000000000000000000000000000006" displayPhoto="true" count="1" />
-				<cms:PostList id="textContent" subcategoryId="sc000000000000000000000000000006" where="photoURL is null" count="5" />
+				<cms:PostList id="textContent" subcategoryId="sc000000000000000000000000000006" where="photoURL is null" count="7" />
 				<div id="morelabel"><a href="/news/sc000000000000000000000000000006/more/">更多</a></div>
 			</div>
 			
 			<div id="school">
 				<div id="schoollabel"><span id="text">校园动态</span></div>
 				<!--<cms:PostList id="xydtList1" cssClass="PhotoList" subcategoryId="sc000000000000000000000000000020" displayPhoto="true" count="1" />-->
-				<cms:PostList id="text_school" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="6" />
+				<cms:PostList id="text_school" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="9" />
 				<div id="morelabel"><a href="/news/sc000000000000000000000000000020/more/">更多</a></div>
 			</div>
 			
 			<div id="inform">
 				<div id="labellong"><span id="text">通知公告</span></div>
-				<cms:PostList id="text_inform" subcategoryId="sc000000000000000000000000000008" where="photoURL is null" count="4" />
+				<cms:PostList id="text_inform" subcategoryId="sc000000000000000000000000000008" where="photoURL is null" count="5" />
 				<div id="morelabel"><a href="/news/sc000000000000000000000000000008/more/">更多</a></div>
 			</div>
 			
