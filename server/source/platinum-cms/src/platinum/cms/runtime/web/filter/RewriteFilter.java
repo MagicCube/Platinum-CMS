@@ -43,7 +43,19 @@ public class RewriteFilter implements Filter
 		String uri = request.getRequestURI();
 		
 		Matcher matcher = null;
-		if ((matcher = _postURLPattern.matcher(uri)).find())
+		if(uri.equals("/introduce/12345678be9e6b7a00002be9e6b7a0d.html"))
+		{
+			request.getRequestDispatcher("/introduce/view.jsp").forward(request, response);
+		}
+		else if(uri.equals("/introduce/12345679be9e6b7a00002be9e6b7a0d.html"))
+		{
+			request.getRequestDispatcher("/introduce/contact.jsp").forward(request, response);
+		}
+		else if(uri.equals("/service/92345678be9e6b7a00002be9e6b7a0d.html"))
+		{
+			request.getRequestDispatcher("/service/guide.jsp").forward(request, response);
+		}
+		else if ((matcher = _postURLPattern.matcher(uri)).find())
 		{
 			String categoryId = matcher.group(1);
 			String postId = matcher.group(2);

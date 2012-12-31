@@ -37,8 +37,8 @@ request.setCharacterEncoding("utf-8");
 	        <ul id="downlist">
 	            <li><a href="/introduce/402881e93b41ec78013b41f8a5cf0008.html">学院简介</a></li>
 	            <li><a href="/introduce/ff8081813be9dcbc013be9e6b7a00002.html">领导简介</a></li>
-	            <li><a href="/introduce/view.jsp">校园美景</a></li>
-	            <li><a href="/introduce/contact.jsp">联系我们</a></li>
+	            <li><a href="/introduce/12345678be9e6b7a00002be9e6b7a0d.html">校园美景</a></li>
+	            <li><a href="/introduce/12345679be9e6b7a00002be9e6b7a0d.html">联系我们</a></li>
 	        </ul>
 	    </li>
 	    <li><a href="#">部门机构</a>
@@ -71,7 +71,7 @@ request.setCharacterEncoding("utf-8");
 	        <ul id="downlist">
 	            <li><a href="/service/ff8081813b6fee04013b6fef4b390002.html">教学周历</a></li>
 	            <!-- <li><a href="/service/ff8081813b7a2ecd013b7a384fb20008.html">来稿须知</a></li> -->
-	            <li><a href="/service/guide.jsp">办事指南</a></li>
+	            <li><a href="/service/92345678be9e6b7a00002be9e6b7a0d.html">办事指南</a></li>
 	            <li><a href="/service/ff8081813b6fee04013b6ff2b1d90011.html">作息时间</a></li>	            
 	            <li><a href="/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话</a></li>
 	            <li><a href="/service/ff8081813b6fee04013b6ff158fb0008.html">校园交通</a></li>
