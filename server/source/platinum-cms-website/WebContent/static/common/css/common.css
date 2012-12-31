@@ -47,7 +47,7 @@ input
 {
 	position: fixed;
 	right: 0;
-	top: 500px;
+	top: 400px;
 	border: 2px #fff solid;
 	z-index: 99999999;
 }
@@ -98,6 +98,7 @@ input
 	margin-top: 30px;
 	margin-bottom: 10px;
 	float: right;
+	overflow-y: hidden;
 }
 
 #searchline
