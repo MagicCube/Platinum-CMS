@@ -4,7 +4,7 @@
 <div id="footer">
 	<div id="copyright">
 		<div id="part1" style="padding-top: 25px; margin-left: auto; margin-right: auto;">
-			<p>2012 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院</p>
+			<p>2013 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院</p>
 			<!-- <p>苏ICP备05080300号</p> -->
 		</div>
 	</div>
