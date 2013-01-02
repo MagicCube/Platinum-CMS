@@ -12,7 +12,7 @@
 <script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
 <style>
 h2{
- font-size:12pt; font-weight:bold;font-family:"微软雅黑";text-align:center; 	
+	font-size:12pt; font-weight:bold;font-family:"微软雅黑";text-align:center; 	
 }
 </style>
 </head>

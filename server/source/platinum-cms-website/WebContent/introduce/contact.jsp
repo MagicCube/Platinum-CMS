@@ -15,7 +15,7 @@
 <link href="/static/common/css/normal.css" rel="stylesheet"/>
 <style>
 h2{
- font-size:12pt; font-weight:bold;font-family:"微软雅黑";text-align:center; 	
+	font-size:12pt; font-weight:bold;font-family:"微软雅黑";text-align:center; 	
 }
 </style>
 </head>
