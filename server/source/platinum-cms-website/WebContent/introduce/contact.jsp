@@ -13,7 +13,11 @@
 </style>
 <link href = "/static/common/css/basic.css" rel = "stylesheet"></link>
 <link href="/static/common/css/normal.css" rel="stylesheet"/>
-
+<style>
+h2{
+	font-size:12pt; font-weight:bold;font-family:"微软雅黑";text-align:center; 	
+}
+</style>
 </head>
 <body>
 		<cms:Header/>
