@@ -35,26 +35,19 @@
   <h1>当前位置：@<a href="../">首页</a>@校园美景</h1>
 
 <div class="pictrues">
-	<ul >
-    <li>
-        <div><img src="../../../static/common/images/show/v1.gif" width="80%" height="50%"/></div>
-    </li>
-    <li>
-        <div><img src="../../../static/common/images/show/v2.gif" width="80%" height="50%"/></div>
-    </li>
-    <li>
-        <div><img src="../../../static/common/images/show/v3.gif" width="80%" height="50%"/></div>
-    </li>
-    <li>
-        <div><img src="../../../static/common/images/show/v4.gif" width="80%" height="50%"/></div>
-    </li>
-    <li>
-        <div><img src="../../../static/common/images/show/v5.gif" width="80%" height="50%"/></div>
-    </li>
-    <li>
-        <div><img src="../../../static/common/images/show/v6.gif" width="80%" height="50%"/></div>
-    </li>
-  </ul> 
+	<div id = "maincontent" style = "height: 660px; background: none;">
+    
+    <cms:PostList id="album" subcategoryId="sc000000000000000000000000000003" displayPhoto="true" count="18"/>
+    <script>
+    $("#album")
+        .album({
+            cellWidth: 320,
+            cellHeight: 210,
+            padding: 10
+        })
+        .height(221 * 3);
+    </script>
+    </div>
 </div>
 
   <cms:Footer path="pic"></cms:Footer>
