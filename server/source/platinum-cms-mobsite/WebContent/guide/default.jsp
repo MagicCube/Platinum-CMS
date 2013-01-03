@@ -21,7 +21,7 @@
         <h1>当前位置：><a href="../">首页</a>>办事指南</h1>
         <hr></hr> 
   <div class="r_con02_front">
-  <cms:PostList id="tzggList" subcategoryId="sc000000000000000000000000000008" count="7"/>
+  <cms:PostList id="tzggList" subcategoryId="sc000000000000000000000000000019" count="7"/>
   </div>
   
 
