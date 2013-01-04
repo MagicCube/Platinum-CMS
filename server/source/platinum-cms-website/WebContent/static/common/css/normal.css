@@ -7,18 +7,6 @@ p
 	line-height: 20px;
 }
 
-#MainBox
-{
-	position: relative;
-	width: 990px;
-	margin-left: auto;
-	margin-right: auto;
-	background: white;
-	border-radius: 10px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
-
 #maincontent
 {
 	margin-left: auto;
