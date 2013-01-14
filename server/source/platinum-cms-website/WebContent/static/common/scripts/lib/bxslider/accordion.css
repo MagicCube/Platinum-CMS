@@ -1,0 +1,17 @@
+/* CSS Document */
+
+ul#accordion-slider{
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ position: relative;
+}
+
+ul#accordion-slider li{
+ display: block;
+ overflow: hidden;
+ padding: 0;
+ float: left;
+ width: 160px;  
+ height: 350px;
+}
