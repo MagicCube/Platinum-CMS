@@ -45,7 +45,7 @@
 	left: -6px;
 	height: 50px;
 	width: 350px;
-	background: url(../images/label.png) no-repeat;	
+	background: url(../images/labellong.png) no-repeat;	
 }
 
 #labellong
@@ -55,7 +55,7 @@
 	left: -6px;
 	height: 50px;
 	width: 300px;
-	background: url(../images/labellong.png) no-repeat;	
+	background: url(../images/label.png) no-repeat;	
 }
 
 #middle span#text
@@ -99,7 +99,7 @@
 	top: 0;
 	left: -6px;
 	height: 50px;
-	width: 280px;
+	width: 300px;
 	background: url(../images/label.png) no-repeat;	
 }
 
@@ -277,7 +277,7 @@ ul#textContent
 
 ul#textContent > li
 {
-	width: 350px;
+	width: 340px;
 	line-height: 20px;
     margin: 0 0 10px 0;
     padding:銆�;      
@@ -305,19 +305,9 @@ ul#textContent li a > div
 	display: inline;
 }
 
-ul.PhotoList
+#xwdtList1 a
 {
-	position: absolute;
-	display: block;
-	top: 50px;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-
-ul.PhotoList li
-{
-	width: 100%;
+	width:320px;
 }
 
 
@@ -335,9 +325,9 @@ ul.PhotoList li a
 
 ul.PhotoList li a img
 {
-	width: 210;
+	width: 210px;
 	height: 140px;
-	margin-left: 25px;
+	margin-left: 40px;
 	box-shadow: gray 0px 1px 10px;
 }
 
@@ -351,6 +341,29 @@ ul.PhotoList li a #title
 	margin-top: 10px;
 	line-height: 15px;
 }
+
+#xwdtList1 #title
+{
+	font-size:14px;
+	width:300px;
+}
+ul.PhotoList
+{
+	width:100%;
+	position: absolute;
+	display: block;
+	top: 50px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ul.PhotoList li
+{
+	width: 100%;
+}
+
+
 
 #part1
 {

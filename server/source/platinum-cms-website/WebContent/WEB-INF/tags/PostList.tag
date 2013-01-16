@@ -120,3 +120,4 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 <cms:PageNavigationBar id="pageNavigationBar" pageIndex="<%= pageIndex%>" pageSize="<%= pageSize%>" displayNextButton="<%= posts.size() == pageSize%>"/>
 <% }%>
 </ul>
+
