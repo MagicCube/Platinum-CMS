@@ -11,8 +11,7 @@
 
 #photoslider
 {
-	border-top:#4e9b00 5px solid;
-	border-bottom:#4e9b00 5px solid;
+	border:#4e9b00 5px solid;
 	position: absolute;
 	display: block;
 	top: 0px;
