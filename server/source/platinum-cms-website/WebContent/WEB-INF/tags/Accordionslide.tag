@@ -39,6 +39,9 @@ else if (StringUtil.notNullOrEmpty(categoryId))
       	  <img src='<%= post.getPhotoURL()%>' title='<%= post.getTitle()%>'  width='500' height='300'/>
      	  <% } %>
    	</a>
+   	<div class="bx-caption">
+   		<span><%= post.getTitle()%></span>
+   	</div>
 </li>
 <% } %>
 </ul>

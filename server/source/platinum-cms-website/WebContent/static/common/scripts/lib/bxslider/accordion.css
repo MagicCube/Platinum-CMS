@@ -15,3 +15,22 @@ ul#accordion-slider li{
  width: 163px;  
  height: 300px;
 }
+.bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+.bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+	font-size: 14px;
+	line-height: 15px;
+	height:35px;
+	overflow:hidden;
+}
