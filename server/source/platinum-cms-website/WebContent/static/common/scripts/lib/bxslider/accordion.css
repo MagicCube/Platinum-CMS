@@ -30,7 +30,8 @@ ul#accordion-slider li{
 	font-size: .85em;
 	padding: 10px;
 	font-size: 14px;
-	line-height: 15px;
+	line-height: 35px;
 	height:35px;
 	overflow:hidden;
+	text-align:center;
 }
