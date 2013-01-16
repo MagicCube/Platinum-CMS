@@ -19,7 +19,7 @@ request.setCharacterEncoding("utf-8");
 <link href="/static/home/css/home1.css" rel = "stylesheet"></link> 
 
 </head>
-<body>
+<body style="background-image:url('/static/common/scripts/lib/bxslider/wenli-1.jpg');">
 		<cms:Header/>
 		<div id="code">
 			<a href="http://211.65.211.222:8080"><img src="/static/common/images/code.png" title="扫描或点击体验中北学院移动门户" height="80px" width="80px"/></a>
@@ -69,6 +69,14 @@ request.setCharacterEncoding("utf-8");
 			</div>
 			
 		</div> 
-		<cms:Footer/>
+		<div id="mainfooter">
+			<div id="copyright">
+				<div id="part1" style="padding-top: 25px; margin-left: auto; margin-right: auto;">
+					<p>2013 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院</p>
+					<!-- <p>苏ICP备05080300号</p> -->
+				</div>
+			</div>
+		</div>
+
 </body>
 </html>
