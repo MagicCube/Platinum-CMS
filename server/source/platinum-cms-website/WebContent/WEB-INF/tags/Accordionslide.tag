@@ -30,30 +30,35 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 }
 %>
 
-<ul id="${id}" class="PhotoSlide ${cssClass}">
+
+<ul id="${id}" >
 <% for (PostEntity post : posts) {%>
 <li>
    	<a href="<%= post.getLink()%>">
      	  <% if (displayPhoto) {%>
-      	  <img src='<%= post.getPhotoURL()%>'  height='250' title='<%= post.getTitle()%>'/>
+      	  <img src='<%= post.getPhotoURL()%>' title='<%= post.getTitle()%>'  width='500' height='300'/>
      	  <% } %>
    	</a>
+   	<div class="bx-caption">
+   		<span><%= post.getTitle()%></span>
+   	</div>
 </li>
 <% } %>
 </ul>
 
-<script src="static/common/scripts/lib/bxslider/jquery.bxslider.min.js" type="text/javascript"></script>
-<script src="static/common/scripts/lib/bxslider/jquery.bxslider.js" type="text/javascript"></script>
-<link href="static/common/scripts/lib/bxslider/jquery.bxslider.css" rel="stylesheet" />
+
+<link href="static/common/scripts/lib/bxslider/accordion.css" rel="stylesheet"  media="screen"/>
+<script src="static/common/scripts/lib/bxslider/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="static/common/scripts/lib/bxslider/jquery.kwicks-1.5.1.js" type="text/javascript"></script>
+
 
 <script>
-	$(document).ready(function(){
-		  $('.bxslider').bxSlider({
-			  auto: true,
-			  controls: true,
-			  speed: 1000,
-			  useCSS: true,
-			  captions: true,
-			  mode: 'fade'});
+	$().ready(function() {
+	 	$('#accordion-slider').kwicks({
+	 		max : 500,
+	 		spacing : 0
+	 	});
 	});
 </script>
+
+

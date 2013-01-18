@@ -35,9 +35,17 @@
   <h1>当前位置：@<a href="../">首页</a>@校园美景</h1>
 
 <div class="pictrues">
+<<<<<<< HEAD
+<script src="/static/common/scripts/lib/album/jquery.album.js"></script>
+	
+    <div id = "maincontent" style = "height: 660px; background: none;">
+    
+    <cms:PostList  id="album" subcategoryId="sc000000000000000000000000000003" displayPhoto="true" count="18"/>
+=======
 	<div id = "maincontent" style = "height: 660px; background: none;">
     
     <cms:PostList id="album" subcategoryId="sc000000000000000000000000000003" displayPhoto="true" count="18"/>
+>>>>>>> branch 'master' of http://github.com/MagicCube/Platinum.git
     <script>
     $("#album")
         .album({

@@ -8,6 +8,9 @@
 	margin-right: auto;
 	position: relative;
 }
+.pictrues ul li img { 
+	width:100%;
+}
 
 
 #content > #left

@@ -12,7 +12,7 @@ request.setCharacterEncoding("utf-8");
 <div id="header">
 			<span style="float: left; margin-top: 18px; display: block;"><a href="/"><img src="/static/common/images/logo.png" title="首页" alt=""/></a></span>
 			<div id="dynamic">
-				<a href="/introduce/view.jsp">
+				<a href="/introduce/12345678be9e6b7a00002be9e6b7a0d.html">
 				<ul id="dttpList">
 					<li><img src="/static/common/images/h1.png" alt="1"/></li>
 					<li><img src="/static/common/images/h2.png" alt="2"/></li>

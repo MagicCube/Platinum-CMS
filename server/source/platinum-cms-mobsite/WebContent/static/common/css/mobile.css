@@ -76,6 +76,11 @@ a: hover {
 .black: hover,.black a: hover {
 	text-decoration: none;
 }
+.pictrues ul li img { 
+	width:100%;
+}
+
+
 .orange,.orange a {
 	color: #ff4200!important;
 	text-decoration: none;
