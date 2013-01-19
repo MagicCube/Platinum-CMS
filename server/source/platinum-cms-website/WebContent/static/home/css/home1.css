@@ -35,7 +35,7 @@
 	left: -6px;
 	height: 50px;
 	width: 280px;
-	background: url(../images/label.png) no-repeat;	
+	background: url(../images/labeldan.png) no-repeat;	
 }
 
 #newslabel
@@ -45,7 +45,7 @@
 	left: -6px;
 	height: 50px;
 	width: 350px;
-	background: url(../images/labellong.png) no-repeat;	
+	background: url(../images/labellongdan.png) no-repeat;	
 }
 
 #labellong
@@ -55,7 +55,7 @@
 	left: -6px;
 	height: 50px;
 	width: 300px;
-	background: url(../images/label.png) no-repeat;	
+	background: url(../images/labeldan.png) no-repeat;	
 }
 
 #middle span#text
@@ -76,7 +76,7 @@
 	width: 50px;
 	bottom: 10px;
 	right: 5px;
-	background: #60be00;
+	background: #48b324;
 	border-radius: 5px;	
 }
 
@@ -100,7 +100,7 @@
 	left: -6px;
 	height: 50px;
 	width: 300px;
-	background: url(../images/label.png) no-repeat;	
+	background: url(../images/labeldan.png) no-repeat;	
 }
 
 #news
@@ -377,5 +377,5 @@ ul.PhotoList li
 	width: 990px;
 	height: 60px;
 	margin:auto;
-	background: url(/static/common/images/greenopacity.png);
+	background: url(/static/common/images/greenopacitydan.png);
 }
