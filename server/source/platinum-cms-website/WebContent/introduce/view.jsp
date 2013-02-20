@@ -13,11 +13,12 @@
 </head>
 <body>
 	<cms:Header/>
-	<script src="/static/common/scripts/lib/album/jquery.album.js"></script>
+	<script src="/static/common/scripts/lib/album/jquery.album.js"></script> 
 	
     <div id = "maincontent" style = "height: 660px; background: none;">
     
-    <cms:PostList id="album" subcategoryId="sc000000000000000000000000000003" displayPhoto="true" count="18"/>
+    <cms:PostList id="album" subcategoryId="sc000000000000000000000000000003"  displayPageNavigationBar="true" displayPhoto="true"   count="18"/>
+    
     <script>
     $("#album")
         .album({
