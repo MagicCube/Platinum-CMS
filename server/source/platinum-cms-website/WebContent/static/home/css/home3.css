@@ -3,7 +3,7 @@
 	position: relative;
 	display: block;
 	width: 990px;
-	min-height: 588px;
+	min-height: 780px;
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;	
@@ -11,12 +11,13 @@
 
 #photoslider
 {
+	border:#62d03a 5px solid;
 	position: absolute;
 	display: block;
-	top: 0px;
-	left: 10px;
-	width: 375px;
-	height: 100%;
+	top: -5px;
+	left: 0px;
+	width: 978px;
+	height: 300px;
 }
 
 #text
@@ -34,7 +35,7 @@
 	left: -6px;
 	height: 50px;
 	width: 280px;
-	background: url(../images/label.png) no-repeat;	
+	background: url(../images/labeldan.png) no-repeat;	
 }
 
 #newslabel
@@ -43,8 +44,8 @@
 	top: 0;
 	left: -6px;
 	height: 50px;
-	width: 280px;
-	background: url(../images/label.png) no-repeat;	
+	width: 350px;
+	background: url(../images/labellongdan.png) no-repeat;	
 }
 
 #labellong
@@ -53,8 +54,8 @@
 	top: 0;
 	left: -6px;
 	height: 50px;
-	width: 370px;
-	background: url(../images/labellong.png) no-repeat;	
+	width: 300px;
+	background: url(../images/labeldan.png) no-repeat;	
 }
 
 #middle span#text
@@ -75,7 +76,7 @@
 	width: 50px;
 	bottom: 10px;
 	right: 5px;
-	background: #60be00;
+	background: #48b324;
 	border-radius: 5px;	
 }
 
@@ -98,17 +99,17 @@
 	top: 0;
 	left: -6px;
 	height: 50px;
-	width: 280px;
-	background: url(../images/label.png) no-repeat;	
+	width: 300px;
+	background: url(../images/labeldan.png) no-repeat;	
 }
 
 #news
 {
 	position: absolute;
-	top: 0;
-	left: 400px;
-	height: 560px;
-	width: 280px;
+	top: 320px;
+	left: 0px;
+	height: 445px;
+	width: 350px;
 	background: white;
 	border-radius: 5px;
 }
@@ -117,9 +118,9 @@
 #inform
 {
 	position: absolute;
-	top: 270px;
-	left: 10px;
-	width: 370px;
+	top: 320px;
+	left: 690px;
+	width: 300px;
 	height: 290px;
 	background: white;
 	border-radius: 5px;
@@ -128,9 +129,9 @@
 #usedlink
 {
 	position: absolute;
-	top: 410px; 
-	left: 700px;
-	width: 280px;
+	top: 615px; 
+	left: 690px;
+	width: 300px;
 	height: 150px;
 	background: white;
 	border-radius: 5px;	
@@ -171,10 +172,10 @@
 #school
 {
 	position: absolute;
-	top: 0;
-	left: 700px;
-	width: 280px;
-	height: 395px;
+	top: 320px;
+	left: 370px;
+	width: 300px;
+	height: 445px;
 	background: white;
 	border-radius: 5px;
 }
@@ -194,7 +195,7 @@ ul#text_school li
 	width: 270px;
     line-height: 20px;
     margin: 0 0 10px 0;
-    padding:　0;      
+    padding:銆�;      
     margin-left: 5px;
     margin-right: 5px;
     border-bottom: 1px #ddd solid;
@@ -236,10 +237,10 @@ ul#text_inform
 
 ul#text_inform > li
 {
-	width: 360px;
+	width: 285px;
 	line-height: 20px;
     margin: 0 0 10px 0;
-    padding:　0;      
+    padding:銆�;      
     margin-left: 5px;
     margin-right: 5px;
     border-bottom: 1px #ddd solid;
@@ -276,10 +277,10 @@ ul#textContent
 
 ul#textContent > li
 {
-	width: 270px;
+	width: 340px;
 	line-height: 20px;
     margin: 0 0 10px 0;
-    padding:　0;      
+    padding:銆�;      
     margin-left: 5px;
     margin-right: 5px;
     border-bottom: 1px #ddd solid;	
@@ -304,19 +305,9 @@ ul#textContent li a > div
 	display: inline;
 }
 
-ul.PhotoList
+#xwdtList1 a
 {
-	position: absolute;
-	display: block;
-	top: 50px;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-
-ul.PhotoList li
-{
-	width: 100%;
+	width:320px;
 }
 
 
@@ -334,9 +325,9 @@ ul.PhotoList li a
 
 ul.PhotoList li a img
 {
-	width: 210;
+	width: 210px;
 	height: 140px;
-	margin-left: 25px;
+	margin-left: 40px;
 	box-shadow: gray 0px 1px 10px;
 }
 
@@ -349,4 +340,42 @@ ul.PhotoList li a #title
 	font-weight: bold;
 	margin-top: 10px;
 	line-height: 15px;
+}
+
+#xwdtList1 #title
+{
+	font-size:14px;
+	width:300px;
+}
+ul.PhotoList
+{
+	width:100%;
+	position: absolute;
+	display: block;
+	top: 50px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ul.PhotoList li
+{
+	width: 100%;
+}
+
+
+
+#part1
+{
+	text-align:center;
+	font-size: 12px;
+	font-weight:bold;
+	color:#fff;
+}
+#mainfooter
+{
+	width: 990px;
+	height: 60px;
+	margin:auto;
+	background: url(/static/common/images/greenopacitydan.png);
 }
