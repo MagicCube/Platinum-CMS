@@ -76,8 +76,9 @@ a: hover {
 .black: hover,.black a: hover {
 	text-decoration: none;
 }
-.pictrues ul li img { 
-	width:100%;
+.pictrues ul li img {
+	margin-right:30px;
+	width:90%;
 }
 
 
@@ -618,13 +619,16 @@ a.m_cencel {
 	overflow: hidden;
 	clear: both;
 	zoom: 1;
+	backgrondcoler:#239b8b;
 }
 .notice_front h3 {
 	font-size:17px;
 	height: 31px;
 	line-height: 31px;
+	color:#239b8b;
 	background: url(../images/mt_bg.gif) repeat-x;
 	clear: both;
+    backgroundcoler:#239b8b;
 }
 .notice_front h3 span {
 	float: left;
