@@ -26,11 +26,11 @@ request.setCharacterEncoding("utf-8");
 		</div>
 	
 		<div id="middle">
-		
-			<div id="photoslider">
-				<cms:Accordionslide id="accordion-slider" cssClass="bxslider" subcategoryId="sc000000000000000000000000000207" displayPhoto="true" count="6" />	
+			<div class="container">
+				<section id="dg-container" class="dg-container">
+					<cms:Accordionslide cssClass="dg-wrapper" subcategoryId="sc000000000000000000000000000207" displayPhoto="true" count="6" />	
+				</section>
 			</div>
-			
 			<div id="news">
 				<div id="newslabel"><span id="text">新闻动态</span></div>	
 				<cms:PostList id="xwdtList1" cssClass="PhotoList" subcategoryId="sc000000000000000000000000000006" displayPhoto="true" count="1" />
