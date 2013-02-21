@@ -23,7 +23,7 @@
 
 <style  type="text/css" >
 .pictrues ul{margin-top:15px;}
-.pictrues ul div{height:90px; width:140px; padding:13px 0; float:left; margin-right:10px; border:1px solid #beceeb; text-align:center; font-size:0;}
+.pictrues ul div{height:90px; width:140px; padding:13px 0; float:left; margin-right:10px; text-align:center; font-size:0;}
 .pictrues ul div img{height:100%;vertical-align:middle;width:90%;}
 
 </style>
