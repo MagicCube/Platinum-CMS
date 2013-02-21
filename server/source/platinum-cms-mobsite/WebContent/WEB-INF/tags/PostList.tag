@@ -101,7 +101,7 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 %>
 <ul id="${id}" class="PostList ${cssClass}">
 <% for (PostEntity post : posts) {%>
-<div class = "current" style="width:320px;height:210px;padding:13px 0;float:left;text-align:center;font-size:0;" >
+<li class = "current" >
     <a href="<%= post.getLink()%>" <%= openInNewWindow ? "target='_blank'" : ""%> >
         <% if (displayPhoto) {%>
         <img src='<%= post.getPhotoURL()%>' />
@@ -112,7 +112,7 @@ else if (StringUtil.notNullOrEmpty(categoryId))
         <% } %>
     </a>
    
-</div>
+</li>
 <% } %>
 <% if (displayPageNavigationBar) {%>
 <cms:PageNavigationBar id="pageNavigationBar" pageIndex="<%= pageIndex%>" pageSize="<%= pageSize%>" displayNextButton="<%= posts.size() == pageSize%>"/>
