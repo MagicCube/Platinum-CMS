@@ -80,7 +80,7 @@
 .dg-container nav span.dg-prev{
 	position:absolute;
 	top:-240px;
-	left:-485px;
+	left:-470px;
 }
 .dg-container nav span:hover{
 	opacity: 1;
@@ -90,5 +90,5 @@
 	margin-left: 10px;
 	position:absolute;
 	top:-240px;
-	left:510px;
+	left:495px;
 }
