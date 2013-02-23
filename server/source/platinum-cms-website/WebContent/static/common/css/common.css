@@ -133,6 +133,8 @@ input
 
 #headerRight > #fastlink
 {
+	width:268px;
+	height:22px;
 	display: block;
 	margin-top: 10px;
 	float: right;
