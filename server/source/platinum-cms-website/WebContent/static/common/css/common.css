@@ -47,8 +47,7 @@ input
 {
 	position: fixed;
 	right: 0;
-	top: 560px;
-	border: 2px #fff solid;
+	bottom:10px;
 	z-index: 99999999;
 }
 
@@ -60,6 +59,10 @@ input
 	margin-right: auto;
 }
 
+#MainBox
+{
+	margin-top:10px;
+}
 #dynamic
 {
 	display: block;
@@ -112,6 +115,7 @@ input
 
 #searchField
 {
+	line-height:19px;
 	width: 145px;
 	height: 19px;
 	border: none;
