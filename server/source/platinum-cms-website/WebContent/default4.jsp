@@ -20,7 +20,7 @@ request.setCharacterEncoding("utf-8");
 
 </head>
 <body style="background-image:url('/static/common/scripts/lib/bxslider/59d597d752c891b5950a164d.jpg');">
-		<cms:Header1/>
+		<cms:Header/>
 		<div id="code">
 			<a href="http://211.65.211.222:8080"><img src="/static/common/images/code.png" title="扫描或点击体验中北学院移动门户" height="80px" width="80px"/></a>
 		</div>
