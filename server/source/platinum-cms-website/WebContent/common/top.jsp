@@ -27,7 +27,7 @@ request.setCharacterEncoding("utf-8");
 						<input type="submit" id="searchBtn" value=""/>
 					</form>
 					<div id="fastlink">
-						<span><a href="/">首页</a>|<a href="/introduce/12345679be9e6b7a00002be9e6b7a0d.html">联系我们</a>|<a href="/introduce/ff8081813be4798a013be484d5540002.html">About NNUZC</a>|<a href="http://www.njnu.edu.cn/">南京师范大学</a></span>
+						<span><a href="/">首页</a>|<a href="/introduce/12345679be9e6b7a00002be9e6b7a0d.html">联系我们</a>|<a href="/introduce/ff8081813be4798a013be484d5540002.html">About NNUZC</a>|<a href="http://www.njnu.edu.cn/" target="_blank">南京师范大学</a></span>
 					</div>
 			</div>
 </div>
@@ -47,18 +47,18 @@ request.setCharacterEncoding("utf-8");
 	            <li><a href="/organization/ff8081813bea7af0013bea97c53f0005.html">部门设置</a></li>
 	        </ul>
 	    </li>
-   		<li><a href="http://zbzs.njnu.edu.cn/trch/index.htm">教学科研</a></li>
-	    <li><a href="http://zbzs.njnu.edu.cn/stud/index.asp">学生工作</a>
+   		<li><a href="http://zbzs.njnu.edu.cn/trch/index.htm" target="_blank">教学科研</a></li>
+	    <li><a href="http://zbzs.njnu.edu.cn/stud/index.asp" target="_blank">学生工作</a>
 	        <ul id="downlist">
 	            <!-- <li><a href="http://zbzs.njnu.edu.cn/stud/index.asp">学工处</a></li> -->
 	            <!-- <li><a href="/tuanwei/">团委</a></li>  -->            
 	        </ul>
 	    </li>
-   		<li><a href="http://zbzs.njnu.edu.cn/part/index.htm">组织人事</a></li>
+   		<li><a href="http://zbzs.njnu.edu.cn/part/index.htm" target="_blank">组织人事</a></li>
 	    <li><a href="#">招生就业</a>
 	        <ul id="downlist" num="2">
-	            <li><a href="http://zbzs.njnu.edu.cn/enrol/index.asp">招生录取</a></li>
-	            <li><a href="http://zbzs.njnu.edu.cn/job/index.asp">就业指导</a></li>
+	            <li><a href="http://zbzs.njnu.edu.cn/enrol/index.asp" target="_blank">招生录取</a></li>
+	            <li><a href="http://zbzs.njnu.edu.cn/job/index.asp" target="_blank">就业指导</a></li>
 	        </ul>
 	    </li>  
 	    <li><a href="#">交流合作</a>
@@ -75,7 +75,7 @@ request.setCharacterEncoding("utf-8");
 	            <li><a href="/service/ff8081813b6fee04013b6ff2b1d90011.html">作息时间</a></li>	            
 	            <li><a href="/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话</a></li>
 	            <li><a href="/service/ff8081813b6fee04013b6ff158fb0008.html">校园交通</a></li>
-	      		<li><a href="http://www.njnu.edu.cn/jssd.htm">在线杀毒</a></li>
+	      		<li><a href="http://www.njnu.edu.cn/jssd.htm" target="_blank">在线杀毒</a></li>
 	      		<li><a href="/service/ff8081813be18002013be18e03250002.html">常用链接</a></li>
 	        </ul>
 	    </li>

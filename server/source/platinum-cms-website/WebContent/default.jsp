@@ -22,7 +22,7 @@ request.setCharacterEncoding("utf-8");
 <body>
 		<cms:Header/>
 		<div id="code">
-			<a href="http://211.65.211.222:8080"><img src="/static/common/images/code.png" title="扫描或点击体验中北学院移动门户" height="80px" width="80px"/></a>
+			<a href="http://211.65.211.222:8080" target="_blank"><img src="/static/common/images/code.png" title="扫描或点击体验中北学院移动门户" height="80px" width="80px"/></a>
 		</div>
 	
 		<div id="middle">
@@ -55,15 +55,15 @@ request.setCharacterEncoding("utf-8");
 			<div id="usedlink">
 				<div id="linklabel"><span id="text">常用链接</span></div>
 				 <ul id="left">
-					<li><a href="http://zbvip.njnu.edu.cn/">教工之家</a></li>
-					<li><a href="http://222.192.5.246/(khvomn45dim5kn3kj4t0gh55)/default2.aspx">教务系统</a></li>
-					<li><a href="http://web.mobset.com/index.html">短信平台</a></li>
+					<li><a href="http://zbvip.njnu.edu.cn/" target="_blank">教工之家</a></li>
+					<li><a href="http://222.192.5.246/(khvomn45dim5kn3kj4t0gh55)/default2.aspx" target="_blank">教务系统</a></li>
+					<li><a href="http://web.mobset.com/index.html" target="_blank">短信平台</a></li>
 				</ul>
 				
 				<ul id="right" style="left: 140px;">
 					<li><a href="/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话</a></li>
 					<li><a href="/service/ff8081813b6fee04013b6ff158fb0008.html">校园交通</a></li>
-					<li><a href="https://mail.njnu.edu.cn/">邮件在线</a></li>
+					<li><a href="https://mail.njnu.edu.cn/" target="_blank">邮件在线</a></li>
 				</ul>
 				
 				<div id="morelabel"><a href="/service/ff8081813be18002013be18e03250002.html">更多</a></div>
