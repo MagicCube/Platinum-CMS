@@ -7,5 +7,5 @@
 			<p>2013 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院</p>
 			<!-- <p>苏ICP备05080300号</p> -->
 		</div>
-	</div>
+	</div> 
 </div>

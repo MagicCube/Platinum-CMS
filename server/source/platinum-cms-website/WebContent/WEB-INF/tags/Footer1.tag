@@ -13,7 +13,7 @@ if (FileSystemUtil.hasFile(request.getServletContext().getRealPath(path + "/bott
 {
     page = "/" + path + "/bottom1.jsp";
 }
-else
+else 
 {
     page = "/common/bottom1.jsp";
 }
