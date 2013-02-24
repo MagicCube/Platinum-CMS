@@ -70,6 +70,6 @@ request.setCharacterEncoding("utf-8");
 			</div>
 		</div> 
 	</div> 
-	<cms:Footer/>
+	<cms:Footer1/>
 </body>
 </html>
