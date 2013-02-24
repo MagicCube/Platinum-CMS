@@ -255,7 +255,7 @@ input
 	color: #fff;
 }
 
-#content span
+#content span,#content font,#content p
 {
 	font-size:10.5pt;
 }
