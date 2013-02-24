@@ -232,7 +232,7 @@ input
 
 #footer
 {
-	width: 990px;
+	width: 970px;
 	height: 60px;
 	background: url(../images/greenopacity.png);
 	margin:0 auto;
@@ -259,4 +259,9 @@ input
 {
 	line-height:150%;
 	font-size:10.5pt;
+}
+#content img
+{
+	display:block;
+	margin-bottom:5px;
 }
