@@ -250,7 +250,7 @@ input
 	text-align: center;
 }
 
-#copyright p,font
+#copyright p,#copyright font
 {
 	color: #fff;
 }
