@@ -5,6 +5,11 @@
     width: 100%;
 }
 
+#more #title,#more span
+{
+	font-size:14px;	
+}
+
 #postList
 {
 	display: block;
