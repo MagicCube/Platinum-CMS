@@ -265,3 +265,28 @@ input
 	display:block;
 	margin-bottom:5px;
 }
+#tpxwMorelabel
+{
+	position: absolute;
+	display: block;
+	height: 20px;
+	width: 50px;
+	top: 229px;
+	right: 15px;
+	z-index:100;
+	background: #60be00;
+	border-radius: 5px;
+	opacity:0;
+}
+#tpxwMorelabel a
+{
+	color: white;
+	display: block;
+	height: 100%;
+	width: 100%;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 4px 0;
+	text-align: center;
+}
+

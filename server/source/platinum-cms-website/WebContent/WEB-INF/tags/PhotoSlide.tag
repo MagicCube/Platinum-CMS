@@ -41,6 +41,12 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 </li>
 <% } %>
 </ul>
+<div id="tpxwMorelabel"><a href="/news/sc000000000000000000000000000207/more/">更多</a></div>
+<script>
+	$('#tpxwMorelabel').hover(function(){$(this).css('opacity','0.8');},
+			function(){$(this).css('opacity','0');
+	});
+</script>
 
 <script src="static/common/scripts/lib/bxslider/jquery.bxslider.min.js" type="text/javascript"></script>
 <script src="static/common/scripts/lib/bxslider/jquery.bxslider.js" type="text/javascript"></script>
@@ -57,3 +63,4 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 			  mode: 'fade'});
 	});
 </script>
+
