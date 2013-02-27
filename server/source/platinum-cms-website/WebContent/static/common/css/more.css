@@ -24,16 +24,21 @@
 
 #postList li
 {
+	position:relative;
+	height:30px;
 	width: 680px;
     line-height: 28px;
     margin: 0;
-    padding:　0;
+    padding:0;
     border-bottom: 1px #ddd dashed;   
     margin-left: 5px;
 }
 
 #postList li a
 {
+	height:30px;
+	overflow:hidden;
+	line-height:30px;
 	text-decoration: none;
 	color: rgba(0, 0, 0, 0.8);
 }
@@ -48,9 +53,12 @@
 	display: inline;
 }
 
-#postList li span
+#postList li #date
 {
+	position:absolute;
 	float: right;
+	top:0;
+	right:0;
 }
 
 #postList #pageNavigationBar

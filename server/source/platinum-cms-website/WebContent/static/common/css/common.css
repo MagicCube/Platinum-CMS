@@ -23,6 +23,7 @@ a, b, button, code, div, i, input, label, li, menu, ol, p, pre, select, table, t
     margin: 0;
 }
 
+
 body
 {
 	padding: 0;
@@ -293,3 +294,13 @@ input
 	text-align: center;
 }
 
+#title_style strong
+{
+	display:block;
+	float:left;
+}
+
+#title:hover
+{
+	color:#999;
+}

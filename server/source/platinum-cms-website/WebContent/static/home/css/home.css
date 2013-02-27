@@ -113,6 +113,10 @@
 	border-radius: 5px;
 }
 
+#xwdtList1
+{
+	width:100%;
+}
 
 #inform
 {
@@ -266,6 +270,7 @@ ul#text_inform li a > div
 
 ul#textContent
 {
+	width:280px;
 	position: absolute;
 	display: block;
 	top: 250px;
@@ -328,7 +333,7 @@ ul.PhotoList li a
 	text-decoration: none;
 	color: #000;
 	padding: 10px;
-	margin: 0 5px;
+	margin: auto;
 	border-bottom: 1px green dashed;
 }
 
@@ -336,7 +341,7 @@ ul.PhotoList li a img
 {
 	width: 210;
 	height: 140px;
-	margin-left: 25px;
+	margin-left: 20px;
 	box-shadow: gray 0px 1px 10px;
 }
 
