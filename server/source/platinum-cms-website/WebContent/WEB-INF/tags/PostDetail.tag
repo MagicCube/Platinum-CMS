@@ -127,3 +127,8 @@ PostEntity post = postManager.getPost(postId, categoryId);
         </div>
     <%} %>
 </div>
+
+<script>
+	if($('#textContent').length>0) $('#postDetail').css('width','990px');
+	
+</script>
