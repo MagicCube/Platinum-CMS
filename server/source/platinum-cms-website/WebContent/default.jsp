@@ -21,9 +21,10 @@ request.setCharacterEncoding("utf-8");
 </head>
 <body>
 		<cms:Header/>
-		<div id="code">
-			<a href="http://211.65.211.222:8080/" ><img src="/static/common/images/code.png" title="扫描二维码 体验中北学院移动门户" height="117px" width="90px"/></a>
-		</div>
+		 
+		<!-- <div id="code">-->
+		<!--  	<a href="http://211.65.211.222:8080/" ><img src="/static/common/images/code.png" title="扫描二维码 体验中北学院移动门户" height="117px" width="90px"/></a>-->
+		<!--  </div>-->
 	
 		<div id="middle">
 			<div id="photoslider">
