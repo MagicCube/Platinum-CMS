@@ -43,6 +43,9 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 </ul>
 <div id="tpxwMorelabel"><a href="/news/sc000000000000000000000000000207/more/">更多</a></div>
 <script>
+	$(document).ready(function(){
+		$('#tpxwMorelabel').css('opacity','0');
+	});
 	$('#tpxwMorelabel').hover(function(){$(this).css('opacity','0.8');},
 			function(){$(this).css('opacity','0');
 	});

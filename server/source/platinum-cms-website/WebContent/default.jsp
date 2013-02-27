@@ -29,7 +29,7 @@ request.setCharacterEncoding("utf-8");
 		<div id="middle">
 			<div id="photoslider">
 				<cms:PhotoSlide id="tsztList" cssClass="bxslider" subcategoryId="sc000000000000000000000000000207" displayPhoto="true" count="4" />	
-				
+
 			</div>
 			
 			<div id="news">
