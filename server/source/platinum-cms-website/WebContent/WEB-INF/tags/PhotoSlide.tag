@@ -35,7 +35,7 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 <li>
    	<a href="<%= post.getLink()%>">
      	  <% if (displayPhoto) {%>
-      	  <img src='<%= post.getPhotoURL()%>'  height='250' title='<%= post.getTitle()%>'/>
+      	  <img src='<%= post.getPhotoURL()%>'  height='250' />
      	  <% } %>
    	</a>
 </li>
