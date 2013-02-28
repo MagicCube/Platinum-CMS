@@ -237,7 +237,7 @@ input
 	width: 990px;
 	height: 60px;
 	background: url(../images/greenopacity.png);
-	margin:2px auto;
+	margin:0 auto 2px auto;
 }
 
 #footer > #copyright
@@ -254,6 +254,9 @@ input
 
 #copyright p,#copyright font
 {
+	display:block;
+	height:20px;
+	
 	color: #fff;
 }
 
