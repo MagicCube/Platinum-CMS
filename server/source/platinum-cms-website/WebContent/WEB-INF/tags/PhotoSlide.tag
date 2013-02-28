@@ -32,6 +32,7 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 
 <ul id="${id}" class="PhotoSlide ${cssClass}">
 <% for (PostEntity post : posts) {%>
+<div class="bx-caption"><span><%= post.getTitle()%></span></div>
 <li>
    	<a href="<%= post.getLink()%>">
      	  <% if (displayPhoto) {%>
