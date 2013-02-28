@@ -11,11 +11,11 @@ if (path == null)
 String page = null;
 if (FileSystemUtil.hasFile(request.getServletContext().getRealPath(path + "/bottom.jsp")))
 {
-    page = "/" + path + "/bottom.jsp";
+    page = "/" + path + "/mobbottom.jsp";
 }
 else
 {
-    page = "/common/bottom.jsp";
+    page = "/common/mobbottom.jsp";
 }
 
 %>

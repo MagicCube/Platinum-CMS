@@ -19,7 +19,7 @@
 <!-- FlexSlider end -->
 </head>
 <body>
-  <cms:Header></cms:Header>
+  <cms:mobHeader></cms:mobHeader>
   
    
   <!-- 正文内容 -->
