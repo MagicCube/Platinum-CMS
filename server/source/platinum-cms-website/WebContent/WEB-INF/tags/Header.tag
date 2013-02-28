@@ -8,7 +8,7 @@ if (path == null)
 {
     path = "common";
 }
-
+ 
 if (displaySideBar == null)
 {
     displaySideBar = false;
