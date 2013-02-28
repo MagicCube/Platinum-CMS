@@ -118,7 +118,7 @@
 
 .bx-wrapper .bx-controls-direction a {
 	position: absolute;
-	top: 50%;
+	top: 60%;
 	margin-top: -16px;
 	outline: 0;
 	width: 32px;
@@ -186,7 +186,7 @@
 	top: 0;
 	left: 0;
 	background: #666\9;
-	background: rgba(80, 80, 80, 0.75);
+	background: rgba(76, 146, 37, 0.75);
 	width: 100%;
 }
 
