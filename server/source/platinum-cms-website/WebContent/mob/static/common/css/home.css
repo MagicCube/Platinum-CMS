@@ -1,0 +1,344 @@
+@CHARSET "UTF-8";
+
+#content
+{
+	width: 990px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.pictrues ul li img { 
+	width:100%;
+}
+
+
+#content > #left
+{
+	width: 609px;
+	height: 817px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	border-right: 1px solid #f3f3f3;
+}
+
+.block_home_slider {
+	margin:0 auto;
+	width:96%;
+	
+	
+	
+	/*<li style="width: {auto;}px; height: {picheight}px;">*/
+	padding:1px;
+	position:relative;
+	background-color:#ffffff;
+	border:2px solid #f2f2f2;
+	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	
+	text-align:center;
+	line-height:0px;
+}
+
+.flexslider .slides img{
+	width:200px;
+	display: block;
+	
+	
+	
+}
+
+.block_home_slider .slide {position:relative;  over-flow: hidden;}
+.block_home_slider .slide img {height:230px;  }
+
+.block_home_slider .caption {padding:0px; position:absolute; left:0px; right:0px; bottom:0px; background:url(../../home/images/bg_caption.png); text-align:center; height: 30px;}
+.block_home_slider .caption p {padding-bottom:0px; font-size:11px; color:#dedede; text-shadow:0px -1px #000000; line-height:11px;}
+.block_home_slider .caption p.title {padding-bottom:6px; font-size:15px; color:#ffffff; font-weight:bold; line-height:27px;}
+.block_home_slider .flex-direction-nav a {width:25px; height:25px; margin-top:-27px; display:block; position:absolute; top:50%; background-repeat:no-repeat; background-image:url(../../home/images/sprite_arrow_2.png); text-indent:-9000px;}
+.block_home_slider .flex-direction-nav a.flex-prev {left:6px; background-position:left top;}
+.block_home_slider .flex-direction-nav a.flex-prev:hover {background-position:left bottom;}
+.block_home_slider .flex-direction-nav a.flex-next {right:6px; background-position:right top;}
+.block_home_slider .flex-direction-nav a.flex-next:hover {background-position:right bottom;}
+.block_home_slider .flex-control-paging {padding-top:15px; display:inline-block;}
+.block_home_slider .flex-control-paging li {margin:0px; padding:0px; float:left; overflow:hidden;}
+.block_home_slider .flex-control-paging li a {width:12px; height:12px; display:block; background-repeat:no-repeat; background-image:url(../../home/images/sprite_nav_3.png); text-indent:-9000px; cursor:pointer;}
+.block_home_slider .flex-control-paging li a.flex-active {background-position:right top;}
+
+#content > #left > #news
+{
+	width: 595px;
+	height: 264px;
+	position: absolute;
+	top: 300px;
+	left: 0;
+}
+
+#content > #left > #schoolnews
+{
+	width: 595px;
+	height: 264px;
+	position: absolute;
+	top: 560px;
+	left: 0;
+}
+
+#content > #right
+{
+	width: 380px;
+	height: 817px;
+	position: position;
+	right: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#topic
+{
+	position: absolute;
+	width: 380px;
+	height: 300px;
+	right: 0;
+	top: 0;
+}
+
+#inform
+{
+	width: 380px;
+	height: 260px;
+	float: left;
+	position: absolute;
+	right: 0;
+	top: 300px;
+}
+
+#video
+{
+	width: 380px;
+	height: 260px;
+	position: absolute;
+	right: 0;
+	top: 560px;
+}
+
+#position_1
+{
+	margin-left: 10px;
+}
+
+#position_2
+{
+	width: 60px;
+	height: 20px;
+	float: right;
+	
+}
+
+#position_2 a
+{
+	color: #bebebe;
+	text-decoration: none;
+}
+
+#position_2 a:hover
+{
+	color: rgba(0, 0, 0, 0.5);
+}
+
+#medium {
+	width: 300 ;
+	height: 250px;
+	margin: 20px 0 0 10px;
+}
+
+#medium img 
+{
+	width:300px;
+	height:250;
+	border:4px solid #f2f2f2;	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	
+}
+
+#part1
+{
+	width: 300px;
+	height: 220px;
+	border-right: 1px solid #ddd;
+	margin-top: 10px;
+	float: left;
+}
+
+#part1 ul.PhotoList
+{
+	height: 220px;
+	width: 300px;
+	padding: 0;
+	margin: -27px 0 0 0;
+	float: left;
+}
+
+#part1 ul.PhotoList li
+{
+	height: 65px;
+	width: 300px;
+	position: relative;
+	left: 0;
+	margin-top: 15px;
+}
+
+
+#part1 ul.PhotoList li a
+{
+	text-decoration: none;
+	left: 0;
+	top: 5px;
+	height: 65px;
+	width: 360px;
+	position: absolute;
+}
+
+#part1 ul.PhotoList li a img
+{
+	width: 100px;
+	height: 65px;
+	left: 0;
+	border:4px solid #f2f2f2;	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	position: absolute;
+}
+
+#part1 ul.PhotoList li a span#title
+{
+	width: 170px;
+	position: absolute;
+	height: 15px;
+	top: 8px;
+	left: 120px;
+	font-weight: bold;
+	color: #000;
+}
+
+#part2
+{
+	float: left;
+	width:290px;
+	height: 250px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin-top: 10px;	
+}
+
+#part2 ul
+{
+	list-style:none inside url(../../common/images/list.gif);
+	padding: 0;
+	margin: -15px 0 0 10px;
+}
+
+#part2 ul li 
+{
+	width: 260px;
+	height: 15px;
+	margin: 15px 0 5px 0;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	overflow:hidden;
+}
+
+
+#part2 ul li a 
+{
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+	line-height: 15px;
+}
+
+#part2 ul li  a:hover
+{
+	color : rgba(0, 0, 0, 0.5);
+}
+
+#right_part
+{
+	width: 360px;
+	height: auto;
+	margin: -10px 0 0 10px;
+	float: left;
+}
+
+#right_part ul.PhotoSummaryList
+{
+	width: 370px;
+	margin: -5px 0 0 0;
+	padding: 0;	 
+}
+
+#right_part ul.PhotoSummaryList li
+{
+	height: 90px;
+	width: 370px;
+	position: relative;
+	left: 0;
+	margin-top: -7px;
+}
+
+#right_part ul.PhotoSummaryList li a
+{
+	text-decoration: none;
+	left: 0;
+	top: 5px;
+	height: 65px;
+	width: 360px;
+	position: absolute;
+}
+
+#right_part ul.PhotoSummaryList li a img
+{
+	width: 60px;
+	height: 40px;
+	left: 0;
+	border:4px solid #f2f2f2;	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	position: absolute;
+}
+
+#right_part ul.PhotoSummaryList li a span#title
+{
+	width: 250px;
+	position: absolute;
+	height: 25px;
+	left: 120px;
+	font-weight: bold;
+	color: #000;
+	text-overflow: ellipsis;
+	overflow: shidden;
+}
+
+#right_part ul.PhotoSummaryList li a span#summary
+{
+	width: 250px;
+	position: absolute;
+	left: 120px;
+	margin-top: 28px;
+	height: 36px;
+	color : rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#lineheight
+{
+	line-height: 14px;
+}
