@@ -32,8 +32,8 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 
 <ul id="${id}" class="PhotoSlide ${cssClass}">
 <% for (PostEntity post : posts) {%>
-<div class="bx-caption"><span><%= post.getTitle()%></span></div>
 <li>
+	<div class="bx-caption"><span><%= post.getTitle()%></span></div>
    	<a href="<%= post.getLink()%>">
      	  <% if (displayPhoto) {%>
       	  <img src='<%= post.getPhotoURL()%>'  height='250' />
