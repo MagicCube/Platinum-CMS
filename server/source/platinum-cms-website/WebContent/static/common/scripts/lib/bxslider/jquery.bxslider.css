@@ -182,9 +182,8 @@
 /* IMAGE CAPTIONS */
 
 .bx-wrapper .bx-caption {
-	display:none;
 	position: absolute;
-	bottom: 0;
+	top: 0;
 	left: 0;
 	background: #666\9;
 	background: rgba(80, 80, 80, 0.75);
@@ -199,4 +198,5 @@
 	padding: 10px;
 	font-size: 14px;
 	line-height: 15px;
+	text-align:center;
 }
