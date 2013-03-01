@@ -23,7 +23,7 @@
 			</div>
 			<div id = "layoutright">
 				<h2>联系我们</h2>
-				<p>联系地址：南京市栖霞区南京师范大学中北学院学林路2号</p>
+				<p>联系地址：南京市栖霞区仙林大学城学林路2号</p>
 				<p>邮政编码：210046</p>			
   				<!--百度地图容器-->
   				<div style="width:600px;height:400px;border:#ccc solid 1px;" id="dituContent"></div>
@@ -40,7 +40,7 @@
     			//创建地图函数：
     			function createMap(){
         			var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        			var point = new BMap.Point(118.923576,32.108646);//定义一个中心点坐标
+        			var point = new BMap.Point(118.923576,32.118646);//定义一个中心点坐标
         			map.centerAndZoom(point,15);//设定地图的中心点和坐标并将地图显示在地图容器中
         			window.map = map;//将map变量存储在全局
     			}
