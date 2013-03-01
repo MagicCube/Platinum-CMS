@@ -24,7 +24,7 @@
 			<div id = "layoutright">
 				<h2>联系我们</h2>
 				<p>联系地址：南京市栖霞区南京师范大学中北学院学林路2号</p>
-				<p>邮政编码：210023</p>			
+				<p>邮政编码：210046</p>			
   				<!--百度地图容器-->
   				<div style="width:600px;height:400px;border:#ccc solid 1px;" id="dituContent"></div>
 				<script type="text/javascript">
