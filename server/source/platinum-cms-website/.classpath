@@ -16,5 +16,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/platinum-platform"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/platinum-cms"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="var" path="PT_SERVER_LIB"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
