@@ -24,7 +24,7 @@
    
   <!-- 正文内容 -->
   <div class="notice_front">        
-<h3><span class="left">中北</span></h3>
+<h3><span class="left">中北动态</span></h3>
   <div id="news">
    <!-- 幻灯片切换部分 -->
 			 <div class="block_home_slider" >
