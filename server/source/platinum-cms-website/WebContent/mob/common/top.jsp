@@ -20,16 +20,16 @@
  
   	<table cellpadding="0" cellspacing="0">
     	<tr align="center">
-				<!--  <td><a class="i_news" href="../../news/" target="_news"><span><font color="yellow" >新闻</font></span></a></td>
-				<td><a class="i_moive" href="../guide/"><span>办事指南</span></a></td>
-				<td><a class="i_map" href="../pic/"><span>美丽校园</span></a></td>  -->
+				<!--  <td><a class="i_news" href="../mob/../news/" target="_news"><span><font color="yellow" >新闻</font></span></a></td>
+				<td><a class="i_moive" href="../mob/guide/"><span>办事指南</span></a></td>
+				<td><a class="i_map" href="../mob/pic/"><span>美丽校园</span></a></td>  -->
 				
 				
-				<td><div class="i_news" onclick="location.href='../../news/';"><img src="../mob/static/common/images/NEWS.png"></div><font class="b" color="#239b8b" >新闻</font></td>
+				<td><div class="i_news" onclick="location.href='../../mob/news/';"><img src="../mob/static/common/images/NEWS.png"></div><font class="b" color="#239b8b" >新闻</font></td>
 				
-				<td><div class="i_news" onclick="location.href='../guide/';"><img src="../mob/static/common/images/guide.jpg"> </div><font class="b" color="#239b8b" >办事指南</font></td>
+				<td><div class="i_news" onclick="location.href='../mob/guide/';"><img src="../mob/static/common/images/guide.jpg"> </div><font class="b" color="#239b8b" >办事指南</font></td>
 				
-				<td><div class="i_news" onclick="location.href='../pic/';"><img src="../mob/static/common/images/view.jpg"></div><font class="b" color="#239b8b" >美丽校园</font></td>
+				<td><div class="i_news" onclick="location.href='../mob/pic/';"><img src="../mob/static/common/images/view.jpg"></div><font class="b" color="#239b8b" >美丽校园</font></td>
 				
 				
 				

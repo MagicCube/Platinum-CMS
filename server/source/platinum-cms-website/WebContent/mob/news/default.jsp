@@ -9,7 +9,7 @@
 <link href="/mob/static/common/css/css.css" rel="stylesheet" type="text/css" />
 </head>
 <body>  
-  <cms:Header path="news"></cms:Header>
+  <cms:Header path="mob/news"></cms:Header>
   <div class="info">
     <h3>专题报导<span id = "position_2" class="right"><a href = "/news/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
     	<div  class="front">
@@ -17,13 +17,13 @@
    	    </div>
   </div>
   <div class="info">
-   	<h3>新闻动态<span id = "position_2" class="right"><a href = "/news/sc000000000000000000000000000006/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
+   	<h3>新闻动态<span id = "position_2" class="right"><a href = "/mob/news/sc000000000000000000000000000006/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
    	   <div  class="front">
    		<cms:PostList id="xwdtList2" subcategoryId="sc000000000000000000000000000006" where="photoURL is null" count="8" />
    	   </div>
   </div>
   <div class="info">
-  	 <h3>校园动态<span id = "position_2" class="right"><a href = "/news/sc000000000000000000000000000020/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
+  	 <h3>校园动态<span id = "position_2" class="right"><a href = "/mob/news/sc000000000000000000000000000020/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
   	 	<div  class="front">
     	<cms:PostList id="xydtList2" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="8" />
     	</div>
