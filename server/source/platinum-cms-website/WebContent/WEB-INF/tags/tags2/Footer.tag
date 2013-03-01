@@ -5,7 +5,7 @@
 <%
 if (path == null)
 {
-    path = "common";
+    path = "mob/common";
 }
 
 String page = null;
