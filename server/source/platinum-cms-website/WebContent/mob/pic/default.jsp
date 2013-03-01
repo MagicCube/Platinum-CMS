@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="cms" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="cms" tagdir="/WEB-INF/tags/tags2" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -9,15 +9,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <!-- 告诉设备忽略将页面中的数字识别为电话号码  -->
 <meta name="format-detection" content="telephone=no" /> 
-<link href="static/common/css/mobile.css" rel="stylesheet" type="text/css" />
-<link href = "/static/common/css/home.css" rel = "stylesheet"></link>
-<script type="text/javascript" src="static/common/scripts/dload.js"></script>
-<script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
+<link href="/mob/static/common/css/mobile.css" rel="stylesheet" type="text/css" />
+<link href = "/mob/static/common/css/home.css" rel = "stylesheet"></link>
+<script type="text/javascript" src="/mob/static/common/scripts/dload.js"></script>
+<script src = "/mob/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
 
 
 <!-- FlexSlider start -->
-<link rel="stylesheet" href="/static/home/plugins/flexslider/flexslider.css" type="text/css" />
-<script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
+<link rel="stylesheet" href="/mob/static/home/plugins/flexslider/flexslider.css" type="text/css" />
+<script type="text/javascript" src="/mob/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
 <!-- FlexSlider end -->
 
 
@@ -36,7 +36,7 @@
 
 <div class="pictrues">
 
-<script src="/static/common/scripts/lib/album/jquery.album.js"></script>
+<script src="/mob/static/common/scripts/lib/album/jquery.album.js"></script>
 	
     <div id = "maincontent" style = "height: 660px; background: none;">
     

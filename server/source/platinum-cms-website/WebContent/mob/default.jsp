@@ -9,13 +9,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <!-- 告诉设备忽略将页面中的数字识别为电话号码  -->
 <meta name="format-detection" content="telephone=no" /> 
-<link href="static/common/css/mobile.css" rel="stylesheet" type="text/css" />
-<link href = "/static/common/css/home.css" rel = "stylesheet"></link>
-<script type="text/javascript" src="static/common/scripts/dload.js"></script>
-<script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
+<link href="mob/static/common/css/mobile.css" rel="stylesheet" type="text/css" />
+<link href = "/mob/static/common/css/home.css" rel = "stylesheet"></link>
+<script type="text/javascript" src="mob/static/common/scripts/dload.js"></script>
+<script src = "/mob/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
 <!-- FlexSlider start -->
-<link rel="stylesheet" href="/static/home/plugins/flexslider/flexslider.css" type="text/css" />
-<script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
+<link rel="stylesheet" href="/mob/static/home/plugins/flexslider/flexslider.css" type="text/css" />
+<script type="text/javascript" src="/mob/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
 <!-- FlexSlider end -->
 </head>
 <body>
@@ -38,7 +38,7 @@
   
   
   <div style="border-top:#239b8b 1px solid; border-bottom:#ddd 1px solid;" >
-<h3><span class="left">通知公告</span> <span id = "position_2"><a href = "/news/sc000000000000000000000000000008/more/"><font color="#239b8b">更多</font></a></span>  </h3></div>
+<h3><span class="left">通知公告</span> <span id = "position_2"><a href = "/mob/news/sc000000000000000000000000000008/more/"><font color="#239b8b">更多</font></a></span>  </h3></div>
  
   <!-- 通知公告部分 -->
   <div class="r_con02_front">

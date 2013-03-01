@@ -3,7 +3,7 @@
 <%@page import="platinum.cms.common.entity.PostEntity"%>
 <%@page import="platinum.cms.runtime.service.PostRuntimeManager"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="cms" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="cms" tagdir="/WEB-INF/tags/tags2" %>
 
 <%
 String id = request.getParameter("id");
@@ -21,11 +21,11 @@ if (post == null)
 <html xmlns:wb="http://open.weibo.com/wb">
 <head>
     <title><%= post.getTitle()%></title>
-    <link rel="stylesheet" href="/static/common/css/basic.css"/>
-    <link rel="stylesheet" href="/static/common/css/post.css"/>
-    <link rel="stylesheet" href="/static/common/css/mobile.css"/>
-    <link rel="stylesheet" href="/static/common/css/common.css"/>
-    <script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/mob/static/common/css/basic.css"/>
+    <link rel="stylesheet" href="/mob/static/common/css/post.css"/>
+    <link rel="stylesheet" href="/mob/static/common/css/mobile.css"/>
+    <link rel="stylesheet" href="/mob/static/common/css/common.css"/>
+    <script src="/mob/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
     <!-- <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script> -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- 强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览 -->

@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="cms" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="cms" tagdir="/WEB-INF/tags/tags2" %>
 
-<link href = "/static/common/css/mobile.css" rel = "stylesheet"></link>
+<link href = "/mob/static/common/css/mobile.css" rel = "stylesheet"></link>
 
     <div class="s_header">
     	<div class="s_logo" >
-    	   <div class="zblogo" onclick="location.href='../../';" ><img src="../static/common/images/zblogo.jpg"></div>
+    	   <div class="zblogo" onclick="location.href='../../';" ><img src="../smob/static/common/images/zblogo.jpg"></div>
 	    	<div class="m_nav">
 	    	<ul>
 	        		<li><a href="http://zbvip.njnu.edu.cn/wap" class="m_login" ><span>教师登录</span></a></li>
@@ -25,11 +25,11 @@
 				<td><a class="i_map" href="../pic/"><span>美丽校园</span></a></td>  -->
 				
 				
-				<td><div class="i_news" onclick="location.href='../../news/';"><img src="../static/common/images/NEWS.png"></div><font class="b" color="#239b8b" >新闻</font></td>
+				<td><div class="i_news" onclick="location.href='../../news/';"><img src="../mob/static/common/images/NEWS.png"></div><font class="b" color="#239b8b" >新闻</font></td>
 				
-				<td><div class="i_news" onclick="location.href='../guide/';"><img src="../static/common/images/guide.jpg"> </div><font class="b" color="#239b8b" >办事指南</font></td>
+				<td><div class="i_news" onclick="location.href='../guide/';"><img src="../mob/static/common/images/guide.jpg"> </div><font class="b" color="#239b8b" >办事指南</font></td>
 				
-				<td><div class="i_news" onclick="location.href='../pic/';"><img src="../static/common/images/view.jpg"></div><font class="b" color="#239b8b" >美丽校园</font></td>
+				<td><div class="i_news" onclick="location.href='../pic/';"><img src="../mob/static/common/images/view.jpg"></div><font class="b" color="#239b8b" >美丽校园</font></td>
 				
 				
 				

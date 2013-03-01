@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="cms" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="cms" tagdir="/WEB-INF/tags/tags2" %>
 
-<link href = "/static/common/css/mobile.css" rel = "stylesheet"></link>
+<link href = "/mob/static/common/css/mobile.css" rel = "stylesheet"></link>
 
     <div class="s_header">
     	<div class="s_logo" >
-    	   <div class="zblogo" onclick="location.href='../../';" ><img src="../static/common/images/zblogo.jpg"></div>
+    	   <div class="zblogo" onclick="location.href='../../';" ><img src="../mob/static/common/images/zblogo.jpg"></div>
 	    	<div class="m_nav">
 	    	<ul>
 	        		<li><a href="http://zbvip.njnu.edu.cn/wap" class="m_login" ><span>教师登录</span></a></li>

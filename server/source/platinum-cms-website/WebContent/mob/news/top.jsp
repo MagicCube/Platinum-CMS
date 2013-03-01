@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="cms" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="cms" tagdir="/WEB-INF/tags/tags2" %>
 
-<link href="../static/common/css/css.css" rel="stylesheet" type="text/css" />
+<link href="../mob/static/common/css/css.css" rel="stylesheet" type="text/css" />
  <div class="header">
-  	<div class="logo" onclick="location.href='../../../';"><img src="../../../static/common/images/logo.jpg" height="40" /></div>
-  	<div class="news" onclick="location.href='../../../news';"><img src="../../../static/common/images/news.gif"  height="34" /></div>
+  	<div class="logo" onclick="location.href='../../../';"><img src="../../../mob/static/common/images/logo.jpg" height="40" /></div>
+  	<div class="news" onclick="location.href='../../../news';"><img src="../../../mob/static/common/images/news.gif"  height="34" /></div>
   </div>
     <div class="weather">
    <p class="right"> 

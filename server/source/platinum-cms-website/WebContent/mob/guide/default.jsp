@@ -9,10 +9,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <!-- 告诉设备忽略将页面中的数字识别为电话号码  -->
 <meta name="format-detection" content="telephone=no" /> 
-<link href="static/common/css/mobile.css" rel="stylesheet" type="text/css" />
-<link href = "/static/common/css/home.css" rel = "stylesheet"></link>
-<script type="text/javascript" src="static/common/scripts/dload.js"></script>
-<script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
+<link href="/mob/static/common/css/mobile.css" rel="stylesheet" type="text/css" />
+<link href = "/mob/static/common/css/home.css" rel = "stylesheet"></link>
+<script type="text/javascript" src="/mob/static/common/scripts/dload.js"></script>
+<script src = "/mob/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
 
 
 </head>

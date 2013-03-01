@@ -2,7 +2,7 @@
 <%@page import="platinum.cms.runtime.service.CategoryRuntimeManager"%>
 <%@page import="platinum.cms.common.entity.CategoryEntity"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="cms" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="cms" tagdir="/WEB-INF/tags/tags2" %>
 
 <%
 String categoryId = request.getParameter("categoryId");
@@ -36,11 +36,11 @@ if (subcategoryId != null)
 <html xmlns:wb="http://open.weibo.com/wb">
 <head>
     <title></title>
-    <link rel="stylesheet" href="/static/common/css/basic.css"/></link>
-    <link rel="stylesheet" href="/static/common/css/more.css"/></link>
-    <link href = "/static/common/css/css.css" rel = "stylesheet"></link>
-    <link href = "/static/common/css/post.css" rel = "stylesheet"></link>
-    <script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/mob/static/common/css/basic.css"/></link>
+    <link rel="stylesheet" href="/mob/static/common/css/more.css"/></link>
+    <link href = "/mob/static/common/css/css.css" rel = "stylesheet"></link>
+    <link href = "/mob/static/common/css/post.css" rel = "stylesheet"></link>
+    <script src="/mob/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
     <!-- <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script> -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- 强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览 -->
