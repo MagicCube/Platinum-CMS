@@ -17,7 +17,7 @@
 
 </head>
 <body>
-  <cms:Header path="guide"></cms:Header>
+  <cms:Header path="mob/guide"></cms:Header>
         <h1>当前位置：><a href="../">首页</a>>办事指南</h1>
         <hr></hr> 
   <div class="r_con02_front">
