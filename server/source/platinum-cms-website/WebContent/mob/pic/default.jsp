@@ -58,6 +58,6 @@
     </div>
 </div>
 
-  <cms:Footer path="pic"></cms:Footer>
+  <cms:Footer path="mob/pic"></cms:Footer>
 </body>
 </html>
