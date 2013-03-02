@@ -31,7 +31,7 @@
 
 </head>
 <body>
-  <cms:Header path="guide"></cms:Header>
+  <cms:Header path="mob/guide"></cms:Header>
   <h1>当前位置：@<a href="../">首页</a>@校园美景</h1>
 
 <div class="pictrues">
