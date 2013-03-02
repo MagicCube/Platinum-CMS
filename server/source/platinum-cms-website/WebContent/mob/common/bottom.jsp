@@ -6,4 +6,3 @@
 
 <hr>
   <div class="i_footer">正德厚生-笃学敏行</div>
-  <div class="i_footer">技术支持：中北学院信息中心</div>
