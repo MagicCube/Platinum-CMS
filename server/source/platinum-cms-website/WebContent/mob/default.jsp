@@ -42,7 +42,7 @@
  
   <!-- 通知公告部分 -->
   <div class="r_con02_front">
-  <cms:PostList id="tzggList" subcategoryId="sc000000000000000000000000000008" count="7"/>
+  <cms:PostList id="tzggList"   subcategoryId="sc000000000000000000000000000008" count="7"/>
   </div> 
   <!-- 通知公告部分 end-->
    

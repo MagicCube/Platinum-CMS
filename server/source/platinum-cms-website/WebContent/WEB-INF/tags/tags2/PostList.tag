@@ -102,7 +102,7 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 <ul id="${id}" class="PostList ${cssClass}">
 <% for (PostEntity post : posts) {%>
 <li class = "current" >
-    <a href="<%= post.getLink()%>" <%= openInNewWindow ? "target='_blank'" : ""%> >
+    <a href="<%="/mob"+ post.getLink()%>" <%= openInNewWindow ? "target='_blank'" : ""%> >
         <% if (displayPhoto) {%>
         <img src='<%= post.getPhotoURL()%>' />
         <% } %>
