@@ -3,7 +3,7 @@
 <%@ tag import="platinum.cms.common.entity.PostEntity"%>
 <%@ tag import="platinum.cms.runtime.service.PostRuntimeManager"%>
 <%@ tag language="java" pageEncoding="UTF-8"%>
-<%@ taglib prefix="cms" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="cms" tagdir="/WEB-INF/tags/tags2" %>
 <%@ attribute name="id" required="true" rtexprvalue="true" %>
 <%@ attribute name="postId" rtexprvalue="true" %>
 <%@ attribute name="categoryId" rtexprvalue="true" %>

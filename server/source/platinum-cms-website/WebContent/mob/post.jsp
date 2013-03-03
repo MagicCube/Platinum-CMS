@@ -38,11 +38,11 @@ if (post == null)
 
 <body>
 
-<cms:Header path="<%= categoryId%>" displaySideBar="<%= post.getPostType() != PostType.INFORMATION%>"/>
+  <cms:Header path="mob/news"></cms:Header>
 
 <cms:PostDetail id="postDetail" postId="<%= id%>" categoryId="<%= categoryId%>"></cms:PostDetail>
 
-<cms:Footer path="<%= categoryId%>"/>
+<cms:Footer></cms:Footer>
 
 </body>
 </html>
