@@ -52,7 +52,7 @@ if (subcategoryId != null)
 
 <body>
 
-<cms:Header path="news" displaySideBar="flase"/>
+<cms:Header path="mob/news" displaySideBar="flase"/>
     <div id="more">
 
       	<cms:CategoryNavigationBar id="categoryNavigationBar" categoryId="<%= categoryId%>" subcategoryId="<%= subcategoryId%>"></cms:CategoryNavigationBar>
