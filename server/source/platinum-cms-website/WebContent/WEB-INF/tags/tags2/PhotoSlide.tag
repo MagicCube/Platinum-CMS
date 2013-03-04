@@ -33,7 +33,7 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 <% for (PostEntity post : posts) {%>
 <li>
 	<div class = "slide">
-    	<a href="<%= post.getLink()%>">
+    	<a href="<%="/mob"+ post.getLink()%>">
       	  <% if (displayPhoto) {%>
        	  <img src='<%= post.getPhotoURL()%>' />
       	  <% } %>

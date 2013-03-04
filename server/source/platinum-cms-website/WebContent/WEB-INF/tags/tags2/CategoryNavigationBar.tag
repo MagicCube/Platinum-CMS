@@ -18,17 +18,17 @@ if (subcategoryId != null)
 
 <!--  <ul id="${id}" class="CategoryNavigationBar">
 	<li>当前位置:</li>
-    <li> &gt; <a href="/${categoryId}/"><%= category != null ? category.getCategoryName() : categoryId%></a></li>
+    <li> &gt; <a href="mob/${categoryId}/"><%= category != null ? category.getCategoryName() : categoryId%></a></li>
     <% if (subcategoryId != null) {%>
-    <li> &gt; <a href="/${categoryId}/${subcategoryId}/more/"><%= subcategory != null ? subcategory.getSubcategoryName() : subcategoryId%></a></li>
+    <li> &gt; <a href="mob/${categoryId}/${subcategoryId}/more/"><%= subcategory != null ? subcategory.getSubcategoryName() : subcategoryId%></a></li>
     <%} %>
 </ul>-->
 <table id="${id}" class="CategoryNavigationBar"  cellpadding="0" cellspacing="0">
   	<tr align="left">
        	<td>当前位置:</td>
-        <td>&gt;<a href="/${categoryId}/"><%= category != null ? category.getCategoryName() : categoryId%></a></td>
+        <td>&gt;<a href="/mob/${categoryId}/"><%= category != null ? category.getCategoryName() : categoryId%></a></td>
          <% if (subcategoryId != null) {%>
-     	<td> &gt;<a href="/${categoryId}/${subcategoryId}/more/"><%= subcategory != null ? subcategory.getSubcategoryName() : subcategoryId%></a></td>
+     	<td> &gt;<a href="/mob/${categoryId}/${subcategoryId}/more/"><%= subcategory != null ? subcategory.getSubcategoryName() : subcategoryId%></a></td>
      	<%} %>  
      </tr>
  </table>
