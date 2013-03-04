@@ -3,7 +3,7 @@
 
 <link href="../static/common/css/css.css" rel="stylesheet" type="text/css" />
  <div class="header">
-  	<div class="logo" onclick="location.href='../../../mob';"><img src="../../../static/common/images/logo.jpg" height="40" /></div>
+  	<div class="logo" onclick="location.href='../../../';"><img src="../../../static/common/images/logo.jpg" height="40" /></div>
   	<div class="news" onclick="location.href='../../../mob/news';"><img src="../../../static/common/images/news.gif"  height="34" /></div>
   </div>
     <div class="weather">
