@@ -30,9 +30,10 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 }
 %>
 
+<% int i=1; %>
 <ul id="${id}" class="PhotoSlide ${cssClass}">
 <% for (PostEntity post : posts) {%>
-<li>
+<li id="post<%=i++ %>">
 	<div class="bx-caption"><span><%= post.getTitle()%></span></div>
    	<a href="<%= post.getLink()%>">
      	  <% if (displayPhoto) {%>
@@ -42,7 +43,7 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 </li>
 <% } %>
 </ul>
-<div id="tpxwMorelabel"><a href="/news/sc000000000000000000000000000207/more/">更多</a></div>
+
 <script>
 	$(document).ready(function(){
 		$('#tpxwMorelabel').css('opacity','0');
@@ -61,7 +62,7 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 		  $('.bxslider').bxSlider({
 			  auto: true,
 			  controls: true,
-			  speed: 1000,
+			  speed: 2000,
 			  useCSS: true,
 			  captions: true,
 			  mode: 'fade'});

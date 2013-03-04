@@ -23,6 +23,19 @@
 			 <div class="block_home_slider">
                     		<div id="home_slider" class="flexslider">
                             	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000195" displayPhoto="true" count="4" />
+                            	<script src="../static/common/scripts/lib/bxslider/jquery.bxslider.min.js" type="text/javascript"></script>
+								<script src="../static/common/scripts/lib/bxslider/jquery.bxslider.js" type="text/javascript"></script>
+								<script>
+								$(document).ready(function(){
+		  							$('.slides').bxSlider({
+			 			 				auto: true,
+			  							controls: false,
+			  							speed: 1000,
+			  							useCSS: true,
+			  							captions: true,
+			  							mode: 'fade'});
+									});
+								</script>
                             </div>                       
              </div>
 			<!-- end of block_home_slider-->
