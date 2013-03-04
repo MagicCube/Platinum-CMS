@@ -21,7 +21,7 @@ if (FileSystemUtil.hasFile(request.getServletContext().getRealPath(path + "/top.
 }
 else
 {
-    page = "/common/top.jsp";
+    page = "ss/common/top.jsp";
 }
 
 %>
