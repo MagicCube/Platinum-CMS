@@ -64,7 +64,7 @@
 	width: 550px; 
 	margin: 0;
 	padding : 0;
-	height: 300px;
+	height: 270px;
 	float:left;
 	margin-top:15px;
 	margin-left:20px;
@@ -303,13 +303,17 @@
 
 #more1
 {
+	background-color:#0d5791;
 	padding: 0;
+	border-radius:4px;
 	margin: 5px 10px 0 0;
-	width: 80px;
+	width: 45px;
 	height: 20px;
 	float: right;
 	font-size: 18px;
 }
+
+
 
 .block_home_slider {
 	width:530px;
@@ -363,7 +367,7 @@
 	top: 0;
 	left: 0;
 	background: #666	9;
-	background: rgba(13, 87, 145, 0.75);
+	background: rgba(13, 87, 145, 0.55);
 	width: 100%;
 	height: 30px;
 }
@@ -378,3 +382,49 @@ line-height: 15px;
 text-align: center;
 }
 .bx-pager-item{display:none;}
+
+.kslink
+{
+	margin-top:8px;
+	display:block;
+	width:194px;
+	height:45px;
+	border:3px solid #198fbf;
+}
+
+#more1>a
+{
+	color:#fff;
+	text-align:center;
+	display:block;
+	width:100%;
+	height:100%;
+}
+.reTitle,.reNum
+{
+	display:block;
+	width:100%;
+	height:60px;
+} 
+.reTitle
+{
+	margin-top:5px;
+	line-height:55px;
+	font-size:20px;
+	font-weight:bold;
+	padding-left:60px;
+	background-image:url(/static/xiandai/image/dianhua.gif);
+	background-repeat:no-repeat;
+}
+.reNum
+{
+	padding-left:20px;
+	color:#ed6941;
+	font-size:30px;
+	padding-left:25px;
+}
+#fenge
+{
+	height:55px;
+	border-bottom:2px dotted #888;
+}

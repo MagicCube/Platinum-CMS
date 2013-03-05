@@ -167,7 +167,7 @@ menu#mainmenu li a:hover
 	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
-	height: 170px;
+	height: 51px;
 	width: 990px;
 	background-color:#0d5791;
 	line-height: 23px;
@@ -297,7 +297,7 @@ table td
 {
 	display: block;
 	text-decoration: none;
-	padding: 5px 0 4px 110px; 
+	padding: 5px 0 4px 80px; 
 	color: #fff;
 }
 

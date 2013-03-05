@@ -63,13 +63,27 @@
             
 			<div id = "teaching">
 				<span><img src = "/static/xiandai/image/kuaisu.png"/></span>
-				
+				<a class="kslink" href="http://morning.njnu.edu.cn/" target="_blank">
+					<img src="../static/faculty/common/images/qingchenwang.png" width="194" height="45"/>
+				</a>
+				<a class="kslink" href="http://sun.njnu.edu.cn/" target="_blank">
+					<img src="../static/faculty/common/images/sun.png" width="194" height="45"/>
+				</a>
+				<a class="kslink" href="http://3434.njnu.edu.cn/" target="_blank">
+					<img src="../static/faculty/common/images/deifenyuan.png" width="194" height="45"/>
+				</a>
+				<a class="kslink" href="http://jwc.njnu.edu.cn/" target="_blank">
+					<img src="../static/faculty/common/images/jinlinyuan.png" width="194" height="45"/>
+				</a>
 			</div>
             
             
             <div id = "redian">
 				<span><img src = "/static/xiandai/image/rexian.png"/></span>
-				
+				<span class="reTitle">新北区办公室</span>
+				<strong class="reNum" id="fenge">85891616</strong>
+				<span class="reTitle">老北区办公室</span>
+				<strong class="reNum">87721054</strong>
 			</div>
 
 

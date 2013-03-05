@@ -3,7 +3,7 @@
 
 
 	<div id = "footer">
-		<div id = "bottom1"  class="fastLink">
+		<!--<div id = "bottom1"  class="fastLink">
               <div id = "fastlink1">
                 <table>
           		<tbody><tr>
@@ -100,7 +100,7 @@
                 </table>    
             </div>
             </div>
-        
+        -->
         <div id = "bottom2">
         	<div id="copyright">
 				<span id="time"></span><span> 版权所有 </span> <span style="font-family: 'verdana';">©</span><span>南京师范大学中北学院</span>
@@ -109,12 +109,12 @@
 			
 			<div id="website">
 				<p><a href="http://www.nnuzc.cn">www.nnuzc.cn</a></p>
-				<p>南京市栖霞区南京师范大学中北学院学林路2号 210023</p>
+				<p>南京市栖霞区仙林大学城学林路2号 210046</p>
 			</div>
     		
     		<div id="developer">	 
     			<ul>
-    				<li><a href="/ruanyan/">软件研发与培训中心</a></li>
+    				<li><a href="#">软件研发与培训中心</a></li>
     				<li><a href="/xiandai/">现代教育技术中心</a></li>
     			</ul>
     			<span>开发、维护</span>
