@@ -1,6 +1,9 @@
 ﻿@CHARSET "UTF-8";
 
-
+img
+{
+	border:0;
+}
 #content
 {
 	margin:0;
