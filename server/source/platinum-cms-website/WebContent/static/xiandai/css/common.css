@@ -412,8 +412,10 @@ table td
 
 #postDetail
 {
+	background-image: url(../image/di.png);
 	margin:0 auto;
 	width:990px;
+	padding-right:0;
 }
 #summary 
 {
@@ -422,5 +424,6 @@ table td
 #content
 {
 	line-height: 20px;
-	width:990px;
+	width:950px;
+	padding:10px 20px 20px 20px;
 }
