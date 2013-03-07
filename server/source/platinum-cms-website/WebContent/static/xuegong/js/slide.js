@@ -4,7 +4,7 @@ $(function(){
 			clearInterval(h);
 		});
 		$("#tsztList").mouseout(function(){
-			h = setInterval("play()",1000);
+			h = setInterval("play()",2500);
 		});
 })
 
