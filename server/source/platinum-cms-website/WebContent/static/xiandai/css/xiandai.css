@@ -47,7 +47,7 @@ img
 	padding : 0;
 	height: 300px;
 	float:left;
-	margin-left:20px;
+	margin-left:10px;
 	margin-top:15px;
 }
 
@@ -59,7 +59,7 @@ img
 	height: 300px;
 	float:right;
 	margin-top:15px;
-
+	margin-right:10px;
 }
 
 #content > #mainContent > #informs
@@ -70,7 +70,7 @@ img
 	height: 270px;
 	float:left;
 	margin-top:15px;
-	margin-left:20px;
+	margin-left:10px;
 	overflow: hidden;
 }
 
