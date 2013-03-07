@@ -12,6 +12,7 @@
 <!-- FlexSlider start -->
 <link rel="stylesheet" href="/static/home/plugins/flexslider/flexslider.css" type="text/css" />
 <script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="../static/xuegong/js/slide.js"></script>
 <!-- FlexSlider end -->
 
 <link href = "/static/xuegong/css/xuegong.css" rel = "stylesheet"/>
@@ -35,6 +36,7 @@
 				 	<div class="block_home_slider" >
                     		<div id="home_slider" class="flexslider">
                             	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000206" displayPhoto="true" count="4" />
+                            	
                             </div>                       
             		 </div>			
 				</div>

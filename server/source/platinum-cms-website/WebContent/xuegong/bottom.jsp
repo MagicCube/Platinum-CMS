@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 
 <div id = "footer">
-	 <div id = "footer_box">
+	 <!-- <div id = "footer_box">
 	 
 		<div id = "deplink_1">
 		 <p></p>
@@ -111,7 +111,7 @@
 				</tr>
 			</table>
 		</div>
-			</div>
+			</div> -->
         <div id = "bottom2">
         	<div id="copyright">
 				<span id="time"></span><span> 版权所有 </span> <span style="font-family: 'verdana';">©</span><span>南京师范大学中北学院</span>
