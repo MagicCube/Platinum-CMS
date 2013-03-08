@@ -209,6 +209,8 @@ ul { list-style: none; }
 	padding: 0;
 }
 
+.menu>li{height:37px;}
+
 #ja-mainnav ul.menu li {
 	margin: 0; /* all list items */
 	padding: 0;
