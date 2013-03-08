@@ -58,17 +58,21 @@
 {
 	position: absolute;
 	padding: 0;
-	top: 10px;
+	top: 15px;
 	left: 310px;
-	width: 380px;
-	height: 300px;
+	width: 370px;
+	height: 300px;	
+	border:4px solid #f2f2f2;	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;	
 	background: url(/static/zuzhi/images/Board_person_1.jpg) no-repeat;
 }
 
 #pic >#browsable
 {
-	width: 380px;	
-	height: 300px;
+	width:100%;
+	height: 100%;
 	float: left;
 	margin: 0;
 	padding: 0;
@@ -263,15 +267,11 @@ line-height:30px;
 
 .flexslider .slides img { width: 380px; height: 290px;}*/
 .block_home_slider {
-	width:360px;
-	height:290px;
+	width:368px;
+	height:298px;
 	padding:1px;
 	position:relative;	
 	background-color:#ffffff;
-	border:4px solid #f2f2f2;	
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;	
 	text-align:center;
 	line-height:0px;
 }
@@ -292,3 +292,14 @@ line-height:30px;
 .flexslider .slides img { width: 360px; height: 290px;}
 /*12-13*/
 #postList{width:990px;}
+#home_slider{width:370px;height:300px;padding:0;margin:0;position:absolute;top:0;left:0;}
+#box{width:100%;height:100%;}
+#tsztList{width:370px;height:300px;position:absolute;top:0;left:0;margin:0;padding:0;}
+#tsztList li{width:370px;height:300px;}
+.bx-caption{width:370px;height:30px;position:absolute;top:0;left:0;z-index: 1000;background-color: rgb(230, 0, 18);background: rgba(230, 0, 18, 0.55);display: none;}
+.bx-caption span{width: 100%;height: 100%;text-align: center;line-height: 30px;font-size: 16px;color: #FFF;}
+#tsztList > #post1{display:block;}
+#tsztList > #post1 > .bx-caption{display:block;}
+#tsztList img{display: block;width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
+
+
