@@ -24,7 +24,7 @@ $(function(){
 						$("#post" + i).fadeOut("slow",function(){$("#post" + i).css({"display":"block"});});
 					}
 					else{
-						$("#post" + i).fadeIn("slow",function(){$("#post" + i).css({"display":"none"});});
+						$("#post" + i).css({"display":"none"});
 					}
 			}
 		}
