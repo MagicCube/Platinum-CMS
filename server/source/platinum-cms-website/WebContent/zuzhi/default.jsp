@@ -13,6 +13,7 @@
 <!-- FlexSlider start -->
 <link rel="stylesheet" href="/static/home/plugins/flexslider/flexslider.css" type="text/css" />
 <script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="../static/xuegong/js/slide.js"></script>
 <!-- FlexSlider end -->
 
 <link href="/static/zuzhi/css/zuzhi.css" rel = "stylesheet"></link>
