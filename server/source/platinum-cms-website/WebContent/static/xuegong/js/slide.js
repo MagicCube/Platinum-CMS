@@ -4,13 +4,13 @@ $(function(){
 			clearInterval(h);
 		});
 		$("#tsztList").mouseout(function(){
-			h = setInterval("play()",2500);
+			h = setInterval("play()",3000);
 		});
 })
 
 		var count = 1;
 		var h;
-		h = setInterval("play()",2500);
+		h = setInterval("play()",3000);
 		
 		function play(){
 			if(count == 5) count = 1;
@@ -21,10 +21,10 @@ $(function(){
 		function select(flag){
 			for(i = 1; i <= 4; i++){
 					if(i == flag){
-						$("#post" + i).fadeOut("slow",function(){$("#post" + i).css({"display":"block"});});
+						$("#post" + i).fadeIn("slow",function(){$("#post" + i).css({"display":"block"});});$("#post"+i+">.bx-caption").css({"display":"block"});
 					}
 					else{
-						$("#post" + i).css({"display":"none"});
+						$("#post" + i).fadeOut("slow",function(){$("#post" + i).css({"display":"none"});});$("#post"+i+">.bx-caption").css({"display":"none"});
 					}
 			}
 		}
