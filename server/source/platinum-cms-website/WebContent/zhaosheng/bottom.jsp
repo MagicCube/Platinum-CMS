@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 
 	<div id = "footer">
-		<div id = "bottom1"  class="fastLink">
+		<!-- <div id = "bottom1"  class="fastLink">
               <div id = "fastlink1">
                 <table>
           		<tbody><tr>
@@ -99,7 +99,7 @@
                 </table>    
             </div>
             </div>
-        
+         -->
         <div id = "bottom2">
         	<div id="copyright">
 				<span id="time"></span><span> 版权所有 </span> <span style="font-family: 'verdana';">©</span><span>南京师范大学中北学院</span>
