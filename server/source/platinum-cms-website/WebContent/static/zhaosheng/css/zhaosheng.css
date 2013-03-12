@@ -367,6 +367,8 @@ ul > li a > div
 
 #tsztList
 {
+	width:100%;
+	height:100%;
 	margin: 0;
 	padding: 0;
 }
@@ -377,7 +379,7 @@ ul > li a > div
 	width: 594px;
 	height: 298px;
 }
-#post1{display:block;}
+#post1{display:block;position:absolute;top:0;left:0;}
 .flexslider .slides > li{display: none;height: 290px;-webkit-backface-visibility: hidden;}
 .bx-caption
 {

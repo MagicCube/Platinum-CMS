@@ -116,7 +116,6 @@ a:hover
 	margin:0;
 	margin-left:10px;
 	padding:0;
-	list-style:url(/static/caiwu/image/list1.png);
 	list-style-position:inside;
 }
 
@@ -382,3 +381,6 @@ a:hover
 	text-align:center;
 	line-height:0px;
 }
+#xxgklist li{list-style:none;display:block;width:450px;height:15px;position:relative;background-image:url(/static/caiwu/image/list1.png);background-repeat:no-repeat;}
+#xxgklist li a #title{position:absolute;top:0;left:20px;}
+#title:hover{cursor:pointer;}
