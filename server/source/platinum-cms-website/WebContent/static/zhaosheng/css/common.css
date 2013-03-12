@@ -421,7 +421,8 @@ table td
 }
 #postDetail
 {
-	width:988px;
+	width:978px;
+	margin:0 auto;
 	border-left: 1px #ccc dashed;
 	border-right: 1px #ccc dashed;
 }
@@ -432,5 +433,5 @@ table td
 #content
 {
 	line-height: 20px;
-	width:990px;
+	width:978px;
 }

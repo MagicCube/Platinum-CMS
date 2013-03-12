@@ -394,7 +394,8 @@ table td
 }
 #postDetail
 {
-	width: 990px;
+	margin:0 auto;
+	width: 978px;
 	margin-top:10px;
 	margin-bottom:10px;
 	
@@ -405,7 +406,7 @@ table td
 }
 #postDetail #content
 {
-	width:990px;
+	width:978px;
 
 }
 #postList
