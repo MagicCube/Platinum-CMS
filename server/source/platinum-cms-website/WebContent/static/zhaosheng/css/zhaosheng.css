@@ -375,7 +375,7 @@ ul > li a > div
 	margin: 0;
 	padding: 0;
 	width: 594px;
-	height: 290px;
+	height: 298px;
 }
 #post1{display:block;}
 .flexslider .slides > li{display: none;height: 290px;-webkit-backface-visibility: hidden;}
@@ -383,7 +383,7 @@ ul > li a > div
 {
 	position: absolute;
 	border-top: 2px solid #fff;
-	top: 0;
+	top: -3px;
 	left: 0;
 	background-color: rgb(238, 145, 26);
 	background: rgba(238, 145, 26, 0.55);
