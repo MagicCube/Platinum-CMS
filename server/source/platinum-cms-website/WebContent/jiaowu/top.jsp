@@ -21,9 +21,9 @@
       </span>
     </div>
     <div id = "search">
-      <form id="searchForm_1" name="form_1" method="post" action="#" target="_blank">
+      <form id="searchForm_1" name="form_1" method="get" action="../search" target="_blank">
         <label>
-          <input type="text" id="description" value="搜索..." onfocus="this.value=''" 
+          <input type="text" id="description" name="keyword" value="搜索..." onfocus="this.value=''" 
        					  	 onBlur="if(this.value==''){this.value='搜索...';}"
        					  	 style = "height: 18px; margin-left: 3px; margin-top: 2px;"/>
           <input type = "submit" name = "button" id = "button" value = "" />
