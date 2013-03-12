@@ -5,7 +5,9 @@ $(document).ready(function() {
 });
 
 function slideShow() {
-	$('#galley a').first().addClass("show");
+	//add the firet class of tag a "show"
+	$('#gallery a:first').addClass("show");
+	
 	//Set the opacity of all images to 0
 	$('#gallery a').css({opacity: 0.0});
 	
@@ -21,7 +23,7 @@ function slideShow() {
 	//Get the caption of the first image from REL attribute and display it
 	$('#gallery .content').html($('#gallery a:first').find('img').attr('rel')).animate({opacity: 0.9}, 400);
 	
-	//Call the gallery function to run the slideshow, 6000 = change to next image after 6 seconds
+	//Call the gallery function to run the slideshow, 4000 = change to next image after 4 seconds
 	setInterval('gallery()',4000);
 	
 }
