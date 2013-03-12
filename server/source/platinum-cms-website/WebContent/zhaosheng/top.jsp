@@ -21,6 +21,8 @@
   	</div>
 	
 	<menu id = "mainmenu">
+		<li class = "singleMenu"><a href = "/zhaosheng">首页</a>
+		</li>
 		<li class = "singleMenu"><a href = "/zhaosheng/sc000000000000000000000000000171/more/">学院概况</a>
 		</li>
 		<li class = "singleMenu"><a href = "/zhaosheng/sc000000000000000000000000000172/more/" >招生快讯</a>
@@ -31,7 +33,8 @@
 		</li>
 		<li class = "singleMenu"><a href = "/zhaosheng/sc000000000000000000000000000175/more/">专业介绍</a>
 		</li>
-		<li class = "singleMenu"><a href = "/zhaosheng/sc000000000000000000000000000180/more/">考生问答</a>
+		<li class = "singleMenu"><a href = "http://zbzs.njnu.edu.cn/enrol/guestbook/guestbook.asp">考生问答</a>
+		<!-- <li class = "singleMenu"><a href = "/zhaosheng/sc000000000000000000000000000180/more/">考生问答</a> -->
 		</li>
 
 
