@@ -26,7 +26,7 @@
 		 <li class = "singleMenu"><a href = "/caiwu/sc000000000000000000000000000159/more/">信息公开</a></li>
 		 <li class = "singleMenu"><a href = "/caiwu/sc000000000000000000000000000160/more/">规章制度</a></li>
 		 <li class = "singleMenu"><a href = "/caiwu/sc000000000000000000000000000161/more/">资料下载</a></li>
-
+		 <li class = "singleMenu"><a href = "http://210.29.137.29/wingsoft/index.jsp" target="_blank">财务系统</a></li>
 
 	</menu>	
 	</div>
