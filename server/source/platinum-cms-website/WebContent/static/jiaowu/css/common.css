@@ -326,9 +326,8 @@ ul { list-style: none; }
 	margin:0 auto;
 	line-height: 20px;
 	width:610px;
-	border-left:1px dashed #BBB;
-	border-right:1px dashed #BBB;
-	border-bottom:1px dashed #BBB;
+	border:1px dashed #BBB;
+	border-top:1px dotted #BBB;
 }
 #postDetail h1
 {
@@ -559,3 +558,7 @@ color: #7BA566;
 }
 
 #more li{position:relative;}
+
+a #title{color:#000;}
+a #title:hover{color:#808080;}
+#categoryNavigationBar{width:700px;}

@@ -314,24 +314,22 @@ table td a
 
 #bodyContent
 {
+	position: relative;
 	width: 990px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10px;
+	background: white;
 }
 
 #content
 {
-	margin-top: 30px;
-	margin-left:45px;
+	margin: 0 auto;
 	line-height: 20px;
-	width:900px;
+	width: 610px;
+	border: 1px dashed #BBB;
+	border-top: 1px dotted #BBB;
 }
-#more
-{
-	margin-top:48px;
-	
-}
+
 /*12-13*/
 #postList{width:990px;border-right:none;}
 #postList li
@@ -348,8 +346,7 @@ table td a
 }
 #postDetail
 {
-	margin-top:48px;
-	border-right:none;	
+	
 }
 
 /*postlist省略号 与图标同行*/
@@ -378,7 +375,7 @@ table td a
 
 #textContent, #content
 {
-	margin:0px 10px 0px 10px;
+	margin:0px auto;
 }
 #textContent #title,#postDetail #title
 {
@@ -519,3 +516,24 @@ table td a
 	margin-top: 20px;
 	margin-right: 10px;
 }
+#categoryNavigationBar{width:690px;}
+#sideBar{margin-right:5px;}
+#title_style{padding-top:8px;}
+#postList{width:100%;}
+#more
+{
+	margin-top: 10px;
+	width: 692px;
+	min-height: 650px;
+	height: 100%;
+	padding-right: 10px;
+	margin-left: 0;
+}
+#more .PostList li
+{
+	padding-left: 5px;
+	width: 680px;
+}
+a #title{color:#000;}
+a #title:hover{color:#808080;}
+#title_style span{position:absolute;top:8px;right:5px;}
