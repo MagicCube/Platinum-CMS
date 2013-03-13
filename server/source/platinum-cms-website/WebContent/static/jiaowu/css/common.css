@@ -559,6 +559,8 @@ color: #7BA566;
 
 #more li{position:relative;}
 
-a #title{color:#000;}
+a #title{width:560px;color:#000;overflow:hidden;}
 a #title:hover{color:#808080;}
 #categoryNavigationBar{width:700px;}
+#title_style span{position:absolute;top:8px;right:5px;}
+#postList li a{width:560px;display:block;}

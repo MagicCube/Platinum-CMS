@@ -38,7 +38,7 @@ body { background:url(../images/bgsite.jpg) repeat-x center top #FAEDBC; }
 {
 	margin: 0 auto;
 	width: 987px;
-
+	position:relative;
 }
 
 #main:after{
@@ -60,6 +60,14 @@ body { background:url(../images/bgsite.jpg) repeat-x center top #FAEDBC; }
 	overflow-y: hidden;
 }
 
+#sideBar
+{
+	padding:2px;
+	margin-top:10px;
+	margin-right:3px;
+	border: 2px solid #D41F00;
+	border-radius:0 10px 10px 0;
+}
 
 #login
 {
@@ -248,7 +256,7 @@ body { background:url(../images/bgsite.jpg) repeat-x center top #FAEDBC; }
 #menu #menu_ul #nav li
 {
 	height: 40px;
-	width:123.3px;
+	width:109.6px;
 	list-style: none;
 	display: inline;
 	float: left;
@@ -423,16 +431,15 @@ overflow: hidden;
 
 #more
 {
-
-	width: 980px;
+	min-height:631px;
+	width: 685px;
 	float: left;
 	margin-top:10px;
-	border:3px solid #D41F00; 
-	border-radius:10px;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
+	border:2px solid #D41F00; 
+	border-radius:10px 0 0 10px;
+	-moz-border-radius:10px 0 0 10px;
+	-webkit-border-radius:10px 0 0 10px;
 	background-color:#fff;
-	padding-top:10px;
 	padding-bottom:10px;
 	 
 }
@@ -446,10 +453,9 @@ overflow: hidden;
 #postList
 {
 
-	width:950px;	
+	width:100%;	
+	margin:0 auto;
 	padding-top: 10px;
-	padding-left: 10px;
-	padding-right:0px;
 	list-style: none;
 	display: list-item;
 }
@@ -538,3 +544,15 @@ overflow: hidden;
 {
 	text-align: center;
 }
+#postDetail
+{
+	margin-left:1px;
+	min-height:631px;
+	width:685px;
+	padding:0;
+	margin-top: 10px;
+	border: 2px solid #D41F00;
+	border-radius:10px 0 0 10px;
+}
+#categoryNavigationBar{width:100%;margin-top:5px;}
+#date{margin-right:10px;}

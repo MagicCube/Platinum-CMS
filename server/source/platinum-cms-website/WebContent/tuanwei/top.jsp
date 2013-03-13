@@ -1,5 +1,6 @@
 ﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="cms" tagdir="/WEB-INF/tags"%>
 <link rel="stylesheet" href="/static/tuanwei/css/commom.css" type="text/css" />
 <div id="main">
 <!--
@@ -93,6 +94,11 @@
   <div id="menu">
     <div id="menu_ul">
       <ul id="nav">
+      	<li>
+          <a href="/tuanwei/">
+            首页
+          </a>
+        </li>
         <li>
           <a href="/tuanwei/ff8081813b50f9a5013b564548d30002.html">
             部门简介
@@ -138,3 +144,14 @@
   </div>
   <!--导航结束-->
   <!--头部结束-->
+  	<% if (request.getParameter("displaySideBar").equals("true")) {%>
+		<div id="sideBar">
+			<div id = "sideBarin">
+			<div id = "title_style"><strong>要文回顾</strong><span style= "float: right;"><a href = "/news/more/" target="_blank">更多...</a></span></div>
+			<cms:PostList id="ywhgList" cssClass="TextList" categoryId='news' count="9" />
+			<div id = "title_style"><strong>新闻排行榜</strong><span style= "float: right;"></span></div>
+			<cms:PostList id="ywhgList" cssClass="TextList" categoryId='news' subcategoryId="rank" count="9" />
+			</div>
+		</div>	
+	<%}%>
+

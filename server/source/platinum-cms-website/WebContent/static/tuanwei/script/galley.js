@@ -4,6 +4,11 @@ $(document).ready(function() {
 
 });
 
+if($('#sideBar').length>0) {
+	$('#postList').css('width','631px');
+	$('#postList li').css{"width":"100%","margin":"0 auto","padding":"0"};
+}
+
 function slideShow() {
 	//add the firet class of tag a "show"
 	$('#gallery a:first').addClass("show");

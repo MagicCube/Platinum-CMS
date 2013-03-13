@@ -33,6 +33,20 @@
     <!--底部链接结束-->
   </div>
   <!--右侧正文结束-->
+  	
+	<script>
+	if($('#sideBar').length>0){
+		$('#postList').css({'min-height':'631px',"margin":"3px 5px 0 10px"});
+		$("#more").css("min-height","631px");
+		$('#postList li').css({"width":"100%","margin":"0 auto","padding":"0"});
+		$('#postList li a').css({"display":"block","width":"555px"});
+		$('#postList li #title').css({"overflow":"hidden","width":"550px"});
+	}
+	else{
+		$('#postDetail').css({'width':'980px',"border-radius":"10px"});
+	}
+	</script>
+	
 <!--页脚开始-->
   <div id="footer">
     <span id = "text">版权所有©南京师范大学中北学院　　地址:南京市栖霞区学林路2号　　邮编:210046 </span>
@@ -49,3 +63,4 @@
   </div>
     </div>
   <!--页脚结束-->
+	
