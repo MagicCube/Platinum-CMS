@@ -14,12 +14,40 @@
 <link href = "/mob/static/common/css/home.css" rel = "stylesheet"></link>
 <script type="text/javascript" src="mob/static/common/scripts/dload.js"></script>
 <script src = "/mob/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
+<script type="text/javascript">
+
+
+$("aa").ready(function(){ $('#aa > div > div:eq(0)').show();
+
+$("#aa > div > h3").click(function(){
+	 
+    if(false == $(this).next().is(':visible')) {
+        $('#aa > div > div').slideUp(300);
+    }
+    $(this).next().slideToggle(300);
+});
+
+	 
+    if(false == $(this).next().is(':visible')) {
+        $('#aa > div > div').slideUp(300);
+    }
+    $(this).next().slideToggle(300);
+    $('#aa > div > div:eq(0)').show();
+});
+ 
+
+
+
+</script>
+
+
+
 <!-- FlexSlider start -->
 <link rel="stylesheet" href="/mob/static/home/plugins/flexslider/flexslider.css" type="text/css" />
 <script type="text/javascript" src="/mob/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
 <!-- FlexSlider end -->
 </head>
-<body>
+<body id="q" >
   <cms:Header></cms:Header>
   
    
@@ -42,7 +70,7 @@
 <h3><span class="left">中北快讯大观园</span> <span id = "position_2"><a href = "/mob/news/sc000000000000000000000000000008/more/"><font color="#239b8b">更多</font></a></span>  </h3></div>
  
   <!-- 中北快讯大观园 -->
-  <div class="r_con02_front">
+  <div class="r_con02_front" id="aa">
        <div class="info">
   	          <h3>通知公告<span id = "position_2" class="right"><a href = "/mob/news/sc000000000000000000000000000020/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
   	 	      <div  class="front">
