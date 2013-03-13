@@ -12,7 +12,17 @@
 	width:100%;
 }
 
+.navbar{
+	
+   border-top: 1px solid #CCC;
+   background: url(http://csdnimg.cn/www/images/csdnindex_pic11.gif) repeat-x;
+   height: 29px;
+   font-size: 14px;
+   padding: 5px 0 0 10px;
+   position: relative;
+   clear: both;
 
+}
 #content > #left
 {
 	width: 609px;

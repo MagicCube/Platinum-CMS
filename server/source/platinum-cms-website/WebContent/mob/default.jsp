@@ -10,6 +10,7 @@
 <!-- 告诉设备忽略将页面中的数字识别为电话号码  -->
 <meta name="format-detection" content="telephone=no" /> 
 <link href="mob/static/common/css/mobile.css" rel="stylesheet" type="text/css" />
+<link href="/static/common/css/css.css" rel="stylesheet" type="text/css" />
 <link href = "/mob/static/common/css/home.css" rel = "stylesheet"></link>
 <script type="text/javascript" src="mob/static/common/scripts/dload.js"></script>
 <script src = "/mob/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
@@ -38,13 +39,52 @@
   
   
   <div style="border-top:#239b8b 1px solid; border-bottom:#ddd 1px solid;" >
-<h3><span class="left">通知公告</span> <span id = "position_2"><a href = "/mob/news/sc000000000000000000000000000008/more/"><font color="#239b8b">更多</font></a></span>  </h3></div>
+<h3><span class="left">中北快讯大观园</span> <span id = "position_2"><a href = "/mob/news/sc000000000000000000000000000008/more/"><font color="#239b8b">更多</font></a></span>  </h3></div>
  
-  <!-- 通知公告部分 -->
+  <!-- 中北快讯大观园 -->
   <div class="r_con02_front">
-  <cms:PostList id="tzggList"   subcategoryId="sc000000000000000000000000000008" count="7"/>
+       <div class="info">
+  	          <h3>通知公告<span id = "position_2" class="right"><a href = "/mob/news/sc000000000000000000000000000020/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
+  	 	      <div  class="front">
+    	      <cms:PostList id="xydtList2" subcategoryId="sc000000000000000000000000000008" where="photoURL is null" count="4" />
+    	      </div>
+       </div>
+      
+      
+        <div class="info">
+           <h3 >专题报导<span id = "position_2" class="right"><a href = "/mob/news/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
+    	   <div  class="front">
+   		      <cms:PostList id="ztbdList" cssClass="PhotoSummaryList" categoryId="news" displayDate="ture" displaySummary="flase" displayPhoto="true" count="4" />
+   	       </div>
+       </div>
+       <div class="info">
+   	        <h3>新闻动态<span id = "position_2" class="right"><a href = "/mob/news/sc000000000000000000000000000006/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
+   	        <div  class="front">
+   		    <cms:PostList id="xwdtList2" subcategoryId="sc000000000000000000000000000006" where="photoURL is null" count="4" />
+   	       </div>
+       </div>
+       <div class="info">
+  	          <h3>校园动态<span id = "position_2" class="right"><a href = "/mob/news/sc000000000000000000000000000020/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
+  	 	      <div  class="front">
+    	      <cms:PostList id="xydtList2" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="4" />
+    	      </div>
+       </div>
+       
+       <div class="info">
+  	          <h3>通知公告<span id = "position_2" class="right"><a href = "/mob/news/sc000000000000000000000000000020/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
+  	 	      <div  class="front">
+    	      <cms:PostList id="xydtList2" subcategoryId="sc000000000000000000000000000008" where="photoURL is null" count="4" />
+    	      </div>
+       </div>
+  
+  
+  
+  
+  
   </div> 
-  <!-- 通知公告部分 end-->
+  
+  
+  <!--中北快讯大观园end-->
    
   </div>       
   </div>

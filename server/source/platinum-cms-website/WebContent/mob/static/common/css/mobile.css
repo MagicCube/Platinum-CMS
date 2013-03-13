@@ -233,7 +233,7 @@ a: hover {
 	padding-top:10px;
 	height: 55px;
 	width:190px;
-
+	
 }
 
 .s_logo1 {
@@ -626,7 +626,7 @@ a.m_cencel {
 	height: 31px;
 	line-height: 31px;
 	color:#239b8b;
-	background: url(../images/mt_bg.gif) repeat-x;
+	background: url(../images/label.gif) repeat-x;
 	clear: both;
     backgroundcoler:#239b8b;
 }
