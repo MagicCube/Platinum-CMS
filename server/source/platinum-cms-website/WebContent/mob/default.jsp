@@ -78,13 +78,13 @@ $("#aa > div > h3").click(function(){
     	      </div>
        </div>
       
-      
-        <div class="info">
-           <h3 >专题报导<span id = "position_2" class="right"><a href = "/mob/news/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
-    	   <div  class="front">
-   		      <cms:PostList id="ztbdList" cssClass="PhotoSummaryList" categoryId="news" displayDate="ture" displaySummary="flase" displayPhoto="true" count="4" />
-   	       </div>
+      <div class="info">
+  	          <h3>校园动态<span id = "position_2" class="right"><a href = "/mob/news/sc000000000000000000000000000020/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
+  	 	      <div  class="front">
+    	      <cms:PostList id="xydtList2" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="4" />
+    	      </div>
        </div>
+      
        <div class="info">
    	        <h3>新闻动态<span id = "position_2" class="right"><a href = "/mob/news/sc000000000000000000000000000006/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
    	        <div  class="front">
