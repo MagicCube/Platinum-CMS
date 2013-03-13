@@ -309,6 +309,7 @@ ul { list-style: none; }
 
 #bodyContent
 {
+	position:relative;
 	width: 990px;
 	margin-left: auto;
 	margin-right: auto;
@@ -322,10 +323,12 @@ ul { list-style: none; }
 
 #content
 {
-	margin-top: 20px;
-	margin-left:45px;
+	margin:0 auto;
 	line-height: 20px;
-	width:900px;
+	width:610px;
+	border-left:1px dashed #BBB;
+	border-right:1px dashed #BBB;
+	border-bottom:1px dashed #BBB;
 }
 #postDetail h1
 {
@@ -543,3 +546,4 @@ color: #7BA566;
 #more .PostList li{padding-left:15px;width:950px;}
 #postList{width:980px;}
 
+#sideBar{margin-right:5px;margin-top:8px;}
