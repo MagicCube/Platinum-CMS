@@ -543,7 +543,19 @@ color: #7BA566;
 }
 
 /*12-10*/
-#more .PostList li{padding-left:15px;width:950px;}
-#postList{width:980px;}
+#more .PostList li{padding-left:5px;width:680px;}
+#postList{width:100%;}
 
 #sideBar{margin-right:5px;margin-top:8px;}
+
+#more
+{
+	margin-top: 10px;
+	width: 692px;
+	min-height: 650px;
+	height: 100%;
+	padding-right: 10px;
+	margin-left:0;
+}
+
+#more li{position:relative;}

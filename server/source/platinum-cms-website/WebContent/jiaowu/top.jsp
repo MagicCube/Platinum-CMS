@@ -93,7 +93,7 @@
 <% if (request.getParameter("displaySideBar").equals("true")) {%>
 	<div id="sideBar">
 		<div id = "sideBarin">
-		<div id = "title_style"><strong>要文回顾</strong><span style= "float: right;"><a href = "/news/more/">更多...</a></span></div>
+		<div id = "title_style"><strong>要文回顾</strong><span style= "float: right;"><a href = "/news/more/" target="_blank">更多...</a></span></div>
 		<cms:PostList id="ywhgList" cssClass="TextList" categoryId='news' count="9" />
 		<div id = "title_style"><strong>新闻排行榜</strong><span style= "float: right;"></span></div>
 		<cms:PostList id="ywhgList" cssClass="TextList" categoryId='news' subcategoryId="rank" count="9" />
