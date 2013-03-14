@@ -18,7 +18,7 @@
 				<p>联系地址：南京市栖霞区仙林大学城学林路2号</p>
 				<p>邮政编码：210046</p>			
   				<!--百度地图容器-->
-  				<div style="width:1500px;height:1500px;border:#ccc solid 1px;" id="dituContent"></div>
+  				<div style="width:800px;height:800px;border:#ccc solid 1px;" id="dituContent"></div>
 				<script type="text/javascript">
    				 //创建和初始化地图函数：
     			function initMap(){
