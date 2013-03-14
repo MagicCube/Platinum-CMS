@@ -28,7 +28,7 @@
 				
 			   
 					
-				<td><div class="i_news" onclick="location.href='../mob/pic/';"><img src="../mob/static/common/images/ditu.jpg"></div><font class="b" color="#239b8b" >地图</font></td>
+				<td><div class="i_news" onclick="location.href='../mob/ditu/';"><img src="../mob/static/common/images/ditu.jpg"></div><font class="b" color="#239b8b" >地图</font></td>
 				
 				<td><div class="i_news" onclick="location.href='../mob/pic/';"><img src="../mob/static/common/images/yaoyiyao.jpg"></div><font class="b" color="#239b8b" >摇你喜欢</font></td>
 				<td><div class="i_news" onclick="location.href='http://zbvip.njnu.edu.cn/wap';"><img src="../mob/static/common/images/teacher.jpg"></div><font class="b" color="#239b8b" >教师登陆</font></td>
