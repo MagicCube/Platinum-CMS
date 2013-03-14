@@ -15,7 +15,7 @@
 <link href = "/static/common/css/basic.css" rel = "stylesheet"></link>
 <link href="/static/common/css/normal.css" rel="stylesheet"/>
 </head>
-<body>
+<body> 
 		<cms:Header/>
 			<div id = "maincontent" style = "height: 580px;">
 			<div id = "layoutleft" >
