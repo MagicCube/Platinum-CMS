@@ -16,13 +16,13 @@
       </span>
       <span style = "color: #fff;"> |</span>
       <span>
-      <a href = "http://njnu.edu.cn/">
+      <a href = "http://njnu.edu.cn/" target="_blank">
         南师大
       </a>
       </span>
     </div>
     <div id = "search">
-      <form id="searchForm_1" name="form_1" method="get" action="../search" target="_blank">
+      <form id="searchForm_1" name="form_1" method="get" action="../../../search" target="_blank">
         <label>
           <input type="text" id="description" name="keyword" value="搜索..." onfocus="this.value=''" 
        					  	 onBlur="if(this.value==''){this.value='搜索...';}"

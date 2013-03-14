@@ -8,11 +8,11 @@
                           
 <div style="width:20px; padding-top:0px;padding-left:10px;padding-right:10px;float:left; text-align:center; margin-left:20px;">共青团组织</div>
 
-<div style="float:left;padding-left:10px; padding-top:10px;"><a href="#"><img src="/static/tuanwei/images/zuzhi_1.png" width="150px" height="50px" /></a></div>
-<div style="float:left;padding-left:10px; padding-top:10px;"><a href="#"><img src="/static/tuanwei/images/zuzhi_4.png" width="150px" height="50px" /></a></div>
-<div style="float:left;padding-left:10px; padding-top:10px;"><a href="#"><img src="/static/tuanwei/images/zuzhi_2.png" width="150px" height="50px" /></a></div>
-<div style="float:left;padding-left:10px; padding-top:10px;"><a href="#"><img src="/static/tuanwei/images/zuzhi_5.gif" width="150px" height="50px" /></a></div>
-<div style="float:left;padding-left:10px; padding-top:10px;"><a href="#"><img src="/static/tuanwei/images/zuzhi_3.png" width="150px" height="50px" /></a></div>
+<div style="float:left;padding-left:10px; padding-top:10px;padding-right:10px;"><a href="http://www.ccyl.org.cn/" target="_blank"><img src="/static/tuanwei/images/zuzhi_1.png" width="150px" height="50px" /></a></div>
+<div style="float:left;padding-left:10px; padding-top:10px;padding-right:10px;"><a href="http://61.gqt.org.cn/" target="_blank"><img src="/static/tuanwei/images/zuzhi_4.png" width="150px" height="50px" /></a></div>
+<div style="float:left;padding-left:10px; padding-top:10px;padding-right:10px;"><a href="http://www.jiangsugqt.org" target="_blank"><img src="/static/tuanwei/images/zuzhi_2.png" width="150px" height="50px" /></a></div>
+<div style="float:left;padding-left:10px; padding-top:10px;padding-right:10px;"><a href="http://www.ccyl.org.cn/695/gqt_tuanshi/" target="_blank"><img src="/static/tuanwei/images/zuzhi_5.gif" width="150px" height="50px" /></a></div>
+<div style="float:left;padding-left:10px; padding-top:10px;padding-right:10px;"><a href="http://morning.njnu.edu.cn" target="_blank"><img src="/static/tuanwei/images/zuzhi_3.png" width="150px" height="50px" /></a></div>
 
 
 
@@ -21,11 +21,11 @@
         
         <div class="div_link">
           <div style="width:20px;padding-left:10px;padding-right:10px;float:left; text-align:center;margin-left:20px;">前沿资讯</div>
-    <div style="float:left;padding-left:10px;padding-left:10px;"><a href="#"><img src="/static/tuanwei/images/qianyan_1.png" width="150px" height="50px" /></a></div>
-    <div style="float:left;padding-left:10px;padding-left:10px;"><a href="#"><img src="/static/tuanwei/images/qianyan_2.gif" width="150px" height="50px" /></a></div>
-    <div style="float:left;padding-left:10px;padding-left:10px;"><a href="#"><img src="/static/tuanwei/images/qianyan_3.gif" width="150px" height="50px" /></a></div>
-    <div style="float:left;padding-left:10px;padding-left:10px;"><a href="#"><img src="/static/tuanwei/images/qianyan_4.gif" width="150px" height="50px" /></a></div>
-    <div style="float:left;padding-left:10px;padding-left:10px;"><a href="#"><img src="/static/tuanwei/images/qianyan_5.png" width="150px" height="50px" /></a></div>
+    <div style="float:left;padding-left:10px;padding-left:10px;padding-right:10px;"><a href="http://www.jschina.com.cn/" target="_blank"><img src="/static/tuanwei/images/qianyan_1.png" width="150px" height="50px" /></a></div>
+    <div style="float:left;padding-left:10px;padding-left:10px;padding-right:10px;"><a href="http://www.people.com.cn/" target="_blank"><img src="/static/tuanwei/images/qianyan_2.gif" width="150px" height="50px" /></a></div>
+    <div style="float:left;padding-left:10px;padding-left:10px;padding-right:10px;"><a href="http://www.cyol.net/" target="_blank"><img src="/static/tuanwei/images/qianyan_3.gif" width="150px" height="50px" /></a></div>
+    <div style="float:left;padding-left:10px;padding-left:10px;padding-right:10px;"><a href="http://www.gmw.cn/" target="_blank"><img src="/static/tuanwei/images/qianyan_4.gif" width="150px" height="50px" /></a></div>
+    <div style="float:left;padding-left:10px;padding-left:10px;padding-right:10px;"><a href="http://www.china.com/" target="_blank"><img src="/static/tuanwei/images/qianyan_5.png" width="150px" height="50px" /></a></div>
         </div>
         
       </div>

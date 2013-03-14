@@ -559,3 +559,12 @@ overflow: hidden;
 #categoryNavigationBar{width:100%;margin-top:5px;}
 #date{margin-right:10px;}
 #imageContent{width:265px;height:220px;}
+.div_link {
+	width: 920px;
+	height: 80px;
+	display: block;
+	float: left;
+	padding-left: 20px;
+	padding-bottom: 5px;
+	padding-top: 10px;
+}

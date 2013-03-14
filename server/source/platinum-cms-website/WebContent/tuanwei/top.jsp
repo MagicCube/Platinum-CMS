@@ -70,13 +70,13 @@
         </span>
         <span style = "color: #fff;"> |</span>
         <span>
-        <a href = "http://njnu.edu.cn" style=" font-family:黑体;">
+        <a href = "http://njnu.edu.cn" target="_blank" style=" font-family:黑体;">
           南师大
         </a>
         </span>
       </div>
       <div id = "search">
-        <form id="searchForm_1" name="form_1" method="get" action="../search" target="_blank">
+        <form id="searchForm_1" name="form_1" method="get" action="../../../search" target="_blank">
           <label>
             <input type="hidden" id="searchVpath" name="vpath" value="" />
             <input type="text" name="keyword" id="description" value="搜索..." onfocus="this.value=''" 

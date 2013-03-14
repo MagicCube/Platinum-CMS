@@ -319,6 +319,7 @@ ul { list-style: none; }
 #postDetail
 {
 	margin-top: 10px;
+	border-right:1px solid #ccc;
 }
 
 #content
@@ -549,6 +550,7 @@ color: #7BA566;
 
 #more
 {
+	border-right:1px solid #ccc;
 	margin-top: 10px;
 	width: 692px;
 	min-height: 650px;
@@ -559,7 +561,7 @@ color: #7BA566;
 
 #more li{position:relative;}
 
-a #title{width:560px;color:#000;overflow:hidden;}
+a #title{width:560px;color:#000;overflow:hidden;line-height:30px;}
 a #title:hover{color:#808080;}
 #categoryNavigationBar{width:700px;}
 #title_style span{position:absolute;top:8px;right:5px;}

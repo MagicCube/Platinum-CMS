@@ -17,7 +17,7 @@
 	padding:0;
 	font-size: 12px;
 	position: relative;
-	height: 740px;
+	height: 900px;
 }
  #left_part #left_column_1
 {
@@ -38,9 +38,13 @@
 }
 div.category_1
 {
+	margin-top:5px;
+	border:1px solid #d3dae2;
+	border-top:0;
+	border-radius:5px 5px 0 0;
 	height: 100%;
 	padding: 0;
-	padding-left:10px;
+	margin-left:10px;
 	padding-right:10px;
 	margin-bottom: 15px;
 
@@ -53,6 +57,14 @@ div.category_1 #position_2
 
 }
 
+div.category_1 #position_2 a
+{
+	width:100%;
+	height:100%;
+	text-align:right;
+	line-height:20px;	
+}
+
 .left_category_column_1
 {
 	padding-left:10px;
@@ -61,12 +73,12 @@ div.category_1 #position_2
 
 div.category_name
 {
+	width:337px;
+	height:40px;
 	margin: 0;
-	background-color: #F6F6F6;
-	height: 30px;
+	background-image:url(/static/jiaowu/images/jiaowuLabel.jpg);
 	line-height: 20px;
 	display: block;
-	padding: 0 5px 10px 5px;
 }
 div.category_1 h3
 {
@@ -87,9 +99,8 @@ div.category_1 h3
 }
 #left_part .latestnews_menu
 {
-	height:175px;
+	min-height:222px;
 	line-height:22px;
-	margin-top:5px;
 	padding-left:10px;
 }
 
@@ -119,8 +130,9 @@ div.category_1 h3
 
 #left_part h3
 {
+	padding-left:10px;
 	display: block;
-	font-size: 1.17em;
+	font-size: 1.57em;
 	-webkit-margin-before: 1em;
 	-webkit-margin-after: 1em;
 	-webkit-margin-start: 0px;
@@ -128,11 +140,13 @@ div.category_1 h3
 	font-weight: bold;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	color:#013c36;
 }
 
 #left_part ul
 {
-	margin-left: -15px;
+	min-height:222px;
+	margin-left: -10px;
 }
 
 #left_part ul li
@@ -193,8 +207,6 @@ div.moduletable, div.moduletable_menu, div.moduletable_text
 }
 #right_part .menu
 {
-	padding-left:10px;
-	padding-right:30px;
 	width:280px;
 }
 #right_part .link_2
@@ -229,7 +241,7 @@ div.moduletable h3, div.moduletable_menu h3, div.moduletable_text h3
 	-webkit-margin-end: 0px;
 	font-weight: bold;
 		margin-top: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 0;
 }
 
 #right_part ul li, #ja-col2 ul li
