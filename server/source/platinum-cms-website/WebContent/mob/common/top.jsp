@@ -6,12 +6,7 @@
     <div class="s_header">
     	<div class="s_logo" >
     	   <div class="zblogo" onclick="location.href='';" ><img src="../mob/static/common/images/zblogo.jpg"></div>
-	    	<div class="m_nav">
-	    	<ul>
-	        		<li><a href="http://zbvip.njnu.edu.cn/wap" class="m_login" ><span>教师登录</span></a></li>
-	        		<li><a href="http://222.192.5.246/wap" class="m_login" >学生登录</a></li>
-	        	</ul>
-	        	</div> 
+	    	  
         </div>
         
     </div>
@@ -31,7 +26,14 @@
 				
 				<td><div class="i_news" onclick="location.href='../mob/pic/';"><img src="../mob/static/common/images/view.jpg"></div><font class="b" color="#239b8b" >美丽校园</font></td>
 				
+			   
+					
+				<td><div class="i_news" onclick="location.href='../mob/pic/';"><img src="../mob/static/common/images/ditu.jpg"></div><font class="b" color="#239b8b" >地图</font></td>
 				
+				<td><div class="i_news" onclick="location.href='../mob/pic/';"><img src="../mob/static/common/images/yaoyiyao.jpg"></div><font class="b" color="#239b8b" >摇你喜欢</font></td>
+				<td><div class="i_news" onclick="location.href='http://zbvip.njnu.edu.cn/wap';"><img src="../mob/static/common/images/teacher.jpg"></div><font class="b" color="#239b8b" >教师登陆</font></td>
+				
+				 <td><div class="i_news" onclick="location.href='http://222.192.5.246/wap';"><img src="../mob/static/common/images/student.jpg"></div><font class="b" color="#239b8b" >学生登陆</font></td>
 				
 	
 				
