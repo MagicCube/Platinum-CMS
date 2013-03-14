@@ -10,6 +10,7 @@ html
 
 body
 {
+	background-color:#eee;
 	padding: 0;
 	margin: 0;
 	background: #fff;
@@ -342,6 +343,7 @@ table td a
 
 #bodyContent
 {
+	position: relative;
 	width: 990px;
 	margin-left: auto;
 	margin-right: auto;
@@ -349,11 +351,12 @@ table td a
 
 #content
 {
-	margin-top: 30px;
+	margin: 0 auto;
 	line-height: 20px;
-	width:990px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 650px;
+	border: 1px dashed #BBB;
+	border-top: 1px dotted #BBB;
+	padding:0;
 }
 #postList #pageNavigationBar 
 {
@@ -364,7 +367,7 @@ table td a
 
 /*简介*/
 #postDetail #imageContent{float:left;margin-top:50px;}
-#postDetail #textContent{margin:50px 0 0 0;width:650px;float:right;padding:10px 0 0 0;}
+#postDetail #textContent{margin:50px 0 0 0;width:650px;float:right;padding:10px 5px 0 0;}
 #textContent > #content{width:650px;}
 
 #imageContent img
@@ -528,6 +531,69 @@ table td a
 #tsztList>#post1>.bx-caption{display:block;}
 
 li #title{font-size:14px;}
-.mainMore a{}
+.mainMore a{font-size:14px;color:#183442;margin-right:10px;}
+
+#more {
+	border-left:1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding-top: 1px;
+	width: 692px;
+	min-height: 650px;
+	height: 660px;
+	padding-right: 10px;
+	margin-left: 0;
+}
+
+#categoryNavigationBar {
+	padding-top:4px;
+	width: 700px;
+}
+
+#postList {
+	width: 100%;
+}
+
+#more .PostList li {
+	padding-left: 5px;
+	width: 680px;
+}
+
+#sideBar {
+	padding-right: 3px;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	margin-top:3px;
+}
+
+#title_style
+{
+	width:275px;
+	padding-left:5px;
+}
+
+#sideBar li
+{
+	border-bottom: 1px #ddd dashed;
+}
+
+#postDetail {
+	width: 702px;
+	border: 1px solid #ccc;
+	padding-right: 0;
+}
+
+a #title
+{
+	color:#000;
+}
+
+a #title:hover {
+	color: #808080;
+}
+
+
+
+
+
 
 

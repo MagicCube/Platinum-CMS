@@ -74,7 +74,6 @@
 	padding-left:15px;
 	background-image: url(/static/xuegong/images/list.png);
 	background-repeat: no-repeat;
-	background-position: 0% 50%;
 	padding-bottom:3px;
 	border-bottom:1px solid #ccc;
 }
@@ -100,7 +99,7 @@
 	padding :0;
 	height: 290px;
 	position: absolute;
-	top: 350px;
+	top: 335px;
 	left: 335px;
 	border: 1px #e5e5e5 solid;
 	border-radius:10px;
@@ -120,7 +119,7 @@
 	overflow: hidden;
 	background-color:#e5e5e5; 
 	left: 0;
-	top: 350px;
+	top: 335px;
 }
 #xgcontent > #mainContent > #email
 {
@@ -128,7 +127,7 @@
 	height: 290px;
 	position: absolute;
 	right: 0;
-	top: 350px;
+	top: 335px;
 	border: 1px #e5e5e5 solid;
 	border-radius: 10px;
 	-webkit-border-radius:10px;
@@ -165,7 +164,6 @@
 	padding-left:15px;
 	background-image: url(/static/xuegong/images/list.png);
 	background-repeat: no-repeat;
-	background-position: 0% 50%;
 	padding-bottom:3px;
 	border-bottom:1px solid #ccc;
 }
@@ -188,7 +186,6 @@
 	padding-left:15px;
 	background-image: url(/static/xuegong/images/list.png);
 	background-repeat: no-repeat;
-	background-position: 0% 50%;
 	padding-bottom:3px;
 	border-bottom:1px solid #ccc;
 }
@@ -212,7 +209,6 @@
 	padding-left:15px;
 	background-image: url(/static/xuegong/images/list.png);
 	background-repeat: no-repeat;
-	background-position: 0% 50%;
 	padding-bottom:3px;
 	border-bottom:1px solid #ccc;
 }
@@ -236,7 +232,6 @@
 	padding-left:15px;
 	background-image: url(/static/xuegong/images/list.png);
 	background-repeat: no-repeat;
-	background-position: 0% 50%;
 	padding-bottom:3px;
 	border-bottom:1px solid #ccc;
 }
@@ -253,6 +248,7 @@
 
 .PostList li a #title
 {
+	line-height:16px;
 	-o-text-overflow:ellipsis;
 	text-overflow: ellipsis;
 	white-space: nowrap;
