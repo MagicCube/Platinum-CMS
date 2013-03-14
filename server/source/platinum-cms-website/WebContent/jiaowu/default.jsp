@@ -84,15 +84,15 @@
                   
           <!-- BEGIN: RIGHT COLUMN -->
           <div id="right_part">
-            <div class="moduletable_menu" >
+            <div class="moduletable_menu" id="tongzhi" >
               <h3 style="margin-top:10px;">通知与公告</h3>
-             <cms:PostList id = "zztglist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000045" count = "6"/>  
+             <cms:PostList id = "zztglist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000045" count = "7"/>  
             </div>
             
 			<hr style="text-align:center; width:90%; margin-left:10px;" />
             　　
             <div class="moduletable_menu">
-              <h3>教务处简介</h3>
+              <h3>&nbsp;&nbsp;&nbsp;&nbsp;教务处简介</h3>
               <ul class="menu">
                 <li class="link_2">
                   <a href="/index.php?option=com_content&amp;view=article&amp;id=11&amp;Itemid=22">
@@ -125,7 +125,7 @@
             <hr style="text-align:center; width:90%; margin-left:10px;" />
             
             <div class="moduletable_menu">
-              <h3>常用菜单</h3>
+              <h3>&nbsp;&nbsp;&nbsp;&nbsp;常用菜单</h3>
               <ul class="menu">
                 <li class="link_2">
                   <a href="http://222.192.5.246/" target="_blank">

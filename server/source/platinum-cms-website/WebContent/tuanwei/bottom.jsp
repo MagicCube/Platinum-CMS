@@ -49,7 +49,7 @@
 	
 <!--页脚开始-->
   <div id="footer">
-    <span id = "text">版权所有©南京师范大学中北学院　　地址:南京市栖霞区学林路2号　　邮编:210046 </span>
+    <span id = "text">版权所有©南京师范大学中北学院　　地址:南京市栖霞区仙林大学城学林路2号 210046 </span>
     	<div id="linkLabel">
 			<ul>
 				<li><a href="http://e.weibo.com/u/2430329182?ref=http%3A%2F%2Fs.weibo.com%2Fweibo%2F%2525E4%2525B8%2525AD%2525E5%25258C%252597%2525E5%2525AD%2525A6%2525E9%252599%2525A2%2525E5%25259B%2525A2%2525E5%2525A7%252594%3Ftopnav%3D1%26wvr%3D5%26b%3D1" target="_banlk" title="中北团委"><img src="/static/tuanwei/images/weibo.gif" height="25px;" /></a></li>

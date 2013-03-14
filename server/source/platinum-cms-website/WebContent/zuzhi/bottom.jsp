@@ -113,7 +113,7 @@
 			
 			<div id="website">
 				<p><a href="http://www.nnuzc.cn">www.nnuzc.cn</a></p>
-				<p>南京市栖霞区南京师范大学中北学院学林路2号 210023</p>
+				<p>南京市栖霞区仙林大学城学林路2号 210046</p>
 			</div>
     		
     		<div id="developer">	 

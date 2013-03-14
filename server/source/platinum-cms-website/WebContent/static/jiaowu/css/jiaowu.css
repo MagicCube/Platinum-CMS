@@ -170,7 +170,7 @@ div.category_1 h3
 {
 	width: 30%;
 	float: right;
-	height: 740px;
+	height: 900px;
 	background-color:#f6f6f6;
 }
 
@@ -186,7 +186,7 @@ outline: none;
 background-color:rgb(221, 221, 221); }
 
 
-.moduletable_menu { height: 230px;}
+.moduletable_menu { height: 200px;}
 
 
 div.moduletable, div.moduletable_menu, div.moduletable_text
@@ -207,10 +207,11 @@ div.moduletable, div.moduletable_menu, div.moduletable_text
 }
 #right_part .menu
 {
-	width:280px;
+	width:100%;
 }
 #right_part .link_2
 {
+	width:100%;
 	border-bottom-width: 1px;
 	border-bottom-style: dashed;
 	border-bottom-color: #CCC;
@@ -240,8 +241,9 @@ div.moduletable h3, div.moduletable_menu h3, div.moduletable_text h3
 	-webkit-margin-start: 0px;
 	-webkit-margin-end: 0px;
 	font-weight: bold;
-		margin-top: 5px;
+	margin-top: 5px;
 	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 #right_part ul li, #ja-col2 ul li
@@ -258,3 +260,4 @@ div.moduletable h3, div.moduletable_menu h3, div.moduletable_text h3
 	color:#000000;
 
 }
+#tongzhi{height:300px;}
