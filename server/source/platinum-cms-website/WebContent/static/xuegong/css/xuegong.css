@@ -75,6 +75,8 @@
 	background-image: url(/static/xuegong/images/list.png);
 	background-repeat: no-repeat;
 	background-position: 0% 50%;
+	padding-bottom:3px;
+	border-bottom:1px solid #ccc;
 }
 
 #xgcontent > #mainContent > #gongNews
@@ -164,6 +166,8 @@
 	background-image: url(/static/xuegong/images/list.png);
 	background-repeat: no-repeat;
 	background-position: 0% 50%;
+	padding-bottom:3px;
+	border-bottom:1px solid #ccc;
 }
 
 #xgcontent > #mainContent > #informs ul
@@ -185,6 +189,8 @@
 	background-image: url(/static/xuegong/images/list.png);
 	background-repeat: no-repeat;
 	background-position: 0% 50%;
+	padding-bottom:3px;
+	border-bottom:1px solid #ccc;
 }
 
 #xgcontent > #mainContent > #teaching ul
@@ -197,7 +203,7 @@
 #xgcontent > #mainContent > #teaching li 
 {
 
-	margin: 8px 0 0 0;
+	margin: 10px 0 0 0;
 	width: 280px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -207,6 +213,8 @@
 	background-image: url(/static/xuegong/images/list.png);
 	background-repeat: no-repeat;
 	background-position: 0% 50%;
+	padding-bottom:3px;
+	border-bottom:1px solid #ccc;
 }
 
 #xgcontent > #mainContent > #email ul
@@ -229,6 +237,8 @@
 	background-image: url(/static/xuegong/images/list.png);
 	background-repeat: no-repeat;
 	background-position: 0% 50%;
+	padding-bottom:3px;
+	border-bottom:1px solid #ccc;
 }
 
 #more
