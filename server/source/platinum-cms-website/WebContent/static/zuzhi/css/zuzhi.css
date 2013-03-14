@@ -16,6 +16,8 @@
 
 #maincontent > #inform
 {
+	border:1px solid #e60012;
+	border-radius:4px 4px 0 0;
 	position: absolute;
 	width: 300px;
 	height: 300px;
@@ -35,7 +37,7 @@
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;		
+	width: 285px;		
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -80,13 +82,20 @@
 
 
 #maincontent > #activity
-{
+{	
+	border:1px solid #e60012;
+	border-radius:4px 4px 0 0;
 	position: absolute;
 	padding: 0;
 	top: 15px;
-	width: 300px;
+	width: 295px;
 	height: 300px;
 	left: 690px;
+}
+
+#maincontent > #activity>span
+{
+	width: 295px;
 }
 
 #maincontent > #activity ul
@@ -101,7 +110,7 @@
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;		
+	width: 285px;		
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -132,7 +141,7 @@
 #box-bottom > #boxContent > #policy
 {
 	width: 300px;
-	height: 300px;
+	height: 285px;
 	position: absolute;
 	top: 25px;
 	left: 0px;
@@ -141,8 +150,13 @@
 
 #box-bottom  > #boxContent > #policy ul
 {
+	border-left:1px solid #e60012;
+	border-right:1px solid #e60012;
+	border-bottom:1px solid #e60012;
+	border-radius:0 0 10px 10px; 
 	margin:10px 0 0 0;
-	padding:0;
+	padding:0 0 5px 0;
+	min-height:210px;
 	list-style:url(/static/zuzhi/images/list.png);
 	list-style-position:inside;
 }
@@ -151,7 +165,7 @@
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;		
+	width: 285px;		
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -171,8 +185,12 @@
 
 #box-bottom  > #boxContent > #download ul
 {
+	min-height:210px;
+	border:1px solid #e60012;
+	border-top:0;
+	border-radius:0 0 10px 10px;
 	margin:10px 0 0 0;
-	padding:0;
+	padding:0 0 5px 0;
 	list-style:url(/static/zuzhi/images/list.png);
 	list-style-position:inside;
 }
@@ -181,7 +199,7 @@
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;		
+	width: 285px;		
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -201,8 +219,12 @@
 
 #box-bottom  > #boxContent > #outline ul
 {
+	min-height:210px;
+	border-radius:0 0 10px 10px;
+	border:1px solid #e60012;
+	border-top:0;
 	margin:10px 0 0 0;
-	padding:0;
+	padding:0 0 5px 0;
 	list-style:url(/static/zuzhi/images/list.png);
 	list-style-position:inside;
 }
@@ -211,7 +233,7 @@
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;		
+	width: 285px;		
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -221,8 +243,25 @@
 
 #nice
 {
+	opacity:0.5;
+	cursor:pointer;
+	margin:0 auto;
 	margin-top:10px;
-	float: right;
+	width:50px;
+	height:20px;
+	background-image:url(/static/zuzhi/images/moretri.gif);
+	
+}
+#nice:hover
+{
+	opacity:1;
+}
+
+#nice a
+{
+	display:block;
+	width:100%;
+	height:100%;
 }
 
 /*********滚动图片新闻  2012.12.04************/

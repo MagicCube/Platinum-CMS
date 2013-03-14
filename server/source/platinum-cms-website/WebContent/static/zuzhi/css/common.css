@@ -346,17 +346,18 @@ table td a
 }
 #postDetail
 {
-	
+	border:1px solid #ccc;
 }
 
 /*postlist省略号 与图标同行*/
 .PostList li #title
 {
+	width:540px;
 	display:inline;
 	overflow: hidden;/*表示溢出的内容会被隐藏*/
 	-o-text-overflow: ellipsis;    /* for Opera */
 	text-overflow: ellipsis;        /* for IE *//*当文本溢出时显示…此时还必须定义：强制文本在一行内显示（white-space:nowrap）及溢出内容为隐藏（overflow:hidden）*/
-	white-space: nowrap;/*表示文本不会换行*/
+	/*white-space: nowrap;*//*表示文本不会换行*/
 }
 /*简介*/
 #postDetail #imageContent{float:left;margin-top:50px;}
@@ -518,7 +519,7 @@ table td a
 }
 #categoryNavigationBar{width:690px;}
 #sideBar{margin-right:5px;}
-#title_style{padding-top:8px;}
+#title_style{padding-top:9px;}
 #postList{width:100%;}
 #more
 {
@@ -539,3 +540,4 @@ a #title:hover{color:#808080;}
 #categoryNavigationBar{width:700px;}
 #title_style span{position:absolute;top:8px;right:5px;}
 #postList li a{width:560px;display:block;}
+#maincontent ul li{border-bottom:1px dashed #CCC;}
