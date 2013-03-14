@@ -357,7 +357,7 @@ table td a
 	overflow: hidden;/*表示溢出的内容会被隐藏*/
 	-o-text-overflow: ellipsis;    /* for Opera */
 	text-overflow: ellipsis;        /* for IE *//*当文本溢出时显示…此时还必须定义：强制文本在一行内显示（white-space:nowrap）及溢出内容为隐藏（overflow:hidden）*/
-	/*white-space: nowrap;*//*表示文本不会换行*/
+	white-space: nowrap;/*表示文本不会换行*/
 }
 /*简介*/
 #postDetail #imageContent{float:left;margin-top:50px;}
@@ -523,6 +523,7 @@ table td a
 #postList{width:100%;}
 #more
 {
+	border-right: 1px solid #ccc;
 	margin-top: 10px;
 	width: 692px;
 	min-height: 650px;
@@ -539,5 +540,4 @@ a #title{width:560px;color:#000;overflow:hidden;}
 a #title:hover{color:#808080;}
 #categoryNavigationBar{width:700px;}
 #title_style span{position:absolute;top:8px;right:5px;}
-#postList li a{width:560px;display:block;}
 #maincontent ul li{border-bottom:1px dashed #CCC;}
