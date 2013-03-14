@@ -539,6 +539,8 @@ margin-left:20px;
 } 
 #content .div_link
 {
+	width:880px;
+	height:80px;
 	display:block;
 	float:left;
 	padding-left:20px;
