@@ -6,7 +6,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>校园地图</title>
-
 <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 <link href = "/static/common/css/basic.css" rel = "stylesheet"></link>
 <link href="/static/common/css/normal.css" rel="stylesheet"/>
@@ -19,7 +18,7 @@
 				<p>联系地址：南京市栖霞区仙林大学城学林路2号</p>
 				<p>邮政编码：210046</p>			
   				<!--百度地图容器-->
-  				<div style="width:600px;height:400px;border:#ccc solid 1px;" id="dituContent"></div>
+  				<div style="width:1500px;height:1500px;border:#ccc solid 1px;" id="dituContent"></div>
 				<script type="text/javascript">
    				 //创建和初始化地图函数：
     			function initMap(){
