@@ -6,9 +6,9 @@
        	<span id="collegelogo"><img src = "/static/caiwu/image/logo.png" style="margin-top: 5px;" /></span>
 		<span id="secondlogo"><img src = "/static/caiwu/image/caiwu.png"></span>
 		<div id = "indexAndsearch" style="color: #fff; font-size: 12px;">
-			<a href = "/">学院首页  </a>|<a href = "http://www.njnu.edu.cn"> 南师大 </a>
+			<a href = "/">学院首页  </a>|<a href = "http://www.njnu.edu.cn" target="_blank"> 南师大 </a>
 			<div id = "searchbar">
-				<form id="searchForm" name="form1" method="get" action="../search" target="_blank">
+				<form id="searchForm" name="form1" method="get" action="../../../search" target="_blank">
     				<label>
        					<input type="text" name="keyword" class="word" value="搜索..." onfocus="this.value=''" 
        					   onBlur="if(this.value==''){this.value='搜索...';}"

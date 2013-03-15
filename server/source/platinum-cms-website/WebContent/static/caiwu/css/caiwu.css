@@ -30,10 +30,12 @@ a:hover
 }
 #content > #mainContent
 {
+	border-left:1px solid #b0c2d3;
+	border-right:1px solid #b0c2d3;
 	padding: 0;
 	margin: 0;
 	position: absolute;
-	width: 990px;
+	width: 988px;
 	height: 550px;
 	float: left;
 
@@ -341,7 +343,7 @@ a:hover
 	float:left;
 	margin-left:20px;
 	margin-top:15px;
-	border-right:1px solid #798da5;
+	border-right:1px solid #ccc;
 }
 #picNews > #browsable
 {

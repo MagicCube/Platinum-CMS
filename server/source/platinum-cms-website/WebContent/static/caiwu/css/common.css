@@ -290,7 +290,7 @@ table td
 {
 	display: block;
 	text-decoration: none;
-	padding: 5px 0 4px 110px; 
+	padding: 5px 0 4px 75px; 
 	color: #fff;
 }
 
@@ -353,9 +353,10 @@ table td
     height: 30px;
     line-height: 30px;
 	border-bottom: 1px #ddd solid;
-	width: 990px;
+	width: 843px;
 	color: #ccc;
 	font-weight: bold;
+	padding-left:145px;
 }
 
 .CategoryNavigationBar li
@@ -384,10 +385,9 @@ table td
 }
 #more
 {
-
-	width: 990px;
-
-	margin-top:10px;
+	width: 988px;
+	border-left:1px solid #b0c2d3;
+	border-right:1px solid #b0c2d3;
 	margin-left: auto;
 	margin-right: auto;
 	 
@@ -395,9 +395,10 @@ table td
 #postDetail
 {
 	margin:0 auto;
-	width: 978px;
-	margin-top:10px;
-	margin-bottom:10px;
+	padding:0;
+	width: 975px;
+	border-left:1px solid #b0c2d3;
+	border-right:1px solid #b0c2d3;
 	
 }
 #summary 
@@ -411,5 +412,15 @@ table td
 }
 #postList
 {
-	margin-left:20px;
+	margin:0 auto;
+}
+
+li a #title
+{
+	color:#000;
+}
+
+li a #title:hover
+{
+	color:#999;
 }
