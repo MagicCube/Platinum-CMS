@@ -330,12 +330,16 @@ a #title:hover
 }
 
 #content {
-	margin: 0 auto 30px auto;
+	margin: 10px auto 30px auto;
 	line-height: 20px;
-	width: 640px;
+	width: 644px;
 	border: 1px dashed #BBB;
-	border-top: 1px dotted #BBB;
-	padding:0 5px;
+	padding:0 10px;
+}
+
+#content>table
+{
+	margin:3px auto;
 }
 
 #sideBar {
