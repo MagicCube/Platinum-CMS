@@ -17,16 +17,18 @@
 #maincontent > #inform
 {
 	border:1px solid #e60012;
-	border-radius:4px 4px 0 0;
+	border-radius:0 15px 0 0;
 	position: absolute;
-	width: 300px;
+	width: 299px;
 	height: 300px;
 	top: 15px;
 	left: 0px;
+	border-top:0;
 }
 
 #maincontent > #inform ul
 {
+	line-height:15px;
 	margin:10px 0 0 0;
 	padding:0;
 	list-style:url(/static/zuzhi/images/list.png);
@@ -84,32 +86,40 @@
 #maincontent > #activity
 {	
 	border:1px solid #e60012;
-	border-radius:4px 4px 0 0;
+	border-radius:15px 4px 0 0;
 	position: absolute;
 	padding: 0;
 	top: 15px;
 	width: 295px;
 	height: 300px;
 	left: 690px;
+	border-top:0;
+	border-left:0;
 }
 
 #maincontent > #activity>span
 {
+	display:block;
+	height:35px;
 	width: 295px;
+	margin:0;
+	padding;
 }
 
 #maincontent > #activity ul
 {
-	margin:10px 0 0 0;
+	line-height:15px;
+	margin:0;
 	padding:0;
 	list-style:url(/static/zuzhi/images/list.png);
 	list-style-position:inside;
+	border-left:1px solid #e60012;
 }
 
 #maincontent > #activity ul li
 {
-	padding: 0;
-	margin: 6px 0 0 0;
+	margin: 0;
+	padding: 6px 0 0 0;
 	width: 285px;		
 	font-size: 13px;
 	color:#000000;
@@ -250,9 +260,35 @@
 	width:50px;
 	height:20px;
 	background-image:url(/static/zuzhi/images/moretri.gif);
-	
 }
+
+#niceR
+{
+	position:relative;
+	margin:0 auto;
+	width:295px;
+	height:40px;
+	border-left:1px solid #e60012;
+}
+
+#niceR>a
+{
+	position:absolute;
+	display:block;
+	width:50px;
+	height:20px;
+	background-image:url(/static/zuzhi/images/moretri.gif);
+	top:13px;
+	left:120px;
+	opacity:0.5;
+}
+
 #nice:hover
+{
+	opacity:1;
+}
+
+#niceR>a:hover
 {
 	opacity:1;
 }
