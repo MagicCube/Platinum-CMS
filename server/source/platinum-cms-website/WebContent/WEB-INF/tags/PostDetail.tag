@@ -130,5 +130,5 @@ PostEntity post = postManager.getPost(postId, categoryId);
 
 <script>
 	if($('#textContent').length>0) $('#postDetail').css('width','990px');
-	
+	if($('#imageContent').length>0) $('#content').css('border','0');
 </script>
