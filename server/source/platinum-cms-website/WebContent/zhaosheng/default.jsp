@@ -17,12 +17,11 @@
 <script type="text/javascript" src="home.js"></script>
 
 <link href = "/static/zhaosheng/css/zhaosheng.css" rel = "stylesheet"></link>
-<link href = "/static/zhaosheng/css/common.css" rel = "stylesheet"></link>
 
 </head>
 <body>
 <cms:Header path = "zhaosheng"/>
-<div id = "content">
+<div id = "mContent">
 			<div id="browsable">
 				<div id="box">
             			<!-- begin of block_home_slider -->
@@ -52,7 +51,7 @@
 				<span><img src = "/static/zhaosheng/image/daodu.png"/></span>
 				<cms:PostList id = "zxddlist" subcategoryId="sc000000000000000000000000000176" count="7" />
           		<div id = "more1" align = "right">
-          			<a href = "/zhaosheng/sc000000000000000000000000000176/more/">更多...</a>
+          			<a href = "/zhaosheng/sc000000000000000000000000000176/more/"></a>
           		</div>
 			</div>
 			
@@ -60,7 +59,7 @@
 				<span><img src = "/static/zhaosheng/image/zhaosheng.png"/></span>
 				<cms:PostList id = "zxddlist" subcategoryId="sc000000000000000000000000000172" count="7" />
           		<div id = "more1" align = "right">
-          			<a href = "/zhaosheng/sc000000000000000000000000000172/more/">更多...</a>
+          			<a href = "/zhaosheng/sc000000000000000000000000000172/more/"></a>
           		</div>	
 			</div>
 			
@@ -68,7 +67,7 @@
 				<span><img src = "/static/zhaosheng/image/zhengce.png"/></span>
 				<cms:PostList id = "zcjzlist" subcategoryId="sc000000000000000000000000000173" count="7" />
 				<div id = "more1" align = "right">
-          			<a href = "/zhaosheng/sc000000000000000000000000000173/more/">更多...</a>
+          			<a href = "/zhaosheng/sc000000000000000000000000000173/more/"></a>
           		</div>
 			</div>
 			
@@ -76,29 +75,29 @@
 				<span><img src = "/static/zhaosheng/image/redian.png"/></span>
 				<cms:PostList id = "rdddlist" subcategoryId="sc000000000000000000000000000177" count="7" />
 				<div id = "more1" align = "right">
-          			<a href = "/zhaosheng/sc000000000000000000000000000177/more/">更多...</a>
+          			<a href = "/zhaosheng/sc000000000000000000000000000177/more/"></a>
           		</div>
 			</div>
 			
 			 <div id = "zhuanye">
 				<span><img src = "/static/zhaosheng/image/zhuanye.png"/></span>
-				<cms:PostList id = "rdddlist" subcategoryId="sc000000000000000000000000000175" count="7" />
+				<cms:PostList id = "rdddlist" subcategoryId="sc000000000000000000000000000175" count="6" />
 				<div id = "more1" align = "right">
-          			<a href = "/zhaosheng/sc000000000000000000000000000175/more/">更多...</a>
+          			<a href = "/zhaosheng/sc000000000000000000000000000175/more/"></a>
           		</div>
 			</div>
             <div id = "jiangzhu">
 				<span><img src = "/static/zhaosheng/image/jiangzhu.png"/></span>
-				<cms:PostList id = "rdddlist" subcategoryId="sc000000000000000000000000000174" count="7" />
+				<cms:PostList id = "rdddlist" subcategoryId="sc000000000000000000000000000174" count="6" />
 				<div id = "more1" align = "right">
-          			<a href = "/zhaosheng/sc000000000000000000000000000174/more/">更多...</a>
+          			<a href = "/zhaosheng/sc000000000000000000000000000174/more/"></a>
           		</div>
 			</div>
             <div id = "zhuanti">
 				<span><img src = "/static/zhaosheng/image/zhuanti.png"/></span>
-				<cms:PostList id = "rdddlist" subcategoryId="sc000000000000000000000000000178" count="7" />
+				<cms:PostList id = "rdddlist" subcategoryId="sc000000000000000000000000000178" count="6" />
 				<div id = "more1" align = "right">
-          			<a href = "/zhaosheng/sc000000000000000000000000000178/more/">更多...</a>
+          			<a href = "/zhaosheng/sc000000000000000000000000000178/more/"></a>
           		</div>
 			</div>
 			

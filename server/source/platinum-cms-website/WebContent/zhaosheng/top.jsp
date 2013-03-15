@@ -1,14 +1,15 @@
 ﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="cms" tagdir="/WEB-INF/tags"%>
 <link href = "/static/zhaosheng/css/common.css" rel = "stylesheet"></link>
 <div id="headcontainer">
 	<div id="header1">
        	<span id="collegelogo"><img src = "/static/zhaosheng/image/logo.png" style="margin-top: 5px;" /></span>
 		<span id="secondlogo"><img src = "/static/zhaosheng/image/vicezhaosheng.png"></span>
 		<div id = "indexAndsearch" style="color: #fff; font-size: 12px;">
-			<a href = "/">学院首页  </a>|<a href = "http://www.njnu.edu.cn"> 南师大 </a>
+			<a href = "/">学院首页  </a>|<a href = "http://www.njnu.edu.cn" target="_blank"> 南师大 </a>
 			<div id = "searchbar">
-				<form id="searchForm" name="form1" method="get" action="../search" target="_blank">
+				<form id="searchForm" name="form1" method="get" action="../../../search" target="_blank">
     				<label>
        					<input type="text"  name="keyword" class="word" value="搜索..." onfocus="this.value=''" 
        					   onBlur="if(this.value==''){this.value='搜索...';}"
@@ -33,10 +34,21 @@
 		</li>
 		<li class = "singleMenu"><a href = "/zhaosheng/sc000000000000000000000000000175/more/">专业介绍</a>
 		</li>
-		<li class = "singleMenu"><a href = "http://zbzs.njnu.edu.cn/enrol/guestbook/guestbook.asp">考生问答</a>
+		<li class = "singleMenu"><a href = "http://zbzs.njnu.edu.cn/enrol/guestbook/guestbook.asp" target="_blank">考生问答</a>
 		<!-- <li class = "singleMenu"><a href = "/zhaosheng/sc000000000000000000000000000180/more/">考生问答</a> -->
 		</li>
 
 
 	</menu>
 </div>
+	<div id = "bodyContent">
+	<% if (request.getParameter("displaySideBar").equals("true")) {%>
+		<div id="sideBar">
+			<div id = "sideBarin">
+			<div id = "title_style"><strong>要文回顾</strong><span style= "float: right;"><a href = "/news/more/" target="_blank">更多...</a></span></div>
+			<cms:PostList id="ywhgList" cssClass="TextList" categoryId='news' count="9" />
+			<div id = "title_style"><strong>新闻排行榜</strong><span style= "float: right;"></span></div>
+			<cms:PostList id="ywhgList" cssClass="TextList" categoryId='news' subcategoryId="rank" count="9" />
+			</div>
+		</div>
+	<%}%>

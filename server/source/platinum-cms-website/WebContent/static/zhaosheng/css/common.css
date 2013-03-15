@@ -161,7 +161,7 @@ menu#mainmenu li a:hover
 .singleMenu
 {
 	float: left;
-	font-size: 10px;
+	font-size: 14px;
 	display: inline-block;
 	height: 32px;
 	width: 138.5px;
@@ -304,7 +304,7 @@ table td
 {
 	display: block;
 	text-decoration: none;
-	padding: 5px 0 4px 110px; 
+	padding: 5px 0 4px 75px; 
 	color: #fff;
 }
 
@@ -358,7 +358,13 @@ table td
 	margin-right: 10px;
 }
 
-
+#bodyContent
+{
+	position:relative;
+	margin:0 auto;
+	width:990px;
+	min-height:622px;
+}
 
 
 #categoryNavigationBar
@@ -370,9 +376,10 @@ table td
     height: 30px;
     line-height: 30px;
 	border-bottom: 1px #ddd solid;
-	width: 990px;
 	color: #000;
 	font-weight: bold;
+	padding-top: 2px;
+	width: 700px;
 }
 
 #categoryNavigationBar li
@@ -401,37 +408,98 @@ table td
 }
 #more
 {
-	width:990px;
-	margin-top:10px;
-	border-left: 1px #ccc dashed;
-	border-right: 1px #ccc dashed;
+	width: 692px;
+	min-height: 625px;
+	height: 610px;
+	padding-right: 10px;
+	border-left: 1px #ccc solid;
+	border-right: 1px #ccc solid;
+	float:left;
 	
 }
 #postList
 {
-
+	list-style:none;
+	list-style-image:none;
 }
 #postList li 
 {
-	width:980px;
+	padding-left:20px;
+	width:680px;
+	background:url(/static/zhaosheng/image/list.png) 0 50%;
+	background-repeat:no-repeat;
 }
+
+#postList li a
+{
+	display:block;
+	width:550px;
+}
+
 #postList li a:hover
 {
+	overflow:hidden;
 	color: #fdbc30;
 }
 #postDetail
 {
-	width:978px;
-	margin:0 auto;
-	border-left: 1px #ccc dashed;
-	border-right: 1px #ccc dashed;
+	width:702px;
+	border: 1px solid #ccc;
+	border-bottom:0;
+	padding-right:0;
 }
 #summary 
 {
 	text-align: center;
 }
-#content
+#mContent
 {
 	line-height: 20px;
-	width:978px;
+	width:983px;
+	height:830px;
+	border-left:3px solid #ee911a;
+	border-right:2px solid #ee911a;
+	margin:0 auto;
+	padding-right:2px;
 }
+
+#mContent ul li
+{
+	border-bottom:1px solid #ccc;
+}
+
+#more li a #title
+{
+	height:14px;
+	color:#000;
+}
+
+li a #title:hover
+{
+	color:#999;
+}
+
+#sideBar
+{
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	position:absolute;
+	top:1px;
+	right:0px;
+}
+
+#title_style strong
+{
+	padding-left:5px;
+}
+
+#content {
+	margin: 0 auto;
+	line-height: 20px;
+	width: 640px;
+	border: 1px dashed #BBB;
+	border-top: 1px dotted #BBB;
+	padding: 0 5px 5px 5px;
+}
+
+#postList li #date{right:15px;}

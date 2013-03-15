@@ -1,4 +1,4 @@
-#content
+#mContent
 {
 	margin:0;
 	padding: 0px;
@@ -11,7 +11,7 @@
 
 img{border:0;}
 
-#content > #browsable
+#mContent > #browsable
 {
 	width: 602px;
 	height: 302px;
@@ -61,108 +61,105 @@ img{border:0;}
 .block_home_slider .flex-control-paging li a.flex-active {background-position:right top;}
 .flexslider .slides img { width: 600px; height: 300px;}
 
-#content > #textNews
+#mContent > #textNews
 {
 	position: absolute;
 	width: 330px;  	
 	margin: 0;
 	padding : 0;
 	height: 300px;
-	left: 660px;
+	left: 635px;
 	top: 10px;
 }
 
-#content > #informs
+#mContent > #informs
 {
 	width: 310px;  
-	margin: 0;
+	margin: 0 0 0 5px;
 	padding : 0;
-	height: 250px;
-	margin-top:15px;
+	height: 260px;
+	margin-top:5px;
 	overflow: hidden;
 	position: absolute;
 	top: 320px;
 	left: 0;
 }
 
-#content > #teaching
+#mContent > #teaching
 {
 	position: absolute;
 	width: 310px;
 	margin: 0;
 	padding : 0;
-	height: 250px;
+	height: 260px;
 	top: 320px;
 	left: 320px;
-	margin-top:15px;
+	margin-top:5px;
 	margin-left:10px;
 	margin-right:10px;
 	overflow: hidden;
 }
 
-#content > #redian
+#mContent > #redian
 {
 	position: absolute;
-	width: 330px;
+	width: 320px;
 	margin: 0;
 	padding : 0;
-	height: 250px;
-	left: 660px;
+	height: 260px;
+	left: 655px;
 	top: 320px;
-	margin-top:15px;
+	margin-top:5px;
 	overflow: hidden;
 }
 
-#content > #zhuanye
+#mContent > #zhuanye
 {
 	position: absolute;
-	top: 560px;
-	width: 310px;
+	top: 590px;
+	width: 305px;
 	margin: 0;
-	padding : 0;
-	height: 250px;
+	padding : 0 0 0 5px;
+	height: 240px;
 	left: 0;
-	margin-top:15px;
 	overflow: hidden;
 }
 
-#content > #jiangzhu
+#mContent > #jiangzhu
 {
 	position: absolute;
-	top: 560px;
+	top: 590px;
 	width: 310px;
 	margin: 0;
 	padding : 0;
 	height: 250px;
 	left: 320px;
-	margin-top:15px;
 	margin-left:10px;
 	margin-right:10px;
 	overflow: hidden;
 }
 
-#content > #zhuanti
+#mContent > #zhuanti
 {
 	position: absolute;
-	top: 560px;
-	width: 330px;
+	top: 590px;
+	width: 320px;
 	margin: 0;
 	padding : 0;
 	height: 250px;
-	left: 660px;
-	margin-top:15px;
+	left: 655px;
 	overflow: hidden;
 }
 
 
-#content a
+#mContent a
 {
 	font-size: 13px;
 	color:#000000;
 	text-decoration: none;
 }
 
-#content a:hover
+#mContent a:hover
 {
 	color: #fdbc30;
 	text-decoration: none;
@@ -174,40 +171,46 @@ ul > li a > div
 	display: inline;
 }
 
-#content > #textNews ul
+#mContent > #textNews ul
 {	
-	width: 100%;
+	min-height:240px;
+	border:1px solid #ee911a;
+	border-radius:0 0 10px 10px;
 	display: block;
 	margin:10px 0 0 0;
-	padding:0;
+	padding:0 0 0 5px;
 	list-style:url(/static/zhaosheng/image/list.png);
 	list-style-position:inside;
 }
 
-#content > #textNews li
+#mContent > #textNews li
 {
 	padding: 0;
 	margin: 5px 0 0 0;
-	width: 300px;		
+	width: 310px;		
 	color:#000000;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 }
 
-#content > #informs ul
+#mContent > #informs ul
 {
+	
+	border:1px solid #ee911a;
+	border-radius: 0 0 10px 10px;
+	min-height:190px;
 	display: block;
 	margin:10px 0 0 0;
-	padding:0;
+	padding:0 0 5px 0;
 	list-style:url(/static/zhaosheng/image/list.png) inside ;
 }
 
-#content > #informs li
+#mContent > #informs li
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;
+	width: 295px;
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -215,19 +218,22 @@ ul > li a > div
 	overflow: hidden;
 }
 
-#content > #teaching ul
+#mContent > #teaching ul
 {
+	border:1px solid #ee911a;
+	border-radius: 0 0 10px 10px;
+	min-height:190px;
 	display: block;
 	margin:10px 0 0 0;
-	padding:0;
+	padding:0 0 5px 0;
 	list-style:url(/static/zhaosheng/image/list.png) inside ;
 }
 
-#content > #teaching li 
+#mContent > #teaching li 
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;
+	width: 295px;
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -235,7 +241,7 @@ ul > li a > div
 	overflow: hidden;
 }
 
-#content > #zhengce ul
+#mContent > #zhengce ul
 {
 	display: block;
 	margin:10px 0 0 0;
@@ -243,11 +249,11 @@ ul > li a > div
 	list-style:url(/static/zhaosheng/image/list.png) inside ;
 }
 
-#content > #zhengce li 
+#mContent > #zhengce li 
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;
+	width: 295px;
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -255,19 +261,22 @@ ul > li a > div
 	overflow: hidden;
 }
 
-#content > #redian ul
+#mContent > #redian ul
 {
+	border:1px solid #ee911a;
+	border-radius: 0 0 10px 10px;
+	min-height:195px;
 	display: block;
 	margin:10px 0 0 0;
 	padding:0;
 	list-style:url(/static/zhaosheng/image/list.png) inside ;
 }
 
-#content > #redian li 
+#mContent > #redian li 
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;	
+	width: 295px;	
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -275,19 +284,22 @@ ul > li a > div
 	overflow: hidden;
 }
 
-#content > #zhuanti ul
+#mContent > #zhuanti ul
 {
+	min-height: 170px;
+	border: 1px solid #ee911a;
+	border-radius: 0 0 10px 10px;
 	display: block;
 	margin:10px 0 0 0;
 	padding:0;
 	list-style:url(/static/zhaosheng/image/list.png) inside ;
 }
 
-#content > #zhuanti li 
+#mContent > #zhuanti li 
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;	
+	width: 295px;	
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -295,19 +307,22 @@ ul > li a > div
 	overflow: hidden;
 }
 
-#content > #jiangzhu ul
+#mContent > #jiangzhu ul
 {
+	min-height: 170px;
+	border: 1px solid #ee911a;
+	border-radius: 0 0 10px 10px;
 	display: block;
 	margin:10px 0 0 0;
-	padding:0;
+	padding:0 0 0 3px;
 	list-style:url(/static/zhaosheng/image/list.png) inside ;
 }
 
-#content > #jiangzhu li 
+#mContent > #jiangzhu li 
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;	
+	width: 295px;	
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -315,18 +330,21 @@ ul > li a > div
 	overflow: hidden;
 }
 
-#content > #zhuanye ul
+#mContent > #zhuanye ul
 {
+	min-height: 170px;
+	border: 1px solid #ee911a;
+	border-radius: 0 0 10px 10px;
 	margin:10px 0 0 0;
-	padding:0;
+	padding:0 0 0 3px;
 	list-style:url(/static/zhaosheng/image/list.png) inside ;
 }
 
-#content > #zhuanye li 
+#mContent > #zhuanye li 
 {
 	padding: 0;
 	margin: 6px 0 0 0;
-	width: 300px;	
+	width: 290px;	
 	font-size: 13px;
 	color:#000000;
 	text-overflow: ellipsis;
@@ -337,12 +355,19 @@ ul > li a > div
 #more1
 {
 	padding: 0;
-	margin: 10px 0 0 0;
-	width: 80px;
+	margin: 4px 0 0 0;
+	width: 50px;
 	height: 20px;
 	float: right;
+	background-image:url(/static/zhaosheng/image/newmore.png);
 }
 
+#more1:hover
+{
+	background-image:url(/static/zhaosheng/image/morehover.png);
+}
+
+#more1 a{display:block;width:100%;height:100%;}
 
 #box .list li img
 {
@@ -404,7 +429,7 @@ ul > li a > div
 	line-height: 15px;
 	text-align: center;
 }
-#content > #mainContent a
+#mContent > #mainContent a
 {
 	font-family: 微软雅黑;
 	font-size: 13px;
