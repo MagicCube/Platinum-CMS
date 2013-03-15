@@ -117,7 +117,7 @@ menu#mainmenu
 	margin: 5px 0 0 0;
 	margin-left: auto;
 	margin-right: auto;   
-	font-size: 14px;
+	font-size: 12px;
 	border-bottom:1px solid #fff;   
 }
 
@@ -126,7 +126,7 @@ menu#mainmenu
 .singleMenu
 {
 	float: left;
-	font-size: 14px;
+	font-size: 12px;
 	font-family: 微软雅黑;
 	display: inline-block;
 	height: 32px;
