@@ -314,3 +314,42 @@ a #title:hover
 {
 	color:#999;
 }
+
+#postDetail {
+	width: 702px;
+	border:0;
+	border-right: 1px solid #ccc;
+	padding-right: 2px;
+	border-radius:10px 0 0 0;
+	
+}
+
+#categoryNavigationBar {
+	padding-top: 10px;
+	width: 700px;
+}
+
+#content {
+	margin: 0 auto 30px auto;
+	line-height: 20px;
+	width: 650px;
+	border: 1px dashed #BBB;
+	border-top: 1px dotted #BBB;
+	padding:0 5px;
+}
+
+#sideBar {
+	padding-right: 3px;
+	border-bottom: 1px solid #ccc;
+}
+
+#title_style strong{
+	padding-left:3px;
+}
+
+#sideBar li {
+	border-bottom: 1px #ddd dashed;
+}
+
+
+
