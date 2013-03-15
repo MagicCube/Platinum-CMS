@@ -334,6 +334,12 @@ a:hover
 	margin-right:20px;
 	margin-top:5px;
 }
+
+#textNews #nice a:hover
+{
+	color:#999;
+}
+
 #content > #mainContent > #picNews
 {
 	width: 350px;	/*已修改过*/

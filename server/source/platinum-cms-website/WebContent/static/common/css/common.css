@@ -11,6 +11,12 @@ html, body
     padding: 0;
 }
 
+#content p
+{
+	margin-top:3px;
+	margin-bottom:3px;
+}
+
 img
 {
 	border: none;
