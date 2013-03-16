@@ -17,12 +17,12 @@ $(document).ready(function(){
 	// 这初始化容器中指定的元素，在这种情况下，旋转木马.
 	$("#carousel1").CloudCarousel({			
 		xPos:140,
-		yPos:40,
+		yPos:20,
 		buttonLeft: $('#but1'),
 		buttonRight: $('#but2'),
 				
 		FPS:20,
-		reflHeight:20,
+		reflHeight:10,
 		reflGap:2,
 		yRadius:30,
 		autoRotateDelay: 12,
