@@ -16,7 +16,7 @@ $(document).ready(function(){
 						   
 	// 这初始化容器中指定的元素，在这种情况下，旋转木马.
 	$("#carousel1").CloudCarousel({			
-		xPos:250,
+		xPos:170,
 		yPos:110,
 		buttonLeft: $('#but1'),
 		buttonRight: $('#but2'),
@@ -79,8 +79,7 @@ $(document).ready(function(){
 	</div><!--carousel1 end-->
 			
 				
-			
-				
+		
 				
 	    </tr>
       </table>   
