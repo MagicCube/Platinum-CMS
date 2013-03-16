@@ -66,9 +66,9 @@ $(document).ready(function(){
 		<a class="i_news" onclick="location.href='../../mob/guide/';" ><img class="cloudcarousel"  src="../mob/static/common/images/guide.jpg" /></a>
 		
 		<a class="i_news" onclick="location.href='../../mob/pic/';" ><img class="cloudcarousel"  src="../mob/static/common/images/view.jpg"></a>
-		<a class="i_news" onclick="location.href='../../mob/ditu/';" ><img class="cloudcarousel"  src="../mob/static/common/images/ditu.jpg"></a>
+		<a class="i_news" onclick="location.href='../../mob/ditu/';" ><img class="cloudcarousel"  src="../mob/static/common/images/ditu1.png"></a>
 		
-		<a class="i_news" onclick="location.href='../../mob/Shake/';" ><img class="cloudcarousel" src="../mob/static/common/images/yaoyiyao.jpg"></a>
+		<a class="i_news" onclick="location.href='../../mob/Shake/';" ><img class="cloudcarousel" src="../mob/static/common/images/yaoyiyao.png"></a>
 		<a class="i_news" onclick="location.href='http://zbvip.njnu.edu.cn/wap';" ><img class="cloudcarousel" src="../mob/static/common/images/teacher.jpg"></a>
 		
 		
