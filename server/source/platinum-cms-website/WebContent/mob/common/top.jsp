@@ -16,17 +16,16 @@ $(document).ready(function(){
 						   
 	// 这初始化容器中指定的元素，在这种情况下，旋转木马.
 	$("#carousel1").CloudCarousel({			
-		xPos:450,
+		xPos:250,
 		yPos:110,
 		buttonLeft: $('#but1'),
 		buttonRight: $('#but2'),
-		altBox: $("#alt-text"),
-		titleBox: $("#title-text"),				
-		FPS:30,
-		reflHeight:86,
+				
+		FPS:20,
+		reflHeight:20,
 		reflGap:2,
-		yRadius:40,
-		autoRotateDelay: 1200,
+		yRadius:30,
+		autoRotateDelay: 12,
 		speed:0.2,
 		mouseWheel:true,
 		bringToFront:true
@@ -80,22 +79,7 @@ $(document).ready(function(){
 	</div><!--carousel1 end-->
 			
 				
-				<td><div class="i_news" onclick="location.href='../../mob/news/';"><img src="../mob/static/common/images/NEWS.png"></div><font class="b" color="#239b8b" >新闻</font></td>
-				
-				<td><div class="i_news" onclick="location.href='../mob/guide/';"><img src="../mob/static/common/images/guide.jpg"> </div><font class="b" color="#239b8b" >办事指南</font></td>
-				
-				<td><div class="i_news" onclick="location.href='../mob/pic/';"><img src="../mob/static/common/images/view.jpg"></div><font class="b" color="#239b8b" >美丽校园</font></td>
-				
-			   
-					
-				<td><div class="i_news" onclick="location.href='../mob/ditu/';"><img src="../mob/static/common/images/ditu.jpg"></div><font class="b" color="#239b8b" >地图</font></td>
-				
-				<td><div class="i_news" onclick="location.href='../mob/Shake/';"><img src="../mob/static/common/images/yaoyiyao.jpg"></div><font class="b" color="#239b8b" >摇你喜欢</font></td>
-				<td><div class="i_news" onclick="location.href='http://zbvip.njnu.edu.cn/wap';"><img src="../mob/static/common/images/teacher.jpg"></div><font class="b" color="#239b8b" >教师登陆</font></td>
-				
-				 <td><div class="i_news" onclick="location.href='http://222.192.5.246/wap';"><img src="../mob/static/common/images/student.jpg"></div><font class="b" color="#239b8b" >学生登陆</font></td>
-				
-	
+			
 				
 				
 	    </tr>
