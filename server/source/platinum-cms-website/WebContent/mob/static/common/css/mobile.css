@@ -41,7 +41,7 @@ a: hover {
 .left {
 	float: left;
 }
-#carousel1{      magin-left:50px;   padding-left:0px;     text-align:center;  width:400px;height:200px; text-align:center;border-bottom:solid 1px #d8d9da;}
+#carousel1{      magin-left:50px;   padding-left:0px;     text-align:center;  width:300px;height:200px; text-align:center;border-bottom:solid 1px #d8d9da;}
 #carousel1 img{       border:none;width:50px;height:50 px;border:solid 1px #000;}
 
 
