@@ -41,13 +41,13 @@ a: hover {
 .left {
 	float: left;
 }
-#carousel1{ padding-left:0px;     text-align:center;  width:700px;height:200px; text-align:center;border-bottom:solid 1px #d8d9da;}
-#carousel1 img{ margin-left:0px;   align:center;    border:none;width:100px;height:100 px;border:solid 1px #000;}
+#carousel1{      magin-left:50px;   padding-left:0px;     text-align:center;  width:250px;height:200px; text-align:center;border-bottom:solid 1px #d8d9da;}
+#carousel1 img{       border:none;width:30px;height:30 px;border:solid 1px #000;}
 
 
-#carousel1 #user-c{padding:0;position:absolute;right:15px;bottom:10px;}
+
 #carousel1 .carouselLeft,#carousel1 .carouselRight{position:absolute;bottom:20px;width:29px;height:25px;overflow:hidden;cursor:pointer;}
-#carousel1 .carouselLeft{background:url( /mob/static/common/images/button-right.png) no-repeat;}
+#carousel1 .carouselLeft{  background:url( /mob/static/common/images/button-right.png) no-repeat;}
 #carousel1 .carouselRight{background:url( /mob/static/common/images/button-left.png ) no-repeat;}
 
 
