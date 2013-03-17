@@ -81,9 +81,9 @@
             <div id = "redian">
 				<span><img src = "/static/xiandai/image/rexian.png"/></span>
 				<span class="reTitle">新北区办公室</span>
-				<strong class="reNum" id="fenge" style="padding-left:40px;">85891616</strong>
+				<strong class="reNum" id="fenge" style="padding-left:15px;">025-85891616</strong>
 				<span class="reTitle">老北区办公室</span>
-				<strong class="reNum" style="padding-left:40px;">87721054</strong>
+				<strong class="reNum" style="padding-left:15px;">025-87721054</strong>
 			</div>
 
 
