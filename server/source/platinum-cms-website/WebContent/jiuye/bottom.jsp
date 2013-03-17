@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
   <link href = "/static/jiuye/css/common.css" rel = "stylesheet"/>
 <div id = "footer">
-		<div id = "bottom1"  class="fastLink">
+		<!-- <div id = "bottom1"  class="fastLink">
               <div id = "fastlink1">
                 <table>
           		<tbody><tr>
@@ -98,7 +98,7 @@
                              
                 </table>    
             </div>
-            </div>
+            </div> -->
         
         <div id = "bottom2">
         	<div id="copyright">
