@@ -45,7 +45,7 @@
                	 <span class = "m_More"><a href = "/jiuye/sc000000000000000000000000000148/more/">更多...</a></span>
             </div>
             
-            <div style="height: 1px; width: 915px; position: absolute; top: 290px; background: #fff; left: 45px;"></div>
+            <!-- <div style="height: 1px; width: 915px; position: absolute; top: 290px; background: #fff; left: 45px;"></div> -->
             
             <div id = "zfNews">
             	 <span><img src="/static/jiuye/images/zysygh.jpg"/></span>
