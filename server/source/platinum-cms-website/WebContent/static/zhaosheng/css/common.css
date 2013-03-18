@@ -504,4 +504,4 @@ li a #title:hover
 
 #postList li #date{right:15px;}
 #title_style{position:relative;}
-#title_style>span{position:absolute;right:0;}
+#title_style>span{position:absolute;right:0;bottom:3px;}
