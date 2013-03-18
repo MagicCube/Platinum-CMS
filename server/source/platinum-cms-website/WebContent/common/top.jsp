@@ -48,10 +48,10 @@ request.setCharacterEncoding("utf-8");
 	        </ul>
 	    </li>
    		<li><a href="http://zbzs.njnu.edu.cn/trch/index.htm" target="_blank">教学科研</a></li>
-	    <li><a href="http://zbzs.njnu.edu.cn/stud/index.asp" target="_blank">学生工作</a>
-	        <ul id="downlist">
-	            <!-- <li><a href="http://zbzs.njnu.edu.cn/stud/index.asp">学工处</a></li> -->
-	            <!-- <li><a href="/tuanwei/">团委</a></li>  -->            
+	    <li><a target="_blank">学生工作</a>
+	        <ul id="downlist" num="2">
+	            <li><a href="http://zbzs.njnu.edu.cn/stud/index.asp">学 工 处</a></li>
+	            <li><a href="/tuanwei/">团&nbsp;&nbsp;&nbsp;&nbsp;委</a></li>            
 	        </ul>
 	    </li>
    		<li><a href="http://zbzs.njnu.edu.cn/part/index.htm" target="_blank">组织人事</a></li>
