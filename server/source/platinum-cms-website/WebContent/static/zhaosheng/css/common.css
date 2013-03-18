@@ -425,7 +425,7 @@ table td
 #postList li 
 {
 	padding-left:20px;
-	width:675px;
+	width:670px;
 	background:url(/static/zhaosheng/image/list.png) 0 50%;
 	background-repeat:no-repeat;
 }
@@ -502,6 +502,6 @@ li a #title:hover
 	padding: 0 5px 5px 5px;
 }
 
-#postList li #date{right:15px;}
+#postList li #date{right:3px;}
 #title_style{position:relative;}
 #title_style>span{position:absolute;right:0;bottom:3px;}
