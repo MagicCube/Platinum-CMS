@@ -424,6 +424,15 @@ table td
 #content
 {
 	line-height: 20px;
-	width:970px;
-	padding:10px 10px 20px 10px;
+	width:940px;
+	padding:10px 20px 20px 20px;
 }
+
+#imageContent{display:none;}
+#textContent{
+	width:950px;
+	margin:0 auto;
+	padding:10px 20px 0 20px;
+}
+
+#postDetail h1{font-size:20px;margin-top:0;padding:0 100px;line-height:25px;}

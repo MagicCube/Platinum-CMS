@@ -14,7 +14,7 @@
 </head>
 <body>
  <cms:Header path = "xiandai"/>
-<div id = "content">
+<div id = "Xcontent">
 		<div id = "mainContent">
 			<div id = "picNews">
 				<div id="browsable">

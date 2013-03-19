@@ -4,7 +4,7 @@ img
 {
 	border:0;
 }
-#content
+#Xcontent
 {
 	margin:0;
 	padding: 0px;
@@ -16,7 +16,7 @@ img
 	background-image: url(/static/xiandai/image/di.png);
 }
 
-#content > #mainContent
+#Xcontent > #mainContent
 {
 	padding: 0;
 	margin: 0;
@@ -26,7 +26,7 @@ img
 	float: left;
 }
 
-#content > #sidebar
+#Xcontent > #sidebar
 {
 	padding: 0;
 	margin: 0;
@@ -40,7 +40,7 @@ img
 	border-left: 1px solid #e6e4db;
 }
 
-#content > #mainContent > #picNews
+#Xcontent > #mainContent > #picNews
 {
 	width: 550px;	
 	margin: 0;
@@ -51,7 +51,7 @@ img
 	margin-top:15px;
 }
 
-#content > #mainContent > #textNews
+#Xcontent > #mainContent > #textNews
 {
 	width: 400px;  
 	margin: 0;
@@ -62,7 +62,7 @@ img
 	margin-right:10px;
 }
 
-#content > #mainContent > #informs
+#Xcontent > #mainContent > #informs
 {
 	width: 550px; 
 	margin: 0;
@@ -74,7 +74,7 @@ img
 	overflow: hidden;
 }
 
-#content > #mainContent > #teaching
+#Xcontent > #mainContent > #teaching
 {
 	width: 200px;
 	margin: 0;
@@ -85,7 +85,7 @@ img
 	margin-left:10px;
 	overflow: hidden;
 }
-#content > #mainContent > #redian
+#Xcontent > #mainContent > #redian
 {
 	width: 200px;	
 	margin: 0;
@@ -197,7 +197,7 @@ img
 }
 
 
-#content > #mainContent > #textNews ul
+#Xcontent > #mainContent > #textNews ul
 {
 	margin:10px 0 0 0;
 	padding:0;
@@ -205,7 +205,7 @@ img
 
 }
 
-#content > #mainContent > #textNews li
+#Xcontent > #mainContent > #textNews li
 {
 	margin: 6px 0 0 0;
 	width: 380px;		
@@ -217,27 +217,27 @@ img
     background-position:0 50%;
 
 }
-#content > #mainContent > #textNews li #title
+#Xcontent > #mainContent > #textNews li #title
 {
 	width: 380px;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 }
-#content > #mainContent a
+#Xcontent > #mainContent a
 {
 	font-family: 微软雅黑;
 	font-size: 13px;
 	color:#000000;
 	text-decoration: none;
 }
-#content > #mainContent a:hover
+#Xcontent > #mainContent a:hover
 {
 	color: #098ef6;
 	text-decoration: none;
 }
 
-#content > #mainContent > #informs ul
+#Xcontent > #mainContent > #informs ul
 {
 	margin:10px 0 0 0;
 	padding:0;
@@ -245,7 +245,7 @@ img
 
 }
 
-#content > #mainContent > #informs li
+#Xcontent > #mainContent > #informs li
 {
 	padding: 0;
 	margin: 6px 0 0 0;
@@ -257,21 +257,21 @@ img
     background-repeat:no-repeat;
     background-position:0 50%;
 }
-#content > #mainContent > #informs li #title
+ #Xcontent>#mainContent > #informs li #title
 {
 	width: 530px;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 }
-#content > #mainContent > #teaching ul
+#Xcontent > #mainContent > #teaching ul
 {
 	margin:10px 0 0 0;
 	padding:0;
 	list-style:url(/static/xiandai/image/list.png) inside ;
 }
 
-#content > #mainContent > #teaching li 
+#Xcontent > #mainContent > #teaching li 
 {
 	padding: 0;
 	margin: 6px 0 0 0;
@@ -283,14 +283,14 @@ img
 	overflow: hidden;
 }
 
-#content > #mainContent > #redian ul
+#Xcontent > #mainContent > #redian ul
 {
 	margin:10px 0 0 0;
 	padding:0;
 	list-style:url(/static/xiandai/image/list.png) inside ;
 }
 
-#content > #mainContent > #redian li 
+#Xcontent > #mainContent > #redian li 
 {
 	padding: 0;
 	margin: 6px 0 0 0;
