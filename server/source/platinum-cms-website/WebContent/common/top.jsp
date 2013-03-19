@@ -33,7 +33,7 @@ request.setCharacterEncoding("utf-8");
 </div>
 
 <menu id="homemenu">		
-   		<li><a href ="#">学院概况</a>
+   		<li><a>学院概况</a>
 	        <ul id="downlist" num="4">
 	            <li><a href="/introduce/402881e93b41ec78013b41f8a5cf0008.html">学院简介</a></li>
 	            <li><a href="/introduce/ff8081813be9dcbc013be9e6b7a00002.html">领导简介</a></li>
@@ -41,7 +41,7 @@ request.setCharacterEncoding("utf-8");
 	            <li><a href="/introduce/12345679be9e6b7a00002be9e6b7a0d.html">联系我们</a></li>
 	        </ul>
 	    </li>
-	    <li><a href="#">部门机构</a>
+	    <li><a>部门机构</a>
 	        <ul id="downlist" num="2">
 	            <li><a href="/organization/ff8081813bea7af0013bea9a8e700008.html" >系部设置</a></li>
 	            <li><a href="/organization/ff8081813bea7af0013bea97c53f0005.html">部门设置</a></li>
@@ -55,19 +55,19 @@ request.setCharacterEncoding("utf-8");
 	        </ul>
 	    </li>
    		<li><a href="http://zbzs.njnu.edu.cn/part/index.htm" target="_blank">组织人事</a></li>
-	    <li><a href="#">招生就业</a>
+	    <li><a>招生就业</a>
 	        <ul id="downlist" num="2">
 	            <li><a href="http://zbzs.njnu.edu.cn/enrol/index.asp" target="_blank">招生录取</a></li>
 	            <li><a href="http://zbzs.njnu.edu.cn/job/index.asp" target="_blank">就业指导</a></li>
 	        </ul>
 	    </li>  
-	    <li><a href="#">交流合作</a>
+	    <li><a>交流合作</a>
 	        <ul id="downlist" num="1">
 	            <li><a href="/cooperation/ff8081813be951ee013be993b7240002.html">海外学习计划</a></li>
 	            <!-- <li class = "subMenu"><a href = "/cooperation/f8081813b7a2ecd013b7a3a0ece000b.html">联合办学</a></li> -->
 	        </ul>
 	    </li>
-	    <li><a href="#">公共服务</a>
+	    <li><a>公共服务</a>
 	        <ul id="downlist" num="8">
 	            <li><a href="/service/ff8081813b6fee04013b6fef4b390002.html">教学周历</a></li>
 	            <!-- <li><a href="/service/ff8081813b7a2ecd013b7a384fb20008.html">来稿须知</a></li> -->
@@ -80,7 +80,7 @@ request.setCharacterEncoding("utf-8");
 	      		<li><a href="/service/ff8081813d105c17013d10deb9cc0002.html">班车时刻</a></li>
 	        </ul>
 	    </li>
-	    <li><a href="#">技术支持</a>
+	    <li><a>技术支持</a>
 	    	<ul id="downlist" num="1">
 	    		<!-- <li><a href="/ruanyan/">软件研发与培训中心</a></li> -->
 	    		<li><a href="#">现代教育技术中心</a></li>
