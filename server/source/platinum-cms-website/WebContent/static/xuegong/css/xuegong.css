@@ -8,7 +8,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 990px;
-	height: 650px;	
+	height: 695px;	
 	position: relative;	
 }
 
@@ -18,7 +18,7 @@
 	margin: 0;
 	position: absolute;
 	width: 990px;
-	height: 650px;
+	height: 695px;
 	left: 0;
 	top: 0;
 }
@@ -46,11 +46,11 @@
 	top: 10px;
 	width: 270px;
 	height: 300px;
-	border: 1px #e5e5e5 solid;
+	border: 1px #bcd2c3 solid;
 	border-radius: 10px;
 	-webkit-border-radius:10px;
     overflow: hidden;
-	background-color:#e5e5e5;
+	background-color:#bcd2c3;
 }
 
 #xgcontent > #mainContent > #textNews ul
@@ -85,11 +85,11 @@
 	left: 0;
 	width: 270px;
 	height: 300px;
-	border: 1px #e5e5e5 solid;
+	border: 1px #bcd2c3 solid;
 	border-radius:10px;
 	-webkit-border-radius:10px;
     overflow: hidden;
-	background-color:#e5e5e5;
+	background-color:#bcd2c3;
 }
 
 #xgcontent > #mainContent > #informs
@@ -99,13 +99,13 @@
 	padding :0;
 	height: 290px;
 	position: absolute;
-	top: 335px;
+	top: 390px;
 	left: 335px;
-	border: 1px #e5e5e5 solid;
+	border: 1px #bcd2c3 solid;
 	border-radius:10px;
 	-webkit-border-radius:10px;
 	overflow: hidden;
-	background-color:#e5e5e5;
+	background-color:#bcd2c3;
 }
 
 #xgcontent > #mainContent > #teaching
@@ -113,26 +113,26 @@
 	width: 320px;
 	height: 290px;
 	position: absolute;
-	border: 1px #e5e5e5 solid;
+	border: 1px #bcd2c3 solid;
 	border-radius:10px;
 	-webkit-border-radius:10px;
 	overflow: hidden;
-	background-color:#e5e5e5; 
-	left: 0;
-	top: 335px;
+	background-color:#bcd2c3; 
+	right: 0;
+	top: 390px;
 }
 #xgcontent > #mainContent > #email
 {
 	width: 320px;
 	height: 290px;
 	position: absolute;
-	right: 0;
-	top: 335px;
-	border: 1px #e5e5e5 solid;
+	left: 0;
+	top: 390px;
+	border: 1px #bcd2c3 solid;
 	border-radius: 10px;
 	-webkit-border-radius:10px;
 	overflow: hidden;
-	background-color:#e5e5e5; 
+	background-color:#bcd2c3; 
 }
 
 #xgcontent > #mainContent a
@@ -253,4 +253,23 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+}
+
+.mainMore
+{
+	position:absolute;
+	top:8px;
+	right:0;
+	width:60px;
+	height:15px;
+}
+#textNews .mainMore{top:10px;}
+
+#xgcontent #mainContent .mainMore>a
+{
+	color:#727272;
+}
+#xgcontent #mainContent .mainMore>a:hover
+{
+	color:#000;
 }

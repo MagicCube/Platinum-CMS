@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="/static/home/plugins/flexslider/flexslider.css" type="text/css" />
 <script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="../static/xuegong/js/slide.js"></script>
+<script type="text/javascript" src="../static/xuegong/js/huiyin.js"></script>
 <!-- FlexSlider end -->
 
 <link href = "/static/xuegong/css/xuegong.css" rel = "stylesheet"/>
@@ -28,7 +29,7 @@
                 <div id = "gongNews">
                 <span><img src = "/static/xuegong/images/gonggao.png"/></span>
           		<cms:PostList id = "ggtzlist" subcategoryId = "sc000000000000000000000000000028" count = "8"/>
-                <span class="mainMore" style = "float: right; margin-top: 15px;"><a href = "/xuegong/sc000000000000000000000000000028/more/">更多>></a></span>
+                <span class="mainMore"><a href = "/xuegong/sc000000000000000000000000000028/more/">更多>></a></span>
                 </div>
                 
                 
@@ -44,27 +45,53 @@
 			<div id = "textNews">
                 <span><img src = "/static/xuegong/images/gongshi.png"/></span>        		
         		<cms:PostList id = "gslmlist" subcategoryId = "sc000000000000000000000000000029" count = "8"/>         		
-				 <span class="mainMore" style = "float: right; margin-top: 15px;"><a href = "/xuegong/sc000000000000000000000000000029/more/">更多>></a></span>
+				 <span class="mainMore" ><a href = "/xuegong/sc000000000000000000000000000029/more/">更多>></a></span>
 			</div>
 			
 			<div id = "informs">
 	        <span><img src = "/static/xuegong/images/xinwen.png"/></span>			
           		<cms:PostList id = "xwdtlist" subcategoryId = "sc000000000000000000000000000030" count = "8"/>   		
-				 <span class="mainMore" style = "float: right; margin-top: 15px;"><a href = "/xuegong/sc000000000000000000000000000030/more/">更多>></a></span>
+				 <span class="mainMore"><a href = "/xuegong/sc000000000000000000000000000030/more/">更多>></a></span>
 			</div>
-			
-			<div id = "teaching">
-			<span><img src = "/static/xuegong/images/xibu.png"/></span>
-         		<cms:PostList id = "xbkxlist" subcategoryId = "sc000000000000000000000000000031" count = "8"/>         		
-				 <span class="mainMore" style = "float: right; margin-top: 15px;"><a href = "/xuegong/sc000000000000000000000000000031/more/">更多>></a></span>
-			</div>
-              
+			  
+			<div id="midPic"></div>
+			  
             <div id = "email">
 			<span><img src = "/static/xuegong/images/zhuanti.png"/></span>          		
           		<cms:PostList id = "ztbdlist" subcategoryId = "sc000000000000000000000000000032" count = "8"/>        		        		
-            	 <span class="mainMore" style = "float: right; margin-top: 15px;"><a href = "/xuegong/sc000000000000000000000000000032/more/">更多>></a></span>
+            	 <span class="mainMore"><a href = "/xuegong/sc000000000000000000000000000032/more/">更多>></a></span>
             </div>
             
+            <div id = "teaching">
+			<span><img src = "/static/xuegong/images/xibu.png"/></span>
+         		<cms:PostList id = "xbkxlist" subcategoryId = "sc000000000000000000000000000031" count = "5"/>         		
+				<span class="mainMore"><a href = "/xuegong/sc000000000000000000000000000031/more/">更多>></a></span>
+				<div id="huiyinbi"></div>
+			</div>
+			<table id="huiyintb"><tr>
+                    <td width="101" align="center">称呼姓名：</td>
+                    <td width="180"><input name="Books_Name" type="text" class="input">
+                        <font color="red"> *</font></td>
+                    <td width="94" align="center">内容：<font color="red">*</font></td>
+                    <td width="300" rowspan="4"><textarea name="Books_Info" rows="9" cols="60" class="text"></textarea></td>
+                  </tr>
+                  <tr>
+                    <td align="center">留言标题：</td>
+                    <td><input name="Books_title" type="text" class="input" id="Books_title">
+                        <font color="red"> *</font></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td align="center">联系方式：</td>
+                    <td><input name="Books_Mail" type="text" class="input"></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" align="center"><input name="submit" type="submit" class="bmit" value=" 添加留言 ">
+                        <input name="reset" type="reset" class="bmit" value=" 重新输入 "></td>
+                  </tr>
+		      </table>
+            	<div id="exittb"></div>
       </div>	
 </div>
 

@@ -1,11 +1,11 @@
 $(function(){
-	
 		$("#tsztList").mouseover(function(){
 			clearInterval(h);
 		});
 		$("#tsztList").mouseout(function(){
 			h = setInterval("play()",3000);
 		});
+		
 })
 
 		var count = 1;
