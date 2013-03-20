@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="cms" tagdir="/WEB-INF/tags/tags2" %>
 
-
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 
 
 
@@ -62,21 +62,21 @@ $(document).ready(function(){
 	
 				   <div id="carousel1"> 
 	
-		<a class="i_news" onclick="location.href='../../mob/news/';" ><img class="cloudcarousel"   src="../mob/static/common/images/NEWS.png" /></a>
-		<a class="i_news" onclick="location.href='../../mob/guide/';" ><img class="cloudcarousel"  src="../mob/static/common/images/guide.jpg" /></a>
+		              <a class="i_news" onclick="location.href='../../mob/news/';" ><img class="cloudcarousel"   src="../mob/static/common/images/NEWS.png" /></a>
+	               	  <a class="i_news" onclick="location.href='../../mob/guide/';" ><img class="cloudcarousel"  src="../mob/static/common/images/guide.jpg" /></a>
 		
-		<a class="i_news" onclick="location.href='../../mob/pic/';" ><img class="cloudcarousel"  src="../mob/static/common/images/view.jpg"></a>
-		<a class="i_news" onclick="location.href='../../mob/ditu/';" ><img class="cloudcarousel"  src="../mob/static/common/images/ditu1.png"></a>
+		              <a class="i_news" onclick="location.href='../../mob/pic/';" ><img class="cloudcarousel"  src="../mob/static/common/images/view.jpg"></a>
+		              <a class="i_news" onclick="location.href='../../mob/ditu/';" ><img class="cloudcarousel"  src="../mob/static/common/images/ditu1.png"></a>
 		
-		<a class="i_news" onclick="location.href='../../mob/Shake/';" ><img class="cloudcarousel" src="../mob/static/common/images/yaoyiyao.png"></a>
-		<a class="i_news" onclick="location.href='http://zbvip.njnu.edu.cn/wap';" ><img class="cloudcarousel" src="../mob/static/common/images/teacher.jpg"></a>
+		              <a class="i_news" onclick="location.href='../../mob/Shake/';" ><img class="cloudcarousel" src="../mob/static/common/images/yaoyiyao.png"></a>
+		              <a class="i_news" onclick="location.href='http://zbvip.njnu.edu.cn/wap';" ><img class="cloudcarousel" src="../mob/static/common/images/teacher.jpg"></a>
 		
 		
-		<a class="i_news" onclick="location.href='http://222.192.5.246/wap';" ><img class="cloudcarousel"  src="../mob/static/common/images/student.jpg"></a>
+		              <a class="i_news" onclick="location.href='http://222.192.5.246/wap';" ><img class="cloudcarousel"  src="../mob/static/common/images/student.jpg"></a>
 		
-		<div id="but1" class="carouselLeft"></div>
-		<div id="but2" class="carouselRight"></div> 
-	</div><!--carousel1 end-->
+		                 <div id="but1" class="carouselLeft"></div>
+		                 <div id="but2" class="carouselRight"></div> 
+	            </div><!--carousel1 end-->
 			
 				
 		
