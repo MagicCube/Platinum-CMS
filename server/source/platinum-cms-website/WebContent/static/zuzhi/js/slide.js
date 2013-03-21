@@ -8,7 +8,7 @@ $(function(){
 		});
 })
 
-		var count = 1;
+		var count = 2;
 		var h;
 		h = setInterval("play()",3000);
 		

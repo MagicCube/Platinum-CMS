@@ -118,7 +118,7 @@
 				<p>苏ICP备05080300号</p>
 			</div> -->
 			
-			<div id="website" style="top:7px;left:360px;">
+			<div id="website" style="top:7px;left:400px;">
 				<p style="padding-left:3px;line-height:20px;">2013 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院</p>
 				<p>南京市栖霞区仙林大学城学林路2号 210046</p>
 			</div>

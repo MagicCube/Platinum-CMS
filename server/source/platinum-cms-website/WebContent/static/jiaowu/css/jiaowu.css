@@ -140,7 +140,7 @@ div.category_1 h3
 	font-weight: bold;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	color:#013c36;
+	color:#428212;
 }
 
 #left_part ul
@@ -148,6 +148,8 @@ div.category_1 h3
 	min-height:222px;
 	margin-left: -10px;
 }
+
+#left_part #tupian ul{margin-left: 0;}
 
 #left_part ul li
 {
@@ -263,3 +265,12 @@ div.moduletable h3, div.moduletable_menu h3, div.moduletable_text h3
 }
 #tongzhi{height:300px;}
 #guoji{height:200px;}
+#home_slider>ul>li
+{
+	display:none;
+	width:333px;
+	height:273px;
+	list-style:none;
+	margin:0;
+	padding:0;
+}

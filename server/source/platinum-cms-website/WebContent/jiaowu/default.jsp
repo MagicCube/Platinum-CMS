@@ -8,7 +8,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>教务处</title>
 <link href = "/static/jiaowu/css/jiaowu.css" rel = "stylesheet"></link>
-
+<script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="/static/jiaowu/js/gallery.js"></script>
 </head>
 <body>
 	<cms:Header path = "jiaowu"/>
@@ -19,7 +20,7 @@
           <div id="left_part">
            <div id="left_column_1">
            
-           <div class="category_1">
+           <div class="category_1" id="firstCate">
            <div class="category_name">
               <h3>教务新闻</h3>
               </div>
@@ -50,6 +51,11 @@
            <div id="left_column_2">
            
            <div id="tupian">
+           		<div id="home_slider" class="flexslider">
+           			<div id="container" style="width:100%;height:100%;position:relative;">
+                		<cms:PhotoSlide id="tupianList" cssClass="slides" subcategoryId="sc000000000000000000000000000317" displayPhoto="true" count="4" />
+                	</div> 
+                </div>
            </div>
            
            <div class="category_1">

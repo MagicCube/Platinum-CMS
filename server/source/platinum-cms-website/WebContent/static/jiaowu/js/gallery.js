@@ -1,8 +1,8 @@
 $(function(){
-		$("#tsztList").mouseover(function(){
+		$("#tupian").mouseover(function(){
 			clearInterval(h);
 		});
-		$("#tsztList").mouseout(function(){
+		$("#tupian").mouseout(function(){
 			h = setInterval("play()",3000);
 		});
 		
