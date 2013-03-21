@@ -49,7 +49,10 @@
            
            <div id="left_column_2">
            
-                      <div class="category_1">
+           <div id="tupian">
+           </div>
+           
+           <div class="category_1">
            <div class="category_name">
               <h3>教学评估</h3>
             </div>
@@ -67,14 +70,14 @@
             </div>
             
 
-            
+            <!--
             <div class="category_1">
             <div class="category_name">
-              <h3>国际交流与合作</h3>
-            </div>
+             <h3>国际交流与合作</h3>
+             </div>
             	<cms:PostList id = "jxyjlist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000051" count = "6"/>
                 <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000051/more/">更多...</a></p>
-            </div>
+            </div> --> 
            
            </div>
            
@@ -86,13 +89,21 @@
           <div id="right_part">
             <div class="moduletable_menu" id="tongzhi" >
               <h3 style="margin-top:10px;">通知与公告</h3>
-             <cms:PostList id = "zztglist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000045" count = "7"/>  
+             <cms:PostList id = "zztglist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000045" displayDate="true" count = "7"/>  
             </div>
             
 			<hr style="text-align:center; width:90%; margin-left:10px;" />
+			
+		  <div class="moduletable_menu" id="guoji" >
+              <h3 style="margin-top:10px;">国际交流与合作</h3>
+              <cms:PostList id = "jxyjlist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000051" count = "6"/>
+              <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000051/more/">更多...</a></p>
+          </div>
             　　
+            <hr style="text-align:center; width:90%; margin-left:10px;" />
+            
             <div class="moduletable_menu">
-              <h3>&nbsp;&nbsp;&nbsp;&nbsp;教务处简介</h3>
+              <h3>教务处简介</h3>
               <ul class="menu">
                 <li class="link_2">
                   <a href="/index.php?option=com_content&amp;view=article&amp;id=11&amp;Itemid=22">
@@ -125,7 +136,7 @@
             <hr style="text-align:center; width:90%; margin-left:10px;" />
             
             <div class="moduletable_menu">
-              <h3>&nbsp;&nbsp;&nbsp;&nbsp;常用菜单</h3>
+              <h3>常用菜单</h3>
               <ul class="menu">
                 <li class="link_2">
                   <a href="http://222.192.5.246/" target="_blank">
@@ -144,6 +155,8 @@
                 </li>
               </ul>
             </div>
+           
+            
           </div>
           <!-- END: RIGHT COLUMN -->          
 

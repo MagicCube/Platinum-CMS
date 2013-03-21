@@ -572,5 +572,14 @@ a #title:hover{color:#808080;}
 #title_style span{position:absolute;top:8px;right:5px;}
 #postList li a{width:560px;display:block;}
 
+#tupian
+{
+	width:100%;
+	height:298px;
+}
 
-
+#position_2
+{
+	float:right;
+}
+#right_part #zztglist a>#title{font-size:12px;width:100%;overflow:hidden;text-overflow: ellipsis;}
