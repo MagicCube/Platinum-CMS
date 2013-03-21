@@ -68,12 +68,16 @@
 				<span class="mainMore"><a href = "/xuegong/sc000000000000000000000000000031/more/">更多>></a></span>
 				<div id="huiyinbi"></div>
 			</div>
-			<table id="huiyintb"><tr>
+			<div id="huiyintb">
+			<div id="subdiv">
+			<div id="exittb"></div>
+			<table>
+					<tr>
                     <td width="101" align="center">称呼姓名：</td>
                     <td width="180"><input name="Books_Name" type="text" class="input">
                         <font color="red"> *</font></td>
                     <td width="94" align="center">内容：<font color="red">*</font></td>
-                    <td width="300" rowspan="4"><textarea name="Books_Info" rows="9" cols="60" class="text"></textarea></td>
+                    <td width="250" rowspan="4"><textarea name="Books_Info" rows="9" cols="60" class="text"></textarea></td>
                   </tr>
                   <tr>
                     <td align="center">留言标题：</td>
@@ -91,7 +95,7 @@
                         <input name="reset" type="reset" class="bmit" value=" 重新输入 "></td>
                   </tr>
 		      </table>
-            	<div id="exittb"></div>
+            </div></div>
       </div>	
 </div>
 
