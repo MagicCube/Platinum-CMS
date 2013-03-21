@@ -63,16 +63,16 @@ $(document).ready(function(){
 				   <div id="carousel1"> 
 	
 		              <a class="i_news" onclick="location.href='../../mob/news/';" ><img class="cloudcarousel"   src="../mob/static/common/images/NEWS.png" /></a>
-	               	  <a class="i_news" onclick="location.href='../../mob/guide/';" ><img class="cloudcarousel"  src="../mob/static/common/images/guide.jpg" /></a>
+	               	  <a class="i_news" onclick="location.href='../../mob/guide/';" ><img class="cloudcarousel"  src="../mob/static/common/images/guide.png" /></a>
 		
-		              <a class="i_news" onclick="location.href='../../mob/pic/';" ><img class="cloudcarousel"  src="../mob/static/common/images/view.jpg"></a>
-		              <a class="i_news" onclick="location.href='../../mob/ditu/';" ><img class="cloudcarousel"  src="../mob/static/common/images/ditu1.png"></a>
+		              <a class="i_news" onclick="location.href='../../mob/pic/';" ><img class="cloudcarousel"  src="../mob/static/common/images/view.png"></a>
+		              <a class="i_news" onclick="location.href='../../mob/ditu/';" ><img class="cloudcarousel"  src="../mob/static/common/images/map.png"></a>
 		
-		              <a class="i_news" onclick="location.href='../../mob/Shake/';" ><img class="cloudcarousel" src="../mob/static/common/images/yaoyiyao.png"></a>
-		              <a class="i_news" onclick="location.href='http://zbvip.njnu.edu.cn/wap';" ><img class="cloudcarousel" src="../mob/static/common/images/teacher.jpg"></a>
+		              <a class="i_news" onclick="location.href='../../mob/Shake/';" ><img class="cloudcarousel" src="../mob/static/common/images/shake.png"></a>
+		              <a class="i_news" onclick="location.href='http://zbvip.njnu.edu.cn/wap';" ><img class="cloudcarousel" src="../mob/static/common/images/teacher.png"></a>
 		
 		
-		              <a class="i_news" onclick="location.href='http://222.192.5.246/wap';" ><img class="cloudcarousel"  src="../mob/static/common/images/student.jpg"></a>
+		              <a class="i_news" onclick="location.href='http://222.192.5.246/wap';" ><img class="cloudcarousel"  src="../mob/static/common/images/student.png"></a>
 		
 		                 <div id="but1" class="carouselLeft"></div>
 		                 <div id="but2" class="carouselRight"></div> 
