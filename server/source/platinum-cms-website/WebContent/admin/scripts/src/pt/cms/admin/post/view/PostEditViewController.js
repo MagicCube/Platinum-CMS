@@ -175,7 +175,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         $sideBar.append($dl);
         
         var $dl = $("<dl><dt>来源</dt> <dd></dd></dl>");
-        me.$source = $("<input type=text id=source />");
+        me.$source = $("<select id=category><option value=0></option></select>");
         $dl.children("dd").append(me.$source);
         $sideBar.append($dl);
         
