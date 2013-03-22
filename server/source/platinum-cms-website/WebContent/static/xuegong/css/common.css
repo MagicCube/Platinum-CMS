@@ -649,3 +649,5 @@ a #title:hover {
 	background-image:url(/static/xuegong/images/exit.jpg);
 	background-repeat:no-repeat;
 }
+
+.spanimg{display:block;width:100%;border-bottom:2px solid #1e4b28;}

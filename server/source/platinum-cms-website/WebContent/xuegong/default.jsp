@@ -49,7 +49,7 @@
 			</div>
 			
 			<div id = "informs">
-	        <span><img src = "/static/xuegong/images/xinwen.png"/></span>			
+	        <span class="spanimg"><img src = "/static/xuegong/images/xinwen.png"/></span>			
           		<cms:PostList id = "xwdtlist" subcategoryId = "sc000000000000000000000000000030" count = "8"/>   		
 				 <span class="mainMore"><a href = "/xuegong/sc000000000000000000000000000030/more/">更多>></a></span>
 			</div>
@@ -57,13 +57,13 @@
 			<div id="midPic"></div>
 			  
             <div id = "email">
-			<span><img src = "/static/xuegong/images/zhuanti.png"/></span>          		
+			<span class="spanimg"><img src = "/static/xuegong/images/zhuanti.png"/></span>          		
           		<cms:PostList id = "ztbdlist" subcategoryId = "sc000000000000000000000000000032" count = "8"/>        		        		
-            	 <span class="mainMore"><a href = "/xuegong/sc000000000000000000000000000032/more/">更多>></a></span>
+            <span class="mainMore"><a href = "/xuegong/sc000000000000000000000000000032/more/">更多>></a></span>
             </div>
             
             <div id = "teaching">
-			<span><img src = "/static/xuegong/images/xibu.png"/></span>
+			<span class="spanimg"><img src = "/static/xuegong/images/xibu.png"/></span>
          		<cms:PostList id = "xbkxlist" subcategoryId = "sc000000000000000000000000000031" count = "5"/>         		
 				<span class="mainMore"><a href = "/xuegong/sc000000000000000000000000000031/more/">更多>></a></span>
 				<div id="huiyinbi"></div>
