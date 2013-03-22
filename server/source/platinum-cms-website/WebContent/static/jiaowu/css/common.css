@@ -585,7 +585,7 @@ a #title:hover{color:#808080;}
 {
 	float:right;
 }
-#right_part #zztglist a>#title{font-size:12px;width:100%;overflow:hidden;text-overflow: ellipsis;}
+#right_part #zztglist a>#title{font-size:14px;width:100%;overflow:hidden;text-overflow: ellipsis;}
 #firstCate{border-radius:5px 0 0 0;}
 #home_slider{width:100%;height:100%;}
 #tupianList{width:333px;height:273px;background-color:#E3e8ec;}

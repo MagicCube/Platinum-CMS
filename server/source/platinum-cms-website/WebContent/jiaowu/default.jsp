@@ -102,7 +102,7 @@
 			
 		  <div class="moduletable_menu" id="guoji" >
               <h3 style="margin-top:10px;">国际交流与合作</h3>
-              <cms:PostList id = "jxyjlist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000051" count = "6"/>
+              <cms:PostList id = "jxyjlist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000051" count = "4"/>
               <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000051/more/">更多...</a></p>
           </div>
             　　
