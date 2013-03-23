@@ -356,7 +356,6 @@ table td
 	width: 843px;
 	color: #ccc;
 	font-weight: bold;
-	padding-left:145px;
 }
 
 .CategoryNavigationBar li
@@ -395,8 +394,8 @@ table td
 #postDetail
 {
 	margin:0 auto;
-	padding:0;
-	width: 975px;
+	padding:0 10px;;
+	width: 968px;
 	border-left:1px solid #b0c2d3;
 	border-right:1px solid #b0c2d3;
 	
@@ -407,8 +406,9 @@ table td
 }
 #postDetail #content
 {
-	width:100%;
-
+	width:880px;
+	border:1px dashed #ccc;
+	margin:5px auto;
 }
 #postList
 {
