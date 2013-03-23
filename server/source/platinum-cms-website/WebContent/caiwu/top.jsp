@@ -22,6 +22,7 @@
 	
 
         <menu id = "mainmenu">
+         <li class = "singleMenu"><a href = "/caiwu">部门首页</a></li>
 		 <li class = "singleMenu"><a href = "/caiwu/ff8081813b606afb013b6614616c00c5.html">部门简介</a></li>
 		 <li class = "singleMenu"><a href = "/caiwu/sc000000000000000000000000000159/more/">信息公开</a></li>
 		 <li class = "singleMenu"><a href = "/caiwu/sc000000000000000000000000000160/more/">规章制度</a></li>
