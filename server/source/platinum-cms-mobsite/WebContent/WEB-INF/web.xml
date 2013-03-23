@@ -1,103 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="2.4">
-    
-    <display-name>Platinum CMS 网站</display-name>
-    
-    <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
-        <welcome-file>index.htm</welcome-file>
-        <welcome-file>index.jsp</welcome-file>
-        <welcome-file>default.html</welcome-file>
-        <welcome-file>default.htm</welcome-file>
-        <welcome-file>default.jsp</welcome-file>
-    </welcome-file-list>                
-
-
-    
-
-
-
-    <servlet>
-        <display-name>REST 风格服务</display-name>
-        <servlet-name>RESTfulServiceServlet</servlet-name>
-        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
-        <init-param>
-            <param-name>com.sun.jersey.config.property.packages</param-name>
-            <param-value>
+<web-app xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.4">
+  <javaee:display-name>Platinum CMS 网站</javaee:display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <javaee:display-name>REST 风格服务</javaee:display-name>
+    <servlet-name>RESTfulServiceServlet</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <javaee:param-name>com.sun.jersey.config.property.packages</javaee:param-name>
+      <javaee:param-value>
                 platinum.security.web.rest,
                 platinum.cms.admin.web.rest
-            </param-value>
-        </init-param>
-        <init-param>
-            <param-name>com.sun.jersey.spi.container.ContainerResponseFilters</param-name>
-            <param-value>com.sun.jersey.api.container.filter.GZIPContentEncodingFilter</param-value>
-        </init-param>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>RESTfulServiceServlet</servlet-name>
-        <url-pattern>/api/0/*</url-pattern>
-    </servlet-mapping>
-    
-    
-    
-    
-
-    
-    <filter>
-        <display-name>Platinum CMS 安全认证过滤器</display-name>
-        <filter-name>CMSSecurityFilter</filter-name>
-        <filter-class>platinum.security.web.filter.SecurityFilter</filter-class>
-        <init-param>
-            <param-name>loginPath</param-name>
-            <param-value>/admin/login.jsp</param-value>
-        </init-param>
-    </filter>
-    <filter-mapping>
-        <filter-name>CMSSecurityFilter</filter-name>
-        <url-pattern>/admin/*</url-pattern>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>CMSSecurityFilter</filter-name>
-        <url-pattern>/api/0/admin/*</url-pattern>
-    </filter-mapping>
-    
-    
-    
-    
-    
-    <filter>
-        <display-name>转发重写过滤器</display-name>
-        <filter-name>RewriteFilter</filter-name>
-        <filter-class>platinum.cms.runtime.web.filter.RewriteFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>RewriteFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
-    
-    
-    
-    
-    
-    <filter>
-        <display-name>EHCache 页面缓存过滤器</display-name>
-        <filter-name>SimplePageCachingFilter</filter-name>
-        <filter-class>net.sf.ehcache.constructs.web.filter.SimplePageCachingFilter</filter-class>
-    </filter>
-    <!-- 
-    <filter-mapping>
-        <filter-name>SimplePageCachingFilter</filter-name>
-        <url-pattern>*.jsp</url-pattern>
-    </filter-mapping>
-     -->
-    
-    
-    
-
-
-    <listener>
-        <display-name>Platinum 平台启动监听器</display-name>
-        <listener-class>platinum.platform.web.listener.AppContextListener</listener-class>
-    </listener>
-    
+            </javaee:param-value>
+    </init-param>
+    <init-param>
+      <javaee:param-name>com.sun.jersey.spi.container.ContainerResponseFilters</javaee:param-name>
+      <javaee:param-value>com.sun.jersey.api.container.filter.GZIPContentEncodingFilter</javaee:param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RESTfulServiceServlet</servlet-name>
+    <url-pattern>/api/0/*</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <javaee:display-name>Platinum CMS 安全认证过滤器</javaee:display-name>
+    <filter-name>CMSSecurityFilter</filter-name>
+    <filter-class>platinum.security.web.filter.SecurityFilter</filter-class>
+    <init-param>
+      <javaee:param-name>loginPath</javaee:param-name>
+      <javaee:param-value>/admin/login.jsp</javaee:param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>CMSSecurityFilter</filter-name>
+    <url-pattern>/admin/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>CMSSecurityFilter</filter-name>
+    <url-pattern>/api/0/admin/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <javaee:display-name>转发重写过滤器</javaee:display-name>
+    <filter-name>RewriteFilter</filter-name>
+    <filter-class>platinum.cms.runtime.web.filter.RewriteFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>RewriteFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <javaee:display-name>EHCache 页面缓存过滤器</javaee:display-name>
+    <filter-name>SimplePageCachingFilter</filter-name>
+    <filter-class>net.sf.ehcache.constructs.web.filter.SimplePageCachingFilter</filter-class>
+  </filter>
+  <listener>
+    <javaee:display-name>Platinum 平台启动监听器</javaee:display-name>
+    <javaee:listener-class>platinum.platform.web.listener.AppContextListener</javaee:listener-class>
+  </listener>
 </web-app>
