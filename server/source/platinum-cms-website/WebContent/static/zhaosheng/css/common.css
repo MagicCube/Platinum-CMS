@@ -505,3 +505,30 @@ li a #title:hover
 #postList li #date{right:3px;}
 #title_style{position:relative;}
 #title_style>span{position:absolute;right:0;bottom:3px;}
+
+#content>.MsoNormal{
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height: 150%; 
+	font-family: 宋体;
+	font-size: 12pt; 
+	text-indent: 2em;
+}
+
+#content>div{
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height: 150%; 
+	font-family: 宋体;
+	font-size: 12pt; 
+	text-indent: 2em;
+}
+
+#content{
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height: 150%; 
+	font-family: 宋体;
+	font-size: 12pt; 
+	text-indent: 2em;
+}

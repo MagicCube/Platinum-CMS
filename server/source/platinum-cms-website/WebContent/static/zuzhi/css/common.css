@@ -541,3 +541,30 @@ a #title{width:560px;color:#000;overflow:hidden;}
 a #title:hover{color:#808080;}
 #categoryNavigationBar{width:700px;}
 #title_style span{position:absolute;top:8px;right:5px;}
+
+#content>.MsoNormal{
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height: 150%; 
+	font-family: 宋体;
+	font-size: 12pt; 
+	text-indent: 2em;
+}
+
+#content>div{
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height: 150%; 
+	font-family: 宋体;
+	font-size: 12pt; 
+	text-indent: 2em;
+}
+
+#content{
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height: 150%; 
+	font-family: 宋体;
+	font-size: 12pt; 
+	text-indent: 2em;
+}

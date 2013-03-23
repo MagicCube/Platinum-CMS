@@ -484,3 +484,30 @@ ul.TextList li
 	padding:0 10px 0 10px;
 	line-height:20px;
 }
+
+#content>.MsoNormal{
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height: 150%; 
+	font-family: 宋体;
+	font-size: 12pt; 
+	text-indent: 2em;
+}
+
+#content>div{
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height: 150%; 
+	font-family: 宋体;
+	font-size: 12pt; 
+	text-indent: 2em;
+}
+
+#content{
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height: 150%; 
+	font-family: 宋体;
+	font-size: 12pt; 
+	text-indent: 2em;
+}

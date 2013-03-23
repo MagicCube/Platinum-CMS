@@ -651,3 +651,30 @@ a #title:hover {
 }
 
 .spanimg{display:block;width:100%;border-bottom:2px solid #1e4b28;}
+
+#content>.MsoNormal{
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height: 150%; 
+	font-family: 宋体;
+	font-size: 12pt; 
+	text-indent: 2em;
+}
+
+#content>div{
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height: 150%; 
+	font-family: 宋体;
+	font-size: 12pt; 
+	text-indent: 2em;
+}
+
+#content{
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height: 150%; 
+	font-family: 宋体;
+	font-size: 12pt; 
+	text-indent: 2em;
+}
