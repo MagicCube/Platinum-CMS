@@ -34,11 +34,9 @@ a:hover
 	border-right:1px solid #b0c2d3;
 	padding: 0;
 	margin: 0;
-	position: absolute;
 	width: 988px;
 	height: 550px;
 	float: left;
-
 }
 #content > #mainContent > #news
 {
@@ -389,6 +387,6 @@ a:hover
 	text-align:center;
 	line-height:0px;
 }
-#xxgklist li{list-style:none;display:block;width:450px;height:15px;position:relative;background-image:url(/static/caiwu/image/list1.png);background-repeat:no-repeat;}
-#xxgklist li a #title{position:absolute;top:0;left:20px;}
+#xxgklist li{list-style:none;display:block;width:450px;height:20px;position:relative;background-image:url(/static/caiwu/image/list1.png);background-repeat:no-repeat;}
+#xxgklist li a #title{position:absolute;top:-4px;left:0;}
 #title:hover{cursor:pointer;}
