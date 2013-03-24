@@ -2,43 +2,8 @@
 <%@ taglib prefix="cms" tagdir="/WEB-INF/tags/tags2" %>
 
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-
-
-
-<script type="text/JavaScript" src="/mob/static/common/scripts/CloudCarousel.1.0.5.js" ></script>
-<script type="text/JavaScript" src=" /mob/static/common/scripts/jquery.mousewheel.js "></script><!--鼠标滚动插件-->
-<script type="text/javascript">
-
-
-
-
-$(document).ready(function(){
-						   
-	// 这初始化容器中指定的元素，在这种情况下，旋转木马.
-	$("#carousel1").CloudCarousel({			
-		xPos:140,
-		yPos:20,
-		buttonLeft: $('#but1'),
-		buttonRight: $('#but2'),
-				
-		FPS:20,
-		reflHeight:10,
-		reflGap:2,
-		yRadius:30,
-		autoRotateDelay: 12,
-		speed:0.2,
-		mouseWheel:true,
-		bringToFront:true
-	});
-	
-});
-</script>
-
-
-
-
+<script type="text/javascript" src="menu.js"></script>
 <link href = "/mob/static/common/css/mobile.css" rel = "stylesheet"></link>
-
 
 
 
@@ -52,39 +17,42 @@ $(document).ready(function(){
         
     </div>
 
-  <div class="menu">
- 
-  	<table cellpadding="0" cellspacing="0">
-    	<tr align="center">
-				<!--  <td><a class="i_news" href="../mob/../news/" target="_news"><span><font color="yellow" >新闻</font></span></a></td>
-				<td><a class="i_moive" href="../mob/guide/"><span>办事指南</span></a></td>
-				<td><a class="i_map" href="../mob/pic/"><span>美丽校园</span></a></td>  -->
-	
-				   <div id="carousel1"> 
-	
-		              <a class="i_news" onclick="location.href='../../mob/news/';" ><img class="cloudcarousel"   src="../mob/static/common/images/NEWS.png" /></a>
-	               	  <a class="i_news" onclick="location.href='../../mob/guide/';" ><img class="cloudcarousel"  src="../mob/static/common/images/guide.png" /></a>
-		
-		              <a class="i_news" onclick="location.href='../../mob/pic/';" ><img class="cloudcarousel"  src="../mob/static/common/images/view.png"></a>
-		              <a class="i_news" onclick="location.href='../../mob/ditu/';" ><img class="cloudcarousel"  src="../mob/static/common/images/map.png"></a>
-		
-		              <a class="i_news" onclick="location.href='../../mob/Shake/';" ><img class="cloudcarousel" src="../mob/static/common/images/shake.png"></a>
-		              <a class="i_news" onclick="location.href='http://zbvip.njnu.edu.cn/wap';" ><img class="cloudcarousel" src="../mob/static/common/images/teacher.png"></a>
-		
-		
-		              <a class="i_news" onclick="location.href='http://222.192.5.246/wap';" ><img class="cloudcarousel"  src="../mob/static/common/images/student.png"></a>
-		
-		                 <div id="but1" class="carouselLeft"></div>
-		                 <div id="but2" class="carouselRight"></div> 
-	            </div><!--carousel1 end-->
-			
-				
-		
-				
-	    </tr>
-      </table>   
+  <div id="menu">
+    <ul class="menu">
+        <li><a href="#" class="parent"><span>主页导航</span></a>
+            <div>
+            	<ul>               
+                	<li>
+                		<a href="../mob/news"><span>新闻</span></a>
+                	</li>
+                	<li>
+                		<a href="../mob/guide/"><span>办事指南</span></a>
+                	</li>
+                	<li>
+                		<a href="../mob/Shake/"><span>摇一摇</span></a>
+                	</li>
+                	<li>
+                		<a href="../mob/ditu/"><span>地图</span></a>
+                	</li>
+            	</ul>
+            </div>
+        </li>
+        <li><a href="../mob/pic" class="parent"><span>校园美景</span></a>
+        </li>
+        <li><a href="#" class="parent"><span>登录</span></a>
+            <div>
+            	<ul>       
+                	<li><a href="http://zbvip.njnu.edu.cn/wap/"><span>教师登录</span></a></li>
+                	<li><a href="http://222.192.5.246/wap/"><span>学生登录</span></a></li>
+            	</ul>
+            </div>
+        </li>
+        <li class="last">
+        	<a href="。。"><span>PC版</span></a>
+        </li>
         
-  </div>
+    </ul>
+</div>
   
 
 <div id="body">
@@ -94,3 +62,5 @@ $(document).ready(function(){
 	</div>
 	<div id="bodyContent">
 <%}%>
+</div>
+</div>
