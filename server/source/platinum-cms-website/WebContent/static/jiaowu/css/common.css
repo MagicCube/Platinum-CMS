@@ -207,6 +207,7 @@ ul { list-style: none; }
 	padding-left:30px;
 	float: left;
 	border-right: 1px solid #555555;
+	width:100%;
 }
 
 #ja-mainnav ul.menu ul {
