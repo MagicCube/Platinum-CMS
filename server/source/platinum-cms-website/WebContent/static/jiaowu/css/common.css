@@ -202,11 +202,11 @@ ul { list-style: none; }
 }
 
 #ja-mainnav ul.menu {
-	margin: 0 auto; /* all lists */
+	margin: 0; /* all lists */
 	padding: 0;
+	padding:0 auto;
 	float: left;
 	border-right: 1px solid #555555;
-	width:980px;
 }
 
 #ja-mainnav ul.menu ul {
