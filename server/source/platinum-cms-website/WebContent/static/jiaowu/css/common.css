@@ -548,8 +548,8 @@ color: #7BA566;
 }
 
 /*12-10*/
-#more .PostList li{padding-left:20px;width:680px;background-image:url(/static/jiaowu/images/moreList.png);background-repeat:no-repeat;}
-#postList{width:100%;}
+#more .PostList li{list-style:none;padding-left:20px;width:680px;background-image:url(/static/jiaowu/images/moreList.png);background-repeat:no-repeat;}
+#bodyContent>#more>#postList{width:100%;list-style-image:none;}
 
 #sideBar{margin-right:5px;margin-top:8px;}
 
@@ -570,7 +570,7 @@ a #title{width:560px;color:#000;overflow:hidden;line-height:30px;}
 a #title:hover{color:#808080;}
 #categoryNavigationBar{width:700px;}
 #title_style span{position:absolute;top:8px;right:5px;}
-#postList li a{width:560px;display:block;}
+#postList li a{width:532px;display:block;}
 
 #tupian
 {
@@ -617,3 +617,7 @@ a #title:hover{color:#808080;}
 #post1 .bx-caption{background-color: rgb(21,88, 151);background: rgba(21,88, 151, 0.7);opacity:0.7;}
 
 #post1>.bx-caption{display:block;}
+#postList li #date
+{
+	right:20px;
+}
