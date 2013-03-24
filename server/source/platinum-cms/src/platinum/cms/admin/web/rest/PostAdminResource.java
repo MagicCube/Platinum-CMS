@@ -104,7 +104,10 @@ public class PostAdminResource extends AbstractResource
 		{
 			PostAdminManager.getInstance().savePost(post);
 		}
-		
+		if("Administrator".equals( Membership.getInstance().getCurrentUser().getUserRole() ))
+		{
+			PostAdminManager.getInstance().savePost(post);
+		}
 		
 	
 		
