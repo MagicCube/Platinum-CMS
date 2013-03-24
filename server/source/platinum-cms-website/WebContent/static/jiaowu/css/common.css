@@ -202,9 +202,9 @@ ul { list-style: none; }
 }
 
 #ja-mainnav ul.menu {
-	margin: 0; /* all lists */
+	margin: 0 ; /* all lists */
 	padding: 0;
-	padding:0 auto;
+	padding-left:30px;
 	float: left;
 	border-right: 1px solid #555555;
 }
@@ -227,14 +227,14 @@ ul { list-style: none; }
 	list-style: none;
 }
 #ja-mainnav ul.menu .end a{border-right: 1px solid #1e699b;}
- 
+
 
 /* STYLING THE MENU
 -----------------------------------*/
 /* 1st level */
 #ja-mainnav ul.menu li a {
 	margin: 0;
-	padding: 10px 21px;
+	padding: 10px 20px;
 	border-right: 1px solid #1e699b;
 	border-left: 1px solid #0a4396;
 	display: block;
@@ -548,7 +548,7 @@ color: #7BA566;
 }
 
 /*12-10*/
-#more .PostList li{padding-left:5px;width:680px;}
+#more .PostList li{padding-left:20px;width:680px;background-image:url(/static/jiaowu/images/moreList.png);background-repeat:no-repeat;}
 #postList{width:100%;}
 
 #sideBar{margin-right:5px;margin-top:8px;}
