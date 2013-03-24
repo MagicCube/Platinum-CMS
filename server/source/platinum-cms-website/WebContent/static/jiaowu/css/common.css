@@ -234,7 +234,7 @@ ul { list-style: none; }
 /* 1st level */
 #ja-mainnav ul.menu li a {
 	margin: 0;
-	padding: 10px 20px;
+	padding: 10px 22px;
 	border-right: 1px solid #1e699b;
 	border-left: 1px solid #0a4396;
 	display: block;
