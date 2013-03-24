@@ -148,11 +148,18 @@ public class PostAdminResource extends AbstractResource
 	public Response deletePost(
 			@PathParam("id") String p_id
 			) throws JSONException
-	{
-		PostAdminManager.getInstance().deletePost(p_id);
+	{    
+		PostEntity post = PostAdminManager.getInstance().getPostById(p_id);
+		
+		
+		if((post.getCategoryId()).equals(Membership.getInstance().getCurrentUser().getUserRole()))
+		
+		{
+			PostAdminManager.getInstance().deletePost(p_id);
+		}
+	
 		return responseOK();
 	}
-	
 	
 	
 	
