@@ -258,7 +258,7 @@ div.moduletable h3, div.moduletable_menu h3, div.moduletable_text h3
 	line-height:18px;
 	margin: 0;
 	width:250px;
-	background: url(../images/bullet.gif) no-repeat 5px 50%;
+	background: url(../images/bullet.png) no-repeat 5px 50%;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
