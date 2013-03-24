@@ -6,12 +6,7 @@
     <div class="s_header">
     	<div class="s_logo" >
     	   <div class="zblogo" onclick="location.href='../../mob';" ><img src="../static/common/images/zblogo.jpg"></div>
-	    	<div class="m_nav">
-	    	<ul>
-	        		<li><a href="http://zbvip.njnu.edu.cn/wap" class="m_login" ><span>教师登录</span></a></li>
-	        		<li><a href="http://222.192.5.246/wap" class="m_login" >学生登录</a></li>
-	        	</ul>
-	        	</div> 
+	    	
         </div>
         
     </div>
