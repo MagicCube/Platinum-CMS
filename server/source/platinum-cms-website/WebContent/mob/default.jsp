@@ -92,16 +92,16 @@ $("#aa > div > h3").click(function(){
    	       </div>
        </div>
        <div class="info">
-  	          <h3>校园动态<span id = "position_2" class="right"><a href = "/mob/news/sc000000000000000000000000000020/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
+  	          <h3>学工新闻<span id = "position_2" class="right"><a href = "/mob/news/sc000000000000000000000000000028/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
   	 	      <div  class="front">
-    	      <cms:PostList id="xydtList2" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="4" />
+    	      <cms:PostList id="xydtList2" subcategoryId="sc000000000000000000000000000028" where="photoURL is null" count="4" />
     	      </div>
        </div>
        
        <div class="info">
-  	          <h3>通知公告<span id = "position_2" class="right"><a href = "/mob/news/sc000000000000000000000000000020/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
+  	          <h3>教务新闻<span id = "position_2" class="right"><a href = "/mob/news/sc000000000000000000000000000046/more/"><font size="2px" color="#239b8b">更多</font></a></span></h3>
   	 	      <div  class="front">
-    	      <cms:PostList id="xydtList2" subcategoryId="sc000000000000000000000000000008" where="photoURL is null" count="4" />
+    	      <cms:PostList id="xydtList2" subcategoryId="sc000000000000000000000000000046" where="photoURL is null" count="4" />
     	      </div>
        </div>
   
