@@ -204,7 +204,7 @@ ul { list-style: none; }
 #ja-mainnav ul.menu {
 	margin: 0 ; /* all lists */
 	padding: 0;
-	padding-left:15px;
+	padding-left:12px;
 	float: left;
 	border-right: 1px solid #555555;
 }
