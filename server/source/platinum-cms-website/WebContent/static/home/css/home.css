@@ -340,8 +340,8 @@ ul.PhotoList li a
 ul.PhotoList li a img
 {
 	display:block;
-	width:220px;
-	height:145px;
+	width:200px;
+	height:130px;
 	margin:0 auto;
 	box-shadow: gray 0px 1px 10px;
 }
