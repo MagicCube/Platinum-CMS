@@ -110,7 +110,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         
         var $div = $("<div class=section id=titleSection />");
         me.$title = $("<input id=title type=text/>");
-        me.$summary.attr({ title: "请在这里添加摘要" });
+        me.$title.attr({ title: "请在这里输入标题" });
         $div.append(me.$title);
         $main.append($div);
         
