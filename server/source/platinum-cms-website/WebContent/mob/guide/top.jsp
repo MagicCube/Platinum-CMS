@@ -3,13 +3,7 @@
 
 <link href = "/mob/static/common/css/mobile.css" rel = "stylesheet"></link>
 
-    <div class="s_header">
-    	<div class="s_logo" >
-    	   <div class="zblogo" onclick="location.href='../../mob';" ><img src="../static/common/images/zblogo.jpg"></div>
-	    	
-        </div>
-        
-    </div>
+
 <hr color="#239b8b">
 
 <div id="body">
@@ -17,5 +11,6 @@
 	<div id="sideBar">
 		<cms:PostList id="xwdtList" categoryId='<%= request.getParameter("path")%>' count="5" />
 	</div>
-	<div id="bodyContent">
+	<div id="bodyContent"></div>
+	</div>
 <%}%>

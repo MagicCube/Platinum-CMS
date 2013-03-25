@@ -11,7 +11,7 @@
 
     <div class="s_header">
     	<div class="s_logo" >
-    	   <div class="zblogo" onclick="location.href='';" ><img src="../mob/static/common/images/zblogo.jpg"></div>
+    	   <div class="zblogo" onclick="location.href='';" ><img src="../mob/static/common/images/logo.png"></div>
 	    	  
         </div>
         
@@ -48,7 +48,7 @@
             </div>
         </li>
         <li class="last">
-        	<a href="。。"><span>PC版</span></a>
+        	<a href="../mob/"><span>PC版</span></a>
         </li>
         
     </ul>

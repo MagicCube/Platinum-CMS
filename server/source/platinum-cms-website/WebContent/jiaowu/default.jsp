@@ -95,7 +95,7 @@
           <div id="right_part">
             <div class="moduletable_menu" id="tongzhi" >
               <h3 style="margin-top:10px;">通知与公告</h3>
-             <cms:PostList id = "zztglist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000045" displayDate="false" count = "7"/>  
+             <cms:PostList id = "zztglist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000045" displayDate="true" count = "7"/>  
             </div>
             
 			<hr style="text-align:center; width:90%; margin-left:10px;" />

@@ -6,7 +6,7 @@
 <title>南京师范大学中北学院信息门户（移动版）</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- 强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览 -->
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <!-- 告诉设备忽略将页面中的数字识别为电话号码  -->
 <meta name="format-detection" content="telephone=no" /> 
 <link href="mob/static/common/css/mobile.css" rel="stylesheet" type="text/css" />
