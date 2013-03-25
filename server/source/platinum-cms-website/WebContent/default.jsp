@@ -34,9 +34,9 @@ request.setCharacterEncoding("utf-8");
 			</div>
 			
 			<div id="news">
-				<div id="newslabel"><span id="text">新闻动态</span></div>	
+				<div id="newslabel"><span id="text">新闻动态</span></div>
 				<cms:PostList id="xwdtList1" cssClass="PhotoList" subcategoryId="sc000000000000000000000000000006" displayPhoto="true" pageIndex="4" pageSize="1" displayPageNavigationBar="false" />
-				<cms:PostList id="textContent" subcategoryId="sc000000000000000000000000000006" count="8" />
+				<cms:PostList id="textContent" subcategoryId="sc000000000000000000000000000006"  count="8" />
 				<div id="morelabel"><a href="/news/sc000000000000000000000000000006/more/">更多</a></div>
 			</div>
 			
