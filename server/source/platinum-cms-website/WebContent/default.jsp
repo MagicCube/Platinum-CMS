@@ -28,8 +28,8 @@ request.setCharacterEncoding("utf-8");
 	
 		<div id="middle">
 			<div id="photoslider">
-				<div id="tpxwMorelabel"><a href="/news/sc000000000000000000000000000207/more/">更多</a></div>
-				<cms:PhotoSlide id="tsztList" cssClass="bxslider" subcategoryId="sc000000000000000000000000000207" displayPhoto="true" count="4" />	
+				<div id="tpxwMorelabel"><a href="/news/sc000000000000000000000000000006/more/">更多</a></div>
+				<cms:PhotoSlide id="tsztList" cssClass="bxslider" subcategoryId="sc000000000000000000000000000006" displayPhoto="true" count="4" />	
 				
 			</div>
 			
