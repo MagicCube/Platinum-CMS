@@ -31,13 +31,6 @@
 
 </head>
 <body>
-	 <div class="s_header">
-    	<div class="s_logo" >
-    	   <div class="zblogo" onclick="location.href='';" ><img src="../static/common/images/zblogo.jpg"></div>
-	    	  
-        </div>
-        
-    </div>
   <cms:Header path="mob/guide"></cms:Header>
   <h1>当前位置：@<a href="../">首页</a>@校园美景</h1>
 
@@ -56,7 +49,7 @@
     <script>
     $("#album")
         .album({
-            cellWidth: 310,
+            cellWidth: 320,
             cellHeight: 210,
             padding: 10
         })

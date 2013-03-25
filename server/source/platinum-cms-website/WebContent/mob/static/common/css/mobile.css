@@ -89,8 +89,8 @@ a: hover {
 	text-decoration: none;
 }
 .pictrues ul li img {
-	
-	width:100%;
+	margin-right:30px;
+	width:96%;
 }
 
 
@@ -2461,6 +2461,9 @@ div#menu li {
 div#menu ul ul li {
     z-index: 9;
 }
+
+
+
 div#menu li div {
     list-style: none;
     float: left;
@@ -2468,8 +2471,7 @@ div#menu li div {
     z-index: 11;
     top: 52px;
     left: 0;
-    display:none;
-    
+    visibility: hidden;
     width: 180px;
 	  margin: 0px 0 0 -4px;
     padding: 0; 
@@ -2484,7 +2486,7 @@ div#menu ul ul {
     margin: 10px 0 0 0;    
 }
 div#menu li:hover>div {
-    display:block;
+    visibility: visible;
 }
 
 div#menu a {

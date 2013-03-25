@@ -37,6 +37,8 @@
             	</ul>
             </div>
         </li>
+        <li><a href="../mob/pic" class="parent"><span>校园美景</span></a>
+        </li>
         <li><a href="#" class="parent"><span>登录</span></a>
             <div>
             	<ul>       
@@ -45,11 +47,8 @@
             	</ul>
             </div>
         </li>
-        <li><a href="../mob/pic" class="parent"><span>校园美景</span></a>
-        </li>
-        
         <li class="last">
-        	<a href="../../"><span>PC版</span></a>
+        	<a href="。。"><span>PC版</span></a>
         </li>
         
     </ul>

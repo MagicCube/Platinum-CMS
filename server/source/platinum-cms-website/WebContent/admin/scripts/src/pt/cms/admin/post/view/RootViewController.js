@@ -67,6 +67,7 @@ pt.cms.admin.post.view.RootViewController = function()
     function _postListView_onselectionchanged(e)
     {
         var post = me.postListViewController.data[me.postListViewController.view.selectedIndex];
+        
         me.postDetailViewController.loadData(post.id);
     }
     

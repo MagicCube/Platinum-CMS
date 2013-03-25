@@ -39,7 +39,7 @@ public class PostAdminResource extends AbstractResource
 			@QueryParam("pageIndex") @DefaultValue("0") int p_pageIndex,
 			@QueryParam("pageSize") @DefaultValue("20") int p_pageSize
 			) throws JSONException
-	{
+	{   
 		List<PostEntity> posts = null;
 		
 		if (p_keywords != null)
@@ -74,6 +74,14 @@ public class PostAdminResource extends AbstractResource
 	{
 		PostEntity post = PostAdminManager.getInstance().getPostById(p_id);
 		
+		if((post.getCategoryId()).equals(Membership.getInstance().getCurrentUser().getUserRole()))
+		{
+			 post = PostAdminManager.getInstance().getPostById(p_id);
+		}
+		else
+		{
+			post=null;
+		}
 		String ifModifiedSince = getHttpHeader("If-Modified-Since");
 		if (ifModifiedSince != null)
 		{
@@ -131,19 +139,10 @@ public class PostAdminResource extends AbstractResource
 			
 			_parsePostFromJSON(postJSON, post);
 			
-			
-			String _postCategoryId=post.getCategoryId();
-			
-			if(_postCategoryId.equals(Membership.getInstance().getCurrentUser().getUserRole()))
-			{
-				PostAdminManager.getInstance().updatePost(post);
-			}
-			if("Administrator".equals( Membership.getInstance().getCurrentUser().getUserRole() ))
-			{
-				PostAdminManager.getInstance().updatePost(post);
-			}
-			
 		
+				PostAdminManager.getInstance().updatePost(post);
+			
+			
 			
 			
 		
