@@ -49,7 +49,7 @@
         </li>
         
         <li class="last">
-        	<a href="../mob/"><span>PC版</span></a>
+        	<a href="../../"><span>PC版</span></a>
         </li>
         
     </ul>
