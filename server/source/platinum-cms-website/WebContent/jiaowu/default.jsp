@@ -112,27 +112,27 @@
               <h3>教务处简介</h3>
               <ul class="menu">
                 <li class="link_2">
-                  <a href="/jiaowu/ff8081813da08125013da0869f310005.html">
+                  <a href="/jiaowu/ff8081813da0a022013da0a9630b001a.html">
                     <span>教务处领导</span>
                   </a>
                 </li>
                 <li class="link_2">
-                  <a href="/jiaowu/ff8081813da08125013da089fdc80008.html">
+                  <a href="/jiaowu/ff8081813da0a022013da0a9f687001d.html">
                     <span>行政管理科</span>
                   </a>
                 </li>
                 <li class="link_2">
-                  <a href="/jiaowu/ff8081813da08125013da08ab30a000b.html">
+                  <a href="/jiaowu/ff8081813da0a022013da0ab01d00020.html">
                     <span>信息管理科</span>
                   </a>
                 </li>
                 <li class="link_2">
-                  <a href="/jiaowu/ff8081813da08125013da08b4574000e.html">
+                  <a href="/jiaowu/ff8081813da0a022013da0aba02e0023.html">
                     <span>综合管理科</span>
                   </a>
                 </li>
                 <li class="link_2">
-                  <a href="/jiaowu/ff8081813da08125013da08c063f0011.html">
+                  <a href="/jiaowu/ff8081813da0a022013da0ac0fd40026.html">
                     <span>国际交流与合作办公室</span>
                   </a>
                 </li>
