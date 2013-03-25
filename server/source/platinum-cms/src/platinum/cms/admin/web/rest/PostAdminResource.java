@@ -176,7 +176,11 @@ public class PostAdminResource extends AbstractResource
 		{
 			PostAdminManager.getInstance().deletePost(p_id);
 		}
-	
+		
+		if("Administrator".equals( Membership.getInstance().getCurrentUser().getUserRole() ))
+		{
+			PostAdminManager.getInstance().deletePost(p_id);
+		}	
 		return responseOK();
 	}
 	
