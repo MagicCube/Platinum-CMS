@@ -82,6 +82,11 @@ public class PostAdminResource extends AbstractResource
 		{
 			post=null;
 		}
+		if("Administrator".equals( Membership.getInstance().getCurrentUser().getUserRole() ))
+		{
+			 post = PostAdminManager.getInstance().getPostById(p_id);
+		}	
+		
 		String ifModifiedSince = getHttpHeader("If-Modified-Since");
 		if (ifModifiedSince != null)
 		{
