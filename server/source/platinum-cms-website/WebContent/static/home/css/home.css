@@ -335,13 +335,11 @@ ul.PhotoList li a
 	padding: 10px;
 	margin: auto;
 	border-bottom: 1px green dashed;
+	text-align:center;
 }
 
 ul.PhotoList li a img
 {
-	width: 210;
-	height: 140px;
-	margin-left: 20px;
 	box-shadow: gray 0px 1px 10px;
 }
 
