@@ -112,27 +112,27 @@
               <h3>教务处简介</h3>
               <ul class="menu">
                 <li class="link_2">
-                  <a href="/index.php?option=com_content&amp;view=article&amp;id=11&amp;Itemid=22">
+                  <a href="/jiaowu/ff8081813da08125013da0869f310005.html">
                     <span>教务处领导</span>
                   </a>
                 </li>
                 <li class="link_2">
-                  <a href="/index.php?option=com_content&amp;view=article&amp;id=6&amp;Itemid=8">
+                  <a href="/jiaowu/ff8081813da08125013da089fdc80008.html">
                     <span>行政管理科</span>
                   </a>
                 </li>
                 <li class="link_2">
-                  <a href="/index.php?option=com_content&amp;view=article&amp;id=5&amp;Itemid=10">
+                  <a href="/jiaowu/ff8081813da08125013da08ab30a000b.html">
                     <span>信息管理科</span>
                   </a>
                 </li>
                 <li class="link_2">
-                  <a href="/index.php?option=com_content&amp;view=article&amp;id=7&amp;Itemid=9">
+                  <a href="/jiaowu/ff8081813da08125013da08b4574000e.html">
                     <span>综合管理科</span>
                   </a>
                 </li>
                 <li class="link_2">
-                  <a href="/index.php?option=com_content&amp;view=article&amp;id=8&amp;Itemid=11">
+                  <a href="/jiaowu/ff8081813da08125013da08c063f0011.html">
                     <span>国际交流与合作办公室</span>
                   </a>
                 </li>
@@ -155,7 +155,7 @@
                   </a>
                 </li>
                 <li class="link_2">
-                  <a href="/index.php?option=com_content&amp;view=category&amp;id=11&amp;Itemid=21">
+                  <a href="/jiaowu/sc000000000000000000000000000052/more/">
                     <span>资料下载</span>
                   </a>
                 </li>
