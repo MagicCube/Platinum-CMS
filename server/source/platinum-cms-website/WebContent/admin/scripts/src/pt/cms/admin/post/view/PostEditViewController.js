@@ -110,7 +110,7 @@ pt.cms.admin.post.view.PostEditViewController = function()
         
         var $div = $("<div class=section id=titleSection />");
         me.$title = $("<input id=title type=text/>");
-        me.$title.attr({ title:  alert(Membership.getInstance().getCurrentUser().getUserRole()) });
+        me.$summary.attr({ title: "请在这里添加摘要" });
         $div.append(me.$title);
         $main.append($div);
         
