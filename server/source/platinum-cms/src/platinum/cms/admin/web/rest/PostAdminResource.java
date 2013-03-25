@@ -131,7 +131,22 @@ public class PostAdminResource extends AbstractResource
 			
 			_parsePostFromJSON(postJSON, post);
 			
-			PostAdminManager.getInstance().updatePost(post);
+			
+			String _postCategoryId=post.getCategoryId();
+			
+			if(_postCategoryId.equals(Membership.getInstance().getCurrentUser().getUserRole()))
+			{
+				PostAdminManager.getInstance().updatePost(post);
+			}
+			if("Administrator".equals( Membership.getInstance().getCurrentUser().getUserRole() ))
+			{
+				PostAdminManager.getInstance().updatePost(post);
+			}
+			
+		
+			
+			
+		
 			
 			JSONObject jsonResult = _generateSimplePostJSON(post);
 			return responseWithJSONObject(jsonResult);
