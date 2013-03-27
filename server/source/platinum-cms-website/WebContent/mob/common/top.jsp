@@ -11,7 +11,7 @@
 
     <div class="s_header">
     	<div class="s_logo" >
-    	   <div class="zblogo" onclick="location.href='';" ><img src="../mob/static/common/images/zblogo.png"></div>
+    	   <div class="zblogo" onclick="location.href='';" ><img src="../mob/static/common/images/zblogoNEW.png"></div>
 	    	  
         </div>
         
