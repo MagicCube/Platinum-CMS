@@ -150,6 +150,11 @@
                   </a>
                 </li>
                 <li class="link_2">
+                  <a href="http://zbvip.njnu.edu.cn/vip/">
+                    <span>教工之家</span>
+                  </a>
+                </li>
+                <li class="link_2">
                   <a href="/index.php?option=com_newsfeeds&amp;view=category&amp;id=9&amp;Itemid=12">
                     <span>教育动态</span>
                   </a>

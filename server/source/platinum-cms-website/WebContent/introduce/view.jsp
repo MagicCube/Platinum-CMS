@@ -17,7 +17,7 @@
 	
     <div id = "maincontent" style = "height: 660px; background: none;">
     
-    <cms:PostList id="album" subcategoryId="sc000000000000000000000000000003"  displayPageNavigationBar="true" displayPhoto="true"   count="18"/>
+    <cms:PostList id="album" subcategoryId="sc000000000000000000000000000003"  displayPageNavigationBar="true" displayPhoto="true"   count="9"/>
     
     <script>
     $("#album")
