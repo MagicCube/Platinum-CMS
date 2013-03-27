@@ -26,7 +26,7 @@ a
 	text-decoration: none;
 	border:none;
 }
-a img{boder:none;}
+a img{border:none;}
 li
 {	list-style:none;}
 
@@ -577,7 +577,6 @@ overflow: hidden;
 	line-height: 150%; 
 	font-family: 宋体;
 	font-size: 12pt; 
-	text-indent: 2em;
 }
 
 #content>div{
@@ -586,7 +585,6 @@ overflow: hidden;
 	line-height: 150%; 
 	font-family: 宋体;
 	font-size: 12pt; 
-	text-indent: 2em;
 }
 
 #content{
@@ -595,5 +593,4 @@ overflow: hidden;
 	line-height: 150%; 
 	font-family: 宋体;
 	font-size: 12pt; 
-	text-indent: 2em;
 }
