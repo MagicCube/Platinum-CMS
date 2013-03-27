@@ -49,7 +49,7 @@ if (subcategoryId != null)
 	
     <div id = "maincontent" style = "height: 660px; background: none;">
     	
-    	<cms:PostList id="album" subcategoryId="sc000000000000000000000000000003"  displayPhoto="true"   categoryId="<%= categoryId%>" displayDate="true" pageIndex='<%= Integer.parseInt(request.getParameter("pageIndex")) - 1%>' pageSize="3"/>
+    	<cms:PostList id="album" subcategoryId="sc000000000000000000000000000003"  displayPhoto="true"   categoryId="<%= categoryId%>" displayDate="true" pageIndex='<%= Integer.parseInt(request.getParameter("pageIndex")) - 1%>' pageSize="9"/>
   
     <script>
     $("#album")
