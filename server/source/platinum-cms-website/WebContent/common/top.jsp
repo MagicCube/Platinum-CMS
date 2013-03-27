@@ -37,7 +37,7 @@ request.setCharacterEncoding("utf-8");
 	        <ul id="downlist" num="4">
 	            <li><a href="/introduce/402881e93b41ec78013b41f8a5cf0008.html">学院简介</a></li>
 	            <li><a href="/introduce/ff8081813be9dcbc013be9e6b7a00002.html">领导简介</a></li>
-	            <li><a href="/introduce/12345678be9e6b7a00002be9e6b7a0d.html">校园美景</a></li>
+	            <li><a href="/introduce/1">校园美景</a></li>
 	            <li><a href="/introduce/12345679be9e6b7a00002be9e6b7a0d.html">联系我们</a></li>
 	        </ul>
 	    </li>
