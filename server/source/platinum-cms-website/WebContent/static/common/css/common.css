@@ -383,3 +383,5 @@ a #title:hover
 	font-size: 12pt; 
 	text-indent: 2em;
 }
+#content table{text-indent: 2em;}
+#content table div{text-indent: 2em;}
