@@ -85,7 +85,6 @@
 
 #maincontent > #activity
 {	
-	border:1px solid #e60012;
 	border-radius:15px 4px 0 0;
 	position: absolute;
 	padding: 0;
@@ -109,11 +108,12 @@
 #maincontent > #activity ul
 {
 	line-height:15px;
+	width:295px;
+	height:220px;
 	margin:0;
 	padding:0;
 	list-style:url(/static/zuzhi/images/list.png);
 	list-style-position:inside;
-	border-left:1px solid #e60012;
 }
 
 #maincontent > #activity ul li
@@ -267,7 +267,6 @@
 	position:relative;
 	width:295px;
 	height:40px;
-	border-left:1px solid #e60012;
 }
 
 #niceR>a
@@ -375,5 +374,4 @@ line-height:30px;
 #tsztList > #post1{display:block;}
 #tsztList > #post1 > .bx-caption{display:block;}
 #tsztList img{display: block;width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
-
-
+#acti{width:293px;height:266px;border;border: 1px solid #e60012;border-top:0;}
