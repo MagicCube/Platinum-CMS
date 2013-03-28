@@ -10,13 +10,27 @@ if (displayNextButton == null)
 }
 %>
 
-<div id="${id}" class="PageNavigationBar">
-    <span id="pageIndex">第<span>${pageIndex + 1}</span>页</span>
-    <%if (pageIndex > 0) {%>
-    | <a id="previousPage" href="1">第一页</a>
-    | <a id="previousPage" href="${pageIndex}">&lt;上一页</a>
-    <%} %>
-    <% if (displayNextButton) {%>
-    | <a id="nextPage" href="${pageIndex + 2}">下一页&gt;</a>
-    <%} %>
+<div id="${id}" class="PageNavigationBar">   
+    	<%if (pageIndex > 0) {%>
+    	<a id="previousPics" href="${pageIndex}">
+    	<div id="previousPage"></div>
+    	</a>
+    	<%} %>
+    
+    	<% if (displayNextButton) {%>
+    	<a id="nextPics"  href="${pageIndex + 2}">
+    	<div id="nextPage"></div>
+    	</a>
+    	<%} %>
+
 </div>
+<script>
+		$("#nextPics").hover(
+		  function () {
+		    $("#nextPage").css("background-image","url(../../static/common/images/nextHover.gif)");
+		  },
+		  function () {
+		    $(this).removeClass("hover");
+		  }
+		);
+</script>

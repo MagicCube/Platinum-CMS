@@ -69,7 +69,7 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 <li id="<%= post.getId()%>">
     <a href="<%= post.getLink()%>" <%= openInNewWindow ? "target='_blank'" : ""%> title="<%= post.getTitle()%><%="\n更新时间："+DateUtil.formatDate(post.getCreateTime(), "yyyy年M月d日") %>" >
         <% if (displayPhoto) {%>
-        <img src='<%= post.getPhotoURL()%>' />
+        <img src='<%= post.getPhotoURL()%>' width='320' height='210'/>
         <% } %>
         <div id="title"><%= post.getTitle()%></div>
         <% if (displaySummary != null && displaySummary) {%>
