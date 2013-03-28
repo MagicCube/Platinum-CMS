@@ -621,3 +621,5 @@ a #title:hover{color:#808080;}
 {
 	right:20px;
 }
+#content table{text-indent: 0;}
+#content table div{text-indent: 0;}

@@ -594,3 +594,5 @@ overflow: hidden;
 	font-family: 宋体;
 	font-size: 12pt; 
 }
+#content table{text-indent: 0;}
+#content table div{text-indent: 0;}
