@@ -64,8 +64,20 @@ public class RewriteFilter implements Filter
 		
 		
 
+		
+		
+		
+		else if(uri.equals("/introduce/12345679be9e6b7a00002be9e6b7a0d.html"))
+		{
+			request.getRequestDispatcher("/introduce/contact.jsp").forward(request, response);
+		}
+		else if(uri.equals("/service/92345678be9e6b7a00002be9e6b7a0d.html"))
+		{
+			request.getRequestDispatcher("/service/guide.jsp").forward(request, response);
+		}
+		
 		else  if ((matcher = _viewCategoryURLPattern.matcher(uri)).find())
-	
+			
 		{ 
 			String categoryId = "introduce";
 			int pageIndex = 1;
@@ -77,16 +89,6 @@ public class RewriteFilter implements Filter
 			request.getRequestDispatcher("/introduce/view.jsp?categoryId=" + categoryId + "&pageIndex=" + pageIndex).forward(request, response);
 		
 			
-		}
-		
-		
-		else if(uri.equals("/introduce/12345679be9e6b7a00002be9e6b7a0d.html"))
-		{
-			request.getRequestDispatcher("/introduce/contact.jsp").forward(request, response);
-		}
-		else if(uri.equals("/service/92345678be9e6b7a00002be9e6b7a0d.html"))
-		{
-			request.getRequestDispatcher("/service/guide.jsp").forward(request, response);
 		}
 		else if ((matcher = _mobpostURLPattern.matcher(uri)).find())
 		{
