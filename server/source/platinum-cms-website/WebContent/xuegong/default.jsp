@@ -14,6 +14,7 @@
 <script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="../static/xuegong/js/slide.js"></script>
 <script type="text/javascript" src="../static/xuegong/js/huiyin.js"></script>
+
 <!-- FlexSlider end -->
 
 <link href = "/static/xuegong/css/xuegong.css" rel = "stylesheet"/>
@@ -66,9 +67,10 @@
 				<div id="huiyinbi"></div>
 			</div>
 			<div id="huiyintb">
-			<div id="subdiv">
-			<div id="exittb"></div>
-			<table>
+			  <form id="subdiv" method="post" action="${pageContext.request.contextPath}/api/0/admin/post/callbacksave" enctype="application/x-www-form-urlencoded"> 
+			  <div id="subdiv">
+			     <div id="exittb"></div>
+			       <table>
 					<tr>
                     <td width="101" align="center">称呼姓名：</td>
                     <td width="180"><input name="Books_Name" type="text" class="input">
@@ -82,13 +84,14 @@
                         <font color="red"> *</font></td>
                     <td></td>
                   </tr>
-               
+                </form>
                   <tr>
                     <td colspan="3" align="center"><input name="submit" type="submit" class="bmit" value=" 添加留言 ">
                         <input name="reset" type="reset" class="bmit" value=" 重新输入 "></td>
                   </tr>
-		      </table>
-            </div></div>
+		        </table>
+              </div>
+           </div>
       </div>	
 </div>
 

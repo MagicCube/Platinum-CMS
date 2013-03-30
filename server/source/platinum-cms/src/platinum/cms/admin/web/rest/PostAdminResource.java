@@ -21,6 +21,7 @@ import platinum.cms.admin.service.PostAdminManager;
 import platinum.cms.common.PostStatus;
 import platinum.cms.common.PostType;
 import platinum.cms.common.entity.PostEntity;
+import platinum.cms.common.entity.CallBackEntity;
 import platinum.cms.common.search.PostSearchEngine;
 import platinum.cms.common.search.PostSearchResult;
 import platinum.cms.common.serialization.PostJSONSerializer;
@@ -64,6 +65,30 @@ public class PostAdminResource extends AbstractResource
 			posts = PostAdminManager.getInstance().loadPostsByCategory(null, p_pageIndex, p_pageSize);
 		}
 		return responseWithJSONArray(PostJSONSerializer.toSimpleArray(posts));
+	}
+	
+
+	@POST
+	@Path("callbacksave")
+	public Response callbacksave(
+			@FormParam("Books_Name") String name,
+			@FormParam("Books_title") String title,
+			@FormParam("Books_Info") String content
+		)
+	{   
+		CallBackEntity post=null;
+		
+		post.setTitle(title);
+		post.setName(name);
+		post.setContent(content);
+		
+		
+		PostAdminManager.getInstance().savePost(post);
+		return null;
+		
+		
+		
+		
 	}
 	
 	@GET
