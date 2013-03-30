@@ -82,11 +82,7 @@
                         <font color="red"> *</font></td>
                     <td></td>
                   </tr>
-                  <tr>
-                    <td align="center">联系方式：</td>
-                    <td><input name="Books_Mail" type="text" class="input"></td>
-                    <td></td>
-                  </tr>
+               
                   <tr>
                     <td colspan="3" align="center"><input name="submit" type="submit" class="bmit" value=" 添加留言 ">
                         <input name="reset" type="reset" class="bmit" value=" 重新输入 "></td>
