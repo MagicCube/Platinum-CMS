@@ -487,6 +487,7 @@ overflow: hidden;
 {
 	float: left;
 	width: 500px;
+	height:360px;
 	border:3px solid #D41F00; 
 	border-radius:10px;
 	-moz-border-radius:10px;
