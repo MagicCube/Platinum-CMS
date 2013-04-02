@@ -69,7 +69,7 @@ public class PostAdminResource extends AbstractResource
 	
 
 	@POST
-	@Path("callbacksave")
+	@Path("/callbacksave")
 	public Response callbacksave(
 			@FormParam("Books_Name") String name,
 			@FormParam("Books_title") String title,
