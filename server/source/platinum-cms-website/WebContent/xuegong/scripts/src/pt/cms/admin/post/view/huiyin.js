@@ -16,26 +16,15 @@ function myFunction()
 	   _post.name=name;
 	   _post.content=content;
 	   _post.title=title; 
-	   alert(_post.title);
-	   
-	$.ajax( {
-        url : '/api/0/admin/post/nihao',
-        type: "POST",
-        data : _post,
-        dataType : 'json',
-        contentType:'application/json',
-    
-        success : function(data) {
-            alert("success");
-            alert(data.name);
-            alert(data.age);
-        },
-        error : function() {
-            alert("ajax");
-        }
-        
-    });
-
+	     
+	
+	   var me = $extend(mx.view.ViewController);
+	   var base = {};
+	   if (true)
+       {  alert("dfsfdsf");
+           return me.restClient.PUT("admin/post/" + post.id, { _post: JSON.stringify(_post) })
+           alert("dfsfdsf");  
+       }    
 	 
 
 

@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="/static/home/plugins/flexslider/flexslider.css" type="text/css" />
 <script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="../static/xuegong/js/slide.js"></script>
-<script type="text/javascript" src="../static/xuegong/js/huiyin.js"></script>
+<script type="text/javascript" src="/xuegong/scripts/src/pt/cms/admin/post/view/huiyin.js"></script>
 
 <!-- FlexSlider end -->
 

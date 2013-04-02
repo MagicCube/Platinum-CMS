@@ -68,31 +68,7 @@ public class PostAdminResource extends AbstractResource
 	}
 	
 
-	@POST
-	@Path("nihao")
-	public Response callbacksave(
-			@FormParam("Books_Name") String name,
-			@FormParam("Books_title") String title,
-			@FormParam("Books_Info") String content
-		)
-	{   
-		CallBackEntity post=new CallBackEntity();
-		
-		post.setTitle(title);
-		post.setName(name);
-		post.setContent(content);
-		post.setId("123121312334243");
-		post.setCategoryId("dsdfsf");
-		
-		
-		
-		PostAdminManager.getInstance().savePost(post);
-		return null;
-		
-		
-		
-		
-	}
+	
 	
 	@GET
 	@Path("/{id}")
@@ -150,10 +126,6 @@ public class PostAdminResource extends AbstractResource
 			PostAdminManager.getInstance().savePost(post);
 		}
 		
-	
-		
-		
-		
 		JSONObject jsonResult = _generateSimplePostJSON(post);
 		return responseWithJSONObject(jsonResult);
 	}
@@ -174,12 +146,7 @@ public class PostAdminResource extends AbstractResource
 			
 		
 				PostAdminManager.getInstance().updatePost(post);
-			
-			
-			
-			
-		
-			
+				
 			JSONObject jsonResult = _generateSimplePostJSON(post);
 			return responseWithJSONObject(jsonResult);
 		}
@@ -188,6 +155,27 @@ public class PostAdminResource extends AbstractResource
 			return responseWithException("没有找到标识为“" + p_id + "”的文章。");
 		}
 	}
+	@PUT
+	@Path("nihao")
+	public Response callbacksave(
+			@FormParam("post") String p_postJSONString
+			) throws JSONException
+		{   
+			
+			JSONObject postJSON = new JSONObject(p_postJSONString);
+			
+			CallBackEntity post=new CallBackEntity();
+			post.setName(postJSON.getString("name"));
+			post.setTitle(postJSON.getString("title"));
+			post.setContent(postJSON.getString("content"));
+			
+			PostAdminManager.getInstance().savePost(post);
+			return null;
+			
+			
+			
+			
+		}
 
 	
 	@DELETE
