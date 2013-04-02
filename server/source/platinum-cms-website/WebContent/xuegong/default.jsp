@@ -66,8 +66,9 @@
 				<span class="mainMore"><a href = "/xuegong/sc000000000000000000000000000031/more/">更多>></a></span>
 				<div id="huiyinbi"></div>
 			</div>
+		 <form id="subdiv" method="post" action="/api/0/admin/post/callbacksave" enctype="application/x-www-form-urlencoded">	
 			<div id="huiyintb">
-			  <form id="subdiv" method="post" action="${pageContext.request.contextPath}/api/0/admin/post/callbacksave" enctype="application/x-www-form-urlencoded"> 
+			  
 			  <div id="subdiv">
 			     <div id="exittb"></div>
 			       <table>
@@ -84,7 +85,7 @@
                         <font color="red"> *</font></td>
                     <td></td>
                   </tr>
-                </form>
+                
                   <tr>
                     <td colspan="3" align="center"><input name="submit" type="submit" class="bmit" value=" 添加留言 ">
                         <input name="reset" type="reset" class="bmit" value=" 重新输入 "></td>
@@ -92,6 +93,7 @@
 		        </table>
               </div>
            </div>
+           </form>
       </div>	
 </div>
 

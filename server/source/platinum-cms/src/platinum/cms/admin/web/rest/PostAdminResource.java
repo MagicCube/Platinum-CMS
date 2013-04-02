@@ -76,7 +76,7 @@ public class PostAdminResource extends AbstractResource
 			@FormParam("Books_Info") String content
 		)
 	{   
-		CallBackEntity post=null;
+		CallBackEntity post=new CallBackEntity();
 		
 		post.setTitle(title);
 		post.setName(name);
