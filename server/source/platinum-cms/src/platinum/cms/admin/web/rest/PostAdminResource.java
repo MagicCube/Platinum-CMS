@@ -69,7 +69,7 @@ public class PostAdminResource extends AbstractResource
 	
 
 	@POST
-	@Path("/callbacksave")
+	@Path("nihao")
 	public Response callbacksave(
 			@FormParam("Books_Name") String name,
 			@FormParam("Books_title") String title,
@@ -81,6 +81,9 @@ public class PostAdminResource extends AbstractResource
 		post.setTitle(title);
 		post.setName(name);
 		post.setContent(content);
+		post.setId("123121312334243");
+		post.setCategoryId("dsdfsf");
+		
 		
 		
 		PostAdminManager.getInstance().savePost(post);

@@ -1,0 +1,368 @@
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+html
+{
+    background: url(images/gray01_bg.gif);
+}
+
+
+button
+{
+    border-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 27px;
+    line-height: 26px;
+    min-width: 54px;
+    outline: 0;
+    padding: 0 8px;
+    background-color: #4D90FE;
+    background-image: -webkit-linear-gradient(top,#4D90FE,#4787ED);
+    border: 1px solid #3079ED;
+    color: white;
+}
+
+button.default
+{
+    padding: 0 30px;
+}
+
+button.red
+{
+    background-color: #DD4B39;
+    background-image: -webkit-linear-gradient(top,#DD4B39,#C53727);
+    border: 1px solid #B0281A;
+}
+
+button.green
+{
+    background-color: #09A05D;
+    background-image: -webkit-linear-gradient(top,#11bd6e,#11995D);
+    border: 1px solid #11995D;
+}
+
+button.yellow
+{
+    color: gray;
+    background: #FED56B;
+    background-image: -webkit-linear-gradient(top,#FFE9A6,#FDBD4F);
+    border: 1px solid #CD973F;
+}
+
+button:hover
+{
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+button:active
+{
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+
+
+#admin
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(images/content_bg.png);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+#admin > #header
+{
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 205px;
+    height: 43px;
+    background: url(images/header_bg.png) repeat-x bottom;
+    border-radius: 0 4px 4px 0;
+}
+
+#admin > #header > #logo
+{
+    width: 169px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+
+
+#admin > #toolstrip
+{
+    position: absolute;
+    z-index: 100;
+    left: 207px;
+    right: 0;
+    top: 0;
+    height: 43px;
+}
+
+#admin > #toolstrip > .Toolbar
+{
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    height: 43px;
+    line-height: 40px;
+    background: url(images/header_bg.png) repeat-x bottom;
+    border-radius: 4px 0 0 4px;
+}
+
+
+
+#admin > #content
+{
+    position: absolute;
+    left: 207px;
+    right: 0;
+    top: 40px;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+#userStatus, #userStatus menu
+{
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#userStatus a
+{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#userStatus li
+{
+    width: 150px;
+    display: block;
+}
+
+#userStatus label
+{
+    cursor: pointer;
+    display: block;
+    white-space: nowrap;
+}
+
+#userStatus
+{
+    z-index: 200;
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+
+#userStatus:hover > li > a, #userStatus:hover > li > menu
+{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+#userStatus > li > a
+{
+    height: 36px;
+    line-height: 36px;
+    padding-left: 8px;
+    padding-right: 8px;    
+    color: #444;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+}
+
+#userStatus > li > a > label
+{
+    float: right;
+    padding-left: 25px;
+    background: url(icons/user.png) no-repeat left center;
+}
+
+#userStatus:hover > li > a
+{
+    color: white;
+    background: #4A4A52;
+    opacity: 0.85;
+}
+
+#userStatus > li > menu
+{
+    display: none;
+    position: absolute;
+    right: 0;
+    background: #4A4A52;
+    opacity: 0.85;
+    border-radius: 0 0 8px 8px
+}
+
+#userStatus:hover > li > menu
+{
+    display: block;
+    padding-bottom: 10px;
+    border-top: 4px solid #099AE9;
+}
+
+#userStatus:hover > li > menu > li
+{
+    height: 32px;
+    line-height: 32px;
+    border-top: white;
+}
+
+#userStatus > li > menu > li:hover
+{
+    background: url(../view/images/nav_list_item_selected_bg.png) -8px -4px;
+}
+
+#userStatus > li > menu > li:hover > a > label
+{
+    text-shadow: 0 0 1px black;
+}
+
+#userStatus:hover > li > menu > li > a > label
+{
+    padding-left: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Panel
+{
+    position: relative;
+    float: left;
+    width: 345px;
+    height: 270px;
+    margin-right: 24px;
+    margin-top: 24px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid c6c6c6;
+    border-radius: 8px;
+}
+
+.Panel > h1
+{
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    padding-left: 25px;
+    border-radius: 8px 8px 0 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.Panel > #body
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 36px;
+    bottom: 0;
+    border-radius: 0 0 8px 8px;
+}
+
+.Panel > h1
+{
+    color: white;
+    background-color: #4a4a52;
+    border-bottom: 1px solid #201f24;
+}
+
+
+
+
+
+.Paper.Panel > h1
+{
+    padding-left: 40px;
+    color: #45454d;
+    background: url(images/paper_header_bg.png);
+}
+
+.Paper.Panel > #body
+{
+    padding-left: 40px;
+    background: url(images/paper_body_bg.png);
+}
+
+.Paper.Panel > #left
+{
+    position: absolute;
+    width: 17px;
+    height: 207px;
+    left: -18px;
+    background: url(images/paper_left.png);
+}
+
+.Paper.Panel > #top
+{
+    position: absolute;
+    width: 353px;
+    height: 22px;
+    top: -23px;
+    right: 0px;
+    background: url(images/paper_top.png);
+}
+
+.Paper.Panel > #bottom
+{
+    position: absolute;
+    width: 333px;
+    height: 18px;
+    bottom: -19px;
+    left: 0px;
+    background: url(images/paper_bottom.png);
+}
+
+.Paper.Panel > #right
+{
+    position: absolute;
+    width: 17px;
+    height: 177px;
+    bottom: 0;
+    right: -18px;
+    background: url(images/paper_right.png);
+}

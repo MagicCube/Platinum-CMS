@@ -1,0 +1,214 @@
+.PostEditView
+{
+    background: white;
+}
+
+.PostEditView > #main
+{
+    position: absolute;
+    left: 0;
+    right: 250px;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.PostEditView > #sideBar
+{
+    position: absolute;
+    right: 0;
+    width: 250px;
+    top: 0;
+    bottom: 0;
+    padding-top: 10px;
+    background: #f1f1f1 url(images/post_edit_view_side_bar_bg.png) repeat-y;
+    border-left: 1px solid #e6e6e6;
+}
+
+.PostEditView > #main > .section
+{
+    min-height: 38px;
+    line-height: 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.PostEditView > #main > #attachmentSection
+{
+    background: url(images/attachment.png) no-repeat 15px 4px;
+    line-height: 10px;
+}
+
+.PostEditView > #main > #attachmentSection > ul
+{
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 50px;
+}
+
+.PostEditView > #main > #attachmentSection > ul > li
+{
+    cursor: default;
+    position: relative;
+    display: inline-block;
+    width: 230px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 0;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px dashed #bbb;
+    border-radius: 5px;
+}
+
+.PostEditView > #main > #attachmentSection > ul > li:hover
+{
+    background-color: #E9E9E9;
+    background-image: -webkit-linear-gradient(top,#EBEBEB,#E2E2E2);
+    border: 1px solid #cfcfcf;
+}
+
+.PostEditView > #main > #attachmentSection > ul > li > #name
+{
+    display: block;
+    position: absolute;
+    width: 157px;
+    color: #666;
+    left: 4px;
+    right: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.PostEditView > #main > #attachmentSection > ul > li > #size
+{
+    position: absolute;
+    right: 23px;
+    color: #aaa;
+}
+
+
+.PostEditView > #main > #attachmentSection > ul > li > #delete
+{
+    position: absolute;
+    right: 2px;
+    top: 7px;
+    width: 16px;
+    height: 16px;
+    background: url(images/delete.png) no-repeat;
+    opacity: 0.3;
+    filter:alpha(opacity=30);
+}
+
+.PostEditView > #main > #attachmentSection > ul > li > #delete:hover
+{
+    opacity: 1;
+    filter:alpha(opacity=100);
+}
+
+.PostEditView > #main > .section > input, .PostEditView > #main > .section > textarea
+{
+    width: 100%;
+    padding-left: 20px;
+    border: none;
+    color: black;
+}
+
+.PostEditView > #main > .section > input.empty, .PostEditView > #main > .section > textarea.empty
+{
+    color: gray;
+}
+
+.PostEditView > #main > .section > input
+{
+    height: 24px;
+    line-height: 22px;
+    font-size: 16px;
+}
+
+.PostEditView > #main > .section > textarea
+{
+    height: 100%;
+}
+
+
+
+.PostEditView > #main > .section > label#id
+{
+    color: gray;
+    padding-left: 20px;
+}
+
+.PostEditView > #main > .section > input#title
+{
+    font-weight: bold;
+}
+
+
+.PostEditView > #main > #contentFrame
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 76px;
+    bottom: 0;
+}
+
+
+
+
+.PostEditView > #sideBar > dl
+{
+    position: relative;
+    display: block;
+    clear: both;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.PostEditView > #sideBar > dl > dt
+{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 32px;
+    text-align: right;
+    line-height: 32px;
+    color: #888;
+    text-shadow: 0 1px #efefef;
+}
+
+.PostEditView > #sideBar > dl > dd
+{
+    position: relative;
+    display: block;
+    top: 0;
+    left: 90px;
+    width: 200px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.PostEditView > #sideBar > dl > dd > input, .PostEditView > #sideBar > dl > dd > select
+{
+    margin: 0;
+    width: 150px;
+}
+
+.PostEditView > #sideBar > dl > dd > input
+{
+    padding-left: 4px;
+}

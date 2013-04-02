@@ -77,7 +77,9 @@
                     <td width="180"><input name="Books_Name" type="text" class="input">
                         <font color="red"> *</font></td>
                     <td width="94" align="center">内容：<font color="red">*</font></td>
-                    <td width="250" rowspan="4"><textarea name="Books_Info" rows="9" cols="60" class="text"></textarea></td>
+                    <td width="250" rowspan="4">
+                    <input name="Books_Info" type="text" class="input">
+                    </td>
                   </tr>
                   <tr>
                     <td align="center">留言标题：</td>
@@ -87,7 +89,7 @@
                   </tr>
                
                   <tr>
-                    <td colspan="3" align="center"><input name="submit" type="submit" class="bmit" value=" 添加留言 ">
+                    <td colspan="3" align="center"><input name="submit" type="button" onclick="myFunction()" class="bmit" value=" 添加留言 ">
                     </td>
                   </tr>
 		        </table>
