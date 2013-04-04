@@ -47,18 +47,18 @@ request.setCharacterEncoding("utf-8");
 	            <li><a href="/organization/ff8081813bea7af0013bea97c53f0005.html">部门设置</a></li>
 	        </ul>
 	    </li>
-   		<li><a href="http://zbzs.njnu.edu.cn/trch/index.htm" target="_blank">教学科研</a></li>
+   		<li><a href="/jiaowu" target="_blank">教学科研</a></li>
 	    <li><a target="_blank">学生工作</a>
 	        <ul id="downlist" num="2">
-	            <li><a href="http://zbzs.njnu.edu.cn/stud/index.asp">学 工 处</a></li>
-	            <li><a href="/tuanwei/">团&nbsp;&nbsp;&nbsp;&nbsp;委</a></li>            
+	            <li><a href="/xuegong" target="_blank">学 工 处</a></li>
+	            <li><a href="/tuanwei" target="_blank">团&nbsp;&nbsp;&nbsp;&nbsp;委</a></li>            
 	        </ul>
 	    </li>
-   		<li><a href="http://zbzs.njnu.edu.cn/part/index.htm" target="_blank">组织人事</a></li>
+   		<li><a href="/zuzhi" target="_blank">组织人事</a></li>
 	    <li><a>招生就业</a>
 	        <ul id="downlist" num="2">
-	            <li><a href="http://zbzs.njnu.edu.cn/enrol/index.asp" target="_blank">招生录取</a></li>
-	            <li><a href="http://zbzs.njnu.edu.cn/job/index.asp" target="_blank">就业指导</a></li>
+	            <li><a href="/zhaosheng" target="_blank">招生录取</a></li>
+	            <li><a href="/jiuye" target="_blank">就业指导</a></li>
 	        </ul>
 	    </li>  
 	    <li><a>交流合作</a>
@@ -83,7 +83,7 @@ request.setCharacterEncoding("utf-8");
 	    <li><a>技术支持</a>
 	    	<ul id="downlist" num="1">
 	    		<!-- <li><a href="/ruanyan/">软件研发与培训中心</a></li> -->
-	    		<li><a href="#">现代教育技术中心</a></li>
+	    		<li><a href="/xiandai" target="_blank">现代教育技术中心</a></li>
 	            <!-- <li><a href="/technology/ff8081813be5798c013be58062050002.html">现代教育技术中心</a></li>	-->
 	        </ul>
 	    </li>	

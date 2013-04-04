@@ -696,3 +696,13 @@ line-height:20px;
 #more .PostList{padding-left:10px;border:none;}
 /**/
 .PostDetail #content{width:740px;text-align:center;}
+
+/*图片新闻改*/
+#home_slider>#tsztList> li{width:100%;height:100%;display:none;position:relative;}
+.block_home_slider,#home_slider,#gallery,#gallery img{width:100%;height:100%;}
+.caption{width:100%;height:25px;line-height:25px;position:absolute;bottom:0;left:0;z-index:1000;text-align:center;}
+#gallery img{display:block;position:absolute;top:0;left:0;}
+.caption>.content{font-size:14px;font-weight:bold;color:#fff;height:25px;}
+
+
+
