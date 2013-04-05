@@ -131,7 +131,7 @@ a img{ border:none}
       </div>
       <!--特色活动开始-->
       <div id="activities" >
-                <div class="title" style=" margin-left:5px;background-image:url(/static/tuanwei/images/tagg_bg.gif); background-repeat:repeat-x;width:95%;"><p style="background-image:url(/static/tuanwei/images/tag_bg.gif); background-repeat:no-repeat; height:37px; color:#000;">&nbsp;特色活动</p></div>
+        <div class="title" style=" margin-left:5px;background-image:url(/static/tuanwei/images/tagg_bg.gif); background-repeat:repeat-x;width:95%;"><p style="background-image:url(/static/tuanwei/images/tag_bg.gif); background-repeat:no-repeat; height:37px; color:#000;">&nbsp;特色活动</p></div>
         <div style="text-align:center;">
    			<cms:PostList id = "twtzlist" subcategoryId="sc000000000000000000000000000187" displayPhoto="true" count="6" />
         </div>
@@ -139,7 +139,22 @@ a img{ border:none}
       
       <!--特色活动结束-->
       
-    </div> 
+      <!-- 在线交流开始 -->
+      <div id="online">
+      	<div class="title" style=" margin-left:5px;background-image:url(/static/tuanwei/images/tagg_bg.gif); background-repeat:repeat-x;width:95%;"><p style="background-image:url(/static/tuanwei/images/tag_bg.gif); background-repeat:no-repeat; height:37px; color:#000;">&nbsp;在线交流</p></div>
+    	<div id="linkLabel">
+			<ul>
+				<li><a href="http://e.weibo.com/u/2430329182?ref=http%3A%2F%2Fs.weibo.com%2Fweibo%2F%2525E4%2525B8%2525AD%2525E5%25258C%252597%2525E5%2525AD%2525A6%2525E9%252599%2525A2%2525E5%25259B%2525A2%2525E5%2525A7%252594%3Ftopnav%3D1%26wvr%3D5%26b%3D1" target="_banlk" title="中北团委"><img src="/static/tuanwei/images/weibo.gif" height="45" width="45"/></a></li>
+
+				<li><a href="http://t.qq.com/nanjingshi7599" target="_banlk" title="中北团委"><img src="/static/tuanwei/images/qq.gif" height="25px;" /></a></li>
+
+                <li><a href="http://page.renren.com/601566662" target="_banlk" title="团委人人"><img src="/static/tuanwei/images/renren.gif" height="25px;" /></a></li>
+			</ul>
+    	</div>
+      </div>
+      <!-- 在线交流结束 -->
+      
+    </div>
     <!--底部链接开始-->
     <div class="line_3">
      

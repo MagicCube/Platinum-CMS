@@ -415,15 +415,36 @@ margin-left:20px;
 {
 	float: left;
 	width: 220px;
-	height: 362px;
+	height: 232px;
 	margin-left:9px;
-		border:3px solid #D41F00; 
+	border:3px solid #D41F00; 
 	border-radius:10px;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
-		background-color:#fff;
-			padding-top:10px;
+	background-color:#fff;
+	padding-top:10px;
 	padding-bottom:10px;
+}
+
+#content #online
+{
+	float: left;
+	width: 220px;
+	height: 97px;
+	margin-left:9px;
+	margin-top:5px;
+	border:3px solid #D41F00; 
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	background-color:#fff;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+#content #online>#linkLabel
+{
+	padding-top:15px;
 }
 
 #content #paper
