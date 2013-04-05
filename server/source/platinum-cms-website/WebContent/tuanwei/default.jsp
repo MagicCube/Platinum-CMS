@@ -139,7 +139,7 @@ a img{ border:none}
       
       <!--特色活动结束-->
       
-    </div>
+    </div> 
     <!--底部链接开始-->
     <div class="line_3">
      

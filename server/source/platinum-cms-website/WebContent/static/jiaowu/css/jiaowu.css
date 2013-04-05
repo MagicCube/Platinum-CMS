@@ -204,7 +204,7 @@ div.moduletable, div.moduletable_menu, div.moduletable_text
 	background: url(../images/hdot.gif) repeat-x bottom;
 }
 
-#right_part .latestnews_menu
+#right_part .latestnews_menu 
 {
 	height:22px;
 	line-height:22px;

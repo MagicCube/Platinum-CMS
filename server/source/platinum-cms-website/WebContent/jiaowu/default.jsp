@@ -28,7 +28,7 @@
               </div>
               <div id = "news2"class = "news">
               </div>
-              <div id = "news3"class = "news">
+              <div id = "news3"class = "news"> 
               </div>
               
               	<cms:PostList id = "jwxwlist" cssClass = "latestnews_menu" subcategoryId = "sc000000000000000000000000000046" count = "6"/>
