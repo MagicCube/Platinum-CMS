@@ -19,7 +19,6 @@
 
 <script src="/static/faculty/common/script/jump.js"
 	type="text/javascript"></script>
-<script src="/static/faculty/common/script/galley.js" type = "text/javascript"></script>
 
 <title>南京师范大学中北学院 人文系</title>
 
@@ -34,7 +33,7 @@
 			<!-- begin of block_home_slider -->
 			 <div class="block_home_slider" >
                     		<div id="home_slider" class="flexslider">
-                            	<cms:XibuPhotoSlide id="gallery" subcategoryId="sc000000000000000000000000000197" displayPhoto="true" count="4" />
+                            	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000197" displayPhoto="true" count="4" />
                             </div>                       
              </div>
 			<!-- end of block_home_slider-->

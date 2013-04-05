@@ -6,7 +6,7 @@
                   <div class="title" style="background-image:url(/static/tuanwei/images/tagg_bg.gif); background-repeat:repeat-x;margin-left:20px;width:95%; padding-bottom:10px;"><p style="background-image:url(/static/tuanwei/images/tag_bg.gif);font-weight:bold; background-repeat:no-repeat; height:37px;line-height:30px;color:#000;">&nbsp;友情链接</p></div>
         <div class="div_link">
                           
-<div style="width:20px;line-height:14px; padding-top:0px;padding-left:10px;padding-right:10px;float:left; text-align:center; margin-left:20px;">共青团组织</div>
+<div style="width:20px; padding-top:0px;padding-left:10px;padding-right:10px;float:left; text-align:center; margin-left:20px;">共青团组织</div>
 
 <div style="float:left;padding-left:10px; padding-top:10px;padding-right:10px;"><a href="http://www.ccyl.org.cn/" target="_blank"><img src="/static/tuanwei/images/zuzhi_1.png" width="150px" height="50px" /></a></div>
 <div style="float:left;padding-left:10px; padding-top:10px;padding-right:10px;"><a href="http://61.gqt.org.cn/" target="_blank"><img src="/static/tuanwei/images/zuzhi_4.png" width="150px" height="50px" /></a></div>
@@ -20,7 +20,7 @@
         </div>
         
         <div class="div_link">
-          <div style="width:20px;padding-left:10px;padding-right:10px;float:left; text-align:center;margin-left:20px;line-height:14px;">前沿资讯</div>
+          <div style="width:20px;padding-left:10px;padding-right:10px;float:left; text-align:center;margin-left:20px;">前沿资讯</div>
     <div style="float:left;padding-left:10px;padding-left:10px;padding-right:10px;"><a href="http://www.jschina.com.cn/" target="_blank"><img src="/static/tuanwei/images/qianyan_1.png" width="150px" height="50px" /></a></div>
     <div style="float:left;padding-left:10px;padding-left:10px;padding-right:10px;"><a href="http://www.people.com.cn/" target="_blank"><img src="/static/tuanwei/images/qianyan_2.gif" width="150px" height="50px" /></a></div>
     <div style="float:left;padding-left:10px;padding-left:10px;padding-right:10px;"><a href="http://www.cyol.net/" target="_blank"><img src="/static/tuanwei/images/qianyan_3.gif" width="150px" height="50px" /></a></div>

@@ -17,8 +17,8 @@ body
 
 #mainContent ul li
 {
-	margin:0 5px 5px 0;
-	border-bottom: 1px dashed #aaa;
+	margin-left:5px;
+	border-bottom: 1px solid #aaa;
 	list-style:square inside url('/static/common/images/list.png');
 }
 #headcontainer
@@ -31,7 +31,6 @@ body
 	height: 140px;
 	width: 990px;
 	background: #009bcb;
-	box-shadow: gray 0px 1px 20px;
 }
 
 #headcontainer > #header1
@@ -161,14 +160,15 @@ menu#mainmenu li a
 	color: #fff;	
 	text-align: center;
 	list-style: none;
-	font-size:18px;
 }
 
 
 menu#mainmenu li > a:hover
 {
 	color: #009bcb;
-	font-size:18px;
+	padding-top:2px;
+	font-size:16px;
+	line-height:32px;
 }
 
 
@@ -185,7 +185,7 @@ menu#mainmenu li > a:hover
 	text-align:center;
 	position:relative;
 	text-decoration: none;
-	box-shadow: gray 0px 1px 20px;
+
 }
 
  #bottom1{
@@ -297,7 +297,7 @@ table td
 #bottom2 > #website
 {
 	position: absolute;
-	left: 380px;
+	left: 350px;
 	top: 5px;
 	text-align: center;
 }
@@ -438,11 +438,12 @@ table td
 
 #bodyContent {
 	position: relative;
-	width: 990px;
+	width: 988px;
 	margin-left: auto;
 	margin-right: auto;
 	background: white;
-	box-shadow: gray 0px 1px 20px;
+	border-left:1px solid #009bcb;
+	border-right:1px solid #009bcb;
 }
 
 #categoryNavigationBar {
@@ -472,7 +473,7 @@ ul.TextList li
 #content {
 	margin: 0 auto;
 	line-height: 20px;
-	width: 640px;
+	width: 620px;
 	border: 1px dashed #BBB;
 	border-top: 1px dotted #BBB;
 	padding:0 5px 0 5px;
@@ -510,5 +511,3 @@ ul.TextList li
 	font-size: 12pt; 
 	text-indent: 2em;
 }
-#content table{text-indent: 0;}
-#content table div{text-indent: 0;}

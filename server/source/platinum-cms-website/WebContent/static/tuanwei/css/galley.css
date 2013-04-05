@@ -1,14 +1,14 @@
 body{
-	font-family:arial;
+	font-family:arial
 }
 
 .clear {
-	clear:both;
+	clear:both
 }
 
 #gallery {
 	position:relative;
-	height:310px;
+	height:310px
 }
 	#gallery a {
 		width:530px;
@@ -22,7 +22,7 @@ body{
 	}
 	
 	#gallery a.show {
-		z-index:500;
+		z-index:500
 	}
 
 	#gallery .caption {
@@ -45,7 +45,7 @@ body{
 		font-weight:bold;
 	}
 	#gallery .caption .content {
-		margin:5px;
+		margin:5px
 	}
 	
 	#gallery .caption .content h3 {

@@ -4,9 +4,7 @@ import java.util.List;
 
 import platinum.cms.common.PostStatus;
 import platinum.cms.common.dao.PostDAO;
-import platinum.cms.common.dao.CallBackDao;
 import platinum.cms.common.entity.PostEntity;
-import platinum.cms.common.entity.CallBackEntity;
 import platinum.framework.dao.DAOQuery;
 
 public class PostRuntimeManager
@@ -26,15 +24,6 @@ public class PostRuntimeManager
 		return _instance;
 	}
 	
-	private CallBackDao _callbackDao = null;
-	public CallBackDao getCallBackDao()
-	{
-		if (_callbackDao == null)
-		{
-			_callbackDao = new CallBackDao();
-		}
-		return _callbackDao;
-	}
 	private PostDAO _postDAO = null;
 	public PostDAO getPostDAO()
 	{

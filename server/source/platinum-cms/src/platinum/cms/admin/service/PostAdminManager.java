@@ -3,11 +3,8 @@ package platinum.cms.admin.service;
 import java.util.List;
 
 import platinum.cms.common.dao.PostDAO;
-import platinum.cms.common.dao.CallBackDao;
-
 import platinum.cms.common.entity.PostAttachmentEntity;
 import platinum.cms.common.entity.PostEntity;
-import platinum.cms.common.entity.CallBackEntity;
 import platinum.cms.runtime.service.PostRuntimeManager;
 import platinum.framework.dao.DAOQuery;
 
@@ -38,16 +35,6 @@ public class PostAdminManager
 		return _postDAO;
 	}
 	
-	private CallBackDao _callbackDao=null;
-	private CallBackDao getCallBackDao()
-	{
-		if (_callbackDao == null)
-		{
-			_callbackDao = PostRuntimeManager.getInstance().getCallBackDao();
-		}
-		return _callbackDao;
-	}
-	
 	public PostEntity getPostById(String p_id)
 	{
 		PostEntity entity = getPostDAO().selectById(p_id);
@@ -71,13 +58,7 @@ public class PostAdminManager
 		getPostDAO().commitTransaction();
 		return p_post;
 	}
-	public   void savePost(CallBackEntity p_post)
-	{
-		getPostDAO().beginTransaction();
-		getCallBackDao().save(p_post);
-		getCallBackDao().commitTransaction();
-		
-	}
+	
 	public PostEntity updatePost(PostEntity p_post)
 	{
 		getPostDAO().beginTransaction();

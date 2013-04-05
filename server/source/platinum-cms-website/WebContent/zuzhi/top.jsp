@@ -31,27 +31,6 @@
 			<li><a href = "/zuzhi/sc000000000000000000000000000037/more/">党建工作</a></li>
 			<li><a href = "/zuzhi/sc000000000000000000000000000038/more/">招聘信息</a></li>
 			<li><a href = "/zuzhi/sc000000000000000000000000000039/more/">人事管理</a></li>
-			<li id="guanliLi" style="position:relative;">
-				<a>管理系统</a>
-				<ul id="systemUL" style="display:none;position:absolute;top:36px;right:0px;background:#e60012;z-index:1000;height:60px;width:90px;z-index:1000;">
-					<li style="width:124px;height:30px;z-index:1000;float:right;font-size:14px;color:#FFF;line-height:30px;text-align:center;">
-						<a href="#" style="display:block;width:100%;">年终考评</a>
-					</li>
-					<li style="height:30px;z-index:1000;float:right;font-size:14px;color:#FFF;line-height:30px;text-align:center;">
-						<a href="#" style="display:block;width:100%;">人才招聘</a>
-					</li>
-				</ul>	
-			</li>
-			<script>
-					$("#guanliLi").hover(
-					  function () {
-					    $("#systemUL").css("display","block");
-					  },
-					  function () {
-					    $("#systemUL").css("display","none");
-					  }
-					);
-			</script>
 		</ul>
 	</menu>
 </div>	

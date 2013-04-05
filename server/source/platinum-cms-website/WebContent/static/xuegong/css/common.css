@@ -593,6 +593,15 @@ a #title:hover {
 	color: #808080;
 }
 
+#midPic
+{
+	width:100%;
+	height:70px;
+	position:absolute;
+	background-color:#bcd2c3;
+	top:317px;
+}
+
 #huiyinbi
 {
 	cursor:pointer;
@@ -669,5 +678,3 @@ a #title:hover {
 	font-size: 12pt; 
 	text-indent: 2em;
 }
-#content table{text-indent: 0;}
-#content table div{text-indent: 0;}

@@ -24,7 +24,7 @@
   	</div>
 	
         <menu id = "mainmenu">
-            <li class = "singleMenu"><a href = "/jiuye/">首&nbsp;&nbsp;页</a></li>
+            <li class = "singleMenu"><a href = "/jiuye/">首页</a></li>
             <li class = "singleMenu"><a href = "/jiuye/sc000000000000000000000000000146/more/">工作动态</a></li>
             <li class = "singleMenu"><a href = "/jiuye/sc000000000000000000000000000148/more/">招聘信息</a></li>
             <li class = "singleMenu"><a href = "/jiuye/sc000000000000000000000000000149/more/" >政策法规</a></li>

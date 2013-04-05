@@ -63,17 +63,17 @@
             
 			<div id = "teaching">
 				<span><img src = "/static/xiandai/image/kuaisu.png"/></span>
-				<a class="kslink" href="#">
-					<img src="../static/xiandai/image/kebiao.gif" width="194" height="45"/>
+				<a class="kslink" href="http://morning.njnu.edu.cn/" target="_blank">
+					<img src="../static/faculty/common/images/qingchenwang.png" width="194" height="45"/>
 				</a>
-				<a class="kslink" href="#">
-					<img src="../static/xiandai/image/jiaoshi.gif" width="194" height="45"/>
+				<a class="kslink" href="http://sun.njnu.edu.cn/" target="_blank">
+					<img src="../static/faculty/common/images/sun.png" width="194" height="45"/>
 				</a>
-				<a class="kslink" href="#">
-					<img src="../static/xiandai/image/shiwu.gif" width="194" height="45"/>
+				<a class="kslink" href="http://3434.njnu.edu.cn/" target="_blank">
+					<img src="../static/faculty/common/images/deifenyuan.png" width="194" height="45"/>
 				</a>
-				<a class="kslink" href="#">
-					<img src="../static/xiandai/image/wenti.gif" width="194" height="45"/>
+				<a class="kslink" href="http://jwc.njnu.edu.cn/" target="_blank">
+					<img src="../static/faculty/common/images/jinlinyuan.png" width="194" height="45"/>
 				</a>
 			</div>
             
@@ -83,7 +83,7 @@
 				<span class="reTitle">新北区办公室</span>
 				<strong class="reNum" id="fenge" style="padding-left:15px;">025-87721056</strong>
 				<span class="reTitle">老北区办公室</span>
-				<strong class="reNum" style="padding-left:15px;">025-85891616</strong>
+				<strong class="reNum" style="padding-left:15px;">025-87721054</strong>
 			</div>
 
 

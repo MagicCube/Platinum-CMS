@@ -23,20 +23,19 @@
 
 ul > li a > div
 {
-	font-size:13.5px;
 	display: inline;
 }
 
 #mainContent > #workNews{
 	position: absolute;
-	left: 15px;
+	left: 45px;
 	top: 10px;
 	margin: 0;
 	padding: 0 10px 0 0;
-	width: 280px;
-	height: 273px;
+	width: 250px;
+	height: 283px;
 	border:1px solid #009bcb;
-	border-radius:0 0 0 15px;
+	border-radius:0 0 5px 5px;
 	border-top:0;
 	
 }
@@ -44,14 +43,14 @@ ul > li a > div
 #mainContent > #emNews
 {
 	position: absolute;
-	right: 10px;
+	right: 30px;
 	top: 10px;
 	margin: 0;
 	padding: 0 10px 0 0;
-	width: 280px;
-	height: 270px;
+	width: 250px;
+	height: 283px;
 	border:1px solid #009bcb;
-	border-radius:0 0 0 15px;
+	border-radius:0 0 5px 5px;
 	border-top:0;
 }
 
@@ -62,7 +61,7 @@ ul > li a > div
 	padding: 0;
 	width: 350px;
 	height: 265px;	
-	left: 318px;
+	left: 325px;
 	top: 10px;
 	border: 4px solid #fff;
 	-moz-border-radius: 3px;
@@ -101,12 +100,12 @@ ul > li a > div
 	position: absolute;
 	margin: 0;
 	padding: 0 10px 0 0;
-	width: 290px;
+	width: 250px;
 	height: 280px;
-	left: 15px;
+	left: 45px;
 	top: 300px;
 	border:1px solid #009bcb;
-	border-radius:0 0 0 15px;
+	border-radius:0 0 5px 5px;
 	border-top:0;
 }
 
@@ -114,12 +113,13 @@ ul > li a > div
 {
 	position: absolute;
 	top: 300px;
-	left: 340px;
+	left: 375px;
 	margin: 0;
-	width: 315px;
+	padding: 0 10px 0 0;
+	width: 250px;
 	height: 280px;
 	border:1px solid #009bcb;
-	border-radius:0 0 0 15px;
+	border-radius:0 0 5px 5px;
 	border-top:0;
 }
 
@@ -127,19 +127,20 @@ ul > li a > div
 {	
 	position: absolute;
 	top: 300px;
-	right: 10px;
+	right: 30px;
 	margin: 0;
-	width: 300px;
+	padding: 0 10px 0 0;
+	width: 250px;
 	height: 280px;
 	border:1px solid #009bcb;
-	border-radius:0 0 0 15px;
+	border-radius:0 0 5px 5px;
 	border-top:0;
 }
 
 #workNews ul
 {
 	padding: 0;
-	margin: 10px 0 0 10px;
+	margin: 10px 0 0 0;
 	list-style-type:square;
 	list-style-position: inside;
 }
@@ -157,7 +158,7 @@ ul > li a > div
 #emNews ul
 {
 	padding: 0;
-	margin: 10px 0 0 10px;
+	margin: 10px 0 0 0;
 	list-style-type:square;
 	list-style-position: inside;
 }
@@ -175,7 +176,7 @@ ul > li a > div
 #zfNews ul
 {
 	padding: 0;
-	margin: 10px 0 0 10px;
+	margin: 10px 0 0 0;
 	list-style-type:square;
 	list-style-position: inside;
 }
@@ -183,7 +184,7 @@ ul > li a > div
 #zfNews ul > li
 {
 	margin: 0;
-	padding: 5px 0 0 10px;	
+	padding: 5px 0 0 0;	
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
@@ -193,7 +194,7 @@ ul > li a > div
 #zyghNews ul
 {
 	padding: 0;
-	margin: 10px 0 0 10px;
+	margin: 10px 0 0 0;
 	list-style-type:square;
 	list-style-position: inside;
 }
@@ -211,7 +212,7 @@ ul > li a > div
 #jyzdNews ul
 {
 	padding: 0;
-	margin: 10px 0 0 10px;
+	margin: 10px 0 0 0;
 	list-style-type:square;
 	list-style-position: inside;
 }
@@ -293,37 +294,15 @@ font-weight: bold;
 
 	
 .m_More{
-	width:40px;
-	height:15px;
 	display:block;
-	margin: 8px 0 0 251px;
+	padding: 5px 0 0 0;
+	margin-left:195px;
 	font-size: 14px;
 }
 
-#emNews .m_More
+.m_More:hover
 {
-	margin-top: 5px;
-}
-#zfNews .m_More,#jyzdNews .m_More
-{
-	margin:15px 0 0 261px;
-}
-#zyghNews .m_More
-{
-	margin:15px 0 0 276px;
-}
-
-.m_More a
-{
-	display:block;
-	width:100%;
-	height:100%;
-	background-image:url(/static/jiuye/images/more.jpg);
-}
-
-.m_More a:hover
-{
-	background-image:url(/static/jiuye/images/moreh.jpg);
+	font-weight:bold;
 }
 
 #tsztList li{
@@ -364,7 +343,6 @@ font-weight: bold;
 
 #browsable #home_slider li
 {
-	list-style:none;
 	border:0;
 }
 

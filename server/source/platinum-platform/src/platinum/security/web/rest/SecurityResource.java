@@ -11,7 +11,6 @@ import platinum.framework.web.rest.AbstractResource;
 import platinum.security.Membership;
 import platinum.security.MembershipUser;
 
-
 @Path("security")
 public class SecurityResource extends AbstractResource
 {
@@ -97,9 +96,6 @@ public class SecurityResource extends AbstractResource
 		
 		return responseForbidden();
 	}
-	
-	
-
 	
 	@POST
 	@Path("logoff")

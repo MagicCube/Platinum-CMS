@@ -26,7 +26,7 @@ a
 	text-decoration: none;
 	border:none;
 }
-a img{border:none;}
+a img{boder:none;}
 li
 {	list-style:none;}
 
@@ -487,7 +487,6 @@ overflow: hidden;
 {
 	float: left;
 	width: 500px;
-	height:360px;
 	border:3px solid #D41F00; 
 	border-radius:10px;
 	-moz-border-radius:10px;
@@ -578,6 +577,7 @@ overflow: hidden;
 	line-height: 150%; 
 	font-family: 宋体;
 	font-size: 12pt; 
+	text-indent: 2em;
 }
 
 #content>div{
@@ -586,6 +586,7 @@ overflow: hidden;
 	line-height: 150%; 
 	font-family: 宋体;
 	font-size: 12pt; 
+	text-indent: 2em;
 }
 
 #content{
@@ -594,6 +595,5 @@ overflow: hidden;
 	line-height: 150%; 
 	font-family: 宋体;
 	font-size: 12pt; 
+	text-indent: 2em;
 }
-#content table{text-indent: 0;}
-#content table div{text-indent: 0;}

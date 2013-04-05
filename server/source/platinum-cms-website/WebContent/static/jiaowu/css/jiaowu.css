@@ -190,7 +190,9 @@ outline: none;
 background-color:rgb(221, 221, 221); }
 
 
-.moduletable_menu { height: 200px;}
+
+#changYong{ height:150px;}
+#jiaowuJian{ height:210px;}
 
 
 div.moduletable, div.moduletable_menu, div.moduletable_text
@@ -266,7 +268,7 @@ div.moduletable h3, div.moduletable_menu h3, div.moduletable_text h3
 	color:#000000;
 
 }
-#tongzhi{height:300px;}
+#tongzhi{height:280px;}
 #guoji{height:200px;}
 #home_slider>ul>li
 {
@@ -277,3 +279,7 @@ div.moduletable h3, div.moduletable_menu h3, div.moduletable_text h3
 	margin:0;
 	padding:0;
 }
+.news{ width:30px; height:15px;background: url(../images/NEW-23.gif) no-repeat 5px 50%;position:absolute;}
+#news1{ top:55px; left:295px;}
+#news2{top:95px; left:295px;}
+#news3{top:135px; left:295px;}

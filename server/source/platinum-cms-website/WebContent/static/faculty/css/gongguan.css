@@ -28,7 +28,3 @@
 #r_content .list_more a:hover{color: #d81900;}
 /*页脚部分*/
 #bottom2{background-color: #d81900;}
-#gallery .caption{
-	background-color: rgb(216, 25, 0);
-	background: rgba(216, 25, 0, 0.55);
-}

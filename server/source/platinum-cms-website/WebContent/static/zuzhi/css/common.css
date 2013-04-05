@@ -111,7 +111,7 @@ body
 }
 menu#nav
 {
-	width: 990px;
+	width: 987px;
 	padding: 0;
 	margin:0;
 	margin-left: auto;
@@ -127,7 +127,6 @@ menu#nav ul#zuzhi
 	margin: 0;
 	list-style: none;
 	float: left;
-	width:100%;
 }
 
 menu#nav ul#zuzhi li
@@ -135,7 +134,7 @@ menu#nav ul#zuzhi li
 	padding: 0;
 	margin: 0;
 	float: left;
-	width: 123.75px;
+	width: 141px;
 	height: 36px;
 	line-height: 35px;
 	text-align: center;
@@ -569,5 +568,3 @@ a #title:hover{color:#808080;}
 	font-size: 12pt; 
 	text-indent: 2em;
 }
-#content table{text-indent: 0;}
-#content table div{text-indent: 0;}

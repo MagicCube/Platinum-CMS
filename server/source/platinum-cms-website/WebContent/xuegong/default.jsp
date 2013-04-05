@@ -13,8 +13,7 @@
 <link rel="stylesheet" href="/static/home/plugins/flexslider/flexslider.css" type="text/css" />
 <script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="../static/xuegong/js/slide.js"></script>
-<script type="text/javascript" src="/xuegong/scripts/src/pt/cms/admin/post/view/huiyin.js"></script>
-
+<script type="text/javascript" src="../static/xuegong/js/huiyin.js"></script>
 <!-- FlexSlider end -->
 
 <link href = "/static/xuegong/css/xuegong.css" rel = "stylesheet"/>
@@ -53,7 +52,10 @@
 	        <span class="spanimg"><img src = "/static/xuegong/images/xinwen.png"/></span>			
           		<cms:PostList id = "xwdtlist" subcategoryId = "sc000000000000000000000000000030" count = "8"/>   		
 				 <span class="mainMore"><a href = "/xuegong/sc000000000000000000000000000030/more/">更多>></a></span>
-			</div> 
+			</div>
+			  
+			<div id="midPic"></div>
+			  
             <div id = "email">
 			<span class="spanimg"><img src = "/static/xuegong/images/zhuanti.png"/></span>          		
           		<cms:PostList id = "ztbdlist" subcategoryId = "sc000000000000000000000000000032" count = "8"/>        		        		
@@ -66,20 +68,16 @@
 				<span class="mainMore"><a href = "/xuegong/sc000000000000000000000000000031/more/">更多>></a></span>
 				<div id="huiyinbi"></div>
 			</div>
-			
 			<div id="huiyintb">
-			  <form  action="/api/0/admin/post/" > 
-			  <div id="subdiv">
-			     <div id="exittb"></div>
-			       <table>
+			<div id="subdiv">
+			<div id="exittb"></div>
+			<table>
 					<tr>
                     <td width="101" align="center">称呼姓名：</td>
                     <td width="180"><input name="Books_Name" type="text" class="input">
                         <font color="red"> *</font></td>
                     <td width="94" align="center">内容：<font color="red">*</font></td>
-                    <td width="250" rowspan="4">
-                    <input name="Books_Info" type="text" class="input">
-                    </td>
+                    <td width="250" rowspan="4"><textarea name="Books_Info" rows="9" cols="60" class="text"></textarea></td>
                   </tr>
                   <tr>
                     <td align="center">留言标题：</td>
@@ -87,16 +85,17 @@
                         <font color="red"> *</font></td>
                     <td></td>
                   </tr>
-               
                   <tr>
-                    <td colspan="3" align="center"><input name="submit" type="button" onclick="myFunction()" class="bmit" value=" 添加留言 ">
-                    </td>
+                    <td align="center">联系方式：</td>
+                    <td><input name="Books_Mail" type="text" class="input"></td>
+                    <td></td>
                   </tr>
-		        </table>
-              </div>
-               </form>
-           </div>
-            
+                  <tr>
+                    <td colspan="3" align="center"><input name="submit" type="submit" class="bmit" value=" 添加留言 ">
+                        <input name="reset" type="reset" class="bmit" value=" 重新输入 "></td>
+                  </tr>
+		      </table>
+            </div></div>
       </div>	
 </div>
 

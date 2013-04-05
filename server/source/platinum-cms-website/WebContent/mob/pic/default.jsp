@@ -49,7 +49,7 @@
     <script>
     $("#album")
         .album({
-            cellWidth: 310,
+            cellWidth: 320,
             cellHeight: 210,
             padding: 10
         })
