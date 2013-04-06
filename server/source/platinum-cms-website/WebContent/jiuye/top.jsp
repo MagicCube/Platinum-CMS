@@ -28,8 +28,9 @@
             <li class = "singleMenu"><a href = "/jiuye/sc000000000000000000000000000146/more/">工作动态</a></li>
             <li class = "singleMenu"><a href = "/jiuye/sc000000000000000000000000000148/more/">招聘信息</a></li>
             <li class = "singleMenu"><a href = "/jiuye/sc000000000000000000000000000149/more/" >政策法规</a></li>
-            <li class = "singleMenu"><a href = "/jiuye/sc000000000000000000000000000150/more/">职业生涯规划</a></li>
-            <li class = "singleMenu"><a href = "/jiuye/sc000000000000000000000000000151/more/">就业指导</a></li>  
+            <li class = "singleMenu"><a href = "/jiuye/sc000000000000000000000000000151/more/">就业指导</a></li>
+            <li class = "singleMenu"><a href = "/jiuye/sc000000000000000000000000000369/more/">资料下载</a></li>  
+            <li class = "singleMenu"><a href = "/jiuye/sc000000000000000000000000000150/more/">职业生涯规划</a></li>          
 	    </menu>	
 	  
   </div>

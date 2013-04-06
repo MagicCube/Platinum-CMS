@@ -66,6 +66,13 @@
                	 <span class = "m_More"><a href = "/jiuye/sc000000000000000000000000000149/more/"> </a></span>
             </div>   
           </div>
+    <div id="jiuyeLink">
+    	<a href="http://lm.jshrss.gov.cn/sy2010/main/" target="_blank" class="jiuyeLink" style="width:240px;"><img src="/static/jiuye/images/jshrss.gif" height="50" width="240" /></a>
+    	<a href="http://www.51job.com/" target="_blank" class="jiuyeLink" style="width:120px;"><img src="/static/jiuye/images/51job.gif" height="50" width="120" /></a>    	
+    	<a href="http://www.chinajob.gov.cn/" target="_blank" class="jiuyeLink" style="width:190px;"><img src="/static/jiuye/images/chinajob.jpg" height="50" width="190" /></a>
+    	<a href="http://www.yingjiesheng.com/" target="_blank" class="jiuyeLink" style="width:160px;"><img src="/static/jiuye/images/yjs.gif" height="50" width="160" /></a>   	
+    	<a href="http://www.91job.gov.cn/" target="_blank" class="jiuyeLink" style="width:225px;padding:5px 0;height:40px;"><img src="/static/jiuye/images/91job.gif" height="40" width="225" /></a>
+    </div>
           
 	<cms:Footer path="jiuye"/>
 

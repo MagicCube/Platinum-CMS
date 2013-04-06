@@ -134,7 +134,7 @@ menu#mainmenu
 	font-family: 黑体;
 	display: inline-block;
 	height: 32px;
-	width: 150px;;
+	width: 128.5px;;
 	padding: 0;
 	margin: 0 ;
 }
@@ -161,14 +161,15 @@ menu#mainmenu li a
 	color: #fff;	
 	text-align: center;
 	list-style: none;
-	font-size:18px;
+	font-size:15px;
+	font-size:微软雅黑;
 }
 
 
 menu#mainmenu li > a:hover
 {
 	color: #009bcb;
-	font-size:18px;
+	font-size:16px;
 }
 
 
@@ -254,7 +255,6 @@ table td
 	width: 990px;
 	height: 50px;
 	bottom: 0;
-	border-top: 1px #fff solid;
 	color: #fff;
 	left: 0;
 }
@@ -512,3 +512,25 @@ ul.TextList li
 }
 #content table{text-indent: 0;}
 #content table div{text-indent: 0;}
+
+/*就业链接*/
+#jiuyeLink{
+	border-top:1px solid #009bcb;
+	border-bottom:1px solid #009bcb;
+	width:980px;
+	padding-left:10px;
+	height:65px;
+	background-image:url(/static/jiuye/images/c_bk.png);
+}
+.jiuyeLink{
+	float:left;
+	margin-left:5px;
+	margin-top:7px;
+	border:1px solid #CCC;
+	display:block;
+	height:50px;
+}
+
+
+
+/*END*/

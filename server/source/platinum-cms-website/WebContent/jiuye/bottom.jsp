@@ -110,7 +110,7 @@
 				<p style="padding-left:3px;line-height:20px;">2013 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院</p>
 				<p>南京市栖霞区仙林大学城学林路2号 210046</p>
 			</div>
-    		
+    		<div style="font-size:16px;color:#FFF;float:right;position:absolute;bottom:10px;right:5px;">联系电话：025-85891289</div>
     		<!-- <div id="developer">	 
     			<ul>
     				<li><a href="/ruanyan/">软件研发与培训中心</a></li>
