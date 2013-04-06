@@ -1,0 +1,42 @@
+.ListView
+{
+    color: #4d4d4d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #f9f9f9;
+}
+
+.ListView > li
+{
+    position: relative;
+    height: 48px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.ListView > li.selected
+{
+    background: url(images/list_item_selected_bg.png) repeat-x left bottom;
+}
+
+
+
+.ListView > li div
+{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ListView > li #title
+{
+    font-weight: bold;
+}
+
+.ListView > li.selected #title
+{
+    color: white;
+}

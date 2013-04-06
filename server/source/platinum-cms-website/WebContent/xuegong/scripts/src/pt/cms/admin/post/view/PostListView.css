@@ -1,0 +1,110 @@
+sour.PostListView
+{
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.PostListView > li
+{
+    cursor: pointer;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.PostListView > li.selected #title, .PostListView > li.selected #updateTime, .PostListView > li.selected #summary, .PostListView > li.selected #source, .PostListView > li.selected #title span.keyword, .PostListView > li.selected #summary span.keyword 
+{
+    color: white;
+    background-color: transparent;
+}
+
+.PostListView > li div
+{
+    position: absolute;
+    white-space: nowrap;
+}
+
+.PostListView > li #title
+{
+    left: 22px;
+    right: 70px;
+    top: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.PostListView > li #source
+{
+    top: 23px;
+    left: 22px;
+}
+
+.PostListView > li #summary
+{
+    left: 22px;
+    top: 40px;
+    right: 12px;
+    bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #aaa;
+    white-space: normal;
+}
+
+
+.PostListView > li #updateTime
+{
+    width: 100px;
+    top: 6px;
+    right: 12px;
+    color: #5790DD;
+    font-family: Arial;
+    text-align: right;
+}
+
+.PostListView > li #title span.keyword, .PostListView > li #summary span.keyword
+{
+    background-color: yellow;
+} 
+
+
+
+
+#postListToolbar #searchBar
+{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    height: 38px;
+    background: url(images/search_bar_bg.png);
+    border-top: 1px solid #858787;
+    border-bottom: 1px solid #858787;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#postListToolbar #searchBar #keywords
+{
+    position: absolute;
+    width: 95%;
+    top: 7px;
+    left: 5px;
+    right: 5px;
+    height: 22px;
+    text-indent: 6px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 18px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    background: url(images/magnify.png) no-repeat 7px 5px;
+    background-color: #efefef;    
+}
+
+#postListToolbar #keywords.empty
+{
+    color: gray;
+}
+
+#postListToolbar #keywords:focus
+{
+    background-color: white;
+}

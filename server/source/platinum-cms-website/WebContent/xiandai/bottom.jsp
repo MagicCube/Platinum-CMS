@@ -102,23 +102,23 @@
             </div>
         -->
         <div id = "bottom2">
-        	<div id="copyright">
+        	<!-- <div id="copyright">
 				<span id="time"></span><span> 版权所有 </span> <span style="font-family: 'verdana';">©</span><span>南京师范大学中北学院</span>
 				<p>苏ICP备05080300号</p>
-			</div>
+			</div> -->
 			
 			<div id="website">
 				<p><a href="http://www.nnuzc.cn">www.nnuzc.cn</a></p>
 				<p>南京市栖霞区仙林大学城学林路2号 210046</p>
 			</div>
     		
-    		<div id="developer">	 
+    		<!-- <div id="developer">	 
     			<ul>
     				<li><a href="#">软件研发与培训中心</a></li>
     				<li><a href="/xiandai/">现代教育技术中心</a></li>
     			</ul>
     			<span>开发、维护</span>
-    		</div>
+    		</div> -->
     	<script>
 			var date = new Date();
 			var year = date.getFullYear();

@@ -25,8 +25,8 @@
     	<div id = "mainContent">
     		<div id = "workNews">
     			<span><img src="/static/jiuye/images/gzdt.jpg"/></span>
-               	 <cms:PostList id = "gzdtlist" subcategoryId = "sc000000000000000000000000000146" count = "9"/>
-               	 <span class = "m_More"><a href = "/jiuye/sc000000000000000000000000000146/more/">更多...</a></span>
+               	 <cms:PostList id = "gzdtlist" subcategoryId = "sc000000000000000000000000000146" count = "8"/>
+               	 <span class = "m_More"><a href = "/jiuye/sc000000000000000000000000000146/more/"> </a></span>
             </div>
             
 			<div id="browsable">
@@ -41,29 +41,29 @@
             
             <div id = "emNews">
           		<span><img src="/static/jiuye/images/zpxx.jpg"/></span>
-               	 <cms:PostList id = "gzdtlist" subcategoryId = "sc000000000000000000000000000148" count = "9"/>
-               	 <span class = "m_More"><a href = "/jiuye/sc000000000000000000000000000148/more/">更多...</a></span>
+               	 <cms:PostList id = "gzdtlist" subcategoryId = "sc000000000000000000000000000148" count = "8"/>
+               	 <span class = "m_More"><a href = "/jiuye/sc000000000000000000000000000148/more/"> </a></span>
             </div>
             
             <!-- <div style="height: 1px; width: 915px; position: absolute; top: 290px; background: #fff; left: 45px;"></div> -->
             
             <div id = "zfNews">
             	 <span><img src="/static/jiuye/images/zysygh.jpg"/></span>
-               	 <cms:PostList id = "gzdtlist" subcategoryId = "sc000000000000000000000000000150" count = "9"/>
-               	 <span class = "m_More"><a href = "/jiuye/sc000000000000000000000000000150/more/">更多...</a></span>
+               	 <cms:PostList id = "gzdtlist" subcategoryId = "sc000000000000000000000000000150" count = "8"/>
+               	 <span class = "m_More"><a href = "/jiuye/sc000000000000000000000000000150/more/"> </a></span>
              
             </div>
             
             <div id = "zyghNews">
             	 <span><img src="/static/jiuye/images/jyzd.jpg"/></span>
-               	 <cms:PostList id = "gzdtlist" subcategoryId = "sc000000000000000000000000000151" count = "9"/>
-               	 <span class = "m_More"><a href = "/jiuye/sc000000000000000000000000000151/more/">更多...</a></span>
+               	 <cms:PostList id = "gzdtlist" subcategoryId = "sc000000000000000000000000000151" count = "8"/>
+               	 <span class = "m_More"><a href = "/jiuye/sc000000000000000000000000000151/more/"> </a></span>
             </div>
      
             <div id = "jyzdNews">
             	 <span><img src="/static/jiuye/images/zcfg.jpg"/></span>
-               	 <cms:PostList id = "gzdtlist" subcategoryId = "sc000000000000000000000000000149" count = "9"/>
-               	 <span class = "m_More"><a href = "/jiuye/sc000000000000000000000000000149/more/">更多...</a></span>
+               	 <cms:PostList id = "gzdtlist" subcategoryId = "sc000000000000000000000000000149" count = "8"/>
+               	 <span class = "m_More"><a href = "/jiuye/sc000000000000000000000000000149/more/"> </a></span>
             </div>   
           </div>
           

@@ -22,15 +22,8 @@
            
            <div class="category_1" id="firstCate">
            <div class="category_name">
-              <h3>通知与公告</h3>
+              <h3>教务新闻</h3>
               </div>
-              <div id = "news1" class = "news">
-              </div>
-              <div id = "news2"class = "news">
-              </div>
-              <div id = "news3"class = "news"> 
-              </div>
-              
               	<cms:PostList id = "jwxwlist" cssClass = "latestnews_menu" subcategoryId = "sc000000000000000000000000000046" count = "6"/>
                 <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000046/more/">更多...</a></p>
               </div>
@@ -101,15 +94,19 @@
           <!-- BEGIN: RIGHT COLUMN -->
           <div id="right_part">
             <div class="moduletable_menu" id="tongzhi" >
-              <h3 style="margin-top:10px;">教务新闻</h3>
+              <h3 style="margin-top:10px;">通知与公告</h3>
              <cms:PostList id = "zztglist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000045" displayDate="true" count = "7"/>  
             </div>
             
 			<hr style="text-align:center; width:90%; margin-left:10px;" />
 			
-		  
+		  <div class="moduletable_menu" id="guoji" >
+              <h3 style="margin-top:10px;">国际交流与合作</h3>
+              <cms:PostList id = "jxyjlist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000051" count = "4"/>
+              <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000051/more/">更多...</a></p>
+          </div>
             　　
-            
+            <hr style="text-align:center; width:90%; margin-left:10px;" />
             
             <div class="moduletable_menu">
               <h3>教务处简介</h3>
@@ -153,8 +150,8 @@
                   </a>
                 </li>
                 <li class="link_2">
-                  <a href="http://zbvip.njnu.edu.cn/vip/">
-                    <span>教工之家</span>
+                  <a href="/index.php?option=com_newsfeeds&amp;view=category&amp;id=9&amp;Itemid=12">
+                    <span>教育动态</span>
                   </a>
                 </li>
                 <li class="link_2">
@@ -164,12 +161,6 @@
                 </li>
               </ul>
             </div>
-            <hr style="text-align:center; width:90%; margin-left:10px;" />
-            <div class="moduletable_menu" id="guoji" >
-              <h3 style="margin-top:10px;">国际交流与合作</h3>
-              <cms:PostList id = "jxyjlist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000051" count = "4"/>
-              <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000051/more/">更多...</a></p>
-          </div>
            
             
           </div>

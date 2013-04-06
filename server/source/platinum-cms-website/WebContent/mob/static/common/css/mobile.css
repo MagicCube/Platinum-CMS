@@ -89,8 +89,7 @@ a: hover {
 	text-decoration: none;
 }
 .pictrues ul li img {
-	margin-right:30px;
-	width:96%;
+	width:100%;
 }
 
 
@@ -1497,7 +1496,7 @@ a.m_cencel {
 }
 /* rss*/
 	.s_header {
-	width:100%;
+	
 	line-height: 35px;
 	
 	text-align: center;
@@ -2461,6 +2460,9 @@ div#menu li {
 div#menu ul ul li {
     z-index: 9;
 }
+
+
+
 div#menu li div {
     list-style: none;
     float: left;

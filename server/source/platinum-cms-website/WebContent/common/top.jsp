@@ -12,7 +12,7 @@ request.setCharacterEncoding("utf-8");
 <div id="header">
 			<span style="float: left; margin-top: 18px; display: block;"><a href="/"><img src="/static/common/images/logo.png" alt=""/></a></span>
 			<div id="dynamic">
-				<a href="/introduce/12345678be9e6b7a00002be9e6b7a0d.html">
+				<a href="/introduce">
 				<ul id="dttpList">
 					<li><img src="/static/common/images/h1.png" alt="1"/></li>
 					<li><img src="/static/common/images/h2.png" alt="2"/></li>
@@ -37,7 +37,7 @@ request.setCharacterEncoding("utf-8");
 	        <ul id="downlist" num="4">
 	            <li><a href="/introduce/402881e93b41ec78013b41f8a5cf0008.html">学院简介</a></li>
 	            <li><a href="/introduce/ff8081813be9dcbc013be9e6b7a00002.html">领导简介</a></li>
-	            <li><a href="/introduce/12345678be9e6b7a00002be9e6b7a0d.html">校园美景</a></li>
+	            <li><a href="/introduce">校园美景</a></li>
 	            <li><a href="/introduce/12345679be9e6b7a00002be9e6b7a0d.html">联系我们</a></li>
 	        </ul>
 	    </li>
@@ -47,18 +47,18 @@ request.setCharacterEncoding("utf-8");
 	            <li><a href="/organization/ff8081813bea7af0013bea97c53f0005.html">部门设置</a></li>
 	        </ul>
 	    </li>
-   		<li><a href="http://zbzs.njnu.edu.cn/trch/index.htm" target="_blank">教学科研</a></li>
+   		<li><a href="/jiaowu" target="_blank">教学科研</a></li>
 	    <li><a target="_blank">学生工作</a>
 	        <ul id="downlist" num="2">
-	            <li><a href="http://zbzs.njnu.edu.cn/stud/index.asp">学 工 处</a></li>
-	            <li><a href="/tuanwei/">团&nbsp;&nbsp;&nbsp;&nbsp;委</a></li>            
+	            <li><a href="/xuegong" target="_blank">学 工 处</a></li>
+	            <li><a href="/tuanwei" target="_blank">团&nbsp;&nbsp;&nbsp;&nbsp;委</a></li>            
 	        </ul>
 	    </li>
-   		<li><a href="http://zbzs.njnu.edu.cn/part/index.htm" target="_blank">组织人事</a></li>
+   		<li><a href="/zuzhi" target="_blank">组织人事</a></li>
 	    <li><a>招生就业</a>
 	        <ul id="downlist" num="2">
-	            <li><a href="http://zbzs.njnu.edu.cn/enrol/index.asp" target="_blank">招生录取</a></li>
-	            <li><a href="http://zbzs.njnu.edu.cn/job/index.asp" target="_blank">就业指导</a></li>
+	            <li><a href="/zhaosheng" target="_blank">招生录取</a></li>
+	            <li><a href="/jiuye" target="_blank">就业指导</a></li>
 	        </ul>
 	    </li>  
 	    <li><a>交流合作</a>
@@ -83,7 +83,7 @@ request.setCharacterEncoding("utf-8");
 	    <li><a>技术支持</a>
 	    	<ul id="downlist" num="1">
 	    		<!-- <li><a href="/ruanyan/">软件研发与培训中心</a></li> -->
-	    		<li><a href="#">现代教育技术中心</a></li>
+	    		<li><a href="/xiandai" target="_blank">现代教育技术中心</a></li>
 	            <!-- <li><a href="/technology/ff8081813be5798c013be58062050002.html">现代教育技术中心</a></li>	-->
 	        </ul>
 	    </li>	

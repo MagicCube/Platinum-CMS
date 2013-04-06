@@ -45,8 +45,10 @@
 			
 			<div id = "activity">
 				<span><img src = "/static/zuzhi/images/activity.gif"/></span>
-				<cms:PostList id = "zzhdlist" subcategoryId="sc000000000000000000000000000041" count="10" />
-				<div id = "niceR"><a href = "/zuzhi/sc000000000000000000000000000041/more/" style ="font-size: 12px;" title="点击显示更多"></a></div>
+				<div id="acti">
+					<cms:PostList id = "zzhdlist" subcategoryId="sc000000000000000000000000000041" count="10" />
+					<div id = "niceR"><a href = "/zuzhi/sc000000000000000000000000000041/more/" style ="font-size: 12px;" title="点击显示更多"></a></div>
+				</div>
 			</div>
 			
 			<div id = "box-bottom">
