@@ -235,6 +235,52 @@ body { background:url(../images/bgsite.jpg) repeat-x center top #FAEDBC; }
 	background-color:rgb(254,246,77);
 }
 
+/*部门简介二级菜单*/
+#jianjieLi{width:auto;height:auto;}
+#menu_ul>#nav>li #jianjie
+{
+	position:absolute;
+	display:none;
+	z-index:1000000;
+	width:124px;
+	height:80px;
+	margin:0;
+	padding:0;
+	top:232px;
+	left:124px;
+}
+#menu_ul>#nav>li #jianjie:hover
+{
+	background:none;
+	background-color:#FFF;
+}
+#menu_ul>#nav>li #jianjie>.jianjieC
+{	
+	margin:0;padding:0;
+	display:block;
+	width:124px;
+	height:40px;
+}
+#menu_ul>#nav>li>div
+{
+	width:124px;height:40px;
+	cursor:pointer;
+	text-align: center;
+	margin: 0;
+	display: block;
+	font-size: 14px;
+	color: #000;
+	font-family: 黑体;
+}
+#menu_ul>#nav>li>div:hover{
+	background-color: #fff;
+	background: url(../images/bg2.jpg) no-repeat center top;
+}
+
+
+
+/*部门简介二级菜单结束*/
+
 #menu #menu_ul
 {
 	margin:0 auto;

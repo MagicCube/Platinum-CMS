@@ -99,11 +99,22 @@
             首页
           </a>
         </li> 
-        <li>
-          <a href="/tuanwei/ff8081813b50f9a5013b564548d30002.html">
-            部门简介
-          </a>
+        <li id="jianjieLi">
+          <div>部门简介</div>          	
+          <ul id="jianjie">
+          	<li class="jianjieC"><a href="/tuanwei/ff8081813b50f9a5013b564548d30002.html">团委简介</a></li>
+          	<li class="jianjieC"><a href="/tuanwei/402881e43ddde143013dde4a05b20002.html">组织构架</a></li>
+          </ul>
         </li>
+        <script type = "text/javascript">
+        			$('#jianjieLi').mouseover(function(){
+        				$('#jianjie',this).stop().slideDown(300);
+        				$('#jianjie',this).stop().animate({height:'80px',width:'124px'},300);
+        			}).mouseout(function(){
+        				$('#jianjie',this).stop().animate({height:'0px',width:'124px'},150);
+        				$('#jianjie',this).stop().slideUp(150);
+        			});
+        </script>
         <li>
           <a href="/tuanwei/sc000000000000000000000000000144/more/">
             团委通知
@@ -115,7 +126,8 @@
           </a>
         </li>
         <li>
-          <a href="/tuanwei/sc000000000000000000000000000153/more/">
+          <!-- <a href="/tuanwei/sc000000000000000000000000000153/more/"> -->
+          <a href="/tuanwei/402881e43ddde143013dde52225b0005.html">
             学生组织
           </a>
         </li>

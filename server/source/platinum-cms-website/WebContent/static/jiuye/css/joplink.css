@@ -28,6 +28,7 @@ ul > li a > div
 }
 
 #mainContent > #workNews{
+	background-color:#FFF;
 	position: absolute;
 	left: 15px;
 	top: 10px;
@@ -43,6 +44,7 @@ ul > li a > div
 
 #mainContent > #emNews
 {
+	background-color:#FFF;
 	position: absolute;
 	right: 10px;
 	top: 10px;
@@ -57,6 +59,7 @@ ul > li a > div
 
 #mainContent > #browsable
 {
+	background-color:#FFF;
 	position: absolute;
 	margin: 0;	
 	padding: 0;
@@ -98,6 +101,7 @@ ul > li a > div
 
 #mainContent > #zfNews
 {	
+	background-color:#FFF;
 	position: absolute;
 	margin: 0;
 	padding: 0 10px 0 0;
@@ -112,6 +116,7 @@ ul > li a > div
 
 #mainContent > #zyghNews
 {
+	background-color:#FFF;
 	position: absolute;
 	top: 300px;
 	left: 340px;
@@ -125,6 +130,7 @@ ul > li a > div
 
 #mainContent > #jyzdNews
 {	
+	background-color:#FFF;
 	position: absolute;
 	top: 300px;
 	right: 10px;

@@ -117,13 +117,13 @@ a img{ border:none}
       <!--社团开始-->
       <div id="shetuan" style="height:180px;width: 220px;float: left;margin-top:5px;margin-left: 10px;border: 3px solid #D41F00;-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;background-color: white;padding-top: 10px;padding-bottom: 10px;">
         <div class="title" style=" margin-left:5px;background-image:url(/static/tuanwei/images/tagg_bg.gif); background-repeat:repeat-x;width:95%;"><p style="background-image:url(/static/tuanwei/images/tag_bg.gif); background-repeat:no-repeat; height:37px; color:#fff;text-shadow: 4px 4px 3px #000;">&nbsp;学生组织</p></div>
-        <div style="margin:0 auto; text-align:center;postion:relative;width:220px;height:185px;">
+        <div style="margin:0 auto; text-align:center;postion:relative;width:220px;height:155px;">
         	<div style="position:relative;margin-left:10px;width:200px;height:200px;">
-        		<img src="/static/tuanwei/images/kexie.gif" width="50px" height="50px" style="position:absolute;top:5px;left:75px;"></img>
-        		<img src="/static/tuanwei/images/kexie.gif" width="50px" height="50px" style="position:absolute;top:45px;left:20px;"></img>
-        		<img src="/static/tuanwei/images/kexie.gif" width="50px" height="50px" style="position:absolute;top:45px;left:130px;"></img>
-        		<img src="/static/tuanwei/images/kexie.gif" width="50px" height="50px" style="position:absolute;top:95px;left:50px;"></img>
-        		<img src="/static/tuanwei/images/kexie.gif" width="50px" height="50px" style="position:absolute;top:95px;left:105px;"></img>
+        		<img title="社团联合会" src="/static/tuanwei/images/image1.jpg" width="85px" height="70px" style="position:absolute;top:5px;left:103px;"></img>
+        		<img title="同心青协" src="/static/tuanwei/images/image2.jpg" width="85px" height="70px" style="position:absolute;top:5px;left:12px;"></img>
+        		<img title="中北学生会" src="/static/tuanwei/images/image3.jpg" width="85px" height="70px" style="position:absolute;top:80px;left:103px;"></img>
+        		<img title="社区自管会" src="/static/tuanwei/images/image4.jpg" width="85px" height="70px" style="position:absolute;top:80px;left:12px;"></img>
+        		<!-- <img title="就业与职业发展协会" src="/static/tuanwei/images/image5.png" width="50px" height="50px" style="position:absolute;top:90px;left:85px;"></img> -->
         	</div>
         </div>
       </div>    
