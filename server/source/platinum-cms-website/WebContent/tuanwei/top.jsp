@@ -57,7 +57,7 @@
        -->     
 
     <div id="logo_pic">
-    <img src="/static/tuanwei/images/logo.gif" height="90px" width="90px" style="padding-bottom:90px; padding-left:20px;"/>
+    <img src="/static/tuanwei/images/logo.gif" height="90px" width="90px" style="padding-bottom:45px; padding-left:20px;"/>
     <img src="/static/tuanwei/images/logo_1.gif" height="192" width="500" />
     </div>
 
@@ -98,7 +98,7 @@
           <a href="/tuanwei/">
             首页
           </a>
-        </li>
+        </li> 
         <li>
           <a href="/tuanwei/ff8081813b50f9a5013b564548d30002.html">
             部门简介
@@ -124,11 +124,11 @@
             学生社团
           </a>
         </li>
-        <li>
+        <!-- <li>
           <a href="/tuanwei/sc000000000000000000000000000155/more/">
             学生活动
           </a>
-        </li>
+        </li> -->
         <li>
           <a href="/tuanwei/sc000000000000000000000000000156/more/">
             中北之声

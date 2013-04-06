@@ -257,7 +257,7 @@ body { background:url(../images/bgsite.jpg) repeat-x center top #FAEDBC; }
 #menu #menu_ul #nav li
 {
 	height: 40px;
-	width:109.6px;
+	width:123.3px;
 	list-style: none;
 	display: inline;
 	float: left;
@@ -330,7 +330,7 @@ li:hover ul, li.over ul {
 	float: left;
 	margin-left: 14px;
 	width: 960px;
-	height: 60px;
+	height: 30px;
 	border-top:2px dotted #A0A0A4;
 }
 
@@ -358,7 +358,7 @@ li:hover ul, li.over ul {
 
 #linkLabel ul
 {
-	width:150px;
+	width:195px;
 	margin:0 auto;
 	display: block;
 }
@@ -569,7 +569,6 @@ overflow: hidden;
 	float: left;
 	padding-left: 20px;
 	padding-bottom: 5px;
-	padding-top: 10px;
 }
 
 #content>.MsoNormal{
