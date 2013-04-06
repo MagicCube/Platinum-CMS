@@ -21,6 +21,7 @@ import platinum.cms.admin.service.PostAdminManager;
 import platinum.cms.common.PostStatus;
 import platinum.cms.common.PostType;
 import platinum.cms.common.entity.PostEntity;
+import platinum.cms.common.entity.CallBackEntity;
 import platinum.cms.common.search.PostSearchEngine;
 import platinum.cms.common.search.PostSearchResult;
 import platinum.cms.common.serialization.PostJSONSerializer;
@@ -39,7 +40,7 @@ public class PostAdminResource extends AbstractResource
 			@QueryParam("pageIndex") @DefaultValue("0") int p_pageIndex,
 			@QueryParam("pageSize") @DefaultValue("20") int p_pageSize
 			) throws JSONException
-	{
+	{   
 		List<PostEntity> posts = null;
 		
 		if (p_keywords != null)
@@ -66,6 +67,9 @@ public class PostAdminResource extends AbstractResource
 		return responseWithJSONArray(PostJSONSerializer.toSimpleArray(posts));
 	}
 	
+
+	
+	
 	@GET
 	@Path("/{id}")
 	public Response getPost(
@@ -73,6 +77,19 @@ public class PostAdminResource extends AbstractResource
 			) throws JSONException
 	{
 		PostEntity post = PostAdminManager.getInstance().getPostById(p_id);
+		
+		if((post.getCategoryId()).equals(Membership.getInstance().getCurrentUser().getUserRole()))
+		{
+			 post = PostAdminManager.getInstance().getPostById(p_id);
+		}
+		else
+		{
+			post=null;
+		}
+		if("Administrator".equals( Membership.getInstance().getCurrentUser().getUserRole() ))
+		{
+			 post = PostAdminManager.getInstance().getPostById(p_id);
+		}	
 		
 		String ifModifiedSince = getHttpHeader("If-Modified-Since");
 		if (ifModifiedSince != null)
@@ -109,10 +126,6 @@ public class PostAdminResource extends AbstractResource
 			PostAdminManager.getInstance().savePost(post);
 		}
 		
-	
-		
-		
-		
 		JSONObject jsonResult = _generateSimplePostJSON(post);
 		return responseWithJSONObject(jsonResult);
 	}
@@ -131,23 +144,9 @@ public class PostAdminResource extends AbstractResource
 			
 			_parsePostFromJSON(postJSON, post);
 			
-			
-			String _postCategoryId=post.getCategoryId();
-			
-			if(_postCategoryId.equals(Membership.getInstance().getCurrentUser().getUserRole()))
-			{
-				PostAdminManager.getInstance().updatePost(post);
-			}
-			if("Administrator".equals( Membership.getInstance().getCurrentUser().getUserRole() ))
-			{
-				PostAdminManager.getInstance().updatePost(post);
-			}
-			
 		
-			
-			
-		
-			
+				PostAdminManager.getInstance().updatePost(post);
+				
 			JSONObject jsonResult = _generateSimplePostJSON(post);
 			return responseWithJSONObject(jsonResult);
 		}
@@ -156,6 +155,27 @@ public class PostAdminResource extends AbstractResource
 			return responseWithException("没有找到标识为“" + p_id + "”的文章。");
 		}
 	}
+	@PUT
+	@Path("nihao")
+	public Response callbacksave(
+			@FormParam("post") String p_postJSONString
+			) throws JSONException
+		{   
+			
+			JSONObject postJSON = new JSONObject(p_postJSONString);
+			
+			CallBackEntity post=new CallBackEntity();
+			post.setName(postJSON.getString("name"));
+			post.setTitle(postJSON.getString("title"));
+			post.setContent(postJSON.getString("content"));
+			
+			PostAdminManager.getInstance().savePost(post);
+			return null;
+			
+			
+			
+			
+		}
 
 	
 	@DELETE
@@ -172,7 +192,11 @@ public class PostAdminResource extends AbstractResource
 		{
 			PostAdminManager.getInstance().deletePost(p_id);
 		}
-	
+		
+		if("Administrator".equals( Membership.getInstance().getCurrentUser().getUserRole() ))
+		{
+			PostAdminManager.getInstance().deletePost(p_id);
+		}	
 		return responseOK();
 	}
 	

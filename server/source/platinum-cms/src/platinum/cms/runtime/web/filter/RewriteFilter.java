@@ -21,7 +21,7 @@ public class RewriteFilter implements Filter
 	private static Pattern _mobmoreCategoryURLPattern = null;
 	private static Pattern _mobmoreSubcategoryURLPattern = null;
 	private static Pattern _mobpostURLPattern = null;
-	
+	private static Pattern _viewCategoryURLPattern=null;
 	@Override
 	public void init(FilterConfig p_config) throws ServletException
 	{
@@ -34,6 +34,8 @@ public class RewriteFilter implements Filter
 			_mobmoreCategoryURLPattern = Pattern.compile("/([a-z]+)/([a-z]+)/more/([0-9]*)");
 			_mobmoreSubcategoryURLPattern = Pattern.compile("/([a-z]+)/([a-z]+)/([A-Za-z0-9]{32})/more/([0-9]*)");
 			_mobpostURLPattern = Pattern.compile("/([a-z]+)/([a-z]+)/([a-f0-9]{32}).html");
+			_viewCategoryURLPattern=Pattern.compile("/introduce/([0-9]*)");
+			
 		}
 	}
 	
@@ -49,10 +51,22 @@ public class RewriteFilter implements Filter
 		String uri = request.getRequestURI();
 		
 		Matcher matcher = null;
+		
+		
+		
 		if(uri.equals("/introduce/12345678be9e6b7a00002be9e6b7a0d.html"))
-		{
+		{ 
+		
+		
 			request.getRequestDispatcher("/introduce/view.jsp").forward(request, response);
 		}
+		
+		
+		
+
+	
+		
+		
 		else if(uri.equals("/introduce/12345679be9e6b7a00002be9e6b7a0d.html"))
 		{
 			request.getRequestDispatcher("/introduce/contact.jsp").forward(request, response);
@@ -135,6 +149,20 @@ public class RewriteFilter implements Filter
 			String categoryId = matcher.group(1);
 			String subcategoryId = matcher.group(2);
 			request.getRequestDispatcher("/more.jsp?categoryId=" + categoryId + "&subcategoryId=" + subcategoryId + "&pageIndex=1").forward(request, response);
+		}
+		else  if ((matcher = _viewCategoryURLPattern.matcher(uri)).find())
+			
+		{ 
+			String categoryId = "introduce";
+			int pageIndex = 1;
+			try
+			{
+				pageIndex = Integer.parseInt(matcher.group(1));
+			}
+			catch (Exception e) {}
+			request.getRequestDispatcher("/introduce/view.jsp?categoryId=" + categoryId + "&pageIndex=" + pageIndex).forward(request, response);
+		
+			
 		}
 		else
 		{

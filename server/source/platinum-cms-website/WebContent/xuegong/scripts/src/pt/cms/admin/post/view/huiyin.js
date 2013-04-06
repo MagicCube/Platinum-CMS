@@ -1,9 +1,15 @@
+
+
+
 $(function(){
 	$("#huiyinbi").click(function(){$("#exittb").css({"display":"block"});$("#huiyintb").css({"display":"block"});});
 	$("#exittb").click(function(){$("#exittb").css({"display":"none"});$("#huiyintb").css({"display":"none"});  });
    
 
 })
+
+
+
 
 function myFunction()
 {   
@@ -19,12 +25,12 @@ function myFunction()
 	     
 	
 	   var me = $extend(mx.view.ViewController);
-	   var base = {};
-	   if (true)
-       {  alert("dfsfdsf");
-           return me.restClient.PUT("admin/post/" + post.id, { _post: JSON.stringify(_post) })
-           alert("dfsfdsf");  
-       }    
+	  
+	
+     alert("dfsfdsf");
+     return me.restClient.PUT("admin/post/" + post.id, { _post: JSON.stringify(_post) })
+      alert("dfsfdsf");  
+     
 	 
 
 
