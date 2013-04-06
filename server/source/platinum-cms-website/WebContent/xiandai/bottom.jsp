@@ -108,7 +108,7 @@
 			</div> -->
 			
 			<div id="website">
-				<p><a href="http://www.nnuzc.cn">www.nnuzc.cn</a></p>
+				<p style="padding-left:3px;line-height:20px;">2013 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院</p>
 				<p>南京市栖霞区仙林大学城学林路2号 210046</p>
 			</div>
     		
