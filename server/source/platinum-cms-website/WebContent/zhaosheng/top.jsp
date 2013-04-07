@@ -37,10 +37,31 @@
 		<li class = "singleMenu"><a href = "http://zbzs.njnu.edu.cn/enrol/guestbook/guestbook.asp" target="_blank">考生问答</a>
 		<!-- <li class = "singleMenu"><a href = "/zhaosheng/sc000000000000000000000000000180/more/">考生问答</a> -->
 		</li>
-
-
 	</menu>
 </div>
+
+	<div id="cebian">
+		<div id="cebianTitle">联系我们</div>
+		<div id="cebianContent">
+			
+		</div>
+	</div>
+
+	<script type = "text/javascript">
+		$("#cebian").click(function(){
+			$("#cebianTitle").css("display","none");
+			$("#cebianContent").css("display","block"); 
+			$("#cebianContent").animate({
+			    width: "150px",
+			  }, 300);
+		});
+		$("#cebianContent").mouseleave(function(){
+			$("#cebianContent").css("display","none");
+			$("#cebianTitle").css("display","block");
+			$("#cebianContent").css("width","0");
+		});
+	</script>
+	
 	<div id = "bodyContent">
 	<% if (request.getParameter("displaySideBar").equals("true")) {%>
 		<div id="sideBar">
