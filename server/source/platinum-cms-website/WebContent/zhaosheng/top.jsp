@@ -43,7 +43,19 @@
 	<div id="cebian">
 		<div id="cebianTitle">联系我们</div>
 		<div id="cebianContent">
-			
+			<div id ="shengwei" ></div>
+    		<div id = "cebianshang"  >
+        		欢迎报考南京师范大学中北学院
+        	</div>
+       	 	<div class = "cebian">
+        		学院代码：江苏省内代码1808，国家代码13906
+        	</div>
+        	<div class = "cebian">
+        		咨询电话： 025-85898048
+        	</div>
+        	<div class = "cebian">
+        		学院地址：江苏省南京市仙林大学城学林路2号
+        	</div>
 		</div>
 	</div>
 
@@ -52,7 +64,7 @@
 			$("#cebianTitle").css("display","none");
 			$("#cebianContent").css("display","block"); 
 			$("#cebianContent").animate({
-			    width: "150px",
+			    width: "300px",
 			  }, 300);
 		});
 		$("#cebianContent").mouseleave(function(){

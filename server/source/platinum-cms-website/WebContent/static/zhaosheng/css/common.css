@@ -540,11 +540,11 @@ li a #title:hover
 #cebian{
 	position:absolute;
 	z-index:1000;
-	top:130px;
+	top:150px;
 	left:0;
 }
 #cebianTitle{
-	margin-top:80px;
+	margin-top:100px;
 	width:23px;
 	height:92px;
 	background-color:#ee911a;
@@ -555,23 +555,23 @@ li a #title:hover
 	color:#FFF;
 	font-family:微软雅黑;
 	padding:13px 0 0 3px;
+	display:block;
 }
 #cebianContent{
-	width:0px;
+	width:o;
 	/*width:150px;*/
-	height:300px;
-	background-color:#eea548;
+	height:115px;
+	background-color:#ee911a;
 	border-radius:0 15px 15px 0;
 	display:none;
+	color:#FFF;
+	margin:2px; 
 }
 
+#shengwei{ width:280px; height:10px; }
 
+.cebian{ margin-top:2px; width:300px; height:20px; font-size:14px;}
 
-
-
-
-
-
-
+#cebianshang{margin-top:2px; width:290px; height:25px; font-size:16px;color:#FFF;font-weight:bold; text-align:center;}
 
 /*END*/
