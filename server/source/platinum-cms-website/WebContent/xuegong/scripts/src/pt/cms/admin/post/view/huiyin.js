@@ -24,12 +24,12 @@ function myFunction()
 	   _post.title=title; 
 	     
 	
-	   var me = $extend(mx.view.ViewController);
+	 alert(_post.title);
 	  
 	
-     alert("dfsfdsf");
-     return me.restClient.PUT("admin/post/" + post.id, { _post: JSON.stringify(_post) })
-      alert("dfsfdsf");  
+    
+     
+       
      
 	 
 
