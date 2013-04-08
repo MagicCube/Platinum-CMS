@@ -155,10 +155,10 @@ public class PostAdminResource extends AbstractResource
 			return responseWithException("没有找到标识为“" + p_id + "”的文章。");
 		}
 	}
-	@PUT
-	@Path("nihao")
+	@POST
+	@Path("/")
 	public Response callbacksave(
-			@FormParam("post") String p_postJSONString
+			@FormParam("strCallBackMess") String p_postJSONString
 			) throws JSONException
 		{   
 			

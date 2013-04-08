@@ -1,6 +1,5 @@
 
 
-
 $(function(){
 	$("#huiyinbi").click(function(){$("#exittb").css({"display":"block"});$("#huiyintb").css({"display":"block"});});
 	$("#exittb").click(function(){$("#exittb").css({"display":"none"});$("#huiyintb").css({"display":"none"});  });
@@ -22,11 +21,25 @@ function myFunction()
 	   _post.name=name;
 	   _post.content=content;
 	   _post.title=title; 
-	     
-	
-	 alert(_post.title);
+	   var  baseUrl = "/api/0/";  
+	   var p_path="admin/post/"
+	   var CallBackMess={name:_post.name,content:_post.content,title:_post.title};
+	   var strCallBackMess = JSON.stringify(CallBackMess);
+	   
 	  
-	
+	   
+	   var url = baseUrl + p_path;	  
+	   $.ajax({
+           type: "POST",
+           url: url,
+           data:strCallBackMess 
+       });
+	  
+	  
+
+	   alert("sdfsfdsf");
+
+
     
      
        
