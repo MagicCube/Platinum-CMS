@@ -23,17 +23,15 @@
 	<menu id = "mainmenu">
 		<li class = "singleMenu"><a href = "/xiandai/">首页</a>
 		</li>
-		<li class = "singleMenu"><a href = "/xiandai/sc000000000000000000000000000188/more/" >中心概况</a>
+		<li class = "singleMenu"><a href = "/xiandai/ff8081813dee52cc013df19a9cb00005.html" >中心概况</a>
 		</li>
 		<li class = "singleMenu"><a href = "/xiandai/sc000000000000000000000000000189/more/">规章制度</a>
 		</li>
-		<li class = "singleMenu"><a href = "/xiandai/sc000000000000000000000000000190/more/">项目建设</a>
-		</li>
-		<li class = "singleMenu"><a href = "/xiandai/sc000000000000000000000000000191/more/">服务指南</a>
-		</li>
-		<li class = "singleMenu"><a href = "/xiandai/sc000000000000000000000000000192/more/">技术概况</a>
+		<li class = "singleMenu"><a href = "/xiandai/sc000000000000000000000000000190/more/">技术支持</a>
 		</li>
 		<li class = "singleMenu"><a href = "/xiandai/sc000000000000000000000000000193/more/" >培训考试</a>
+		</li>
+		<li class = "singleMenu"><a href = "#" >学习园地</a>
 		</li>
 
 

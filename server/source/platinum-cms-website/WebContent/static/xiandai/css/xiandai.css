@@ -90,7 +90,7 @@ img
 	width: 200px;	
 	margin: 0;
 	padding : 0;
-	height: 300px;
+	height: 186px;
 	float:left;
 	margin-top:15px;
 	margin-left:10px;
@@ -390,7 +390,7 @@ text-align: center;
 
 .kslink
 {
-	margin-top:5px;
+	margin-top:9px;
 	display:block;
 	width:194px;
 	height:45px;
@@ -409,16 +409,14 @@ text-align: center;
 {
 	display:block;
 	width:100%;
-	height:60px;
+	height:30px;
 } 
 .reTitle
 {
 	margin-top:5px;
-	line-height:55px;
+	line-height:40px;
 	font-size:20px;
 	font-weight:bold;
-	padding-left:60px;
-	background-image:url(/static/xiandai/image/dianhua.gif);
 	background-repeat:no-repeat;
 }
 .reNum
@@ -429,6 +427,6 @@ text-align: center;
 }
 #fenge
 {
-	height:55px;
+	height:30px;
 	border-bottom:2px dotted #888;
 }

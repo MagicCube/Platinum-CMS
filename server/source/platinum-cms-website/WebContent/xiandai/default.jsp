@@ -70,10 +70,10 @@
 					<img src="../static/xiandai/image/jiaoshi.gif" width="194" height="45"/>
 				</a>
 				<a class="kslink" href="#">
-					<img src="../static/xiandai/image/shiwu.gif" width="194" height="45"/>
+					<img src="../static/xiandai/image/wenti.gif" width="194" height="45"/>
 				</a>
 				<a class="kslink" href="#">
-					<img src="../static/xiandai/image/wenti.gif" width="194" height="45"/>
+					<img src="../static/xiandai/image/shiwu.gif" width="194" height="45"/>
 				</a>
 			</div>
             
@@ -83,10 +83,16 @@
 				<span class="reTitle">新北区办公室</span>
 				<strong class="reNum" id="fenge" style="padding-left:15px;">025-87721056</strong>
 				<span class="reTitle">老北区办公室</span>
-				<strong class="reNum" style="padding-left:15px;">025-85891616</strong>
+				<strong class="reNum" id="fenge" style="padding-left:15px;">025-85891616</strong>
+				
 			</div>
-
-
+			<img src="/static/xiandai/image/arrow.gif" style="position:absolute;top:568px;right:200px;"  />
+			<div style="position:absolute;top:502px;right:10px;width:185px;height:94px;border:3px solid #198fbf;">
+				<marquee direction="up" height="90" scrollamount="1">
+					<span>（ 失物招领滚动信息）</span>
+				</marquee>
+			</div>
+			
 
 		</div>
 		
