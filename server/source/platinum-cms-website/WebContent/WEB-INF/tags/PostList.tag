@@ -121,3 +121,8 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 <% }%>
 </ul>
 
+<script>
+if($('#side').length > 0) 
+	$('#more').css('min-height','480px');
+	$('#more .PostList').css('min-height','430px');
+</script>

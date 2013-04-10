@@ -638,10 +638,10 @@ list-style:none;
 	width: 250px;
 }
 #textContent{	float:right;width:410px;padding:10px 0 0 0;}
-#textContent > #content{width:400px;}
+#textContent > #content{width:385px;}
 #textContent, #content
 {
-	margin:0px 10px 0px 10px;
+	margin:0px auto;
 }
 #textContent #title,#postDetail #title
 {
@@ -661,7 +661,7 @@ list-style:none;
 	margin:5px 5px 5px 5px;
 }
 /*摘要*/
-#summary{margin:10px;padding:10px;width:720px;}
+#summary{margin:10px;padding:10px;width:700px;}
 
 /*滚动新闻图片*/
 .block_home_slider {
@@ -695,7 +695,7 @@ line-height:20px;
 #postList li {max-width: 780px;}
 #more .PostList{padding-left:10px;border:none;}
 /**/
-.PostDetail #content{width:740px;text-align:center;}
+.PostDetail #content{width:715px;}
 
 /*图片新闻改*/
 #home_slider>#tsztList> li{width:100%;height:100%;display:none;position:relative;}
@@ -704,5 +704,29 @@ line-height:20px;
 #gallery img{display:block;position:absolute;top:0;left:0;}
 .caption>.content{font-size:14px;font-weight:bold;color:#fff;height:25px;}
 
+#content>.MsoNormal{
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height: 150%; 
+	font-family: 宋体;
+	font-size: 12pt; 
+}
 
+#content>div{
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height: 150%; 
+	font-family: 宋体;
+	font-size: 12pt; 
+}
+
+#content{
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height: 150%; 
+	font-family: 宋体;
+	font-size: 12pt; 
+}
+#content table{text-indent: 0;}
+#content table div{text-indent: 0;}
 
