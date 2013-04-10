@@ -32,11 +32,13 @@
     <!--左侧边栏开始-->
    <div id="side">
     <ul id="xibu_link">
+      <div id="xibuFirst">	
       <li class="xibu"><img src="/static/faculty/images/nav_link_first.png" width="4" height="7" />
         <a href="/gongguan/">
           首页
         </a>
       </li>
+    </div>
       <li class="xibu"><img src="/static/faculty/images/GongGuan_nav_link.png" width="4" height="7" />
         <a href="http://zbvip.njnu.edu.cn/vip/">
           教工之家
