@@ -19,7 +19,7 @@ html
 {
 	padding: 0;
 	margin: 0;
-	overflow-x: hidden;
+	overflow-x: hidden; 
 	overflow-y:auto; 	
 }
 
@@ -558,14 +558,14 @@ li a #title:hover
 	display:block;
 }
 #cebianContent{
-	width:o;
-	/*width:150px;*/
-	height:115px;
-	background-color:#ee911a;
-	border-radius:0 15px 15px 0;
-	display:none;
-	color:#FFF;
-	margin:2px; 
+	width: 0;
+	height: 115px;
+	background-color: #ee911a;
+	border-radius: 0 15px 15px 0;
+	display: none;
+	color: #FFF;
+	padding: 2px;
+	margin-top: 95px;
 }
 
 #shengwei{ width:280px; height:10px; }

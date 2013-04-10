@@ -17,7 +17,7 @@
        					<input type = "submit" name = "button" class = "button" value = "" />
       				</label>
    				</form>
-			</div>
+			</div> 
 		</div>	
   	</div>
 	

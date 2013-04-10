@@ -7,7 +7,7 @@
 <title>南京师范大学中北学院招生就业</title>
 
 
-<link href = "/static/common/css/basic.css" rel = "stylesheet"></link>
+<link href = "/static/common/css/basic.css" rel = "stylesheet"></link> 
 
 <script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>	
 <!-- FlexSlider start -->
