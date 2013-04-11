@@ -33,8 +33,7 @@ ul > li a > div
 	left: 15px;
 	top: 10px;
 	margin: 0;
-	padding: 0 10px 0 0;
-	width: 280px;
+	width: 290px;
 	height: 273px;
 	border:1px solid #009bcb;
 	border-radius:0 0 0 15px;
@@ -302,8 +301,10 @@ font-weight: bold;
 	width:40px;
 	height:15px;
 	display:block;
-	margin: 8px 0 0 251px;
 	font-size: 14px;
+	position:absolute;
+	bottom:-1px;
+	right:-1px;
 }
 
 #emNews .m_More
