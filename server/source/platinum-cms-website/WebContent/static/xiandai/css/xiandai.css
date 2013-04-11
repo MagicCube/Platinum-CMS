@@ -430,3 +430,17 @@ text-align: center;
 	height:30px;
 	border-bottom:2px dotted #888;
 }
+
+/*失物招领*/
+#inform
+{
+	margin:0;
+	padding:0;
+}
+
+#inform>li
+{
+	
+}
+/*END*/
+
