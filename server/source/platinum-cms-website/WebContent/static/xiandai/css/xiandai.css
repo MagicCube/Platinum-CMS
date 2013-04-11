@@ -438,9 +438,9 @@ text-align: center;
 	padding:0;
 }
 
-#inform>li
+#inform>li>div
 {
-	
+	line-height:25px;
 }
 /*END*/
 

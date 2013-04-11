@@ -90,7 +90,7 @@
 			<div style="position:absolute;top:502px;right:10px;width:185px;height:94px;border:3px solid #198fbf;">
 				<marquee direction="up" height="90" scrollamount="1">
 					<span style="display:block;width:144px;height:16px;margin-left:20px;color:#0d5791;">[失物招领滚动信息]</span>
-					<cms:ZlPostList id = "inform" subcategoryId="sc000000000000000000000000000387" count="6" />
+					<cms:ZlPostList id = "inform" subcategoryId="sc000000000000000000000000000387" count="10" />
 				</marquee>
 			</div>
 			

@@ -99,6 +99,7 @@ else if (StringUtil.notNullOrEmpty(categoryId))
     }
 }
 %>
+<%int i = 1; %>
 <ul id="${id}" class="PostList ${cssClass}">
 <% for (PostEntity post : posts) {%>
 <li id="<%= post.getId()%>">
@@ -106,7 +107,8 @@ else if (StringUtil.notNullOrEmpty(categoryId))
         <% if (displayPhoto) {%>
         <img src='<%= post.getPhotoURL()%>' />
         <% } %>
-        <div id="title"><%= post.getTitle()%><%="\t时间:"+DateUtil.formatDate(post.getCreateTime(), "M月d日") %></div>
+        <div id="title"><%=i+++"、"+post.getTitle()%></div>
+        <div id="Ztime" style="float:right;width:100%;text-align:right;"><%="时间:"+DateUtil.formatDate(post.getCreateTime(), "yyyy年M月d日") %></div>
         <% if (displaySummary != null && displaySummary) {%>
         <div id="summary"><%= post.getSummary()%></div>
         <% } %>
