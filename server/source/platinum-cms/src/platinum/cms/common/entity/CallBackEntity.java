@@ -13,16 +13,7 @@ import platinum.framework.entity.StandardEntity;
 public class CallBackEntity extends StandardEntity
 { 
 	
-	private String _categoryID = null;
-	@Column(name = "CATEGORY_ID")
-	public String getCategoryId()
-	{
-		return _categoryID;
-	}
-	public void setCategoryId(String value)
-	{
-		_categoryID = value;
-	}
+
 	
 	private String _title;
 	@Column(name = "TITLE")

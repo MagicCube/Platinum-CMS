@@ -64,7 +64,7 @@
 			<span class="spanimg"><img src = "/static/xuegong/images/xibu.png"/></span>
          		<cms:PostList id = "xbkxlist" subcategoryId = "sc000000000000000000000000000031" count = "5"/>         		
 				<span class="mainMore"><a href = "/xuegong/sc000000000000000000000000000031/more/">更多>></a></span>
-				<!--  <div id="huiyinbi"></div>-->
+				<div id="huiyinbi"></div>
 			</div>
 			
 			<div id="huiyintb">

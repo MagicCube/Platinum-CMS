@@ -29,17 +29,24 @@ function myFunction()
 	  
 	   
 	   var url = baseUrl + p_path;	  
-	   $.ajax({
-           type: "POST",
-           url: url,
-           data:strCallBackMess 
-       });
 	  
-	  
+  
+    	var sendObj = {
+     	url :url,
+	    type : "post",
+        dataTyp : "json",
+	    contentType : "application/json; charset=utf-8",
+	    data : strCallBackMess,
+	    success : function(data) {
+	    alert(data);
+	    },
+	    error : function(e) {
+	    	alert("error");
+	    	}
+    	};
 
-	   alert("sdfsfdsf");
-
-
+	
+    	$.ajax(sendObj);
     
      
        
