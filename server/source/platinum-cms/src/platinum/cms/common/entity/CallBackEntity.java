@@ -1,25 +1,11 @@
 package platinum.cms.common.entity;
 
-import java.util.ArrayList;
-import java.util.List;
 
-import javax.persistence.Basic;
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
-import javax.persistence.OrderBy;
-import javax.persistence.Table;
-import javax.persistence.Transient;
 
-import platinum.cms.common.PostStatus;
-import platinum.cms.common.PostType;
-import platinum.cms.common.util.URLResolver;
+import javax.persistence.Table;
+
 import platinum.framework.entity.StandardEntity;
 
 @Entity(name = "CallBack")
