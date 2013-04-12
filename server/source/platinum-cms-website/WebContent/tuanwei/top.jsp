@@ -103,7 +103,7 @@
           <div>部门简介</div>          	
           <ul id="jianjie">
           	<li class="jianjieC"><a href="/tuanwei/ff8081813b50f9a5013b564548d30002.html">团委简介</a></li>
-          	<li class="jianjieC"><a href="/tuanwei/402881e43ddde143013dde4a05b20002.html">组织构架</a></li>
+          	<li class="jianjieC"><a href="/tuanwei/ff8081813df89554013dfc21137d003b.html">组织构架</a></li>
           </ul>
         </li>
         <script type = "text/javascript">
@@ -127,7 +127,7 @@
         </li>
         <li>
           <!-- <a href="/tuanwei/sc000000000000000000000000000153/more/"> -->
-          <a href="/tuanwei/402881e43ddde143013dde52225b0005.html">
+          <a href="/tuanwei/ff8081813df89554013dfc233bf6003e.html">
             学生组织
           </a>
         </li>
