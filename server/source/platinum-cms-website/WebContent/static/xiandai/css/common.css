@@ -443,7 +443,7 @@ table td
 	line-height: 150%; 
 	font-family: 宋体;
 	font-size: 12pt; 
-	text-indent: 2em;
+	/*text-indent: 2em;*/
 }
 
 #content>div{
@@ -452,7 +452,7 @@ table td
 	line-height: 150%; 
 	font-family: 宋体;
 	font-size: 12pt; 
-	text-indent: 2em;
+	/*text-indent: 2em;*/
 }
 
 #content{
