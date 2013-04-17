@@ -18,12 +18,12 @@ var count = 1;
 function select(flag){
 	for(i = 1;i<=4;i++){
 		if(flag==i){
-			$("#post"+i).css({"display":"block"});
-			$("#sel"+i).css({"background-color":"#468d00","color":"#CCC"});
+			$("#post"+i).stop().css({"display":"block"});
+			$("#sel"+i).stop().css({"background-color":"#468d00","color":"#CCC"});
 		}
 		else{
-			$("#post"+i).css({"display":"none"});
-			$("#sel"+i).css({"background-color":"#CCC","color":"#468d00"});
+			$("#post"+i).stop().css({"display":"none"});
+			$("#sel"+i).stop().css({"background-color":"#CCC","color":"#468d00"});
 		}
 	}
 }
