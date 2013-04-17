@@ -19,11 +19,11 @@ function select(flag){
 	for(i = 1;i<=4;i++){
 		if(flag==i){
 			$("#post"+i).css({"display":"block"});
-			$("#sel"+i).css({"background-color":"#78ac5a","color":"#FFF"});
+			$("#sel"+i).css({"background-color":"#78ac5a","color":"#CCC"});
 		}
 		else{
 			$("#post"+i).css({"display":"none"});
-			$("#sel"+i).css({"background-color":"#FFF","color":"#78ac5a"});
+			$("#sel"+i).css({"background-color":"#CCC","color":"#78ac5a"});
 		}
 	}
 }
