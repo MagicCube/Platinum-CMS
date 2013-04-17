@@ -92,9 +92,6 @@ div.category_1 h3
 }
 #ja-containerwrap-fr .category_1 a
 {
-	display:block;
-	width:310px;
-	height:37px;
 	color:#000;
 }
 #left_part .latestnews_menu
@@ -155,7 +152,7 @@ div.category_1 h3
 {
 	padding-left: 20px;
 	margin: 0;
-	width:270px;
+	width:290px;
 	line-height:25px;
 	background: url(/static/jiaowu/images/list.png) no-repeat 5px 50%;
 	text-overflow: ellipsis;
@@ -179,16 +176,25 @@ div.category_1 h3
 }
 
 #ja-containerwrap-fr #right_part .menu a {
-padding: 2px 0;
-display: block;
-text-decoration: none;
-outline: none;color: #7BA566; }
+	padding: 2px 0;
+	text-decoration: none;
+	outline: none;
+	color: #7BA566; 
+}
+#ja-containerwrap-fr #right_part .menu a span{
+	font-size:14px;
+	line-height:20px;
+}
 #ja-containerwrap-fr #right_part .menu a:hover { padding: 2px 0;
-display: block;
-text-decoration: none;
-outline: none;
-background-color:rgb(221, 221, 221); }
-
+	display: block;
+	text-decoration: none;
+	outline: none;
+	background-color:rgb(221, 221, 221); 
+}
+#ja-containerwrap-fr #right_part .menu a #title{
+	width:250px;
+	text-overflow: ellipsis;
+}
 
 
 #changYong{ height:150px;}
@@ -206,10 +212,9 @@ div.moduletable, div.moduletable_menu, div.moduletable_text
 
 #right_part .latestnews_menu 
 {
-	height:22px;
+	height:220px;
 	line-height:22px;
 	margin-top:5px;
-	padding-left:10px;
 }
 #right_part .menu
 {
@@ -222,7 +227,7 @@ div.moduletable, div.moduletable_menu, div.moduletable_text
 	border-bottom-style: dashed;
 	border-bottom-color: #CCC;
 	height:22px;
-	line-height:22px;
+	line-height:16px;
 	margin-top:5px;
 }
 
@@ -255,7 +260,6 @@ div.moduletable h3, div.moduletable_menu h3, div.moduletable_text h3
 
 #right_part ul li, #ja-col2 ul li
 {
-	padding-top:3px;
 	padding-left: 15px;
 	line-height:18px;
 	margin: 0;
@@ -266,7 +270,7 @@ div.moduletable h3, div.moduletable_menu h3, div.moduletable_text h3
 	overflow: hidden;
 	font-size: 15px;
 	color:#000000;
-
+	margin-top:3px;
 }
 #tongzhi{height:280px;}
 #guoji{height:200px;}
@@ -283,3 +287,6 @@ div.moduletable h3, div.moduletable_menu h3, div.moduletable_text h3
 #news1{ top:55px; left:295px;}
 #news2{top:95px; left:295px;}
 #news3{top:132px; left:295px;}
+
+#ja-containerwrap-fr .category_1 #jwxwlist a{display:inline;}
+#ja-containerwrap-fr .category_1 #jwxwlist a>#title{width:270px;}

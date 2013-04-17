@@ -31,8 +31,9 @@
               <div id = "news3"class = "news"> 
               </div>
               
-              	<cms:PostList id = "jwxwlist" cssClass = "latestnews_menu" subcategoryId = "sc000000000000000000000000000046" count = "6"/>
-                <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000046/more/">更多...</a></p>
+              	
+             	<cms:PostList id = "jwxwlist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000045" displayDate="true" count = "6"/>  
+                <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000045/more/">更多...</a></p>
               </div>
       
             <div class="category_1">
@@ -102,7 +103,7 @@
           <div id="right_part">
             <div class="moduletable_menu" id="tongzhi" >
               <h3 style="margin-top:10px;">教务新闻</h3>
-             <cms:PostList id = "zztglist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000045" displayDate="true" count = "7"/>  
+              <cms:PostList id = "zztglist" cssClass = "latestnews_menu" subcategoryId = "sc000000000000000000000000000046" count = "6"/>
             </div>
             
 			<hr style="text-align:center; width:90%; margin-left:10px;" />
@@ -147,6 +148,11 @@
             <div class="moduletable_menu">
               <h3>常用菜单</h3>
               <ul class="menu">
+              	<li class="link_2">
+                  <a href="http://jwc.njnu.edu.cn/" target="_blank">
+                    <span>菁林园</span>
+                  </a>
+                </li>
                 <li class="link_2">
                   <a href="http://222.192.5.246/" target="_blank">
                     <span>教务系统</span>
@@ -170,7 +176,9 @@
               <cms:PostList id = "jxyjlist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000051" count = "4"/>
               <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000051/more/">更多...</a></p>
           </div>
-           
+           <div id="old" style="text-align:right;margin-top:45px;">
+           	<a href="http://zbzs.njnu.edu.cn/trch/" target="_blank">点击这里:教务处老网站！ </a>
+           </div>
             
           </div>
           <!-- END: RIGHT COLUMN -->          

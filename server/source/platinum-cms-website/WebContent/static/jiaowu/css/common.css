@@ -48,7 +48,13 @@ html, body
 body { /*background-color: #cfcfcf; */background:url(/static/faculty/common/images/body_bg.png);}
 ul { list-style: none; }
 
+#content p,#content span{
+	font-size:12pt;
+}
 
+#content p{
+	margin-bottom:6px;
+}
 
 #header
 {
@@ -566,7 +572,7 @@ color: #7BA566;
 
 #more li{position:relative;}
 
-a #title{width:560px;color:#000;overflow:hidden;line-height:30px;}
+a #title{width:295px;color:#000;overflow:hidden;line-height:30px;text-overflow: ellipsis;}
 a #title:hover{color:#808080;}
 #categoryNavigationBar{width:700px;}
 #title_style span{position:absolute;top:8px;right:5px;}
