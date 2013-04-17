@@ -55,6 +55,7 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 
 <script src="static/common/scripts/lib/bxslider/jquery.bxslider.min.js" type="text/javascript"></script>
 <script src="static/common/scripts/lib/bxslider/jquery.bxslider.js" type="text/javascript"></script>
+<script src="static/common/scripts/lib/bxslider/select.js" type="text/javascript"></script>
 <link href="static/common/scripts/lib/bxslider/jquery.bxslider.css" rel="stylesheet" />
 
 <script>

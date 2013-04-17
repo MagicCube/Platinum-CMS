@@ -385,3 +385,25 @@ a #title:hover
 }
 #content table{text-indent: 0;}
 #content table div{text-indent: 0;}
+
+/*图片新闻选择*/
+#select{
+	position:absolute;
+	width:90px;
+	height:20px;
+	bottom:0;
+	right:0;
+	z-index:10000;
+}
+.selectC{
+	margin:3px 5px 0 0;
+	width:15px;
+	height:15px;
+	float:left;
+	background-color:#FFF;
+	cursor:pointer;
+	line-height:15px;
+	text-align:center;
+	color:#78ac5a;
+}
+/*END*/

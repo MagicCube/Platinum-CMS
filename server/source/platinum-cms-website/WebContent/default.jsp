@@ -28,9 +28,14 @@ request.setCharacterEncoding("utf-8");
 	
 		<div id="middle">
 			<div id="photoslider">
+				<ul id="select">
+						<li class="selectC" id="sel1">1</li>
+						<li class="selectC" id="sel2">2</li>
+						<li class="selectC" id="sel3">3</li>
+						<li class="selectC" id="sel4">4</li>
+				</ul>
 				<!-- <div id="tpxwMorelabel"><a href="/news/sc000000000000000000000000000006/more/">更多</a></div> -->
 				<cms:PhotoSlide id="tsztList" cssClass="bxslider" subcategoryId="sc000000000000000000000000000006" displayPhoto="true" count="4" />	
-				
 			</div>
 			
 			<div id="news">
