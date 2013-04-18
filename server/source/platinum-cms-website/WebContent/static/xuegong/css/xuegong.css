@@ -165,7 +165,7 @@
 	background-image: url(/static/xuegong/images/list.png);
 	background-repeat: no-repeat;
 	padding-bottom:3px;
-	border-bottom:1px solid #ccc;
+	border-bottom:1px dashed #326c37;
 }
 
 #xgcontent > #mainContent > #informs ul
@@ -187,7 +187,7 @@
 	background-image: url(/static/xuegong/images/list.png);
 	background-repeat: no-repeat;
 	padding-bottom:3px;
-	border-bottom:1px solid #ccc;
+	border-bottom:1px dashed #326c37;
 }
 
 #xgcontent > #mainContent > #teaching ul
@@ -210,7 +210,7 @@
 	background-image: url(/static/xuegong/images/list.png);
 	background-repeat: no-repeat;
 	padding-bottom:3px;
-	border-bottom:1px solid #ccc;
+	border-bottom:1px dashed #326c37;
 }
 
 #xgcontent > #mainContent > #email ul
@@ -233,7 +233,7 @@
 	background-image: url(/static/xuegong/images/list.png);
 	background-repeat: no-repeat;
 	padding-bottom:3px;
-	border-bottom:1px solid #ccc;
+	border-bottom:1px dashed #326c37;
 }
 
 #more

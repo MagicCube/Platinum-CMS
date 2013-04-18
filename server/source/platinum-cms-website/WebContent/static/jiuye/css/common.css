@@ -508,9 +508,11 @@ ul.TextList li
 	line-height: 150%; 
 	font-family: 宋体;
 	font-size: 12pt; 
+	padding:0 10px;
 	/*text-indent: 2em;*/
 }
-#content table{text-indent: 0;}
+#content table{text-indent: 0;display:block;max-width:650px;}
+#content table tr{max-width:650px;display:block;}
 #content table div{text-indent: 0;}
 
 /*就业链接*/
@@ -530,7 +532,15 @@ ul.TextList li
 	display:block;
 	height:50px;
 }
-
-
-
 /*END*/
+
+/*就业联盟版块*/
+#union{
+	position:absolute;
+	top:300px;
+	right:10px;
+}
+
+
+
+/*End*/

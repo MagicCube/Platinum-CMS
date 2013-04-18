@@ -358,7 +358,7 @@ table td a
 	width: 650px;
 	border: 1px dashed #BBB;
 	border-top: 1px dotted #BBB;
-	padding:0;
+	padding:0 10px;
 }
 #postList #pageNavigationBar 
 {
@@ -671,3 +671,4 @@ a #title:hover {
 }
 #content table{text-indent: 0;}
 #content table div{text-indent: 0;}
+#xgcontent a #title{font-size:13.5px;}

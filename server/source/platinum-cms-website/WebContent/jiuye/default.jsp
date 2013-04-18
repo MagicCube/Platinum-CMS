@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+ <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="cms" tagdir="/WEB-INF/tags" %>  
 
@@ -54,17 +54,21 @@
              
             </div>
             
-            <div id = "zyghNews">
-            	 <span><img src="/static/jiuye/images/jyzd.jpg"/></span>
+            <!--<div id = "zyghNews">
+            	  <span><img src="/static/jiuye/images/jyzd.jpg"/></span>
                	 <cms:PostList id = "gzdtlist" subcategoryId = "sc000000000000000000000000000151" count = "8"/>
                	 <span class = "m_More"><a href = "/jiuye/sc000000000000000000000000000151/more/"> </a></span>
+            	
+            </div> -->
+            <div id="union">
+            	<script language="javascript" src="http://meeting.91job.gov.cn/job-window.asp?school=13906"></script>
             </div>
      
-            <div id = "jyzdNews">
+            <!--<div id = "jyzdNews">
             	 <span><img src="/static/jiuye/images/zcfg.jpg"/></span>
                	 <cms:PostList id = "gzdtlist" subcategoryId = "sc000000000000000000000000000149" count = "8"/>
                	 <span class = "m_More"><a href = "/jiuye/sc000000000000000000000000000149/more/"> </a></span>
-            </div>   
+            </div>-->   
           </div>
     <div id="jiuyeLink">
     	<a href="http://lm.jshrss.gov.cn/sy2010/main/" target="_blank" class="jiuyeLink" style="width:240px;"><img src="/static/jiuye/images/jshrss.gif" height="50" width="240" /></a>
