@@ -204,7 +204,7 @@ input
 #downlist
 {
 	display: none;
-	width: 180px;
+	width: 150px;
 	padding: 0;
 	margin: 0;
 	background: url(../images/menuopacity.png);
@@ -229,12 +229,16 @@ input
 	text-decoration: none;
 	text-align: left;
 	color: white;
-	margin-left: 10px;
+	margin-left:25px;
+}
+
+#downlist > li:hover{
+	background-color:#366c00;
 }
 
 #downlist > li > a:hover
 {
-	color: yellow;
+	color: #FFF;
 }
 
 #footer

@@ -71,11 +71,16 @@
             </div>-->   
           </div>
     <div id="jiuyeLink">
-    	<a href="http://lm.jshrss.gov.cn/sy2010/main/" target="_blank" class="jiuyeLink" style="width:240px;"><img src="/static/jiuye/images/jshrss.gif" height="50" width="240" /></a>
-    	<a href="http://www.51job.com/" target="_blank" class="jiuyeLink" style="width:120px;"><img src="/static/jiuye/images/51job.gif" height="50" width="120" /></a>    	
-    	<a href="http://www.chinajob.gov.cn/" target="_blank" class="jiuyeLink" style="width:190px;"><img src="/static/jiuye/images/chinajob.jpg" height="50" width="190" /></a>
-    	<a href="http://www.yingjiesheng.com/" target="_blank" class="jiuyeLink" style="width:160px;"><img src="/static/jiuye/images/yjs.gif" height="50" width="160" /></a>   	
-    	<a href="http://www.91job.gov.cn/" target="_blank" class="jiuyeLink" style="width:225px;padding:5px 0;height:40px;"><img src="/static/jiuye/images/91job.gif" height="40" width="225" /></a>
+    	<a href="http://lm.jshrss.gov.cn/sy2010/main/" title="公共就业服务网" target="_blank" class="jiuyeLink" style="width:240px;"><img src="/static/jiuye/images/jshrss.gif" height="50" width="240" /></a>
+    	<a href="http://www.51job.com/" title="前程无忧" target="_blank" class="jiuyeLink" style="width:120px;"><img src="/static/jiuye/images/51job.gif" height="50" width="120" /></a>    	
+    	<a href="http://www.njrsrc.com/hrc/" title="南京人才市场" target="_blank" class="jiuyeLink" style="width:190px;"><img src="/static/jiuye/images/njrsrc.jpg" height="50" width="190" /></a>
+    	<a href="http://www.njrsrc.com/" title="南京人事人才网" target="_blank" class="jiuyeLink" style="width:160px;"><img src="/static/jiuye/images/njrcw.gif" height="50" width="160" /></a>   	
+    	<a href="http://www.91job.gov.cn/" title="江苏省高校招生就业指导服务中心，江苏省大学生信息服务中心" target="_blank" class="jiuyeLink" style="width:225px;padding:5px 0;height:40px;background-color:#FFF;"><img src="/static/jiuye/images/91job.gif" height="40" width="225" /></a>
+    	<a href="http://www.szrc.cn/" title="苏州人才网" target="_blank" class="jiuyeLink" style="width:165px;padding:0 5px;background-color:#FFF;"><img src="/static/jiuye/images/szrc.gif" height="50" width="165" /></a>
+    	<a href="http://www.wxrcw.com/" title="无锡人才服务网" target="_blank" class="jiuyeLink" style="width:250px;"><img src="/static/jiuye/images/wxrcw.gif" height="50" width="250" /></a>
+    	<a href="http://www.kshr.com.cn/" title="昆山人才网" target="_blank" class="jiuyeLink" style="width:170px;"><img src="/static/jiuye/images/kshr.gif" height="50" width="170" /></a>
+    	<a href="http://www.czrc.com.cn/" title="常州人才网" target="_blank" class="jiuyeLink" style="width:200px;"><img src="/static/jiuye/images/czrcw.gif" height="50" width="200" /></a>
+    	<a href="http://www.ychr.com/" title="盐城人才网" target="_blank" class="jiuyeLink" style="width:140px;background-color:#FFF;"><img src="/static/jiuye/images/ychr.gif" height="50" width="140" /></a>
     </div>
           
 	<cms:Footer path="jiuye"/>

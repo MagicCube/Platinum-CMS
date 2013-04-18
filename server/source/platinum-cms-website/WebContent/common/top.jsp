@@ -51,7 +51,7 @@ request.setCharacterEncoding("utf-8");
 	    <li><a target="_blank">学生工作</a>
 	        <ul id="downlist" num="2">
 	            <li><a href="/xuegong" target="_blank">学 工 处</a></li>
-	            <li><a href="/tuanwei" target="_blank">团&nbsp;&nbsp;&nbsp;&nbsp;委</a></li>            
+	            <li><a href="/tuanwei" target="_blank">团&nbsp;&nbsp;&nbsp;&nbsp;委</a></li>
 	        </ul>
 	    </li>
    		<li><a href="/zuzhi" target="_blank">组织人事</a></li>
