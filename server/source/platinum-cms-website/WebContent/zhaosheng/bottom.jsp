@@ -126,3 +126,6 @@
     </div>
 
     </div>
+    <script>
+    if($('#imageContent').length>0) {$('#postDetail').css({"border-right":"1px solid #CCC","width":"988px"});}
+    </script>

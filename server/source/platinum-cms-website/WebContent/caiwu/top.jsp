@@ -17,6 +17,9 @@
       				</label>
    				</form>
 			</div>
+			<div id="caiwuSystem" style="width:200px;height:20px;margin-top:35px;margin-left:35px;">
+   				<a href = "http://210.29.137.29/wingsoft/index.jsp" target="_blank" style="font-size:14px;">南师大财务系统</a>
+   			</div>
 		</div>	
   	</div>
 	
@@ -27,7 +30,7 @@
 		 <li class = "singleMenu"><a href = "/caiwu/sc000000000000000000000000000159/more/">信息公开</a></li>
 		 <li class = "singleMenu"><a href = "/caiwu/sc000000000000000000000000000160/more/">规章制度</a></li>
 		 <li class = "singleMenu"><a href = "/caiwu/sc000000000000000000000000000161/more/">资料下载</a></li>
-		 <li class = "singleMenu"><a href = "http://210.29.137.29/wingsoft/index.jsp" target="_blank">财务系统</a></li>
+		 <!-- <li class = "singleMenu"><a href = "http://210.29.137.29/wingsoft/index.jsp" target="_blank">财务系统</a></li> -->
 
 	</menu>	
 	</div>
