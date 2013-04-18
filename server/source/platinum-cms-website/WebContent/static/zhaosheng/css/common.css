@@ -559,19 +559,19 @@ li a #title:hover
 }
 #cebianContent{
 	width: 0;
-	height: 115px;
+	height: 135px;
 	background-color: #ee911a;
 	border-radius: 0 15px 15px 0;
 	display: none;
 	color: #FFF;
 	padding: 2px;
-	margin-top: 95px;
+	margin-top: 85px;
 }
 
 #shengwei{ width:280px; height:10px; }
 
-.cebian{ margin-top:2px; width:300px; height:20px; font-size:14px;}
+.cebian{ margin-top:2px; width:300px; height:20px; font-size:14px;padding-left:5px;}
 
-#cebianshang{margin-top:2px; width:290px; height:25px; font-size:16px;color:#FFF;font-weight:bold; text-align:center;}
+#cebianshang{margin-top:2px; width:290px; height:25px; font-size:16px;color:#FFF;font-weight:bold; text-align:center;padding-left:5px;}
 
 /*END*/

@@ -45,16 +45,19 @@
 		<div id="cebianContent">
 			<div id ="shengwei" ></div>
     		<div id = "cebianshang"  >
-        		欢迎报考南京师范大学中北学院
+        		欢迎进入南师大中北学院就业指导网站
         	</div>
        	 	<div class = "cebian">
-        		学院代码：江苏省内代码1808，国家代码13906
+        		学院代码:江苏省内代码1808 | 国家代码13906
         	</div>
         	<div class = "cebian">
-        		咨询电话： 025-85898048
+        		咨询电话: 025-85891289 | 联系人:贾老师
         	</div>
         	<div class = "cebian">
-        		学院地址：江苏省南京市仙林大学城学林路2号
+        		<span>E-mail:</span><a href="mailto:zbjy2010@163.com" style="color:#FFF;font-size:14px;">zbjy2010@163.com</a>
+        	</div>
+        	<div class = "cebian">
+        		学院地址:江苏省南京市仙林大学城学林路2号
         	</div>
 		</div>
 	</div>

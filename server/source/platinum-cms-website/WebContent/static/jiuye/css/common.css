@@ -297,7 +297,7 @@ table td
 #bottom2 > #website
 {
 	position: absolute;
-	left: 385px;
+	left: 400px;
 	top: 7px;
 	text-align: center;
 }
@@ -541,6 +541,44 @@ ul.TextList li
 	right:10px;
 }
 
-
-
 /*End*/
+
+/*侧边栏*/
+#cebian{
+	position:absolute;
+	z-index:1000;
+	top:150px;
+	left:0;
+}
+#cebianTitle{
+	margin-top:100px;
+	width:23px;
+	height:92px;
+	background-color:#009bcb;
+	border-radius:0 10px 10px 0;
+	cursor:pointer;
+	font-size:16px;
+	line-height:19px;
+	color:#FFF;
+	font-family:微软雅黑;
+	padding:13px 0 0 3px;
+	display:block;
+}
+#cebianContent{
+	width: 0;
+	height: 135px;
+	background-color: #009bcb;
+	border-radius: 0 15px 15px 0;
+	display: none;
+	color: #FFF;
+	padding: 2px;
+	margin-top: 85px;
+}
+
+#shengwei{ width:280px; height:10px; }
+
+.cebian{ margin-top:2px; width:300px; height:20px; font-size:14px;padding-left:5px;}
+
+#cebianshang{margin-top:2px; width:290px; height:25px; font-size:16px;color:#FFF;font-weight:bold; text-align:center;padding-left:5px;}
+
+/*END*/
