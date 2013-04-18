@@ -18,6 +18,7 @@ import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 
 import platinum.cms.admin.service.PostAdminManager;
+import platinum.cms.runtime.service.PostRuntimeManager;
 import platinum.cms.common.PostStatus;
 import platinum.cms.common.PostType;
 import platinum.cms.common.entity.PostEntity;
@@ -62,7 +63,9 @@ public class PostAdminResource extends AbstractResource
 		}
 		else
 		{
-			posts = PostAdminManager.getInstance().loadPostsByCategory(null, p_pageIndex, p_pageSize);
+		   String _CurrentUser=	  Membership.getInstance().getCurrentUser().getUserRole();
+			posts=PostRuntimeManager.getInstance().loadLatestPostsByCategory(_CurrentUser, false, null, p_pageIndex, p_pageSize);
+			
 		}
 		return responseWithJSONArray(PostJSONSerializer.toSimpleArray(posts));
 	}
