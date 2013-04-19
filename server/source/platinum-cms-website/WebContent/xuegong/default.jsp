@@ -46,10 +46,17 @@
 			<div id = "textNews">
                 <span><img src = "/static/xuegong/images/gongshi.png"/></span>   
                 <span class="mainMore" ><a href = "/xuegong/sc000000000000000000000000000029/more/">更多>></a></span> 
-                <marquee onmouseover="this.stop()"  onmouseout="this.start()" direction="up" height="160" scrollamount="1">    		
+                <marquee onmouseover="this.stop()"  onmouseout="this.start()" direction="up" height="205" scrollamount="1">    		
         			<cms:PostList id = "gslmlist" subcategoryId = "sc000000000000000000000000000029" count = "9"/>         		
         		</marquee>
 				<hr>
+				<ul id="friendLink">
+					<li class="friendC"  id="fri1" style="margin-right:5px;"><a target="_blank" href="/zhaosheng"></a></li>
+					<li class="friendC"  id="fri2" style="margin-right:5px;"><a target="_blank" href="/jiuye"></a></li>
+					<li class="friendC"  id="fri3" style="margin-right:5px;"><a target="_blank" href="http://203.158.23.14/2011/njsd/"></a></li>
+					<li class="friendC"  id="fri4" style="margin-right:5px;"><a target="_blank" href="/jiaowu"></a></li>
+					<li class="friendC"  id="fri5" ><a target="_blank" href="/tuanwei"></a></li>
+				</ul>
 			</div>
 			
 			<div id = "informs">
