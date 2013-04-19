@@ -184,6 +184,7 @@ input
 	float: left;
 	width: 110px;
 	height: 30px;
+	cursor:pointer;
 }
 
 #homemenu > li > a
