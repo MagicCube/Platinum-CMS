@@ -26,7 +26,25 @@
 
 <menu id = "mainmenu">
 	  	<li class = "singleMenu"><a href = "/xuegong">首页</a></li>
-		<li class = "singleMenu"><a href = "/xuegong/ff8081813b50f9a5013b566a970e0005.html">部门概况</a></li>
+		<li class = "singleMenu" id="gaikuangLi">
+			<div id="gaiTitle">部门概况</div>          	
+          	<ul id="gaikuang">
+          		<li class="gaikuangC"><a href="#">处(部)简介</a></li>
+          		<li class="gaikuangC"><a href="#">工作职责</a></li>
+          		<li class="gaikuangC"><a href="#">工作要点</a></li>
+          		<li class="gaikuangC"><a href="#">工作荣誉</a></li>
+          	</ul>
+			<!-- <a href = "/xuegong/ff8081813b50f9a5013b566a970e0005.html"></a> -->
+		</li>
+		<script type = "text/javascript">
+        			$('#gaikuangLi').mouseover(function(){
+        				$('#gaikuang',this).stop().slideDown(300);
+        				$('#gaikuang',this).stop().animate({height:'128px',width:'110px'},300);
+        			}).mouseout(function(){
+        				$('#gaikuang',this).stop().animate({height:'0px',width:'110px'},150);
+        				$('#gaikuang',this).stop().slideUp(150);
+        			});
+        </script>
 		<li class = "singleMenu"><a href = "/xuegong/sc000000000000000000000000000033/more/">规章制度</a></li>
 		<li class = "singleMenu"><a href = "/xuegong/sc000000000000000000000000000021/more/" >教育管理</a></li>
 		<li class = "singleMenu"><a href = "/xuegong/sc000000000000000000000000000022/more/">学生党建</a></li>

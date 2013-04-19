@@ -44,9 +44,12 @@
 				</div>
 
 			<div id = "textNews">
-                <span><img src = "/static/xuegong/images/gongshi.png"/></span>        		
-        		<cms:PostList id = "gslmlist" subcategoryId = "sc000000000000000000000000000029" count = "8"/>         		
-				 <span class="mainMore" ><a href = "/xuegong/sc000000000000000000000000000029/more/">更多>></a></span>
+                <span><img src = "/static/xuegong/images/gongshi.png"/></span>   
+                <span class="mainMore" ><a href = "/xuegong/sc000000000000000000000000000029/more/">更多>></a></span> 
+                <marquee onmouseover="this.stop()"  onmouseout="this.start()" direction="up" height="160" scrollamount="1">    		
+        			<cms:PostList id = "gslmlist" subcategoryId = "sc000000000000000000000000000029" count = "9"/>         		
+        		</marquee>
+				<hr>
 			</div>
 			
 			<div id = "informs">
