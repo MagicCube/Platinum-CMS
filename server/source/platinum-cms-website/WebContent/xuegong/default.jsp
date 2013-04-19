@@ -55,7 +55,7 @@
 					<li class="friendC"  id="fri2" style="margin-right:5px;"><a target="_blank" href="/jiuye"></a></li>
 					<li class="friendC"  id="fri3" style="margin-right:5px;"><a target="_blank" href="http://203.158.23.14/2011/njsd/"></a></li>
 					<li class="friendC"  id="fri4" style="margin-right:5px;"><a target="_blank" href="/jiaowu"></a></li>
-					<li class="friendC"  id="fri5" ><a target="_blank" href="/tuanwei"></a></li>
+					<li class="friendC"  id="fri5" ><a target="_blank" href="/zuzhi"></a></li>
 				</ul>
 			</div>
 			
