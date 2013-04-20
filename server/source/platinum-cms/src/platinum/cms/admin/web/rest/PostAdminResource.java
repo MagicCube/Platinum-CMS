@@ -43,6 +43,7 @@ public class PostAdminResource extends AbstractResource
 			) throws JSONException
 	{   
 		List<PostEntity> posts = null;
+		 String _CurrentUser=	  Membership.getInstance().getCurrentUser().getUserRole();
 		
 		if (p_keywords != null)
 		{
@@ -61,9 +62,19 @@ public class PostAdminResource extends AbstractResource
 				return responseWithJSONArray(PostJSONSerializer.toSimpleArray2(docs));
 			}
 		}
-		else
+		else  if(_CurrentUser.equals("Administrator"))
+		{    
+		
+		
+			   posts=PostAdminManager.getInstance().loadPostsByCategory(null, p_pageIndex, p_pageSize);
+	
+		  
+		   
+			
+			
+		}
+		else 
 		{
-		   String _CurrentUser=	  Membership.getInstance().getCurrentUser().getUserRole();
 			posts=PostRuntimeManager.getInstance().loadLatestPostsByCategory(_CurrentUser, false, null, p_pageIndex, p_pageSize);
 			
 		}
