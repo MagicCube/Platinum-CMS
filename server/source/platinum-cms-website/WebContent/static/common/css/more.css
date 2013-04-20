@@ -3,6 +3,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    min-height:645px;
 }
 
 #more #title,#more span
