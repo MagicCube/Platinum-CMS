@@ -19,7 +19,7 @@ if (subcategoryId != null)
 <ul id="${id}" class="CategoryNavigationBar">
 	<li>当前位置:</li>
     <li><a href="/">首页</a></li>
-    <li> &gt; <a href="<%= categoryId.equals("news") || categoryId.equals("service") ? "../../news/more/" : "../../../"+categoryId%>"><%= category != null ? category.getCategoryName() : categoryId%></a></li>
+    <li> &gt; <a href="<%= categoryId.equals("news") || categoryId.equals("service") ? "../../../news/more/" : "../../../"+categoryId%>"><%= category != null ? category.getCategoryName() : categoryId%></a></li>
     <% if (subcategoryId != null) {%>
     <li> &gt; <a href="/${categoryId}/${subcategoryId}/more/"><%= subcategory != null ? subcategory.getSubcategoryName() : subcategoryId%></a></li>
     <%} %>
