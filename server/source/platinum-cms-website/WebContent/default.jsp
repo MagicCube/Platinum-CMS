@@ -34,14 +34,15 @@ request.setCharacterEncoding("utf-8");
 						<li class="selectC" id="sel3">3</li>
 						<li class="selectC" id="sel4">4</li>
 				</ul>
-				<!-- <div id="tpxwMorelabel"><a href="/news/sc000000000000000000000000000006/more/">更多</a></div> -->
-				<cms:PhotoSlide id="tsztList" cssClass="bxslider" subcategoryId="sc000000000000000000000000000006" displayPhoto="true" count="4" />	
+				<div id="tpxwMorelabel"><a href="/news/sc000000000000000000000000000207/more/">更多</a></div>
+				<cms:PhotoSlide id="tsztList" cssClass="bxslider" subcategoryId="sc000000000000000000000000000207" displayPhoto="true" count="4" />	
 			</div>
 			
 			<div id="news">
 				<div id="newslabel"><span id="text">新闻动态</span></div>	
-				<cms:PostList id="xwdtList1" cssClass="PhotoList" subcategoryId="sc000000000000000000000000000006" displayPhoto="true" pageIndex="4" pageSize="1" displayPageNavigationBar="false" />
-				<cms:PostList id="textContent" subcategoryId="sc000000000000000000000000000006" count="8" />
+				<!--<cms:PostList id="xwdtList1" cssClass="PhotoList" subcategoryId="sc000000000000000000000000000006" displayPhoto="true" pageIndex="4" pageSize="1" displayPageNavigationBar="false" />-->
+				<cms:PostList id="xwdtList1"  cssClass="PhotoList" subcategoryId="sc000000000000000000000000000006"  displayPhoto="true"  count="1" />
+				<cms:PostList id="textContent" subcategoryId="sc000000000000000000000000000006"   where="photoURL is null"  count="8" />
 				<div id="morelabel"><a href="/news/sc000000000000000000000000000006/more/">更多</a></div>
 			</div>
 			
