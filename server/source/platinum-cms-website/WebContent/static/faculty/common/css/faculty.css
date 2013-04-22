@@ -733,12 +733,12 @@ line-height:20px;
 }
 
 #content{
+	width:685px;
 	margin-top:5px;
 	margin-bottom:5px;
 	line-height: 150%; 
 	font-family: 宋体;
 	font-size: 12pt; 
-	padding:10px 0;
 }
 #content table{text-indent: 0;}
 #content table div{text-indent: 0;}
