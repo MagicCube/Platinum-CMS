@@ -28,9 +28,7 @@
                 	<li>
                 		<a href="../mob/guide/"><span>办事指南</span></a>
                 	</li>
-                	<li>
-                		<a href="../mob/Shake/"><span>摇一摇</span></a>
-                	</li>
+                	
                 	<li>
                 		<a href="../mob/ditu/"><span>地图</span></a>
                 	</li>
