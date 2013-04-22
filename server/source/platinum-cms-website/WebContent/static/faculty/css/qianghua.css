@@ -10,6 +10,7 @@
 {background-color: #1b8938;}
 
 /*网页右侧内容*/
+#content{padding:0;}
 #r_content #menu #menu_ul
 {background-color: #5BAA70;}
 #r_content #menu #menu_ul #nav{padding-left:50px;}

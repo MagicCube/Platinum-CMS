@@ -126,7 +126,7 @@
 		<div id="menu">
 			<div id="menu_ul">
 				<ul id="nav">
-					<li><a href="/renwen/ff8081813b6fee04013b6ff28321000e.html">
+					<li><a href="/renwen/ff8081813e26f7fe013e2fabf6120002.html">
 							系科介绍 </a></li>
 					<li><a href="/renwen/sc000000000000000000000000000094/more/">
 							学科建设 </a></li>

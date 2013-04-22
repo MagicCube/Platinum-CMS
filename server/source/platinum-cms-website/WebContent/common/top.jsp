@@ -27,7 +27,7 @@ request.setCharacterEncoding("utf-8");
 						<input type="submit" id="searchBtn" value=""/>
 					</form>
 					<div id="fastlink">
-						<span><a href="/">首页</a>|<span><a href="/wap/mobile.jsp">移动版</a>|<a href="/introduce/ff8081813be4798a013be484d5540002.html">About NNUZC</a>|<a href="http://www.njnu.edu.cn/" target="_blank">南京师范大学</a></span>
+						<span><a href="/">首页</a>|<span><a href="/wap/">移动版</a>|<a href="/introduce/ff8081813be4798a013be484d5540002.html">About NNUZC</a>|<a href="http://www.njnu.edu.cn/" target="_blank">南京师范大学</a></span>
 					</div>
 			</div>
 </div>
