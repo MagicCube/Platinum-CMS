@@ -707,7 +707,6 @@ line-height:20px;
 #postList li {max-width: 780px;}
 #more .PostList{padding-left:10px;border:none;}
 /**/
-.PostDetail #content{width:715px;}
 
 /*图片新闻改*/
 #home_slider>#tsztList> li{width:100%;height:100%;display:none;position:relative;}
