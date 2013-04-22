@@ -16,7 +16,6 @@
 				<span><a href = "http://njnu.edu.cn"> 南师大</a></span>
 			</div>
 			<div id = "search">
-				<form id="searchForm_1" name="form_1" method="post" action="#" target="_blank">
 				<form id="searchForm_1" name="form_1" method="get" action="../../../search" target="_blank">
 					<label>
 						<input type="hidden" id="searchVpath" name="vpath" value="" />

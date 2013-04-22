@@ -738,6 +738,7 @@ line-height:20px;
 	line-height: 150%; 
 	font-family: 宋体;
 	font-size: 12pt; 
+	padding:5px 0;
 }
 #content table{text-indent: 0;}
 #content table div{text-indent: 0;}
