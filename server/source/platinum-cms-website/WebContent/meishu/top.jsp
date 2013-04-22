@@ -131,7 +131,7 @@
             </a>
           </li>
           <li>
-           <a class="discipline" href="/meishu/sc000000000000000000000000000074/more/">
+           <a class="discipline" >
               学科建设
             </a>
                         <ul class="sub">
