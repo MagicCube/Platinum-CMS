@@ -159,12 +159,12 @@
                   </a>
                 </li>
                 <li class="link_2">
-                  <a href="http://zbvip.njnu.edu.cn/vip/">
+                  <a href="http://zbvip.njnu.edu.cn/vip/" target="_blank">
                     <span>教工之家</span>
                   </a>
                 </li>
                 <li class="link_2">
-                  <a href="/jiaowu/sc000000000000000000000000000052/more/">
+                  <a href="/jiaowu/sc000000000000000000000000000052/more/" >
                     <span>资料下载</span>
                   </a>
                 </li>
