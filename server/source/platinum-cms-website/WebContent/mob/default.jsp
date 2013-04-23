@@ -58,7 +58,7 @@ $("#aa > div > h3").click(function(){
    <!-- 幻灯片切换部分 -->
 			 <div class="block_home_slider" >
                    <div id="home_slider" class="flexslider" >
-                        <cms:PhotoSlide id="tsztList" cssClass="slides" categoryId="news" displayPhoto="true" count="4" />
+                        <cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000207" displayPhoto="true" count="4" />
                    </div>                        
              </div>
  
