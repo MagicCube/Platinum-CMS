@@ -42,6 +42,7 @@
 	else{
 		$('#postDetail').css({'width':'980px',"border-radius":"10px"});
 	}
+	if($('#imageContent').length > 0) {$('#postDetail').css({"border-right":"2px solid #D41F00"});}
 	</script>
 	
 <!--页脚开始-->
