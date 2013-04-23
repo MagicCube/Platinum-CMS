@@ -119,10 +119,10 @@ a img{ border:none}
         <div class="title" style=" margin-left:5px;background-image:url(/static/tuanwei/images/tagg_bg.gif); background-repeat:repeat-x;width:95%;"><p style="background-image:url(/static/tuanwei/images/tag_bg.gif); background-repeat:no-repeat; height:37px; color:#fff;text-shadow: 4px 4px 3px #000;">&nbsp;学生组织</p></div>
         <div style="margin:0 auto; text-align:center;postion:relative;width:220px;height:155px;">
         	<div style="position:relative;margin-left:10px;width:200px;height:200px;">
-        		<img title="社团联合会" src="/static/tuanwei/images/image1.jpg" width="85px" height="70px" style="position:absolute;top:5px;left:103px;"></img>
-        		<img title="同心青协" src="/static/tuanwei/images/image2.jpg" width="85px" height="70px" style="position:absolute;top:5px;left:12px;"></img>
-        		<img title="中北学生会" src="/static/tuanwei/images/image3.jpg" width="85px" height="70px" style="position:absolute;top:80px;left:103px;"></img>
-        		<img title="社区自管会" src="/static/tuanwei/images/image4.jpg" width="85px" height="70px" style="position:absolute;top:80px;left:12px;"></img>
+        		<a href="/tuanwei/ff8081813e30e4f2013e37459ef4000e.html"><img title="社团联合会" src="/static/tuanwei/images/image1.jpg" width="85px" height="70px" style="position:absolute;top:5px;left:103px;"/></a>
+        		<a href="/tuanwei/ff8081813e30e4f2013e37443b93000b.html"><img title="同心青协" src="/static/tuanwei/images/image2.jpg" width="85px" height="70px" style="position:absolute;top:5px;left:12px;"/></a>
+        		<a href="/tuanwei/ff8081813e30e4f2013e37467a640011.html"><img title="中北学生会" src="/static/tuanwei/images/image3.jpg" width="85px" height="70px" style="position:absolute;top:80px;left:103px;"/></a>
+        		<a href="/tuanwei/ff8081813e30e4f2013e374706ab0014.html"><img title="社区自管会" src="/static/tuanwei/images/image4.jpg" width="85px" height="70px" style="position:absolute;top:80px;left:12px;"/></a>
         		<!-- <img title="就业与职业发展协会" src="/static/tuanwei/images/image5.png" width="50px" height="50px" style="position:absolute;top:90px;left:85px;"></img> -->
         	</div>
         </div>
