@@ -269,12 +269,14 @@ body { background:url(../images/bgsite.jpg) repeat-x center top #FAEDBC; }
 	margin: 0;
 	display: block;
 	font-size: 14px;
-	color: #000;
+	color: #FFF;
 	font-family: 黑体;
 }
 #menu_ul>#nav>li>div:hover{
 	background-color: #fff;
 	background: url(../images/bg2.jpg) no-repeat center top;
+	color:#D41F00;
+	font-weight:bold;
 }
 
 
@@ -357,7 +359,7 @@ li:hover ul, li.over ul {
 	display: block;
 	font-size: 14px;
 	width: auto;
-	color: #000;
+	color: #FFF;
 	font-family: 黑体;
 }
 
@@ -365,6 +367,8 @@ li:hover ul, li.over ul {
 {
 	background-color: #fff;
 	background:url(../images/bg2.jpg) no-repeat center top;
+	color:#D41F00;
+	font-weight:bold;
 }
 
 
