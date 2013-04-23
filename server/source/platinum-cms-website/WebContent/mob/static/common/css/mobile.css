@@ -41,6 +41,14 @@ a: hover {
 .left {
 	float: left;
 }
+#news ul li #title{
+	display:block;
+	width:100%;
+	height:27px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	o-text-overflow: ellipsis;
+}
 #carousel1{       padding-left:0px;     text-align:center;  width:100%;height:150px;}
 #carousel1 img{       border:none;width:100px;height:30 px;}
 
@@ -2647,10 +2655,4 @@ div#menu li.back .left {
     left: 0;
     visibility: visible;
 }
-ul li>#title{
-	display:block;
-	width:100%;
-	height:27px;
-	overflow:hidden;
-	text-overflow: ellipsis;
-}
+
