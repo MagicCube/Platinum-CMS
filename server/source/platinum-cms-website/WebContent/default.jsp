@@ -56,12 +56,12 @@ request.setCharacterEncoding("utf-8");
 					<li id="jgzjLeft">
 						<ul>
 							<li class="biaodan">
-								<span>用户:</span>
-								<input name="UserName" type="text" />
+								<span  style="width:70px">用&nbsp;&nbsp;户:</span>
+								<input name="UserName" type="text" style="width:65px"/>
 							</li>
 							<li class="biaodan">
-								<span>密码:</span>
-								<input name="Password" type="password" />
+								<span  style="width:70px">密&nbsp;&nbsp;码:</span>
+								<input name="Password" type="password" style="width:65px"/>
 							</li>
 							<li class="biaodan">
 								<span style="width:70px">验证码:</span>
