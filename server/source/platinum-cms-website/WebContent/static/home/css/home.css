@@ -172,13 +172,110 @@
 	color: #999;
 }
 
-#school
+#jgzj
 {
-	position: absolute;
+	position:absolute;
 	top: 0;
 	left: 700px;
 	width: 280px;
-	height: 395px;
+	height: 150px;
+	background: white;
+	border-radius: 5px;
+}
+
+#jgzjlabel{
+	position: absolute;
+	top: 0;
+	left: -6px;
+	height: 50px;
+	width: 280px;
+	background: url(../images/label.png) no-repeat;
+}
+
+
+#jgzjContent ul{
+	margin:0;
+	padding:0;
+}
+
+#jgzjContent{
+	width:100%;
+	height:100px;
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	margin:0;
+	padding:0;
+}
+
+#jgzjLeft{
+	width:140px;
+	height:100%;
+	float:left;
+	margin-left:20px;
+}
+#jgzjRight{
+	width:100px;
+	height:100%;
+	float:left;
+}
+.biaodan{
+	width:100%;
+	height:35px;
+}
+
+.biaodan span{
+	display:block;
+	width:50px;
+	height:100%;
+	line-height:35px;
+	float:left;
+	font-size:18px;
+	color:#4a8c25;
+	font-weight:bold;
+}
+
+.biaodan input{
+	display:block;
+	width:85px;
+	height:20px;
+	float:right;
+	margin-top:5px;
+	border:1px solid #478124;
+}
+
+.button{
+	width:80px;
+	height:30px;
+	float:right;
+}
+
+.button input{
+	display:block;
+	width:80px;
+	height:30px;
+	border:0px solid transparent;
+	background-color:transparent;
+	cursor:pointer;
+}
+
+#submit:hover{
+	diaplay:block;
+	background-image: url(../images/dengluh.png);
+	background-repeat: no-repeat;
+}
+
+#quit:hover{
+	background: url(../images/quith.png) no-repeat;
+}
+
+#school
+{
+	position:absolute;
+	top: 165px;
+	left: 700px;
+	width: 280px;
+	height: 230px;
 	background: white;
 	border-radius: 5px;
 }

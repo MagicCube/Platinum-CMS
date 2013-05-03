@@ -47,10 +47,49 @@ request.setCharacterEncoding("utf-8");
 				<div id="morelabel"><a href="/news/sc000000000000000000000000000006/more/">更多</a></div>
 			</div>
 			
+			<div id="jgzj">
+				<div id="jgzjlabel">
+					<span id="text">教工之家</span>
+				</div>
+				<ul id="jgzjContent">
+				<form name="Login" action="http://zbvip.njnu.edu.cn/vip/Admin_ChkLogin.asp" method="post" target="_parent">	
+					<li id="jgzjLeft">
+						<ul>
+							<li class="biaodan">
+								<span>用户:</span>
+								<input name="UserName" type="text" />
+							</li>
+							<li class="biaodan">
+								<span>密码:</span>
+								<input name="Password" type="password" />
+							</li>
+							<li class="biaodan">
+								<span style="width:70px">验证码:</span>
+								<input name="CheckCode" style="width:65px"/>
+							</li>
+						</ul>
+					</li>
+					<li id="jgzjRight">
+						<ul>
+							<li class="button">
+								<input name="Submit"  id="submit" type="submit"  value="" style="background: url(static/home/images/denglu.png) no-repeat;">
+							</li>
+							<li class="button">
+								<input name="reset" type="reset" id="quit" value="" style="margin-top:7px;background: url(static/home/images/quit.png) no-repeat;">
+							</li>
+							<li class="button" style="margin-top:13px;">
+								<img src="http://zbvip.njnu.edu.cn/vip/inc/code.asp" width="77" height="25" border="0" align="absmiddle" onclick="javascript:this.src='http://zbvip.njnu.edu.cn/vip/inc/code.asp?'+Math.random();">
+							</li>
+						</ul>
+					</li>
+				</form>
+				</ul>
+			</div>
+			
 			<div id="school">
 				<div id="schoollabel"><span id="text">校园动态</span></div>
 				<!--<cms:PostList id="xydtList1" cssClass="PhotoList" subcategoryId="sc000000000000000000000000000020" displayPhoto="true" count="1" />-->
-				<cms:PostList id="text_school" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="9" />
+				<cms:PostList id="text_school" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="5" />
 				<div id="morelabel"><a href="/news/sc000000000000000000000000000020/more/">更多</a></div>
 			</div>
 			
