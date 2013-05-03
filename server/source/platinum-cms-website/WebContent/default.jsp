@@ -20,6 +20,7 @@ request.setCharacterEncoding("utf-8");
 
 </head>
 <body>
+		<img src="/static/common/images/spring1.jpg" width="100%" height="814" style="position:absolute;margin:0;padding:0;z-index:-1;">
 		<cms:Header/>
 		 
 		<!-- <div id="code">-->
