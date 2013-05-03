@@ -52,7 +52,7 @@ request.setCharacterEncoding("utf-8");
 					<span id="text">教工之家</span>
 				</div>
 				<ul id="jgzjContent">
-				<form name="Login" action="http://zbvip.njnu.edu.cn/vip/Admin_ChkLogin.asp" method="post" target="_parent">	
+				<form accept-charset="GB2312" name="Login" action="http://zbvip.njnu.edu.cn/vip/Admin_ChkLogin.asp" method="post" target="_parent">	
 					<li id="jgzjLeft">
 						<ul>
 							<li class="biaodan">
