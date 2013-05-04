@@ -15,7 +15,7 @@ $(document).ready(function(event){
 		var num =  $("ul#downlist", this).attr("num");
 		$('ul#downlist',this).css('z-index',10000000);
 		$('ul#downlist',this).stop().slideDown(300);
-		$('ul#downlist',this).stop().animate({height:num*34+'px',width:'150px'},300);
+		$('ul#downlist',this).stop().animate({height:num*30+'px',width:'150px'},300);
 	}).mouseout(function(){
 		$('ul#downlist',this).stop().animate({height:'0px',width:'150px'},150);
 		$('ul#downlist',this).stop().slideUp(150);
