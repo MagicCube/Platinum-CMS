@@ -34,7 +34,7 @@ body
 {
 	padding: 0;
 	margin: 0;
-	background: url(../images/spring1.jpg) fixed;
+	background: url(../images/spring2.jpg) fixed;
 }
 
 input
@@ -47,7 +47,7 @@ input
 {
 	width: 100%;
 	height: 100%;
-	background: url(../images/whiteopacity.png) fixed repeat-x;
+	/*background: url(../images/whiteopacity.png) fixed repeat-x;*/
 }
 
 #code
@@ -79,6 +79,12 @@ input
 	float: left;
 }
 
+#dynamic a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
 #dttpList
 {
 	display: block;
@@ -89,7 +95,7 @@ input
 	height: 110px;
 }
 
-#dttpList > img
+#dttpList   img
 {
 	width: 350px;
 	height: 110px;
@@ -103,8 +109,11 @@ input
 	float: right;
 }
 
-#headerRight > #search
+#search
 {
+	display:block;
+	width:171px;
+	height:23px;
 	margin-top: 30px;
 	margin-bottom: 10px;
 	float: right;
@@ -133,6 +142,7 @@ input
 
 #searchBtn
 {
+	float:left;
 	cursor: pointer;
 	border: none;
 	height: 23px;
@@ -142,7 +152,7 @@ input
 	background: url(../images/btn.png) no-repeat;
 }
 
-#headerRight > #fastlink
+#headerRight #fastlink
 {
 	width:265px;
 	height:22px;
@@ -178,7 +188,7 @@ input
 	background: url(../images/menu_green.png) no-repeat;
 }
 
-#homemenu > li
+#homemenu   li
 {
 	display: block;
 	float: left;
@@ -187,7 +197,7 @@ input
 	cursor:pointer;
 }
 
-#homemenu > li > a
+#homemenu   li   a
 {
 	display: block;
 	line-height: 30px;
@@ -197,7 +207,7 @@ input
 	text-align: center;
 }
 
-#homemenu > li > a:hover
+#homemenu   li  a:hover
 {
 	background: url(../images/opacity-30.png);
 }
@@ -213,7 +223,7 @@ input
 	position: absolute;
 }
 
-#downlist > li
+#downlist   li
 {
 	padding: 0;
 	margin: 0;
@@ -221,7 +231,7 @@ input
 	line-height: 34px;
 }
 
-#downlist > li > a
+#downlist   li   a
 {
 	display: block;
 	width: 100%;
@@ -233,11 +243,11 @@ input
 	margin-left:25px;
 }
 
-#downlist > li:hover{
+#downlist   li:hover{
 	background-color:#366c00;
 }
 
-#downlist > li > a:hover
+#downlist   li   a:hover
 {
 	color: yellow;
 }
@@ -251,7 +261,7 @@ input
 	margin:0 auto 2px auto;
 }
 
-#footer > #copyright
+#footer   #copyright
 {
 	width: 990px; 
 	height: 100%;
