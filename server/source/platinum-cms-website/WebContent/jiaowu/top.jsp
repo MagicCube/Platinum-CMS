@@ -6,7 +6,9 @@
 <script src="/static/common/scripts/src/IE6.js" type="text/javascript"></script>
 
 <div id = "header">
-  <div id = "_logo"><img src="/static/jiaowu/images/jiaowu.png" style="padding:0px 0 0 470px;">
+  <div id = "_logo">
+  	<img src="/static/jiaowu/images/logo.png">
+  	<img src="/static/jiaowu/images/jiaowu.png" >
   </div>
   <div id = "link_search">
     <div id = "text">

@@ -47,6 +47,7 @@ if (subcategoryId != null)
     <link rel="stylesheet" href="/static/common/css/basic.css"/>
     <link rel="stylesheet" href="/static/common/css/more.css"/>
     <script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
+    
 </head>
 
 <body>

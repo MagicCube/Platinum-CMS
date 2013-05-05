@@ -207,11 +207,6 @@ input
 	text-align: center;
 }
 
-#homemenu   li  a:hover
-{
-	/*background: url(../images/opacity-30.png);*/
-}
-
 #downlist
 {
 	display: none;
@@ -244,7 +239,7 @@ input
 	margin-left:25px;
 }
 
-#downlist   li:hover{
+#homemenu   li:hover{
 	background-color:#366c00;
 }
 

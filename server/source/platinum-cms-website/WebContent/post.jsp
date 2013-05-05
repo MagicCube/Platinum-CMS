@@ -49,9 +49,9 @@ request.setCharacterEncoding("utf-8");
     <link rel="stylesheet" href="/static/common/css/basic.css"/>
     <link rel="stylesheet" href="/static/common/css/post.css"/>
     <script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
+    <script src="/static/common/scripts/src/IE6.js" type="text/javascript"></script>
 </head>
-
-<body onload="load()">
+<body onload="<%=categoryId%>()">
 
 <cms:Header path="<%= categoryId%>" displaySideBar="<%= post.getPostType() != PostType.INFORMATION%>"/>
 

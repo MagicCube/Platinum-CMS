@@ -10,6 +10,7 @@
 <link href = "/static/jiaowu/css/jiaowu.css" rel = "stylesheet"></link>
 <script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
 <script type="text/javascript" src="/static/jiaowu/js/gallery.js"></script>
+
 </head>
 <body onload="jiaowu()">
 	<cms:Header path = "jiaowu"/>
@@ -32,7 +33,7 @@
               </div>
               
               	
-             	<cms:PostList id = "jwxwlist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000045" displayDate="true" count = "6"/>  
+             	<cms:PostList id = "jwxwlist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000045" count = "6"/>  
                 <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000045/more/">更多...</a></p>
               </div>
       
