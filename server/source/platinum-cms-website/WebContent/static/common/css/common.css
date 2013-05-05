@@ -364,6 +364,7 @@ a #title:hover
 
 #sideBar li {
 	border-bottom: 1px #ddd dashed;
+	width:100%;
 }
 
 #xwdtList1 #title{text-align:center;}
