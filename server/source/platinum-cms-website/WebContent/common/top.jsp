@@ -7,6 +7,7 @@ request.setCharacterEncoding("utf-8");
 <link href = "/static/common/css/common.css" rel = "stylesheet"></link>
 <script src="/static/common/scripts/src/menu.js" type="text/javascript"></script>
 <script src="/static/common/scripts/src/dyamicPic.js" type="text/javascript"></script>
+<script src="/static/common/scripts/src/IE6.js" type="text/javascript"></script>
 
 <div id="layer1">
 <div id="header">
@@ -88,9 +89,9 @@ request.setCharacterEncoding("utf-8");
 	        </ul>
 	    </li>	
 </menu>
-		
 
 <div id="MainBox">
+
 <% if (request.getParameter("displaySideBar").equals("true")) {%>
 	<div id="sideBar">
 		<div id = "sideBarin">
