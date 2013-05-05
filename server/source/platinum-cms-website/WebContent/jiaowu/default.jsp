@@ -11,7 +11,7 @@
 <script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
 <script type="text/javascript" src="/static/jiaowu/js/gallery.js"></script>
 </head>
-<body>
+<body onload="jiaowu()">
 	<cms:Header path = "jiaowu"/>
 	
 <!--正文开始-->

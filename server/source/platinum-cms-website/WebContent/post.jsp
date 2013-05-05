@@ -51,7 +51,7 @@ request.setCharacterEncoding("utf-8");
     <script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body onload="load()">
 
 <cms:Header path="<%= categoryId%>" displaySideBar="<%= post.getPostType() != PostType.INFORMATION%>"/>
 

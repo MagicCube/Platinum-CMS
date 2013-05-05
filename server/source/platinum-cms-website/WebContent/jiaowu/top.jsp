@@ -3,6 +3,7 @@
 <%@ taglib prefix="cms" tagdir="/WEB-INF/tags"%>
 
 <link href = "/static/jiaowu/css/common.css" rel = "stylesheet"/>
+<script src="/static/common/scripts/src/IE6.js" type="text/javascript"></script>
 
 <div id = "header">
   <div id = "_logo"><img src="/static/jiaowu/images/jiaowu.png" style="padding:0px 0 0 470px;">
