@@ -49,7 +49,7 @@
 	color: rgba(0, 0, 0, 0.4);
 }
 
-#postList li a > div
+#postList li a div
 {
 	display: inline;
 }
@@ -178,7 +178,7 @@ ul.TextList li a:hover
 	color: #ccc;
 }
 
-ul.TextList li a > div
+ul.TextList li a div
 {
 	display: inline;
 }
