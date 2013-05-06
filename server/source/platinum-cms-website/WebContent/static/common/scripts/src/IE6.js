@@ -80,6 +80,6 @@ function xuegong(){
 		$("#xgcontent #mainContent #email li").css({ "background-image":"url(../static/xuegong/images/listie6.png)"});
 		$("#xgcontent #mainContent #informs li").css({ "background-image":"url(../static/xuegong/images/listie6.png)"});
 		$("#xgcontent #mainContent #teaching li").css({ "background-image":"url(../static/xuegong/images/listie6.png)"});
-		$("#tsztList img").attr({ width: "390px",height:"290px"});
+		
 	}
 }
