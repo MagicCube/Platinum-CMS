@@ -77,5 +77,9 @@ function xuegong(){
 		$("#collegelogo img").attr({ src: "../static/xuegong/images/logoie6.png"});
 		$("#secondlogo img").attr({ src: "../static/xuegong/images/xuegongie6.png"});
 		$("#xgcontent #mainContent #gongNews li").css({ "background-image":"url(../static/xuegong/images/listie6.png)"});
+		$("#xgcontent #mainContent #email li").css({ "background-image":"url(../static/xuegong/images/listie6.png)"});
+		$("#xgcontent #mainContent #informs li").css({ "background-image":"url(../static/xuegong/images/listie6.png)"});
+		$("#xgcontent #mainContent #teaching li").css({ "background-image":"url(../static/xuegong/images/listie6.png)"});
+		$("#tsztList img").attr({ width: "390px",height:"290px"});
 	}
 }
