@@ -19,7 +19,7 @@ p
 	margin-bottom: 10px;
 }
 
-#maincontent > #layoutleft 
+#maincontent #layoutleft 
 {
 	float: left;
 	margin: 10px; 
@@ -36,7 +36,7 @@ p
 	padding: 5px;
 }
 
-#maincontent > #layoutright
+#maincontent #layoutright
 {
 	font-family: 微软雅黑 黑体;
 	font-size: 14px;
@@ -68,7 +68,7 @@ p
 	margin-right: auto;
 }
 
-#mainbody > ul#hzjllist
+#mainbody ul#hzjllist
 {
 	width: 990px;
 	padding: 0;
@@ -133,7 +133,7 @@ p
 	padding: 10px 0 10px 0px;
 }
 
-#maincontent > #rightside
+#maincontent #rightside
 {
 	font-family: 微软雅黑 黑体;
 	font-size: 14px;
@@ -188,7 +188,7 @@ p
 	color: rgba(0, 0, 0, 0.4);
 }
 
-#rightside ul.TextList li a > div
+#rightside ul.TextList li a div
 {
 	display: inline;
 }
