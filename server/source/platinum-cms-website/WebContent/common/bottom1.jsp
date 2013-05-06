@@ -8,7 +8,7 @@
 			<p>南京市栖霞区仙林大学城学林路2号  210046</p>
 			<!-- <p>苏ICP备05080300号</p> -->
 		</div>
-		<!--  --><div style="font-size:12px;color:#a3d869;float:right;position:absolute;bottom:2px;right:2px;">网站支持IE7以上浏览器</div>-->
+		<!--<div style="font-size:12px;color:#a3d869;float:right;position:absolute;bottom:2px;right:2px;">网站支持IE7以上浏览器</div>-->
 	</div> 
 </div>
  
