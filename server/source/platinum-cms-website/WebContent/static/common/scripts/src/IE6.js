@@ -72,3 +72,10 @@ function jiaowu(){
 		$("#sideBar").css({"height":"650px","position":"relative","float":"right"});
 	}
 }
+function xuegong(){
+	if (($.browser.msie) && ($.browser.version == "6.0")){
+		$("#collegelogo img").attr({ src: "../static/xuegong/images/logoie6.png"});
+		$("#secondlogo img").attr({ src: "../static/xuegong/images/xuegongie6.png"});
+		$("#xgcontent #mainContent #gongNews li").css({ "background-image":"url(../static/xuegong/images/listie6.png)"});
+	}
+}

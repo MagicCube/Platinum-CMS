@@ -34,7 +34,7 @@ ul
 	background-image:url(/static/xuegong/images/headback.jpg);
 }
 
-#headcontainer > #header1
+#headcontainer #header1
 {
 	margin-left: auto;
 	margin-right: auto;
@@ -44,7 +44,7 @@ ul
 	position: relative;
 }
 
-#header1 > #indexAndsearch
+#header1 #indexAndsearch
 {
 	position: absolute;
 	margin-top: 15px;
@@ -54,7 +54,7 @@ ul
 }
 
 
-#header1 > #indexAndsearch a
+#header1 #indexAndsearch a
 {
 	color:#ffffff;
 	text-decoration: none;
@@ -62,12 +62,12 @@ ul
 	margin-right:9px;
 }
 
-#header1 > #indexAndsearch a:hover
+#header1 #indexAndsearch a:hover
 {
 	color: #ccc;
 }
 
-#header1 > #indexAndsearch > #searchbar
+#header1 #indexAndsearch > #searchbar
 {
 	width: 220px;
 	height: 22px;
@@ -76,14 +76,14 @@ ul
 	background-repeat: no-repeat;
 }
 
-#header1 > #collegelogo
+#header1 #collegelogo
 {
 	position: absolute;
 	left: 0;
 	top: 10px;
 }
 
-#header1 > #secondlogo
+#header1 #secondlogo
 {
 	position: absolute;
 	left: 450px;
@@ -156,7 +156,7 @@ menu#mainmenu li a
 }
 
 
-menu#mainmenu li > a:hover
+menu#mainmenu li a:hover
 {
 	background-color:#366636;
 	border-radius:5px;
@@ -370,7 +370,7 @@ table td a
 /*简介*/
 #postDetail #imageContent{float:left;margin-top:50px;}
 #postDetail #textContent{margin:50px 0 0 0;width:650px;float:right;padding:10px 5px 0 0;}
-#textContent > #content{width:650px;}
+#textContent #content{width:650px;}
 
 #imageContent img
 {
@@ -387,7 +387,7 @@ table td a
 	text-align: center;
 	font-size:19px;
 }
-#postDetail > #title{margin-top:20px;}
+#postDetail #title{margin-top:20px;}
 
 #textContent #info, #info
 {
@@ -424,7 +424,7 @@ table td a
 	clear: both;
 }
 
-#bottom2 span > a
+#bottom2 span a
 {
 	color: #fff;
 	text-decoration: none;
@@ -454,12 +454,12 @@ table td a
 }
 
 
-#bottom2 span > a:hover
+#bottom2 span a:hover
 {
 	color: #fdbc30;
 }
 
-#bottom2 > #website
+#bottom2 #website
 {
 	position: absolute;
 	left: 350px;
@@ -481,7 +481,7 @@ table td a
 }
 
 
-#bottom2 > #developer
+#bottom2 #developer
 {
 	position: absolute;
 	right: 0;
@@ -526,11 +526,11 @@ table td a
 }
 #tsztList{width:100%;height:100%;}
 #tsztList li{display:none;}
-#tsztList>#post1{display:block;}
+#tsztList #post1{display:block;}
 #tsztList img{display:block;width:100%;height:100%;position:absolute;top:0;left:0;}
 .bx-caption{width:100%;height:30px;z-index:1000;position:absolute;top:0;left:0;background-color:rgb(0, 51, 0);background:rgba(0, 51, 0, 0.55);display:none;}
-.bx-caption>span{width:100%;height:100%;text-align:center;line-height:30px;font-size:16px;color:#FFF;}
-#tsztList>#post1>.bx-caption{display:block;}
+.bx-caption span{width:100%;height:100%;text-align:center;line-height:30px;font-size:16px;color:#FFF;}
+#tsztList #post1 .bx-caption{display:block;}
 
 li #title{font-size:14px;}
 .mainMore a{font-size:14px;color:#183442;margin-left:15px;}
@@ -643,7 +643,7 @@ a #title:hover {
 
 .spanimg{display:block;width:100%;border-bottom:2px solid #1e4b28;}
 
-#content>.MsoNormal{
+#content .MsoNormal{
 	margin-top:5px;
 	margin-bottom:5px;
 	line-height: 150%; 
@@ -652,7 +652,7 @@ a #title:hover {
 	/*text-indent: 2em;*/
 }
 
-#content>div{
+#content div{
 	margin-top:5px;
 	margin-bottom:5px;
 	line-height: 150%; 
@@ -674,7 +674,7 @@ a #title:hover {
 #xgcontent a #title{font-size:13.5px;}
 
 /*下拉菜单*/
-#mainmenu>#gaikuangLi>#gaiTitle{
+#mainmenu #gaikuangLi #gaiTitle{
 	cursor:pointer;
 	display: block;
 	height: 32px;
@@ -702,7 +702,7 @@ a #title:hover {
 	background-color:#699669;
 	border-radius:0 0 5px 5px;
 }
-#mainmenu>#gaikuangLi>#gaiTitle .gaikuangC{
+#mainmenu #gaikuangLi #gaiTitle .gaikuangC{
 	margin: 0;
 	padding: 0;
 	display: block;
@@ -712,13 +712,13 @@ a #title:hover {
 /*END*/
 
 /*友情连接*/
-#bodyContent #mainContent>#textNews>#friendLink{
+#bodyContent #mainContent #textNews #friendLink{
 	margin:5px 0 0 0;
 	padding:0;
 	width:100%;
 	height:50px;
 }
-#bodyContent #mainContent>#textNews>#friendLink>.friendC{
+#bodyContent #mainContent #textNews #friendLink .friendC{
 	background-image:none;
 	margin:0;
 	padding:0;
@@ -728,39 +728,39 @@ a #title:hover {
 	float:left;
 	border-radius:8px;
 }
-#textNews>#friendLink>.friendC>a{
+#textNews #friendLink .friendC a{
 	display:block;
 	width:100%;
 	height:100%;
 }
-#bodyContent #mainContent>#textNews>#friendLink>#fri1{
+#bodyContent #mainContent #textNews #friendLink #fri1{
 	background-image:url(/static/xuegong/images/zhaosheng.gif);
 }
-#bodyContent #mainContent>#textNews>#friendLink>#fri1:hover{
+#bodyContent #mainContent #textNews #friendLink #fri1:hover{
 	background-image:url(/static/xuegong/images/zhaosheng1.gif);
 }
-#bodyContent #mainContent>#textNews>#friendLink>#fri2{
+#bodyContent #mainContent #textNews #friendLink #fri2{
 	background-image:url(/static/xuegong/images/jiuye.gif);
 }
-#bodyContent #mainContent>#textNews>#friendLink>#fri2:hover{
+#bodyContent #mainContent #textNews #friendLink #fri2:hover{
 	background-image:url(/static/xuegong/images/jiuye1.gif);
 }
-#bodyContent #mainContent>#textNews>#friendLink>#fri3{
+#bodyContent #mainContent #textNews #friendLink #fri3{
 	background-image:url(/static/xuegong/images/xinli.gif);
 }
-#bodyContent #mainContent>#textNews>#friendLink>#fri3:hover{
+#bodyContent #mainContent #textNews #friendLink #fri3:hover{
 	background-image:url(/static/xuegong/images/xinli1.gif);
 }
-#bodyContent #mainContent>#textNews>#friendLink>#fri4{
+#bodyContent #mainContent #textNews #friendLink #fri4{
 	background-image:url(/static/xuegong/images/jiaoyu.gif);
 }
-#bodyContent #mainContent>#textNews>#friendLink>#fri4:hover{
+#bodyContent #mainContent #textNews #friendLink #fri4:hover{
 	background-image:url(/static/xuegong/images/jiaoyu1.gif);
 }
-#bodyContent #mainContent>#textNews>#friendLink>#fri5{
+#bodyContent #mainContent #textNews #friendLink #fri5{
 	background-image:url(/static/xuegong/images/dangjian.gif);
 }
-#bodyContent #mainContent>#textNews>#friendLink>#fri5:hover{
+#bodyContent #mainContent #textNews #friendLink #fri5:hover{
 	background-image:url(/static/xuegong/images/dangjian1.gif);
 }
 /*END*/

@@ -12,7 +12,7 @@
 	position: relative;	
 }
 
-#xgcontent > #mainContent
+#xgcontent #mainContent
 {
 	padding: 0;
 	margin: 0;
@@ -23,7 +23,7 @@
 	top: 0;
 }
 
-#xgcontent > #mainContent >#browsable
+#xgcontent #mainContent #browsable
 {
 	
 	-moz-border-radius:3px;
@@ -39,7 +39,7 @@
 	top: 10px;
 }
 
-#xgcontent > #mainContent > #textNews
+#xgcontent #mainContent #textNews
 {
 	position: absolute;
 	right: 0;
@@ -53,7 +53,7 @@
 	background-color:#bcd2c3;
 }
 
-#xgcontent > #mainContent > #textNews ul
+#xgcontent #mainContent #textNews ul
 {
 	margin:5px 0 0 0;
 	margin-left:10px;
@@ -61,7 +61,7 @@
 
 }
 
-#xgcontent > #mainContent > #textNews li
+#xgcontent #mainContent #textNews li
 {
 
 	margin: 8px 0 0 0;
@@ -78,7 +78,7 @@
 	border-bottom:1px solid #ccc;
 }
 
-#xgcontent > #mainContent > #gongNews
+#xgcontent #mainContent #gongNews
 {
 	position: absolute;
 	top: 10px;
@@ -92,7 +92,7 @@
 	background-color:#bcd2c3;
 }
 
-#xgcontent > #mainContent > #informs
+#xgcontent #mainContent #informs
 {
 	width: 320px;
 	margin: 0;
@@ -108,7 +108,7 @@
 	background-color:#bcd2c3;
 }
 
-#xgcontent > #mainContent > #teaching
+#xgcontent #mainContent #teaching
 {
 	width: 320px;
 	height: 290px;
@@ -121,7 +121,7 @@
 	right: 0;
 	top: 320px;
 }
-#xgcontent > #mainContent > #email
+#xgcontent #mainContent #email
 {
 	width: 320px;
 	height: 290px;
@@ -135,25 +135,25 @@
 	background-color:#bcd2c3; 
 }
 
-#xgcontent > #mainContent a
+#xgcontent #mainContent a
 {
 	color:#000000;
 	text-decoration: none;
 }
 
-#xgcontent > #mainContent a:hover
+#xgcontent #mainContent a:hover
 {
 	color:#88ccee;
 }
 
-#xgcontent > #mainContent > #gongNews ul
+#xgcontent #mainContent #gongNews ul
 {
 	margin:5px 0 0 0;
 	margin-left:10px;
 	padding:0;
 }
 
-#xgcontent > #mainContent > #gongNews li
+#xgcontent #mainContent #gongNews li
 {
 	margin: 8px 0 0 0;
 	width: 240px;
@@ -168,14 +168,14 @@
 	border-bottom:1px dashed #326c37;
 }
 
-#xgcontent > #mainContent > #informs ul
+#xgcontent #mainContent #informs ul
 {
 	margin:5px 0 0 0;
 	margin-left:10px;
 	padding:0;
 }
 
-#xgcontent > #mainContent > #informs li
+#xgcontent #mainContent #informs li
 {
 	margin: 8px 0 0 0;
 	width: 280px;
@@ -190,14 +190,14 @@
 	border-bottom:1px dashed #326c37;
 }
 
-#xgcontent > #mainContent > #teaching ul
+#xgcontent #mainContent #teaching ul
 {
 	margin:10px 0 0 0;
 	margin-left:10px;
 	padding:0;
 }
 
-#xgcontent > #mainContent > #teaching li 
+#xgcontent #mainContent #teaching li 
 {
 
 	margin: 10px 0 0 0;
@@ -213,14 +213,14 @@
 	border-bottom:1px dashed #326c37;
 }
 
-#xgcontent > #mainContent > #email ul
+#xgcontent #mainContent #email ul
 {
 	margin:10px 0 0 0;
 	margin-left:10px;
 	padding:0;
 }
 
-#xgcontent > #mainContent > #email li 
+#xgcontent #mainContent #email li 
 {
 
 	margin: 8px 0 0 0;
@@ -269,7 +269,7 @@
 {
 	color:#727272;
 }
-#xgcontent #mainContent .mainMore>a:hover
+#xgcontent #mainContent .mainMore a:hover
 {
 	color:#000;
 }

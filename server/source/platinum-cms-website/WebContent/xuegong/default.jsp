@@ -14,14 +14,14 @@
 <script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="../static/xuegong/js/slide.js"></script>
 <script type="text/javascript" src="/xuegong/scripts/src/pt/cms/admin/post/view/huiyin.js"></script>
-
+<script src="/static/common/scripts/src/IE6.js" type="text/javascript"></script>
 <!-- FlexSlider end -->
 
 <link href = "/static/xuegong/css/xuegong.css" rel = "stylesheet"/>
 
 <title>学工处</title>
 </head>
-<body>
+<body onload="xuegong()">
 
 	<cms:Header path = "xuegong"/>
 
