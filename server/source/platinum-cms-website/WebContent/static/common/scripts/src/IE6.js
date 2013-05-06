@@ -74,18 +74,24 @@ function jiaowu(){
 }
 function xuegong(){
 	if (($.browser.msie) && ($.browser.version == "6.0")){
-		$("#collegelogo img").attr({ src: "../static/xuegong/images/logoie6.png"});
-		$("#secondlogo img").attr({ src: "../static/xuegong/images/xuegongie6.png"});
-		$("#xgcontent #mainContent #gongNews li").css({ "background-image":"url(../static/xuegong/images/listie6.png)"});
-		$("#xgcontent #mainContent #email li").css({ "background-image":"url(../static/xuegong/images/listie6.png)"});
-		$("#xgcontent #mainContent #informs li").css({ "background-image":"url(../static/xuegong/images/listie6.png)"});
-		$("#xgcontent #mainContent #teaching li").css({ "background-image":"url(../static/xuegong/images/listie6.png)"});
-		
+		$("#collegelogo img").attr({ src: "../../../static/xuegong/images/logoie6.png"});
+		$("#secondlogo img").attr({ src: "../../../static/xuegong/images/xuegongie6.png"});
+		$("#xgcontent #mainContent #gongNews li").css({ "background-image":"url(../../../static/xuegong/images/listie6.png)"});
+		$("#xgcontent #mainContent #email li").css({ "background-image":"url(../../../static/xuegong/images/listie6.png)"});
+		$("#xgcontent #mainContent #informs li").css({ "background-image":"url(../../../static/xuegong/images/listie6.png)"});
+		$("#xgcontent #mainContent #teaching li").css({ "background-image":"url(../../../static/xuegong/images/listie6.png)"});
+		$("#sideBar").css({"height":"650px","position":"relative","float":"right"});
+		$("#more").css({"width":"692px"});
+		$("#postDetail").css({"float":"left"});
+		$("#bodyContent #more").css({"position":"absolute","top":"0"});
 	}
 }
 function tuanwei(){
 	if (($.browser.msie) && ($.browser.version == "6.0")){
 		$("#browsable").css({"margin-left":"0px"});
 		$("#linkLabel ul").css({"width":"100%"});
+		$("#sideBar").css({"height":"650px","position":"relative","float":"right"});
+		$("#more").css({"height":"646px"});
+		$("#postList li span").css({"padding-right":"15px"});
 	}
 }

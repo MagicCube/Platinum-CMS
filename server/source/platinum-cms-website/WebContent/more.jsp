@@ -51,7 +51,7 @@ if (subcategoryId != null)
     
 </head>
 
-<body>
+<body onload="<%=categoryId%>()">
 
 <cms:Header path="<%= categoryId%>" displaySideBar="true"/>
     <div id="more"> 
