@@ -83,3 +83,9 @@ function xuegong(){
 		
 	}
 }
+function tuanwei(){
+	if (($.browser.msie) && ($.browser.version == "6.0")){
+		$("#browsable").css({"margin-left":"0px"});
+		$("#linkLabel ul").css({"width":"100%"});
+	}
+}

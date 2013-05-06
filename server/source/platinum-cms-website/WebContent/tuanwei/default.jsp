@@ -8,6 +8,7 @@
 <link href = "/static/common/css/basic.css" rel = "stylesheet"></link>
 <link href = "/static/home/css/home.css" rel = "stylesheet"></link>
 <script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
+<script src="/static/common/scripts/src/IE6.js" type="text/javascript"></script>
 
 <!-- FlexSlider start -->
 <link rel="stylesheet" href="/static/home/plugins/flexslider/flexslider.css" type="text/css" />
@@ -56,7 +57,7 @@ a img{ border:none}
 <title>共青团南京师范大学中北学院委员会</title>
 </head>
 
-<body> 
+<body onload="tuanwei()"> 
 
   <cms:Header path = "tuanwei"/>
 <!--右侧正文开始-->
