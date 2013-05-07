@@ -35,6 +35,7 @@ body
 	padding: 0;
 	margin: 0;
 	background: url(../images/spring2.jpg) fixed #FFF no-repeat;
+	background-position:bottom;
 }
 
 input
