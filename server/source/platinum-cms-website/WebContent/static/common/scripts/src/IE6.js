@@ -116,5 +116,9 @@ function jiuye(){
 		$("#mainContent ul li").css({"width":"95%"});
 		$("#mainContent ul").css({"margin-right":"0"});
 		$("#tsztList img").css({"width":"350px"});
+		$("#sideBar").css({"height":"650px","position":"relative","float":"right"});
+		$("#sideBar li").css({"width":"100%"});
+		$("#bodyContent #more").css({"position":"absolute","top":"0"});
+		$("#postDetail").css({"float":"left"});
 	}
 }
