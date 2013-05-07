@@ -21,13 +21,13 @@
 	overflow: hidden;	
 }
 
-ul > li a > div
+ul li a div
 {
 	font-size:13.5px;
 	display: inline;
 }
 
-#mainContent > #workNews{
+#mainContent #workNews{
 	background-color:#FFF;
 	position: absolute;
 	left: 15px;
@@ -41,7 +41,7 @@ ul > li a > div
 	
 }
 
-#mainContent > #emNews
+#mainContent #emNews
 {
 	background-color:#FFF;
 	position: absolute;
@@ -56,7 +56,7 @@ ul > li a > div
 	border-top:0;
 }
 
-#mainContent > #browsable
+#mainContent #browsable
 {
 	background-color:#FFF;
 	position: absolute;
@@ -98,7 +98,7 @@ ul > li a > div
 .block_home_slider .flex-control-paging li a.flex-active {background-position:right top;}
 .flexslider .slides img { width: 340px;height: 230px;}
 
-#mainContent > #zfNews
+#mainContent #zfNews
 {	
 	background-color:#FFF;
 	position: absolute;
@@ -113,7 +113,7 @@ ul > li a > div
 	border-top:0;
 }
 
-#mainContent > #zyghNews
+#mainContent #zyghNews
 {
 	background-color:#FFF;
 	position: absolute;
@@ -127,7 +127,7 @@ ul > li a > div
 	border-top:0;
 }
 
-#mainContent > #jyzdNews
+#mainContent #jyzdNews
 {	
 	background-color:#FFF;
 	position: absolute;
@@ -149,7 +149,7 @@ ul > li a > div
 	list-style-position: inside;
 }
 
-#workNews ul > li
+#workNews ul li
 {
 	margin: 0;
 	padding: 5px 0 0 0;		
@@ -167,7 +167,7 @@ ul > li a > div
 	list-style-position: inside;
 }
 
-#emNews ul > li
+#emNews ul li
 {
 	margin: 0;
 	padding: 5px 0 0 0;	
@@ -185,7 +185,7 @@ ul > li a > div
 	list-style-position: inside;
 }
 
-#zfNews ul > li
+#zfNews ul li
 {
 	margin: 0;
 	padding: 5px 0 0 10px;	
@@ -203,7 +203,7 @@ ul > li a > div
 	list-style-position: inside;
 }
 
-#zyghNews ul > li
+#zyghNews ul li
 {
 	margin: 0;
 	padding: 5px 0 0 0;	
@@ -221,7 +221,7 @@ ul > li a > div
 	list-style-position: inside;
 }
 
-#jyzdNews ul > li
+#jyzdNews ul li
 {
 	margin: 0;
 	padding: 5px 0 0 0;	
@@ -233,6 +233,9 @@ ul > li a > div
 
 #mainContent a
 {
+	display:block;
+	width:100%;
+	height:100%;
 	text-decoration: none;
 	color: #000;
 }
@@ -339,7 +342,7 @@ font-weight: bold;
 	display:none;
 }
 
-#tsztList > #post1 {
+#tsztList #post1 {
 	display: block;
 }
 
@@ -355,7 +358,7 @@ font-weight: bold;
 	display: none;
 }
 
-#tsztList > #post1 > .bx-caption
+#tsztList #post1 .bx-caption
 {
 	display:block;
 }

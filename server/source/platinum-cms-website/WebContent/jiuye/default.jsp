@@ -9,6 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>	
+<script src="/static/common/scripts/src/IE6.js" type="text/javascript"></script>
 <!-- FlexSlider start -->
 <link rel="stylesheet" href="/static/home/plugins/flexslider/flexslider.css" type="text/css" />
 <script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
@@ -18,7 +19,7 @@
 
 <title>就业指导</title>
 </head>
-<body>
+<body onload="jiuye()">
 	
 	 <cms:Header path="jiuye"/>
 	 

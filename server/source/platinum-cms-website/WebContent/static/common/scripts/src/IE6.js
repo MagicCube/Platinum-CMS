@@ -109,3 +109,11 @@ function zhaosheng(){
 		$("#sideBar li").css({"width":"100%"});
 	}
 }
+function jiuye(){
+	if (($.browser.msie) && ($.browser.version == "6.0")){
+		$("#collegelogo img").attr({ src: "../../../static/jiuye/images/logoie6.png"});
+		$("#secondlogo img").attr({ src: "../../../static/jiuye/images/head_logoie6.png"});
+		$("#mainContent ul li").css({"width":"95%"});
+		$("#mainContent ul").css({"margin-right":"0"});
+	}
+}
