@@ -115,5 +115,6 @@ function jiuye(){
 		$("#secondlogo img").attr({ src: "../../../static/jiuye/images/head_logoie6.png"});
 		$("#mainContent ul li").css({"width":"95%"});
 		$("#mainContent ul").css({"margin-right":"0"});
+		$("#tsztList img").css({"width":"350px"});
 	}
 }
