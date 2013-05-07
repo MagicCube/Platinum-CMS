@@ -11,7 +11,7 @@
 
 img{border:0;}
 
-#mContent > #browsable
+#mContent #browsable
 {
 	width: 602px;
 	height: 302px;
@@ -61,7 +61,7 @@ img{border:0;}
 .block_home_slider .flex-control-paging li a.flex-active {background-position:right top;}
 .flexslider .slides img { width: 600px; height: 300px;}
 
-#mContent > #textNews
+#mContent #textNews
 {
 	position: absolute;
 	width: 330px;  	
@@ -72,7 +72,7 @@ img{border:0;}
 	top: 10px;
 }
 
-#mContent > #informs
+#mContent #informs
 {
 	width: 310px;  
 	margin: 0 0 0 5px;
@@ -85,7 +85,7 @@ img{border:0;}
 	left: 0;
 }
 
-#mContent > #teaching
+#mContent #teaching
 {
 	position: absolute;
 	width: 310px;
@@ -100,7 +100,7 @@ img{border:0;}
 	overflow: hidden;
 }
 
-#mContent > #redian
+#mContent #redian
 {
 	position: absolute;
 	width: 320px;
@@ -113,7 +113,7 @@ img{border:0;}
 	overflow: hidden;
 }
 
-#mContent > #zhuanye
+#mContent #zhuanye
 {
 	position: absolute;
 	top: 590px;
@@ -125,7 +125,7 @@ img{border:0;}
 	overflow: hidden;
 }
 
-#mContent > #jiangzhu
+#mContent #jiangzhu
 {
 	position: absolute;
 	top: 590px;
@@ -139,7 +139,7 @@ img{border:0;}
 	overflow: hidden;
 }
 
-#mContent > #zhuanti
+#mContent #zhuanti
 {
 	position: absolute;
 	top: 590px;
@@ -166,12 +166,12 @@ img{border:0;}
 }
 
 
-ul > li a > div
+ul li a div
 {
 	display: inline;
 }
 
-#mContent > #textNews ul
+#mContent #textNews ul
 {	
 	min-height:240px;
 	border:1px solid #ee911a;
@@ -183,7 +183,7 @@ ul > li a > div
 	list-style-position:inside;
 }
 
-#mContent > #textNews li
+#mContent #textNews li
 {
 	padding: 0;
 	margin: 5px 0 0 0;
@@ -194,7 +194,7 @@ ul > li a > div
 	overflow: hidden;
 }
 
-#mContent > #informs ul
+#mContent #informs ul
 {
 	
 	border:1px solid #ee911a;
@@ -206,7 +206,7 @@ ul > li a > div
 	list-style:url(/static/zhaosheng/image/list.png) inside ;
 }
 
-#mContent > #informs li
+#mContent #informs li
 {
 	padding: 0;
 	margin: 6px 0 0 0;
@@ -218,7 +218,7 @@ ul > li a > div
 	overflow: hidden;
 }
 
-#mContent > #teaching ul
+#mContent #teaching ul
 {
 	border:1px solid #ee911a;
 	border-radius: 0 0 10px 10px;
@@ -229,7 +229,7 @@ ul > li a > div
 	list-style:url(/static/zhaosheng/image/list.png) inside ;
 }
 
-#mContent > #teaching li 
+#mContent #teaching li 
 {
 	padding: 0;
 	margin: 6px 0 0 0;
@@ -241,7 +241,7 @@ ul > li a > div
 	overflow: hidden;
 }
 
-#mContent > #zhengce ul
+#mContent #zhengce ul
 {
 	display: block;
 	margin:10px 0 0 0;
@@ -249,7 +249,7 @@ ul > li a > div
 	list-style:url(/static/zhaosheng/image/list.png) inside ;
 }
 
-#mContent > #zhengce li 
+#mContent #zhengce li 
 {
 	padding: 0;
 	margin: 6px 0 0 0;
@@ -261,7 +261,7 @@ ul > li a > div
 	overflow: hidden;
 }
 
-#mContent > #redian ul
+#mContent #redian ul
 {
 	border:1px solid #ee911a;
 	border-radius: 0 0 10px 10px;
@@ -272,7 +272,7 @@ ul > li a > div
 	list-style:url(/static/zhaosheng/image/list.png) inside ;
 }
 
-#mContent > #redian li 
+#mContent #redian li 
 {
 	padding: 0;
 	margin: 6px 0 0 0;
@@ -284,7 +284,7 @@ ul > li a > div
 	overflow: hidden;
 }
 
-#mContent > #zhuanti ul
+#mContent #zhuanti ul
 {
 	min-height: 170px;
 	border: 1px solid #ee911a;
@@ -295,7 +295,7 @@ ul > li a > div
 	list-style:url(/static/zhaosheng/image/list.png) inside ;
 }
 
-#mContent > #zhuanti li 
+#mContent #zhuanti li 
 {
 	padding: 0;
 	margin: 6px 0 0 0;
@@ -307,7 +307,7 @@ ul > li a > div
 	overflow: hidden;
 }
 
-#mContent > #jiangzhu ul
+#mContent #jiangzhu ul
 {
 	min-height: 170px;
 	border: 1px solid #ee911a;
@@ -318,7 +318,7 @@ ul > li a > div
 	list-style:url(/static/zhaosheng/image/list.png) inside ;
 }
 
-#mContent > #jiangzhu li 
+#mContent #jiangzhu li 
 {
 	padding: 0;
 	margin: 6px 0 0 0;
@@ -330,7 +330,7 @@ ul > li a > div
 	overflow: hidden;
 }
 
-#mContent > #zhuanye ul
+#mContent #zhuanye ul
 {
 	min-height: 170px;
 	border: 1px solid #ee911a;
@@ -340,7 +340,7 @@ ul > li a > div
 	list-style:url(/static/zhaosheng/image/list.png) inside ;
 }
 
-#mContent > #zhuanye li 
+#mContent #zhuanye li 
 {
 	padding: 0;
 	margin: 6px 0 0 0;
@@ -405,7 +405,7 @@ ul > li a > div
 	height: 298px;
 }
 #post1{display:block;position:absolute;top:0;left:0;}
-.flexslider .slides > li{display: none;height: 290px;-webkit-backface-visibility: hidden;}
+.flexslider .slides li{display: none;height: 290px;-webkit-backface-visibility: hidden;}
 .bx-caption
 {
 	position: absolute;
@@ -429,7 +429,7 @@ ul > li a > div
 	line-height: 15px;
 	text-align: center;
 }
-#mContent > #mainContent a
+#mContent #mainContent a
 {
 	font-family: 微软雅黑;
 	font-size: 13px;

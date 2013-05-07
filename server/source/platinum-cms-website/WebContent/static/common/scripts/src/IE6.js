@@ -95,3 +95,17 @@ function tuanwei(){
 		$("#postList li span").css({"padding-right":"15px"});
 	}
 }
+function zhaosheng(){
+	if (($.browser.msie) && ($.browser.version == "6.0")){
+		$("#collegelogo img").attr({ src: "../../../static/zhaosheng/image/logoie6.png"});
+		$("#secondlogo img").attr({ src: "../../../static/zhaosheng/image/vicezhaoshengie6.png"});
+		$("#mContent #textNews ul").css({"height":"242px"});
+		$("#mContent #informs ul,#mContent #teaching ul,#mContent #redian ul").css({"height":"190px"});
+		$("#mContent #zhuanye ul,#mContent #jiangzhu ul,#mContent #zhuanti ul").css({"height":"170px"});
+		$("#tsztList li").css({"left":"0"});
+		$("#sideBar").css({"height":"650px","position":"relative","float":"right"});
+		$("#bodyContent #more").css({"position":"absolute","top":"0"});
+		$("#postDetail").css({"float":"left"});
+		$("#sideBar li").css({"width":"100%"});
+	}
+}

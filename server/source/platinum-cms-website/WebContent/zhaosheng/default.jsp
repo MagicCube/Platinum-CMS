@@ -8,6 +8,7 @@
 
 
 <link href = "/static/common/css/basic.css" rel = "stylesheet"></link> 
+<script src="/static/common/scripts/src/IE6.js" type="text/javascript"></script>
 
 <script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>	
 <!-- FlexSlider start -->
@@ -19,7 +20,7 @@
 <link href = "/static/zhaosheng/css/zhaosheng.css" rel = "stylesheet"></link>
 
 </head>
-<body>
+<body onload="zhaosheng()">
 <cms:Header path = "zhaosheng"/>
 <div id = "mContent">
 			<div id="browsable">
