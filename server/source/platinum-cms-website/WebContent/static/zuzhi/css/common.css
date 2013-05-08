@@ -29,7 +29,7 @@ body
 	background: #e60012;
 }
 
-#headcontainer > #header1
+#headcontainer #header1
 {
 	margin-left: auto;
 	margin-right: auto;
@@ -39,7 +39,7 @@ body
 	position: relative;
 }
 
-#header1 > #indexAndsearch
+#header1 #indexAndsearch
 {
 	position: absolute;
 	margin-top: 15px;
@@ -49,7 +49,7 @@ body
 }
 
 
-#header1 > #indexAndsearch a
+#header1 #indexAndsearch a
 {
 	color:#ffffff;
 	text-decoration: none;
@@ -57,12 +57,12 @@ body
 	margin-right:9px;
 }
 
-#header1 > #indexAndsearch a:hover
+#header1 #indexAndsearch a:hover
 {
 	color: #ccc;
 }
 
-#header1 > #indexAndsearch > #searchbar
+#header1 #indexAndsearch #searchbar
 {
 	width: 220px;
 	height: 22px;
@@ -71,14 +71,14 @@ body
 	background-repeat: no-repeat;
 }
 
-#header1 > #collegelogo
+#header1 #collegelogo
 {
 	position: absolute;
 	left: 0;
 	top: 10px;
 }
 
-#header1 > #secondlogo
+#header1 #secondlogo
 {
 	position: absolute;
 	left: 450px;
@@ -363,7 +363,7 @@ table td a
 /*简介*/
 #postDetail #imageContent{float:left;margin-top:50px;}
 #postDetail #textContent{margin-top:50px;width:650px;float:right;padding:10px 0 0 0;}
-#textContent > #content{width:650px;}
+#textContent #content{width:650px;}
 
 #imageContent img
 {
@@ -385,7 +385,7 @@ table td a
 	text-align: center;
 	font-size:19px;
 }
-#postDetail > #title{margin-top:20px;}
+#postDetail #title{margin-top:20px;}
 #textContent #info, #info
 {
 	text-align: center;
@@ -421,7 +421,7 @@ table td a
 	clear: both;
 }
 
-#bottom2 span > a
+#bottom2 span a
 {
 	color: #fff;
 	text-decoration: none;
@@ -449,12 +449,12 @@ table td a
 	clear: both;
 	margin-top:5px;
 }
-#bottom2 span > a:hover
+#bottom2 span a:hover
 {
 	color: #fdbc30;
 }
 
-#bottom2 > #website
+#bottom2 #website
 {
 	position: absolute;
 	left: 350px;
@@ -476,7 +476,7 @@ table td a
 }
 
 
-#bottom2 > #developer
+#bottom2 #developer
 {
 	position: absolute;
 	right: 0;
@@ -543,7 +543,7 @@ a #title:hover{color:#808080;}
 #categoryNavigationBar{width:700px;}
 #title_style span{position:absolute;top:8px;right:5px;}
 
-#content>.MsoNormal{
+#content .MsoNormal{
 	margin-top:5px;
 	margin-bottom:5px;
 	line-height: 150%; 

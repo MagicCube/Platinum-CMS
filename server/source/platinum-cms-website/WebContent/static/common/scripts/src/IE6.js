@@ -122,3 +122,20 @@ function jiuye(){
 		$("#postDetail").css({"float":"left"});
 	}
 }
+function zuzhi(){
+	if (($.browser.msie) && ($.browser.version == "6.0")){
+		$("#collegelogo img").attr({ src: "../../../static/zuzhi/images/logoie6.png"});
+		$("#secondlogo img").attr({ src: "../../../static/zuzhi/images/zuzhiie6.png"});
+		$("#maincontent #inform ul").css({"height":"214px"});
+		$("#maincontent #activity ul").css({"height":"214px"});
+		$("#box-bottom #boxContent #policy ul").css({"height":"220px"});
+		$("#box-bottom #boxContent #download ul").css({"height":"220px"});
+		$("#box-bottom #boxContent #outline ul").css({"height":"220px"});
+		$("#sideBar").css({"height":"650px","position":"relative","float":"right"});
+		$("#title_style").css({"width":"260px"});
+		$("#postDetail").css({"float":"left","position":"relative","width":"680px"});
+		$("#sideBar li").css({"width":"100%"});
+		$("#bodyContent #more").css({"position":"absolute","top":"0"});
+		$("#categoryNavigationBar").css({"width":"100%"});
+	}
+}

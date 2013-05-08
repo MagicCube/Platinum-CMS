@@ -14,7 +14,7 @@
 }
 
 
-#maincontent > #inform
+#maincontent #inform
 {
 	border:1px solid #e60012;
 	border-radius:0 15px 0 0;
@@ -26,7 +26,7 @@
 	border-top:0;
 }
 
-#maincontent > #inform ul
+#maincontent #inform ul
 {
 	line-height:15px;
 	margin:10px 0 0 0;
@@ -35,7 +35,7 @@
 	list-style-position:inside;
 }
 
-#maincontent > #inform ul li
+#maincontent #inform ul li
 {
 	padding: 0;
 	margin: 6px 0 0 0;
@@ -58,7 +58,7 @@
 	color:red;
 }
 
-#maincontent > #pic
+#maincontent #pic
 {
 	position: absolute;
 	padding: 0;
@@ -73,7 +73,7 @@
 	background: url(/static/zuzhi/images/Board_person_1.jpg) no-repeat;
 }
 
-#pic >#browsable
+#pic #browsable
 {
 	width:100%;
 	height: 100%;
@@ -83,7 +83,7 @@
 }
 
 
-#maincontent > #activity
+#maincontent #activity
 {	
 	border-radius:15px 4px 0 0;
 	position: absolute;
@@ -96,7 +96,7 @@
 	border-left:0;
 }
 
-#maincontent > #activity>span
+#maincontent #activity span
 {
 	display:block;
 	height:35px;
@@ -105,7 +105,7 @@
 	padding;
 }
 
-#maincontent > #activity ul
+#maincontent #activity ul
 {
 	line-height:15px;
 	width:295px;
@@ -116,7 +116,7 @@
 	list-style-position:inside;
 }
 
-#maincontent > #activity ul li
+#maincontent #activity ul li
 {
 	margin: 0;
 	padding: 6px 0 0 0;
@@ -128,7 +128,7 @@
 	overflow: hidden;
 }
 
-#maincontent > #box-bottom
+#maincontent #box-bottom
 {
 	position: absolute;
 	padding: 0;
@@ -139,7 +139,7 @@
 	background: url(/static/zuzhi/images/Board_person_box.gif) no-repeat;
 }
 
-#box-bottom > #boxContent
+#box-bottom #boxContent
 {
 	width: 990px;
 	height: 339px;
@@ -148,7 +148,7 @@
 	margin: 0;
 }
 
-#box-bottom > #boxContent > #policy
+#box-bottom #boxContent #policy
 {
 	width: 300px;
 	height: 285px;
@@ -158,7 +158,7 @@
 	margin: 0;
 }
 
-#box-bottom  > #boxContent > #policy ul
+#box-bottom #boxContent #policy ul
 {
 	border-left:1px solid #e60012;
 	border-right:1px solid #e60012;
@@ -171,7 +171,7 @@
 	list-style-position:inside;
 }
 
-#box-bottom  > #boxContent > #policy ul li
+#box-bottom #boxContent #policy ul li
 {
 	padding: 0;
 	margin: 6px 0 0 0;
@@ -183,7 +183,7 @@
 	overflow: hidden;
 }
 
-#box-bottom  > #boxContent > #download
+#box-bottom #boxContent #download
 {
 	width: 300px;
 	height: 300px;
@@ -193,7 +193,7 @@
 	margin: 0;
 }
 
-#box-bottom  > #boxContent > #download ul
+#box-bottom #boxContent #download ul
 {
 	min-height:210px;
 	border:1px solid #e60012;
@@ -205,7 +205,7 @@
 	list-style-position:inside;
 }
 
-#box-bottom  > #boxContent > #download ul li
+#box-bottom #boxContent #download ul li
 {
 	padding: 0;
 	margin: 6px 0 0 0;
@@ -217,7 +217,7 @@
 	overflow: hidden;
 }
 
-#box-bottom  > #boxContent > #outline
+#box-bottom #boxContent #outline
 {
 	width: 300px;
 	height: 300px;
@@ -227,7 +227,7 @@
 	margin: 0;
 }
 
-#box-bottom  > #boxContent > #outline ul
+#box-bottom #boxContent #outline ul
 {
 	min-height:210px;
 	border-radius:0 0 10px 10px;
@@ -239,7 +239,7 @@
 	list-style-position:inside;
 }
 
-#box-bottom  > #boxContent > #outline ul li
+#box-bottom #boxContent #outline ul li
 {
 	padding: 0;
 	margin: 6px 0 0 0;
@@ -269,7 +269,7 @@
 	height:40px;
 }
 
-#niceR>a
+#niceR a
 {
 	position:absolute;
 	display:block;
@@ -286,7 +286,7 @@
 	opacity:1;
 }
 
-#niceR>a:hover
+#niceR a:hover
 {
 	opacity:1;
 }
@@ -371,7 +371,7 @@ line-height:30px;
 #tsztList li{width:370px;height:300px;}
 .bx-caption{width:370px;height:30px;position:absolute;top:0;left:0;z-index: 1000;background-color: rgb(230, 0, 18);background: rgba(230, 0, 18, 0.55);display: none;}
 .bx-caption span{width: 100%;height: 100%;text-align: center;line-height: 30px;font-size: 16px;color: #FFF;}
-#tsztList > #post1{display:block;}
-#tsztList > #post1 > .bx-caption{display:block;}
+#tsztList #post1{display:block;}
+#tsztList #post1 .bx-caption{display:block;}
 #tsztList img{display: block;width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
 #acti{width:293px;height:266px;border;border: 1px solid #e60012;border-top:0;}

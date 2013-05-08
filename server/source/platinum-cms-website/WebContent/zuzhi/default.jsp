@@ -10,6 +10,7 @@
 <link href = "/static/common/css/basic.css" rel = "stylesheet"></link>
 <link href = "/static/home/css/home.css" rel = "stylesheet"></link>
 <script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>	
+<script src="/static/common/scripts/src/IE6.js" type="text/javascript"></script>
 <!-- FlexSlider start -->
 <link rel="stylesheet" href="/static/home/plugins/flexslider/flexslider.css" type="text/css" />
 <script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
@@ -19,7 +20,7 @@
 <link href="/static/zuzhi/css/zuzhi.css" rel = "stylesheet"></link>
 
 </head>
-<body>
+<body onload="zuzhi()">
 	
 	<cms:Header path = "zuzhi"/>
 	
