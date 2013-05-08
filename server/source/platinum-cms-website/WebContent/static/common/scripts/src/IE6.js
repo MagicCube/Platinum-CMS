@@ -139,3 +139,9 @@ function zuzhi(){
 		$("#categoryNavigationBar").css({"width":"100%"});
 	}
 }
+function caiwu(){
+	if (($.browser.msie) && ($.browser.version == "6.0")){
+		$("#collegelogo img").attr({ src: "../../../static/caiwu/image/logoie6.png"});
+		$("#secondlogo img").attr({ src: "../../../static/caiwu/image/caiwuie6.png"});
+	}
+}

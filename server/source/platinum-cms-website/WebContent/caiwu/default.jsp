@@ -7,10 +7,11 @@
 <title>南京师范大学中北学院财务处</title>
 <link href = "/static/caiwu/css/common.css" rel = "stylesheet"></link>
 <link href = "/static/caiwu/css/caiwu.css" rel = "stylesheet"></link>
-
+<script src="/static/common/scripts/lib/jquery.js" type="text/javascript"></script>
+<script src="/static/common/scripts/src/IE6.js" type="text/javascript"></script>
 
 </head>
-<body>	
+<body onload="caiwu()">	
 <cms:Header path = "caiwu"/>
 <div id = "content">
 		<div id = "mainContent">

@@ -28,7 +28,7 @@ a:hover
 	height: 530px;	
 	position: relative;	
 }
-#content > #mainContent
+#content #mainContent
 {
 	border-left:1px solid #b0c2d3;
 	border-right:1px solid #b0c2d3;
@@ -38,7 +38,7 @@ a:hover
 	height: 550px;
 	float: left;
 }
-#content > #mainContent > #news
+#content #mainContent #news
 {
 	width: 580px;
 	margin: 0;
@@ -48,7 +48,7 @@ a:hover
     margin-top:15px;
 
 }
-#content > #mainContent > #news > #menu
+#content #mainContent #news #menu
 {
 	width: 580px;
 	margin: 0;
@@ -59,14 +59,14 @@ a:hover
 	background-color:#9C0;
 	background: url(/static/caiwu/image/di.png);
 }
-#content > #mainContent > #news > #menu ul
+#content #mainContent #news #menu ul
 {
 	margin:0 0 0 0;
 	margin-left:10px;
 	padding:0;
 	list-style-position:inside;
 }
-#content > #mainContent > #news > #menu li
+#content #mainContent #news #menu li
 {
 	padding: 0;
 	margin: 8px 0 0 0;
@@ -80,7 +80,7 @@ a:hover
 	text-align: center;
 
 }
-#content > #mainContent > #news > #menu li a:hover
+#content #mainContent #news #menu li a:hover
 {
 	color:#ffffff;
 }
@@ -97,7 +97,7 @@ a:hover
 
 
 }
-#content > #mainContent > #news > #textNews
+#content #mainContent #news #textNews
 {
 	width: 540px;
 	margin: 0;
@@ -111,7 +111,7 @@ a:hover
 	border-radius:5px;
 	-webkit-border-radius:5px;
 }
-#content > #mainContent > #news > #textNews ul
+#content #mainContent #news #textNews ul
 {
 	margin:0;
 	margin-left:10px;
@@ -119,7 +119,7 @@ a:hover
 	list-style-position:inside;
 }
 
-#content > #mainContent > #news > #textNews li
+#content #mainContent #news #textNews li
 {
 	padding: 0;
 	margin: 8px 0 0 0;
@@ -130,11 +130,11 @@ a:hover
 	white-space: nowrap;
 	overflow: hidden;
 }
-#content > #mainContent > #news > #textNews li a:hover
+#content #mainContent #news #textNews li a:hover
 {
 	color:#798da5;
 }
-#content > #mainContent > #gongNews
+#content #mainContent #gongNews
 {
 	width: 34px;
 	margin: 0;
@@ -151,7 +151,7 @@ a:hover
 
 
 }
-#content > #mainContent > #gongNews ul
+#content #mainContent #gongNews ul
 {
 	height: 90px;
 	width: 990px;
@@ -162,7 +162,7 @@ a:hover
 	list-style-position:inside;
 }
 
-#content > #mainContent > #gongNews img
+#content #mainContent #gongNews img
 {
 	height: 60px;
 	width: 100px;
@@ -172,7 +172,7 @@ a:hover
 	border-radius:3px;
 	margin-bottom: 5px;
 }
-#content > #mainContent > #gongNews li a
+#content #mainContent #gongNews li a
 {
 	display: block;
 	height: 30px;
@@ -201,7 +201,7 @@ a:hover
 
 
 
-#content > #mainContent > #informs
+#content #mainContent #informs
 {
 	width: 260px;
 	margin: 0;
@@ -219,7 +219,7 @@ a:hover
 
 }
 
-#content > #mainContent > #teaching
+#content #mainContent #teaching
 {
 	width: 490px;
 	margin: 0;
@@ -234,7 +234,7 @@ a:hover
 	background-color:#ecfbff; 
 
 }
-#content > #mainContent > #email
+#content #mainContent #email
 {
 	width: 490px;
 	margin: 0;
@@ -250,7 +250,7 @@ a:hover
 
 }
 
-#content > #mainContent a
+#content #mainContent a
 {
 	font-family: 微软雅黑;
 	font-size: 13px;
@@ -259,7 +259,7 @@ a:hover
 
 
 
-#content > #mainContent > #informs ul
+#content #mainContent #informs ul
 {
 	margin:5px 0 0 0;
 	margin-left:10px;
@@ -267,7 +267,7 @@ a:hover
 	list-style:url(/static/caiwu/image/list1.png) inside ;
 }
 
-#content > #mainContent > #informs li
+#content #mainContent #informs li
 {
 	padding: 0;
 	margin: 8px 0 0 0;
@@ -279,7 +279,7 @@ a:hover
 	overflow: hidden;
 }
 
-#content > #mainContent > #teaching ul
+#content #mainContent #teaching ul
 {
 	margin:10px 0 0 0;
 	margin-left:10px;
@@ -287,7 +287,7 @@ a:hover
 	list-style:url(/static/caiwu/image/list1.png) inside ;
 }
 
-#content > #mainContent > #teaching li 
+#content #mainContent #teaching li 
 {
 	padding: 0;
 	margin: 8px 0 0 0;
@@ -299,7 +299,7 @@ a:hover
 	overflow: hidden;
 }
 
-#content > #mainContent > #email ul
+#content #mainContent #email ul
 {
 	margin:10px 0 0 0;
 	margin-left:10px;
@@ -307,7 +307,7 @@ a:hover
 	list-style:url(/static/caiwu/image/list1.png) inside ;
 }
 
-#content > #mainContent > #email li 
+#content #mainContent #email li 
 {
 	padding: 0;
 	margin: 8px 0 0 0;
@@ -338,7 +338,7 @@ a:hover
 	color:#999;
 }
 
-#content > #mainContent > #picNews
+#content #mainContent #picNews
 {
 	width: 350px;	/*已修改过*/
 	margin: 0;
@@ -349,7 +349,7 @@ a:hover
 	margin-top:15px;
 	border-right:1px solid #ccc;
 }
-#picNews > #browsable
+#picNews #browsable
 {
 	width: 330px;	/*已修改过*/
 	height: 260px;
