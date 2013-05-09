@@ -28,7 +28,7 @@ body
 	background-color:#0d5791;
 }
 
-#headcontainer > #header1
+#headcontainer #header1
 {
 	margin-left: auto;
 	margin-right: auto;
@@ -38,7 +38,7 @@ body
 	position: relative;
 }
 
-#header1 > #indexAndsearch
+#header1 #indexAndsearch
 {
 	position: absolute;
 	margin-top: 15px;
@@ -48,7 +48,7 @@ body
 }
 
 
-#header1 > #indexAndsearch a
+#header1 #indexAndsearch a
 {
 	color:#ffffff;
 	text-decoration: none;
@@ -56,12 +56,12 @@ body
 	margin-right:9px;
 }
 
-#header1 > #indexAndsearch a:hover
+#header1 #indexAndsearch a:hover
 {
 	color: #ccc;
 }
 
-#header1 > #indexAndsearch > #searchbar
+#header1 #indexAndsearch #searchbar
 {
 	width: 220px;
 	height: 22px;
@@ -70,14 +70,14 @@ body
 	background-repeat: no-repeat;
 }
 
-#header1 > #collegelogo
+#header1 #collegelogo
 {
 	position: absolute;
 	left: 0;
 	top: 10px;
 }
 
-#header1 > #secondlogo
+#header1 #secondlogo
 {
 	position: absolute;
 	left: 450px;
@@ -260,7 +260,7 @@ table td
 	clear: both;
 }
 
-#bottom2 span > a
+#bottom2 span a
 {
 	color: #fff;
 	text-decoration: none;
@@ -280,12 +280,12 @@ table td
 	float: left;
 }
 
-#bottom2 span > a:hover
+#bottom2 span a:hover
 {
 	color: #098ef6;
 }
 
-#bottom2 > #website
+#bottom2 #website
 {
 	position: absolute;
 	left: 385px;
@@ -307,7 +307,7 @@ table td
 }
 
 
-#bottom2 > #developer
+#bottom2 #developer
 {
 	position: absolute;
 	right: 0;
@@ -437,7 +437,7 @@ table td
 
 #postDetail h1{font-size:20px;margin-top:0;padding:0 100px;line-height:25px;}
 
-#content>.MsoNormal{
+#content .MsoNormal{
 	margin-top:5px;
 	margin-bottom:5px;
 	line-height: 150%; 

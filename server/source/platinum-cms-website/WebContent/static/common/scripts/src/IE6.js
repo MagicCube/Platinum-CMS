@@ -145,3 +145,13 @@ function caiwu(){
 		$("#secondlogo img").attr({ src: "../../../static/caiwu/image/caiwuie6.png"});
 	}
 }
+function xiandai(){
+	if (($.browser.msie) && ($.browser.version == "6.0")){
+		$("#collegelogo img").attr({ src: "../../../static/xiandai/image/logoie6.png"});
+		$("#secondlogo img").attr({ src: "../../../static/xiandai/image/xiandaiie6.png"});
+		$("#Xcontent").css({"height":"635px","width":"1020px"});
+		$("#postDetail").css({"height":"650px"});
+		$("#headcontainer").css({"width":"1020px"});
+		$("#footer").css({"width":"1020px"});
+	}
+}

@@ -8,11 +8,12 @@
 <script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>
 <link rel="stylesheet" href="/static/home/plugins/flexslider/flexslider.css" type="text/css" />
 <script type="text/javascript" src="/static/home/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script src="/static/common/scripts/src/IE6.js" type="text/javascript"></script>
 
 <link href = "/static/xiandai/css/common.css" rel = "stylesheet"></link>
 <link href = "/static/xiandai/css/xiandai.css" rel = "stylesheet"></link>
 </head>
-<body>
+<body onload="xiandai()">
  <cms:Header path = "xiandai"/>
 <div id = "Xcontent">
 		<div id = "mainContent">
