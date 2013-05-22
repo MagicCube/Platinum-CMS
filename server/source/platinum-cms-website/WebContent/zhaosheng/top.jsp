@@ -34,6 +34,8 @@
 		</li>
 		<li class = "singleMenu"><a href = "/zhaosheng/sc000000000000000000000000000175/more/">专业介绍</a>
 		</li>
+		<li class = "singleMenu"><a href = "http://zbzs.njnu.edu.cn/enrol/zzbcx/lqcx.asp" target="_blank">录取查询</a>
+		</li>
 		<li class = "singleMenu"><a href = "http://zbzs.njnu.edu.cn/enrol/guestbook/guestbook.asp" target="_blank">考生问答</a>
 		<!-- <li class = "singleMenu"><a href = "/zhaosheng/sc000000000000000000000000000180/more/">考生问答</a> -->
 		</li>
