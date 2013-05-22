@@ -58,7 +58,7 @@ request.setCharacterEncoding("utf-8");
    		<li><a href="/zuzhi" target="_blank">组织人事</a></li>
 	    <li><a>招生就业</a>
 	        <ul id="downlist" num="2">
-	            <li><a href="http://zbzs.njnu.edu.cn/enrol/" target="_blank">招生录取</a></li>
+	            <li><a href="/zuzhi" target="_blank">招生录取</a></li>
 	            <li><a href="/jiuye" target="_blank">就业指导</a></li>
 	        </ul>
 	    </li>  
