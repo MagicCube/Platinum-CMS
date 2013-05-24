@@ -13,14 +13,14 @@
     background: white;
 }
 
-#search #info
+#searchForm #info
 {
     font-size: 14px;
     padding-top: 18px;
     padding-left: 18px;
 }
 
-#search #info #keyword
+#searchForm #info #keyword
 {
     font-size: 14px;
     color: red;
