@@ -42,7 +42,7 @@ catch (Exception e)
 <body>
 
 <cms:Header1 path="news" displaySideBar="false"/>
-<div id="search">  
+<div id="searchForm">  
     <%if (keyword.length() > 1)
     { %>
     <div id="info">以下是关键字“<span id="keyword"><%= keyword%></span>”的搜索结果:</div>
