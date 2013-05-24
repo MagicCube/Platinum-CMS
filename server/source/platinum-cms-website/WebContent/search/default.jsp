@@ -41,7 +41,7 @@ catch (Exception e)
 
 <body>
 
-<cms:Header path="news" displaySideBar="false"/>
+<cms:Header1 path="news" displaySideBar="false"/>
 <div id="search">  
     <%if (keyword.length() > 1)
     { %>
