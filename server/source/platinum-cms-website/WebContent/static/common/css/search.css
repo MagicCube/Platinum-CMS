@@ -1,4 +1,4 @@
-#searchForm
+#searchRes
 {
     margin-left: auto;
     margin-right: auto;
@@ -13,14 +13,14 @@
     background: white;
 }
 
-#searchForm #info
+#searchRes #info
 {
     font-size: 14px;
     padding-top: 18px;
     padding-left: 18px;
 }
 
-#searchForm #info #keyword
+#searchRes #info #keyword
 {
     font-size: 14px;
     color: red;
