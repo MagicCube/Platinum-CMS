@@ -54,6 +54,35 @@ body{
 #homemenu ul#up li{height:4px;}
 #headerEnd{width:100%;height:30px; background-image:url(../newimages/menudown.jpg);}
 
+/*菜单*/
+#middleul ul li a{display:block;width:100%;height:100%;line-height:30px;color:#000;}
+#middleul ul{
+	display:none;
+	height:30px;
+}
+#middleul ul li{
+	width:100px;
+	margin:0 5px;
+	height:30px;
+	float:left;
+}
+#xxgk ul{
+	width:440px;
+}
+#bmjg ul,#xsgz ul,#zsjy ul{
+	width:220px;
+}
+#jlhz ul,#jszc ul{
+	width:110px;
+}
+#ggfw ul{
+	width:880px;
+}
+
+
+
+/*菜单END*/
+
 /*header结束*/
 
 /*indexContent开始*/
