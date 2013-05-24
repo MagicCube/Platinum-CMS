@@ -53,36 +53,54 @@ PostRuntimeManager manager = PostRuntimeManager.getInstance();
 List<PostEntity> posts = null;
 if (StringUtil.notNullOrEmpty(subcategoryId))
 {
-   
+    if (subcategoryId.equals("rank"))
+    {
+        if (pageSize > 0 || displayPageNavigationBar)
+        {
+            throw new RuntimeException("在“排行榜”模式下不允许使用分页。");
+        }
+        if (displayPhoto)
+        {
+        	throw new RuntimeException("在“排行榜”模式下不允许指定 displayPhoto 参数为 true。");
+        }
+        if (StringUtil.notNullOrEmpty(where))
+        {
+        	throw new RuntimeException("在“排行榜”模式下不允许指定 where 参数。");
+        }
+        
+        if (count == 0 || count == Integer.MAX_VALUE)
+        {
+            count = 10;
+        }
+        if (StringUtil.isNullOrEmpty(categoryId))
+        {
+        	categoryId = "news";
+        }
+        posts = manager.loadTopPostsByCategory(categoryId, count);
+    }
+    else if (pageSize == 0)
+    {
+	    posts = manager.loadLatestPostsBySubcategory(subcategoryId, displayPhoto, where, count);
+    }
+    else
+    {
         posts = manager.loadLatestPostsBySubcategory(subcategoryId, displayPhoto, where, pageIndex, pageSize);  
-   
+    }
 }
 else if (StringUtil.notNullOrEmpty(categoryId))
 {
-  
+    if (pageSize == 0)
+    {
+	    posts = manager.loadLatestPostsByCategory(categoryId, displayPhoto, where, count);
+    }
+    else
+    {
         posts = manager.loadLatestPostsByCategory(categoryId, displayPhoto, where, pageIndex, pageSize);
-  
+    }
 }
 %>
-<ul id="${id}" class="PostList ${cssClass}">
+<ul id="${id}" >
 <% for (PostEntity post : posts) {%>
-<li id="<%= post.getId()%>">
-    <a href="<%= post.getLink()%>" <%= openInNewWindow ? "target='_blank'" : ""%> title="<%= post.getTitle()%><%="\n更新时间："+DateUtil.formatDate(post.getCreateTime(), "yyyy年M月d日") %>" >
-        <% if (displayPhoto) {%>
-        <img src='<%= post.getPhotoURL()%>' width='315' height='210'/>
-        <% } %>
-        <div id="title"><%= post.getTitle()%></div>
-        <% if (displaySummary != null && displaySummary) {%>
-        <div id="summary"><%= post.getSummary()%></div>
-        <% } %>
-    </a>
-    <%if (displayDate) {%>
-    <span id="date">[<%= DateUtil.formatDate(post.getCreateTime(), "yyyy年M月d日") %>]</span>
-    <%} %>
-</li>
-<% } %>
-<% if (displayPageNavigationBar) {%>
-<cms:viewPageNavigationBar id="pageNavigationBar" pageIndex="<%= pageIndex%>" pageSize="<%= pageSize%>" displayNextButton="<%= posts.size() == pageSize%>"/>
+	<li id="<%= post.getId()%>"><img src="<%= post.getPhotoURL()%>" width="114" height="76"/></li>
 <% }%>
 </ul>
-

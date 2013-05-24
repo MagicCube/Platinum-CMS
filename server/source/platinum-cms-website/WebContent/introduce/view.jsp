@@ -44,7 +44,7 @@ if (subcategoryId != null)
 <link rel="stylesheet" href="/static/common/scripts/lib/album/album.css"/>
 </head>
 <body>
-	<cms:Header/>
+	<cms:Header1/>
 	<script src="/static/common/scripts/lib/album/jquery.album.js"></script> 
 	
     <div id = "maincontent" style = "height: 660px; background: none;">

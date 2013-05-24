@@ -1,8 +1,6 @@
 #more
 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    width: 660px;
     min-height:645px;
 }
 
@@ -19,7 +17,7 @@
     padding: 0;
     height: 100%;
     min-height: 650px;
-    width: 692px;
+    width: 670px;
     list-style:inside url(/static/common/images/list.png);
 }
 
@@ -27,12 +25,14 @@
 {
 	position:relative;
 	height:30px;
-	width: 680px;
+	width: 640px;
     line-height: 28px;
     margin: 0;
     padding:0;
     border-bottom: 1px #ddd dashed;   
-    margin-left: 5px;
+    margin-left:10px;
+    padding-left: 15px;
+    background:url(/static/common/images/bglist.png) no-repeat; 
 }
 
 #postList li a
@@ -82,13 +82,10 @@
 #MainBox
 {
 	position: relative;
-	width: 990px;
+	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
 	background: white;
-	border-radius: 10px;
-	margin-top: 15px;
-	margin-bottom: 15px;
 }
 
 #sideBar

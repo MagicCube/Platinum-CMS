@@ -10,7 +10,7 @@ $.fn.album = function(opt)
     this.addClass("Album");
     
     var $li = this.children("li");
-    $li.width(opt.cellWidth).height(opt.cellHeight).css("margin", opt.cellPadding);
+    $li.width(opt.cellWidth-10).height(opt.cellHeight).css("margin", opt.cellPadding);
     
     $li.mouseenter(function(e){
         $(this).find("#title").stop(true, true).slideDown("fast");

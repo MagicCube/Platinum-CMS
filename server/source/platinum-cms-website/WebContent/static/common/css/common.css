@@ -1,16 +1,3 @@
-*
-{
-	font-size: 12px;
-	font-family: 宋体,微软雅黑,黑体,Arial;
-}
-
-html, body
-{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 #content p
 {
 	margin-top:3px;
@@ -30,47 +17,9 @@ a, b, button, code, div, i, input, label, li, menu, ol, p, pre, select, table, t
 }
 
 
-body
-{
-	padding: 0;
-	margin: 0;
-	background: url(../images/spring2.jpg) fixed #FFF no-repeat;
-	background-position:bottom;
-}
-
-input
-{
-	outline: none;
-    resize: none;
-}
-
-#layer1
-{
-	width: 100%;
-	height: 100%;
-	/*background: url(../images/whiteopacity.png) fixed repeat-x;*/
-}
-
-#code
-{
-	position: fixed;
-	right: 0;
-	bottom:10px;
-	z-index: 99999999;
-}
-
-#header
-{
-	width: 990px;
-	height: 110px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color:#FFF;
-}
-
 #MainBox
 {
-	margin-top:10px;
+	height:auto;
 }
 #dynamic
 {
@@ -111,183 +60,6 @@ input
 	float: right;
 }
 
-#search
-{
-	display:block;
-	width:171px;
-	height:23px;
-	margin-top: 30px;
-	margin-bottom: 10px;
-	float: right;
-	overflow-y: hidden;
-}
-
-#searchline
-{
-	display: inline-block;
-	height: 23px;
-	width: 147px;
-	float: left;
-	background: url(../images/field.png) no-repeat;
-}
-
-#searchField
-{
-	line-height:19px;
-	width: 145px;
-	height: 19px;
-	border: none;
-	margin: 2px 0 0 2px;
-	padding: 0;
-	background: transparent;
-}
-
-#searchBtn
-{
-	float:left;
-	cursor: pointer;
-	border: none;
-	height: 23px;
-	width: 24px;
-	padding: 0;
-	margin: 0;
-	background: url(../images/btn.png) no-repeat;
-}
-
-#headerRight #fastlink
-{
-	width:265px;
-	height:22px;
-	display: block;
-	margin-top: 10px;
-	float: right;
-}
-
-#fastlink span
-{
-	
-}
-
-#fastlink span a
-{
-	color: #468d00;
-	text-decoration: none;
-	margin: 0 5px;
-}
-
-#fastlink span a:hover
-{
-	text-decoration: underline;
-}
-
-#homemenu
-{
-	display: block;
-	width: 990px;
-	height: 34px;
-	margin-left: auto;
-	margin-right: auto;
-	background: url(../images/menu_green.png) no-repeat;
-}
-
-#homemenu   li
-{
-	display: block;
-	float: left;
-	width: 110px;
-	height: 30px;
-	cursor:pointer;
-}
-
-#homemenu   li   a
-{
-	display: block;
-	line-height: 30px;
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
-	text-align: center;
-}
-
-#downlist
-{
-	display: none;
-	width: 150px;
-	padding: 0;
-	margin: 0;
-	background: url(../images/menuopacity.png);
-	border-radius: 5px;
-	position: absolute;
-}
-
-#downlist   li
-{
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	height:34px;
-	line-height: 34px;
-}
-
-#downlist  li a
-{
-	display: block;
-	width: 100%;
-	height: 34px;
-	line-height: 34px;
-	text-decoration: none;
-	text-align: left;
-	color: white;
-	margin-left:25px;
-}
-
-#homemenu   li:hover{
-	background-color:#366c00;
-}
-
-#downlist   li   a:hover
-{
-	color: yellow;
-}
-
-#footer
-{
-	box-shadow:2px 2px 3px #303030;
-	width: 990px;
-	height: 60px;
-	background: url(../images/greenopacity.png);
-	margin:0 auto 2px auto;
-}
-
-#footer   #copyright
-{
-	width: 990px; 
-	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	color: #fff;
-	font-weight: bold;
-	text-align: center;
-}
-
-#copyright p,#copyright font
-{
-	display:block;
-	height:20px;
-	
-	color: #fff;
-}
-
-#content span,#content font,#content p,#content a
-{
-	line-height:150%;
-	font-size:12pt;
-}
-#title
-{
-	color:#000;
-}
 #content img
 {
 	display:block;
@@ -328,8 +100,12 @@ a #title:hover
 	color:#999;
 }
 
+#postList,#postList li{
+	list-style-image:none;
+}
+
 #postDetail {
-	width: 702px;
+	width: 682px;
 	border:0;
 	border-right: 1px solid #ccc;
 	padding-right: 2px;
@@ -339,13 +115,13 @@ a #title:hover
 
 #categoryNavigationBar {
 	padding-top: 10px;
-	width: 700px;
+	width: 670px;
 }
 
 #content {
 	margin: 10px auto 30px auto;
 	line-height: 20px;
-	width: 644px;
+	width: 640px;
 	border: 1px dashed #BBB;
 	padding:0 10px;
 }
@@ -366,7 +142,7 @@ a #title:hover
 
 #sideBar li {
 	border-bottom: 1px #ddd dashed;
-	width:100%;
+	width:255px;
 }
 
 #xwdtList1 #title{text-align:center;}
@@ -396,6 +172,10 @@ a #title:hover
 	font-family: 宋体;
 	font-size: 12pt; 
 	/*text-indent: 2em;*/
+}
+#content span, #content font, #content p, #content a {
+	line-height: 150%;
+	font-size: 12pt;
 }
 #content table{text-indent: 0;}
 #content table div{text-indent: 0;}
