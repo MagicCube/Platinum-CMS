@@ -29,8 +29,6 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 	posts = manager.loadLatestPostsByCategory(categoryId, displayPhoto, where, count);
 }
 %>
-
-
 <% int i=1; %>
         	<div id="${id}">
         		<div id="big_frame" class="${cssClass}">
@@ -70,5 +68,3 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 				</div>
         	</div>
 			<script type="text/javascript" src="/static/common/scripts/lib/slide.js"></script>
-
-

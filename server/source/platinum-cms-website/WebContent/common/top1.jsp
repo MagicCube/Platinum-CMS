@@ -11,11 +11,12 @@ request.setCharacterEncoding("utf-8");
 <link rel="stylesheet" type="text/css" href="/static/common/css/index.css"/>
 <script src="/static/common/scripts/src/IE6.js" type="text/javascript"></script>
 <script src="/static/common/scripts/src/IE6Check.js" type="text/javascript"></script>
+<script type="text/javascript" src="/static/common/scripts/lib/newmenu.js"></script>
 
 <div id="header" class="container_16">
 	<div id="tips">
     	<div id="topLink">
-        	<span><a href="#">网站地图</a></span><span class="fenge">|</span>
+        	<span><a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://zbzs.njnu.edu.cn');">设为首页</a></span><span class="fenge">|</span>
             <span><a href="/introduce/12345679be9e6b7a00002be9e6b7a0d.html">联系我们</a></span><span class="fenge">|</span>
             <span><a href="service/ff8081813be18002013be18e03250002.html">其他链接</a></span>
         </div>
@@ -25,16 +26,16 @@ request.setCharacterEncoding("utf-8");
     	<div id="menuUp">
         <ul id="up" style="width:100%;height:5px;">
         	<li style="width:5px;"></li>
-        	<li style="width:53px;background-color:#AAEB1F;"></li>
-            <li style="width:94px;"></li>
-        	<li class="menuUpList"></li>
-            <li class="menuUpList"></li>
-            <li class="menuUpList"></li>
-            <li class="menuUpList"></li>
-            <li class="menuUpList"></li>
-            <li class="menuUpList"></li>
-            <li class="menuUpList"></li>
-            <li class="menuUpList"></li>
+        	<li class="sy"></li>
+            <li class="xygk" style="width:94px;"></li>
+        	<li class="bmjg" class="menuUpList"></li>
+            <li class="jxky" class="menuUpList"></li>
+            <li class="xsgz" class="menuUpList"></li>
+            <li class="zzrs" class="menuUpList"></li>
+            <li class="zsjy" class="menuUpList"></li>
+            <li class="jlhz" class="menuUpList"></li>
+            <li class="ggfw" class="menuUpList"></li>
+            <li class="jszc" class="menuUpList"></li>
         </ul>
         </div>
         <ul id="middleul">
@@ -44,7 +45,7 @@ request.setCharacterEncoding("utf-8");
             <li id="xxgk">
             	<a href="#">学院概况</a>
             	<ul>
-	            	<li><a href="/introduce/402881e93b41ec78013b41f8a5cf0008.html">学院简介</a></li>
+	            	<li style="margin-left:0;"><a href="/introduce/402881e93b41ec78013b41f8a5cf0008.html">学院简介</a></li>
 	            	<li><a href="/introduce/ff8081813be9dcbc013be9e6b7a00002.html">领导简介</a></li>
 	            	<li><a href="/introduce">校园美景</a></li>
 	            	<li><a href="/introduce/12345679be9e6b7a00002be9e6b7a0d.html">联系我们</a></li>
@@ -102,7 +103,7 @@ request.setCharacterEncoding("utf-8");
             	<a href="#">技术支持</a>
             	<ul>
 	    			<!-- <li><a href="/ruanyan/">软件研发与培训中心</a></li> -->
-	    			<li><a href="/xiandai" target="_blank">现代教育技术中心</a></li>
+	    			<li style="width:130px;"><a href="/xiandai" target="_blank">现代教育技术中心</a></li>
 	            	<!-- <li><a href="/technology/ff8081813be5798c013be58062050002.html">现代教育技术中心</a></li>	-->
 	        	</ul>
             </li>

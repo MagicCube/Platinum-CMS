@@ -34,24 +34,30 @@ body{
 	cursor:pointer;
 }
 #xxgk{width:94px;background-image:url(/static/common/newimages/menulist94.jpg);}
-#homemenu ul#middleul li a:hover{
+/*#homemenu ul#middleul li a:hover{
 	background-image:url(../newimages/menubg.jpg);
 	color:#414141;
-}
+}*//*已经放到js里*/
 #menuUp li{float:left;height:100%;}
 .menuUpList{width:101px;height:100%;}
 .li101{
 	width:101px;
 	background-image:url(../newimages/menulist.jpg);
 }
-#homemenu ul#middleul li:hover{
-	background-image:url(../newimages/menubg.jpg);
+#homemenu ul#up li{
+	background-color:transparent;
 }
-#homemenu ul#middleul #menuLeft:hover{
+#homemenu ul#up li.sy{
+	width:53px;background-color:#AAEB1F;
+}
+/*#homemenu ul#middleul li:hover{
+	background-image:url(../newimages/menubg.jpg);
+}*/
+/*#homemenu ul#middleul #menuLeft:hover{
 	background-image:url(../newimages/menuleft.jpg);
 	background-color:none;
-}
-#homemenu ul#up li{height:4px;}
+}*/
+#homemenu ul#up li{height:4px;width:101px;}
 #headerEnd{width:100%;height:30px; background-image:url(../newimages/menudown.jpg);}
 
 /*菜单*/
@@ -70,7 +76,7 @@ body{
 	width:440px;
 }
 #bmjg ul,#xsgz ul,#zsjy ul{
-	width:220px;
+	width:230px;
 }
 #jlhz ul,#jszc ul{
 	width:110px;
@@ -78,8 +84,40 @@ body{
 #ggfw ul{
 	width:880px;
 }
-
-
+#homemenu ul li.li101,#homemenu ul li#xxgk{
+	position:relative;
+}
+#homemenu ul li ul li{
+	margin-top:2px;
+	float:left;
+}
+#homemenu ul li ul li a{
+	background-image:url(../newimages/seclistbg.jpg);
+	border-radius:5px;
+	line-height:28px;
+	color:#FFF;
+	font-weight:bold;
+}
+#homemenu ul li.li101 ul,#homemenu ul li#xxgk ul{
+	z-index:10;
+	position:absolute;
+	top:43px;
+}
+#homemenu ul li#xxgk ul{
+	left:-50px;
+}
+#homemenu ul li#bmjg ul,
+#homemenu ul li#xsgz ul,
+#homemenu ul li#zsjy ul,
+#homemenu ul li#jlhz ul{
+	left:-5px;
+}
+#homemenu ul li#ggfw ul{
+	left:-680px;
+}
+#homemenu ul li#jszc ul{
+	left:-35px;
+}
 
 /*菜单END*/
 
@@ -357,7 +395,7 @@ body{
 }
 #upRight ul li a{/*父元素为块，子元素为流就可以有三个点*/
 	display:block;
-	width:240px;
+	width:235px;
 	height:18px;
 	float:left;
 	margin-top:10px;
@@ -513,6 +551,7 @@ body{
 
 /*底部*/
 #newFooter{
+	border-bottom: 10px solid #B9C2CB;
 	height:82px;
 	background-image:url(../newimages/footer.jpg);
 }
