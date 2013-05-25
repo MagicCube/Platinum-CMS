@@ -33,18 +33,18 @@ request.setCharacterEncoding("utf-8");
             	<div id="jgTitle">教工之家</div>
             	<form accept-charset="GB2312" name="Login" action="http://zbvip.njnu.edu.cn/vip/Admin_ChkLogin.asp" method="post" target="_parent">	
             	<ul id="jgContent">
-            		<li class="jgList" style="margin-bottom:5px;">
+            		<li class="jgList" style="margin-bottom:2px;">
             			<div class="jgPic" style="background-image:url(/static/common/newimages/userpic.jpg);"></div>
             			<div class="jgOut"><input name="UserName" type="text" class="jgInput"></div>
             		</li>
-            		<li class="jgList" style="margin-bottom:5px;">
+            		<li class="jgList" style="margin-bottom:2px;">
             			<div class="jgPic" style="background-image:url(/static/common/newimages/pwpic.jpg);"></div>
             			<div class="jgOut"><input name="Password" type="password" class="jgInput"></div>
             		</li>
             		<li class="jgList" style="height:34px;">
             			<div id="yanzheng">验证码:</div>
-            			<div class="jgOut" style="width:73px;height:28px;float:left;margin-left:0;">
-            				<input name="CheckCode" style="width:71px;height:26px;"class="jgInput">
+            			<div class="jgOut" style="width:73px;height:23px;float:left;margin-left:0;margin-top:3px;">
+            				<input name="CheckCode" style="width:71px;height:21px;"class="jgInput">
             			</div>
             		</li>
             		<li class="jgList" style="height:35px;">

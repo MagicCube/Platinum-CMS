@@ -240,7 +240,7 @@ body{
 	line-height:32px;
 	text-align:center;
 	font-family:"微软雅黑";
-	margin-bottom:5px;
+	margin-bottom:10px;
 }
 #jgContent{
 	width:180px;
@@ -263,19 +263,20 @@ body{
 }
 .jgOut{
 	width:112px;
-	height:30px;
+	height:25px;
 	float:left;
 	border:2px solid #F1F1F1;
+	margin-top:2px;
 	margin-left:10px;
 	padding:0;
 	position:relative;
 }
 .jgInput{
 	width:110px;
-	height:28px;
+	height:23px;
 	border:1px solid #CECECE;
-	font-size:18px;
-	line-height:28px;
+	font-size:15px;
+	line-height:22px;
 	margin:0;
 	position:absolute;
 	left:0;top:0;
@@ -295,7 +296,7 @@ body{
 	display:block;
 	width:60px;
 	height:25px;
-	margin-top:12px;
+	margin-top:8px;
 	margin-left:15px;
 	float:left;
 }
@@ -306,7 +307,7 @@ body{
 	background-image:url(../newimages/login.jpg);
 	border:0px;
 	margin-left:6px;
-	margin-top:5px;
+	margin-top:2px;
 	cursor:pointer;
 }
 /*教工之家END*/
@@ -610,6 +611,7 @@ body{
 	width:100%;
 	height:55px;
 	overflow:hidden;
+	margin-top:5px;
 }
 #newsPre{
 	width:30px;

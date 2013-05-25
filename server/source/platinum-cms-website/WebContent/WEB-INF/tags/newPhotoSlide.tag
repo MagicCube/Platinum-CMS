@@ -58,13 +58,13 @@ else if (StringUtil.notNullOrEmpty(categoryId))
  						<div id="newsNextButton"></div>
  					</div>
 				</div>
-				<div id="dotFrame">
+				<!-- <div id="dotFrame">
 					<ul id="dot">
 						<li id="dotFirst" class="dotList"></li>
 						<li class="dotList"></li>
 						<li class="dotList"></li>
 						<li class="dotList"></li>
 					</ul>
-				</div>
+				</div>-->
         	</div>
 			<script type="text/javascript" src="/static/common/scripts/lib/slide.js"></script>

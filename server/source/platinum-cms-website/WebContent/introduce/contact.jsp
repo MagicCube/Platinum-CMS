@@ -68,7 +68,7 @@
     
     			//标注点数组
     			var markerArr = [{title:"南京师范大学中北学院老北区",content:"可乘坐165路，177路，138路，东上线公交车。",point:"118.923108|32.119626",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
-		 		,{title:"南京师范大学中北学院新北区",content:"可乘坐166路公交车。",point:"118.914952|32.120512",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+		 		,{title:"南京师范大学中北学院新北区",content:"可乘坐166路、322路、323路公交车。",point:"118.914952|32.120512",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
 		 		];
     			//创建marker
    				function addMarker(){
