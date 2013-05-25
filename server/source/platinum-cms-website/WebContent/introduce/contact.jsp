@@ -16,7 +16,7 @@
 <link href="/static/common/css/normal.css" rel="stylesheet"/>
 </head>
 <body> 
-		  <cms:Header1></cms:Header1>
+		  <cms:Header></cms:Header>
 			<div id = "maincontent" style = "height: 580px;">
 			<div id = "layoutleft" >
 				<img src = "/static/common/images/contact.jpg" height = 200; width = 250px;/>

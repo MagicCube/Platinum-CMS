@@ -17,7 +17,7 @@ h2{
 </style>
 </head>
 <body>
-	<cms:Header1/>
+	<cms:Header/>
 		<div id = "maincontent" style = "height: 500px;">
 			<div id = "layoutleft" >
 				<img src = "/static/service/images/guide.jpg" height = 200; width = 250px;/>

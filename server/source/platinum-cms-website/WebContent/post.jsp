@@ -53,7 +53,7 @@ request.setCharacterEncoding("utf-8");
 </head>
 <body onload="<%=categoryId%>()">
 
-<cms:Header1 path="<%= categoryId%>" displaySideBar="<%= post.getPostType() != PostType.INFORMATION%>"/>
+<cms:Header path="<%= categoryId%>" displaySideBar="<%= post.getPostType() != PostType.INFORMATION%>"/>
 
 <cms:PostDetail id="postDetail" postId="<%= id%>" categoryId="<%= categoryId%>"></cms:PostDetail>
 </div>

@@ -16,7 +16,7 @@ request.setCharacterEncoding("utf-8");
 <title>南京师范大学中北学院欢迎您</title>
 </head>
 <body onload="onload()">
-	<cms:Header1/>
+	<cms:Header/>
     <!--主页内容-->
     <div id="indexContent" class="container_16">
     	<div class="grid_4" id="upLeft">
