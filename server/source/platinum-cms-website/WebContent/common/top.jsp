@@ -12,6 +12,7 @@ request.setCharacterEncoding("utf-8");
 <script src="/static/common/scripts/src/IE6.js" type="text/javascript"></script>
 <script src="/static/common/scripts/src/IE6Check.js" type="text/javascript"></script>
 <script type="text/javascript" src="/static/common/scripts/lib/newmenu.js"></script>
+<script type="text/javascript" src="/static/common/scripts/lib/search.js"></script>
 
 <div id="header" class="container_16">
 	<div id="tips">

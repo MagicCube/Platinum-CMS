@@ -213,8 +213,10 @@ body{
 	border:1px solid #CCC;
 	width:158px;
 	height:28px;
-	line-height:28px;
+	line-height:30px;
 	font-size:16px;
+	color:#999;
+	padding-left:5px;
 }
 #searchBtn{
 	width:30px;

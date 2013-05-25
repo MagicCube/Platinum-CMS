@@ -24,7 +24,7 @@ request.setCharacterEncoding("utf-8");
         		<div id="searchTitle">本站搜索</div>
         		<div id="searchContent">
         			<form id="searchForm" action="/search" method="get">
-						<div id="searchline"><input type="text" id="searchField" name="keyword" value=""></div>
+						<div id="searchline"><input type="text" id="searchField" name="keyword" value="输入关键字" onfocus="search(1,this);" onblur="search(2,this);"></div>
 						<input type="submit" id="searchBtn" value="搜">
 					</form>
         		</div>
