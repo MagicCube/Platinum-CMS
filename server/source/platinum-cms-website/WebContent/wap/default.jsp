@@ -26,7 +26,7 @@ request.setCharacterEncoding("utf-8");
 	<link type="text/css" rel="stylesheet" href="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/page_context.js"></script><script type="text/javascript" charset="utf-8" src="./mobile_files/extension.js"></script></head>
 </head>
 <body>
-		<cms:Header1/>
+		<cms:Header/>
 		
 		<div id="MainBox" style="height:1000px;;">
 
