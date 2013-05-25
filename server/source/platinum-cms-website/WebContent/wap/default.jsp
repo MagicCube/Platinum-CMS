@@ -26,7 +26,7 @@ request.setCharacterEncoding("utf-8");
 	<link type="text/css" rel="stylesheet" href="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/page_context.js"></script><script type="text/javascript" charset="utf-8" src="./mobile_files/extension.js"></script></head>
 </head>
 <body>
-		<cms:Header/>
+		<cms:Header1/>
 		
 		<div id="MainBox" style="height:1000px;;">
 
@@ -62,7 +62,7 @@ request.setCharacterEncoding("utf-8");
 	if($('#imageContent').length>0) {$('#content').css('border','0'); $('#postDetail').css('border-right','0');}
 </script>
 
-	<cms:Footer1/>
+	<cms:Footer/>
 	
 	
 </body>

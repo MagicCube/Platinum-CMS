@@ -18,7 +18,9 @@ request.setCharacterEncoding("utf-8");
     	<div id="topLink">
         	<span><a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://zbzs.njnu.edu.cn');">设为首页</a></span><span class="fenge">|</span>
             <span><a href="/introduce/12345679be9e6b7a00002be9e6b7a0d.html">联系我们</a></span><span class="fenge">|</span>
-            <span><a href="service/ff8081813be18002013be18e03250002.html">其他链接</a></span>
+            <span><a href="/wap">移动版</a></span><span class="fenge">|</span>
+             <span><a href="/introduce/ff8081813be4798a013be484d5540002.html">About NNUZC</a></span><span class="fenge">|</span>
+           <span><a href="service/ff8081813be18002013be18e03250002.html">其他链接</a></span>
         </div>
     </div>
 	<div id="banner"><img src="/static/common/newimages/banner.jpg" width="960" height="222"/></div>
@@ -59,7 +61,7 @@ request.setCharacterEncoding("utf-8");
 	        	</ul>
             </li>
             <li id="jxky" class="li101">
-            	<a href="/jiaowu">教学科研</a>
+            	<a href="/jiaowu" target="_blank">教学科研</a>
             </li>
             <li id="xsgz" class="li101">
             	<a href="#">学生工作</a>
