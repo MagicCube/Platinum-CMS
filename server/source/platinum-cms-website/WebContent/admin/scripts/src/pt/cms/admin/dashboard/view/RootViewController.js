@@ -10,6 +10,7 @@ pt.cms.admin.dashboard.view.RootViewController = function()
     me.baseUrl = "/api/0/";
     me.categories = null;
     me.category=null;
+    me.p_keywords="hitcount";
     
     
   
@@ -48,7 +49,53 @@ pt.cms.admin.dashboard.view.RootViewController = function()
     	  }
     	    	
     });
+    
+    me.GET("admin/post",{dashboardhitcount: me.p_keywords}).success(function(p_result){
+    	
+        
+        
+   	 me.categories = p_result;
+   	 var $div =$( "<div class='Panel'> <h1>点击次数最多内容</h1> <div id='body'> </div></div>");
+   	  for (var i = 0; i < p_result.length; i++) 
+   		
+   	    
+   	  { me.category=me.categories[i];
+   	     
+   	   
+   	    $div.append(me.category.title);
+   	    $div.append("<hr>");
+                 
+   		me.view.$container.append($div);
+   	  }
+   	    	
+   });
+    
+    
+    
+    me.GET("admin/post",{dashboardtime: me.p_keywords}).success(function(p_result){
+    	
+        
+        
+      	 me.categories = p_result;
+      	 var $div =$( "<div class='Panel'> <h1>时间最近的内容</h1> <div id='body'> </div></div>");
+      	  for (var i = 0; i < p_result.length; i++) 
+      		
+      	    
+      	  { me.category=me.categories[i];
+      	     
+      	   
+      	    $div.append(me.category.title);
+      	    $div.append("<hr>");
+                    
+      		me.view.$container.append($div);
+      	  }
+      	    	
+      });
+    
+
    
+    
+    
     
    
     
@@ -57,15 +104,9 @@ pt.cms.admin.dashboard.view.RootViewController = function()
     {
         base.viewDidLoad();
         
-        me.view.$container.append($( 
-        		
-        		"<div class='Panel'> <h1>新闻排行榜</h1> <div id='body'>  </div> </div> " +
-        		"" +
-        		"" +
-        		"" +
-        		" <div class='Panel'> <h1>30 天新闻排行榜</h1> <div id='body'>  </div> </div>"));
+     
         me.view.$container.css("paddingLeft", 25);
     };
-    
+                                                             
     return me.endOfClass(arguments);
 };
