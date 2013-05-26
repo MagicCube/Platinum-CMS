@@ -39,7 +39,7 @@ public class PostAdminResource extends AbstractResource
 			@QueryParam("categoryId") String p_categoryId,
 			@QueryParam("keywords") String p_keywords,
 			@QueryParam("pageIndex") @DefaultValue("0") int p_pageIndex,
-			@QueryParam("pageSize") @DefaultValue("20") int p_pageSize
+			@QueryParam("pageSize") @DefaultValue("10") int p_pageSize
 			) throws JSONException
 	{   
 		List<PostEntity> posts = null;

@@ -18,6 +18,8 @@ pt.cms.admin.rest.RESTClient = function()
         return result;
     };
     
+    
+    
     me.POST = function(p_path, p_data)
     {
         var url = me.baseUrl + p_path;
