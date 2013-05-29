@@ -3,10 +3,14 @@ $import("mx.view.ListViewController");
 
 pt.cms.admin.dashboard.view.RootViewController = function()
 {
-    var me = $extend(mx.view.ViewController);
+    var me = $extend(mx.view.ListViewController);
     var base = {};
+    me.toolbars = [];
     
     me.postListViewController = null;
+    me.postDetailViewController = null;
+    me.postEditViewController = null;
+    
     me.baseUrl = "/api/0/";
     me.categories = null;
     me.category=null;
@@ -35,38 +39,122 @@ pt.cms.admin.dashboard.view.RootViewController = function()
        
     
     	 me.categories = p_result;
-    	 var $div =$( "<div class='Panel'> <h1>我最近发布的内容</h1> <div id='body'> </div></div>");
-    	  for (var i = 0; i < p_result.length; i++) 
+     	 var $div =$( "<ul class='Panel' > <h1>时间最近的内容</h1> </ul>");
+     	  for (var i = 0; i < p_result.length; i++) 
+     		
+     	    
+     	  { me.category=me.categories[i];
+     	  
+     	  
+     	  var $a=$("<li  class=aaa ></li>");
+   	     $a.attr("id", me.category.id);
+   	  
+   	  
+   	     $a.text(me.category.title);
+   	     $div.append($a);
+   	      $div.append("<hr>");
+                   
+     		me.view.$container.append($div);
+     	  }
+     	  
+    	
+    	$("ul li ").each(function(){
     		
-    	    
-    	  { me.category=me.categories[i];
-    	     
-    	   
-    	    $div.append(me.category.title);
-    	    $div.append("<hr>");
-                  
-    		me.view.$container.append($div);
-    	  }
+    		
+    		   $(this).click(function(){
+    			   var lis_value = $(this).attr("id");  
+
+    		        base.viewDidLoad();
+    		        
+    		      
+    		   
+    		        
+    		        me.postDetailViewController = new pt.cms.admin.post.view.PostDetailViewController({
+    		            restClient: me.restClient,
+    		            view: {
+    		                frame: { left:0, right: 0, top: 0, bottom: 0}
+    		            }
+    		        });
+    		        me.postDetailViewController.loadData(lis_value);
+    		        
+    		      
+    		        me.view.addSubview(me.postDetailViewController.view);
+
+    		      
+    		        
+    		    	 me.postDetailViewController.toolbar.setFrame({ left: me.postDetailViewController.view.frame.left, top: 0, right: me.postDetailViewController.view.frame.right });
+    		         me.toolbars.add(me.postDetailViewController.toolbar);
+    		        me.postListViewController.loadData();
+        		  
+        		   
+        		
+    			   
+    			   
+    		   });
+    		});
+    	
     	    	
     });
     
     me.GET("admin/post",{dashboardhitcount: me.p_keywords}).success(function(p_result){
     	
         
-        
+
    	 me.categories = p_result;
-   	 var $div =$( "<div class='Panel'> <h1>点击次数最多内容</h1> <div id='body'> </div></div>");
-   	  for (var i = 0; i < p_result.length; i++) 
+    	 var $div =$( "<ul class='Panel' > <h1>时间最近的内容</h1> </ul>");
+    	  for (var i = 0; i < p_result.length; i++) 
+    		
+    	    
+    	  { me.category=me.categories[i];
+    	  
+    	  
+    	  var $a=$("<li  class=aaa ></li>");
+  	     $a.attr("id", me.category.id);
+  	  
+  	  
+  	     $a.text(me.category.title);
+  	     $div.append($a);
+  	      $div.append("<hr>");
+                  
+    		me.view.$container.append($div);
+    	  }
+    	  
+   	
+   	$("ul li ").each(function(){
    		
-   	    
-   	  { me.category=me.categories[i];
-   	     
-   	   
-   	    $div.append(me.category.title);
-   	    $div.append("<hr>");
-                 
-   		me.view.$container.append($div);
-   	  }
+   		
+   		   $(this).click(function(){
+   			   var lis_value = $(this).attr("id");  
+
+   		        base.viewDidLoad();
+   		        
+   		      
+   		   
+   		        
+   		        me.postDetailViewController = new pt.cms.admin.post.view.PostDetailViewController({
+   		            restClient: me.restClient,
+   		            view: {
+   		                frame: { left:0, right: 0, top: 0, bottom: 0}
+   		            }
+   		        });
+   		        me.postDetailViewController.loadData(lis_value);
+   		        
+   		      
+   		        me.view.addSubview(me.postDetailViewController.view);
+
+   		      
+   		        
+   		    	 me.postDetailViewController.toolbar.setFrame({ left: me.postDetailViewController.view.frame.left, top: 0, right: me.postDetailViewController.view.frame.right });
+   		         me.toolbars.add(me.postDetailViewController.toolbar);
+   		        me.postListViewController.loadData();
+       		  
+       		   
+       		
+   			   
+   			   
+   		   });
+   		});
+   
    	    	
    });
     
@@ -74,28 +162,68 @@ pt.cms.admin.dashboard.view.RootViewController = function()
     
     me.GET("admin/post",{dashboardtime: me.p_keywords}).success(function(p_result){
     	
-        
-        
+
       	 me.categories = p_result;
-      	 var $div =$( "<div class='Panel'> <h1>时间最近的内容</h1> <div id='body'> </div></div>");
-      	  for (var i = 0; i < p_result.length; i++) 
+       	 var $div =$( "<ul class='Panel' > <h1>时间最近的内容</h1> </ul>");
+       	  for (var i = 0; i < p_result.length; i++) 
+       		
+       	    
+       	  { me.category=me.categories[i];
+       	  
+       	  
+       	  var $a=$("<li  class=aaa ></li>");
+     	     $a.attr("id", me.category.id);
+     	  
+     	  
+     	     $a.text(me.category.title);
+     	     $div.append($a);
+     	      $div.append("<hr>");
+                     
+       		me.view.$container.append($div);
+       	  }
+       	  
+      	
+      	$("ul li ").each(function(){
       		
-      	    
-      	  { me.category=me.categories[i];
-      	     
-      	   
-      	    $div.append(me.category.title);
-      	    $div.append("<hr>");
-                    
-      		me.view.$container.append($div);
-      	  }
+      		
+      		   $(this).click(function(){
+      			   var lis_value = $(this).attr("id");  
+
+      		        base.viewDidLoad();
+      		        
+      		      
+      		   
+      		        
+      		        me.postDetailViewController = new pt.cms.admin.post.view.PostDetailViewController({
+      		            restClient: me.restClient,
+      		            view: {
+      		                frame: { left:0, right: 0, top: 0, bottom: 0}
+      		            }
+      		        });
+      		        me.postDetailViewController.loadData(lis_value);
+      		        
+      		      
+      		        me.view.addSubview(me.postDetailViewController.view);
+
+      		      
+      		        
+      		    	 me.postDetailViewController.toolbar.setFrame({ left: me.postDetailViewController.view.frame.left, top: 0, right: me.postDetailViewController.view.frame.right });
+      		         me.toolbars.add(me.postDetailViewController.toolbar);
+      		        me.postListViewController.loadData();
+          		  
+          		   
+          		
+      			   
+      			   
+      		   });
+      		});
+        
+      
       	    	
       });
     
 
-   
-    
-    
+  
     
    
     
