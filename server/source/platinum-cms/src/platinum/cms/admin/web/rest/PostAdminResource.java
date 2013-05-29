@@ -38,13 +38,28 @@ public class PostAdminResource extends AbstractResource
 	public Response loadPosts(
 			@QueryParam("categoryId") String p_categoryId,
 			@QueryParam("keywords") String p_keywords,
+			@QueryParam("dashboardhitcount") String dashboardhitcount,
+			@QueryParam("dashboardtime") String dashboardtime,
+			
 			@QueryParam("pageIndex") @DefaultValue("0") int p_pageIndex,
 			@QueryParam("pageSize") @DefaultValue("10") int p_pageSize
 			) throws JSONException
 	{   
 		List<PostEntity> posts = null;
 		 String _CurrentUser=	  Membership.getInstance().getCurrentUser().getUserRole();
+		 if(dashboardtime!=null)
+		 {  
+			   posts=PostAdminManager.getInstance().loadPostsByCategory(null, p_pageIndex, p_pageSize);
+			return responseWithJSONArray(PostJSONSerializer.toSimpleArray(posts));
+		 }
 		
+		 if(dashboardhitcount!=null)
+		 {  
+			 posts=PostRuntimeManager.getInstance().loadTopPostsByCategory("news", p_pageSize);
+			return responseWithJSONArray(PostJSONSerializer.toSimpleArray(posts));
+		 }
+		
+		 
 		if (p_keywords != null)
 		{
 			if (p_keywords.length() == 32)
