@@ -405,6 +405,7 @@ table td
 #postList li
 {
 	width:980px;
+	background:none;
 }
 #postList li a 
 {
@@ -428,7 +429,9 @@ table td
 	width:940px;
 	padding:10px 20px 20px 20px;
 }
-
+#postList li #date{
+	right:30px;
+}
 #imageContent{display:none;}
 #textContent{
 	width:950px;
