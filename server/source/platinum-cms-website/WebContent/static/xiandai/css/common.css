@@ -393,8 +393,9 @@ table td
 #more
 {
 	width:990px;
-
-		background-image: url(/static/xiandai/image/di.png);
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url(/static/xiandai/image/di.png);
 }
 #postList
 {
