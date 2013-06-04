@@ -178,7 +178,7 @@
               <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000051/more/">更多...</a></p>
           </div>
            <div id="old" style="text-align:right;margin-top:45px;">
-           	<a href="http://zbzs.njnu.edu.cn/trch/" target="_blank">点击这里:教务处老网站！ </a>
+           	<a href="http://211.65.211.254/trch/" target="_blank">点击这里:教务处老网站！ </a>
            </div>
             
           </div>

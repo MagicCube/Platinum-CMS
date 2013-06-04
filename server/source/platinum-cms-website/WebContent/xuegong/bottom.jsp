@@ -122,7 +122,7 @@
 				<p style="padding-left:3px;line-height:20px;">2013 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院</p>
 				<p>南京市栖霞区仙林大学城学林路2号 210046</p>
 			</div>
-    		<div style="float:right;position:absolute;bottom:3px;right:2px;"><a target="_blank" style="color:#CCC;font-size:13px;" href="http://zbzs.njnu.edu.cn/stud/index.asp">返回旧版</a></div>
+    		<div style="float:right;position:absolute;bottom:3px;right:2px;"><a target="_blank" style="color:#CCC;font-size:13px;" href="http://211.65.211.254/stud/index.asp">返回旧版</a></div>
     		<!-- <div id="developer">	 
     			<ul>
     				<li><a href="/ruanyan/">软件研发与培训中心</a></li>
