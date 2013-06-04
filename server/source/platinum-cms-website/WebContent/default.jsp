@@ -14,7 +14,7 @@ request.setCharacterEncoding("utf-8");
 <head>
 <cms:Meta/>
 <title>南京师范大学中北学院欢迎您</title>
-<script>if(isIE && document.charset!="utf-8")location.reload(false);</script>
+<script>if(isIE && document.charset!="utf-8") location.reload(false);</script>
 </head>
 <body onload="onload()">
 	<cms:Header/>
