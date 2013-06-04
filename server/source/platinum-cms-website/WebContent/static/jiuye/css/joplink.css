@@ -14,11 +14,12 @@
 #postDetail{
 	margin:0;
 	padding: 0px;
-	width: 692px;	
+	width: 710px;	
 	border-right: 1px solid #ccc;
 	background-size:cover;
 	text-align:center;
 	overflow: hidden;	
+	border-left:1px solid #ccc;
 }
 
 ul li a div
