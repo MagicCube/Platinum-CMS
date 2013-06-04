@@ -20,7 +20,7 @@ request.setCharacterEncoding("utf-8");
         	<span><a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.nnuzc.com');">设为首页</a></span><span class="fenge">|</span>
             <span><a href="/introduce/12345679be9e6b7a00002be9e6b7a0d.html">联系我们</a></span><span class="fenge">|</span>
             <span><a href="/wap">移动版</a></span><span class="fenge">|</span>
-             <span><a href="/introduce/ff8081813be4798a013be484d5540002.html">About NNUZC</a></span><span class="fenge">|</span>
+             <span><a href="/introduce/ff8081813be4798a013be484d5540002.html">About ZHONGBEI</a></span><span class="fenge">|</span>
            <span><a href="/service/ff8081813be18002013be18e03250002.html">其他链接</a></span>
         </div>
     </div>

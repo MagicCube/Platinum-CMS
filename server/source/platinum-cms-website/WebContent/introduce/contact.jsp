@@ -23,9 +23,9 @@
 			</div>
 			<div id = "layoutright">
 				<h2>联系我们</h2>
-				<p>联系地址：南京市栖霞区仙林大学城学林路2号</p>
-				<p>邮政编码：210046</p>			
-  				<!--百度地图容器-->
+				<p>电话电话：87720966，85891052（传真）</p>
+				<p>联系地址：南京市栖霞区仙林大学城学林路2号&nbsp;&nbsp;&nbsp;&nbsp;邮政编码：210023</p>				
+				<!--百度地图容器-->
   				<div style="width:600px;height:400px;border:#ccc solid 1px;" id="dituContent"></div>
 				<script type="text/javascript">
    				 //创建和初始化地图函数：

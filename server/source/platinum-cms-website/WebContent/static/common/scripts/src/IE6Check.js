@@ -1,3 +1,7 @@
+function submit(){
+	document.charset='GB2312';
+	if(isIE && document.charset!='utf-8') location.reload(false);
+}
 $(document).ready(function(){
 	if (($.browser.msie) && ($.browser.version == "6.0")){
 		$("#postDetail").css({"height":"650px"});
