@@ -58,6 +58,58 @@ pt.cms.admin.dashboard.view.RootViewController = function()
      	  }
      	  
     
+     	  
+     	 $("ul li ").each(function(){
+     		
+     		
+  		   $(this).click(function(){
+  			   
+  			   
+  			   
+  			   var lis_value = $(this).attr("id");  
+                
+  		        base.viewDidLoad();
+  		 
+  		 
+  	     
+  		   
+  		        
+  		        me.postDetailViewController = new pt.cms.admin.post.view.PostDetailViewController({
+  		            restClient: me.restClient,
+  		            view: {
+  		                frame: { left: 0, right: 0, top: 0, bottom: 0}
+  		            }
+  		        });
+  		        me.postDetailViewController.loadData(lis_value);
+  		        
+  		      
+  		        me.view.addSubview(me.postDetailViewController.view);
+
+  		     
+  		    
+  	      
+  		        
+  		        _initToolbars();
+  		      for (var i = 0; i < me.toolbars.length; i++)
+              {
+                  var toolbarr = me.toolbars[i];
+                  
+                  $("#toolstrip").append(toolbarr.$element);
+              
+               
+                
+              }
+  	      
+  	         
+  		 
+  		      
+      		  
+      		   
+      		
+  			   
+  			   
+  		   });
+  		});
     	
     	    	
     });
