@@ -109,7 +109,7 @@
 			
 			<div id="website">
 				<p style="padding-left:6px;line-height:20px;">2013 版权所有 © 南京师范大学中北学院</p>
-				<p style="text-align:center;">南京市栖霞区仙林大学城学林路2号 210046</p>
+				<p style="text-align:center;">南京市栖霞区仙林大学城学林路2号 210023</p>
 			</div>
     		
     		<!-- <div id="developer">	 

@@ -47,7 +47,7 @@
 	
 <!--页脚开始-->
   <div id="footer">
-    <span id = "text">2013 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院　　地址:南京市栖霞区仙林大学城学林路2号 210046 </span>
+    <span id = "text">2013 版权所有 <span style="font-family: 'verdana';">©</span> 南京师范大学中北学院　　地址:南京市栖霞区仙林大学城学林路2号 210023 </span>
   </div>
   </div>
     </div>
