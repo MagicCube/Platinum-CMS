@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	if(isIE && document.charset!="utf-8")location.reload(false); 
 	if (($.browser.msie) && ($.browser.version == "6.0")){
 		$("#postDetail").css({"height":"650px"});
 		$("#homemenu ul#middleul li a").hover(
