@@ -12,6 +12,7 @@ pt.cms.admin.post.view.PostDetailViewController = function()
     me.data = null;
     
     me.toolbar = null;
+    me.toolbars = [];
     me.restClient = null;
     
 

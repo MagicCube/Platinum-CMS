@@ -39,6 +39,8 @@ pt.cms.admin.common.page.AdminPageController = function()
         
         //me.navigateTo($path, false);
         me.navigateTo("post", false);
+     
+     
     };
     
     me.navigateTo = function(p_path, p_animation)
