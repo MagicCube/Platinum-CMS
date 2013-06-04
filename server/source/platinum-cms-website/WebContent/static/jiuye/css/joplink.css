@@ -241,7 +241,20 @@ ul li a div
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+#gzdtlist li{
+	position:relative;
+	width:95%;
+	height:17px;
 }
+
+#gzdtlist a{
+	width:95%;
+	position:absolute;
+	right:0px;;
+	top:5px;
+}
+
+
 
 #mainContent a:hover
 {
