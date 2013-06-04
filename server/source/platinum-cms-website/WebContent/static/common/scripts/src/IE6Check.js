@@ -1,8 +1,5 @@
-function submit(){
-	document.charset='GB2312';
-	if(isIE && document.charset!='utf-8') location.reload(false);
-}
 $(document).ready(function(){
+	if(isIE && document.charset!="utf-8")location.reload(false); 
 	if (($.browser.msie) && ($.browser.version == "6.0")){
 		$("#postDetail").css({"height":"650px"});
 		$("#homemenu ul#middleul li a").hover(
