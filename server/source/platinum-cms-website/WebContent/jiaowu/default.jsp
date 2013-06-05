@@ -169,6 +169,11 @@
                     <span>资料下载</span>
                   </a>
                 </li>
+                <li class="link_2">
+                  <a href="http://bb.njnu.edu.cn/" target="_blank">
+                    <span>毕博平台</span>
+                  </a>
+                </li>
               </ul>
             </div>
             <hr style="text-align:center; width:90%; margin-left:10px;" />
