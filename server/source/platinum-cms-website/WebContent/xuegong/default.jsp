@@ -27,6 +27,7 @@
 
 	<div id = "xgcontent">
 		<div id = "mainContent">
+		<div id="mainContentInner">
                 <div id = "gongNews">
                 <span><img src = "/static/xuegong/images/gonggao.png"/></span>
           		<cms:PostList id = "ggtzlist" subcategoryId = "sc000000000000000000000000000028" count = "8"/>
@@ -106,7 +107,7 @@
               </div>
                </form>
            </div>
-            
+      </div>      
       </div>	
 </div>
 

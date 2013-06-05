@@ -350,7 +350,11 @@ table td a
 	margin-right: auto;
 	background-color: #FFF;
 }
-
+#mainContentInner{
+	width: 990px;
+	height:100%;
+	background-color: #EEE;
+}
 #content
 {
 	margin: 0 auto;
