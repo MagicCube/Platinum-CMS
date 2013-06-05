@@ -7,6 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="中北学院 就业,南京师范大学中北学院就业指导,南京师范大学中北学院 就业">
 
 <script src = "/static/common/scripts/lib/jquery.js" type = "text/javascript"></script>	
 <script src="/static/common/scripts/src/IE6.js" type="text/javascript"></script>
