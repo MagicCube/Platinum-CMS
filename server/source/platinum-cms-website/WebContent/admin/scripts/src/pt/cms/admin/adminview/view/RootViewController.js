@@ -52,7 +52,6 @@ pt.cms.admin.adminview.view.RootViewController = function()
    	  
    	     $a.text(me.category.title);
    	     $div.append($a);
-   	      $div.append("<hr>");
                    
      		me.view.$container.append($div);
      	  }
@@ -131,7 +130,7 @@ pt.cms.admin.adminview.view.RootViewController = function()
   	  
   	     $a.text(me.category.title);
   	     $div.append($a);
-  	      $div.append("<hr>");
+
                   
     		me.view.$container.append($div);
     	  }
@@ -211,7 +210,7 @@ pt.cms.admin.adminview.view.RootViewController = function()
      	  
      	     $a.text(me.category.title);
      	     $div.append($a);
-     	      $div.append("<hr>");
+     	      
                      
        		me.view.$container.append($div);
        	  }
@@ -292,7 +291,7 @@ pt.cms.admin.adminview.view.RootViewController = function()
      	  
      	     $a.text(me.category.title);
      	     $div.append($a);
-     	      $div.append("<hr>");
+     	      
                      
        		me.view.$container.append($div);
        	  }
@@ -372,7 +371,7 @@ pt.cms.admin.adminview.view.RootViewController = function()
      	  
      	     $a.text(me.category.title);
      	     $div.append($a);
-     	      $div.append("<hr>");
+     	      
                      
        		me.view.$container.append($div);
        	  }
@@ -451,7 +450,7 @@ pt.cms.admin.adminview.view.RootViewController = function()
     	  
     	     $a.text(me.category.title);
     	     $div.append($a);
-    	      $div.append("<hr>");
+    	      
                     
       		me.view.$container.append($div);
       	  }
@@ -534,7 +533,7 @@ pt.cms.admin.adminview.view.RootViewController = function()
      	  
      	     $a.text(me.category.title);
      	     $div.append($a);
-     	      $div.append("<hr>");
+     	      
                      
        		me.view.$container.append($div);
        	  }

@@ -21,3 +21,24 @@ input, textarea, button
     outline: none;
     resize: none;
 }
+.Panel{
+	padding-left:0;
+}
+#content>div{
+	OVERFLOW-Y: auto; 
+}
+.Panel>.aaa{
+	cursor:pointer;
+	list-style:none;
+	width:345px;
+	padding:0 5px;
+	height:32px;
+	line-height:32px;
+	white-space:nowrap; 
+	border-bottom:1px solid #CCC;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+.Panel>.aaa:hover{
+	color:#99CC33;
+}
