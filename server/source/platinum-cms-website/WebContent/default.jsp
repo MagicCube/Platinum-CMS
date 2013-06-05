@@ -13,7 +13,7 @@ request.setCharacterEncoding("utf-8");
 <html>
 <head>
 <cms:Meta/>
-<title>南京师范大学中北学院欢迎您</title>
+<title>南京师范大学中北学院</title>
 </head>
 <body onload="onload()">
 	<cms:Header/>
