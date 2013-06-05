@@ -29,7 +29,7 @@
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	border-radius:3px;	
-	border:4px solid #f2f2f2;	
+	border:4px solid #FFF;	
 	width: 390px;
 	height: 295px;
 	margin: 0;
@@ -258,12 +258,12 @@
 .mainMore
 {
 	position:absolute;
-	top:8px;
+	top:6px;
 	right:0;
 	width:60px;
 	height:15px;
 }
-#textNews .mainMore{top:10px;}
+#textNews .mainMore{top:8px;}
 
 #xgcontent #mainContent .mainMore>a
 {
