@@ -91,14 +91,14 @@ request.setCharacterEncoding("utf-8");
             <li id="ggfw" class="li101">
             	<a href="#">公共服务</a>
             	<ul>
-	            	<li><a href="/service/ff8081813b6fee04013b6fef4b390002.html">教学周历</a></li>
+            		<li><a href="http://www.njnu.edu.cn/jssd.htm" target="_blank">在线杀毒</a></li>
 	            	<!-- <li><a href="/service/ff8081813b7a2ecd013b7a384fb20008.html">来稿须知</a></li> -->
 	            	<li><a href="/service/92345678be9e6b7a00002be9e6b7a0d.html">办事指南</a></li>
 	            	<li><a href="/service/ff8081813b6fee04013b6ff2b1d90011.html">作息时间</a></li>	            
 	            	<li><a href="/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话</a></li>
 	            	<li><a href="/service/ff8081813b6fee04013b6ff158fb0008.html">校园交通</a></li>
-	      			<li><a href="http://www.njnu.edu.cn/jssd.htm" target="_blank">在线杀毒</a></li>
-	      			<li><a href="/service/ff8081813be18002013be18e03250002.html">常用链接</a></li>
+	      			<li><a href="/service/ff8081813b6fee04013b6fef4b390002.html">教学周历</a></li>
+	            	<!-- <li><a href="/service/ff8081813be18002013be18e03250002.html">常用链接</a></li> -->
 	      			<li><a href="/service/ff8081813d105c17013d10deb9cc0002.html">班车时刻</a></li>
 	        	</ul>
             </li>

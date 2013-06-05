@@ -47,8 +47,8 @@
 	width: 270px;
 	height: 300px;
 	border: 1px #bcd2c3 solid;
-	border-radius: 10px;
-	-webkit-border-radius:10px;
+	border-radius: 10px 0 0 10px;
+	-webkit-border-radius:10px 0 0 10px;
     overflow: hidden;
 	background-color:#bcd2c3;
 }
@@ -86,8 +86,8 @@
 	width: 270px;
 	height: 300px;
 	border: 1px #bcd2c3 solid;
-	border-radius:10px;
-	-webkit-border-radius:10px;
+	border-radius:0 10px 10px 0;
+	-webkit-border-radius:0 10px 10px 0;
     overflow: hidden;
 	background-color:#bcd2c3;
 }
@@ -114,8 +114,8 @@
 	height: 290px;
 	position: absolute;
 	border: 1px #bcd2c3 solid;
-	border-radius:10px;
-	-webkit-border-radius:10px;
+	border-radius:10px 0 0 10px;
+	-webkit-border-radius:10px 0 0 10px;
 	overflow: hidden;
 	background-color:#bcd2c3; 
 	right: 0;
@@ -129,8 +129,8 @@
 	left: 0;
 	top: 320px;
 	border: 1px #bcd2c3 solid;
-	border-radius: 10px;
-	-webkit-border-radius:10px;
+	border-radius:0 10px 10px 0;
+	-webkit-border-radius:0 10px 10px 0;
 	overflow: hidden;
 	background-color:#bcd2c3; 
 }
