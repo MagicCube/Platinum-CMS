@@ -68,9 +68,12 @@ pt.cms.admin.dashboard.view.RootViewController = function()
   			   
   			   var lis_value = $(this).attr("id");  
                 
-  		        base.viewDidLoad();
+  			 $("#content>div").attr("OVERFLOW-Y",none);
+  			 
+  			 
+  			   base.viewDidLoad();
   		 
-  		 
+  		       
   	     
   		   
   		        
