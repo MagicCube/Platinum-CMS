@@ -4,7 +4,7 @@
 <link href="../static/common/css/css.css" rel="stylesheet" type="text/css" />
  <div class="header">
   	<div class="logo" onclick="location.href='http://211.65.211.251/mob';"><img src="../../../../static/common/images/logo.jpg" height="40" /></div>
-  	<div class="news" onclick="location.href='../../../mob/news';"><img src="../../../../static/common/images/news.gif"  height="34" /></div>
+  	<div class="news" onclick="location.href='../../../../mob/news';"><img src="../../../../static/common/images/news.gif"  height="34" /></div>
   </div>
     <div class="weather">
    <p class="right"> 
