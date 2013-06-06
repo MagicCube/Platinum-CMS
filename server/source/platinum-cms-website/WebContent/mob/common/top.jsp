@@ -37,18 +37,26 @@
         </li>
         <li><a href="#" class="parent"><span>登录</span></a>
             <div>
-            	<ul>       
-                	<li><a href="http://zbvip.njnu.edu.cn/wap/"><span>教师登录</span></a></li>
-                	<li><a href="http://222.192.5.246/wap/"><span>学生登录</span></a></li>
+            	<ul style="padding-bottom:0;position:relative;width:180px;height:70px;">       
+                	<li style="height:60px;width:60px;position:absolute;z-index:10000;left:0;">
+                		<a style="width:100%;height:100%;padding:0;" href="http://zbvip.njnu.edu.cn/wap/">
+                			<span style="padding:0;display:block;width:100%;height:100%;font-size:23px;line-height:60px;height:60px;text-align:center;font-family:'微软雅黑'';" >教师</span>
+                		</a>
+                	</li>
+                	<li style="height:60px;width:60px;position:absolute;z-index:10000;left:75px;" class="denglu">
+                		<a style="padding:0;width:100%;height:100%;" href="http://222.192.5.246/wap/">
+                			<span  style="padding:0;display:block;width:100%;height:100%;font-size:23px;line-height:60px;height:60px;text-align:center;font-family:'微软雅黑'';" >学生</span>
+                		</a>
+               		</li>
             	</ul>
             </div>
         </li>
         <li><a href="../mob/pic" class="parent"><span>校园美景</span></a>
         </li>
         
-        <li class="last">
+        <!-- <li class="last">
         	<a href="../../"><span>PC版</span></a>
-        </li>
+        </li> -->
         
     </ul>
 </div>
