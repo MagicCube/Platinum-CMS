@@ -51,7 +51,7 @@
             	</ul>
             </div>
         </li>-->
-        <li style="margin-right:5px;"><a href="http://zbvip.njnu.edu.cn/wap/" class="parent"><span class="denglu1">校 园</span><span class="denglu2">美 景</span></a></li>
+        <li style="margin-right:5px;"><a href="../mob/pic" class="parent"><span class="denglu1">校 园</span><span class="denglu2">美 景</span></a></li>
         <li style="margin-right:5px;"><a href="http://222.192.5.246/wap/" class="parent"><span class="denglu1">学 生</span><span class="denglu2">登 录</span></a></li>
         <li style="margin-right:5px;"><a href="http://zbvip.njnu.edu.cn/wap/" class="parent"><span class="denglu1">教 师</span><span class="denglu2">登 录</span></a></li>
         
