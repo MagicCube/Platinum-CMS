@@ -19,7 +19,7 @@
 
   <div id="menu">
     <ul class="menu">
-        <li><a href="#" class="parent"><span class="denglu1">主 页</span><span class="denglu2">导 航</span></a>
+        <li style="margin-right:5px;"><a href="#" class="parent"><span class="denglu1">主 页</span><span class="denglu2">导 航</span></a>
             <div>
             	<ul>               
                 	<li>
@@ -51,9 +51,9 @@
             	</ul>
             </div>
         </li>-->
-        <li><a href="http://zbvip.njnu.edu.cn/wap/" class="parent"><span class="denglu1">校 园</span><span class="denglu2">美 景</span></a></li>
-        <li><a href="http://222.192.5.246/wap/" class="parent"><span class="denglu1">学 生</span><span class="denglu2">登 录</span></a></li>
-        <li><a href="http://zbvip.njnu.edu.cn/wap/" class="parent"><span class="denglu1">教 师</span><span class="denglu2">登 录</span></a></li>
+        <li style="margin-right:5px;"><a href="http://zbvip.njnu.edu.cn/wap/" class="parent"><span class="denglu1">校 园</span><span class="denglu2">美 景</span></a></li>
+        <li style="margin-right:5px;"><a href="http://222.192.5.246/wap/" class="parent"><span class="denglu1">学 生</span><span class="denglu2">登 录</span></a></li>
+        <li style="margin-right:5px;"><a href="http://zbvip.njnu.edu.cn/wap/" class="parent"><span class="denglu1">教 师</span><span class="denglu2">登 录</span></a></li>
         
         <!-- <li class="last">
         	<a href="../../"><span>PC版</span></a>
