@@ -2593,6 +2593,20 @@ div#menu ul ul a:hover span {
 	background:none;
 	color: #24c9ff;
 }
+div#menu ul.menu>li>a span.denglu1{
+	width:30px;
+	line-height:20px;
+	margin-top:5px;
+	background-image:none;
+	padding-left:10px;
+}
+div#menu ul.menu>li>a span.denglu2{
+	width:30px;
+	line-height:20px;
+	margin-top:0;
+	background-image:none;
+	padding-left:10px;
+}
 div#menu ul ul a.parent {
   background: url(../images/submenu-pointer.png) no-repeat right bottom;
   _background-image: url(../images/submenu-pointer.gif);

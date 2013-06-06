@@ -19,7 +19,7 @@
 
   <div id="menu">
     <ul class="menu">
-        <li><a href="#" class="parent"><span>主页导航</span></a>
+        <li><a href="#" class="parent"><span class="denglu1">主 页</span><span class="denglu2">导 航</span></a>
             <div>
             	<ul>               
                 	<li>
@@ -35,7 +35,7 @@
             	</ul>
             </div>
         </li>
-        <li><a href="#" class="parent"><span>登录</span></a>
+        <!--<li><a href="#" class="parent"><span>登录</span></a>
             <div>
             	<ul style="padding-bottom:0;position:relative;width:180px;height:70px;">       
                 	<li style="height:60px;width:60px;position:absolute;z-index:10000;left:0;">
@@ -50,9 +50,10 @@
                		</li>
             	</ul>
             </div>
-        </li>
-        <li><a href="../mob/pic" class="parent"><span>校园美景</span></a>
-        </li>
+        </li>-->
+        <li><a href="http://zbvip.njnu.edu.cn/wap/" class="parent"><span class="denglu1">校 园</span><span class="denglu2">美 景</span></a></li>
+        <li><a href="http://222.192.5.246/wap/" class="parent"><span class="denglu1">学 生</span><span class="denglu2">登 录</span></a></li>
+        <li><a href="http://zbvip.njnu.edu.cn/wap/" class="parent"><span class="denglu1">教 师</span><span class="denglu2">登 录</span></a></li>
         
         <!-- <li class="last">
         	<a href="../../"><span>PC版</span></a>
