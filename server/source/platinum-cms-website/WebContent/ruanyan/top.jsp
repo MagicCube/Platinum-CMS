@@ -23,7 +23,7 @@
                       </span>
                       <span style = "color: #fff;"> |</span>
                       <span>
-                      <a href = "http://njnu.edu.cn/">
+                      <a href = "http://www.njnu.edu.cn/">
                         南师大
                       </a>
                       </span>

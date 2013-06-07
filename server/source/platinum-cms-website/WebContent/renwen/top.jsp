@@ -13,7 +13,7 @@
 			<div id = "text">
 				<span><a href = "/">学院首页</a></span>
 				<span style = "color: #fff;"> |</span>
-				<span><a href = "http://njnu.edu.cn"> 南师大</a></span>
+				<span><a href = "http://www.njnu.edu.cn"> 南师大</a></span>
 			</div>
 			<div id = "search">
 				<form id="searchForm_1" name="form_1" method="get" action="../../../search" target="_blank">
