@@ -14,8 +14,18 @@ request.setCharacterEncoding("utf-8");
 <head>
 <cms:Meta/>
 <title>南京师范大学中北学院欢迎您</title>
+<script type = "text/javascript" >
+function Tab()
+{
+    if(event.keyCode==13 && // 13表示Enter键
+       event.srcElement.type!="submit" )
+    {
+　    event.keyCode=9;      // 9表示Tab键
+    }
+}
+</script>
 </head>
-<body onload="onload()">
+<body onload="onload()" onkeydown ="Tab()">
 	<cms:Header/>
     <!--主页内容-->
     <div id="indexContent" class="container_16">
