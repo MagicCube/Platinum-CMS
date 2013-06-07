@@ -43,8 +43,8 @@ request.setCharacterEncoding("utf-8");
             		</li>
             		<li class="jgList" style="height:34px;">
             			<div id="yanzheng">验证码:</div>
-            			<div class="jgOut" style="width:73px;height:23px;float:left;margin-left:0;margin-top:3px;">
-            				<input name="CheckCode" style="width:71px;height:21px;"class="jgInput">
+            			<div class="jgOut" style="width:78px;height:23px;float:left;margin-left:0;margin-top:3px;">
+            				<input name="CheckCode" style="width:76px;height:21px;"class="jgInput">
             			</div>
             		</li>
             		<li class="jgList" style="height:35px;">

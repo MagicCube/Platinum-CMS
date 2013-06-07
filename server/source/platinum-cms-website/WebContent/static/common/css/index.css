@@ -11,7 +11,7 @@ body{
 }
 #header{height:303px;}
 #tips{position:absolute;top:0;left:0;width:960px;height:35px;}
-#topLink{width:340px;height:30px;float:right;}
+#topLink{width:345px;height:30px;float:right;}
 #topLink span{display:block;height:100%;line-height:30px;float:left;}
 #topLink .fenge{width:8px;text-align:center;color:#003c28;font-weight: normal;}
 #topLink span a{font-family:"微软雅黑";color:#003c28;font-weight:bold;}
@@ -256,7 +256,7 @@ body{
 .jgPic{
 	width:20px;height:23px;
 	float:left;
-	margin-left:15px;
+	margin-left:5px;
 	margin-top:5px;
 }
 #jgHome form{
@@ -264,7 +264,7 @@ body{
 	height:160px;
 }
 .jgOut{
-	width:112px;
+	width:127px;
 	height:25px;
 	float:left;
 	border:2px solid #F1F1F1;
@@ -274,7 +274,7 @@ body{
 	position:relative;
 }
 .jgInput{
-	width:110px;
+	width:125px;
 	height:23px;
 	border:1px solid #CECECE;
 	font-size:15px;
@@ -308,7 +308,7 @@ body{
 	height:35px;
 	background-image:url(../newimages/login.jpg);
 	border:0px;
-	margin-left:6px;
+	margin-left:11px;
 	margin-top:2px;
 	cursor:pointer;
 }
