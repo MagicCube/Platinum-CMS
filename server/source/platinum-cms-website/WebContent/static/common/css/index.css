@@ -11,7 +11,7 @@ body{
 }
 #header{height:303px;}
 #tips{position:absolute;top:0;left:0;width:960px;height:35px;}
-#topLink{width:335px;height:30px;float:right;}
+#topLink{width:340px;height:30px;float:right;}
 #topLink span{display:block;height:100%;line-height:30px;float:left;}
 #topLink .fenge{width:8px;text-align:center;color:#003c28;font-weight: normal;}
 #topLink span a{font-family:"微软雅黑";color:#003c28;font-weight:bold;}
