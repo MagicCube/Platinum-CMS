@@ -64,11 +64,6 @@ $("#aa > div > h3").click(function(){
  
   <!-- 幻灯片切换部分 end-->
 
-  
-  
-  <div style="border-top:#239b8b 1px solid; border-bottom:#ddd 1px solid;" >
-<h3><span class="left">中北快讯大观园</span> <span id = "position_2"><a href = "/mob/news/sc000000000000000000000000000008/more/"><font color="#239b8b">更多</font></a></span>  </h3></div>
- 
   <!-- 中北快讯大观园 -->
   <div class="r_con02_front" id="aa">
        <div class="info">
