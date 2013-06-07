@@ -56,7 +56,7 @@ request.setCharacterEncoding("utf-8");
             </div>
         </div>
         <div class="grid_7" id="upMiddle">
-        	<cms:newPhotoSlide id="tpxwInner" cssClass="frame" subcategoryId="sc000000000000000000000000000207" displayPhoto="true" count="4" />	
+        	<cms:newPhotoSlide id="tpxwInner" cssClass="frame" subcategoryId="sc000000000000000000000000000006" displayPhoto="true" count="4" />	
         </div>
         <div class="grid_5" id="upRight">
         	<div id="schoolTitle">

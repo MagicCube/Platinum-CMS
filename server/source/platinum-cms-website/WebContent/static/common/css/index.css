@@ -9,14 +9,14 @@ body{
 	background-image:url(../newimages/jianbian.gif);
 	background-repeat:repeat-x;
 }
-#header{height:338px;}
-#tips{width:960px;height:35px;}
-#topLink{margin-top:5px;width:310px;height:30px;float:right;}
+#header{height:303px;}
+#tips{position:absolute;top:0;left:0;width:960px;height:35px;}
+#topLink{width:340px;height:30px;float:right;}
 #topLink span{display:block;height:100%;line-height:30px;float:left;}
-#topLink .fenge{width:8px;text-align:center;}
-#topLink span a{font-family:"黑体";}
+#topLink .fenge{width:8px;text-align:center;color:#003c28;font-weight: normal;}
+#topLink span a{font-family:"微软雅黑";color:#003c28;font-weight:bold;}
 #topLink span a:hover{color:#545454;}
-#banner{ width:960px;height:222px;}
+#banner{position:relative;width:960px;height:222px;}
 #banner img{width: 960px;height: 222px;}
 #homemenu{width:100%;height:47px;}
 #menuUp{width:100%;overflow:hidden;height:4px;background-color:#4C7070;}
