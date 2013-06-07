@@ -63,17 +63,17 @@ request.setCharacterEncoding("utf-8");
         		<div id="schoolTitleLeft">校园动态</div>
         		<a id="schoolMore" href="/news/sc000000000000000000000000000020/more/">更多>></a>
         	</div>
-        	<cms:newPostList id="text_school" subcategoryId="sc000000000000000000000000000020" where="photoURL is null" count="10" />
+        	<cms:newPostList id="text_school" subcategoryId="sc000000000000000000000000000020" where="photoURL is null"  count="10" />
         </div>
         <div class="grid_4" id="downLeft">
         	<div id="tzggTitle">通知与公告</div>
-        	<cms:newPostList id="text_inform" subcategoryId="sc000000000000000000000000000008" where="photoURL is null" count="9" />
+        	<cms:newPostList id="text_inform" subcategoryId="sc000000000000000000000000000008" where="photoURL is null"  count="9" />
         	<a id="tzggMore" href="/news/sc000000000000000000000000000008/more/">更多>></a>
         </div>
         <div class="grid_7" id="downMiddle">
         	<div id="xydtTitle"><span>新闻动态</span></div>
             <div id="xydtContent">
-            	<cms:newPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000006"   where="photoURL is null"  count="9" />
+            	<cms:newPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000006"     count="9" />
             	<div id="newsMore"><a href="/news/sc000000000000000000000000000006/more/">更多>></a></div>
             </div>
         </div>
