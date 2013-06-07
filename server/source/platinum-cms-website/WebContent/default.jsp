@@ -73,17 +73,7 @@ request.setCharacterEncoding("utf-8");
         <div class="grid_7" id="downMiddle">
         	<div id="xydtTitle"><span>新闻动态</span></div>
             <div id="xydtContent">
-            <ul id="xwTextContent" class="PostList ">
-            	<cms:xwPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000006" pageIndex="4" pageSize="1" displayPageNavigationBar="false" />
-            	<cms:xwPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000006" pageIndex="5" pageSize="1" displayPageNavigationBar="false" />
-            	<cms:xwPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000006" pageIndex="6" pageSize="1" displayPageNavigationBar="false" />
-            	<cms:xwPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000006" pageIndex="7" pageSize="1" displayPageNavigationBar="false" />
-            	<cms:xwPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000006" pageIndex="8" pageSize="1" displayPageNavigationBar="false" />
-            	<cms:xwPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000006" pageIndex="9" pageSize="1" displayPageNavigationBar="false" />
-            	<cms:xwPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000006" pageIndex="10" pageSize="1" displayPageNavigationBar="false" />
-            	<cms:xwPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000006" pageIndex="11" pageSize="1" displayPageNavigationBar="false" />
-            	<cms:xwPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000006" pageIndex="12" pageSize="1" displayPageNavigationBar="false" />            	
-            </ul>
+            	<cms:newPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000006"     count="9" />
             	<div id="newsMore"><a href="/news/sc000000000000000000000000000006/more/">更多>></a></div>
             </div>
         </div>
