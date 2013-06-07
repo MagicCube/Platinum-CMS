@@ -112,7 +112,7 @@ public class PostSearchEngine
 		{
 			try
 			{
-				_indexDirectory = FSDirectory.open(PTEnvironment.getSharedFile("indexes"));
+				_indexDirectory = FSDirectory.open(PTEnvironment.getSharedFile("indexes3"));
 			}
 			catch (IOException e)
 			{
