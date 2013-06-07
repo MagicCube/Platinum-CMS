@@ -520,6 +520,7 @@ overflow: hidden;
 	/*background-image:url(../images/list.gif);*/
 	background-position: 0px center;
 	background-repeat: no-repeat;
+	list-style-position:outside;
 }
 
 #postList li a
