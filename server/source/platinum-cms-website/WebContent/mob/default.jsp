@@ -58,12 +58,17 @@ $("#aa > div > h3").click(function(){
    <!-- 幻灯片切换部分 -->
 			 <div class="block_home_slider" >
                    <div id="home_slider" class="flexslider" >
-                        <cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000207" displayPhoto="true" count="4" />
+                        <cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000006" displayPhoto="true" count="4" />
                    </div>                        
              </div>
  
   <!-- 幻灯片切换部分 end-->
 
+  
+  
+  <div style="border-top:#239b8b 1px solid; border-bottom:#ddd 1px solid;" >
+<h3><span class="left">中北快讯大观园</span> <span id = "position_2"><a href = "/mob/news/sc000000000000000000000000000008/more/"><font color="#239b8b">更多</font></a></span>  </h3></div>
+ 
   <!-- 中北快讯大观园 -->
   <div class="r_con02_front" id="aa">
        <div class="info">
