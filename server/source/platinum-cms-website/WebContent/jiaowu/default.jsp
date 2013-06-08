@@ -182,7 +182,7 @@
               <cms:PostList id = "jxyjlist" cssClass = "menu" subcategoryId = "sc000000000000000000000000000051" count = "4"/>
               <p id = "position_2"><a href = "/jiaowu/sc000000000000000000000000000051/more/">更多...</a></p>
           </div>
-           <div id="old" style="text-align:right;margin-top:45px;">
+           <div id="old" style="text-align:right;margin-top:20px;">
            	<a href="http://211.65.211.254/trch/" target="_blank">点击这里:教务处老网站！ </a>
            </div>
             
