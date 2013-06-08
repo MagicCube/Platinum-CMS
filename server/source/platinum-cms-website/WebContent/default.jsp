@@ -53,13 +53,13 @@ function Tab()
             		</li>
             		<li class="jgList" style="height:34px;">
             			<div id="yanzheng">验证码:</div>
-            			<div class="jgOut" style="width:78px;height:23px;float:left;margin-left:0;margin-top:3px;">
-            				<input name="CheckCode" style="width:76px;height:21px;"class="jgInput">
+            			<div class="jgOut" style="width:88px;height:23px;float:left;margin-left:0;margin-top:3px;">
+            				<input name="CheckCode" style="width:86px;height:21px;"class="jgInput">
             			</div>
             		</li>
             		<li class="jgList" style="height:35px;">
-            			<img src="http://zbvip.njnu.edu.cn/vip/inc/code.asp" width="60" height="25" border="0" align="absmiddle" onclick="javascript:this.src='http://zbvip.njnu.edu.cn/vip/inc/code.asp?'+Math.random();">
             			<input name="Submit" id="jgSubmit" type="submit" value="" >
+ 						<img src="http://zbvip.njnu.edu.cn/vip/inc/code.asp" width="60" height="25" border="0" align="absmiddle" onclick="javascript:this.src='http://zbvip.njnu.edu.cn/vip/inc/code.asp?'+Math.random();">           		
             		</li>
             	</ul>
             	</form>

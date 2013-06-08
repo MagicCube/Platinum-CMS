@@ -252,6 +252,7 @@ body{
 .jgList{
 	width:180px;
 	height:34px;
+	list-style-position:outside;
 }
 .jgPic{
 	width:20px;height:23px;
@@ -284,12 +285,12 @@ body{
 	left:0;top:0;
 }
 #yanzheng{
-	width:75px;
+	width:65px;
 	height:100%;
 	float:left;
 	margin-left:8px;
 	line-height:34px;
-	text-align:center;
+	text-align:left;
 	font-size:18px;
 	color:#535252;
 	font-family:"微软雅黑";
@@ -299,16 +300,16 @@ body{
 	width:60px;
 	height:25px;
 	margin-top:8px;
-	margin-left:15px;
-	float:left;
+	margin-right:10px;
+	float:right;
 }
 #jgSubmit{
-	float:left;
+	float:right;
 	width:80px;
 	height:35px;
 	background-image:url(../newimages/login.jpg);
 	border:0px;
-	margin-left:11px;
+	margin-right:14px;
 	margin-top:2px;
 	cursor:pointer;
 }
