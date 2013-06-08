@@ -41,7 +41,7 @@ function Tab()
         	</div>
             <div id="jgHome">
             	<div id="jgTitle">教工之家</div>
-            	<form accept-charset="GB2312" name="Login" action="http://zbvip.njnu.edu.cn/vip/Admin_ChkLogin.asp" method="post" target="_parent" onsubmit="document.charset='GB2312';">        
+            	<form target="_blank" accept-charset="GB2312" name="Login" action="http://zbvip.njnu.edu.cn/vip/Admin_ChkLogin.asp" method="post" target="_parent" onsubmit="document.charset='GB2312';">        
             	<ul id="jgContent">
             		<li class="jgList" style="margin-bottom:2px;">
             			<div class="jgPic" style="background-image:url(/static/common/newimages/userpic.jpg);"></div>
