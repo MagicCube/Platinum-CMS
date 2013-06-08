@@ -65,29 +65,29 @@ function Tab()
             	</form>
             </div>
         </div>
-        <div class="grid_7" id="upMiddle">
+        <div class="grid_6" id="upMiddle">
         	<cms:newPhotoSlide id="tpxwInner" cssClass="frame" subcategoryId="sc000000000000000000000000000006" displayPhoto="true" count="4" />	
         </div>
-        <div class="grid_5" id="upRight">
+        <div class="grid_6" id="upRight">
         	<div id="schoolTitle">
-        		<div id="schoolTitleLeft">校园动态</div>
-        		<a id="schoolMore" href="/news/sc000000000000000000000000000020/more/">更多>></a>
+        		<div id="schoolTitleLeft">新闻动态</div>
+        		<a id="schoolMore" href="/news/sc000000000000000000000000000006/more/">更多>></a>
         	</div>
-        	<cms:newPostList id="text_school" subcategoryId="sc000000000000000000000000000020" where="photoURL is null"  count="10" />
+        	<cms:newPostList id="text_school" subcategoryId="sc000000000000000000000000000006" where="photoURL is null"  count="10" />
         </div>
         <div class="grid_4" id="downLeft">
         	<div id="tzggTitle">通知与公告</div>
-        	<cms:newPostList id="text_inform" subcategoryId="sc000000000000000000000000000008" where="photoURL is null"  count="9" />
+        	<cms:newPostList id="text_inform" subcategoryId="sc000000000000000000000000000008" where="photoURL is null"  count="8" />
         	<a id="tzggMore" href="/news/sc000000000000000000000000000008/more/">更多>></a>
         </div>
-        <div class="grid_7" id="downMiddle">
-        	<div id="xydtTitle"><span>新闻动态</span></div>
+        <div class="grid_6" id="downMiddle">
+        	<div id="xydtTitle"><span>校园动态</span></div>
             <div id="xydtContent">
-            	<cms:newPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000006"     count="9" />
-            	<div id="newsMore"><a href="/news/sc000000000000000000000000000006/more/">更多>></a></div>
+            	<cms:newPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000020"     count="8" />
+            	<div id="newsMore"><a href="/news/sc000000000000000000000000000020/more/">更多>></a></div>
             </div>
         </div>
-        <div class="grid_5" id="downRight">
+        <div class="grid_6" id="downRight">
         	<div id="xyfc">
         		<div id="xyfcTitle">
         			<div id="xyfcTitleLeft">校园风采</div>
@@ -101,9 +101,8 @@ function Tab()
         			<div class="clickInto"><a href="/service/ff8081813be18002013be18e03250002.html">点击进入</a></div>
         		</div>
         		<ul>
-        			<li><a class="cyljLeft" href="http://222.192.5.246/">教务系统</a><a href="/service/ff8081813b6fee04013b6ff158fb0008.html">校园交通</a></li>
-        			<li><a class="cyljLeft" href="/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话</a><a href="https://mail.njnu.edu.cn/">邮件在线</a></li>
-        			<li><a class="cyljLeft" href="http://web.mobset.com/index.html">短信平台</a><a href="/service/ff8081813d105c17013d10deb9cc0002.html">班车时刻</a></li>
+        			<li><a class="cyljLeft" href="http://222.192.5.246/">教务系统</a><a href="/service/ff8081813b6fee04013b6ff158fb0008.html">校园交通</a><a href="http://web.mobset.com/index.html">短信平台</a></li>
+        			<li><a class="cyljLeft" href="/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话</a><a href="https://mail.njnu.edu.cn/">邮件在线</a><a href="/service/ff8081813d105c17013d10deb9cc0002.html">班车时刻</a></li>
         		</ul>
             </div>
         </div>
