@@ -387,11 +387,11 @@ body{
 	font-family:"黑体";
 }
 #upRight ul{
-	width:340px;
+	width:315px;
 	height:285px;
 }
 #upRight ul li{
-	width:340px;
+	width:315px;
 	height:28.5px;
 }
 .listIcon{
@@ -405,7 +405,7 @@ body{
 }
 #upRight ul li a{/*父元素为块，子元素为流就可以有三个点*/
 	display:block;
-	width:305px;
+	width:285px;
 	height:18px;
 	float:left;
 	margin-top:6px;
@@ -489,7 +489,7 @@ body{
 	width:55px;
 	height:22px;
 	margin-right:30px;
-	margin-top:8px;
+	margin-top:9px;
 	float:right;
 }
 .clickInto a{
@@ -498,7 +498,7 @@ body{
 	color:#259900;
 }
 #xyfcContent{
-	width:318px;
+	width:315px;
 	height:174px;
 }
 #xyfcContent li{
@@ -516,7 +516,7 @@ body{
 
 /*常用链接*/
 #cyljTitle{
-	width: 318px;
+	width: 315px;
 	height: 30px;
 }
 #cyljTitleLeft{
