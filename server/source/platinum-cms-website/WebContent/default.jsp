@@ -73,7 +73,7 @@ function Tab()
         		<div id="schoolTitleLeft">新闻动态</div>
         		<a id="schoolMore" href="/news/sc000000000000000000000000000006/more/">更多>></a>
         	</div>
-        	<cms:newPostList id="text_school" subcategoryId="sc000000000000000000000000000006" where="photoURL is null"  count="10" />
+        	<cms:newPostList id="text_school" subcategoryId="sc000000000000000000000000000006" count="10" />
         </div>
         <div class="grid_4" id="downLeft">
         	<div id="tzggTitle">通知与公告</div>
