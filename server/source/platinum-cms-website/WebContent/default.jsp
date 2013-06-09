@@ -31,10 +31,10 @@ function Tab()
     <div id="indexContent" class="container_16">
     	<div class="grid_4" id="upLeft">
         	<div id="search">
-        		<div id="searchTitle">本站搜索</div>
+        		<!--<div id="searchTitle">本站搜索</div>-->
         		<div id="searchContent">
         			<form id="searchForm" action="/search" method="get">
-						<div id="searchline"><input type="text" id="searchField" name="keyword" value="输入关键字" onfocus="search(1,this);" onblur="search(2,this);"></div>
+						<div id="searchline"><input type="text" id="searchField" name="keyword" value="输入搜索关键字" onfocus="search(1,this);" onblur="search(2,this);"></div>
 						<input type="submit" id="searchBtn" value="搜">
 					</form>
         		</div>
@@ -53,8 +53,8 @@ function Tab()
             		</li>
             		<li class="jgList" style="height:34px;">
             			<div id="yanzheng">验证码:</div>
-            			<div class="jgOut" style="width:88px;height:23px;float:left;margin-left:0;margin-top:3px;">
-            				<input name="CheckCode" style="width:86px;height:21px;"class="jgInput">
+            			<div class="jgOut" style="width:93px;height:23px;float:left;margin-left:0;margin-top:3px;">
+            				<input name="CheckCode" style="width:91px;height:21px;"class="jgInput">
             			</div>
             		</li>
             		<li class="jgList" style="height:35px;">

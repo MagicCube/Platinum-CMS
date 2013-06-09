@@ -9,7 +9,7 @@ body{
 	background-image:url(../newimages/jianbian.gif);
 	background-repeat:repeat-x;
 }
-#header{height:303px;}
+#header{height:283px;}
 #tips{position:absolute;top:0;left:0;width:960px;height:35px;}
 #topLink{width:345px;height:30px;float:right;}
 #topLink span{display:block;height:100%;line-height:30px;float:left;}
@@ -21,7 +21,7 @@ body{
 #homemenu{width:100%;height:47px;}
 #menuUp{width:100%;overflow:hidden;height:4px;background-color:#4C7070;}
 #homemenu ul{height:43px;}
-#homemenu ul li{float:left;height:43px;}
+#homemenu ul li{z-index:1000;float:left;height:43px;}
 #menuLeft{background-image:url(../newimages/menuleft.jpg);}
 #homemenu ul li a{
 	display:block;
@@ -60,9 +60,9 @@ body{
 #homemenu ul#up li{height:4px;width:101px;}
 #headerEnd{
 	width:100%;
-	height:34px; 
+	height:14px; 
 	background-color:#FFF;
-	background-image:url(../newimages/menudown.jpg);
+	/*background-image:url(../newimages/menudown.jpg);*/
 	background-repeat:repeat-x;
 }
 
@@ -131,16 +131,16 @@ body{
 
 /*indexContent开始*/
 #indexContent{
-	height:645px;
+	height:605px;
 	background-color:#FFF;
 }
-#upLeft{ height:315px; border-radius:5px;}
+#upLeft{ height:275px; border-radius:5px;}
 #search{
-	height:90px;
+	height:60px;
 	width:100%;
 	background-color:#E9E9E9;
 	border-radius:5px;
-	margin-bottom:18px;
+	margin-bottom:8px;
 }
 #jgHome{
 	background-image:url(../newimages/jghomebg.jpg);
@@ -148,17 +148,17 @@ body{
 	height:207px;
 }
 #upMiddle{
-	height:315px;
+	height:275px;
 	background-color:#F7F2E0;
 }
 #tpxwInner{
 	border:1px solid #F0C016;
-	width:338px;; height:313px;
+	width:338px;; height:273px;
 }
-#upRight{height:315px;padding:0 5px;width:330px;}
+#upRight{height:275px;padding:0 5px;width:330px;}
 #upLeft,
 #upMiddle,
-#upRight{margin-bottom:20px;}
+#upRight{margin-bottom:15px;}
 #downLeft{width:190px;padding:0 15px;height:310px;background-image:url(../newimages/xydt.jpg);}
 #downMiddle{height:340px;}
 #xydtTitle{
@@ -204,7 +204,7 @@ body{
 	height:50px;
 }
 #searchline{
-	margin:0 0 0 10px;
+	margin:15px 0 0 10px;
 	width:160px;
 	height:30px;
 	float:left;
@@ -221,6 +221,7 @@ body{
 #searchBtn{
 	width:30px;
 	height:30px;
+	margin-top:15px;
 	margin-right:10px;
 	float:right;
 	font-size:16px;
@@ -285,13 +286,13 @@ body{
 	left:0;top:0;
 }
 #yanzheng{
-	width:65px;
+	width:60px;
 	height:100%;
 	float:left;
 	margin-left:8px;
 	line-height:34px;
 	text-align:left;
-	font-size:18px;
+	font-size:16px;
 	color:#535252;
 	font-family:"微软雅黑";
 }
@@ -388,11 +389,12 @@ body{
 }
 #upRight ul{
 	width:315px;
-	height:285px;
+	height:245px;
 }
 #upRight ul li{
 	width:315px;
-	height:28.5px;
+	height:25px;
+	vertical-align:bottom;
 }
 .listIcon{
 	width:7px;
@@ -589,11 +591,11 @@ body{
 /*图片新闻*/
 #big_frame,#big_list{
 	width:100%;
-	height:235px;
+	height:215px;
 }
 #big_list li{
 	width:338px;
-	height:235px;
+	height:215px;
 }
 #big_frame{
 	position:relative;
@@ -604,7 +606,7 @@ body{
 }
 #big_list li img{
 	width:338px;
-	height:235px;
+	height:215px;
 }
 #big_list li{
 	float:left;
@@ -623,7 +625,7 @@ body{
 	float:left;
 }
 #newsNext{
-	width:25px;
+	width:20px;
 	height:100%;
 	float:left;
 }
@@ -636,7 +638,7 @@ body{
 	width:15px;
 	height:25px;
 	background-image:url(../newimages/newspre.png);
-	margin-top:20px;
+	margin-top:11px;
 	margin-left:5px;
 	cursor:pointer;
 }
@@ -644,7 +646,7 @@ body{
 	width:15px;
 	height:25px;
 	background-image:url(../newimages/newsnext.png);
-	margin-top:20px;
+	margin-top:11px;
 	margin-left:2px;
 	cursor:pointer;
 }
@@ -652,10 +654,11 @@ body{
 	width:61px;
 	height:40px;
 	border:2px solid #8BBBDD;
-	margin-top:10px;
 	margin-right:5px;
+	margin-top:2px;
 	float:left;
 	cursor:pointer;
+	list-style-position:outside;
 }
 #small_list li img{
 	width:100%;height:100%;
@@ -687,7 +690,7 @@ body{
 	left:0;
 	bottom:0;
 	width:100%;
-	height:65px;
+	height:55px;
 	background-color:#000;
 	opacity:0.7;
 	filter:alpha(opacity=70);
@@ -714,8 +717,8 @@ body{
 .tpxwJianjie p{
 	color:#FFF;
 	text-indent:15pt;
-	line-height:20px;
-	font-size:12px;
+	line-height:15px;
+	font-size:10px;
 	-o-text-overflow: ellipsis; /* Opera */ 
 	text-overflow: ellipsis; /* IE, Safari (WebKit) */
 }
