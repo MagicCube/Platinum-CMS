@@ -9,26 +9,26 @@ body{
 	background-image:url(../newimages/jianbian.gif);
 	background-repeat:repeat-x;
 }
-#header{height:283px;}
+#header{height:210px;}
 #tips{position:absolute;top:0;left:0;width:960px;height:35px;}
 #topLink{width:345px;height:30px;float:right;}
 #topLink span{display:block;height:100%;line-height:30px;float:left;}
 #topLink .fenge{width:8px;text-align:center;color:#003c28;font-weight: normal;}
 #topLink span a{font-family:"微软雅黑";color:#003c28;font-weight:bold;}
 #topLink span a:hover{color:#545454;}
-#banner{position:relative;width:960px;height:222px;}
-#banner img{width: 960px;height: 222px;}
-#homemenu{width:100%;height:47px;}
+#banner{position:relative;width:960px;height:170px;}
+#banner img{width: 960px;height: 170px;}
+#homemenu{width:100%;height:34px;}
 #menuUp{width:100%;overflow:hidden;height:4px;background-color:#4C7070;}
-#homemenu ul{height:43px;}
-#homemenu ul li{z-index:1000;float:left;height:43px;}
+#homemenu ul{height:30px;}
+#homemenu ul li{z-index:1000;float:left;height:30px;}
 #menuLeft{background-image:url(../newimages/menuleft.jpg);}
 #homemenu ul li a{
 	display:block;
 	width:100%;height:100%;
 	font-size:14px;
 	font-family:"微软雅黑";
-	line-height:43px;
+	line-height:30px;
 	text-align:center;
 	color:#FFF;
 	cursor:pointer;
@@ -60,7 +60,7 @@ body{
 #homemenu ul#up li{height:4px;width:101px;}
 #headerEnd{
 	width:100%;
-	height:14px; 
+	height:7px; 
 	background-color:#FFF;
 	/*background-image:url(../newimages/menudown.jpg);*/
 	background-repeat:repeat-x;
@@ -107,7 +107,7 @@ body{
 #homemenu ul li.li101 ul,#homemenu ul li#xxgk ul{
 	z-index:10;
 	position:absolute;
-	top:43px;
+	top:30px;
 }
 #homemenu ul li#xxgk ul{
 	left:-50px;
