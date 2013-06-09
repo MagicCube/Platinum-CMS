@@ -107,7 +107,7 @@ function Tab()
             </div>
         </div>
     </div>
-    <div class="container_16" style="height:15px; background-color:#FFF;"></div>
+    <!-- <div class="container_16" style="height:15px; background-color:#FFF;"></div>-->
     <!--主页内容结束-->
     <cms:Footer/>
 </body>
