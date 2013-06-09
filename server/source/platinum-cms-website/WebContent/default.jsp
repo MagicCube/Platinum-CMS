@@ -83,7 +83,7 @@ function Tab()
         <div class="grid_6" id="downMiddle">
         	<div id="xydtTitle"><span>校园动态</span></div>
             <div id="xydtContent">
-            	<cms:newPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000020"     count="8" />
+            	<cms:newPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000020"     count="9" />
             	<div id="newsMore"><a href="/news/sc000000000000000000000000000020/more/">更多>></a></div>
             </div>
         </div>

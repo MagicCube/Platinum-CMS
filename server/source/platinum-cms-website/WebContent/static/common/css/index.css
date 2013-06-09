@@ -439,7 +439,8 @@ body{
 }
 #xydtContent ul li{
 	width:300px;
-	height:29.5px;
+	height:26px;
+	vertical-align:bottom;
 }
 #xydtContent ul li a{
 	display:block;
