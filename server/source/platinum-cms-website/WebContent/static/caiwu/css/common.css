@@ -21,7 +21,7 @@ body
 	padding-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	height: 120px;
+	height: 125px;
 	width: 990px;
 	background: url(/static/caiwu/image/head.png);
 }
@@ -111,14 +111,13 @@ menu#mainmenu
 { 
 	display: block;
 	width: 500px;
-	height: 32px;
+	height: 40px;
 	list-style: none;
 	padding: 0;
 	margin: 5px 0 0 0;
 	margin-left: auto;
 	margin-right: auto;   
-	font-size: 12px;
-	border-bottom:1px solid #fff;   
+	font-size: 12px; 
 }
 
 
@@ -129,7 +128,7 @@ menu#mainmenu
 	font-size: 12px;
 	font-family: 微软雅黑;
 	display: inline-block;
-	height: 32px;
+	height: 40px;
 	width: 100px;
 	padding: 0;
 	margin: 0;
@@ -139,15 +138,18 @@ menu#mainmenu
 
 menu#mainmenu li a
 {
+	width:99px;
+	margin-top:13px;
 	display: block;
-	height: 32px;
-	line-height: 32px;
+	height: 20px;
+	line-height: 20px;
 	color: white;
 	text-decoration: none;
 	text-align: center;
 	list-style: none;
-
-
+	border-right:1px solid #ccc;
+	font-size: 13px;
+	font-family:"微软雅黑";
 }
 
 
@@ -411,7 +413,7 @@ table td
 }
 #postDetail #content
 {
-	width:880px;
+	width:600px;
 	border:1px dashed #ccc;
 	margin:5px auto;
 }
@@ -451,7 +453,6 @@ li a #title:hover
 }
 
 #content{
-	margin-top:5px;
 	margin-bottom:5px;
 	line-height: 150%; 
 	font-family: 宋体;

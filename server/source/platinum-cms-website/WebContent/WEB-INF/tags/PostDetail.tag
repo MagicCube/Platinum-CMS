@@ -137,4 +137,5 @@ PostEntity post = postManager.getPost(postId, categoryId);
 		$('#postDetail').css('width','733px'); 
 		$('#postDetail').css('border-right','1px solid #ccc');
 	}
+	if($('#caiwutag').length>0) {$('#postDetail').css({'padding':'0','width':'988px','border-right':'1px solid #b0c2d3','border-left':'1px solid #b0c2d3'});}
 </script>
