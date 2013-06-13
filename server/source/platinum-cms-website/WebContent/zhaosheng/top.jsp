@@ -53,10 +53,10 @@
         		学院代码:江苏省内代码1808 | 国家代码13906
         	</div>
         	<div class = "cebian">
-        		咨询电话: 025-85891289 | 联系人:贾老师
+        		咨询电话: 025-85898048
         	</div>
         	<div class = "cebian">
-        		<span>E-mail:</span><a href="mailto:zbjy2010@163.com" style="color:#FFF;font-size:14px;">zbjy2010@163.com</a>
+        		<span>E-mail:</span><a href="mailto:zbzb@njnu.edu.cn" style="color:#FFF;font-size:14px;">zbzb@njnu.edu.cn</a>
         	</div>
         	<div class = "cebian">
         		学院地址:江苏省南京市仙林大学城学林路2号
