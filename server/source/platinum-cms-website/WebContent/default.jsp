@@ -28,6 +28,10 @@ function Tab()
 <body onload="onload()" onkeydown ="Tab()">
 	<cms:Header/>
     <!--主页内容-->
+    
+    	<a style="display:none;width:100px;height:246px;position:absolute;top:130px;left:0;background-image:url(/static/common/newimages/zhaoshenglab.jpg);" href="/zhaosheng" target="_blank"></a>
+    	<a style="display:none;width:100px;height:246px;position:absolute;top:130px;right:0;background-image:url(/static/common/newimages/zhaoshenglab.jpg);" href="/zhaosheng" target="_blank"></a>
+
     <div id="indexContent" class="container_16">
     	<div class="grid_4" id="upLeft">
         	<div id="search">
