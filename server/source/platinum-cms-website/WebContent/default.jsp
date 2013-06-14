@@ -91,7 +91,7 @@ function Tab()
         	<div id="xyfc">
         		<div id="xyfcTitle">
         			<div id="xyfcTitleLeft">校园风采</div>
-        			<div class="clickInto"><a href="/introduce">点击进入</a></div>
+        			<div class="clickInto"><a href="/introduce" target="_blank">点击进入</a></div>
         		</div>       		
         		<cms:fcaiPostList id="xyfcContent" subcategoryId="sc000000000000000000000000000003"  displayPhoto="true"  count="4" />        		
         	</div>

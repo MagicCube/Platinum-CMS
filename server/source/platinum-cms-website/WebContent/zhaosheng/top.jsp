@@ -34,7 +34,7 @@
 		</li>
 		<li class = "singleMenu"><a href = "/zhaosheng/sc000000000000000000000000000175/more/">专业介绍</a>
 		</li>
-		<li class = "singleMenu"><a href = "http://211.65.211.254/enrol/zzbcx/lqcx.asp" target="_blank">录取查询</a>
+		<li class = "singleMenu"><a href = "/zhaosheng/ff8081813f27d1e1013f3faf7acd002f.html">录取查询</a>
 		</li>
 		<li class = "singleMenu"><a href = "http://211.65.211.254/enrol/guestbook/guestbook.asp" target="_blank">考生问答</a>
 		<!-- <li class = "singleMenu"><a href = "/zhaosheng/sc000000000000000000000000000180/more/">考生问答</a> -->

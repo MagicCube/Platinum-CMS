@@ -101,6 +101,6 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 %>
 <ul id="${id}" >
 <% for (PostEntity post : posts) {%>
-	<li id="<%= post.getId()%>"><a href="/introduce"><img src="<%= post.getPhotoURL()%>" width="114" height="76"/></a></li>
+	<li id="<%= post.getId()%>"><a href="/introduce" target="_blank"><img src="<%= post.getPhotoURL()%>" width="114" height="76"/></a></li>
 <% }%>
 </ul>

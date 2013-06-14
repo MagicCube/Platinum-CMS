@@ -138,4 +138,5 @@ PostEntity post = postManager.getPost(postId, categoryId);
 		$('#postDetail').css('border-right','1px solid #ccc');
 	}
 	if($('#caiwutag').length>0) {$('#postDetail').css({'padding':'0','width':'988px','border-right':'1px solid #b0c2d3','border-left':'1px solid #b0c2d3'});}
+	if($('#luquchaxun').length>0) {$('#content').css({"border":"0"});$('#info').css({"display":"none"});$('#summary').css({"display":"none"});}
 </script>
