@@ -23,7 +23,7 @@ request.setCharacterEncoding("utf-8");
             	<span><a href="/introduce/12345679be9e6b7a00002be9e6b7a0d.html">联系我们</a></span><span class="fenge">|</span>
             	<span><a href="/wap">移动版</a></span><span class="fenge">|</span>
              	<span><a style="font-family: 'Verdana','sans-serif';" href="/introduce/ff8081813be4798a013be484d5540002.html">About ZHONGBEI</a></span><span class="fenge">|</span>
-           		<span><a href="/service/ff8081813be18002013be18e03250002.html">其他链接</a></span>
+           		<span><a target="_blank" href="http://zbzs.njnu.edu.cn/index.asp">返回旧版</a></span>
         	</div>
     	</div>
 	</div>
