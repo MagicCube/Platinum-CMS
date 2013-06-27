@@ -4,7 +4,7 @@ a{ text-decoration:none; color:#000; }
 ul,li{margin:0;}
 ul li a #title:hover{color:#75C252;}
 body{
-	font-size:12px;font-family:"瀹嬩綋";color:#000;
+	font-size:12px;font-family:"宋体";color:#000;
 	background-color:#B9C2CB;
 	background-image:url(../newimages/jianbian.gif);
 	background-repeat:repeat-x;
@@ -14,10 +14,10 @@ body{
 #topLink{width:345px;height:30px;float:right;}
 #topLink span{display:block;height:100%;line-height:30px;float:left;}
 #topLink .fenge{width:8px;text-align:center;color:#003c28;font-weight: normal;}
-#topLink span a{font-family:"寰蒋闆呴粦";color:#003c28;font-weight:bold;}
+#topLink span a{font-family:"微软雅黑";color:#003c28;font-weight:bold;}
 #topLink span a:hover{color:#545454;}
-#banner{position:relative;width:960px;height:170px;}
-#banner img{width: 960px;}
+#banner{position:relative;width:960px;}
+#banner img{width: 960px;height: 170px;}
 #homemenu{width:100%;height:34px;}
 #menuUp{width:100%;overflow:hidden;height:4px;background-color:#4C7070;}
 #homemenu ul{height:30px;}
@@ -27,7 +27,7 @@ body{
 	display:block;
 	width:100%;height:100%;
 	font-size:14px;
-	font-family:"寰蒋闆呴粦";
+	font-family:"微软雅黑";
 	line-height:27px;
 	text-align:center;
 	color:#FFF;
@@ -37,7 +37,7 @@ body{
 /*#homemenu ul#middleul li a:hover{
 	background-image:url(../newimages/menubg.jpg);
 	color:#414141;
-}*//*宸茬粡鏀惧埌js閲�/
+}*//*已经放到js里*/
 #menuUp li{float:left;height:100%;}
 .menuUpList{width:101px;height:100%;}
 .li101{
@@ -66,7 +66,7 @@ body{
 	background-repeat:repeat-x;
 }
 
-/*鑿滃崟*/
+/*菜单*/
 #middleul ul li a{display:block;width:100%;height:100%;line-height:30px;color:#000;}
 #middleul ul{
 	display:none;
@@ -125,11 +125,11 @@ body{
 	left:-35px;
 }
 
-/*鑿滃崟END*/
+/*菜单END*/
 
-/*header缁撴潫*/
+/*header结束*/
 
-/*indexContent寮�*/
+/*indexContent开始*/
 #indexContent{
 	height:605px;
 	background-color:#FFF;
@@ -190,14 +190,14 @@ body{
 	padding:0px 13px 6px 11px;
 }
 
-/*鏈珯鎼滅储*/
+/*本站搜索*/
 #searchTitle{
 	width:202px;
 	height:40px;
 	line-height:40px;
 	padding-left:10px;
 	font-size:16px;
-	font-family:寰蒋闆呴粦;
+	font-family:微软雅黑;
 }
 #searchContent,#searchForm{
 	width:100%;
@@ -226,23 +226,23 @@ body{
 	float:right;
 	font-size:16px;
 	border-radius:3px;
-	font-family:"寰蒋闆呴粦";
+	font-family:"微软雅黑";
 	cursor:pointer;
 	line-height:30px;
 	text-align:center;
 	border:0px;
 	background-image:url(../newimages/searchbg.jpg);
 }
-/*鏈珯鎼滅储END*/
+/*本站搜索END*/
 
-/*鏁欏伐涔嬪*/
+/*教工之家*/
 #jgTitle{
 	width:100%;
 	height:32px;
 	font-size:14px;
 	line-height:32px;
 	text-align:center;
-	font-family:"寰蒋闆呴粦";
+	font-family:"微软雅黑";
 	margin-bottom:10px;
 }
 #jgContent{
@@ -294,7 +294,7 @@ body{
 	text-align:left;
 	font-size:16px;
 	color:#535252;
-	font-family:"寰蒋闆呴粦";
+	font-family:"微软雅黑";
 }
 .jgList img{
 	display:block;
@@ -314,15 +314,15 @@ body{
 	margin-top:2px;
 	cursor:pointer;
 }
-/*鏁欏伐涔嬪END*/
+/*教工之家END*/
 
-/*閫氱煡涓庡叕鍛�/
+/*通知与公告*/
 #tzggTitle{
 	width:100%;
 	height:35px;
 	line-height:35px;
 	text-align:center;
-	font-family:"寰蒋闆呴粦";
+	font-family:"微软雅黑";
 	font-size:14px;
 }
 #text_inform{
@@ -334,7 +334,7 @@ body{
 	height:28.5px;
 	border-bottom:1px dashed #BEBEBE;
 }
-#downLeft ul li a{/*鐖跺厓绱犱负鍧楋紝瀛愬厓绱犱负娴佸氨鍙互鏈変笁涓偣*/
+#downLeft ul li a{ /*父元素为块，子元素为流就可以有三个点*/
 	display:block;
 	width:170px;
 	height:18px;
@@ -357,12 +357,12 @@ body{
 	float:right;
 	color:#FFF;
 	text-align:right;
-	font-family:"榛戜綋";
+	font-family:"黑体";
 }
-/*閫氱煡涓庡叕鍛奅ND*/
+/*通知与公告END*/
 
 
-/*鏍″洯鍔ㄦ�*/
+/*校园动态*/
 #schoolTitle{
 	width:315px;
 	height:30px;
@@ -385,7 +385,7 @@ body{
 	float:right;
 	text-align:center;
 	font-size:12px;
-	font-family:"榛戜綋";
+	font-family:"黑体";
 }
 #upRight ul{
 	width:315px;
@@ -405,7 +405,7 @@ body{
 	margin-left:3px;
 	background-repeat:no-repeat;
 }
-#upRight ul li a{/*鐖跺厓绱犱负鍧楋紝瀛愬厓绱犱负娴佸氨鍙互鏈変笁涓偣*/
+#upRight ul li a{/*父元素为块，子元素为流就可以有三个点*/
 	display:block;
 	width:285px;
 	height:18px;
@@ -419,9 +419,9 @@ body{
 #upRight ul li a #title{
 	display:inline;
 }
-/*鏍″洯鍔ㄦ�END*/
+/*校园动态END*/
 
-/*鏂伴椈鍔ㄦ�*/
+/*新闻动态�*/
 #xydtTitle span{
 	display:block;
 	width:130px;
@@ -429,7 +429,7 @@ body{
 	margin-left:25px;
 	line-height:32px;
 	text-align:center;
-	font-family: "寰蒋闆呴粦";
+	font-family: "微软雅黑";
 	font-size: 15px;
 }
 #xwTextContent{
@@ -468,12 +468,12 @@ body{
 	font-size: 12px;
 	float: right;
 	text-align: right;
-	font-family: "榛戜綋";
+	font-family: "黑体";
 }
-/*鏂伴椈鍔ㄦ�END*/
+/*新闻动态END*/
 
 
-/*鏍″洯椋庨噰*/
+/*校园风采*/
 #xyfcTitle{
 	width:318px;
 	height:30px;
@@ -482,7 +482,7 @@ body{
 	width:70px;
 	height:30px;
 	line-height:30px;
-	font-family: "榛戜綋";
+	font-family: "黑体";
 	font-size:14px;
 	float:left;
 	margin-left:10px;
@@ -495,7 +495,7 @@ body{
 	float:right;
 }
 .clickInto a{
-	font-family: "榛戜綋";
+	font-family: "黑体";
 	font-size:12px;
 	color:#259900;
 }
@@ -514,9 +514,9 @@ body{
 	width:144px;
 	height:76px;
 }
-/*鏍″洯椋庨噰END*/
+/*校园风采END*/
 
-/*甯哥敤閾炬帴*/
+/*常用链接*/
 #cyljTitle{
 	width: 315px;
 	height: 30px;
@@ -525,7 +525,7 @@ body{
 	width: 70px;
 	height: 30px;
 	line-height: 30px;
-	font-family: "榛戜綋";
+	font-family: "黑体";
 	font-size: 14px;
 	float: left;
 	margin-left: 10px;
@@ -557,12 +557,12 @@ body{
 	margin-right:16px;
 }
 
-/*甯哥敤閾炬帴END*/
+/*常用链接END*/
 
 
-/*indexContent缁撴潫*/
+/*indexContent结束*/
 
-/*搴曢儴*/
+/*底部*/
 #newFooter{
 	border-bottom: 10px solid #B9C2CB;
 	height:82px;
@@ -586,9 +586,9 @@ body{
 	color:#BCC6CF;
 	float:left;
 }
-/*搴曢儴END*/
+/*底部END*/
 
-/*鍥剧墖鏂伴椈*/
+/*图片新闻*/
 #big_frame,#big_list{
 	width:100%;
 	height:215px;
@@ -722,5 +722,5 @@ body{
 	-o-text-overflow: ellipsis; /* Opera */ 
 	text-overflow: ellipsis; /* IE, Safari (WebKit) */
 }
-/*鍥剧墖鏂伴椈END*/
+/*图片新闻END*/
 
