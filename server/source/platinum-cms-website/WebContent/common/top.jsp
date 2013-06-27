@@ -16,7 +16,9 @@ request.setCharacterEncoding("utf-8");
 
 <div id="header" class="container_16">	
 	<div id="banner">
-		<img src="/static/common/newimages/banner.jpg" width="960" height="222"/>
+		<img src="/static/common/newimages/banner1.jpg" width="960" height="70" style="height:70px;"/>
+		<img src="/static/common/newimages/banner2.jpg" width="960" height="50" style="height:50px;"/>
+		<img src="/static/common/newimages/banner3.jpg" width="960" height="50" style="height:50px;"/>
 		<div id="tips">
     		<div id="topLink">
         		<span><a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://zb.njnu.edu.cn/');">设为首页</a></span><span class="fenge">|</span>
