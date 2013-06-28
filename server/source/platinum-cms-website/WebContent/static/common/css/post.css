@@ -109,6 +109,11 @@ a:hover
 	text-decoration: underline;
 }
 
+#attachmentList span{
+	font-size:16px;
+	color:green;
+}
+
 #MainBox
 {
 	position: relative;
