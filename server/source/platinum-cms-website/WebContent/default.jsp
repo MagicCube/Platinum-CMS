@@ -29,13 +29,13 @@ function Tab()
 	<cms:Header/>
     <!--主页内容-->
     
-    <div class="zhaoshenglink" style="width:102px;height:270px;position:fixed;top:150px;left:15px;padding:1px;border:1px solid #FFF;">
+    <div class="zhaoshenglink" style="width:102px;height:270px;position:fixed;z-index:10000;top:150px;left:15px;padding:1px;border:1px solid #FFF;">
     	<a style="margin-left:1px;display:block;width:100px;height:246px;background-image:url(/static/common/newimages/zhaoshenglab.jpg);" href="/zhaosheng" target="_blank"></a>
     	<div class="linkClose">
     		<div class="linkCloseButton">关闭</div>
     	</div>
     </div>
-    <div class="zhaoshenglink" style="width:102px;height:270px;position:fixed;top:150px;right:15px;padding:1px;border:1px solid #FFF;">
+    <div class="zhaoshenglink" style="width:102px;height:270px;position:fixed;z-index:10000;top:150px;right:15px;padding:1px;border:1px solid #FFF;">
     	<a style="margin-left:1px;display:block;width:100px;height:246px;background-image:url(/static/common/newimages/zhaoshenglab.jpg);" href="/zhaosheng" target="_blank"></a>
 		<div class="linkClose">
     		<div class="linkCloseButton">关闭</div>
