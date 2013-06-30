@@ -137,6 +137,9 @@ PostEntity post = postManager.getPost(postId, categoryId);
 		$('#postDetail').css('width','733px'); 
 		$('#postDetail').css('border-right','1px solid #ccc');
 	}
+	 if ($("#categoryNavigationBar li a:last").text() == "通知公告") {
+		 $('#summary').css({"display":"none"});
+     }
 	if($('#caiwutag').length>0) {$('#postDetail').css({'padding':'0','width':'988px','border-right':'1px solid #b0c2d3','border-left':'1px solid #b0c2d3'});}
 	if($('#luquchaxun').length>0) {$('#content').css({"border":"0"});$('#info').css({"display":"none"});$('#summary').css({"display":"none"});}
 </script>
