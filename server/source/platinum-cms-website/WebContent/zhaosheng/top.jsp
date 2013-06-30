@@ -47,7 +47,7 @@
 		<div id="cebianContent">
 			<div id ="shengwei" ></div>
     		<div id = "cebianshang"  >
-        		欢迎进入南师大中北学院就业指导网站
+        		欢迎进入南师大中北学院招生录取网站
         	</div>
        	 	<div class = "cebian">
         		学院代码:江苏省内代码1808 | 国家代码13906
