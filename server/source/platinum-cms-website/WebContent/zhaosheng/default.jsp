@@ -28,7 +28,7 @@
             			<!-- begin of block_home_slider -->
 			 	 <div class="block_home_slider" >
                     		<div id="home_slider" class="flexslider">
-                            	<cms:PhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000179" displayPhoto="true" count="4" />
+                            	<cms:UnclickPhotoSlide id="tsztList" cssClass="slides" subcategoryId="sc000000000000000000000000000179" displayPhoto="true" count="4" />
                             	<script src="../static/common/scripts/lib/bxslider/jquery.bxslider.min.js" type="text/javascript"></script>
 								<script src="../static/common/scripts/lib/bxslider/jquery.bxslider.js" type="text/javascript"></script>
 								<script>
