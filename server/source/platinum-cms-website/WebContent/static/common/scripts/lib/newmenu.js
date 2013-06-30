@@ -21,7 +21,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"transparent"});
 				  $("#homemenu ul#up li.xygk").css({"background-color":"#AAEB1F"});
-				  $("#homemenu ul#middleul li.#xxgk a").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
+				  $("#homemenu ul#middleul li.#xxgk a.menuUpA").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menuleft.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#FFF"});
 				  $("#xxgk ul").css({"display":"block"});
@@ -29,7 +29,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"#AAEB1F"});
 				  $("#homemenu ul#up li.xygk").css({"background-color":"transparent"});
-				  $("#homemenu ul#middleul li.#xxgk a").css({"background-image":"none","color":"#FFF"});
+				  $("#homemenu ul#middleul li.#xxgk a.menuUpA").css({"background-image":"none","color":"#FFF"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menubg.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#000"});
 				  $("#xxgk ul").css({"display":"none"});
@@ -40,7 +40,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"transparent"});
 				  $("#homemenu ul#up li.bmjg").css({"background-color":"#AAEB1F"});
-				  $("#homemenu ul#middleul li.#bmjg a").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
+				  $("#homemenu ul#middleul li.#bmjg a.menuUpA").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menuleft.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#FFF"});
 				  $("#bmjg ul").css({"display":"block"});
@@ -48,7 +48,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"#AAEB1F"});
 				  $("#homemenu ul#up li.bmjg").css({"background-color":"transparent"});
-				  $("#homemenu ul#middleul li.#bmjg a").css({"background-image":"none","color":"#FFF"});
+				  $("#homemenu ul#middleul li.#bmjg a.menuUpA").css({"background-image":"none","color":"#FFF"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menubg.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#000"});
 				  $("#bmjg ul").css({"display":"none"});
@@ -59,7 +59,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"transparent"});
 				  $("#homemenu ul#up li.jxky").css({"background-color":"#AAEB1F"});
-				  $("#homemenu ul#middleul li.#jxky a").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
+				  $("#homemenu ul#middleul li.#jxky a.menuUpA").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menuleft.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#FFF"});
 				  $("#jxky ul").css({"display":"block"});
@@ -67,7 +67,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"#AAEB1F"});
 				  $("#homemenu ul#up li.jxky").css({"background-color":"transparent"});
-				  $("#homemenu ul#middleul li.#jxky a").css({"background-image":"none","color":"#FFF"});
+				  $("#homemenu ul#middleul li.#jxky a.menuUpA").css({"background-image":"none","color":"#FFF"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menubg.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#000"});
 				  $("#jxky ul").css({"display":"none"});
@@ -79,7 +79,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"transparent"});
 				  $("#homemenu ul#up li.xsgz").css({"background-color":"#AAEB1F"});
-				  $("#homemenu ul#middleul li.#xsgz a").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
+				  $("#homemenu ul#middleul li.#xsgz a.menuUpA").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menuleft.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#FFF"});
 				  $("#xsgz ul").css({"display":"block"});
@@ -87,7 +87,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"#AAEB1F"});
 				  $("#homemenu ul#up li.xsgz").css({"background-color":"transparent"});
-				  $("#homemenu ul#middleul li.#xsgz a").css({"background-image":"none","color":"#FFF"});
+				  $("#homemenu ul#middleul li.#xsgz a.menuUpA").css({"background-image":"none","color":"#FFF"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menubg.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#000"});
 				  $("#xsgz ul").css({"display":"none"});
@@ -98,7 +98,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"transparent"});
 				  $("#homemenu ul#up li.zzrs").css({"background-color":"#AAEB1F"});
-				  $("#homemenu ul#middleul li.#zzrs a").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
+				  $("#homemenu ul#middleul li.#zzrs a.menuUpA").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menuleft.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#FFF"});
 				  $("#zzrs ul").css({"display":"block"});
@@ -106,7 +106,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"#AAEB1F"});
 				  $("#homemenu ul#up li.zzrs").css({"background-color":"transparent"});
-				  $("#homemenu ul#middleul li.#zzrs a").css({"background-image":"none","color":"#FFF"});
+				  $("#homemenu ul#middleul li.#zzrs a.menuUpA").css({"background-image":"none","color":"#FFF"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menubg.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#000"});
 				  $("#zzrs ul").css({"display":"none"});
@@ -117,7 +117,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"transparent"});
 				  $("#homemenu ul#up li.zsjy").css({"background-color":"#AAEB1F"});
-				  $("#homemenu ul#middleul li.#zsjy a").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
+				  $("#homemenu ul#middleul li.#zsjy a.menuUpA").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menuleft.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#FFF"});
 				  $("#zsjy ul").css({"display":"block"});
@@ -125,7 +125,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"#AAEB1F"});
 				  $("#homemenu ul#up li.zsjy").css({"background-color":"transparent"});
-				  $("#homemenu ul#middleul li.#zsjy a").css({"background-image":"none","color":"#FFF"});
+				  $("#homemenu ul#middleul li.#zsjy a.menuUpA").css({"background-image":"none","color":"#FFF"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menubg.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#000"});
 				  $("#zsjy ul").css({"display":"none"});
@@ -137,7 +137,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"transparent"});
 				  $("#homemenu ul#up li.jlhz").css({"background-color":"#AAEB1F"});
-				  $("#homemenu ul#middleul li.#jlhz a").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
+				  $("#homemenu ul#middleul li.#jlhz a.menuUpA").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menuleft.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#FFF"});
 				  $("#jlhz ul").css({"display":"block"});
@@ -145,7 +145,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"#AAEB1F"});
 				  $("#homemenu ul#up li.jlhz").css({"background-color":"transparent"});
-				  $("#homemenu ul#middleul li.#jlhz a").css({"background-image":"none","color":"#FFF"});
+				  $("#homemenu ul#middleul li.#jlhz a.menuUpA").css({"background-image":"none","color":"#FFF"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menubg.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#000"});
 				  $("#jlhz ul").css({"display":"none"});
@@ -157,7 +157,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"transparent"});
 				  $("#homemenu ul#up li.ggfw").css({"background-color":"#AAEB1F"});
-				  $("#homemenu ul#middleul li.#ggfw a").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
+				  $("#homemenu ul#middleul li.#ggfw a.menuUpA").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menuleft.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#FFF"});
 				  $("#ggfw ul").css({"display":"block"});
@@ -165,7 +165,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"#AAEB1F"});
 				  $("#homemenu ul#up li.ggfw").css({"background-color":"transparent"});
-				  $("#homemenu ul#middleul li.#ggfw a").css({"background-image":"none","color":"#FFF"});
+				  $("#homemenu ul#middleul li.#ggfw a.menuUpA").css({"background-image":"none","color":"#FFF"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menubg.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#000"});
 				  $("#ggfw ul").css({"display":"none"});
@@ -176,7 +176,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"transparent"});
 				  $("#homemenu ul#up li.jszc").css({"background-color":"#AAEB1F"});
-				  $("#homemenu ul#middleul li.#jszc a").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
+				  $("#homemenu ul#middleul li.#jszc a.menuUpA").css({"background-image":"url(/static/common/newimages/menubg.jpg)","color":"#414141"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menuleft.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#FFF"});
 				  $("#jszc ul").css({"display":"block"});
@@ -184,7 +184,7 @@ $(document).ready(function(){
 			  function () {
 				  $("#homemenu ul#up li.sy").css({"background-color":"#AAEB1F"});
 				  $("#homemenu ul#up li.jszc").css({"background-color":"transparent"});
-				  $("#homemenu ul#middleul li.#jszc a").css({"background-image":"none","color":"#FFF"});
+				  $("#homemenu ul#middleul li.#jszc a.menuUpA").css({"background-image":"none","color":"#FFF"});
 				  $("#homemenu ul li#indexItem").css({"background-image":"url(/static/common/newimages/menubg.jpg)"});
 				  $("#homemenu ul li#indexItem a").css({"color":"#000"});
 				  $("#jszc ul").css({"display":"none"});
@@ -194,10 +194,10 @@ $(document).ready(function(){
 	
 	$("#homemenu ul li").hover(
 			function () {
-				 $("#homemenu ul li ul li a").css({"background-image":"url(/static/common/newimages/seclistbg.jpg)","color":"#FFF"});
+				
 			  },
 			  function () {
-				  $("#homemenu ul li ul li a").css({"background-image":"url(/static/common/newimages/seclistbg.jpg)"});
+				  
 			  }
 	);
 });

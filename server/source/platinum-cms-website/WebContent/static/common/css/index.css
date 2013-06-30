@@ -72,23 +72,31 @@ body{
 	display:none;
 	height:30px;
 }
+#homemenu ul ul{
+	box-shadow: 0 0 15px rgba(0,0,0,.35);
+	-moz-box-shadow: 0 0 15px rgba(0,0,0,.35);
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,.35);
+}
 #middleul ul li{
-	width:100px;
-	margin:0 5px;
+	width:100%;
 	height:30px;
 	float:left;
 }
 #xxgk ul{
-	width:440px;
-}
-#bmjg ul,#xsgz ul,#zsjy ul{
-	width:230px;
-}
-#jlhz ul,#jszc ul{
 	width:110px;
 }
+#bmjg ul,#xsgz ul,#zsjy ul{
+	width:110px;
+	height:64px;
+	background-color:#fff;
+}
+#jlhz ul,#jszc ul{
+	width:130px;
+}
 #ggfw ul{
-	width:770px;
+	width:110px;
+	height:256px;
+	background-color:#FFF;
 }
 #homemenu ul li.li101,#homemenu ul li#xxgk{
 	position:relative;
@@ -96,13 +104,20 @@ body{
 #homemenu ul li ul li{
 	margin-top:2px;
 	float:left;
+	background-color:#fff;
 }
 #homemenu ul li ul li a{
-	background-image:url(../newimages/seclistbg.jpg);
-	border-radius:5px;
-	line-height:28px;
-	color:#FFF;
+	/*background-image:url(../newimages/seclistbg.jpg);*/
+	line-height:30px;
+	color:#000;
 	font-weight:bold;
+	font-size:12px;
+	font-family:Tahoma,'Microsoft Yahei','Simsun';
+}
+#homemenu ul li ul li a:hover{
+	color:#FFF;
+	background-color:#57b217;
+	font-size:14px;
 }
 #homemenu ul li.li101 ul,#homemenu ul li#xxgk ul{
 	z-index:10;
@@ -110,21 +125,9 @@ body{
 	top:30px;
 }
 #homemenu ul li#xxgk ul{
-	left:-50px;
+	background-color:#fff;
+	height:128px;
 }
-#homemenu ul li#bmjg ul,
-#homemenu ul li#xsgz ul,
-#homemenu ul li#zsjy ul,
-#homemenu ul li#jlhz ul{
-	left:-5px;
-}
-#homemenu ul li#ggfw ul{
-	left:-570px;
-}
-#homemenu ul li#jszc ul{
-	left:-35px;
-}
-
 /*菜单END*/
 
 /*header结束*/
