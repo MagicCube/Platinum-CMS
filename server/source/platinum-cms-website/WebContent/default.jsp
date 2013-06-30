@@ -119,8 +119,8 @@ function Tab()
         			<div class="clickInto"><a href="/service/ff8081813be18002013be18e03250002.html">点击进入</a></div>
         		</div>
         		<ul>
-        			<li><a class="cyljLeft" href="http://222.192.5.246/">教务系统</a><a href="/service/ff8081813b6fee04013b6ff158fb0008.html">校园交通</a><a href="http://web.mobset.com/index.html">短信平台</a></li>
-        			<li><a class="cyljLeft" href="/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话</a><a href="https://mail.njnu.edu.cn/">邮件在线</a><a href="/service/ff8081813d105c17013d10deb9cc0002.html">班车时刻</a></li>
+        			<li><a class="cyljLeft" href="http://222.192.5.246/">教务系统</a><a class="cyljLeft" href="/service/ff8081813b6fee04013b6ff158fb0008.html">校园交通</a><a class="cyljLeft" href="http://web.mobset.com/index.html">短信平台</a></li>
+        			<li><a class="cyljLeft" href="/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话</a><a class="cyljLeft" href="https://mail.njnu.edu.cn/">邮件在线</a><a class="cyljLeft" href="/service/ff8081813d105c17013d10deb9cc0002.html">班车时刻</a></li>
         		</ul>
             </div>
         </div>
