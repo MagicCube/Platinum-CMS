@@ -403,7 +403,7 @@ ul li a div
 	padding: 0;
 	width: 594px;
 	height: 298px;
-	list-style:none;
+	left:0;
 }
 #post1{display:block;position:absolute;top:0;left:0;}
 .flexslider .slides li{display: none;height: 290px;-webkit-backface-visibility: hidden;}
