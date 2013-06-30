@@ -192,12 +192,12 @@ $(document).ready(function(){
 	);//技术支持
 	
 	
-	$("#homemenu ul li").hover(
+	$("#homemenu ul li ul li a").hover(
 			function () {
-				
-			  },
-			  function () {
-				  
-			  }
+				$(this).css({"color":"#FFF"});
+			},
+			function () {
+				$(this).css({"color":"#000"});
+			}
 	);
 });
