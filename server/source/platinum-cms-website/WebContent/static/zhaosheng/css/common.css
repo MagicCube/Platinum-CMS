@@ -34,30 +34,30 @@ body
 {
 	padding: 0;
 	margin: 0;
-	padding-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	height: 140px;
+	height: 185px;
 	width: 990px;
-	background: #ee911a;
+	background: #E7A02A;
 }
 
 #headcontainer #header1
 {
 	margin-left: auto;
 	margin-right: auto;
-	height: 100px;
+	height: 150px;
 	width: 990px;
 	left: 0;
 	position: relative;
+	background-image: url(/static/zhaosheng/image/header.jpg);
 }
 
 #header1 #indexAndsearch
 {
 	position: absolute;
-	margin-top: 15px;
+	margin-top: 100px;
 	height: 60px;
-	width: 200px;
+	width: 160px;
 	right: 0;
 }
 
@@ -129,32 +129,40 @@ body
 menu#mainmenu
 {
 	display: block;
-	width: 970px;
-	height: 32px;
+	width: 990px;
+	height: 35px;
 	list-style: none;
 	padding: 0;
 	margin:  0;
-	margin-top:10px;
-	margin-left: 10px;
-	margin-right: auto;
-	border-top: 1px solid #fff;
+	line-height:35px;
+	background: #E7A02A;
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ecaf4b,endcolorstr=#d79528,gradientType=0);
+	background:-moz-linear-gradient(top, #ecaf4b, #d79528);
+	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ecaf4b), to(#d79528));
 }
 
 menu#mainmenu li a
 {
 	display: block;
-	height: 32px;
-	line-height: 32px;
-	color: #ffffff;
+	height: 35px;
+	line-height: 35px;
+	color: #FFF;
 	text-decoration: none;
 	text-align: center;
 	list-style: none;
+	border-left: 1px solid #e4a736;
+	border-right: 1px solid #d27a1d;
 }
 
 /*当鼠标划过时背景,字体颜色改变*/
 menu#mainmenu li a:hover
 {
-	color: #ccc;
+	color: #d79528;
+	background-color:#FFF;
+	font-weight:bold;
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#FFFFFF,endcolorstr=#DDDDDD,gradientType=0);
+	background:-moz-linear-gradient(top, #FFF, #ddd);
+	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#FFF), to(#ddd));
 }
 
 /*单个菜单条的属性*/
@@ -163,10 +171,12 @@ menu#mainmenu li a:hover
 	float: left;
 	font-size: 14px;
 	display: inline-block;
-	height: 32px;
-	width: 121.25px;
+	height: 35px;
+	width: 118px;
 	padding: 0;
 	margin: 0;
+	border-left: 1px solid #e5ab3a;
+	border-right: 1px solid #d58727;
 }
 
 #footer

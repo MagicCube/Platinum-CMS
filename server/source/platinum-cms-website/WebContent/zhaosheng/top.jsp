@@ -4,7 +4,7 @@
 <link href = "/static/zhaosheng/css/common.css" rel = "stylesheet"></link>
 <div id="headcontainer">
 	<div id="header1">
-       	<span id="collegelogo"><img src = "/static/zhaosheng/image/logo.png" style="margin-top: 5px;" /></span>
+       	<!-- <span id="collegelogo"><img src = "/static/zhaosheng/image/logo.png" style="margin-top: 5px;" /></span>
 		<span id="secondlogo"><img src = "/static/zhaosheng/image/vicezhaosheng.png"></span>
 		<div id = "indexAndsearch" style="color: #fff; font-size: 12px;">
 			<a href = "/">学院首页  </a>|<a href = "http://www.njnu.edu.cn" target="_blank"> 南师大 </a>
@@ -18,10 +18,11 @@
       				</label>
    				</form>
 			</div> 
-		</div>	
+		</div>	-->
   	</div>
 	
 	<menu id = "mainmenu">
+		<li style="width:10px;height:30px;float:left;"></li>
 		<li class = "singleMenu"><a href = "/zhaosheng">首页</a>
 		</li>
 		<li class = "singleMenu"><a href = "/zhaosheng/sc000000000000000000000000000171/more/">学院概况</a>
