@@ -130,6 +130,7 @@ PostEntity post = postManager.getPost(postId, categoryId);
     <%} %>
 </div>
 
+<!-- hutai attach latter-->
 <script>
 	if($('#textContent').length>0) $('#postDetail').css('width','960px');
 	if($('#imageContent').length>0) {$('#content').css('border','0'); $('#postDetail').css('border-right','0');}

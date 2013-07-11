@@ -102,7 +102,7 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 <ul id="${id}" class="PostList ${cssClass}">
 <% for (PostEntity post : posts) {%>
 <li id="<%= post.getId()%>">
-    <a href="<%= post.getLink()%>" <%= openInNewWindow ? "target='_blank'" : ""%> title="<%= post.getTitle()%><%="\n更新时间："+DateUtil.formatDate(post.getCreateTime(), "yyyy年M月d日") %>" >
+    <a href="<%= post.getLink()%>" <%= openInNewWindow ? "target='_blank'" : ""%> title="<%= post.getTitle()%><%="\n更新时间："+DateUtil.formatDate(post.getUpdateTime(), "yyyy年M月d日") %>" >
         <% if (displayPhoto) {%>
         <img src='<%= post.getPhotoURL()%>' />
         <% } %>
@@ -116,10 +116,10 @@ else if (StringUtil.notNullOrEmpty(categoryId))
     <%} %>
 </li>
 <% } %>
+</ul>
 <% if (displayPageNavigationBar) {%>
 <cms:PageNavigationBar id="pageNavigationBar" pageIndex="<%= pageIndex%>" pageSize="<%= pageSize%>" displayNextButton="<%= posts.size() == pageSize%>"/>
 <% }%>
-</ul>
 
 <script>
 if($('#side').length > 0) 
