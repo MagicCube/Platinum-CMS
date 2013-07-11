@@ -151,7 +151,7 @@ menu#mainmenu li a
 	text-align: center;
 	list-style: none;
 	border-left: 1px solid #e4a736;
-	border-right: 1px solid #d27a1d;
+	border-right: 1px solid #d78320;
 }
 
 /*当鼠标划过时背景,字体颜色改变*/
@@ -176,7 +176,7 @@ menu#mainmenu li a:hover
 	padding: 0;
 	margin: 0;
 	border-left: 1px solid #e5ab3a;
-	border-right: 1px solid #d58727;
+	border-right: 1px solid #d9912b;
 }
 
 #footer
