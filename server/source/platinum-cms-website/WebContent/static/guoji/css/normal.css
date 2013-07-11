@@ -1,0 +1,14 @@
+*{ margin:0;padding:0;height:0;border:none;list-style: none; }
+img{ border:none;}
+a{ text-decoration:none; color:#000; }
+body{
+	font-size:14px;
+	font-family:"宋体";
+	color:#000;
+	width:100%;
+	height:auto;
+	background-color: #B9C2CB;
+	background-image:url(../images/jianbian.gif);
+	background-repeat: repeat-x;
+}
+li{list-style-position:outside;}
