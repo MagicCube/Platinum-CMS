@@ -39,7 +39,7 @@ function C_slider(frame,list,Lframe,Llist,forwardEle,backEle,scrollType,LscrollT
  });
  
  //定论鼠标划过时，自动轮换的处理
- $("#"+this.frame+",#"+this.Lframe+",#"+this.forwardEle+",#"+this.backEle).bind('mouseover',function(){
+ /*$("#"+this.frame+",#"+this.Lframe+",#"+this.forwardEle+",#"+this.backEle).bind('mouseover',function(){
   clearTimeout(self.autoExt);
  });
  
@@ -49,7 +49,7 @@ function C_slider(frame,list,Lframe,Llist,forwardEle,backEle,scrollType,LscrollT
    self.extInterval();
   },self.autoInterval);
  }); 
- 
+ */
  
  //开始自动轮换
  this.autoExt = setTimeout(function(){

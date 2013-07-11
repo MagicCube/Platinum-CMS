@@ -29,7 +29,7 @@
         	</ul>
         </div>
         <ul id="menu">
-        	<li class="menuli index"><a href="guoji.html">首页</a></li>
+        	<li class="menuli index"><a href="/">首页</a></li>
             <li class="fenge"></li>
             <li class="menuli four"><a href="#">工作宗旨</a></li>
             <li class="fenge"></li>
