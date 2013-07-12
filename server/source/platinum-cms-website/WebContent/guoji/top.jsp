@@ -8,7 +8,9 @@
         </div>
         <cms:guojiPhotoSlide id="big_frame" cssClass="frame" subcategoryId="sc000000000000000000000000000318" displayPhoto="true" count="6" />
         <ul id="menu">
-        	<li class="menuli index"><a href="/guoji">首页</a></li>
+        	<li class="menuli index">
+        		<a href="/guoji" style="display:block;width:100%;height:100%;text-align:center;line-height:40px;">首页</a>
+        	</li>
             <li class="fenge"></li>
             <!--<li class="menuli" style="width:83px;"><a href="/guoji/sc000000000000000000000000000316/more/">新闻</a></li>
             <li class="fenge"></li>-->
