@@ -334,6 +334,7 @@ ul_change_a1 img{ border:1px solid #ddd;}
 	white-space: pre-wrap; /* CSS 2.1 */ 
 	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */ 
 	width:900px;
+	padding-top:0;
 }
 #bodyContent #content img{
 	text-align:center;

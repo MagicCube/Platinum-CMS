@@ -16,13 +16,13 @@
             <li class="fenge"></li>
             <li class="menuli project"><a href="/guoji/402836813fd152ae013fd15670550002.html">海外学习计划项目</a></li>
             <li class="fenge"></li>
-            <li class="menuli six"><a href="#">短期交流活动</a></li>
+            <li class="menuli six"><a href="#">短期交流活动</a></li>    
+            <li class="fenge"></li>
+            <li class="menuli" style="width:115px;"><a href="#">中北国际班</a></li>
             <li class="fenge"></li>
             <li class="menuli four"><a href="/guoji/sc000000000000000000000000000314/more/">资料下载</a></li>
             <li class="fenge"></li>
             <li class="menuli four"><a href="#">联系我们</a></li>
-            <li class="fenge"></li>
-            <li class="menuli" style="width:115px;"><a href="#">中北国际班</a></li>
             <li class="fenge"></li>
             <li class="menuli six"><a href="#">我的留学生活</a></li>
         </ul>
