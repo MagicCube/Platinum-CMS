@@ -52,6 +52,21 @@
                     <a href="#" target="_blank">江苏省外办</a>
                 </li>
             </ul>
+            <div class="subTitle">语言学习网站</div>
+             <ul style="padding-bottom:5px;height:105px;">
+            	<li class="linkContent" style="margin-top:5px;">
+                	<a href="http://www.kekenet.com/" target="_blank">可可英语</a>
+                </li>
+                <li class="linkContent">
+                    <a href="http://de.hujiang.com/" target="_blank">沪江德语</a>
+                </li>
+                <li class="linkContent">
+                    <a href="http://www.dingyifayu.com/" target="_blank">顶艺法语官网</a>
+                </li>
+                <li class="linkContent">
+                    <a href="http://www.coffeejp.com/" target="_blank">咖啡日语</a>
+                </li>
+            </ul>
             
         </div>
     </div>
