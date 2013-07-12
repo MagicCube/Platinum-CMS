@@ -282,7 +282,6 @@ ul_change_a1 img{ border:1px solid #ddd;}
 }
 #bodyContent #postDetail {
 	width:940px;
-	margin-top: 10px;
 	padding:0 10px;
 }
 #categoryNavigationBar {
@@ -357,7 +356,11 @@ ul_change_a1 img{ border:1px solid #ddd;}
 	display:block;
 	width: 900px;
 }
-
+#textContent #content{
+	width:650px;
+	padding-left:0px;
+	padding-right:0px;
+}
 
 
 

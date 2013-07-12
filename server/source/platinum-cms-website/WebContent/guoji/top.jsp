@@ -12,9 +12,9 @@
             <li class="fenge"></li>
             <li class="menuli" style="width:83px;"><a href="/guoji/sc000000000000000000000000000316/more/">新闻</a></li>
             <li class="fenge"></li>
-            <li class="menuli four"><a href="#">工作宗旨</a></li>
+            <li class="menuli four"><a href="/guoji/ff8081813fd13d6b013fd14bf2610005.html">工作宗旨</a></li>
             <li class="fenge"></li>
-            <li class="menuli project"><a href="#">海外学习计划项目</a></li>
+            <li class="menuli project"><a href="/guoji/402836813fd152ae013fd15670550002.html">海外学习计划项目</a></li>
             <li class="fenge"></li>
             <li class="menuli six"><a href="#">短期交流活动</a></li>
             <li class="fenge"></li>
