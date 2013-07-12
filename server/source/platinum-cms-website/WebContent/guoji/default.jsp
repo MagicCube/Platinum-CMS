@@ -164,21 +164,7 @@
                     <a href="#" target="_blank">江苏省外办</a>
                 </li>
             </ul>
-            <div class="subTitle" style="line-height:12px;">校内链接</div>
-            <ul style="height:90px;">
-            	<li class="linkContent">
-                	<a href="#" target="_blank">中北学院首页</a>
-                </li>
-                <li class="linkContent">
-                    <a href="#" target="_blank">中北学院教务处</a>
-                </li>
-                <li class="linkContent">
-                    <a href="#" target="_blank">南京师范大学</a>
-                </li>
-                <li class="linkContent">
-                    <a href="#" target="_blank">南师大国际交流处</a>
-                </li>
-            </ul>
+            
         </div>
     </div>
 <!--正文结束-->

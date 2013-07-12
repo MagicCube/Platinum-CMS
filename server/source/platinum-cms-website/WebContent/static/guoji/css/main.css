@@ -30,14 +30,15 @@
 }
 #menu .menuli{
 	height:100%;
-	width:150px;
+	width:120px;
 	float:left;
 	line-height:40px;
 	text-align:center;
 	background-image:url(../images/menubg.jpg);
 }
-#menu .index{width:90px;}
-#menu .four{width:132px;}
+#menu .index{width:70px;}
+#menu .four{width:90px;}
+#menu .project{width:150px;}
 #menu .menuli a{
 	font-size:16px;
 	color:#FFF;
@@ -269,4 +270,61 @@ ul_change_a1 img{ border:1px solid #ddd;}
 	line-height: 30px;
 	color: #2970A6;
 	font-size:13px
+}
+
+/*post*/
+#bodyContent {
+	position: relative;
+	width: 960px;height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background: white;
+}
+#bodyContent #postDetail {
+	width:940px;
+	margin-top: 10px;
+	padding:0 10px;
+}
+#categoryNavigationBar {
+	width:940px;
+}
+#categoryNavigationBar li:first-child {
+	margin-left: 10px;
+	color: #ccc;
+	font-size: 13px;
+}
+.CategoryNavigationBar li {
+	padding: 0;
+	margin: 0;
+	display: block;
+	float: left;
+	height:25px;
+	color: #ccc;
+}
+#postDetail h1 {
+	display:block;
+	margin-top: 10px;
+	font-size: 20px;
+	height:25px;
+}
+#info {
+	height:15px;
+	margin-top: 10px;
+	font-size: 15px;
+}
+#info div{display:block;}
+#categoryNavigationBar li a {
+	color: #ccc;
+	text-decoration: none;
+	font-size: 13px;
+}
+#categoryNavigationBar li a:hover {
+	color: #888;
+}
+#bodyContent #summary{
+	width:830px;
+	height:auto;
+}
+#bodyContent #content {
+	width:900px;
 }

@@ -31,15 +31,19 @@
         <ul id="menu">
         	<li class="menuli index"><a href="/guoji">首页</a></li>
             <li class="fenge"></li>
+            <li class="menuli" style="width:83px;"><a href="#">新闻</a></li>
+            <li class="fenge"></li>
             <li class="menuli four"><a href="#">工作宗旨</a></li>
             <li class="fenge"></li>
-            <li class="menuli project"><a href="#">海外学习计划</a></li>
+            <li class="menuli project"><a href="#">海外学习计划项目</a></li>
             <li class="fenge"></li>
             <li class="menuli six"><a href="#">短期交流活动</a></li>
             <li class="fenge"></li>
             <li class="menuli four"><a href="#">资料下载</a></li>
             <li class="fenge"></li>
             <li class="menuli four"><a href="#">联系我们</a></li>
+            <li class="fenge"></li>
+            <li class="menuli" style="width:115px;"><a href="#">中北国际班</a></li>
             <li class="fenge"></li>
             <li class="menuli six"><a href="#">我的留学生活</a></li>
         </ul>
@@ -53,13 +57,3 @@
 
 
 <div id = "bodyContent">
-<% if (request.getParameter("displaySideBar").equals("true")) {%>
-	<div id="sideBar">
-		<div id = "sideBarin">
-		<div id = "title_style"><strong>要文回顾</strong><span style= "float: right;"><a href = "/news/more/" target="_blank">更多...</a></span></div>
-		<cms:PostList id="ywhgList" cssClass="TextList" categoryId='news' count="9" />
-		<div id = "title_style"><strong>新闻排行榜</strong><span style= "float: right;"></span></div>
-		<cms:PostList id="ywhgList" cssClass="TextList" categoryId='news' subcategoryId="rank" count="9" />
-		</div>
-	</div>
-<%}%>
