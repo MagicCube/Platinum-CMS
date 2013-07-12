@@ -30,7 +30,7 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 }
 %>
         		<div id="${id}" class="${cssClass}">
- 					<ul id="big_list" class="list">
+ 					<ul id="big_list" class="headerUi list">
  					<% for (PostEntity post : posts) {%>
   						<li>
   							<a href="#"><img src="<%= post.getPhotoURL()%>" width="960" height="210"></a>
