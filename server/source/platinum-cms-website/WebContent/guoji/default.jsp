@@ -24,56 +24,7 @@
                 <a href="#">more>></a>
             </div>
             <marquee onmouseover="this.stop()" onmouseout="this.start()" direction="up" height="205" scrollamount="1" style="height:270px;">
-            <ul id="tzggUl"Content>
-            	<li class="tzggLi">
-                	<div class="listIcon"></div>
-                    <a href="#">我院与大众书局举行向甘肃学校捐赠图书仪式</a>
-                </li>
-                <li class="tzggLi">
-                	<div class="listIcon"></div>
-                    <a href="#">我院与大众书局举行向甘肃学校捐赠图书仪式</a>
-                </li>
-                <li class="tzggLi">
-                	<div class="listIcon"></div>
-                    <a href="#">我院与大众书局举行向甘肃学校捐赠图书仪式</a>
-                </li>
-                <li class="tzggLi">
-                	<div class="listIcon"></div>
-                    <a href="#">我院与大众书局举行向甘肃学校捐赠图书仪式</a>
-                </li>
-                <li class="tzggLi">
-                	<div class="listIcon"></div>
-                    <a href="#">我院与大众书局举行向甘肃学校捐赠图书仪式</a>
-                </li>
-                <li class="tzggLi">
-                	<div class="listIcon"></div>
-                    <a href="#">我院与大众书局举行向甘肃学校捐赠图书仪式</a>
-                </li>
-                <li class="tzggLi">
-                	<div class="listIcon"></div>
-                    <a href="#">我院与大众书局举行向甘肃学校捐赠图书仪式</a>
-                </li>
-                <li class="tzggLi">
-                	<div class="listIcon"></div>
-                    <a href="#">我院与大众书局举行向甘肃学校捐赠图书仪式</a>
-                </li>
-                <li class="tzggLi">
-                	<div class="listIcon"></div>
-                    <a href="#">我院与大众书局举行向甘肃学校捐赠图书仪式</a>
-                </li>
-                <li class="tzggLi">
-                	<div class="listIcon"></div>
-                    <a href="#">我院与大众书局举行向甘肃学校捐赠图书仪式</a>
-                </li>
-                <li class="tzggLi">
-                	<div class="listIcon"></div>
-                    <a href="#">我院与大众书局举行向甘肃学校捐赠图书仪式</a>
-                </li>
-                <li class="tzggLi">
-                	<div class="listIcon"></div>
-                    <a href="#">我院与大众书局举行向甘肃学校捐赠图书仪式</a>
-                </li>
-            </ul>
+            	<cms:guojiPostList id="tzggUl" cssClass="tzggLi" subcategoryId="sc000000000000000000000000000312" where="photoURL is null"  count="20" />
             </marquee>
         </div>
         <div id="tpxw" class="grid_8">

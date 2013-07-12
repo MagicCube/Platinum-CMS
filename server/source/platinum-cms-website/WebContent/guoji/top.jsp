@@ -7,28 +7,6 @@
         	<div id="logoimage"></div>
         </div>
         <cms:guojiPhotoSlide id="big_frame" cssClass="frame" subcategoryId="sc000000000000000000000000000318" displayPhoto="true" count="6" />
-        <!--<div id="big_frame" class="frame">
-    		<ul class="headerUi list"  id="big_list">
-        		<li>
-                	<a href="#"><img src="/static/guoji/images/image1.jpg" width="960" height="210"/></a>
-                </li>
-            	<li>
-                	<a href="#"><img src="/static/guoji/images/image2.jpg" width="960" height="210"/></a>
-                </li>
-            	<li>
-                	<a href="#"><img src="/static/guoji/images/image3.jpg" width="960" height="210"/></a>
-                </li>
-            	<li>
-                	<a href="#"><img src="/static/guoji/images/image4.jpg" width="960" height="210"/></a>
-                </li>
-            	<li>
-                	<a href="#"><img src="/static/guoji/images/image5.jpg" width="960" height="210"/></a>
-                </li>
-            	<li>
-                	<a href="#"><img src="/static/guoji/images/image6.jpg" width="960" height="210"/></a>
-                </li>
-        	</ul>
-        </div>-->
         <ul id="menu">
         	<li class="menuli index"><a href="/guoji">首页</a></li>
             <li class="fenge"></li>
