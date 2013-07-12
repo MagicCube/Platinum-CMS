@@ -10,7 +10,7 @@ if (displayNextButton == null)
 }
 %>
 
-<div id="${id}" class="PageNavigationBar">
+<div id="${id}" class="PageNavigationBar" style="text-align:center;padding-bottom:5px;">
     <span id="pageIndex">第<span>${pageIndex + 1}</span>页</span>
     <%if (pageIndex > 0) {%>
     | <a id="previousPage" href="1">第一页</a>

@@ -328,3 +328,28 @@ ul_change_a1 img{ border:1px solid #ddd;}
 #bodyContent #content {
 	width:900px;
 }
+#bodyContent #content img{
+	text-align:center;
+	margin:3px auto;
+}
+#more {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 465px;
+}
+#postList{
+	width:960px;
+}
+#postList li{
+	width:900px;
+	padding:0 20px;
+}
+#postList li a {
+	display:block;
+	width: 900px;
+}
+
+
+
+
