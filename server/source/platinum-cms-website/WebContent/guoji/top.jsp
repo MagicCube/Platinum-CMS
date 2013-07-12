@@ -10,7 +10,7 @@
         <ul id="menu">
         	<li class="menuli index"><a href="/guoji">首页</a></li>
             <li class="fenge"></li>
-            <li class="menuli" style="width:83px;"><a href="#">新闻</a></li>
+            <li class="menuli" style="width:83px;"><a href="/guoji/sc000000000000000000000000000316/more/">新闻</a></li>
             <li class="fenge"></li>
             <li class="menuli four"><a href="#">工作宗旨</a></li>
             <li class="fenge"></li>
@@ -18,7 +18,7 @@
             <li class="fenge"></li>
             <li class="menuli six"><a href="#">短期交流活动</a></li>
             <li class="fenge"></li>
-            <li class="menuli four"><a href="#">资料下载</a></li>
+            <li class="menuli four"><a href="/guoji/sc000000000000000000000000000314/more/">资料下载</a></li>
             <li class="fenge"></li>
             <li class="menuli four"><a href="#">联系我们</a></li>
             <li class="fenge"></li>
