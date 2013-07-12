@@ -40,16 +40,16 @@
                 	<a href="http://shanghai-ch.usembassy-china.org.cn/" target="_blank">美国领事馆</a>
                 </li>
                 <li class="linkContent">
-                    <a href="#" target="_blank">英国领事馆</a>
+                    <a href="https://www.gov.uk/government/world/china" target="_blank">英国领事馆</a>
                 </li>
                 <li class="linkContent">
-                    <a href="#" target="_blank">德国领事馆</a>
+                    <a href="www.beijing.diplo.de" target="_blank">德国领事馆</a>
                 </li>
                 <li class="linkContent">
-                    <a href="#" target="_blank">日本领事馆</a>
+                    <a href="http://www.shanghai.cn.emb-japan.go.jp/" target="_blank">日本领事馆</a>
                 </li>
                 <li class="linkContent">
-                    <a href="#" target="_blank">江苏省外办</a>
+                    <a href="http://www.jsfao.gov.cn/" target="_blank">江苏省外办</a>
                 </li>
             </ul>
             <div class="subTitle">语言学习网站</div>
