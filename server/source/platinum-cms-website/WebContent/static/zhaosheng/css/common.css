@@ -152,17 +152,16 @@ menu#mainmenu li a
 	list-style: none;
 	border-left: 1px solid #e4a736;
 	border-right: 1px solid #d78320;
+	font-size:16px;
+	font-weight:600;
 }
 
 /*当鼠标划过时背景,字体颜色改变*/
 menu#mainmenu li a:hover
 {
-	color: #d79528;
-	background-color:#FFF;
-	font-weight:bold;
 	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#FFFFFF,endcolorstr=#DDDDDD,gradientType=0);
 	background:-moz-linear-gradient(top, #FFF, #ddd);
-	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#FFF), to(#ddd));
+	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#EFBB66), to(#DDA548));
 }
 
 /*单个菜单条的属性*/
