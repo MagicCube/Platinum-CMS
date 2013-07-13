@@ -323,6 +323,7 @@ ul_change_a1 img{ border:1px solid #ddd;}
 #bodyContent #summary{
 	width:830px;
 	height:auto;
+	margin-bottom:10px;
 }
 #bodyContent #content {
 	word-wrap: break-word; /* IE */  
