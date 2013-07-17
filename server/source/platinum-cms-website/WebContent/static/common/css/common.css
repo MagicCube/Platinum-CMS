@@ -60,11 +60,11 @@ a, b, button, code, div, i, input, label, li, menu, ol, p, pre, select, table, t
 	float: right;
 }
 
-#content img
+/*#content img
 {
 	display:block;
 	margin-bottom:5px;
-} 
+} */
 #tpxwMorelabel
 {
 	position: absolute;
