@@ -28,7 +28,7 @@ function Tab()
 <body onload="onload()" onkeydown ="Tab()">
 	<cms:Header/>
     <!--主页内容-->
-    
+    <!-- 
     <div class="zhaoshenglink" style="width:102px;height:270px;position:fixed;_position:absolute;z-index:10000;top:150px;left:15px;padding:1px;border:1px solid #FFF;">
     	<a style="margin-left:1px;display:block;width:100px;height:246px;background-image:url(/static/common/newimages/zhaoshenglab.jpg);" href="/zhaosheng" target="_blank"></a>
     	<div class="linkClose">
@@ -45,7 +45,7 @@ function Tab()
 		$('.linkCloseButton').click(function(){
 			$('.zhaoshenglink').css({"display":"none"});
 		});
-	</script>
+	</script> -->
     <div id="indexContent" class="container_16">
     	<div class="grid_4" id="upLeft">
         	<div id="search">
