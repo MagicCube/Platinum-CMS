@@ -19,7 +19,7 @@ body{
 #banner{position:relative;width:960px;}
 #banner img{width: 960px;height: 170px;}
 #homemenu{width:100%;height:34px;}
-#menuUp{width:100%;overflow:hidden;height:4px;background-color:#4C7070;}
+#menuUp{width:100%;overflow:hidden;height:4px;background-color:#2C80C0;}
 #homemenu ul{height:30px;}
 #homemenu ul li{z-index:1000;float:left;height:30px;}
 #menuLeft{background-image:url(../newimages/menuleft.jpg);}
@@ -589,7 +589,7 @@ body{
 	background-image:url(../newimages/footer.jpg);
 }
 #footerContent{
-	width:640px;
+	width:600px;
 	height:30px;
 	margin:25px auto 20px auto;
 }
@@ -600,11 +600,12 @@ body{
 	background-image:url(../newimages/footerlogo.jpg);
 }
 #copyright{
-	width:395px;
+	width:355px;
 	height:30px;
 	line-height:30px;
 	color:#BCC6CF;
 	float:left;
+	text-align:right;
 }
 /*底部END*/
 
