@@ -120,7 +120,7 @@ function Tab()
         		</div>
         		<ul>
         			<li><a class="cyljLeft" href="http://222.192.5.246/">教务系统</a><a class="cyljLeft" href="/service/ff8081813d105c17013d10deb9cc0002.html">班车时刻</a><a class="cyljLeft" href="http://web.mobset.com/index.html">短信平台</a></li>
-        			<li><a class="cyljLeft" href="/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话</a><a class="cyljLeft" href="https://mail.njnu.edu.cn/">邮件在线</a><a class="cyljLeft" href="/service/ff8081813b6fee04013b6ff158fb0008.html">校园交通</a></li>
+        			<li><a class="cyljLeft" href="/service/ff8081813b6fee04013b6ff3a36c0017.html">办公电话</a><a class="cyljLeft" href="https://mail.njnu.edu.cn/">邮件在线</a><a class="cyljLeft" href="http://urp.njnu.edu.cn">师大内网</a></li>
         		</ul>
             </div>
         </div>
