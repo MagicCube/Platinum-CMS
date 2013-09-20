@@ -29,42 +29,73 @@ else if (StringUtil.notNullOrEmpty(categoryId))
 	posts = manager.loadLatestPostsByCategory(categoryId, displayPhoto, where, count);
 }
 %>
-<% int i=1; %>
-        	<div id="${id}">
-        		<div id="big_frame" class="${cssClass}">
- 					<ul id="big_list" class="list">
- 					<% for (PostEntity post : posts) {%>
-  						<li id="list<%=i++%>">
-  							<a href="<%= post.getLink()%>"><img src="<%= post.getPhotoURL()%>" width="100%" height="100%"></a>
-  							<div class="tpxwText">
-  								<div class="tpxwTitle"><%= post.getTitle()%></div>
-  								<div class="tpxwJianjie"><p><%= post.getSummary()%></p></div>
-  							</div>
-  						</li>
-  					<% } %>
- 					</ul>
-				</div>
-				<div id="small_frame" class="l_frame">
-					<div id="newsPre">
-						<div id="newsPreButton"></div>
-					</div>
- 					<ul id="small_list" class="list">
- 					<%int j=1; %>
- 					<% for (PostEntity post : posts) {%>
-  						<li class="cur<%=j++ %>" ><img src="<%= post.getPhotoURL()%>" width="80" height="80"></li>
-  					<%} %>
-  					</ul>
- 					<div id="newsNext">
- 						<div id="newsNextButton"></div>
- 					</div>
-				</div>
-				<!-- <div id="dotFrame">
-					<ul id="dot">
-						<li id="dotFirst" class="dotList"></li>
-						<li class="dotList"></li>
-						<li class="dotList"></li>
-						<li class="dotList"></li>
-					</ul>
-				</div>-->
-        	</div>
-			<script type="text/javascript" src="/static/common/scripts/lib/slide.js"></script>
+		<%String[] imgurl=new String[4];int i=0;%>
+		<div id="${id}" class="${cssClass}">
+        	<div class="changeBox_a1" id="change_32">
+        		<% for (PostEntity post : posts) {
+        			imgurl[i]=post.getPhotoURL();i++;
+        		%>
+        		<div class="changeDiv" style="display: none;">
+        			<h3><a href="<%= post.getLink()%>" ><%= post.getTitle()%></a></h3>
+        			<a href="<%= post.getLink()%>"><img width="100%" height="100%" src="<%= post.getPhotoURL()%>"></a>
+        		</div>	
+        		<%} %>		
+				<ul class="ul_change_a2">
+					<li id="newsPreButton"></li>
+					<li class="suolui"><span class=""><img src="<%= imgurl[0]%>" width="100%" height="100%"></span></li>
+					<li class="suolui"><span class=""><img src="<%= imgurl[1]%>" width="100%" height="100%"></span></li>
+					<li class="suolui"><span class=""><img src="<%= imgurl[2]%>" width="100%" height="100%"></span></li>
+					<li class="suolui on"><span class="on"><img src="<%= imgurl[3]%>" width="100%" height="100%"></span></li>
+					<li id="newsNextButton"></li>
+				</ul>
+			</div>
+			<script type="text/javascript">
+			$(function () {
+			//数字导航切换及自定义当前数字的class
+				$('#change_3 .a_bigImg img').soChange({
+					thumbObj:'#change_3 .ul_change_a2 span',
+					thumbNowClass:'on',//自定义导航对象当前class为on
+					changeTime:4000//自定义切换时间为4000ms
+				});
+			
+			//平滑过渡间歇时间为0
+				$('#change_33 .a_bigImg img').soChange({
+					thumbObj:'#change_33 .ul_change_a2 span',
+					thumbNowClass:'on',
+					thumbOverEvent:false,
+					slideTime:0//平滑过渡间歇为0，意味着直接切换
+				});
+
+			//切换对象为其他，这里为包含图片和标题的层
+				$('#change_32 div.changeDiv').soChange({//对象指向层，层内包含图片及标题
+					thumbObj:'#change_32 .ul_change_a2 span',
+					thumbNowClass:'on'//自定义导航对象当前class为on
+				});
+
+			//带导航图标及按钮
+				$('#change_4 .a_bigImg img').soChange({
+					thumbObj:'#change_4 .ul_change_a1 img',//导航图标
+					botPrev:'#change_4 .a_last',
+					botNext:'#change_4 .a_next'
+				});
+
+			//在选项卡上的运用
+				$('#change_6 div').soChange({
+					thumbObj:'#change_6 h3',
+					slideTime:0,
+					thumbOverEvent:true,
+					autoChange:false//自动切换为 false，默认为true
+				});
+			
+			});
+			</script>
+        </div>
+
+
+<script src="/static/guoji/js/soChange.js" type="text/javascript"></script>
+
+
+
+
+
+
