@@ -78,7 +78,7 @@ PostEntity post = postManager.getPost(postId, categoryId);
         <% if (post.getContentText() != null) {%>
         <div id="content">
         	<%= post.getContentText()%>
-        	<div id="printLi" style="height:15px;margin-top:5px;"><input id="printButton" style="border:0;cursor:pointer;float:right;font-size:13px;font-faminly:'微软雅黑';"type="button" value="【打印】" onclick="PrintView();" /></div>
+        	<div id="printLi" style="height:15px;margin-top:5px;margin-bottom:10px;"><input id="printButton" style="border:0;cursor:pointer;float:right;font-size:13px;font-faminly:'微软雅黑';"type="button" value="【打印】" onclick="PrintView();" /></div>
         </div>
         <% } %>
         
