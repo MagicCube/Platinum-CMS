@@ -76,7 +76,10 @@ PostEntity post = postManager.getPost(postId, categoryId);
         <% } %>
         
         <% if (post.getContentText() != null) {%>
-        <div id="content"><%= post.getContentText()%></div>
+        <div id="content">
+        	<%= post.getContentText()%>
+        	<div id="printLi" style="height:15px;margin-top:5px;"><input id="printButton" style="border:0;cursor:pointer;float:right;font-size:13px;font-faminly:'微软雅黑';"type="button" value="【打印】" onclick="PrintView();" /></div>
+        </div>
         <% } %>
         
         <% if (post.getAttachments().size() > 0) {%>
@@ -94,7 +97,6 @@ PostEntity post = postManager.getPost(postId, categoryId);
             <% } %>
         </ul>
         <% } %>
-        
     <%} else {%>
         <div id="imageContent">
             <% if (post.getPhotoURL() != null) {%>

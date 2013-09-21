@@ -22,6 +22,5 @@ if (subcategoryId != null)
     <li> &gt; <a href="<%= categoryId.equals("news") || categoryId.equals("service") ? "../../../news/more/" : "../../../"+categoryId%>"><%= category != null ? category.getCategoryName() : categoryId%></a></li>
     <% if (subcategoryId != null) {%>
     <li> &gt; <a href="/${categoryId}/${subcategoryId}/more/"><%= subcategory != null ? subcategory.getSubcategoryName() : subcategoryId%></a></li>
-    <li id="printLi"><input id="printButton" type="button" value="【打印】" onclick="PrintView();" /></li>
     <%} %>
 </ul>

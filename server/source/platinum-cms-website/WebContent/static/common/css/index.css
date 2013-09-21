@@ -806,12 +806,4 @@ body{
 .ul_change_a2 span.on {
 	border: 2px solid #259900;
 }
-#printLi{float:right;margin-top:5px;}
-#printButton{
-	border:0;
-	cursor:pointer;
-	float:right;
-	font-size:12px;
-	font-faminly:"微软雅黑";
-}
 #printButton:hover{color:#03C;}
