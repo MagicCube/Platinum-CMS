@@ -135,7 +135,7 @@
 							规章制度 </a></li>
 					<li><a href="/xinxi/sc000000000000000000000000000181/more/">
 							学生工作 </a></li>
-					<li><a href="/xinxi/ff8081813e26f7fe013e2fcf65990008.html">
+					<li><a href="/xinxi/ff8081814144d4f501414ef1c0940003.html">
 							实验中心 </a></li>
 					<li><a href="/xinxi/sc000000000000000000000000000117/more/">
 							班级风采 </a></li>
