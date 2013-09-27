@@ -146,6 +146,9 @@ PostEntity post = postManager.getPost(postId, categoryId);
 	if($('#caiwutag').length>0) {$('#postDetail').css({'padding':'0','width':'988px','border-right':'1px solid #b0c2d3','border-left':'1px solid #b0c2d3'});}
 	if($('#luquchaxun').length>0) {$('#content').css({"border":"0"});$('#info').css({"display":"none"});$('#summary').css({"display":"none"});}
 	function PrintView(){				//打印功能
+		$('#categoryNavigationBar').css({"display":"none"});
+		$('#viewCount').css({"display":"none"});
+		$('#printLi').css({"display":"none"});
 		bdhtml=window.document.body.innerHTML; 
 		sprnstr="<!--startprint-->"; 
 		eprnstr="<!--endprint-->"; 
