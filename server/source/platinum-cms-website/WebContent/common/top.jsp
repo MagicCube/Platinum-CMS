@@ -105,6 +105,7 @@ request.setCharacterEncoding("utf-8");
 	      			<li><a href="/service/ff8081813b6fee04013b6fef4b390002.html">教学周历</a></li>
 	            	<li><a href="/service/ff8081813d105c17013d10deb9cc0002.html">班车时刻</a></li>
 	      			<li><a href="http://www.njnu.edu.cn/jssd.htm" target="_blank">在线杀毒</a></li>
+            		<li><a href="http://211.65.216.145/" target="_blank">校园一卡通</a></li>
 	        	</ul>
             </li>
             <li id="jszc" class="li101">
