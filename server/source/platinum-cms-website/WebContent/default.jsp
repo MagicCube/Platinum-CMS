@@ -27,6 +27,9 @@ function Tab()
 </head>
 <body onload="onload()" onkeydown ="Tab()">
 	<cms:Header/>
+	<div id="guoqing" style="width:960px;height:115px;margin:0 auto;padding-bottom:5px;background-color:#FFF;">
+	<img src="/static/common/newimages/guoqing.gif"/>
+	</div>
     <!--主页内容-->
     <!-- 
     <div class="zhaoshenglink" style="width:102px;height:270px;position:fixed;_position:absolute;z-index:10000;top:150px;left:15px;padding:1px;border:1px solid #FFF;">

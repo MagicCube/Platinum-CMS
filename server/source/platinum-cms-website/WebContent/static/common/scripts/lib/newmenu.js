@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	setTimeout(function () { 
+        $('#guoqing').fadeOut("slow");
+    }, 7000);
 	$("#homemenu ul#middleul #indexItem").hover(
 			function () {
 		    	
