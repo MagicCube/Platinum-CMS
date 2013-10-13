@@ -16,9 +16,9 @@
         <!-- 数据库连接设置 -->
         <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
         <!-- <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.1.100:1521:ptdb</property> -->
-        <property name="hibernate.connection.url">jdbc:oracle:thin:@211.65.211.181:1521:ptdb</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@211.65.211.7:1521:ptdb</property>
         <property name="hibernate.connection.username">PT_SYS</property>
-        <property name="hibernate.connection.password">sys</property>
+        <property name="hibernate.connection.password">sys1</property>
         
         <!-- SQL 方言 -->
         <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
