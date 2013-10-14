@@ -1,0 +1,12 @@
+body{height:inherit;}
+#introduceContent{width:100%;height:1000px;}
+#inCttLeft{width:224px;height:100%;}
+#columnsLeft{height:500px;}
+
+
+
+#inCttRight{width:780px;height:100%; background:url(../images/repair1.png) no-repeat;}
+#postLabel{width:780px;height:110px; background-image:url(../images/introducetitle.png);position:relative;}
+#postLabel #subCategory{position:absolute;top:50px;left:70px; font-family:'方正少儿简体';font-size:20px;color:#1b3110;}
+#postContent{width:655px;min-height:750px; background-image:url(../images/introducecontent.png); padding:0 70px 0 55px;}
+#postBottom{width:780px;height:77px; background-image:url(../images/introducefooter.png);}

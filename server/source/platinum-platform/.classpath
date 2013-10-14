@@ -2,7 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="var" path="PT_SERVER_LIB/apache-log4j-1.2.17.jar"/>
-	<classpathentry kind="var" path="PT_SERVER_LIB/jboss-hibernate-core-4.1.7.Final.jar"/>
+	<classpathentry kind="var" path="PT_SERVER_LIB/jboss-hibernate-core-4.1.7.Final.jar" sourcepath="/ECLIPSE_HOME"/>
 	<classpathentry kind="var" path="PT_SERVER_LIB/jsr311-rest-api-1.1.1.jar"/>
 	<classpathentry kind="var" path="PT_SERVER_LIB/jsr315-servlet-3.0-api.jar"/>
 	<classpathentry kind="var" path="PT_SERVER_LIB/jsr317-jpa-2.0-api-1.0.1.Final.jar"/>
