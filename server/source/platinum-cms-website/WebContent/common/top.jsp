@@ -97,7 +97,7 @@ request.setCharacterEncoding("utf-8");
 	            			<div class="xibuli"><a href="/yinyue" target="_blank">音乐系</a></div>
 	            			<div id="qhb" class="xibuli" style="position:relative;">
 	            				<a href="/qianghua" target="_blank">强化部</a>
-	            				<div id="lgqh"><a href="/lgqhb/" target="_blank">1140理工强化班</a></div>
+	            				<div id="lgqh"><a href="/lgqhb/" target="_blank">11级理工强化班</a></div>
 	            			</div>
 	            			<script type="text/javascript">
 	            			$("#qhb").hover(

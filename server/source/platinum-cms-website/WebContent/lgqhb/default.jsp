@@ -55,6 +55,11 @@ function onLoad(){
             	<p class="block" id="classDeclare">
                 	作为一名强化部学子，我庄严宣誓：自强不息，团结奋进。追求卓越，永不言败。不断提高自身能力，努力考取理想的研究生学校，争做社会栋梁之才！
                 </p>
+                <div id="banjixinwen">
+                	<cms:newPostList id="xwTextContent" subcategoryId="sc000000000000000000000000000020"     count="9" />
+                </div>
+                <div id="tongzhi">
+                </div>
             </div>
         </div>
     </div>
