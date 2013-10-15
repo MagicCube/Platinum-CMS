@@ -10,5 +10,8 @@
     	<p class="block">南 京 师 范 大 学 中 北 学 院 - 11 级 理 工 强 化 班</p>
     </div>
 </div>
-</body>
-</html>
+<script type="text/javascript">
+	var ele1 = document.getElementById("subcategoryIda");
+	var ele2 = document.getElementById("subCategory");
+	ele2.innerHTML=ele1.innerHTML;
+</script>

@@ -21,6 +21,6 @@ if (subcategoryId != null)
     <li><a href="/">首页</a></li>
     <li> &gt; <a href="<%= categoryId.equals("news") || categoryId.equals("service") ? "../../../news/more/" : "../../../"+categoryId%>"><%= category != null ? category.getCategoryName() : categoryId%></a></li>
     <% if (subcategoryId != null) {%>
-    <li> &gt; <a href="/${categoryId}/${subcategoryId}/more/"><%= subcategory != null ? subcategory.getSubcategoryName() : subcategoryId%></a></li>
+    <li> &gt; <a  id="subcategoryIda" href="/${categoryId}/${subcategoryId}/more/"><%= subcategory != null ? subcategory.getSubcategoryName() : subcategoryId%></a></li>
     <%} %>
 </ul>

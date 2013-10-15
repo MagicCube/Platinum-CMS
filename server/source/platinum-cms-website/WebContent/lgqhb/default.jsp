@@ -22,8 +22,8 @@ function onLoad(){
     	<img class="block floatLeft" src="images/main_03up.png"/>
         <div id="menu" class="floatLeft">
         	<ul>
-            	<li class="menuEle floatLeft menuActive"><a href="#">班级首页</a></li>
-                <li class="menuEle floatLeft"><a href="#">班级介绍</a></li>
+            	<li class="menuEle floatLeft menuActive"><a href="/lgqhb/">班级首页</a></li>
+                <li class="menuEle floatLeft"><a href="/lgqhb/297e990e41b9094c0141b90b89e30002.html">班级介绍</a></li>
                 <li class="menuEle floatLeft"><a href="#">班级荣誉榜</a></li>
                 <li class="menuEle floatLeft"><a href="#">班级相册</a></li>
                 <li class="menuEle floatLeft"><a href="#">同学信息</a></li>

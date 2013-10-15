@@ -1,0 +1,18 @@
+body{height:inherit;}
+#all{height:inherit;}
+#introduceContent{width:100%;min-height:800px;height:auto!important;overflow: auto;}
+#inCttLeft{width:224px;height:100%;}
+#columnsLeft{height:500px;}
+
+
+
+#inCttRight{width:780px;height:100%; background:url(../images/repair1.png) no-repeat;}
+#postLabel{width:780px;height:110px; background-image:url(../images/introducetitle.png);position:relative;}
+#postLabel #subCategory{position:absolute;top:50px;left:70px; font-family:'方正少儿简体';font-size:20px;color:#1b3110;}
+#postContent{width:655px;min-height:890px; background-image:url(../images/introducecontent.png); padding:0 70px 0 55px;}
+#postBottom{margin-left: 224px;width:780px;height:77px; background-image:url(../images/introducefooter.png);}
+
+#categoryNavigationBar{display:none;}
+#postDetail #title{font-size: 18px;padding:5px 0 10px 0;}
+#postDetail{width:655px;}
+#content{width:100%;padding:0;}

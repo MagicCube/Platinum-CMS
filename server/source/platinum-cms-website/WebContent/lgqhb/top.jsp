@@ -4,12 +4,6 @@
 <link rel="stylesheet" type="text/css" href="css/normal.css"/>
 <link rel="stylesheet" type="text/css" href="css/index.css"/>
 <link rel="stylesheet" type="text/css" href="css/introduce.css"/>
-<script type="text/javascript">
-function onLoad(){
-	var date = document.getElementById("date");
-	date.innerHTML=new Date().toLocaleDateString();
-}
-</script>
 <div id="all">
 	<div id="header">
     	<img class="block floatLeft" src="images/main_03up.png">
@@ -38,6 +32,6 @@ function onLoad(){
         </div>
         <div id="inCttRight" class="floatLeft">
         	<div id="postLabel">
-            	<span class="block" id="subCategory">班级介绍</span>
+            	<span class="block" id="subCategory"></span>
             </div>
         	<div id="postContent">
