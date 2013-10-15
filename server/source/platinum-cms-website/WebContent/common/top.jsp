@@ -61,8 +61,66 @@ request.setCharacterEncoding("utf-8");
             <li id="bmjg" class="li101">
             	<a href="#" class="menuUpA">部门机构</a>
             	<ul>
-	            	<li><a href="/organization/ff8081813bea7af0013bea97c53f0005.html">部门设置</a></li>
-	        		<li><a href="/organization/ff8081813bea7af0013bea9a8e700008.html" >系部设置</a></li>
+	            	<li id="bumenshezhi">
+	            		<a href="/organization/ff8081813bea7af0013bea97c53f0005.html">部门设置</a>
+	            		<div id="bumenList">
+	            			<div class="bumenli"><a href="/jiaowu" target="_blank">教务处</a></div>
+	            			<div class="bumenli"><a href="/xuegong" target="_blank">学工处</a></div>
+	            			<div class="bumenli"><a href="/tuanwei" target="_blank">团委</a></div>
+	            			<div class="bumenli"><a href="/zhaosheng" target="_blank">招生办公室</a></div>
+	            			<div class="bumenli"><a href="/jiuye" target="_blank">就业办公室</a></div>
+	            			<div class="bumenli"><a href="/caiwu" target="_blank">财务处</a></div>
+	            			<div class="bumenli"><a href="/zuzhi" target="_blank">组织人事处</a></div>
+	            			<div class="bumenli"><a href="/xiandai" target="_blank">现代教育技术中心</a></div>
+	            		</div>
+	            	</li>
+	            	<script type="text/javascript">
+	            	$("#bumenshezhi").hover(
+	            			function () {
+	            				$("#bumenshezhi #bumenList").css({"display":"block"});
+	            		  	},
+	            		  	function () {
+	            		  		$("#bumenshezhi #bumenList").css({"display":"none"});
+	            		  	}
+	            		);
+	            	</script>
+	        		<li id="xibushezhi">
+	        			<a href="/organization/ff8081813bea7af0013bea9a8e700008.html" >系部设置</a>
+	        			<div id="xibuList">
+	            			<div class="xibuli"><a href="/renwen" target="_blank">人文系</a></div>
+	            			<div class="xibuli"><a href="/waiyu" target="_blank">外语部</a></div>
+	            			<div class="xibuli"><a href="/jingguan" target="_blank">经济与管理系</a></div>
+	            			<div class="xibuli"><a href="/gongguan" target="_blank">公共与管理系</a></div>
+	            			<div class="xibuli"><a href="/xinxi" target="_blank">信息科学与技术系</a></div>
+	            			<div class="xibuli"><a href="/gongxue" target="_blank">工学系</a></div>
+	            			<div class="xibuli"><a href="/meishu" target="_blank">美术系</a></div>
+	            			<div class="xibuli"><a href="/yinyue" target="_blank">音乐系</a></div>
+	            			<div id="qhb" class="xibuli" style="position:relative;">
+	            				<a href="/qianghua" target="_blank">强化部</a>
+	            				<div id="lgqh"><a href="/lgqhb/" target="_blank">1140理工强化班</a></div>
+	            			</div>
+	            			<script type="text/javascript">
+	            			$("#qhb").hover(
+	            				function () {
+	            					$("#qhb #lgqh").css({"display":"block"});
+	            		  		},
+	            		  		function () {
+	            		  			$("#qhb #lgqh").css({"display":"none"});
+	            		  		}
+	            			);
+	            	</script>
+	            		</div>
+	        		</li>
+	        		<script type="text/javascript">
+	            	$("#xibushezhi").hover(
+	            			function () {
+	            				$("#xibushezhi #xibuList").css({"display":"block"});
+	            		  	},
+	            		  	function () {
+	            		  		$("#xibushezhi #xibuList").css({"display":"none"});
+	            		  	}
+	            		);
+	            	</script>
 	            </ul>
             </li>
             <li id="jxky" class="li101">
