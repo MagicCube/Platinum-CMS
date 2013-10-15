@@ -26,7 +26,7 @@
         	</div>
             <div id="columnsLeft" class="floatLeft">
             	<div id="columnsLeftUp">
-            		<iframe id="weather" allowtransparency="true" frameborder="0" width="155" height="250" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=1&d=3&k=&f=8&q=1&e=1&a=1&c=58238&w=155&h=250"></iframe>
+            		<iframe id="weather" allowtransparency="true" frameborder="0" width="155" height="260" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=1&d=3&k=&f=8&q=1&e=1&a=1&c=58238&w=155&h=250"></iframe>
             	</div>
             </div>
         </div>
