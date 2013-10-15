@@ -1,6 +1,6 @@
 body{height:inherit;}
-#all{height:inherit;}
-#introduceContent{width:100%;min-height:800px;height:auto!important;overflow: auto;}
+#all{height:auto;overflow: auto;}
+#introduceContent{width:100%;min-height:800px;height:auto;overflow-x: hidden;}
 #inCttLeft{width:224px;height:100%;}
 #columnsLeft{height:500px;}
 
@@ -16,3 +16,4 @@ body{height:inherit;}
 #postDetail #title{font-size: 18px;padding:5px 0 10px 0;}
 #postDetail{width:655px;}
 #content{width:100%;padding:0;}
+#printLi{display:none;}
