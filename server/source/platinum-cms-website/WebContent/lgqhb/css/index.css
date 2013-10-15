@@ -13,6 +13,7 @@ body{width:1004px;height:1417px;margin:0 auto;}
 .menuEle a{font-family: '方正少儿简体';font-size:16px;color:#e8ff84;}
 .menuEle a:hover{color:#ffcb33;}
 /*当前页*/
+.menuActive a{color:#ffcb33;}
 #indexContent{width:100%;height:1139px;}
 #album{width:100%;height:414px;}
 #albumLeft{width:224px;height:414px;background-image:url(../images/main_03down.png);}
