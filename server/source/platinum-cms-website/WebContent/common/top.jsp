@@ -64,6 +64,7 @@ request.setCharacterEncoding("utf-8");
 	            	<li id="bumenshezhi">
 	            		<a href="/organization/ff8081813bea7af0013bea97c53f0005.html">部门设置</a>
 	            		<div id="bumenList">
+	            			<div class="bumenli"><a href="/guoji" target="_blank">对外合作与发展办公室</a></div>
 	            			<div class="bumenli"><a href="/jiaowu" target="_blank">教务处</a></div>
 	            			<div class="bumenli"><a href="/xuegong" target="_blank">学工处</a></div>
 	            			<div class="bumenli"><a href="/tuanwei" target="_blank">团委</a></div>

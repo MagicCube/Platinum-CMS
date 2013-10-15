@@ -810,7 +810,9 @@ body{
 #printButton:hover{color:#03C;}
 
 /*2013年10月15日*/
-#bumenList,#xibuList{width:120px;position:absolute;top:3px;left:110px;background-color:#FFF;display:none;
+#bumenList,#xibuList{width:140px;position:absolute;top:3px;left:110px;background-color:#FFF;display:none;
 box-shadow: 0 0 15px rgba(0,0,0,.35);moz-box-shadow: 0 0 15px rgba(0,0,0,.35);-webkit-box-shadow: 0 0 15px rgba(0,0,0,.35);}
-#bumenList .bumenli,#xibuList .xibuli{width:120px;height:30px;}
+#bumenList .bumenli{width:140px;height:30px;}
+#xibuList .xibuli{width:120px;height:30px;}
+#xibuList{width:120px;}
 #lgqh{width:120px;height:30px;position:absolute;top:0;left:120px;background-color:#FFF;display:none;}
