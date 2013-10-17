@@ -14,7 +14,7 @@
                 <li class="menuEle floatLeft"><a href="#">班级荣誉榜</a></li>
                 <li class="menuEle floatLeft"><a href="#">班级相册</a></li>
                 <li class="menuEle floatLeft"><a href="#">同学信息</a></li>
-                <li class="menuEle floatLeft"><a href="#">留  言  本</a></li>
+                <li class="menuEle floatLeft"><a href="/lgqhb/ff80818141c5a9bf0141c61f9131000d.html">座  右  铭</a></li>
                 <li class="menuEle floatLeft"><a href="#">友情链接</a></li>
             </ul>
         </div>
