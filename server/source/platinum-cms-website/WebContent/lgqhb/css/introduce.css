@@ -15,5 +15,5 @@ body{height:inherit;}
 #categoryNavigationBar{display:none;}
 #postDetail #title{font-size: 18px;padding:5px 0 10px 0;}
 #postDetail{width:660px;}
-#content{width:100%;padding:0;}
+#content{width:100%;padding:0;margin-top:10px;}
 #printLi{display:none;}

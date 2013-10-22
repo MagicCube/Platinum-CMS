@@ -24,11 +24,11 @@ function onLoad(){
         	<ul>
             	<li class="menuEle floatLeft menuActive"><a href="/lgqhb/">班级首页</a></li>
                 <li class="menuEle floatLeft"><a href="/lgqhb/297e990e41b9094c0141b90b89e30002.html">班级介绍</a></li>
-                <li class="menuEle floatLeft"><a href="#">班级荣誉榜</a></li>
-                <li class="menuEle floatLeft"><a href="#">班级相册</a></li>
-                <li class="menuEle floatLeft"><a href="#">同学信息</a></li>
+                <li class="menuEle floatLeft"><a href="/lgqhb/ff80818141da4d330141db57bc710049.html">班级荣誉榜</a></li>
+                <li class="menuEle floatLeft"><a href="/lgqhb/sc000000000000000000000000000397/more/">班级相册</a></li>
+                <li class="menuEle floatLeft"><a href="/lgqhb/sc000000000000000000000000000396/more/">资料下载</a></li>
                 <li class="menuEle floatLeft"><a href="/lgqhb/ff80818141c5a9bf0141c61f9131000d.html">座  右  铭</a></li>
-                <li class="menuEle floatLeft"><a href="#">友情链接</a></li>
+                <li class="menuEle floatLeft"><a href="/lgqhb/ff80818141c5a9bf0141da2c281501f1.html">友情链接</a></li>
             </ul>
         </div>
     </div>
@@ -55,11 +55,17 @@ function onLoad(){
             	<p class="block" id="classDeclare">
                 	作为一名强化部学子，我庄严宣誓：自强不息，团结奋进。追求卓越，永不言败。不断提高自身能力，努力考取理想的研究生学校，争做社会栋梁之才！
                 </p>
+                <div id="banjixinwen_more">
+                	<a href="/lgqhb/sc000000000000000000000000000390/more/">更多...</a>
+                </div>
                 <div id="banjixinwen">
-                	<cms:newPostList id="classXinwen" subcategoryId="sc000000000000000000000000000390"     count="7" />
+                	<cms:newPostList id="classXinwen" subcategoryId="sc000000000000000000000000000390"     count="8" />
+                </div>
+                <div id="tongzhi_more">
+                	<a href="/lgqhb/sc000000000000000000000000000395/more/">更多...</a>
                 </div>
                 <div id="tongzhi">
-                	<cms:newPostList id="tongzhiGonggao" subcategoryId="sc000000000000000000000000000395"     count="7" />
+                	<cms:newPostList id="tongzhiGonggao" subcategoryId="sc000000000000000000000000000395"     count="8" />
                 </div>
             </div>
         </div>

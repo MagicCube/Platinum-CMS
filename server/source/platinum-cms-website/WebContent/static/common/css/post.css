@@ -96,6 +96,11 @@ a:hover
 	padding: 10px 0 20px 20px;
 }
 
+#attachmentList li
+{
+	margin-bottom:5px;
+}
+
 #attachmentList a
 {
 	text-decoration: none;
