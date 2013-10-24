@@ -26,7 +26,8 @@ body{width:1004px;height:1417px;margin:0 auto;}
 #columnsLeftUp{width:100%;height:370px;background-image:url(../images/main_06.png);position:relative;}
 #weather{position:absolute;top:60px;right:25px;}
 #columnsLeftDown{width:100%;height:252px;margin-top:10px;background-image:url(../images/main_10.png);position:relative;}
-#columnsLeftDown span{position:absolute;top:45px;left:50px;font-size:16px;}
+#columnsLeftDown #countDown{position:absolute;top:45px;left:35px;width:155px;height:170px;}
+#countDown{font-family:华文楷体;font-size:25px;font-weight:bold;}
 #classDeclare{position:absolute;top:110px;left:80px; text-indent:32px;width:392px; font-family:'方正少儿简体';font-size:20px;line-height:32px;color:#35B123;text-align: justify;}
 #banjixinwen{position:absolute;left:70px;top:355px;width:350px;height:290px;}
 #banjixinwen_more{position:absolute;left:347px;top:312px;width:55px;height:20px;line-height:20px;text-align:center;}

@@ -8,10 +8,32 @@
 <title>南京师范大学中北学院-11级理工强化班</title>
 <link rel="stylesheet" type="text/css" href="css/normal.css"/>
 <link rel="stylesheet" type="text/css" href="css/index.css"/>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript">
-function onLoad(){
-	var date = document.getElementById("date");
-	date.innerHTML=new Date().toLocaleDateString();
+$(function(){
+	countDown("2015/1/5 23:59:59","#countDown .day","#demo01 .hour","#demo01 .minute","#demo01 .second");
+});
+
+function countDown(time,day_elem,hour_elem,minute_elem,second_elem){
+	//if(typeof end_time == "string")
+	var end_time = new Date(time).getTime(),//月份是实际月份-1
+	//current_time = new Date().getTime(),
+	sys_second = (end_time-new Date().getTime())/1000;
+	var timer = setInterval(function(){
+		if (sys_second > 0) {
+			sys_second -= 1;
+			var day = Math.floor((sys_second / 3600) / 24);
+			var hour = Math.floor((sys_second / 3600) % 24);
+			var minute = Math.floor((sys_second / 60) % 60);
+			var second = Math.floor(sys_second % 60);
+			day_elem && $(day_elem).text(day);//计算天
+			$(hour_elem).text(hour<10?"0"+hour:hour);//计算小时
+			$(minute_elem).text(minute<10?"0"+minute:minute);//计算分
+			$(second_elem).text(second<10?"0"+second:second);// 计算秒
+		} else { 
+			clearInterval(timer);
+		}
+	}, 1000);
 }
 </script>
 </head>
@@ -48,7 +70,11 @@ function onLoad(){
             		<iframe id="weather" allowtransparency="true" frameborder="0" width="155" height="260" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=1&d=3&k=&f=8&q=1&e=1&a=1&c=58238&w=155&h=250"></iframe>
             	</div>
                 <div id="columnsLeftDown">
-            		<span id="date"></span>
+            		<div id="countDown">
+            			<span>离2015年考研还有:<br></span>
+            			<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="day">-</span>
+            			<span>天</span>
+            		</div>
             	</div>
             </div>
         	<div id="columnsRight" class="floatLeft">
