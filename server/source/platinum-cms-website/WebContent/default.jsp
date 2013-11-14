@@ -41,12 +41,12 @@ function Tab()
 		<div class="linkClose">
     		<div class="linkCloseButton">关闭</div>
     	</div>
-	</div>
+	</div> -->
 	<script>
 		$('.linkCloseButton').click(function(){
 			$('.zhaoshenglink').css({"display":"none"});
 		});
-	</script> -->
+	</script>
     <div id="indexContent" class="container_16">
     	<div class="grid_4" id="upLeft">
         	<div id="search">
