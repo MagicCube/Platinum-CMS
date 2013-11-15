@@ -6,6 +6,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>南京师范大学中北学院-11级理工强化班</title>
+<meta name="author" content="Hutai"/>
+<meta name="keywords" content="南京师范大学中北学院理工强化班,中北学院1140理工强化班,中北学院理工强化班,中北学院1140班"/>
 <link rel="stylesheet" type="text/css" href="css/normal.css"/>
 <link rel="stylesheet" type="text/css" href="css/index.css"/>
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
