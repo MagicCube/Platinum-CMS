@@ -36,7 +36,7 @@
             <li class="fenge"></li>
             <li class="menuli four"><a href="/guoji/ff8081813fd17c4b013fd1e219370008.html">联系我们</a></li>
             <li class="fenge"></li>
-            <li class="menuli six"><a href="/guoji/sc000000000000000000000000000320/more/">我的留学生活</a></li>
+            <li class="menuli six"><a href="/guoji/ff80818142560ba80142727242ff0065.html">我的留学生活</a></li>
         </ul>
     </div>  
 	<link rel="stylesheet" type="text/css" href="/static/guoji/css/960.css"/>
