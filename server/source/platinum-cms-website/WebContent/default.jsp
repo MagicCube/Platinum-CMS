@@ -29,7 +29,7 @@ function Tab()
 	<cms:Header/>
     <!--主页内容-->
 	<div id="floatDiv" class="zhaoshenglink" style="width:102px;height:270px;position:absolute;z-index:10000;padding:1px;border:1px solid #FFF;background-color:#FFF;">
-    	<a style="margin-left:1px;display:block;width:100px;height:246px;background-image:url(/static/common/newimages/beautylab.jpg);" href="#" onclick="alert('还没有到投票时间！');"></a>
+    	<a style="margin-left:1px;display:block;width:100px;height:246px;background-image:url(/static/common/newimages/beautylab.jpg);" href="http://211.65.211.108/SBPMS" target="_blank"></a>
     	<div class="linkClose">
     		<div class="linkCloseButton">关闭</div>
     	</div>
