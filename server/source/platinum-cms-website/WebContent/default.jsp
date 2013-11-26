@@ -28,25 +28,25 @@ function Tab()
 <body onload="onload()" onkeydown ="Tab()">
 	<cms:Header/>
     <!--主页内容-->
-	<div id="floatDiv" class="zhaoshenglink" style="width:102px;height:270px;position:absolute;z-index:10000;padding:1px;border:1px solid #FFF;background-color:#FFF;">
+	<!-- <div id="floatDiv" class="zhaoshenglink" style="width:102px;height:270px;position:absolute;z-index:10000;padding:1px;border:1px solid #FFF;background-color:#FFF;">
     	<a style="margin-left:1px;display:block;width:100px;height:246px;background-image:url(/static/common/newimages/beautylab.jpg);" href="http://211.65.211.108/SBPMS" target="_blank"></a>
     	<div class="linkClose">
     		<div class="linkCloseButton">关闭</div>
     	</div>
     </div>
-    <!-- <div class="zhaoshenglink" style="width:102px;height:270px;position:fixed;_position:absolute;z-index:10000;top:150px;right:15px;padding:1px;border:1px solid #FFF;">
+    <div class="zhaoshenglink" style="width:102px;height:270px;position:fixed;_position:absolute;z-index:10000;top:150px;right:15px;padding:1px;border:1px solid #FFF;">
     	<a style="margin-left:1px;display:block;width:100px;height:246px;background-image:url(/static/common/newimages/zhaoshenglab.jpg);" href="/zhaosheng" target="_blank"></a>
 		<div class="linkClose">
     		<div class="linkCloseButton">关闭</div>
     	</div>
-	</div> -->
+	</div> 
 	<script src="divFloat.js" type="text/javascript"></script>
 	<script>
 	 	$("#floatDiv").divFloat({ delay: 40,xPos:300,yPos:0,roll:false });  
 		$('.linkCloseButton').click(function(){
 			$('.zhaoshenglink').css({"display":"none"});
 		});
-	</script>
+	</script>-->
     <div id="indexContent" class="container_16">
     	<div class="grid_4" id="upLeft">
         	<div id="search">
