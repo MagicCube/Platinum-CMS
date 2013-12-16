@@ -42,7 +42,7 @@ function Tab()
 	</div> 
 	<!-- <script src="divFloat.js" type="text/javascript"></script> -->
 	<script>
-	 	$("#floatDiv").divFloat({ delay: 40,xPos:300,yPos:0,roll:false });  
+	 	//$("#floatDiv").divFloat({ delay: 40,xPos:300,yPos:0,roll:false });  
 		$('.linkCloseButton').click(function(){
 			$('.zhaoshenglink').css({"display":"none"});
 		});
