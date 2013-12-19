@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-  
 
-	<div id = "footer"> 
+
+	<div id = "footer">
 		<!-- <div id = "bottom1"  class="fastLink">
               <div id = "fastlink1">
                 <table>
