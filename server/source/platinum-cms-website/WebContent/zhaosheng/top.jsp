@@ -6,7 +6,7 @@
 	<div id="header1">
        	<!-- <span id="collegelogo"><img src = "/static/zhaosheng/image/logo.png" style="margin-top: 5px;" /></span>
 		<span id="secondlogo"><img src = "/static/zhaosheng/image/vicezhaosheng.png"></span>
-		<div id = "indexAndsearch" style="color: #fff; font-size: 12px;">
+		<div id = "indexAndsearch" style="color: #000000; font-size: 12px;">
 			<a href = "/">学院首页  </a>|<a href = "http://www.njnu.edu.cn" target="_blank"> 南师大 </a>
 			<div id = "searchbar">
 				<form id="searchForm" name="form1" method="get" action="../../../search" target="_blank">
