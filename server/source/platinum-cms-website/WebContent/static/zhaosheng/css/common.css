@@ -135,10 +135,10 @@ menu#mainmenu
 	padding: 0;
 	margin:  0;
 	line-height:35px;
-	background: #E7A02A;
-	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ecaf4b,endcolorstr=#d79528,gradientType=0);
-	background:-moz-linear-gradient(top, #ecaf4b, #d79528);
-	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ecaf4b), to(#d79528));
+	background: #167DEC;
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#167DEC,endcolorstr=#2891D7,gradientType=0);
+	background:-moz-linear-gradient(top, #167DEC, #167DEC);
+	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#167DEC), to(#2891D7));
 }
 
 menu#mainmenu li a
@@ -150,8 +150,8 @@ menu#mainmenu li a
 	text-decoration: none;
 	text-align: center;
 	list-style: none;
-	border-left: 1px solid #e4a736;
-	border-right: 1px solid #d78320;
+	border-left: 1px solid #4436E4;
+	border-right: 1px solid #4436E4;
 	font-size:16px;
 	font-weight:600;
 }
@@ -161,7 +161,7 @@ menu#mainmenu li a:hover
 {
 	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#FFFFFF,endcolorstr=#DDDDDD,gradientType=0);
 	background:-moz-linear-gradient(top, #FFF, #ddd);
-	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#EFBB66), to(#DDA548));
+	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#1C3CE7), to(#8399F1));
 }
 
 /*单个菜单条的属性*/
@@ -174,8 +174,8 @@ menu#mainmenu li a:hover
 	width: 118px;
 	padding: 0;
 	margin: 0;
-	border-left: 1px solid #e5ab3a;
-	border-right: 1px solid #d9912b;
+	border-left: 1px solid #4436E4;
+	border-right: 1px solid #4436E4;
 }
 
 #footer
@@ -185,7 +185,7 @@ menu#mainmenu li a:hover
 	margin-right: auto;
 	height: 51px;
 	width: 990px;
-	background-color:#ee911a;
+	background-color:#2891D7;
 	line-height: 23px;
 	font-size: 12px;
 	text-align:center;
@@ -260,7 +260,7 @@ table td
 	width: 990px;
 	height: 50px;
 	bottom: 0;
-	background: #ee911a;
+	background: #2891D7;
 	border-top: 1px #fff solid;
 	color: #fff;
 	left: 0;
@@ -466,8 +466,8 @@ table td
 	line-height: 20px;
 	width:983px;
 	height:830px;
-	border-left:3px solid #ee911a;
-	border-right:2px solid #ee911a;
+	border-left:3px solid #2891D7;
+	border-right:2px solid #2891D7;
 	margin:0 auto;
 	padding-right:2px;
 }
@@ -556,7 +556,7 @@ li a #title:hover
 	margin-top:100px;
 	width:23px;
 	height:92px;
-	background-color:#ee911a;
+	background-color:#2891D7;
 	border-radius:0 10px 10px 0;
 	cursor:pointer;
 	font-size:16px;
@@ -569,7 +569,7 @@ li a #title:hover
 #cebianContent{
 	width: 0;
 	height: 135px;
-	background-color: #ee911a;
+	background-color: #2891D7;
 	border-radius: 0 15px 15px 0;
 	display: none;
 	color: #FFF;
