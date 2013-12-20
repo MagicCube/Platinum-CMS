@@ -29,9 +29,9 @@ img{border:0;}
 	height: 300px;
 	padding: 0;
 	float: left;
-	border: 1px solid #2891D7;
-	-moz-box-shadow: #2891D7 0px 3px 10px;
-	box-shadow: #2891D7 0px 3px 10px;
+	border: 1px solid #EE911A;
+	-moz-box-shadow: #EE911A 0px 3px 10px;
+	box-shadow: #EE911A 0px 3px 10px;
 }
 
 .block_home_slider {
@@ -174,7 +174,7 @@ ul li a div
 #mContent #textNews ul
 {	
 	min-height:240px;
-	border:1px solid #2891D7;
+	border:1px solid #ee911a;
 	border-radius:0 0 10px 10px;
 	display: block;
 	margin:10px 0 0 0;
@@ -197,7 +197,7 @@ ul li a div
 #mContent #informs ul
 {
 	
-	border:1px solid #2891D7;
+	border:1px solid #ee911a;
 	border-radius: 0 0 10px 10px;
 	min-height:190px;
 	display: block;
@@ -220,7 +220,7 @@ ul li a div
 
 #mContent #teaching ul
 {
-	border:1px solid #2891D7;
+	border:1px solid #ee911a;
 	border-radius: 0 0 10px 10px;
 	min-height:190px;
 	display: block;
@@ -263,7 +263,7 @@ ul li a div
 
 #mContent #redian ul
 {
-	border:1px solid #2891D7;
+	border:1px solid #ee911a;
 	border-radius: 0 0 10px 10px;
 	min-height:195px;
 	display: block;
@@ -287,7 +287,7 @@ ul li a div
 #mContent #zhuanti ul
 {
 	min-height: 170px;
-	border: 1px solid #2891D7;
+	border: 1px solid #ee911a;
 	border-radius: 0 0 10px 10px;
 	display: block;
 	margin:10px 0 0 0;
@@ -310,7 +310,7 @@ ul li a div
 #mContent #jiangzhu ul
 {
 	min-height: 170px;
-	border: 1px solid #2891D7;
+	border: 1px solid #ee911a;
 	border-radius: 0 0 10px 10px;
 	display: block;
 	margin:10px 0 0 0;
@@ -333,7 +333,7 @@ ul li a div
 #mContent #zhuanye ul
 {
 	min-height: 170px;
-	border: 1px solid #2891D7;
+	border: 1px solid #ee911a;
 	border-radius: 0 0 10px 10px;
 	margin:10px 0 0 0;
 	padding:0 0 0 3px;
@@ -413,8 +413,8 @@ ul li a div
 	border-top: 2px solid #fff;
 	top: -3px;
 	left: 0;
-	background-color: #2891D7;
-	background: #2891D7;
+	background-color: rgb(238, 145, 26);
+	background: rgba(238, 145, 26, 0.55);
 	width: 100%;
 	height: 30px;
 	z-index: 100;

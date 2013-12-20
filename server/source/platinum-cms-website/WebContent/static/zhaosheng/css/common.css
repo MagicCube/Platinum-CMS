@@ -128,17 +128,19 @@ body
 /*整个菜单条属性*/
 menu#mainmenu
 {
+	border-top:1px solid #ee911a;
+	border-right:2px solid #ee911a;
 	display: block;
-	width: 990px;
+	width: 988px;
 	height: 35px;
 	list-style: none;
 	padding: 0;
 	margin:  0;
 	line-height:35px;
-	background: #167DEC;
-	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#167DEC,endcolorstr=#2891D7,gradientType=0);
-	background:-moz-linear-gradient(top, #167DEC, #167DEC);
-	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#167DEC), to(#2891D7));
+	background: #E7A02A;
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#f1c251,endcolorstr=#d79528,gradientType=0);
+	background:-moz-linear-gradient(top, #f1c251, #d79528);
+	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#f1c251), to(#d79528));
 }
 
 menu#mainmenu li a
@@ -150,8 +152,8 @@ menu#mainmenu li a
 	text-decoration: none;
 	text-align: center;
 	list-style: none;
-	border-left: 1px solid #4436E4;
-	border-right: 1px solid #4436E4;
+	border-left: 1px solid #e4a736;
+	border-right: 1px solid #d78320;
 	font-size:16px;
 	font-weight:600;
 }
@@ -161,7 +163,7 @@ menu#mainmenu li a:hover
 {
 	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#FFFFFF,endcolorstr=#DDDDDD,gradientType=0);
 	background:-moz-linear-gradient(top, #FFF, #ddd);
-	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#1C3CE7), to(#8399F1));
+	background:-webkit-gradient(linear, 0 0, 0 bottom, from(#EFBB66), to(#DDA548));
 }
 
 /*单个菜单条的属性*/
@@ -174,8 +176,8 @@ menu#mainmenu li a:hover
 	width: 118px;
 	padding: 0;
 	margin: 0;
-	border-left: 1px solid #4436E4;
-	border-right: 1px solid #4436E4;
+	border-left: 1px solid #e5ab3a;
+	border-right: 1px solid #d9912b;
 }
 
 #footer
@@ -185,7 +187,7 @@ menu#mainmenu li a:hover
 	margin-right: auto;
 	height: 51px;
 	width: 990px;
-	background-color:#2891D7;
+	background-color:#ee911a;
 	line-height: 23px;
 	font-size: 12px;
 	text-align:center;
@@ -260,7 +262,7 @@ table td
 	width: 990px;
 	height: 50px;
 	bottom: 0;
-	background: #2891D7;
+	background: #ee911a;
 	border-top: 1px #fff solid;
 	color: #fff;
 	left: 0;
@@ -466,8 +468,8 @@ table td
 	line-height: 20px;
 	width:983px;
 	height:830px;
-	border-left:3px solid #2891D7;
-	border-right:2px solid #2891D7;
+	border-left:3px solid #ee911a;
+	border-right:2px solid #ee911a;
 	margin:0 auto;
 	padding-right:2px;
 }
@@ -556,7 +558,7 @@ li a #title:hover
 	margin-top:100px;
 	width:23px;
 	height:92px;
-	background-color:#2891D7;
+	background-color:#ee911a;
 	border-radius:0 10px 10px 0;
 	cursor:pointer;
 	font-size:16px;
@@ -569,7 +571,7 @@ li a #title:hover
 #cebianContent{
 	width: 0;
 	height: 135px;
-	background-color: #2891D7;
+	background-color: #ee911a;
 	border-radius: 0 15px 15px 0;
 	display: none;
 	color: #FFF;
