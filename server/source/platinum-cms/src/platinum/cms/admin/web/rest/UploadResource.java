@@ -58,7 +58,7 @@ public class UploadResource extends AbstractResource
 			String localPath = PTEnvironment.getSharedPath(relativePath);
 			if (localPath.endsWith(".jpg"))
 			{
-				ImageUtil.resize(localPath, 580, 720);
+				ImageUtil.resize(localPath, 1f, 580, 720);
 			}
 			return responseWithText(relativePath);
 		}
