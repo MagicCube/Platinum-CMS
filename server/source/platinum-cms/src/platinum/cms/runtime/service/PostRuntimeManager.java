@@ -175,10 +175,10 @@ public class PostRuntimeManager
 		PostEntity post = dao.selectById(p_postId);
 		if (post != null)
 		{
-			dao.beginTransaction();
+			//dao.beginTransaction();
 			post.setViewCount(post.getViewCount() + 1);
 			dao.updatePostViews(post.getViews());
-			dao.commitTransaction();
+			//dao.commitTransaction();
 			return post.getViewCount();
 		}
 		else
