@@ -66,46 +66,46 @@ public class PostAdminManager
 	
 	public PostEntity savePost(PostEntity p_post)
 	{
-		//getPostDAO().beginTransaction();
+		getPostDAO().beginTransaction();
 		getPostDAO().save(p_post);
-		//getPostDAO().commitTransaction();
+		getPostDAO().commitTransaction();
 		return p_post;
 	}
 	public   void savePost(CallBackEntity p_post)
 	{
-		//getPostDAO().beginTransaction();
+		getPostDAO().beginTransaction();
 		getCallBackDao().save(p_post);
-		//getCallBackDao().commitTransaction();
+		getCallBackDao().commitTransaction();
 		
 	}
 	public PostEntity updatePost(PostEntity p_post)
 	{
-		//getPostDAO().beginTransaction();
+		getPostDAO().beginTransaction();
 		getPostDAO().update(p_post);
-		//getPostDAO().commitTransaction();
+		getPostDAO().commitTransaction();
 		return p_post;
 	}
 	
 	public void deletePost(String p_postId)
 	{
-		//getPostDAO().beginTransaction();
+		getPostDAO().beginTransaction();
 		getPostDAO().deleteById(p_postId);
-		//getPostDAO().commitTransaction();
+		getPostDAO().commitTransaction();
 	}
 
 	public void uploadPostAttachment(
 			PostAttachmentEntity p_postAttachment, String p_postId)
 	{
-		//getPostDAO().beginTransaction();
+		getPostDAO().beginTransaction();
 		getPostDAO().addPostAttachment(p_postAttachment, p_postId);
-		//getPostDAO().commitTransaction();
+		getPostDAO().commitTransaction();
 	}
 
 	public void deletePostAttachment(
 			String p_attachmentId)
 	{
-		//getPostDAO().beginTransaction();
+		getPostDAO().beginTransaction();
 		getPostDAO().deletePostAttachment(p_attachmentId);
-		//getPostDAO().commitTransaction();
+		getPostDAO().commitTransaction();
 	}
 }
